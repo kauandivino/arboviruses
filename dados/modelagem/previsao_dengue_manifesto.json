@@ -1,0 +1,83 @@
+{
+  "gerado_em": "2026-10-26T04:43:24.990703+00:00",
+  "metodo": "pipeline/modelagem/previsao.py",
+  "descricao": "Previsão de 1 a 8 semanas das notificações de dengue de residentes em Goiânia, por semana de início dos sintomas, todas as classificações",
+  "origem_atual": "2026-10-04",
+  "parametros": {
+    "horizontes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "nivel_semanas": 4,
+    "janela_clima_semanas_antes": [
+      9,
+      2
+    ],
+    "cobertura_minima_clima": 0.6,
+    "ridge": 1.0,
+    "minimo_pares_treino": 52,
+    "quantis_faixa": [
+      0.025,
+      0.975
+    ]
+  },
+  "avaliacao": {
+    "origens": 111,
+    "primeira_origem": "2023-07-02",
+    "ultima_origem": "2025-08-10",
+    "exibida": false,
+    "regra": "exibir somente se o modelo com clima tiver erro absoluto médio menor que o da melhor referência em todos os horizontes"
+  },
+  "fontes": [
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2022.csv",
+      "sha256": "46fe4a0d6429aa3ab72e77655696181144f7b72ec29da5a50a934d5fc78612ba"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2023.csv",
+      "sha256": "8c0310c9de2174d91b657a89d26a820ff5206c63b3f8d01d55a61873e6eaea11"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2024.csv",
+      "sha256": "c4924c2519f105c918571272acd18c9b0b5d739dc23f4c28628a584897fc4107"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2025.csv",
+      "sha256": "f7a30a02dd5ed188c69f547cf7cc51b32d7d210160bad3422a01ce88d3c907ca"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2026.csv",
+      "sha256": "8b96da557d07de66bcf79940bc26d218ef5484bebfd00f1687078a4f2b021bbf"
+    },
+    {
+      "arquivo": "dados/inmet/goiania/horario.csv",
+      "sha256": "d78571dd920449cc61fdf850acd23647f4bbfb49662d7332a5b550289c9ee577"
+    }
+  ],
+  "produtos": [
+    {
+      "arquivo": "dados/modelagem/previsao_dengue.csv",
+      "sha256": "302b7b4f50e0a7f2d1d81bb0b23eb70f978ff2b858f14f8c61ed2332fef94e37"
+    },
+    {
+      "arquivo": "dados/modelagem/previsao_dengue_avaliacao.csv",
+      "sha256": "7a7c1f4e366e339e9493646c7737b73bf61a8dc6633a802cfa1c41ce05f2f047"
+    },
+    {
+      "arquivo": "dados/modelagem/previsao_dengue_retrospectiva.csv",
+      "sha256": "e0ef6ef238db3b05311c46d5327188ae5a70b5e29ccece396ba60b89122d113c"
+    }
+  ],
+  "limitacoes": [
+    "Avaliada em poucas temporadas (2023 a 2025); um ano epidêmico atípico pode fugir do padrão aprendido.",
+    "Usa uma única estação meteorológica para a cidade inteira; não descreve diferenças entre bairros.",
+    "Associação estatística com o clima não demonstra causa.",
+    "Conta notificações de todas as classificações, não casos confirmados."
+  ]
+}

@@ -29,6 +29,9 @@ with sync_playwright() as p:
     page.locator('.st-nowcast-alvo').nth(-1).hover()
     assert 'Estimativa final' in page.locator('.st-nowcast-tooltip').inner_text()
     assert 'Acerto da faixa' in page.locator('[data-component-id="nowcast-avaliacao"]').inner_text()
+    exibida = json.loads(Path('dados/modelagem/previsao_dengue_manifesto.json').read_text(encoding='utf-8'))['avaliacao']['exibida']
+    assert page.locator('[data-component-id="previsao-avaliacao"]').count() == 1
+    assert page.locator('[data-component-id="previsao-semanas"]').count() == (1 if exibida else 0), 'regra de exibição da previsão'
     page.screenshot(path=str(OUT / 'municipal_desktop.png'), full_page=True)
     def capture(nome):
         page.wait_for_timeout(400)
@@ -138,7 +141,7 @@ with sync_playwright() as p:
         assert '14' in pagina.locator('[data-component-id="pessoas-alcancadas"]').inner_text()
         api.shutdown(); api.server_close()
     assert not erros, erros
-    (OUT / 'validacao_browser.json').write_text(json.dumps({'erros':erros,'overflow_mobile':overflow,'verificacoes':['sete abas','ano 2022, todos e 2026','edição SE35 e alerta','combinação territorial vazia','edição 2024 chikungunya','busca vazia e restauração das 200 unidades','oito territórios e justificativas','mapa: foco, detalhe e camada de unidades','nowcast: 12 semanas estimadas, tooltip e avaliação','ações de campo: validação, registro, edição com motivo e versões','desktop e mobile']},ensure_ascii=False,indent=2),encoding='utf-8')
+    (OUT / 'validacao_browser.json').write_text(json.dumps({'erros':erros,'overflow_mobile':overflow,'verificacoes':['sete abas','ano 2022, todos e 2026','edição SE35 e alerta','combinação territorial vazia','edição 2024 chikungunya','busca vazia e restauração das 200 unidades','oito territórios e justificativas','mapa: foco, detalhe e camada de unidades','nowcast: 12 semanas estimadas, tooltip e avaliação','previsão: exibição condicionada à avaliação','ações de campo: validação, registro, edição com motivo e versões','desktop e mobile']},ensure_ascii=False,indent=2),encoding='utf-8')
     print('Verificação do navegador concluída.')
     browser.close()
 servidor.shutdown()

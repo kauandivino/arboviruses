@@ -2,7 +2,7 @@ import React from 'react';
 import { EvidenceChart, DataComponent, DataTable, Filters, Section, MetricCard, SortableRegion, SortableItem, useDashboardTabs, useDataApp } from '../../data-app-public.jsx';
 import { CartaoMapa } from './MapaTerritorios.jsx';
 import { AcoesCampo } from './AcoesCampo.jsx';
-import { NowcastDengue } from './GraficoNowcast.jsx';
+import { NowcastDengue, PrevisaoDengue } from './GraficoNowcast.jsx';
 import './dashboard.css';
 const tabs = [
  {id:'municipal',label:'Evolução municipal',filterIds:['ano']},
@@ -45,6 +45,7 @@ export function DashboardContent() {
  {tab.id==='municipal' && <>
  <Notice>Registros de dengue por residência e mês da notificação; escorpiões por ocorrência e mês do acidente. Todas as classificações. Em 2026, dengue tem registros até outubro e escorpiões até agosto. Os meses recentes podem estar incompletos; uma queda no fim da série exige cautela.</Notice>
  <NowcastDengue rows={all('nowcast')} avaliacao={all('nowcast_avaliacao')}/>
+ <PrevisaoDengue rows={all('previsao')} avaliacao={all('previsao_avaliacao')}/>
  <SortableRegion id="saude:municipal" variant="canvas" spacing="standard" columns={12} rows={[{id:'municipal:trends',items:['dengue-serie','escorpioes-serie']}]}>
  {['dengue','escorpioes'].map(agravo=>{const rows=mensal.filter(r=>r.agravo===agravo); return <SortableItem key={agravo} id={`${agravo}-serie`} span={6} label={agravo}>
  <Chart id={`${agravo}-serie`} queryId="municipal" title={agravo==='dengue'?'Dengue · registros mensais':'Escorpiões · registros mensais'} rows={rows} spec={line('n_registros','Registros')} description={rows.length?`Meses com registros: ${rows[0].mes} a ${rows.at(-1).mes}. Mês presente não comprova completude; ausência não é zero.`:'Nenhum mês disponível para esta seleção.'}/>

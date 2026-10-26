@@ -1,7 +1,7 @@
 {
   "surface": "dashboard",
   "title": "Saúde no Território · Goiânia",
-  "generatedAt": "2026-10-26T04:26:39.076552+00:00",
+  "generatedAt": "2026-10-26T04:45:29.854533+00:00",
   "status": "observed",
   "buildStatus": "complete",
   "filters": [
@@ -3930,7 +3930,7 @@
           "dados/base_integrada/municipal_mensal_clima.csv"
         ],
         "description": "Registros SINAN, todas as classificações: dengue por residência e mês da notificação; escorpiões por ocorrência e mês do acidente. Não são pessoas únicas. Ausência não é zero. 2026 parcial; meses com registros podem estar incompletos. Clima A002 em UTC.",
-        "dataPreparedAt": "2026-10-26T04:23:34.054094+00:00",
+        "dataPreparedAt": "2026-10-26T04:41:33.896037+00:00",
         "metricDefinitions": [
           {
             "label": "municipal mensal clima",
@@ -23044,7 +23044,7 @@
           "dados/base_integrada/bairros_publicados.csv"
         ],
         "description": "Lista publicada por edição, agravo e indicador; janelas sobrepostas não são somadas. Não comprova todos os bairros. Correspondência SIGGO nominal, sem homologação dos limites. Não permite taxas nem ranking municipal completo.",
-        "dataPreparedAt": "2026-10-26T04:23:34.054094+00:00",
+        "dataPreparedAt": "2026-10-26T04:41:33.896037+00:00",
         "metricDefinitions": [
           {
             "label": "bairros publicados",
@@ -24389,7 +24389,7 @@
           "dados/base_integrada/clima_mensal.csv"
         ],
         "description": "Estação A002; calendário UTC. Chuva observada pode ser parcial. Médias de temperatura e umidade são horárias, com cobertura explícita. Não atribui causalidade nem diferenças climáticas entre bairros.",
-        "dataPreparedAt": "2026-10-26T04:23:34.054094+00:00",
+        "dataPreparedAt": "2026-10-26T04:41:33.896037+00:00",
         "metricDefinitions": [
           {
             "label": "clima mensal",
@@ -27023,7 +27023,7 @@
           "dados/base_integrada/parceiros_candidatos.csv"
         ],
         "description": "Cadastros públicos sem motivo de desativação registrado e coordenadas dentro da malha municipal. Competência setembro de 2026. Funcionamento e interesse em parceria precisam ser verificados.",
-        "dataPreparedAt": "2026-10-26T04:23:34.054094+00:00",
+        "dataPreparedAt": "2026-10-26T04:41:33.896037+00:00",
         "metricDefinitions": [
           {
             "label": "parceiros candidatos",
@@ -27064,7 +27064,7 @@
           "dados/base_integrada/contexto_censo_2022.csv"
         ],
         "description": "População do Censo 2022, sem estimativa para 2026 nem rateio por bairro.",
-        "dataPreparedAt": "2026-10-26T04:23:34.054094+00:00",
+        "dataPreparedAt": "2026-10-26T04:41:33.896037+00:00",
         "metricDefinitions": [
           {
             "label": "contexto censo 2022",
@@ -53204,7 +53204,7 @@
           "dados/mapa/camadas.json",
           "dados/mapa/manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T04:23:49.574139+00:00",
+        "dataPreparedAt": "2026-10-26T04:41:49.236831+00:00",
         "metricDefinitions": [
           {
             "label": "Geometria",
@@ -53924,7 +53924,7 @@
           "dados/modelagem/nowcast_dengue_avaliacao.csv",
           "dados/modelagem/nowcast_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T04:24:30.161910+00:00",
+        "dataPreparedAt": "2026-10-26T04:42:27.995220+00:00",
         "metricDefinitions": [
           {
             "label": "Observado",
@@ -54090,7 +54090,7 @@
           "dados/modelagem/nowcast_dengue_avaliacao.csv",
           "dados/modelagem/nowcast_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T04:24:30.161910+00:00",
+        "dataPreparedAt": "2026-10-26T04:42:27.995220+00:00",
         "metricDefinitions": [
           {
             "label": "Observado",
@@ -54122,6 +54122,233 @@
         {
           "language": "text",
           "code": "pipeline/modelagem/nowcast.py: semanas epidemiológicas (domingo); triângulo início x atraso de digitação; fatores de desenvolvimento nas 20 coortes recentes; faixas pelos erros retrospectivos já conhecidos em cada data."
+        }
+      ]
+    },
+    "previsao": {
+      "rows": [],
+      "source": {
+        "name": "Previsão de dengue (1 a 8 semanas)",
+        "provider": "Modelo local sobre microdados SINAN e INMET A002",
+        "files": [
+          "dados/modelagem/previsao_dengue.csv",
+          "dados/modelagem/previsao_dengue_avaliacao.csv",
+          "dados/modelagem/previsao_dengue_manifesto.json"
+        ],
+        "dataPreparedAt": "2026-10-26T04:43:24.990703+00:00",
+        "metricDefinitions": [
+          {
+            "label": "Referências",
+            "definition": "Repetir a média das últimas 4 semanas (corrigidas pelo nowcasting) e repetir a mesma semana do ano anterior."
+          },
+          {
+            "label": "Modelo",
+            "definition": "Regressão ridge no logaritmo das contagens, por horizonte: nível e tendência recentes, sazonalidade e, na versão com clima, chuva, temperatura e umidade médias por hora válida das semanas A-9 a A-2."
+          },
+          {
+            "label": "Regra de exibição",
+            "definition": "exibir somente se o modelo com clima tiver erro absoluto médio menor que o da melhor referência em todos os horizontes"
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Avaliação retrospectiva",
+            "detail": "111 origens semanais de 2023-07-02 a 2025-08-10, usando em cada uma só os dados disponíveis naquela data."
+          }
+        ],
+        "caveats": [
+          "Avaliada em poucas temporadas (2023 a 2025); um ano epidêmico atípico pode fugir do padrão aprendido.",
+          "Usa uma única estação meteorológica para a cidade inteira; não descreve diferenças entre bairros.",
+          "Associação estatística com o clima não demonstra causa.",
+          "Conta notificações de todas as classificações, não casos confirmados."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "pipeline/modelagem/previsao.py"
+        }
+      ]
+    },
+    "previsao_avaliacao": {
+      "rows": [
+        {
+          "horizonte": 1,
+          "avaliacoes": 111,
+          "erro_abs_medio_persistencia": 240.52,
+          "erro_rel_mediano_persistencia_pct": 24.73,
+          "erro_abs_medio_sazonal_ingenuo": 578.9,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 63.45,
+          "erro_abs_medio_modelo_sem_clima": 243.73,
+          "erro_rel_mediano_modelo_sem_clima_pct": 21.1,
+          "erro_abs_medio_modelo_com_clima": 288.15,
+          "erro_rel_mediano_modelo_com_clima_pct": 23.09,
+          "melhor_referencia": "persistencia",
+          "modelo_supera_referencias": false,
+          "clima_melhora_modelo": false,
+          "cobertura_faixa_pct": 87.18,
+          "avaliacoes_com_faixa": 39
+        },
+        {
+          "horizonte": 2,
+          "avaliacoes": 111,
+          "erro_abs_medio_persistencia": 273.47,
+          "erro_rel_mediano_persistencia_pct": 27.11,
+          "erro_abs_medio_sazonal_ingenuo": 577.98,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 59.84,
+          "erro_abs_medio_modelo_sem_clima": 282.22,
+          "erro_rel_mediano_modelo_sem_clima_pct": 24.45,
+          "erro_abs_medio_modelo_com_clima": 338.4,
+          "erro_rel_mediano_modelo_com_clima_pct": 24.88,
+          "melhor_referencia": "persistencia",
+          "modelo_supera_referencias": false,
+          "clima_melhora_modelo": false,
+          "cobertura_faixa_pct": 86.84,
+          "avaliacoes_com_faixa": 38
+        },
+        {
+          "horizonte": 3,
+          "avaliacoes": 111,
+          "erro_abs_medio_persistencia": 305.05,
+          "erro_rel_mediano_persistencia_pct": 28.9,
+          "erro_abs_medio_sazonal_ingenuo": 577.45,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 59.8,
+          "erro_abs_medio_modelo_sem_clima": 310.22,
+          "erro_rel_mediano_modelo_sem_clima_pct": 29.13,
+          "erro_abs_medio_modelo_com_clima": 380.06,
+          "erro_rel_mediano_modelo_com_clima_pct": 26.03,
+          "melhor_referencia": "persistencia",
+          "modelo_supera_referencias": false,
+          "clima_melhora_modelo": false,
+          "cobertura_faixa_pct": 86.49,
+          "avaliacoes_com_faixa": 37
+        },
+        {
+          "horizonte": 4,
+          "avaliacoes": 111,
+          "erro_abs_medio_persistencia": 329.17,
+          "erro_rel_mediano_persistencia_pct": 31.33,
+          "erro_abs_medio_sazonal_ingenuo": 577.45,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 59.0,
+          "erro_abs_medio_modelo_sem_clima": 336.8,
+          "erro_rel_mediano_modelo_sem_clima_pct": 32.93,
+          "erro_abs_medio_modelo_com_clima": 400.93,
+          "erro_rel_mediano_modelo_com_clima_pct": 28.49,
+          "melhor_referencia": "persistencia",
+          "modelo_supera_referencias": false,
+          "clima_melhora_modelo": false,
+          "cobertura_faixa_pct": 86.11,
+          "avaliacoes_com_faixa": 36
+        },
+        {
+          "horizonte": 5,
+          "avaliacoes": 111,
+          "erro_abs_medio_persistencia": 354.37,
+          "erro_rel_mediano_persistencia_pct": 29.92,
+          "erro_abs_medio_sazonal_ingenuo": 577.0,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 59.0,
+          "erro_abs_medio_modelo_sem_clima": 350.6,
+          "erro_rel_mediano_modelo_sem_clima_pct": 32.85,
+          "erro_abs_medio_modelo_com_clima": 412.48,
+          "erro_rel_mediano_modelo_com_clima_pct": 29.1,
+          "melhor_referencia": "persistencia",
+          "modelo_supera_referencias": false,
+          "clima_melhora_modelo": false,
+          "cobertura_faixa_pct": 91.43,
+          "avaliacoes_com_faixa": 35
+        },
+        {
+          "horizonte": 6,
+          "avaliacoes": 111,
+          "erro_abs_medio_persistencia": 383.39,
+          "erro_rel_mediano_persistencia_pct": 30.25,
+          "erro_abs_medio_sazonal_ingenuo": 576.24,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 59.0,
+          "erro_abs_medio_modelo_sem_clima": 366.29,
+          "erro_rel_mediano_modelo_sem_clima_pct": 31.72,
+          "erro_abs_medio_modelo_com_clima": 417.28,
+          "erro_rel_mediano_modelo_com_clima_pct": 28.89,
+          "melhor_referencia": "persistencia",
+          "modelo_supera_referencias": false,
+          "clima_melhora_modelo": false,
+          "cobertura_faixa_pct": 97.06,
+          "avaliacoes_com_faixa": 34
+        },
+        {
+          "horizonte": 7,
+          "avaliacoes": 111,
+          "erro_abs_medio_persistencia": 422.54,
+          "erro_rel_mediano_persistencia_pct": 35.66,
+          "erro_abs_medio_sazonal_ingenuo": 576.35,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 59.0,
+          "erro_abs_medio_modelo_sem_clima": 379.72,
+          "erro_rel_mediano_modelo_sem_clima_pct": 30.93,
+          "erro_abs_medio_modelo_com_clima": 425.49,
+          "erro_rel_mediano_modelo_com_clima_pct": 30.13,
+          "melhor_referencia": "persistencia",
+          "modelo_supera_referencias": false,
+          "clima_melhora_modelo": false,
+          "cobertura_faixa_pct": 87.88,
+          "avaliacoes_com_faixa": 33
+        },
+        {
+          "horizonte": 8,
+          "avaliacoes": 110,
+          "erro_abs_medio_persistencia": 459.36,
+          "erro_rel_mediano_persistencia_pct": 38.48,
+          "erro_abs_medio_sazonal_ingenuo": 580.6,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 59.42,
+          "erro_abs_medio_modelo_sem_clima": 387.38,
+          "erro_rel_mediano_modelo_sem_clima_pct": 31.76,
+          "erro_abs_medio_modelo_com_clima": 434.75,
+          "erro_rel_mediano_modelo_com_clima_pct": 33.92,
+          "melhor_referencia": "persistencia",
+          "modelo_supera_referencias": true,
+          "clima_melhora_modelo": false,
+          "cobertura_faixa_pct": 100.0,
+          "avaliacoes_com_faixa": 31
+        }
+      ],
+      "source": {
+        "name": "Previsão de dengue (1 a 8 semanas)",
+        "provider": "Modelo local sobre microdados SINAN e INMET A002",
+        "files": [
+          "dados/modelagem/previsao_dengue.csv",
+          "dados/modelagem/previsao_dengue_avaliacao.csv",
+          "dados/modelagem/previsao_dengue_manifesto.json"
+        ],
+        "dataPreparedAt": "2026-10-26T04:43:24.990703+00:00",
+        "metricDefinitions": [
+          {
+            "label": "Referências",
+            "definition": "Repetir a média das últimas 4 semanas (corrigidas pelo nowcasting) e repetir a mesma semana do ano anterior."
+          },
+          {
+            "label": "Modelo",
+            "definition": "Regressão ridge no logaritmo das contagens, por horizonte: nível e tendência recentes, sazonalidade e, na versão com clima, chuva, temperatura e umidade médias por hora válida das semanas A-9 a A-2."
+          },
+          {
+            "label": "Regra de exibição",
+            "definition": "exibir somente se o modelo com clima tiver erro absoluto médio menor que o da melhor referência em todos os horizontes"
+          }
+        ],
+        "evidenceFlow": [
+          {
+            "title": "Avaliação retrospectiva",
+            "detail": "111 origens semanais de 2023-07-02 a 2025-08-10, usando em cada uma só os dados disponíveis naquela data."
+          }
+        ],
+        "caveats": [
+          "Avaliada em poucas temporadas (2023 a 2025); um ano epidêmico atípico pode fugir do padrão aprendido.",
+          "Usa uma única estação meteorológica para a cidade inteira; não descreve diferenças entre bairros.",
+          "Associação estatística com o clima não demonstra causa.",
+          "Conta notificações de todas as classificações, não casos confirmados."
+        ]
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "pipeline/modelagem/previsao.py"
         }
       ]
     },

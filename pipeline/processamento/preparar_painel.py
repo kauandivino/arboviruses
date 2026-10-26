@@ -97,6 +97,22 @@ def snapshot(concluir=False):
         queries['nowcast'] = {'rows': json.loads(pd.read_csv(nowcast).to_json(orient='records', force_ascii=False)), 'source': fonte_nowcast, 'methods': metodo}
         avaliacao = pd.read_csv(ROOT / 'dados/modelagem/nowcast_dengue_avaliacao.csv')
         queries['nowcast_avaliacao'] = {'rows': json.loads(avaliacao.to_json(orient='records', force_ascii=False)), 'source': fonte_nowcast, 'methods': metodo}
+    previsao = ROOT / 'dados/modelagem/previsao_dengue.csv'
+    if previsao.exists():
+        meta = json.loads((ROOT / 'dados/modelagem/previsao_dengue_manifesto.json').read_text(encoding='utf-8'))
+        fonte_previsao = {'name': 'Previsão de dengue (1 a 8 semanas)', 'provider': 'Modelo local sobre microdados SINAN e INMET A002',
+            'files': ['dados/modelagem/previsao_dengue.csv', 'dados/modelagem/previsao_dengue_avaliacao.csv', 'dados/modelagem/previsao_dengue_manifesto.json'],
+            'dataPreparedAt': meta['gerado_em'],
+            'metricDefinitions': [
+                {'label': 'Referências', 'definition': 'Repetir a média das últimas 4 semanas (corrigidas pelo nowcasting) e repetir a mesma semana do ano anterior.'},
+                {'label': 'Modelo', 'definition': 'Regressão ridge no logaritmo das contagens, por horizonte: nível e tendência recentes, sazonalidade e, na versão com clima, chuva, temperatura e umidade médias por hora válida das semanas A-9 a A-2.'},
+                {'label': 'Regra de exibição', 'definition': meta['avaliacao']['regra']}],
+            'evidenceFlow': [{'title': 'Avaliação retrospectiva', 'detail': f"{meta['avaliacao']['origens']} origens semanais de {meta['avaliacao']['primeira_origem']} a {meta['avaliacao']['ultima_origem']}, usando em cada uma só os dados disponíveis naquela data."}],
+            'caveats': meta['limitacoes']}
+        metodo_previsao = [{'language': 'text', 'code': 'pipeline/modelagem/previsao.py'}]
+        atual = pd.read_csv(previsao)
+        queries['previsao'] = {'rows': json.loads(atual[atual.exibir].to_json(orient='records', force_ascii=False)), 'source': fonte_previsao, 'methods': metodo_previsao}
+        queries['previsao_avaliacao'] = {'rows': json.loads(pd.read_csv(ROOT / 'dados/modelagem/previsao_dengue_avaliacao.csv').to_json(orient='records', force_ascii=False)), 'source': fonte_previsao, 'methods': metodo_previsao}
     from pipeline import acoes_campo
     acoes = acoes_campo.atuais()
     queries['acoes'] = {'rows': acoes, 'source': {'name': 'Ações de campo', 'provider': 'Registro local da equipe do projeto',

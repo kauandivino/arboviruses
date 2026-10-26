@@ -44,6 +44,26 @@ O painel só exibe a estimativa se ela superar o número bruto em todas as seman
 - Uma mudança brusca na rotina de digitação, como uma força-tarefa ou um sistema fora do ar, pode deixar a faixa estreita demais.
 - Na semana mais recente quase tudo ainda vai chegar; a faixa é larga e deve ser lida assim.
 
+## Previsão de 1 a 8 semanas
+
+`pipeline/modelagem/previsao.py` tenta prever as notificações das próximas 8 semanas. A regra foi definida antes de ver o resultado: o modelo só é exibido se tiver erro absoluto médio menor que o da melhor referência simples em todos os horizontes.
+
+- **Referências:** repetir a média das últimas 4 semanas (corrigidas pelo nowcasting) e repetir a mesma semana do ano anterior.
+- **Modelo:** regressão ridge no logaritmo das contagens, uma por horizonte, com nível e tendência recentes, sazonalidade e clima da estação A002. O clima entra como chuva, temperatura e umidade médias por hora válida das semanas A-9 a A-2. Janelas com menos de 60% das horas medidas ficam sem valor; nenhuma hora é preenchida.
+- **Avaliação:** 111 origens semanais de julho de 2023 a outubro de 2025. Em cada origem, o modelo usa só o que estava digitado naquela data, corrigido pelo nowcasting daquele momento, e o clima até duas semanas antes.
+
+Resultado em 26/10/2026 (erro absoluto médio, em notificações por semana):
+
+| Semanas à frente | Últimas 4 semanas | Modelo sem clima | Modelo com clima |
+|---|---|---|---|
+| 1 | 241 | 244 | 288 |
+| 4 | 329 | 337 | 401 |
+| 8 | 459 | 387 | 435 |
+
+O modelo com clima não superou a referência em 7 dos 8 horizontes; na epidemia de 2024 errou bem mais (693 contra 507 no horizonte de 4 semanas). Por isso **a previsão não é exibida**. O modelo sem clima ganhou só de 5 a 8 semanas à frente e não foi adotado depois de ver o resultado, para não ajustar o critério à resposta.
+
+Com quatro temporadas e uma única estação meteorológica, os dados não sustentam uma previsão melhor do que repetir o nível recente. O painel mostra essa avaliação, e o pipeline a refaz a cada atualização: se um dia o modelo passar na regra, a previsão aparece automaticamente com a faixa de incerteza.
+
 ## Regra dos arquivos anuais (correção de 26/10/2026)
 
 Os arquivos de dengue do SINAN seguem o ano epidemiológico da notificação; os de animais peçonhentos, o ano civil. A regra anterior ("cada arquivo contribui só com datas do próprio ano civil") descartava notificações legítimas nas viradas de ano, como as de 1º a 3 de janeiro de 2026, que pertencem ao ano epidemiológico de 2025 e só existem nesse arquivo.

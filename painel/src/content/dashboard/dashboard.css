@@ -93,3 +93,7 @@
 .st-leg-faixa { width: 2px; height: 14px; background: var(--text); }
 .st-nowcast-tabelas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-block-start: 20px; }
 @media (max-width: 900px) { .st-nowcast-tabelas { grid-template-columns: 1fr; } }
+
+.st-previsao { grid-template-columns: 1fr; }
+.st-previsao:has(> :nth-child(2)) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); }
+@media (max-width: 900px) { .st-previsao:has(> :nth-child(2)) { grid-template-columns: 1fr; } }

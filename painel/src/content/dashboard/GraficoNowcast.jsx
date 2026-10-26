@@ -92,3 +92,31 @@ export function NowcastDengue({ rows, avaliacao }) {
     </div>}
   </>;
 }
+
+const pct = v => v == null ? '—' : `${new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 1 }).format(v)}%`;
+
+export function PrevisaoDengue({ rows, avaliacao }) {
+  if (!avaliacao.length) return null;
+  const exibir = rows.length > 0 && rows.every(r => r.exibir);
+  const linhas = avaliacao.map(a => ({ ...a, melhor: a.melhor_referencia === 'persistencia' ? 'Repetir as últimas 4 semanas' : 'Mesma semana do ano anterior',
+    resultado: a.modelo_supera_referencias ? 'Modelo melhor' : 'Referência melhor' }));
+  return <div className="st-nowcast-tabelas st-previsao">
+    {exibir && <DataComponent id="previsao-semanas" queryId="previsao" title="Previsão das próximas 8 semanas" kind="table" variant="card" sourceRows={rows} displayRows={rows}
+      description="Notificações esperadas por semana de início dos sintomas. A faixa vem dos erros da avaliação retrospectiva.">
+      <DataTable rows={rows} searchable={false} caption="Previsão" columns={[
+        { field: 'horizonte', label: 'Semanas à frente' }, { field: 'semana', label: 'Início', renderCell: v => dataCurta(v) },
+        { field: 'previsto', label: 'Previsto' }, { field: 'inferior', label: 'Faixa inferior' }, { field: 'superior', label: 'Faixa superior' }]} />
+    </DataComponent>}
+    <DataComponent id="previsao-avaliacao" queryId="previsao_avaliacao" title={exibir ? 'Previsão: avaliação retrospectiva' : 'Previsão de 1 a 8 semanas: não exibida'} kind="table" variant="card"
+      sourceRows={linhas} displayRows={linhas}
+      description={exibir ? 'O modelo superou as referências simples em todos os horizontes.' : 'O modelo com clima não superou a referência simples em todos os horizontes da avaliação retrospectiva (2023–2025), então nenhum valor previsto é mostrado. A avaliação é refeita a cada atualização dos dados.'}>
+      <DataTable rows={linhas} searchable={false} caption="Erro absoluto médio por horizonte" columns={[
+        { field: 'horizonte', label: 'Semanas à frente' },
+        { field: 'erro_abs_medio_persistencia', label: 'Erro: últimas 4 semanas', renderCell: v => fmt(v) },
+        { field: 'erro_abs_medio_modelo_sem_clima', label: 'Erro: modelo sem clima', renderCell: v => fmt(v) },
+        { field: 'erro_abs_medio_modelo_com_clima', label: 'Erro: modelo com clima', renderCell: v => fmt(v) },
+        { field: 'resultado', label: 'Resultado' },
+        { field: 'cobertura_faixa_pct', label: 'Acerto da faixa', renderCell: v => pct(v) }]} />
+    </DataComponent>
+  </div>;
+}

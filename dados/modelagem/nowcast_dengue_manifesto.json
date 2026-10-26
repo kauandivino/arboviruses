@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-26T04:24:30.161910+00:00",
+  "gerado_em": "2026-10-26T04:42:27.995220+00:00",
   "metodo": "pipeline/modelagem/nowcast.py",
   "agravo": "dengue",
   "descricao": "Notificações de dengue de residentes em Goiânia, todas as classificações, por semana de início dos sintomas",
