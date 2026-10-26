@@ -3,6 +3,7 @@
     .venv/Scripts/python.exe -m pipeline                 integração, verificações e painel (sem rede)
     .venv/Scripts/python.exe -m pipeline --reprocessar   refaz antes o processamento local dos originais
     .venv/Scripts/python.exe -m pipeline --coletar       baixa antes as versões publicadas pelas fontes oficiais
+    .venv/Scripts/python.exe -m pipeline --semanal       atualiza só SINAN e INMET (usado pelo agendamento semanal)
 
 Para na primeira etapa que falhar; o painel só é marcado como revisado e compilado
 depois que todos os testes e validações passarem. O registro da execução fica em
@@ -40,6 +41,11 @@ def etapas(args):
         yield 'coleta', 'malha_municipal', modulo('coleta.baixar_malha_municipal')
         yield 'coleta', 'cnes', modulo('coleta.baixar_cnes')
         yield 'coleta', 'inmet', modulo('coleta.baixar_inmet')
+    elif args.semanal:
+        # Só fontes que mudam toda semana. CNES, malhas e informes mudam a seleção dos territórios
+        # ou exigem conferência humana, por isso ficam fora da atualização automática.
+        yield 'coleta', 'datasus', modulo('coleta.baixar_datasus')
+        yield 'coleta', 'inmet', modulo('coleta.baixar_inmet')
     elif args.reprocessar:
         yield 'processamento', 'datasus', modulo('coleta.baixar_datasus', '--processar-local')
         yield 'processamento', 'ibge', modulo('coleta.baixar_ibge', '--processar-local')
@@ -76,12 +82,13 @@ def main():
     modo = parser.add_mutually_exclusive_group()
     modo.add_argument('--coletar', action='store_true', help='baixa novamente das fontes oficiais (requer internet)')
     modo.add_argument('--reprocessar', action='store_true', help='reprocessa os originais locais, sem rede')
+    modo.add_argument('--semanal', action='store_true', help='atualiza só SINAN e INMET (requer internet)')
     parser.add_argument('--sem-painel', action='store_true', help='não atualiza nem compila o painel')
     parser.add_argument('--listar', action='store_true', help='mostra as etapas sem executar')
     args = parser.parse_args()
 
     env = {**os.environ, 'PYTHONIOENCODING': 'utf-8', 'PATH': f'{NODE}{os.pathsep}{os.environ["PATH"]}'}
-    registro = {'iniciado_em': datetime.now(timezone.utc).isoformat(), 'modo': 'coletar' if args.coletar else 'reprocessar' if args.reprocessar else 'padrao', 'etapas': []}
+    registro = {'iniciado_em': datetime.now(timezone.utc).isoformat(), 'modo': 'coletar' if args.coletar else 'semanal' if args.semanal else 'reprocessar' if args.reprocessar else 'padrao', 'etapas': []}
     falhou = False
     for fase, nome, comando in etapas(args):
         if args.listar:

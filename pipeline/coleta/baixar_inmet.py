@@ -11,6 +11,7 @@ import urllib.request
 import zipfile
 from urllib.parse import urljoin
 
+from pipeline.comum.epidemiologia import ano_corrente, anos_ate_corrente
 from pipeline.comum.ibge_utils import now, save_json, sha256
 PAGE = 'https://portal.inmet.gov.br/dadoshistoricos'
 
@@ -118,7 +119,7 @@ def download(item, base):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--anos', nargs='+', type=int, default=list(range(2022, 2027)))
+    parser.add_argument('--anos', nargs='+', type=int, default=anos_ate_corrente(2022))
     parser.add_argument('--destino', type=Path, default=Path('dados/inmet'))
     parser.add_argument('--somente-processar', action='store_true')
     args = parser.parse_args()
@@ -140,6 +141,9 @@ def main():
         for year in sorted(set(args.anos)):
             matches = [(year, u, label) for u, label in links.links
                        if u == f'https://portal.inmet.gov.br/uploads/dadoshistoricos/{year}.zip']
+            if not matches and year == ano_corrente():
+                print(f'Aviso: {year} ainda não publicado pelo INMET.', flush=True)
+                continue
             if len(matches) != 1:
                 raise RuntimeError(f'Link oficial ausente ou ambíguo: {year}')
             items.extend(matches)
@@ -149,7 +153,8 @@ def main():
     extracted = base / 'estacao_originais'
     extracted.mkdir(exist_ok=True)
     sources = []
-    for year in sorted(set(args.anos)):
+    anos = [y for y in sorted(set(args.anos)) if (base / 'originais' / f'{y}.zip').exists() or y != ano_corrente()]
+    for year in anos:
         with zipfile.ZipFile(base / 'originais' / f'{year}.zip') as archive:
             names = [n for n in archive.namelist() if re.search(r'_A002_', n, re.I) and n.lower().endswith('.csv')]
             selected = select_member(names, year)
@@ -160,7 +165,7 @@ def main():
                                 arquivo=str(target), sha256=sha256(target)))
     save_json(base / 'fontes_estacao.json', sources)
     from pipeline.processamento.processar_inmet import processar
-    processar(base, args.anos)
+    processar(base, anos)
 
 
 if __name__ == '__main__':

@@ -1,5 +1,5 @@
 {
-  "consultado_em": "2026-10-19T21:30:36.707964+00:00",
+  "consultado_em": "2026-10-26T07:14:42.913412+00:00",
   "host": "ftp.datasus.gov.br",
   "arquivos": [
     {
@@ -58,8 +58,8 @@
       "situacao": "PRELIM",
       "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/DENGBR26.dbc",
       "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/DENGBR26.dbc",
-      "tamanho": 22407563,
-      "modificado": "20261014171300",
+      "tamanho": 22163588,
+      "modificado": "20261019182600",
       "nome": "DENGBR26.dbc"
     },
     {

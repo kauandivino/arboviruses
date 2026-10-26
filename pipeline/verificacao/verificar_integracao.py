@@ -1,5 +1,7 @@
 """Verificações das fronteiras temporais e da integração gravada."""
 import unittest
+
+from pipeline.comum import epidemiologia as epi
 import pandas as pd
 from pipeline.processamento.integrar_bases import construir_serie, sobreposicao_entre_arquivos, OUT
 
@@ -29,6 +31,15 @@ class IntegracaoTest(unittest.TestCase):
         a = pd.DataFrame({'x': ['1', '2']}); b = pd.DataFrame({'x': ['2', '3']})
         self.assertEqual(sobreposicao_entre_arquivos({2025: a, 2026: b}), 1)
         self.assertEqual(sobreposicao_entre_arquivos({2025: a, 2026: pd.DataFrame({'x': ['3']})}), 0)
+
+    def test_anos_dinamicos_so_o_corrente_pode_faltar(self):
+        corrente = epi.ano_corrente()
+        existentes = {2022, 2023, corrente - 1} | set(range(2024, corrente))
+        caminho = lambda a: type('Caminho', (), {'exists': lambda self: a in existentes})()
+        self.assertEqual(epi.anos_com_arquivo(2022, caminho), sorted(existentes))
+        existentes.discard(2023)
+        with self.assertRaises(FileNotFoundError):
+            epi.anos_com_arquivo(2022, caminho)
 
     def test_sem_observacoes_nao_inventa_zero(self):
         df = pd.DataFrame([['520870', '', '2025-06-08']], columns=['ID_MN_RESI', 'DT_NOTIFIC', 'DT_SIN_PRI'])

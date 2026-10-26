@@ -1,10 +1,10 @@
 {
-  "gerado_em": "2026-10-26T06:37:06.597686+00:00",
+  "gerado_em": "2026-10-26T07:29:10.824210+00:00",
   "metodo": "pipeline/modelagem/alerta.py",
   "descricao": "Diagrama de controle (quartis) das notificações de dengue de residentes em Goiânia por semana de início dos sintomas",
-  "data_corte": "2026-10-04",
+  "data_corte": "2026-10-11",
   "ano_atual": 2026,
-  "chave": "150afde8bd695e98261d10c46c9b22830a9c2e5c15c58bace783295134378e9a",
+  "chave": "dad5d9b11247bb0cd3baf0850f66e05da02cd10b0450908556bca53d4565d006",
   "parametros": {
     "anos_referencia": 5,
     "semanas_vizinhas": 1,
@@ -61,17 +61,17 @@
     },
     {
       "arquivo": "dados/datasus/goiania/dengue_2026.csv",
-      "sha256": "8b96da557d07de66bcf79940bc26d218ef5484bebfd00f1687078a4f2b021bbf"
+      "sha256": "d241d0a4fa2616e9a10d0ec66242a2ce3c75aebcce5183d0010d126331ddf2ad"
     }
   ],
   "produtos": [
     {
       "arquivo": "dados/modelagem/alerta_dengue_semanas.csv",
-      "sha256": "5ddd94df17e0cf2c69938233e94c120152c155be02f545ca07f1c4af2c4848d3"
+      "sha256": "399202e4366fed2e6fab0705e7e8f1d4ad659979c8ed33a9e0d951b51bd73df0"
     },
     {
       "arquivo": "dados/modelagem/alerta_dengue_avaliacao.csv",
-      "sha256": "35f7a0c246aa8604f7f2df6b821bf6e90229e318b985879d46a75098b602825c"
+      "sha256": "f927c794b3ec7e8ad4cb8988bc1b71ca579344d42ca65dfb1b9fc74c07fcbc36"
     }
   ],
   "limitacoes": [

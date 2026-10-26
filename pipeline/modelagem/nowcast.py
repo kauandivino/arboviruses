@@ -19,7 +19,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from pipeline.comum.epidemiologia import inicio_semana, janela_arquivo
+from pipeline.comum.epidemiologia import anos_com_arquivo, inicio_semana, janela_arquivo
 from pipeline.comum.ibge_utils import sha256
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -38,7 +38,7 @@ AGRAVOS = {
 }
 
 
-ANOS = range(2014, 2027)
+PRIMEIRO_ANO = 2014
 PRIMEIRO_ANO_ATUAL = 2022
 
 
@@ -46,8 +46,9 @@ def arquivo_do_ano(cfg, ano):
     return ROOT / (cfg['arquivos'] if ano >= PRIMEIRO_ANO_ATUAL else cfg['historico']).format(ano=ano)
 
 
-def carregar(agravo='dengue', anos=ANOS):
+def carregar(agravo='dengue', anos=None):
     cfg = AGRAVOS[agravo]
+    anos = anos or anos_com_arquivo(PRIMEIRO_ANO, lambda a: arquivo_do_ano(cfg, a))
     partes, exclusoes, fora_janela = [], [], []
     for ano in anos:
         arquivo = arquivo_do_ano(cfg, ano)

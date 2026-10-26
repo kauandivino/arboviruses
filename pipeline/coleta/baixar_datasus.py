@@ -18,6 +18,8 @@ import struct
 import sys
 import time
 
+from pipeline.comum.epidemiologia import ano_corrente, anos_ate_corrente
+
 HOST = 'ftp.datasus.gov.br'
 ROOT = '/dissemin/publicos/SINAN'
 DOCS = ['Docs_TAB_SINAN.zip', 'POP_I_Acesso_a_Microdados_5.pdf', 'POP_II_Descompactacao_expansao_conversao_3.pdf']
@@ -297,7 +299,7 @@ def process(item, base, code, keep_dbf=False):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--anos', nargs='+', type=int, default=list(range(2022,2027)))
+    parser.add_argument('--anos', nargs='+', type=int, default=anos_ate_corrente(2022))
     parser.add_argument('--agravos', nargs='+', choices=['dengue', 'animais'], default=['dengue','animais'])
     parser.add_argument('--saida', type=Path, default=Path('dados/datasus'))
     parser.add_argument('--municipio', default='520870', help='Código SINAN de seis dígitos; padrão Goiânia.')
@@ -323,7 +325,11 @@ def main():
         print('Consultando inventário oficial SINAN via FTP...',flush=True)
         items=inventory(sorted(set(args.anos)), args.agravos)
         missing=[(a,y) for a in args.agravos for y in args.anos if not any(i['agravo']==a and i['ano']==y for i in items)]
-        errors += [f'Arquivo não publicado no índice consultado: {a}/{y}' for a,y in missing]
+        # O arquivo preliminar do ano corrente pode ainda não ter sido publicado: aviso, não erro.
+        errors += [f'Arquivo não publicado no índice consultado: {a}/{y}' for a,y in missing if y != ano_corrente()]
+        for a,y in missing:
+            if y == ano_corrente():
+                print(f'Aviso: {a}/{y} ainda não publicado pelo DATASUS.', flush=True)
         save_json(base/'inventario.json',dict(consultado_em=now(),host=HOST,arquivos=items,ausentes=missing))
         with connect() as ftp:
             ftp.voidcmd('TYPE I')

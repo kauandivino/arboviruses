@@ -1,8 +1,8 @@
 {
-  "gerado_em": "2026-10-26T06:34:16.271756+00:00",
+  "gerado_em": "2026-10-26T07:18:57.974395+00:00",
   "metodo": "pipeline/modelagem/previsao.py",
   "descricao": "Previsão de 1 a 8 semanas das notificações de dengue de residentes em Goiânia, por semana de início dos sintomas, todas as classificações",
-  "origem_atual": "2026-10-04",
+  "origem_atual": "2026-10-11",
   "parametros": {
     "horizontes": [
       1,
@@ -38,7 +38,7 @@
       "2020-12-27"
     ]
   },
-  "chave_avaliacao": "c443aa81c74ee52832a5c833b34188d19abd3526ea91415e432d27ae55c85b7a",
+  "chave_avaliacao": "80212126e4f0a3b01e503edb2f8b5e02611fa8289bed75c147f163eb9c0132ef",
   "avaliacao": {
     "validacao": [
       "2016-01-03",
@@ -46,7 +46,7 @@
     ],
     "teste": [
       "2021-01-03",
-      "2025-08-10"
+      "2025-08-17"
     ],
     "candidatos": [
       "ridge_sem_clima",
@@ -108,7 +108,7 @@
     },
     {
       "arquivo": "dados/datasus/goiania/dengue_2026.csv",
-      "sha256": "8b96da557d07de66bcf79940bc26d218ef5484bebfd00f1687078a4f2b021bbf"
+      "sha256": "d241d0a4fa2616e9a10d0ec66242a2ce3c75aebcce5183d0010d126331ddf2ad"
     },
     {
       "arquivo": "dados/inmet_historico/goiania/horario.csv",
@@ -122,15 +122,15 @@
   "produtos": [
     {
       "arquivo": "dados/modelagem/previsao_dengue.csv",
-      "sha256": "2af3658329df618f6f659a8e99b6e54e21c042c09b8e31bb4ecfc7c3bc862eff"
+      "sha256": "1e7f80c857a071a995636fed22a448f58dbd8d1174922c4df40d4edc9ec51b69"
     },
     {
       "arquivo": "dados/modelagem/previsao_dengue_avaliacao.csv",
-      "sha256": "09a826333b7a84b55a184a30499688bae5ccbe2895e315f627db74f0e1fef6d1"
+      "sha256": "3ef033534a124e06a44daa8b408f501627609c703cc1a44aea7bce1f621260b9"
     },
     {
       "arquivo": "dados/modelagem/previsao_dengue_retrospectiva.csv",
-      "sha256": "86618371ece338c2d4027e281095a3a05404480e63edcc0e2390079e695c01fd"
+      "sha256": "87ce0ff07366b84eeb732c5060101b4081f293445ebda4403ddccb5638740efa"
     }
   ],
   "limitacoes": [

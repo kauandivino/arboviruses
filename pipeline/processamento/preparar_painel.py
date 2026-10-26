@@ -156,8 +156,9 @@ def snapshot(concluir=False):
     result = {'surface': 'dashboard', 'title': 'Saúde no Território · Goiânia',
         'generatedAt': datetime.now(timezone.utc).isoformat(), 'status': 'observed',
         'buildStatus': 'creating', 'filters': [
-            {'id': 'ano', 'label': 'Ano', 'field': 'ano', 'defaultValue': '2026', 'queryIds': ['municipal', 'clima']},
-            {'id': 'edicao', 'label': 'Publicação', 'field': 'edicao', 'defaultValue': '2026/SE38', 'queryIds': ['territorios']},
+            # Padrões seguem os dados: ano mais recente da série e publicação mais recente revisada.
+            {'id': 'ano', 'label': 'Ano', 'field': 'ano', 'defaultValue': max(r['ano'] for r in queries['municipal']['rows']), 'queryIds': ['municipal', 'clima']},
+            {'id': 'edicao', 'label': 'Publicação', 'field': 'edicao', 'defaultValue': max(queries['territorios']['rows'], key=lambda r: (r['ano_boletim'], r['se_boletim']))['edicao'], 'queryIds': ['territorios']},
             {'id': 'agravo', 'label': 'Agravo', 'field': 'agravo', 'defaultValue': 'dengue', 'queryIds': ['territorios']},
             {'id': 'indicador', 'label': 'Indicador', 'field': 'indicador', 'defaultValue': 'casos_notificados', 'queryIds': ['territorios']},
         ], 'queries': queries}

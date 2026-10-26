@@ -53,9 +53,23 @@ Tudo roda a partir da raiz:
 & .venv/Scripts/python.exe -m pipeline                # integração, testes, validações e painel (sem rede)
 & .venv/Scripts/python.exe -m pipeline --reprocessar  # refaz antes o processamento dos originais locais
 & .venv/Scripts/python.exe -m pipeline --coletar      # baixa antes as versões atuais das fontes oficiais
+& .venv/Scripts/python.exe -m pipeline --semanal      # baixa só SINAN e INMET (o mesmo da tarefa agendada)
 & .venv/Scripts/python.exe -m pipeline --listar       # mostra as etapas sem executar
 .\abrir_painel.ps1                                    # painel e registro de ações em http://127.0.0.1:4173/
 ```
+
+### Atualização automática semanal
+
+```powershell
+.\agendar_atualizacao.ps1                         # agenda toda segunda-feira às 07:00
+.\agendar_atualizacao.ps1 -Dia Friday -Hora 20:30 # outro dia e horário
+.\agendar_atualizacao.ps1 -Remover                # cancela o agendamento
+.\atualizar_semanal.ps1                           # roda a atualização agora
+```
+
+A tarefa roda no Agendador de Tarefas do Windows com o usuário atual: baixa o que mudou no SINAN e no INMET, reprocessa, recalcula os modelos, roda todos os testes e recompila o painel. Se o computador estiver desligado no horário, roda assim que ligar e houver internet. Logs das últimas 20 execuções ficam em `logs/` e o resumo em `dados/pipeline_ultima_execucao.json`. Se algo falhar, o painel anterior permanece. Novos dados não são enviados ao git automaticamente: revise e faça commit quando quiser registrar.
+
+Ficam fora da atualização automática, de propósito: CNES e malhas, que mudariam a seleção dos oito territórios (decisão da equipe), e os informes em PDF, que exigem conferência visual. Para eles, use `--coletar` e siga as instruções de cada documento.
 
 O pipeline para na primeira etapa que falhar. O painel só é atualizado depois que todos os testes e validações passam, e o registro de cada execução fica em `dados/pipeline_ultima_execucao.json`. Cada etapa também pode rodar sozinha, por exemplo `python -m pipeline.coleta.baixar_cnes`. Veja as opções na documentação de cada fonte.
 

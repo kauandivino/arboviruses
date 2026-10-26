@@ -27,3 +27,21 @@ def janela_arquivo(ano):
     inicio = min(pd.Timestamp(f'{ano}-01-01'), inicio_ano_epidemiologico(ano))
     fim = max(pd.Timestamp(f'{ano}-12-31'), inicio_ano_epidemiologico(ano + 1) - pd.Timedelta(days=1))
     return inicio, fim
+
+
+def ano_corrente():
+    return pd.Timestamp.now().year
+
+
+def anos_ate_corrente(inicio):
+    """Anos de `inicio` até o corrente. O corrente pode ainda não ter sido publicado pela fonte."""
+    return list(range(inicio, ano_corrente() + 1))
+
+
+def anos_com_arquivo(inicio, caminho):
+    """Anos cujo arquivo existe; só o ano corrente pode faltar, qualquer outra ausência é erro."""
+    anos = [a for a in anos_ate_corrente(inicio) if caminho(a).exists()]
+    faltando = [a for a in anos_ate_corrente(inicio) if a not in anos and a != ano_corrente()]
+    if faltando:
+        raise FileNotFoundError(f'Arquivos anuais ausentes: {faltando}')
+    return anos

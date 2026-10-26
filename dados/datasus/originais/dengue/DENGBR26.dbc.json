@@ -4,11 +4,11 @@
   "situacao": "PRELIM",
   "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/DENGBR26.dbc",
   "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/DENGBR26.dbc",
-  "tamanho": 22407563,
-  "modificado": "20261014171300",
+  "tamanho": 22163588,
+  "modificado": "20261019182600",
   "nome": "DENGBR26.dbc",
   "arquivo": "dados\\datasus\\originais\\dengue\\DENGBR26.dbc",
-  "sha256": "2b52672d307ec03ecd3a68b69f0af0510d0273dc95a7dc303991039d509541aa",
+  "sha256": "ca9bf938fbc3db066ed0969f79a7d0bb2e5309fcff9de93f1e7008317ab99714",
   "status": "baixado",
-  "obtido_em": "2026-10-19T21:35:11.741286+00:00"
+  "obtido_em": "2026-10-26T06:47:16.892108+00:00"
 }

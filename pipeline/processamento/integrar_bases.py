@@ -9,7 +9,7 @@ import hashlib
 import json
 import pandas as pd
 
-from pipeline.comum.epidemiologia import AGRAVOS, GOIANIA, janela_arquivo
+from pipeline.comum.epidemiologia import AGRAVOS, GOIANIA, anos_com_arquivo, janela_arquivo
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'dados/base_integrada'
@@ -60,7 +60,7 @@ def main():
     series, auditoria = [], []
     for agravo, cfg in AGRAVOS.items():
         quadros = {}
-        for ano in range(2022, 2027):
+        for ano in anos_com_arquivo(2022, lambda a: ROOT / cfg['arquivo'].format(ano=a)):
             rel = cfg['arquivo'].format(ano=ano)
             df = ler(rel)
             quadros[ano] = df
@@ -75,8 +75,9 @@ def main():
                                   'referencia_geografica': cfg['referencia'], 'campo_data': cfg['data']})
         repetidas = sobreposicao_entre_arquivos(quadros)
         assert repetidas == 0, f'{repetidas} notificações de {agravo} aparecem em mais de um arquivo anual'
-        partes = pd.concat(series[-5:], ignore_index=True)
-        series[-5:] = [partes.groupby('mes', as_index=False).agg(
+        n = len(quadros)
+        partes = pd.concat(series[-n:], ignore_index=True)
+        series[-n:] = [partes.groupby('mes', as_index=False).agg(
             n_registros=('n_registros', 'sum'), ano_arquivo=('ano_arquivo', ';'.join),
             situacao_fonte=('situacao_fonte', lambda s: 'PRELIM' if 'PRELIM' in set(s) else 'FINAIS'),
             arquivo_origem=('arquivo_origem', ';'.join)).assign(

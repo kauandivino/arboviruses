@@ -95,13 +95,14 @@ def main():
     final = serie_corrigida(reg, corte)
     ano_atual = semana_epidemiologica(corte)[0]
     # A simulação semana a semana leva alguns minutos; só é refeita se dados, parâmetros ou código mudarem.
-    entradas = [*arquivos, Path(__file__), Path(nc.__file__), Path(previsao.__file__), OUT / 'nowcast_dengue_manifesto.json']
-    chave = hashlib.sha256(json.dumps([sha256(f) for f in entradas] + [ANOS_REFERENCIA, VIZINHAS, SEMANAS_SEGUIDAS]).encode()).hexdigest()
+    # Do manifesto do nowcasting só entra o limite usado (o arquivo inteiro muda a cada execução).
+    limite_fator = json.loads((OUT / 'nowcast_dengue_manifesto.json').read_text(encoding='utf-8'))['limite_fator_por_defasagem']['0']
+    entradas = [*arquivos, Path(__file__), Path(nc.__file__), Path(previsao.__file__)]
+    chave = hashlib.sha256(json.dumps([sha256(f) for f in entradas] + [ANOS_REFERENCIA, VIZINHAS, SEMANAS_SEGUIDAS, limite_fator]).encode()).hexdigest()
     anterior = OUT / 'alerta_dengue_manifesto.json'
     if anterior.exists() and json.loads(anterior.read_text(encoding='utf-8')).get('chave') == chave:
         print('Simulação reaproveitada: dados, parâmetros e código inalterados.')
         return
-    limite_fator = json.loads((OUT / 'nowcast_dengue_manifesto.json').read_text(encoding='utf-8'))['limite_fator_por_defasagem']['0']
     temporadas = [t for ano in range(2014 + ANOS_REFERENCIA, ano_atual + 1) if (t := temporada(reg, ano, corte, limite_fator)) is not None]
     semanas = pd.concat(temporadas, ignore_index=True)
     semanas['final'] = semanas.semana.map(final)

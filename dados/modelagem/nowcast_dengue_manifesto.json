@@ -1,9 +1,9 @@
 {
-  "gerado_em": "2026-10-26T06:33:48.797934+00:00",
+  "gerado_em": "2026-10-26T07:18:28.476934+00:00",
   "metodo": "pipeline/modelagem/nowcast.py",
   "agravo": "dengue",
   "descricao": "Notificações de dengue de residentes em Goiânia, todas as classificações, por semana de início dos sintomas",
-  "data_corte_semana_digitacao": "2026-10-04",
+  "data_corte_semana_digitacao": "2026-10-11",
   "parametros": {
     "maturacao_semanas": 52,
     "janela_coortes": 20,
@@ -29,9 +29,9 @@
   },
   "semanas_suspensas": 0,
   "avaliacao": {
-    "cortes": 301,
+    "cortes": 302,
     "primeiro_corte": "2020-01-05",
-    "ultimo_corte": "2025-10-05",
+    "ultimo_corte": "2025-10-12",
     "estimativa_supera_numero_bruto_em_todas_as_defasagens": true
   },
   "exclusoes": [
@@ -146,7 +146,7 @@
     {
       "arquivo": "dados/datasus/goiania/dengue_2026.csv",
       "ano": 2026,
-      "registros": 34223,
+      "registros": 34628,
       "excluidos_notificacao_fora_da_janela": 0,
       "excluidos_sem_data_digitacao": 0,
       "excluidos_digitacao_antes_dos_sintomas": 0,
@@ -204,21 +204,21 @@
     },
     {
       "arquivo": "dados/datasus/goiania/dengue_2026.csv",
-      "sha256": "8b96da557d07de66bcf79940bc26d218ef5484bebfd00f1687078a4f2b021bbf"
+      "sha256": "d241d0a4fa2616e9a10d0ec66242a2ce3c75aebcce5183d0010d126331ddf2ad"
     }
   ],
   "produtos": [
     {
       "arquivo": "dados/modelagem/nowcast_dengue.csv",
-      "sha256": "e7c3eec489f0023ff72b00474bf36e46378503c4d158f9d95fb3b0cda3035a9e"
+      "sha256": "5490d920b6dcda5cab611b4c298d21043700bf096d49775a6e7973d807add4ef"
     },
     {
       "arquivo": "dados/modelagem/nowcast_dengue_avaliacao.csv",
-      "sha256": "e1ad13e03dbf9b582c0fead806eeb9baa6a7a17c0b0043d8304c7e5c3e28f191"
+      "sha256": "57ba20a4409735e37fb726c350f38b3e65b7f6d1a31d1f68dc12f97414dc5b1e"
     },
     {
       "arquivo": "dados/modelagem/nowcast_dengue_retrospectiva.csv",
-      "sha256": "c39d19c8d0622989cf6db507a7c471e05e8b439af1fe3a8a7ec38346015fcdb6"
+      "sha256": "a642ab1c59cae4880b47f10095fd6d46c1474ad43199472cbc1879ea2b3abd26"
     }
   ],
   "limitacoes": [

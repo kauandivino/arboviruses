@@ -3,12 +3,12 @@
   "ano": 2026,
   "situacao": "PRELIM",
   "municipio": "520870",
-  "registros_brasil": 474351,
+  "registros_brasil": 478404,
   "registros_excluidos_dbf": 0,
-  "registros_recorte": 38661,
+  "registros_recorte": 39113,
   "registros_por_referencia": {
-    "notificacao": 35855,
-    "residencia": 34223
+    "notificacao": 36264,
+    "residencia": 34628
   },
   "escorpioes_recorte": null,
   "tipos_animais": {},
@@ -871,8 +871,8 @@
     "DT_SIN_PRI"
   ],
   "csv": "dados\\datasus\\goiania\\dengue_2026.csv",
-  "csv_sha256": "8b96da557d07de66bcf79940bc26d218ef5484bebfd00f1687078a4f2b021bbf",
-  "processado_em": "2026-10-19T21:42:56.017951+00:00",
+  "csv_sha256": "d241d0a4fa2616e9a10d0ec66242a2ce3c75aebcce5183d0010d126331ddf2ad",
+  "processado_em": "2026-10-26T06:47:51.433691+00:00",
   "versao": 3,
-  "fonte_sha256": "2b52672d307ec03ecd3a68b69f0af0510d0273dc95a7dc303991039d509541aa"
+  "fonte_sha256": "ca9bf938fbc3db066ed0969f79a7d0bb2e5309fcff9de93f1e7008317ab99714"
 }

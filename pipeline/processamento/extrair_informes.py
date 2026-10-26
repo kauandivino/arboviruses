@@ -10,6 +10,7 @@ import re
 import unicodedata
 
 import pypdfium2 as pdfium
+from pipeline.comum.epidemiologia import anos_ate_corrente
 from pipeline.comum.ibge_utils import now, save_json, sha256
 from pipeline.comum.informes_pdf import chart_values
 from pipeline.processamento.inspecionar_informes import scan
@@ -147,7 +148,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--entrada',type=Path,default=Path('dados/informes'))
     parser.add_argument('--destino',type=Path,default=Path('dados/informes_extraidos'))
-    parser.add_argument('--anos',nargs='+',type=int,default=list(range(2022,2027)))
+    parser.add_argument('--anos',nargs='+',type=int,default=anos_ate_corrente(2022))
     parser.add_argument('--sem-ocr',action='store_true',help='Não executar OCR de nomes desenhados como contornos')
     args=parser.parse_args()
     out=args.destino; out.mkdir(parents=True,exist_ok=True)

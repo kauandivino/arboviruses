@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-26T06:30:54.276182+00:00",
+  "gerado_em": "2026-10-26T07:15:30.986196+00:00",
   "depende_de_resposta_da_secretaria": false,
   "metodo": "pipeline/processamento/integrar_bases.py",
   "fontes": [
@@ -37,11 +37,11 @@
     },
     {
       "arquivo": "dados/datasus/goiania/dengue_2026.csv",
-      "sha256": "8b96da557d07de66bcf79940bc26d218ef5484bebfd00f1687078a4f2b021bbf"
+      "sha256": "d241d0a4fa2616e9a10d0ec66242a2ce3c75aebcce5183d0010d126331ddf2ad"
     },
     {
       "arquivo": "dados/datasus/qualidade/dengue_2026.json",
-      "sha256": "9ed39a3dd8589fd3326b40214e5beff71ee35685fe2545e6ec2ba1e7f187696f"
+      "sha256": "0279404cd9772ce141cd1135269b7c4f7c170aae84f424709f627873ba1eb54b"
     },
     {
       "arquivo": "dados/datasus/goiania/escorpioes_2022.csv",

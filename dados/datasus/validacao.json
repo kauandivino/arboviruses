@@ -1,5 +1,5 @@
 {
-  "validado_em": "2026-10-26T06:38:37.626152+00:00",
+  "validado_em": "2026-10-26T07:30:21.168599+00:00",
   "status": "aprovado",
   "versao": 3,
   "arquivos_originais": 13,
@@ -113,11 +113,11 @@
       "agravo": "dengue",
       "ano": 2026,
       "situacao": "PRELIM",
-      "registros_recorte": 38661,
+      "registros_recorte": 39113,
       "escorpioes": null,
       "por_referencia": {
-        "residencia": 34223,
-        "notificacao": 35855
+        "residencia": 34628,
+        "notificacao": 36264
       }
     }
   ]

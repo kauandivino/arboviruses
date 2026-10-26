@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import zipfile
 
+from pipeline.comum.epidemiologia import ano_corrente, anos_ate_corrente
 from pipeline.coleta.baixar_datasus import VERSION, municipality, save_json, sha256, now
 
 
@@ -17,8 +18,10 @@ def validate(base=Path('dados/datasus')):
     manifest=json.loads((base/'manifesto.json').read_text(encoding='utf-8'))
     require(not manifest['erros'], 'Manifesto contém erros de download.')
     data=[r for r in manifest['arquivos'] if r['agravo'] in ['dengue','animais']]
-    expected={(a,y) for a in ['dengue','animais'] for y in range(2022,2027)}
-    require({(r['agravo'],r['ano']) for r in data} == expected,'Cobertura de agravos/anos incompleta.')
+    expected={(a,y) for a in ['dengue','animais'] for y in anos_ate_corrente(2022)}
+    # Só o ano corrente pode faltar (arquivo preliminar ainda não publicado).
+    obtido={(r['agravo'],r['ano']) for r in data}
+    require(obtido <= expected and all(y == ano_corrente() for _,y in expected - obtido),'Cobertura de agravos/anos incompleta.')
     for item in manifest['arquivos']:
         path=Path(item['arquivo'])
         require(path.stat().st_size==item['tamanho'],f'Tamanho incorreto: {path}')

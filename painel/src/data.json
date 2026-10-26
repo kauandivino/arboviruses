@@ -1,7 +1,7 @@
 {
   "surface": "dashboard",
   "title": "Saúde no Território · Goiânia",
-  "generatedAt": "2026-10-26T06:40:16.690446+00:00",
+  "generatedAt": "2026-10-26T07:24:38.044248+00:00",
   "status": "observed",
   "buildStatus": "complete",
   "filters": [
@@ -1680,7 +1680,7 @@
         },
         {
           "mes": "2026-01",
-          "n_registros": 2680,
+          "n_registros": 2679,
           "ano_arquivo": "2025;2026",
           "situacao_fonte": "PRELIM",
           "arquivo_origem": "dados/datasus/goiania/dengue_2025.csv;dados/datasus/goiania/dengue_2026.csv",
@@ -1782,7 +1782,7 @@
         },
         {
           "mes": "2026-04",
-          "n_registros": 5992,
+          "n_registros": 5990,
           "ano_arquivo": "2026",
           "situacao_fonte": "PRELIM",
           "arquivo_origem": "dados/datasus/goiania/dengue_2026.csv",
@@ -1816,7 +1816,7 @@
         },
         {
           "mes": "2026-05",
-          "n_registros": 5570,
+          "n_registros": 5571,
           "ano_arquivo": "2026",
           "situacao_fonte": "PRELIM",
           "arquivo_origem": "dados/datasus/goiania/dengue_2026.csv",
@@ -1850,7 +1850,7 @@
         },
         {
           "mes": "2026-06",
-          "n_registros": 3899,
+          "n_registros": 3896,
           "ano_arquivo": "2026",
           "situacao_fonte": "PRELIM",
           "arquivo_origem": "dados/datasus/goiania/dengue_2026.csv",
@@ -1884,7 +1884,7 @@
         },
         {
           "mes": "2026-07",
-          "n_registros": 2532,
+          "n_registros": 2530,
           "ano_arquivo": "2026",
           "situacao_fonte": "PRELIM",
           "arquivo_origem": "dados/datasus/goiania/dengue_2026.csv",
@@ -1952,7 +1952,7 @@
         },
         {
           "mes": "2026-09",
-          "n_registros": 1630,
+          "n_registros": 1600,
           "ano_arquivo": "2026",
           "situacao_fonte": "PRELIM",
           "arquivo_origem": "dados/datasus/goiania/dengue_2026.csv",
@@ -1986,7 +1986,7 @@
         },
         {
           "mes": "2026-10",
-          "n_registros": 510,
+          "n_registros": 952,
           "ano_arquivo": "2026",
           "situacao_fonte": "PRELIM",
           "arquivo_origem": "dados/datasus/goiania/dengue_2026.csv",
@@ -3930,7 +3930,7 @@
           "dados/base_integrada/municipal_mensal_clima.csv"
         ],
         "description": "Registros SINAN, todas as classificações: dengue por residência e mês da notificação; escorpiões por ocorrência e mês do acidente. Não são pessoas únicas. Ausência não é zero. 2026 parcial; meses com registros podem estar incompletos. Clima A002 em UTC.",
-        "dataPreparedAt": "2026-10-26T06:30:54.276182+00:00",
+        "dataPreparedAt": "2026-10-26T07:15:30.986196+00:00",
         "metricDefinitions": [
           {
             "label": "municipal mensal clima",
@@ -23044,7 +23044,7 @@
           "dados/base_integrada/bairros_publicados.csv"
         ],
         "description": "Lista publicada por edição, agravo e indicador; janelas sobrepostas não são somadas. Não comprova todos os bairros. Correspondência SIGGO nominal, sem homologação dos limites. Não permite taxas nem ranking municipal completo.",
-        "dataPreparedAt": "2026-10-26T06:30:54.276182+00:00",
+        "dataPreparedAt": "2026-10-26T07:15:30.986196+00:00",
         "metricDefinitions": [
           {
             "label": "bairros publicados",
@@ -24389,7 +24389,7 @@
           "dados/base_integrada/clima_mensal.csv"
         ],
         "description": "Estação A002; calendário UTC. Chuva observada pode ser parcial. Médias de temperatura e umidade são horárias, com cobertura explícita. Não atribui causalidade nem diferenças climáticas entre bairros.",
-        "dataPreparedAt": "2026-10-26T06:30:54.276182+00:00",
+        "dataPreparedAt": "2026-10-26T07:15:30.986196+00:00",
         "metricDefinitions": [
           {
             "label": "clima mensal",
@@ -27023,7 +27023,7 @@
           "dados/base_integrada/parceiros_candidatos.csv"
         ],
         "description": "Cadastros públicos sem motivo de desativação registrado e coordenadas dentro da malha municipal. Competência setembro de 2026. Funcionamento e interesse em parceria precisam ser verificados.",
-        "dataPreparedAt": "2026-10-26T06:30:54.276182+00:00",
+        "dataPreparedAt": "2026-10-26T07:15:30.986196+00:00",
         "metricDefinitions": [
           {
             "label": "parceiros candidatos",
@@ -27064,7 +27064,7 @@
           "dados/base_integrada/contexto_censo_2022.csv"
         ],
         "description": "População do Censo 2022, sem estimativa para 2026 nem rateio por bairro.",
-        "dataPreparedAt": "2026-10-26T06:30:54.276182+00:00",
+        "dataPreparedAt": "2026-10-26T07:15:30.986196+00:00",
         "metricDefinitions": [
           {
             "label": "contexto censo 2022",
@@ -53204,7 +53204,7 @@
           "dados/mapa/camadas.json",
           "dados/mapa/manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T06:31:10.895794+00:00",
+        "dataPreparedAt": "2026-10-26T07:15:47.112360+00:00",
         "metricDefinitions": [
           {
             "label": "Geometria",
@@ -53239,21 +53239,6 @@
     },
     "nowcast": {
       "rows": [
-        {
-          "semana": "2025-10-12",
-          "observado": 278,
-          "defasagem": null,
-          "estimado": null,
-          "fator": null,
-          "suspensa": null,
-          "inferior": null,
-          "superior": null,
-          "se": 202542,
-          "se_rotulo": "42/2025",
-          "excluidas_fora_janela": 5,
-          "semana_fim": "2025-10-18",
-          "exibir_estimativa": true
-        },
         {
           "semana": "2025-10-19",
           "observado": 211,
@@ -53466,7 +53451,7 @@
         },
         {
           "semana": "2026-01-25",
-          "observado": 943,
+          "observado": 942,
           "defasagem": null,
           "estimado": null,
           "fator": null,
@@ -53496,7 +53481,7 @@
         },
         {
           "semana": "2026-02-08",
-          "observado": 961,
+          "observado": 960,
           "defasagem": null,
           "estimado": null,
           "fator": null,
@@ -53616,7 +53601,7 @@
         },
         {
           "semana": "2026-04-05",
-          "observado": 1396,
+          "observado": 1395,
           "defasagem": null,
           "estimado": null,
           "fator": null,
@@ -53691,7 +53676,7 @@
         },
         {
           "semana": "2026-05-10",
-          "observado": 1298,
+          "observado": 1299,
           "defasagem": null,
           "estimado": null,
           "fator": null,
@@ -53706,7 +53691,7 @@
         },
         {
           "semana": "2026-05-17",
-          "observado": 1215,
+          "observado": 1214,
           "defasagem": null,
           "estimado": null,
           "fator": null,
@@ -53721,7 +53706,7 @@
         },
         {
           "semana": "2026-05-24",
-          "observado": 1041,
+          "observado": 1042,
           "defasagem": null,
           "estimado": null,
           "fator": null,
@@ -53736,7 +53721,7 @@
         },
         {
           "semana": "2026-05-31",
-          "observado": 966,
+          "observado": 965,
           "defasagem": null,
           "estimado": null,
           "fator": null,
@@ -53781,7 +53766,7 @@
         },
         {
           "semana": "2026-06-21",
-          "observado": 694,
+          "observado": 692,
           "defasagem": null,
           "estimado": null,
           "fator": null,
@@ -53796,7 +53781,7 @@
         },
         {
           "semana": "2026-06-28",
-          "observado": 624,
+          "observado": 623,
           "defasagem": null,
           "estimado": null,
           "fator": null,
@@ -53841,13 +53826,13 @@
         },
         {
           "semana": "2026-07-19",
-          "observado": 525,
-          "defasagem": 11.0,
-          "estimado": 546.0,
-          "fator": 1.040667726,
-          "suspensa": false,
-          "inferior": 525.0,
-          "superior": 662.0,
+          "observado": 524,
+          "defasagem": null,
+          "estimado": null,
+          "fator": null,
+          "suspensa": null,
+          "inferior": null,
+          "superior": null,
           "se": 202629,
           "se_rotulo": "29/2026",
           "excluidas_fora_janela": 0,
@@ -53857,12 +53842,12 @@
         {
           "semana": "2026-07-26",
           "observado": 438,
-          "defasagem": 10.0,
-          "estimado": 457.0,
-          "fator": 1.0424101584,
+          "defasagem": 11.0,
+          "estimado": 455.0,
+          "fator": 1.0382632176,
           "suspensa": false,
           "inferior": 438.0,
-          "superior": 569.0,
+          "superior": 551.0,
           "se": 202630,
           "se_rotulo": "30/2026",
           "excluidas_fora_janela": 0,
@@ -53872,9 +53857,9 @@
         {
           "semana": "2026-08-02",
           "observado": 426,
-          "defasagem": 9.0,
-          "estimado": 445.0,
-          "fator": 1.0444939622,
+          "defasagem": 10.0,
+          "estimado": 443.0,
+          "fator": 1.0400318934,
           "suspensa": false,
           "inferior": 426.0,
           "superior": 552.0,
@@ -53887,12 +53872,12 @@
         {
           "semana": "2026-08-09",
           "observado": 421,
-          "defasagem": 8.0,
-          "estimado": 441.0,
-          "fator": 1.0473430708,
+          "defasagem": 9.0,
+          "estimado": 439.0,
+          "fator": 1.0421677018,
           "suspensa": false,
           "inferior": 421.0,
-          "superior": 552.0,
+          "superior": 544.0,
           "se": 202632,
           "se_rotulo": "32/2026",
           "excluidas_fora_janela": 0,
@@ -53902,12 +53887,12 @@
         {
           "semana": "2026-08-16",
           "observado": 397,
-          "defasagem": 7.0,
-          "estimado": 417.0,
-          "fator": 1.0508169399,
+          "defasagem": 8.0,
+          "estimado": 415.0,
+          "fator": 1.0449359686,
           "suspensa": false,
           "inferior": 397.0,
-          "superior": 535.0,
+          "superior": 519.0,
           "se": 202633,
           "se_rotulo": "33/2026",
           "excluidas_fora_janela": 0,
@@ -53916,13 +53901,13 @@
         },
         {
           "semana": "2026-08-23",
-          "observado": 337,
-          "defasagem": 6.0,
-          "estimado": 356.0,
-          "fator": 1.0564204935,
+          "observado": 336,
+          "defasagem": 7.0,
+          "estimado": 352.0,
+          "fator": 1.0482744222,
           "suspensa": false,
-          "inferior": 337.0,
-          "superior": 467.0,
+          "inferior": 336.0,
+          "superior": 451.0,
           "se": 202634,
           "se_rotulo": "34/2026",
           "excluidas_fora_janela": 0,
@@ -53931,13 +53916,13 @@
         },
         {
           "semana": "2026-08-30",
-          "observado": 331,
-          "defasagem": 5.0,
-          "estimado": 354.0,
-          "fator": 1.069123336,
+          "observado": 330,
+          "defasagem": 6.0,
+          "estimado": 348.0,
+          "fator": 1.0540250438,
           "suspensa": false,
-          "inferior": 331.0,
-          "superior": 459.0,
+          "inferior": 330.0,
+          "superior": 456.0,
           "se": 202635,
           "se_rotulo": "35/2026",
           "excluidas_fora_janela": 0,
@@ -53946,13 +53931,13 @@
         },
         {
           "semana": "2026-09-06",
-          "observado": 370,
-          "defasagem": 4.0,
-          "estimado": 402.0,
-          "fator": 1.0871835753,
+          "observado": 361,
+          "defasagem": 5.0,
+          "estimado": 385.0,
+          "fator": 1.065518715,
           "suspensa": false,
-          "inferior": 370.0,
-          "superior": 561.0,
+          "inferior": 361.0,
+          "superior": 509.0,
           "se": 202636,
           "se_rotulo": "36/2026",
           "excluidas_fora_janela": 0,
@@ -53961,13 +53946,13 @@
         },
         {
           "semana": "2026-09-13",
-          "observado": 394,
-          "defasagem": 3.0,
-          "estimado": 440.0,
-          "fator": 1.1162522255,
+          "observado": 380,
+          "defasagem": 4.0,
+          "estimado": 412.0,
+          "fator": 1.0829396851,
           "suspensa": false,
-          "inferior": 394.0,
-          "superior": 643.0,
+          "inferior": 380.0,
+          "superior": 574.0,
           "se": 202637,
           "se_rotulo": "37/2026",
           "excluidas_fora_janela": 0,
@@ -53976,13 +53961,13 @@
         },
         {
           "semana": "2026-09-20",
-          "observado": 348,
-          "defasagem": 2.0,
-          "estimado": 409.0,
-          "fator": 1.1764676877,
+          "observado": 344,
+          "defasagem": 3.0,
+          "estimado": 381.0,
+          "fator": 1.1083744286,
           "suspensa": false,
-          "inferior": 348.0,
-          "superior": 622.0,
+          "inferior": 344.0,
+          "superior": 557.0,
           "se": 202638,
           "se_rotulo": "38/2026",
           "excluidas_fora_janela": 0,
@@ -53991,13 +53976,13 @@
         },
         {
           "semana": "2026-09-27",
-          "observado": 313,
-          "defasagem": 1.0,
-          "estimado": 444.0,
-          "fator": 1.4176917335,
+          "observado": 376,
+          "defasagem": 2.0,
+          "estimado": 437.0,
+          "fator": 1.1625851928,
           "suspensa": false,
-          "inferior": 313.0,
-          "superior": 807.0,
+          "inferior": 376.0,
+          "superior": 664.0,
           "se": 202639,
           "se_rotulo": "39/2026",
           "excluidas_fora_janela": 0,
@@ -54006,17 +53991,32 @@
         },
         {
           "semana": "2026-10-04",
-          "observado": 164,
-          "defasagem": 0.0,
-          "estimado": 686.0,
-          "fator": 4.1805051149,
+          "observado": 412,
+          "defasagem": 1.0,
+          "estimado": 571.0,
+          "fator": 1.3867690387,
           "suspensa": false,
-          "inferior": 235.0,
-          "superior": 3031.0,
+          "inferior": 412.0,
+          "superior": 1039.0,
           "se": 202640,
           "se_rotulo": "40/2026",
           "excluidas_fora_janela": 0,
           "semana_fim": "2026-10-10",
+          "exibir_estimativa": true
+        },
+        {
+          "semana": "2026-10-11",
+          "observado": 164,
+          "defasagem": 0.0,
+          "estimado": 649.0,
+          "fator": 3.9587228141,
+          "suspensa": false,
+          "inferior": 223.0,
+          "superior": 2864.0,
+          "se": 202641,
+          "se_rotulo": "41/2026",
+          "excluidas_fora_janela": 0,
+          "semana_fim": "2026-10-17",
           "exibir_estimativa": true
         }
       ],
@@ -54028,11 +54028,11 @@
           "dados/modelagem/nowcast_dengue_avaliacao.csv",
           "dados/modelagem/nowcast_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T06:33:48.797934+00:00",
+        "dataPreparedAt": "2026-10-26T07:18:28.476934+00:00",
         "metricDefinitions": [
           {
             "label": "Observado",
-            "definition": "Notificações de dengue de residentes em Goiânia, todas as classificações, por semana de início dos sintomas, digitadas até a semana de 2026-10-04."
+            "definition": "Notificações de dengue de residentes em Goiânia, todas as classificações, por semana de início dos sintomas, digitadas até a semana de 2026-10-11."
           },
           {
             "label": "Estimado",
@@ -54046,7 +54046,7 @@
         "evidenceFlow": [
           {
             "title": "Avaliação retrospectiva",
-            "detail": "301 datas de corte de 2020-01-05 a 2025-10-05, reconstruindo o que estava digitado em cada uma."
+            "detail": "302 datas de corte de 2020-01-05 a 2025-10-12, reconstruindo o que estava digitado em cada uma."
           }
         ],
         "caveats": [
@@ -54067,123 +54067,123 @@
       "rows": [
         {
           "defasagem": 0,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 561.42,
-          "erro_abs_medio_estimado": 261.76,
-          "erro_rel_mediano_bruto_pct": 89.83,
-          "erro_rel_mediano_estimado_pct": 30.99,
-          "cobertura_faixa_pct": 90.87,
-          "avaliacoes_com_faixa": 230.0
-        },
-        {
-          "defasagem": 1,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 411.01,
-          "erro_abs_medio_estimado": 151.02,
-          "erro_rel_mediano_bruto_pct": 64.5,
-          "erro_rel_mediano_estimado_pct": 18.96,
-          "cobertura_faixa_pct": 91.34,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 560.39,
+          "erro_abs_medio_estimado": 261.02,
+          "erro_rel_mediano_bruto_pct": 89.85,
+          "erro_rel_mediano_estimado_pct": 30.97,
+          "cobertura_faixa_pct": 90.91,
           "avaliacoes_com_faixa": 231.0
         },
         {
-          "defasagem": 2,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 306.14,
-          "erro_abs_medio_estimado": 103.19,
-          "erro_rel_mediano_bruto_pct": 46.59,
-          "erro_rel_mediano_estimado_pct": 14.48,
-          "cobertura_faixa_pct": 94.4,
+          "defasagem": 1,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 410.25,
+          "erro_abs_medio_estimado": 150.72,
+          "erro_rel_mediano_bruto_pct": 64.57,
+          "erro_rel_mediano_estimado_pct": 18.98,
+          "cobertura_faixa_pct": 91.38,
           "avaliacoes_com_faixa": 232.0
         },
         {
-          "defasagem": 3,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 244.97,
-          "erro_abs_medio_estimado": 86.83,
-          "erro_rel_mediano_bruto_pct": 36.79,
-          "erro_rel_mediano_estimado_pct": 12.15,
-          "cobertura_faixa_pct": 97.0,
+          "defasagem": 2,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 305.66,
+          "erro_abs_medio_estimado": 103.07,
+          "erro_rel_mediano_bruto_pct": 46.59,
+          "erro_rel_mediano_estimado_pct": 14.52,
+          "cobertura_faixa_pct": 94.42,
           "avaliacoes_com_faixa": 233.0
         },
         {
-          "defasagem": 4,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 202.95,
-          "erro_abs_medio_estimado": 73.29,
-          "erro_rel_mediano_bruto_pct": 30.04,
-          "erro_rel_mediano_estimado_pct": 10.35,
-          "cobertura_faixa_pct": 96.15,
+          "defasagem": 3,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 244.59,
+          "erro_abs_medio_estimado": 86.76,
+          "erro_rel_mediano_bruto_pct": 36.79,
+          "erro_rel_mediano_estimado_pct": 12.22,
+          "cobertura_faixa_pct": 97.01,
           "avaliacoes_com_faixa": 234.0
         },
         {
-          "defasagem": 5,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 174.49,
-          "erro_abs_medio_estimado": 69.91,
-          "erro_rel_mediano_bruto_pct": 24.73,
-          "erro_rel_mediano_estimado_pct": 10.1,
-          "cobertura_faixa_pct": 93.19,
+          "defasagem": 4,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 202.68,
+          "erro_abs_medio_estimado": 73.27,
+          "erro_rel_mediano_bruto_pct": 30.11,
+          "erro_rel_mediano_estimado_pct": 10.43,
+          "cobertura_faixa_pct": 96.17,
           "avaliacoes_com_faixa": 235.0
         },
         {
-          "defasagem": 6,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 151.25,
-          "erro_abs_medio_estimado": 66.54,
-          "erro_rel_mediano_bruto_pct": 20.55,
-          "erro_rel_mediano_estimado_pct": 9.13,
-          "cobertura_faixa_pct": 96.61,
+          "defasagem": 5,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 174.26,
+          "erro_abs_medio_estimado": 69.93,
+          "erro_rel_mediano_bruto_pct": 24.75,
+          "erro_rel_mediano_estimado_pct": 10.1,
+          "cobertura_faixa_pct": 92.8,
           "avaliacoes_com_faixa": 236.0
         },
         {
-          "defasagem": 7,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 132.97,
-          "erro_abs_medio_estimado": 62.68,
-          "erro_rel_mediano_bruto_pct": 17.22,
-          "erro_rel_mediano_estimado_pct": 8.53,
-          "cobertura_faixa_pct": 96.2,
+          "defasagem": 6,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 150.96,
+          "erro_abs_medio_estimado": 66.41,
+          "erro_rel_mediano_bruto_pct": 20.58,
+          "erro_rel_mediano_estimado_pct": 9.15,
+          "cobertura_faixa_pct": 96.62,
           "avaliacoes_com_faixa": 237.0
         },
         {
-          "defasagem": 8,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 117.72,
-          "erro_abs_medio_estimado": 57.55,
-          "erro_rel_mediano_bruto_pct": 13.61,
-          "erro_rel_mediano_estimado_pct": 7.43,
+          "defasagem": 7,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 132.69,
+          "erro_abs_medio_estimado": 62.52,
+          "erro_rel_mediano_bruto_pct": 17.23,
+          "erro_rel_mediano_estimado_pct": 8.46,
           "cobertura_faixa_pct": 96.22,
           "avaliacoes_com_faixa": 238.0
         },
         {
-          "defasagem": 9,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 104.87,
-          "erro_abs_medio_estimado": 53.17,
-          "erro_rel_mediano_bruto_pct": 11.43,
-          "erro_rel_mediano_estimado_pct": 6.83,
-          "cobertura_faixa_pct": 97.49,
+          "defasagem": 8,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 117.43,
+          "erro_abs_medio_estimado": 57.39,
+          "erro_rel_mediano_bruto_pct": 13.56,
+          "erro_rel_mediano_estimado_pct": 7.37,
+          "cobertura_faixa_pct": 96.23,
           "avaliacoes_com_faixa": 239.0
         },
         {
-          "defasagem": 10,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 93.52,
-          "erro_abs_medio_estimado": 50.33,
-          "erro_rel_mediano_bruto_pct": 9.72,
-          "erro_rel_mediano_estimado_pct": 6.0,
-          "cobertura_faixa_pct": 97.92,
+          "defasagem": 9,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 104.58,
+          "erro_abs_medio_estimado": 53.05,
+          "erro_rel_mediano_bruto_pct": 11.4,
+          "erro_rel_mediano_estimado_pct": 6.81,
+          "cobertura_faixa_pct": 97.5,
           "avaliacoes_com_faixa": 240.0
         },
         {
-          "defasagem": 11,
-          "avaliacoes": 301.0,
-          "erro_abs_medio_bruto": 82.8,
-          "erro_abs_medio_estimado": 46.4,
-          "erro_rel_mediano_bruto_pct": 8.0,
-          "erro_rel_mediano_estimado_pct": 5.16,
-          "cobertura_faixa_pct": 97.1,
+          "defasagem": 10,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 93.23,
+          "erro_abs_medio_estimado": 50.23,
+          "erro_rel_mediano_bruto_pct": 9.71,
+          "erro_rel_mediano_estimado_pct": 6.04,
+          "cobertura_faixa_pct": 97.93,
           "avaliacoes_com_faixa": 241.0
+        },
+        {
+          "defasagem": 11,
+          "avaliacoes": 302.0,
+          "erro_abs_medio_bruto": 82.55,
+          "erro_abs_medio_estimado": 46.31,
+          "erro_rel_mediano_bruto_pct": 7.98,
+          "erro_rel_mediano_estimado_pct": 5.18,
+          "cobertura_faixa_pct": 97.11,
+          "avaliacoes_com_faixa": 242.0
         }
       ],
       "source": {
@@ -54194,11 +54194,11 @@
           "dados/modelagem/nowcast_dengue_avaliacao.csv",
           "dados/modelagem/nowcast_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T06:33:48.797934+00:00",
+        "dataPreparedAt": "2026-10-26T07:18:28.476934+00:00",
         "metricDefinitions": [
           {
             "label": "Observado",
-            "definition": "Notificações de dengue de residentes em Goiânia, todas as classificações, por semana de início dos sintomas, digitadas até a semana de 2026-10-04."
+            "definition": "Notificações de dengue de residentes em Goiânia, todas as classificações, por semana de início dos sintomas, digitadas até a semana de 2026-10-11."
           },
           {
             "label": "Estimado",
@@ -54212,7 +54212,7 @@
         "evidenceFlow": [
           {
             "title": "Avaliação retrospectiva",
-            "detail": "301 datas de corte de 2020-01-05 a 2025-10-05, reconstruindo o que estava digitado em cada uma."
+            "detail": "302 datas de corte de 2020-01-05 a 2025-10-12, reconstruindo o que estava digitado em cada uma."
           }
         ],
         "caveats": [
@@ -54232,132 +54232,132 @@
     "previsao": {
       "rows": [
         {
-          "origem": "2026-10-04",
+          "origem": "2026-10-11",
           "horizonte": 1,
-          "semana": "2026-10-11",
-          "persistencia": 495.0,
-          "sazonal_ingenuo": 279.0,
-          "ridge_sem_clima": 511.0,
-          "ridge_com_clima": 493.0,
-          "gbm_com_clima": 427.0,
-          "modelo": "gbm_com_clima",
-          "exibir": true,
-          "previsto": 427.0,
-          "inferior": 105.0,
-          "superior": 1180.0,
-          "semana_fim": "2026-10-17"
-        },
-        {
-          "origem": "2026-10-04",
-          "horizonte": 2,
           "semana": "2026-10-18",
-          "persistencia": 495.0,
+          "persistencia": 510.0,
           "sazonal_ingenuo": 212.0,
-          "ridge_sem_clima": 511.0,
-          "ridge_com_clima": 480.0,
-          "gbm_com_clima": 492.0,
+          "ridge_sem_clima": 543.0,
+          "ridge_com_clima": 521.0,
+          "gbm_com_clima": 510.0,
           "modelo": "gbm_com_clima",
           "exibir": true,
-          "previsto": 492.0,
-          "inferior": 119.0,
-          "superior": 1453.0,
+          "previsto": 510.0,
+          "inferior": 126.0,
+          "superior": 1409.0,
           "semana_fim": "2026-10-24"
         },
         {
-          "origem": "2026-10-04",
-          "horizonte": 3,
+          "origem": "2026-10-11",
+          "horizonte": 2,
           "semana": "2026-10-25",
-          "persistencia": 495.0,
-          "sazonal_ingenuo": 244.0,
-          "ridge_sem_clima": 517.0,
-          "ridge_com_clima": 478.0,
-          "gbm_com_clima": 428.0,
+          "persistencia": 510.0,
+          "sazonal_ingenuo": 243.0,
+          "ridge_sem_clima": 550.0,
+          "ridge_com_clima": 511.0,
+          "gbm_com_clima": 547.0,
           "modelo": "gbm_com_clima",
           "exibir": true,
-          "previsto": 428.0,
-          "inferior": 101.0,
-          "superior": 1181.0,
+          "previsto": 547.0,
+          "inferior": 133.0,
+          "superior": 1615.0,
           "semana_fim": "2026-10-31"
         },
         {
-          "origem": "2026-10-04",
-          "horizonte": 4,
+          "origem": "2026-10-11",
+          "horizonte": 3,
           "semana": "2026-11-01",
-          "persistencia": 495.0,
-          "sazonal_ingenuo": 242.0,
-          "ridge_sem_clima": 530.0,
-          "ridge_com_clima": 475.0,
-          "gbm_com_clima": 439.0,
+          "persistencia": 510.0,
+          "sazonal_ingenuo": 241.0,
+          "ridge_sem_clima": 564.0,
+          "ridge_com_clima": 512.0,
+          "gbm_com_clima": 517.0,
           "modelo": "gbm_com_clima",
           "exibir": true,
-          "previsto": 439.0,
-          "inferior": 97.0,
-          "superior": 1198.0,
+          "previsto": 517.0,
+          "inferior": 122.0,
+          "superior": 1425.0,
           "semana_fim": "2026-11-07"
         },
         {
-          "origem": "2026-10-04",
-          "horizonte": 5,
+          "origem": "2026-10-11",
+          "horizonte": 4,
           "semana": "2026-11-08",
-          "persistencia": 495.0,
-          "sazonal_ingenuo": 269.0,
-          "ridge_sem_clima": 549.0,
-          "ridge_com_clima": 477.0,
-          "gbm_com_clima": 437.0,
+          "persistencia": 510.0,
+          "sazonal_ingenuo": 268.0,
+          "ridge_sem_clima": 583.0,
+          "ridge_com_clima": 512.0,
+          "gbm_com_clima": 529.0,
           "modelo": "gbm_com_clima",
           "exibir": true,
-          "previsto": 437.0,
-          "inferior": 90.0,
-          "superior": 1298.0,
+          "previsto": 529.0,
+          "inferior": 117.0,
+          "superior": 1443.0,
           "semana_fim": "2026-11-14"
         },
         {
-          "origem": "2026-10-04",
-          "horizonte": 6,
+          "origem": "2026-10-11",
+          "horizonte": 5,
           "semana": "2026-11-15",
-          "persistencia": 495.0,
-          "sazonal_ingenuo": 255.0,
-          "ridge_sem_clima": 575.0,
-          "ridge_com_clima": 486.0,
-          "gbm_com_clima": 528.0,
+          "persistencia": 510.0,
+          "sazonal_ingenuo": 254.0,
+          "ridge_sem_clima": 610.0,
+          "ridge_com_clima": 518.0,
+          "gbm_com_clima": 662.0,
           "modelo": "gbm_com_clima",
           "exibir": true,
-          "previsto": 528.0,
-          "inferior": 101.0,
-          "superior": 1694.0,
+          "previsto": 662.0,
+          "inferior": 137.0,
+          "superior": 1966.0,
           "semana_fim": "2026-11-21"
         },
         {
-          "origem": "2026-10-04",
-          "horizonte": 7,
+          "origem": "2026-10-11",
+          "horizonte": 6,
           "semana": "2026-11-22",
-          "persistencia": 495.0,
+          "persistencia": 510.0,
           "sazonal_ingenuo": 315.0,
-          "ridge_sem_clima": 607.0,
-          "ridge_com_clima": 503.0,
-          "gbm_com_clima": 589.0,
+          "ridge_sem_clima": 644.0,
+          "ridge_com_clima": 531.0,
+          "gbm_com_clima": 727.0,
           "modelo": "gbm_com_clima",
           "exibir": true,
-          "previsto": 589.0,
-          "inferior": 119.0,
-          "superior": 1734.0,
+          "previsto": 727.0,
+          "inferior": 139.0,
+          "superior": 2331.0,
           "semana_fim": "2026-11-28"
         },
         {
-          "origem": "2026-10-04",
-          "horizonte": 8,
+          "origem": "2026-10-11",
+          "horizonte": 7,
           "semana": "2026-11-29",
-          "persistencia": 495.0,
+          "persistencia": 510.0,
           "sazonal_ingenuo": 403.0,
-          "ridge_sem_clima": 642.0,
-          "ridge_com_clima": 525.0,
-          "gbm_com_clima": 441.0,
+          "ridge_sem_clima": 685.0,
+          "ridge_com_clima": 554.0,
+          "gbm_com_clima": 732.0,
           "modelo": "gbm_com_clima",
           "exibir": true,
-          "previsto": 441.0,
-          "inferior": 79.0,
-          "superior": 1375.0,
+          "previsto": 732.0,
+          "inferior": 148.0,
+          "superior": 2155.0,
           "semana_fim": "2026-12-05"
+        },
+        {
+          "origem": "2026-10-11",
+          "horizonte": 8,
+          "semana": "2026-12-06",
+          "persistencia": 510.0,
+          "sazonal_ingenuo": 372.0,
+          "ridge_sem_clima": 728.0,
+          "ridge_com_clima": 583.0,
+          "gbm_com_clima": 567.0,
+          "modelo": "gbm_com_clima",
+          "exibir": true,
+          "previsto": 567.0,
+          "inferior": 101.0,
+          "superior": 1763.0,
+          "semana_fim": "2026-12-12"
         }
       ],
       "source": {
@@ -54368,7 +54368,7 @@
           "dados/modelagem/previsao_dengue_avaliacao.csv",
           "dados/modelagem/previsao_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T06:34:16.271756+00:00",
+        "dataPreparedAt": "2026-10-26T07:18:57.974395+00:00",
         "metricDefinitions": [
           {
             "label": "Referências",
@@ -54380,7 +54380,7 @@
           },
           {
             "label": "Escolha e teste",
-            "definition": "Escolhido o candidato de menor erro nas origens de 2016-01-03 a 2020-12-27 (gbm_com_clima); teste nas origens de 2021-01-03 a 2025-08-10, não usadas na escolha."
+            "definition": "Escolhido o candidato de menor erro nas origens de 2016-01-03 a 2020-12-27 (gbm_com_clima); teste nas origens de 2021-01-03 a 2025-08-17, não usadas na escolha."
           },
           {
             "label": "Regra de exibição",
@@ -54390,7 +54390,7 @@
         "evidenceFlow": [
           {
             "title": "Avaliação retrospectiva",
-            "detail": "Origens semanais de 2016-01-03 a 2025-08-10, usando em cada uma só os dados disponíveis naquela data. Escolher na validação o candidato de menor erro absoluto médio; exibir somente se, no teste, superar a melhor referência em todos os horizontes."
+            "detail": "Origens semanais de 2016-01-03 a 2025-08-17, usando em cada uma só os dados disponíveis naquela data. Escolher na validação o candidato de menor erro absoluto médio; exibir somente se, no teste, superar a melhor referência em todos os horizontes."
           }
         ],
         "caveats": [
@@ -54435,9 +54435,9 @@
         },
         {
           "ano": 2025,
-          "erro_modelo": 268.7,
-          "erro_referencia": 259.9,
-          "avaliacoes": 292.0
+          "erro_modelo": 262.4,
+          "erro_referencia": 254.7,
+          "avaliacoes": 300.0
         }
       ],
       "source": {
@@ -54448,7 +54448,7 @@
           "dados/modelagem/previsao_dengue_avaliacao.csv",
           "dados/modelagem/previsao_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T06:34:16.271756+00:00",
+        "dataPreparedAt": "2026-10-26T07:18:57.974395+00:00",
         "metricDefinitions": [
           {
             "label": "Referências",
@@ -54460,7 +54460,7 @@
           },
           {
             "label": "Escolha e teste",
-            "definition": "Escolhido o candidato de menor erro nas origens de 2016-01-03 a 2020-12-27 (gbm_com_clima); teste nas origens de 2021-01-03 a 2025-08-10, não usadas na escolha."
+            "definition": "Escolhido o candidato de menor erro nas origens de 2016-01-03 a 2020-12-27 (gbm_com_clima); teste nas origens de 2021-01-03 a 2025-08-17, não usadas na escolha."
           },
           {
             "label": "Regra de exibição",
@@ -54470,7 +54470,7 @@
         "evidenceFlow": [
           {
             "title": "Avaliação retrospectiva",
-            "detail": "Origens semanais de 2016-01-03 a 2025-08-10, usando em cada uma só os dados disponíveis naquela data. Escolher na validação o candidato de menor erro absoluto médio; exibir somente se, no teste, superar a melhor referência em todos os horizontes."
+            "detail": "Origens semanais de 2016-01-03 a 2025-08-17, usando em cada uma só os dados disponíveis naquela data. Escolher na validação o candidato de menor erro absoluto médio; exibir somente se, no teste, superar a melhor referência em todos os horizontes."
           }
         ],
         "caveats": [
@@ -54651,163 +54651,163 @@
         },
         {
           "horizonte": 1,
-          "avaliacoes": 230,
-          "erro_abs_medio_persistencia": 202.43,
-          "erro_rel_mediano_persistencia_pct": 26.24,
-          "erro_abs_medio_sazonal_ingenuo": 567.23,
-          "erro_rel_mediano_sazonal_ingenuo_pct": 68.44,
-          "erro_abs_medio_ridge_sem_clima": 197.78,
-          "erro_rel_mediano_ridge_sem_clima_pct": 24.06,
-          "erro_abs_medio_ridge_com_clima": 202.48,
-          "erro_rel_mediano_ridge_com_clima_pct": 25.28,
-          "erro_abs_medio_gbm_com_clima": 196.74,
-          "erro_rel_mediano_gbm_com_clima_pct": 22.14,
+          "avaliacoes": 231,
+          "erro_abs_medio_persistencia": 201.97,
+          "erro_rel_mediano_persistencia_pct": 26.36,
+          "erro_abs_medio_sazonal_ingenuo": 565.1,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 68.42,
+          "erro_abs_medio_ridge_sem_clima": 197.28,
+          "erro_rel_mediano_ridge_sem_clima_pct": 24.29,
+          "erro_abs_medio_ridge_com_clima": 201.99,
+          "erro_rel_mediano_ridge_com_clima_pct": 25.34,
+          "erro_abs_medio_gbm_com_clima": 196.19,
+          "erro_rel_mediano_gbm_com_clima_pct": 22.23,
           "periodo": "teste",
           "modelo_escolhido": "gbm_com_clima",
           "modelo_supera_referencias": true,
           "melhor_referencia": "persistencia",
           "cobertura_faixa_pct": 100.0,
-          "avaliacoes_com_faixa": 230.0
+          "avaliacoes_com_faixa": 231.0
         },
         {
           "horizonte": 2,
-          "avaliacoes": 230,
-          "erro_abs_medio_persistencia": 233.71,
-          "erro_rel_mediano_persistencia_pct": 31.72,
-          "erro_abs_medio_sazonal_ingenuo": 570.47,
-          "erro_rel_mediano_sazonal_ingenuo_pct": 68.4,
-          "erro_abs_medio_ridge_sem_clima": 209.65,
-          "erro_rel_mediano_ridge_sem_clima_pct": 25.33,
-          "erro_abs_medio_ridge_com_clima": 215.66,
-          "erro_rel_mediano_ridge_com_clima_pct": 26.55,
-          "erro_abs_medio_gbm_com_clima": 227.9,
-          "erro_rel_mediano_gbm_com_clima_pct": 28.79,
+          "avaliacoes": 231,
+          "erro_abs_medio_persistencia": 233.03,
+          "erro_rel_mediano_persistencia_pct": 31.68,
+          "erro_abs_medio_sazonal_ingenuo": 568.45,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 68.35,
+          "erro_abs_medio_ridge_sem_clima": 208.92,
+          "erro_rel_mediano_ridge_sem_clima_pct": 25.15,
+          "erro_abs_medio_ridge_com_clima": 214.97,
+          "erro_rel_mediano_ridge_com_clima_pct": 26.42,
+          "erro_abs_medio_gbm_com_clima": 227.15,
+          "erro_rel_mediano_gbm_com_clima_pct": 28.46,
           "periodo": "teste",
           "modelo_escolhido": "gbm_com_clima",
           "modelo_supera_referencias": true,
           "melhor_referencia": "persistencia",
           "cobertura_faixa_pct": 98.7,
-          "avaliacoes_com_faixa": 230.0
+          "avaliacoes_com_faixa": 231.0
         },
         {
           "horizonte": 3,
-          "avaliacoes": 230,
-          "erro_abs_medio_persistencia": 263.14,
-          "erro_rel_mediano_persistencia_pct": 34.82,
-          "erro_abs_medio_sazonal_ingenuo": 573.57,
-          "erro_rel_mediano_sazonal_ingenuo_pct": 68.26,
-          "erro_abs_medio_ridge_sem_clima": 217.81,
-          "erro_rel_mediano_ridge_sem_clima_pct": 26.01,
-          "erro_abs_medio_ridge_com_clima": 229.21,
-          "erro_rel_mediano_ridge_com_clima_pct": 26.83,
-          "erro_abs_medio_gbm_com_clima": 254.45,
-          "erro_rel_mediano_gbm_com_clima_pct": 34.06,
+          "avaliacoes": 231,
+          "erro_abs_medio_persistencia": 262.37,
+          "erro_rel_mediano_persistencia_pct": 34.87,
+          "erro_abs_medio_sazonal_ingenuo": 571.68,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 68.17,
+          "erro_abs_medio_ridge_sem_clima": 217.03,
+          "erro_rel_mediano_ridge_sem_clima_pct": 25.95,
+          "erro_abs_medio_ridge_com_clima": 228.46,
+          "erro_rel_mediano_ridge_com_clima_pct": 26.72,
+          "erro_abs_medio_gbm_com_clima": 253.51,
+          "erro_rel_mediano_gbm_com_clima_pct": 34.04,
           "periodo": "teste",
           "modelo_escolhido": "gbm_com_clima",
           "modelo_supera_referencias": true,
           "melhor_referencia": "persistencia",
-          "cobertura_faixa_pct": 97.83,
-          "avaliacoes_com_faixa": 230.0
+          "cobertura_faixa_pct": 97.84,
+          "avaliacoes_com_faixa": 231.0
         },
         {
           "horizonte": 4,
-          "avaliacoes": 230,
-          "erro_abs_medio_persistencia": 292.73,
-          "erro_rel_mediano_persistencia_pct": 38.11,
-          "erro_abs_medio_sazonal_ingenuo": 582.09,
-          "erro_rel_mediano_sazonal_ingenuo_pct": 68.11,
-          "erro_abs_medio_ridge_sem_clima": 233.6,
-          "erro_rel_mediano_ridge_sem_clima_pct": 28.63,
-          "erro_abs_medio_ridge_com_clima": 243.56,
-          "erro_rel_mediano_ridge_com_clima_pct": 30.61,
-          "erro_abs_medio_gbm_com_clima": 280.09,
-          "erro_rel_mediano_gbm_com_clima_pct": 39.08,
+          "avaliacoes": 231,
+          "erro_abs_medio_persistencia": 291.67,
+          "erro_rel_mediano_persistencia_pct": 38.1,
+          "erro_abs_medio_sazonal_ingenuo": 579.61,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 68.04,
+          "erro_abs_medio_ridge_sem_clima": 232.65,
+          "erro_rel_mediano_ridge_sem_clima_pct": 28.32,
+          "erro_abs_medio_ridge_com_clima": 242.55,
+          "erro_rel_mediano_ridge_com_clima_pct": 30.3,
+          "erro_abs_medio_gbm_com_clima": 278.97,
+          "erro_rel_mediano_gbm_com_clima_pct": 38.9,
           "periodo": "teste",
           "modelo_escolhido": "gbm_com_clima",
           "modelo_supera_referencias": true,
           "melhor_referencia": "persistencia",
-          "cobertura_faixa_pct": 95.65,
-          "avaliacoes_com_faixa": 230.0
+          "cobertura_faixa_pct": 95.67,
+          "avaliacoes_com_faixa": 231.0
         },
         {
           "horizonte": 5,
-          "avaliacoes": 230,
-          "erro_abs_medio_persistencia": 322.25,
-          "erro_rel_mediano_persistencia_pct": 41.12,
-          "erro_abs_medio_sazonal_ingenuo": 589.29,
-          "erro_rel_mediano_sazonal_ingenuo_pct": 67.85,
-          "erro_abs_medio_ridge_sem_clima": 245.24,
-          "erro_rel_mediano_ridge_sem_clima_pct": 31.18,
-          "erro_abs_medio_ridge_com_clima": 253.03,
-          "erro_rel_mediano_ridge_com_clima_pct": 30.89,
-          "erro_abs_medio_gbm_com_clima": 290.32,
-          "erro_rel_mediano_gbm_com_clima_pct": 40.45,
+          "avaliacoes": 231,
+          "erro_abs_medio_persistencia": 321.11,
+          "erro_rel_mediano_persistencia_pct": 40.79,
+          "erro_abs_medio_sazonal_ingenuo": 586.83,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 67.71,
+          "erro_abs_medio_ridge_sem_clima": 244.22,
+          "erro_rel_mediano_ridge_sem_clima_pct": 31.09,
+          "erro_abs_medio_ridge_com_clima": 252.0,
+          "erro_rel_mediano_ridge_com_clima_pct": 30.27,
+          "erro_abs_medio_gbm_com_clima": 289.09,
+          "erro_rel_mediano_gbm_com_clima_pct": 40.28,
           "periodo": "teste",
           "modelo_escolhido": "gbm_com_clima",
           "modelo_supera_referencias": true,
           "melhor_referencia": "persistencia",
-          "cobertura_faixa_pct": 93.04,
-          "avaliacoes_com_faixa": 230.0
+          "cobertura_faixa_pct": 93.07,
+          "avaliacoes_com_faixa": 231.0
         },
         {
           "horizonte": 6,
-          "avaliacoes": 230,
-          "erro_abs_medio_persistencia": 352.47,
-          "erro_rel_mediano_persistencia_pct": 43.01,
-          "erro_abs_medio_sazonal_ingenuo": 596.94,
-          "erro_rel_mediano_sazonal_ingenuo_pct": 67.86,
-          "erro_abs_medio_ridge_sem_clima": 256.47,
-          "erro_rel_mediano_ridge_sem_clima_pct": 33.04,
-          "erro_abs_medio_ridge_com_clima": 261.22,
-          "erro_rel_mediano_ridge_com_clima_pct": 33.37,
-          "erro_abs_medio_gbm_com_clima": 302.24,
-          "erro_rel_mediano_gbm_com_clima_pct": 39.3,
+          "avaliacoes": 231,
+          "erro_abs_medio_persistencia": 351.13,
+          "erro_rel_mediano_persistencia_pct": 42.97,
+          "erro_abs_medio_sazonal_ingenuo": 594.42,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 67.71,
+          "erro_abs_medio_ridge_sem_clima": 255.48,
+          "erro_rel_mediano_ridge_sem_clima_pct": 32.81,
+          "erro_abs_medio_ridge_com_clima": 260.09,
+          "erro_rel_mediano_ridge_com_clima_pct": 33.27,
+          "erro_abs_medio_gbm_com_clima": 301.04,
+          "erro_rel_mediano_gbm_com_clima_pct": 39.2,
           "periodo": "teste",
           "modelo_escolhido": "gbm_com_clima",
           "modelo_supera_referencias": true,
           "melhor_referencia": "persistencia",
-          "cobertura_faixa_pct": 93.04,
-          "avaliacoes_com_faixa": 230.0
+          "cobertura_faixa_pct": 93.07,
+          "avaliacoes_com_faixa": 231.0
         },
         {
           "horizonte": 7,
-          "avaliacoes": 230,
-          "erro_abs_medio_persistencia": 389.87,
-          "erro_rel_mediano_persistencia_pct": 46.78,
-          "erro_abs_medio_sazonal_ingenuo": 605.46,
-          "erro_rel_mediano_sazonal_ingenuo_pct": 67.86,
-          "erro_abs_medio_ridge_sem_clima": 273.4,
-          "erro_rel_mediano_ridge_sem_clima_pct": 34.67,
-          "erro_abs_medio_ridge_com_clima": 276.58,
-          "erro_rel_mediano_ridge_com_clima_pct": 34.78,
-          "erro_abs_medio_gbm_com_clima": 304.47,
-          "erro_rel_mediano_gbm_com_clima_pct": 41.88,
+          "avaliacoes": 231,
+          "erro_abs_medio_persistencia": 388.44,
+          "erro_rel_mediano_persistencia_pct": 46.77,
+          "erro_abs_medio_sazonal_ingenuo": 602.92,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 67.71,
+          "erro_abs_medio_ridge_sem_clima": 272.25,
+          "erro_rel_mediano_ridge_sem_clima_pct": 34.63,
+          "erro_abs_medio_ridge_com_clima": 275.46,
+          "erro_rel_mediano_ridge_com_clima_pct": 34.71,
+          "erro_abs_medio_gbm_com_clima": 303.28,
+          "erro_rel_mediano_gbm_com_clima_pct": 41.78,
           "periodo": "teste",
           "modelo_escolhido": "gbm_com_clima",
           "modelo_supera_referencias": true,
           "melhor_referencia": "persistencia",
-          "cobertura_faixa_pct": 91.74,
-          "avaliacoes_com_faixa": 230.0
+          "cobertura_faixa_pct": 91.77,
+          "avaliacoes_com_faixa": 231.0
         },
         {
           "horizonte": 8,
-          "avaliacoes": 230,
-          "erro_abs_medio_persistencia": 419.72,
-          "erro_rel_mediano_persistencia_pct": 53.0,
-          "erro_abs_medio_sazonal_ingenuo": 612.73,
-          "erro_rel_mediano_sazonal_ingenuo_pct": 67.86,
-          "erro_abs_medio_ridge_sem_clima": 278.79,
-          "erro_rel_mediano_ridge_sem_clima_pct": 35.04,
-          "erro_abs_medio_ridge_com_clima": 280.25,
-          "erro_rel_mediano_ridge_com_clima_pct": 34.53,
-          "erro_abs_medio_gbm_com_clima": 305.67,
-          "erro_rel_mediano_gbm_com_clima_pct": 38.33,
+          "avaliacoes": 231,
+          "erro_abs_medio_persistencia": 418.11,
+          "erro_rel_mediano_persistencia_pct": 52.33,
+          "erro_abs_medio_sazonal_ingenuo": 610.16,
+          "erro_rel_mediano_sazonal_ingenuo_pct": 67.71,
+          "erro_abs_medio_ridge_sem_clima": 277.67,
+          "erro_rel_mediano_ridge_sem_clima_pct": 35.0,
+          "erro_abs_medio_ridge_com_clima": 279.06,
+          "erro_rel_mediano_ridge_com_clima_pct": 34.38,
+          "erro_abs_medio_gbm_com_clima": 304.46,
+          "erro_rel_mediano_gbm_com_clima_pct": 37.96,
           "periodo": "teste",
           "modelo_escolhido": "gbm_com_clima",
           "modelo_supera_referencias": true,
           "melhor_referencia": "persistencia",
-          "cobertura_faixa_pct": 91.3,
-          "avaliacoes_com_faixa": 230.0
+          "cobertura_faixa_pct": 91.34,
+          "avaliacoes_com_faixa": 231.0
         }
       ],
       "source": {
@@ -54818,7 +54818,7 @@
           "dados/modelagem/previsao_dengue_avaliacao.csv",
           "dados/modelagem/previsao_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T06:34:16.271756+00:00",
+        "dataPreparedAt": "2026-10-26T07:18:57.974395+00:00",
         "metricDefinitions": [
           {
             "label": "Referências",
@@ -54830,7 +54830,7 @@
           },
           {
             "label": "Escolha e teste",
-            "definition": "Escolhido o candidato de menor erro nas origens de 2016-01-03 a 2020-12-27 (gbm_com_clima); teste nas origens de 2021-01-03 a 2025-08-10, não usadas na escolha."
+            "definition": "Escolhido o candidato de menor erro nas origens de 2016-01-03 a 2020-12-27 (gbm_com_clima); teste nas origens de 2021-01-03 a 2025-08-17, não usadas na escolha."
           },
           {
             "label": "Regra de exibição",
@@ -54840,7 +54840,7 @@
         "evidenceFlow": [
           {
             "title": "Avaliação retrospectiva",
-            "detail": "Origens semanais de 2016-01-03 a 2025-08-10, usando em cada uma só os dados disponíveis naquela data. Escolher na validação o candidato de menor erro absoluto médio; exibir somente se, no teste, superar a melhor referência em todos os horizontes."
+            "detail": "Origens semanais de 2016-01-03 a 2025-08-17, usando em cada uma só os dados disponíveis naquela data. Escolher na validação o candidato de menor erro absoluto médio; exibir somente se, no teste, superar a melhor referência em todos os horizontes."
           }
         ],
         "caveats": [
@@ -59826,7 +59826,7 @@
           "mediana": 229.0,
           "q3": 270.0,
           "valores_referencia": 15.0,
-          "final": 279.0,
+          "final": 278.0,
           "zona_final": "epidemica"
         },
         {
@@ -59854,7 +59854,7 @@
           "mediana": 235.0,
           "q3": 288.0,
           "valores_referencia": 15.0,
-          "final": 244.0,
+          "final": 243.0,
           "zona_final": "alerta"
         },
         {
@@ -59868,7 +59868,7 @@
           "mediana": 254.0,
           "q3": 349.0,
           "valores_referencia": 15.0,
-          "final": 242.0,
+          "final": 241.0,
           "zona_final": "seguranca"
         },
         {
@@ -59882,7 +59882,7 @@
           "mediana": 306.0,
           "q3": 392.0,
           "valores_referencia": 15.0,
-          "final": 269.0,
+          "final": 268.0,
           "zona_final": "seguranca"
         },
         {
@@ -59896,7 +59896,7 @@
           "mediana": 315.0,
           "q3": 461.0,
           "valores_referencia": 15.0,
-          "final": 255.0,
+          "final": 254.0,
           "zona_final": "seguranca"
         },
         {
@@ -60022,7 +60022,7 @@
           "mediana": 632.0,
           "q3": 895.0,
           "valores_referencia": 15.0,
-          "final": 884.0,
+          "final": 883.0,
           "zona_final": "alerta"
         },
         {
@@ -60036,7 +60036,7 @@
           "mediana": 774.0,
           "q3": 1253.0,
           "valores_referencia": 15.0,
-          "final": 953.0,
+          "final": 951.0,
           "zona_final": "alerta"
         },
         {
@@ -60050,35 +60050,35 @@
           "mediana": 904.0,
           "q3": 1632.0,
           "valores_referencia": 15.0,
-          "final": 1017.0,
+          "final": 1016.0,
           "zona_final": "alerta"
         },
         {
           "semana": "2026-02-08",
           "ano": 2026,
           "se": 6,
-          "tempo_real": 7939.0,
+          "tempo_real": 7936.0,
           "zona_tempo_real": "indeterminada",
           "alerta": false,
           "q1": 553.0,
           "mediana": 1078.0,
           "q3": 2031.0,
           "valores_referencia": 15.0,
-          "final": 972.0,
+          "final": 970.0,
           "zona_final": "seguranca"
         },
         {
           "semana": "2026-02-15",
           "ano": 2026,
           "se": 7,
-          "tempo_real": 6181.0,
+          "tempo_real": 6180.0,
           "zona_tempo_real": "indeterminada",
           "alerta": false,
           "q1": 534.0,
           "mediana": 1078.0,
           "q3": 2215.0,
           "valores_referencia": 15.0,
-          "final": 1080.0,
+          "final": 1079.0,
           "zona_final": "alerta"
         },
         {
@@ -60092,7 +60092,7 @@
           "mediana": 1066.0,
           "q3": 2266.0,
           "valores_referencia": 15.0,
-          "final": 1130.0,
+          "final": 1128.0,
           "zona_final": "alerta"
         },
         {
@@ -60106,21 +60106,21 @@
           "mediana": 966.0,
           "q3": 2310.0,
           "valores_referencia": 15.0,
-          "final": 1288.0,
+          "final": 1286.0,
           "zona_final": "alerta"
         },
         {
           "semana": "2026-03-08",
           "ano": 2026,
           "se": 10,
-          "tempo_real": 4451.0,
+          "tempo_real": 4450.0,
           "zona_tempo_real": "epidemica",
           "alerta": true,
           "q1": 668.0,
           "mediana": 966.0,
           "q3": 2378.0,
           "valores_referencia": 15.0,
-          "final": 1428.0,
+          "final": 1426.0,
           "zona_final": "alerta"
         },
         {
@@ -60134,7 +60134,7 @@
           "mediana": 1013.0,
           "q3": 2418.0,
           "valores_referencia": 15.0,
-          "final": 1494.0,
+          "final": 1492.0,
           "zona_final": "alerta"
         },
         {
@@ -60148,21 +60148,21 @@
           "mediana": 1052.0,
           "q3": 2410.0,
           "valores_referencia": 15.0,
-          "final": 1457.0,
+          "final": 1456.0,
           "zona_final": "alerta"
         },
         {
           "semana": "2026-03-29",
           "ano": 2026,
           "se": 13,
-          "tempo_real": 1864.0,
+          "tempo_real": 1863.0,
           "zona_tempo_real": "alerta",
           "alerta": false,
           "q1": 754.0,
           "mediana": 1084.0,
           "q3": 2432.0,
           "valores_referencia": 15.0,
-          "final": 1305.0,
+          "final": 1303.0,
           "zona_final": "alerta"
         },
         {
@@ -60176,49 +60176,49 @@
           "mediana": 1084.0,
           "q3": 2258.0,
           "valores_referencia": 15.0,
-          "final": 1418.0,
+          "final": 1411.0,
           "zona_final": "alerta"
         },
         {
           "semana": "2026-04-12",
           "ano": 2026,
           "se": 15,
-          "tempo_real": 2764.0,
+          "tempo_real": 2763.0,
           "zona_tempo_real": "epidemica",
           "alerta": false,
           "q1": 662.0,
           "mediana": 1030.0,
           "q3": 2264.0,
           "valores_referencia": 15.0,
-          "final": 1463.0,
+          "final": 1454.0,
           "zona_final": "alerta"
         },
         {
           "semana": "2026-04-19",
           "ano": 2026,
           "se": 16,
-          "tempo_real": 2114.0,
+          "tempo_real": 2113.0,
           "zona_tempo_real": "epidemica",
           "alerta": true,
           "q1": 695.0,
           "mediana": 1030.0,
           "q3": 2066.0,
           "valores_referencia": 15.0,
-          "final": 1585.0,
+          "final": 1577.0,
           "zona_final": "alerta"
         },
         {
           "semana": "2026-04-26",
           "ano": 2026,
           "se": 17,
-          "tempo_real": 1993.0,
+          "tempo_real": 1992.0,
           "zona_tempo_real": "epidemica",
           "alerta": true,
           "q1": 662.0,
           "mediana": 1245.0,
           "q3": 1942.0,
           "valores_referencia": 15.0,
-          "final": 1415.0,
+          "final": 1411.0,
           "zona_final": "alerta"
         },
         {
@@ -60232,7 +60232,7 @@
           "mediana": 1265.0,
           "q3": 1809.0,
           "valores_referencia": 15.0,
-          "final": 1412.0,
+          "final": 1409.0,
           "zona_final": "alerta"
         },
         {
@@ -60246,21 +60246,21 @@
           "mediana": 1245.0,
           "q3": 1654.0,
           "valores_referencia": 15.0,
-          "final": 1330.0,
+          "final": 1329.0,
           "zona_final": "alerta"
         },
         {
           "semana": "2026-05-17",
           "ano": 2026,
           "se": 20,
-          "tempo_real": 1153.0,
+          "tempo_real": 1147.0,
           "zona_tempo_real": "alerta",
           "alerta": false,
           "q1": 480.0,
           "mediana": 897.0,
           "q3": 1467.0,
           "valores_referencia": 15.0,
-          "final": 1246.0,
+          "final": 1242.0,
           "zona_final": "alerta"
         },
         {
@@ -60274,7 +60274,7 @@
           "mediana": 787.0,
           "q3": 1177.0,
           "valores_referencia": 15.0,
-          "final": 1069.0,
+          "final": 1066.0,
           "zona_final": "alerta"
         },
         {
@@ -60288,7 +60288,7 @@
           "mediana": 675.0,
           "q3": 951.0,
           "valores_referencia": 15.0,
-          "final": 993.0,
+          "final": 989.0,
           "zona_final": "epidemica"
         },
         {
@@ -60302,7 +60302,7 @@
           "mediana": 571.0,
           "q3": 751.0,
           "valores_referencia": 15.0,
-          "final": 895.0,
+          "final": 893.0,
           "zona_final": "epidemica"
         },
         {
@@ -60316,21 +60316,21 @@
           "mediana": 511.0,
           "q3": 671.0,
           "valores_referencia": 15.0,
-          "final": 888.0,
+          "final": 885.0,
           "zona_final": "epidemica"
         },
         {
           "semana": "2026-06-21",
           "ano": 2026,
           "se": 25,
-          "tempo_real": 1261.0,
+          "tempo_real": 1251.0,
           "zona_tempo_real": "epidemica",
           "alerta": true,
           "q1": 231.0,
           "mediana": 446.0,
           "q3": 589.0,
           "valores_referencia": 15.0,
-          "final": 716.0,
+          "final": 711.0,
           "zona_final": "epidemica"
         },
         {
@@ -60344,7 +60344,7 @@
           "mediana": 350.0,
           "q3": 523.0,
           "valores_referencia": 15.0,
-          "final": 644.0,
+          "final": 641.0,
           "zona_final": "epidemica"
         },
         {
@@ -60358,21 +60358,21 @@
           "mediana": 339.0,
           "q3": 451.0,
           "valores_referencia": 15.0,
-          "final": 575.0,
+          "final": 572.0,
           "zona_final": "epidemica"
         },
         {
           "semana": "2026-07-12",
           "ano": 2026,
           "se": 28,
-          "tempo_real": 560.0,
+          "tempo_real": 556.0,
           "zona_tempo_real": "epidemica",
           "alerta": true,
           "q1": 172.0,
           "mediana": 321.0,
           "q3": 359.0,
           "valores_referencia": 15.0,
-          "final": 455.0,
+          "final": 452.0,
           "zona_final": "epidemica"
         },
         {
@@ -60386,21 +60386,21 @@
           "mediana": 296.0,
           "q3": 348.0,
           "valores_referencia": 15.0,
-          "final": 546.0,
+          "final": 543.0,
           "zona_final": "epidemica"
         },
         {
           "semana": "2026-07-26",
           "ano": 2026,
           "se": 30,
-          "tempo_real": 720.0,
+          "tempo_real": 721.0,
           "zona_tempo_real": "epidemica",
           "alerta": true,
           "q1": 162.0,
           "mediana": 236.0,
           "q3": 321.0,
           "valores_referencia": 15.0,
-          "final": 457.0,
+          "final": 455.0,
           "zona_final": "epidemica"
         },
         {
@@ -60414,7 +60414,7 @@
           "mediana": 235.0,
           "q3": 288.0,
           "valores_referencia": 15.0,
-          "final": 445.0,
+          "final": 443.0,
           "zona_final": "epidemica"
         },
         {
@@ -60428,7 +60428,7 @@
           "mediana": 210.0,
           "q3": 269.0,
           "valores_referencia": 15.0,
-          "final": 441.0,
+          "final": 439.0,
           "zona_final": "epidemica"
         },
         {
@@ -60442,7 +60442,7 @@
           "mediana": 210.0,
           "q3": 293.0,
           "valores_referencia": 15.0,
-          "final": 417.0,
+          "final": 415.0,
           "zona_final": "epidemica"
         },
         {
@@ -60456,91 +60456,105 @@
           "mediana": 245.0,
           "q3": 305.0,
           "valores_referencia": 15.0,
-          "final": 356.0,
+          "final": 352.0,
           "zona_final": "epidemica"
         },
         {
           "semana": "2026-08-30",
           "ano": 2026,
           "se": 35,
-          "tempo_real": 308.0,
-          "zona_tempo_real": "epidemica",
-          "alerta": true,
+          "tempo_real": 304.0,
+          "zona_tempo_real": "alerta",
+          "alerta": false,
           "q1": 212.0,
           "mediana": 245.0,
           "q3": 305.0,
           "valores_referencia": 15.0,
-          "final": 354.0,
+          "final": 348.0,
           "zona_final": "epidemica"
         },
         {
           "semana": "2026-09-06",
           "ano": 2026,
           "se": 36,
-          "tempo_real": 386.0,
+          "tempo_real": 356.0,
           "zona_tempo_real": "epidemica",
-          "alerta": true,
+          "alerta": false,
           "q1": 233.0,
           "mediana": 245.0,
           "q3": 296.0,
           "valores_referencia": 15.0,
-          "final": 402.0,
+          "final": 385.0,
           "zona_final": "epidemica"
         },
         {
           "semana": "2026-09-13",
           "ano": 2026,
           "se": 37,
-          "tempo_real": 559.0,
+          "tempo_real": 552.0,
           "zona_tempo_real": "epidemica",
           "alerta": true,
           "q1": 233.0,
           "mediana": 251.0,
           "q3": 285.0,
           "valores_referencia": 15.0,
-          "final": 440.0,
+          "final": 412.0,
           "zona_final": "epidemica"
         },
         {
           "semana": "2026-09-20",
           "ano": 2026,
           "se": 38,
-          "tempo_real": 461.0,
+          "tempo_real": 449.0,
           "zona_tempo_real": "epidemica",
           "alerta": true,
           "q1": 234.0,
           "mediana": 251.0,
           "q3": 282.0,
           "valores_referencia": 15.0,
-          "final": 409.0,
+          "final": 381.0,
           "zona_final": "epidemica"
         },
         {
           "semana": "2026-09-27",
           "ano": 2026,
           "se": 39,
-          "tempo_real": 457.0,
+          "tempo_real": 437.0,
           "zona_tempo_real": "epidemica",
           "alerta": true,
           "q1": 236.0,
           "mediana": 251.0,
           "q3": 279.0,
           "valores_referencia": 15.0,
-          "final": 444.0,
+          "final": 437.0,
           "zona_final": "epidemica"
         },
         {
           "semana": "2026-10-04",
           "ano": 2026,
           "se": 40,
-          "tempo_real": 686.0,
+          "tempo_real": 636.0,
           "zona_tempo_real": "epidemica",
           "alerta": true,
           "q1": 212.0,
           "mediana": 251.0,
           "q3": 278.0,
           "valores_referencia": 15.0,
-          "final": 686.0,
+          "final": 571.0,
+          "zona_final": "epidemica"
+        },
+        {
+          "semana": "2026-10-11",
+          "ano": 2026,
+          "se": 41,
+          "tempo_real": 649.0,
+          "zona_tempo_real": "epidemica",
+          "alerta": true,
+          "q1": 217.0,
+          "mediana": 259.0,
+          "q3": 278.0,
+          "valores_referencia": 15.0,
+          "final": 649.0,
           "zona_final": "epidemica"
         }
       ],
@@ -60552,7 +60566,7 @@
           "dados/modelagem/alerta_dengue_avaliacao.csv",
           "dados/modelagem/alerta_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T06:37:06.597686+00:00",
+        "dataPreparedAt": "2026-10-26T07:21:49.007320+00:00",
         "metricDefinitions": [
           {
             "label": "Zonas",
@@ -60675,7 +60689,7 @@
         {
           "ano": 2025,
           "temporada_completa": true,
-          "notificacoes": 32424,
+          "notificacoes": 32418,
           "pico_semana": "2025-05-04",
           "pico_se": 19,
           "pico_notificacoes": 1399,
@@ -60689,16 +60703,16 @@
         {
           "ano": 2026,
           "temporada_completa": false,
-          "notificacoes": 35665,
+          "notificacoes": 36022,
           "pico_semana": "2026-04-19",
           "pico_se": 16,
-          "pico_notificacoes": 1585,
+          "pico_notificacoes": 1577,
           "primeiro_alerta": "2026-03-01",
           "semanas_antes_do_pico": 7,
-          "semanas_em_alerta": 26,
+          "semanas_em_alerta": 25,
           "semanas_indeterminadas": 3,
-          "semanas_zona_epidemica_final": 20,
-          "alertas_confirmados_pct": 69.2
+          "semanas_zona_epidemica_final": 21,
+          "alertas_confirmados_pct": 68.0
         }
       ],
       "source": {
@@ -60709,7 +60723,7 @@
           "dados/modelagem/alerta_dengue_avaliacao.csv",
           "dados/modelagem/alerta_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T06:37:06.597686+00:00",
+        "dataPreparedAt": "2026-10-26T07:21:49.007320+00:00",
         "metricDefinitions": [
           {
             "label": "Zonas",
