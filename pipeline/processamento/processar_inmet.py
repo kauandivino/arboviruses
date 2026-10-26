@@ -38,7 +38,8 @@ def read_station(path, year):
     except UnicodeDecodeError:
         text = raw.decode('latin-1')
     lines = text.splitlines()
-    header_index = next(i for i, line in enumerate(lines) if normalized(line).startswith('DATA;'))
+    # Até 2018 o cabeçalho é "DATA (YYYY-MM-DD);HORA (UTC)"; a partir de 2019, "Data;Hora UTC".
+    header_index = next(i for i, line in enumerate(lines) if normalized(line).startswith(('DATA;', 'DATA (YYYY-MM-DD);')))
     metadata = dict(line.split(';', 1) for line in lines[:header_index] if ';' in line)
     if not any(v.strip() == 'A002' for v in metadata.values()):
         raise ValueError(f'Estação inesperada: {path}')

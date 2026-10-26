@@ -15,6 +15,7 @@ O script inicia `pipeline/servidor.py`, que serve o painel e a API local das aç
 ## Consultas disponíveis
 
 - Nowcasting (aba Evolução municipal): notificações de dengue por semana de início dos sintomas nas últimas 52 semanas, com a estimativa das digitações ainda esperadas nas 12 mais recentes, faixa de incerteza e avaliação retrospectiva. Método em [MODELAGEM.md](MODELAGEM.md).
+- Previsão e alerta (aba Evolução municipal): previsão das próximas 8 semanas, exibida porque superou referências simples no teste de 2021–2025, com as ressalvas por temporada; diagrama de controle do ano atual com as zonas dos cinco anos anteriores, a linha como era vista em cada semana e a avaliação do alerta nas temporadas 2019–2025.
 - Evolução municipal: dengue por residência e mês de notificação; escorpiões por ocorrência e mês do acidente. Filtro de ano, histórico completo, situação da fonte e população municipal do Censo 2022.
 - Bairros nos informes: publicação, agravo e indicador, valores da lista publicada, correspondência nominal e link para a página do PDF. Combinações inexistentes mostram ausência de observações. Seleções de múltiplas publicações não geram um gráfico agregado.
 - Clima: chuva observada, cobertura horária, temperatura e umidade da A002; calendário UTC e tabela de cobertura por variável.

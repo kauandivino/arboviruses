@@ -54,8 +54,9 @@ def etapas(args):
     yield 'integracao', 'preparar_mapa', modulo('processamento.preparar_mapa')
     yield 'modelagem', 'nowcast_dengue', modulo('modelagem.nowcast')
     yield 'modelagem', 'previsao_dengue', modulo('modelagem.previsao')
+    yield 'modelagem', 'alerta_dengue', modulo('modelagem.alerta')
     for teste in ['cnes', 'datasus', 'download', 'extracao_informes', 'ibge', 'inmet', 'integracao',
-                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao']:
+                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao', 'alerta']:
         yield 'verificacao', f'teste_{teste}', modulo(f'verificacao.verificar_{teste}')
     yield 'verificacao', 'validar_datasus', modulo('verificacao.validar_coleta_datasus')
     yield 'verificacao', 'validar_ibge', modulo('verificacao.validar_ibge')

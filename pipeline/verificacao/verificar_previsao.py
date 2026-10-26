@@ -56,7 +56,13 @@ class ProdutosTest(unittest.TestCase):
             self.assertEqual(sha256(pv.ROOT / item['arquivo']), item['sha256'], item['arquivo'])
         resumo = pd.read_csv(pv.OUT / 'previsao_dengue_avaliacao.csv')
         atual = pd.read_csv(pv.OUT / 'previsao_dengue.csv')
-        esperado = bool(resumo.modelo_supera_referencias.all())
+        validacao, teste = resumo[resumo.periodo == 'validacao'], resumo[resumo.periodo == 'teste']
+        # A escolha usa só a validação; a exibição, só o teste.
+        escolhido = min(pv.CANDIDATOS, key=lambda m: validacao[f'erro_abs_medio_{m}'].mean())
+        self.assertEqual(manifesto['avaliacao']['modelo_escolhido_na_validacao'], escolhido)
+        self.assertTrue((atual.modelo == escolhido).all())
+        melhor_ref = teste[[f'erro_abs_medio_{m}' for m in pv.REFERENCIAS]].min(axis=1)
+        esperado = bool((teste[f'erro_abs_medio_{escolhido}'] < melhor_ref).all())
         self.assertEqual(manifesto['avaliacao']['exibida'], esperado)
         self.assertTrue((atual.exibir == esperado).all())
         self.assertEqual(sorted(atual.horizonte), list(pv.HORIZONTES))

@@ -24,3 +24,6 @@ dados/**/originais/**
 
 # Microdados SINAN por notificação: não versionar (regenerados por pipeline.coleta.baixar_datasus)
 dados/datasus/goiania/*.csv
+
+# Histórico SINAN para treino dos modelos (microdados regenerados pela coleta)
+dados/datasus_historico/goiania/*.csv

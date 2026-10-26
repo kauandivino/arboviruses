@@ -65,11 +65,16 @@ class ProdutosTest(unittest.TestCase):
             self.assertEqual(sha256(nc.ROOT / item['arquivo']), item['sha256'], item['arquivo'])
 
     def test_estimativas_coerentes(self):
-        e = self.serie.dropna(subset=['estimado'])
-        self.assertEqual(len(e), nc.DEFASAGENS)
+        recentes = self.serie.dropna(subset=['defasagem'])
+        self.assertEqual(len(recentes), nc.DEFASAGENS)
+        suspensas = recentes[recentes.suspensa.astype(bool)]
+        self.assertTrue(suspensas.estimado.isna().all(), 'semana suspensa não pode exibir estimativa')
+        limites = {int(k): v for k, v in self.manifesto['limite_fator_por_defasagem'].items()}
+        self.assertTrue(all(r.fator > limites[int(r.defasagem)] for _, r in suspensas.iterrows()))
+        e = recentes.dropna(subset=['estimado'])
         self.assertTrue((e.estimado >= e.observado).all(), 'estimativa não pode ficar abaixo do já digitado')
         self.assertTrue((e.inferior >= e.observado).all() and (e.inferior <= e.estimado).all() and (e.superior >= e.estimado).all())
-        self.assertTrue(self.serie.dropna(subset=['estimado']).se.notna().all())
+        self.assertTrue(recentes.se.notna().all())
 
     def test_serie_conserva_os_registros_observados(self):
         reg, _, _ = nc.carregar('dengue')

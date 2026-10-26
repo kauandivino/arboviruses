@@ -31,26 +31,41 @@ JANELA = 20         # coortes recentes usadas em cada fator de desenvolvimento
 DEFASAGENS = 12     # semanas recentes que recebem estimativa
 QUANTIS = (0.025, 0.975)
 AGRAVOS = {
-    'dengue': {'arquivos': 'dados/datasus/goiania/dengue_{ano}.csv', 'municipio': 'ID_MN_RESI',
+    # Até 2021 os microdados ficam na coleta histórica (dados/datasus_historico), usada só para treinar e avaliar modelos.
+    'dengue': {'arquivos': 'dados/datasus/goiania/dengue_{ano}.csv', 'historico': 'dados/datasus_historico/goiania/dengue_{ano}.csv', 'municipio': 'ID_MN_RESI',
                'inicio': 'DT_SIN_PRI', 'semana_fonte': 'SEM_PRI', 'filtro': None,
                'descricao': 'Notificações de dengue de residentes em Goiânia, todas as classificações, por semana de início dos sintomas'},
 }
 
 
-def carregar(agravo='dengue', anos=range(2022, 2027)):
+ANOS = range(2014, 2027)
+PRIMEIRO_ANO_ATUAL = 2022
+
+
+def arquivo_do_ano(cfg, ano):
+    return ROOT / (cfg['arquivos'] if ano >= PRIMEIRO_ANO_ATUAL else cfg['historico']).format(ano=ano)
+
+
+def carregar(agravo='dengue', anos=ANOS):
     cfg = AGRAVOS[agravo]
     partes, exclusoes, fora_janela = [], [], []
     for ano in anos:
-        arquivo = ROOT / cfg['arquivos'].format(ano=ano)
+        arquivo = arquivo_do_ano(cfg, ano)
         d = pd.read_csv(arquivo, dtype=str, usecols=lambda c: c in {cfg['municipio'], cfg['inicio'], cfg['semana_fonte'], 'DT_NOTIFIC', 'DT_DIGITA'})
         d = d[d[cfg['municipio']] == GOIANIA]
         # Mesma regra da base integrada: notificações dentro da janela do arquivo (ano civil e epidemiológico).
         fora = ~pd.to_datetime(d.DT_NOTIFIC, errors='coerce').between(*janela_arquivo(ano))
-        sem_digitacao = d.DT_DIGITA.isna()
+        inicio = pd.to_datetime(d[cfg['inicio']], errors='coerce')
+        sem_digitacao = pd.to_datetime(d.DT_DIGITA, errors='coerce').isna()
+        sem_inicio = ~sem_digitacao & inicio.isna()
+        # Digitação anterior ao início dos sintomas é erro de preenchimento: excluída e auditada, não corrigida.
+        incoerente = ~sem_digitacao & (pd.to_datetime(d.DT_DIGITA, errors='coerce') < pd.to_datetime(d[cfg['inicio']], errors='coerce'))
         exclusoes.append({'arquivo': arquivo.relative_to(ROOT).as_posix(), 'ano': ano, 'registros': int(len(d)),
-                          'excluidos_notificacao_fora_da_janela': int(fora.sum()), 'excluidos_sem_data_digitacao': int((~fora & sem_digitacao).sum())})
-        partes.append((d[~fora & ~sem_digitacao], arquivo))
-        fora_janela.append(inicio_semana(d.loc[fora, cfg['inicio']]))
+                          'excluidos_notificacao_fora_da_janela': int(fora.sum()), 'excluidos_sem_data_digitacao': int((~fora & sem_digitacao).sum()),
+                          'excluidos_digitacao_antes_dos_sintomas': int((~fora & incoerente).sum()),
+                          'excluidos_inicio_sintomas_invalido': int((~fora & sem_inicio).sum())})
+        partes.append((d[~fora & ~sem_digitacao & ~incoerente & ~sem_inicio], arquivo))
+        fora_janela.append(inicio_semana(inicio[fora].dropna()))
     d = pd.concat([p for p, _ in partes], ignore_index=True)
     reg = pd.DataFrame({'t': inicio_semana(d[cfg['inicio']]), 'dig': inicio_semana(d.DT_DIGITA), 'se_fonte': d[cfg['semana_fonte']]})
     reg['atraso'] = ((reg.dig - reg.t) / SEMANA).astype(int)
@@ -90,7 +105,7 @@ def estimar(reg, corte):
     for t in acumulado.index[-DEFASAGENS:]:
         defasagem = int((corte - t) / SEMANA)
         observado = float(acumulado.loc[t, defasagem])
-        linhas.append({'semana': t, 'defasagem': defasagem, 'observado': observado, 'estimado': observado * cauda[defasagem]})
+        linhas.append({'semana': t, 'defasagem': defasagem, 'observado': observado, 'estimado': observado * cauda[defasagem], 'fator': cauda[defasagem]})
     return pd.DataFrame(linhas)
 
 
@@ -140,7 +155,8 @@ def main(agravo='dengue'):
     reg, exclusoes, arquivos = carregar(agravo)
     corte = reg.dig.max() - SEMANA  # última semana de digitação completa; a semana corrente fica de fora
     reg = reg[reg.dig <= corte]
-    cortes = pd.date_range(pd.Timestamp('2023-01-01'), corte - MATURACAO * SEMANA, freq='7D')
+    # Avaliação a partir de 2020: até 2018 a rotina de digitação era muito mais lenta (mediana de 11 a 21 semanas).
+    cortes = pd.date_range(pd.Timestamp('2020-01-05'), corte - MATURACAO * SEMANA, freq='7D')
     erros = avaliar(reg, cortes, corte)
 
     # Faixas de cada avaliação usam só erros cuja verdade já era conhecida naquela data (sem olhar o futuro).
@@ -156,12 +172,17 @@ def main(agravo='dengue'):
     resumo = metricas(erros)
     melhora = bool((resumo.erro_abs_medio_estimado < resumo.erro_abs_medio_bruto).all())
 
+    # Proteção: fator acima do maior visto na avaliação retrospectiva significa condição não testada
+    # (por exemplo, a pausa de digitação na virada do ano); a estimativa da semana fica suspensa.
+    limite_fator = erros.groupby('defasagem').fator.max()
     atual = estimar(reg, corte)
+    atual['suspensa'] = atual.fator > atual.defasagem.map(limite_fator)
     q = faixas(erros, corte)
     atual['inferior'] = atual.estimado * atual.defasagem.map(q[QUANTIS[0]])
     atual['superior'] = atual.estimado * atual.defasagem.map(q[QUANTIS[1]])
     # Faixa nunca abaixo do que já foi digitado.
     atual['inferior'] = np.maximum(atual.inferior, atual.observado)
+    atual.loc[atual.suspensa, ['estimado', 'inferior', 'superior']] = np.nan
     historico = reg.groupby('t').size().rename('observado').reset_index().rename(columns={'t': 'semana'})
     historico = historico[historico.semana > corte - 52 * SEMANA]
     serie = historico.merge(atual.drop(columns='observado'), on='semana', how='left')
@@ -187,6 +208,8 @@ def main(agravo='dengue'):
         'agravo': agravo, 'descricao': AGRAVOS[agravo]['descricao'],
         'data_corte_semana_digitacao': corte.date().isoformat(),
         'parametros': {'maturacao_semanas': MATURACAO, 'janela_coortes': JANELA, 'defasagens_estimadas': DEFASAGENS, 'quantis_faixa': QUANTIS},
+        'limite_fator_por_defasagem': {int(k): round(float(v), 4) for k, v in limite_fator.items()},
+        'semanas_suspensas': int(atual.suspensa.sum()),
         'avaliacao': {'cortes': len(cortes), 'primeiro_corte': cortes[0].date().isoformat(), 'ultimo_corte': cortes[-1].date().isoformat(),
                       'estimativa_supera_numero_bruto_em_todas_as_defasagens': melhora},
         'exclusoes': exclusoes,

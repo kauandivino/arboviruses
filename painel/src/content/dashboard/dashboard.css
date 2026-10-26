@@ -97,3 +97,18 @@
 .st-previsao { grid-template-columns: 1fr; }
 .st-previsao:has(> :nth-child(2)) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); }
 @media (max-width: 900px) { .st-previsao:has(> :nth-child(2)) { grid-template-columns: 1fr; } }
+
+/* Diagrama de controle */
+.st-zona { stroke: none; pointer-events: none; }
+.st-zona.sucesso, .st-leg-zona.sucesso { fill: color-mix(in srgb, var(--positive) 22%, transparent); background: color-mix(in srgb, var(--positive) 22%, transparent); }
+.st-zona.seguranca, .st-leg-zona.seguranca { fill: color-mix(in srgb, var(--positive) 10%, transparent); background: color-mix(in srgb, var(--positive) 10%, transparent); }
+.st-zona.alerta, .st-leg-zona.alerta { fill: color-mix(in srgb, var(--chart-4) 22%, transparent); background: color-mix(in srgb, var(--chart-4) 22%, transparent); }
+.st-zona.epidemica, .st-leg-zona.epidemica { fill: color-mix(in srgb, var(--negative) 16%, transparent); background: color-mix(in srgb, var(--negative) 16%, transparent); }
+.st-leg-zona { width: 14px; height: 10px; border: 1px solid var(--border); }
+.st-diagrama-linha { fill: none; stroke: var(--text); stroke-width: 2; pointer-events: none; }
+.st-diagrama-alerta { fill: var(--negative); stroke: var(--surface); stroke-width: 1.5; pointer-events: none; }
+.st-diagrama-cursor { stroke: var(--secondary); stroke-dasharray: 3 3; pointer-events: none; }
+.st-leg-linha { width: 16px; height: 2px; background: var(--text); }
+.st-leg-alerta { width: 9px; height: 9px; border-radius: 50%; background: var(--negative); }
+.st-diagrama-linha.tempo-real { stroke: var(--secondary); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.st-leg-linha.tempo-real { background: repeating-linear-gradient(90deg, var(--secondary) 0 5px, transparent 5px 8px); }

@@ -11,6 +11,9 @@ shapely==2.2.0
 pyproj==3.8.0
 openpyxl==3.1.5
 
+# Modelagem (gradient boosting da previsão)
+scikit-learn==1.7.2
+
 # SINAN/DATASUS (.dbc -> .dbf)
 pyreaddbc==2.0.4
 dbfread==2.0.7

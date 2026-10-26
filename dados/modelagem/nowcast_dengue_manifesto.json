@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-26T04:42:27.995220+00:00",
+  "gerado_em": "2026-10-26T06:33:48.797934+00:00",
   "metodo": "pipeline/modelagem/nowcast.py",
   "agravo": "dengue",
   "descricao": "Notificações de dengue de residentes em Goiânia, todas as classificações, por semana de início dos sintomas",
@@ -13,50 +13,179 @@
       0.975
     ]
   },
+  "limite_fator_por_defasagem": {
+    "0": 19.4777,
+    "1": 4.1943,
+    "2": 2.7712,
+    "3": 2.2767,
+    "4": 2.0159,
+    "5": 1.7804,
+    "6": 1.6007,
+    "7": 1.5327,
+    "8": 1.4859,
+    "9": 1.4508,
+    "10": 1.4142,
+    "11": 1.3833
+  },
+  "semanas_suspensas": 0,
   "avaliacao": {
-    "cortes": 145,
-    "primeiro_corte": "2023-01-01",
+    "cortes": 301,
+    "primeiro_corte": "2020-01-05",
     "ultimo_corte": "2025-10-05",
     "estimativa_supera_numero_bruto_em_todas_as_defasagens": true
   },
   "exclusoes": [
     {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2014.csv",
+      "ano": 2014,
+      "registros": 18623,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 31,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2015.csv",
+      "ano": 2015,
+      "registros": 77381,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 68,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 1
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2016.csv",
+      "ano": 2016,
+      "registros": 58479,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 110,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2017.csv",
+      "ano": 2017,
+      "registros": 30428,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 101,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2018.csv",
+      "ano": 2018,
+      "registros": 29649,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 72,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2019.csv",
+      "ano": 2019,
+      "registros": 33459,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 63,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2020.csv",
+      "ano": 2020,
+      "registros": 13828,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 14,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2021.csv",
+      "ano": 2021,
+      "registros": 11874,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 68,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
+    },
+    {
       "arquivo": "dados/datasus/goiania/dengue_2022.csv",
       "ano": 2022,
       "registros": 54853,
       "excluidos_notificacao_fora_da_janela": 0,
-      "excluidos_sem_data_digitacao": 413
+      "excluidos_sem_data_digitacao": 413,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
     },
     {
       "arquivo": "dados/datasus/goiania/dengue_2023.csv",
       "ano": 2023,
       "registros": 20232,
       "excluidos_notificacao_fora_da_janela": 0,
-      "excluidos_sem_data_digitacao": 121
+      "excluidos_sem_data_digitacao": 121,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
     },
     {
       "arquivo": "dados/datasus/goiania/dengue_2024.csv",
       "ano": 2024,
       "registros": 57890,
       "excluidos_notificacao_fora_da_janela": 0,
-      "excluidos_sem_data_digitacao": 526
+      "excluidos_sem_data_digitacao": 526,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
     },
     {
       "arquivo": "dados/datasus/goiania/dengue_2025.csv",
       "ano": 2025,
       "registros": 32816,
       "excluidos_notificacao_fora_da_janela": 425,
-      "excluidos_sem_data_digitacao": 1
+      "excluidos_sem_data_digitacao": 1,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
     },
     {
       "arquivo": "dados/datasus/goiania/dengue_2026.csv",
       "ano": 2026,
       "registros": 34223,
       "excluidos_notificacao_fora_da_janela": 0,
-      "excluidos_sem_data_digitacao": 0
+      "excluidos_sem_data_digitacao": 0,
+      "excluidos_digitacao_antes_dos_sintomas": 0,
+      "excluidos_inicio_sintomas_invalido": 0
     }
   ],
   "fontes": [
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2014.csv",
+      "sha256": "76ff337539369c587885ea3616a9b67ab26191b69cc19a8a410bd85fd4a254a9"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2015.csv",
+      "sha256": "612e26fcacf5addd46bbfa168985633247b97727e3d14da5b0e9b9c530223197"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2016.csv",
+      "sha256": "03c0713239d7379f6912904afa909affe6dc723837c94a44450eb1f307dee864"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2017.csv",
+      "sha256": "99fae3b4b53e0ab84372a858fb7d77060beda55dbc3690c92be1e9890bd04271"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2018.csv",
+      "sha256": "248636d73936c14351488a5d2ea7d74b6b68ea6f81b2496a509f11b60f944fe9"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2019.csv",
+      "sha256": "a85df89a996a7af057613815c228ce90db75d634b83e57dea3ba7d1074c27eb7"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2020.csv",
+      "sha256": "ac8f6e187ecf7a97e328ad34f1a4d1c2b5dc386e2b2fb5598c236209db437375"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2021.csv",
+      "sha256": "fd01a089c7d6a1ff3605c6430bf819efc2324bd0079a94c1741564848ba95380"
+    },
     {
       "arquivo": "dados/datasus/goiania/dengue_2022.csv",
       "sha256": "46fe4a0d6429aa3ab72e77655696181144f7b72ec29da5a50a934d5fc78612ba"
@@ -81,15 +210,15 @@
   "produtos": [
     {
       "arquivo": "dados/modelagem/nowcast_dengue.csv",
-      "sha256": "e5b02575fb6919bd24ebfa8106a8c7182186d3280df2876baf0c3e6bd1583e27"
+      "sha256": "e7c3eec489f0023ff72b00474bf36e46378503c4d158f9d95fb3b0cda3035a9e"
     },
     {
       "arquivo": "dados/modelagem/nowcast_dengue_avaliacao.csv",
-      "sha256": "7ba9aab2dcf1699708b548a93dc8a5fe9839ed6dcfa3704c7ea03b629dffa9fd"
+      "sha256": "e1ad13e03dbf9b582c0fead806eeb9baa6a7a17c0b0043d8304c7e5c3e28f191"
     },
     {
       "arquivo": "dados/modelagem/nowcast_dengue_retrospectiva.csv",
-      "sha256": "eb2aea51c27c5311c336474bd8280fd590fbbe7a2624cd03540f570768a426b8"
+      "sha256": "c39d19c8d0622989cf6db507a7c471e05e8b439af1fe3a8a7ec38346015fcdb6"
     }
   ],
   "limitacoes": [

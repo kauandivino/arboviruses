@@ -1,0 +1,87 @@
+{
+  "consultado_em": "2026-10-26T04:51:45.255528+00:00",
+  "host": "ftp.datasus.gov.br",
+  "arquivos": [
+    {
+      "agravo": "dengue",
+      "ano": 2014,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR14.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR14.dbc",
+      "tamanho": 22954814,
+      "modificado": "20260602113800",
+      "nome": "DENGBR14.dbc"
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2015,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR15.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR15.dbc",
+      "tamanho": 71822669,
+      "modificado": "20260526172400",
+      "nome": "DENGBR15.dbc"
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2016,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR16.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR16.dbc",
+      "tamanho": 60562998,
+      "modificado": "20260520134000",
+      "nome": "DENGBR16.dbc"
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2017,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR17.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR17.dbc",
+      "tamanho": 9850252,
+      "modificado": "20260512183200",
+      "nome": "DENGBR17.dbc"
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2018,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR18.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR18.dbc",
+      "tamanho": 11316425,
+      "modificado": "20260512183200",
+      "nome": "DENGBR18.dbc"
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2019,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR19.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR19.dbc",
+      "tamanho": 73167792,
+      "modificado": "20260506151900",
+      "nome": "DENGBR19.dbc"
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2020,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR20.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR20.dbc",
+      "tamanho": 47733119,
+      "modificado": "20260410150900",
+      "nome": "DENGBR20.dbc"
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2021,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR21.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR21.dbc",
+      "tamanho": 23488890,
+      "modificado": "20260910184500",
+      "nome": "DENGBR21.dbc"
+    }
+  ],
+  "ausentes": []
+}

@@ -54,6 +54,7 @@ function Grafico({ rows }) {
       <strong>SE {r.se_rotulo} · {dataCurta(r.semana)} a {dataCurta(r.semana_fim)}</strong>
       <span>Digitadas até o corte: {fmt(r.observado)}</span>
       {exibir && r.estimado != null && <><span>Estimativa final: {fmt(r.estimado)}</span><span>Faixa: {fmt(r.inferior)} a {fmt(r.superior)}</span></>}
+      {r.suspensa && <span>Estimativa suspensa: correção de atraso fora das condições testadas</span>}
       {r.excluidas_fora_janela > 0 && <span>Mais {fmt(r.excluidas_fora_janela)} notificações fora da janela do arquivo anual, excluídas para evitar dupla contagem</span>}
     </div>}
     <div className="st-mapa-legenda">
@@ -66,7 +67,7 @@ function Grafico({ rows }) {
 export function NowcastDengue({ rows, avaliacao }) {
   if (!rows.length) return null;
   const exibir = rows.some(r => r.exibir_estimativa);
-  const recentes = rows.filter(r => r.estimado != null).reverse();
+  const recentes = rows.filter(r => r.defasagem != null).reverse();
   const cobertura = avaliacao.filter(a => a.cobertura_faixa_pct != null).map(a => a.cobertura_faixa_pct);
   return <>
     <DataComponent id="nowcast-dengue" queryId="nowcast" title="Dengue · notificações por semana de início dos sintomas" kind="custom" variant="card"
@@ -95,26 +96,32 @@ export function NowcastDengue({ rows, avaliacao }) {
 
 const pct = v => v == null ? '—' : `${new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 1 }).format(v)}%`;
 
-export function PrevisaoDengue({ rows, avaliacao }) {
-  if (!avaliacao.length) return null;
+const NOMES = { ridge_sem_clima: 'ridge sem clima', ridge_com_clima: 'ridge com clima', gbm_com_clima: 'gradient boosting com clima' };
+
+export function PrevisaoDengue({ rows, avaliacao, temporadas }) {
+  const teste = avaliacao.filter(a => a.periodo === 'teste');
+  if (!teste.length) return null;
+  const escolhido = teste[0].modelo_escolhido;
   const exibir = rows.length > 0 && rows.every(r => r.exibir);
-  const linhas = avaliacao.map(a => ({ ...a, melhor: a.melhor_referencia === 'persistencia' ? 'Repetir as últimas 4 semanas' : 'Mesma semana do ano anterior',
+  const linhas = teste.map(a => ({ ...a, erro_modelo: a[`erro_abs_medio_${escolhido}`], erro_ref: Math.min(a.erro_abs_medio_persistencia, a.erro_abs_medio_sazonal_ingenuo),
     resultado: a.modelo_supera_referencias ? 'Modelo melhor' : 'Referência melhor' }));
+  const melhores = temporadas.filter(s => s.erro_modelo < s.erro_referencia).length;
+  const ressalva = temporadas.length ? ` Por temporada, o modelo errou menos que a referência em ${melhores} de ${temporadas.length} (${temporadas.map(s => `${s.ano}: ${fmt(s.erro_modelo)} × ${fmt(s.erro_referencia)}`).join('; ')}).` : '';
   return <div className="st-nowcast-tabelas st-previsao">
     {exibir && <DataComponent id="previsao-semanas" queryId="previsao" title="Previsão das próximas 8 semanas" kind="table" variant="card" sourceRows={rows} displayRows={rows}
-      description="Notificações esperadas por semana de início dos sintomas. A faixa vem dos erros da avaliação retrospectiva.">
+      description={`Modelo ${NOMES[escolhido]}, escolhido em 2016–2020 e testado em 2021–2025. Útil sobretudo para perceber subidas fortes; a faixa é larga e deve ser lida junto com o valor previsto.`}>
       <DataTable rows={rows} searchable={false} caption="Previsão" columns={[
         { field: 'horizonte', label: 'Semanas à frente' }, { field: 'semana', label: 'Início', renderCell: v => dataCurta(v) },
-        { field: 'previsto', label: 'Previsto' }, { field: 'inferior', label: 'Faixa inferior' }, { field: 'superior', label: 'Faixa superior' }]} />
+        { field: 'previsto', label: 'Previsto' }, { field: 'inferior', label: 'Faixa inferior' }, { field: 'superior', label: 'Faixa superior' },
+        { field: 'persistencia', label: 'Referência' }]} />
     </DataComponent>}
-    <DataComponent id="previsao-avaliacao" queryId="previsao_avaliacao" title={exibir ? 'Previsão: avaliação retrospectiva' : 'Previsão de 1 a 8 semanas: não exibida'} kind="table" variant="card"
+    <DataComponent id="previsao-avaliacao" queryId="previsao_avaliacao" title={exibir ? 'Previsão: teste em 2021–2025' : 'Previsão de 1 a 8 semanas: não exibida'} kind="table" variant="card"
       sourceRows={linhas} displayRows={linhas}
-      description={exibir ? 'O modelo superou as referências simples em todos os horizontes.' : 'O modelo com clima não superou a referência simples em todos os horizontes da avaliação retrospectiva (2023–2025), então nenhum valor previsto é mostrado. A avaliação é refeita a cada atualização dos dados.'}>
-      <DataTable rows={linhas} searchable={false} caption="Erro absoluto médio por horizonte" columns={[
+      description={(exibir ? 'No período de teste, nunca usado na escolha do modelo, o erro médio ficou abaixo da melhor referência simples em todos os horizontes.' : 'O modelo escolhido na validação não superou a melhor referência simples em todos os horizontes do teste, então nenhum valor previsto é mostrado.') + ressalva + ' A avaliação é refeita quando os dados mudam.'}>
+      <DataTable rows={linhas} searchable={false} caption="Erro absoluto médio por horizonte no teste" columns={[
         { field: 'horizonte', label: 'Semanas à frente' },
-        { field: 'erro_abs_medio_persistencia', label: 'Erro: últimas 4 semanas', renderCell: v => fmt(v) },
-        { field: 'erro_abs_medio_modelo_sem_clima', label: 'Erro: modelo sem clima', renderCell: v => fmt(v) },
-        { field: 'erro_abs_medio_modelo_com_clima', label: 'Erro: modelo com clima', renderCell: v => fmt(v) },
+        { field: 'erro_ref', label: 'Erro: melhor referência', renderCell: v => fmt(v) },
+        { field: 'erro_modelo', label: 'Erro: modelo', renderCell: v => fmt(v) },
         { field: 'resultado', label: 'Resultado' },
         { field: 'cobertura_faixa_pct', label: 'Acerto da faixa', renderCell: v => pct(v) }]} />
     </DataComponent>

@@ -105,14 +105,42 @@ def snapshot(concluir=False):
             'dataPreparedAt': meta['gerado_em'],
             'metricDefinitions': [
                 {'label': 'Referências', 'definition': 'Repetir a média das últimas 4 semanas (corrigidas pelo nowcasting) e repetir a mesma semana do ano anterior.'},
-                {'label': 'Modelo', 'definition': 'Regressão ridge no logaritmo das contagens, por horizonte: nível e tendência recentes, sazonalidade e, na versão com clima, chuva, temperatura e umidade médias por hora válida das semanas A-9 a A-2.'},
+                {'label': 'Candidatos', 'definition': 'Ridge sem clima, ridge com clima e gradient boosting com clima, no logaritmo das contagens, um ajuste por horizonte: nível e tendência recentes, sazonalidade e chuva, temperatura e umidade médias por hora válida das semanas A-9 a A-2.'},
+                {'label': 'Escolha e teste', 'definition': f"Escolhido o candidato de menor erro nas origens de {meta['avaliacao']['validacao'][0]} a {meta['avaliacao']['validacao'][1]} ({meta['avaliacao']['modelo_escolhido_na_validacao']}); teste nas origens de {meta['avaliacao']['teste'][0]} a {meta['avaliacao']['teste'][1]}, não usadas na escolha."},
                 {'label': 'Regra de exibição', 'definition': meta['avaliacao']['regra']}],
-            'evidenceFlow': [{'title': 'Avaliação retrospectiva', 'detail': f"{meta['avaliacao']['origens']} origens semanais de {meta['avaliacao']['primeira_origem']} a {meta['avaliacao']['ultima_origem']}, usando em cada uma só os dados disponíveis naquela data."}],
+            'evidenceFlow': [{'title': 'Avaliação retrospectiva', 'detail': f"Origens semanais de {meta['avaliacao']['validacao'][0]} a {meta['avaliacao']['teste'][1]}, usando em cada uma só os dados disponíveis naquela data. {meta['avaliacao']['regra'].capitalize()}."}],
             'caveats': meta['limitacoes']}
         metodo_previsao = [{'language': 'text', 'code': 'pipeline/modelagem/previsao.py'}]
         atual = pd.read_csv(previsao)
         queries['previsao'] = {'rows': json.loads(atual[atual.exibir].to_json(orient='records', force_ascii=False)), 'source': fonte_previsao, 'methods': metodo_previsao}
+        # Erro médio (todos os horizontes) por temporada do teste, do modelo escolhido e da melhor referência de cada horizonte.
+        retro = pd.read_csv(ROOT / 'dados/modelagem/previsao_dengue_retrospectiva.csv', parse_dates=['origem', 'semana'])
+        escolhido = meta['avaliacao']['modelo_escolhido_na_validacao']
+        retro = retro[(retro.periodo == 'teste')].dropna(subset=['verdade', escolhido, 'persistencia', 'sazonal_ingenuo'])
+        aval = pd.read_csv(ROOT / 'dados/modelagem/previsao_dengue_avaliacao.csv')
+        ref = aval[aval.periodo == 'teste'].set_index('horizonte').melhor_referencia
+        retro['referencia'] = [r[ref[r.horizonte]] for _, r in retro.iterrows()]
+        retro['ano'] = retro.semana.dt.year
+        temporadas = retro.groupby('ano').apply(lambda g: pd.Series({
+            'erro_modelo': (g[escolhido] - g.verdade).abs().mean(), 'erro_referencia': (g.referencia - g.verdade).abs().mean(),
+            'avaliacoes': len(g)}), include_groups=False).reset_index().round(1)
+        queries['previsao_temporadas'] = {'rows': json.loads(temporadas.to_json(orient='records', force_ascii=False)), 'source': fonte_previsao, 'methods': metodo_previsao}
         queries['previsao_avaliacao'] = {'rows': json.loads(pd.read_csv(ROOT / 'dados/modelagem/previsao_dengue_avaliacao.csv').to_json(orient='records', force_ascii=False)), 'source': fonte_previsao, 'methods': metodo_previsao}
+    alerta = ROOT / 'dados/modelagem/alerta_dengue_semanas.csv'
+    if alerta.exists():
+        meta = json.loads((ROOT / 'dados/modelagem/alerta_dengue_manifesto.json').read_text(encoding='utf-8'))
+        fonte_alerta = {'name': 'Diagrama de controle da dengue', 'provider': 'Modelo local sobre microdados SINAN 2014–2026',
+            'files': ['dados/modelagem/alerta_dengue_semanas.csv', 'dados/modelagem/alerta_dengue_avaliacao.csv', 'dados/modelagem/alerta_dengue_manifesto.json'],
+            'dataPreparedAt': meta['gerado_em'],
+            'metricDefinitions': [
+                {'label': 'Zonas', 'definition': 'Quartis das contagens da mesma semana epidemiológica e das vizinhas (±1) nos cinco anos anteriores, como eram conhecidas no início do ano: 15 valores por semana.'},
+                {'label': 'Alerta', 'definition': 'Duas semanas seguidas acima do 3º quartil, com o valor de cada semana como era visto naquela data (digitado e corrigido pelo nowcasting).'},
+                {'label': 'Dados atuais', 'definition': 'Contagem por semana de início dos sintomas com os dados mais recentes, corrigida pelo nowcasting nas semanas recentes.'}],
+            'evidenceFlow': [{'title': 'Avaliação', 'detail': 'Simulação semana a semana das temporadas 2019 a 2025, comparando os alertas com as zonas obtidas pelos dados finais.'}],
+            'caveats': meta['limitacoes']}
+        metodo_alerta = [{'language': 'text', 'code': 'pipeline/modelagem/alerta.py'}]
+        queries['alerta'] = {'rows': json.loads(pd.read_csv(alerta).to_json(orient='records', force_ascii=False)), 'source': fonte_alerta, 'methods': metodo_alerta}
+        queries['alerta_avaliacao'] = {'rows': json.loads(pd.read_csv(ROOT / 'dados/modelagem/alerta_dengue_avaliacao.csv').to_json(orient='records', force_ascii=False)), 'source': fonte_alerta, 'methods': metodo_alerta}
     from pipeline import acoes_campo
     acoes = acoes_campo.atuais()
     queries['acoes'] = {'rows': acoes, 'source': {'name': 'Ações de campo', 'provider': 'Registro local da equipe do projeto',

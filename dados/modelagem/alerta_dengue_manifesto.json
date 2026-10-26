@@ -1,0 +1,82 @@
+{
+  "gerado_em": "2026-10-26T06:37:06.597686+00:00",
+  "metodo": "pipeline/modelagem/alerta.py",
+  "descricao": "Diagrama de controle (quartis) das notificações de dengue de residentes em Goiânia por semana de início dos sintomas",
+  "data_corte": "2026-10-04",
+  "ano_atual": 2026,
+  "chave": "150afde8bd695e98261d10c46c9b22830a9c2e5c15c58bace783295134378e9a",
+  "parametros": {
+    "anos_referencia": 5,
+    "semanas_vizinhas": 1,
+    "semanas_seguidas_para_alerta": 2
+  },
+  "fontes": [
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2014.csv",
+      "sha256": "76ff337539369c587885ea3616a9b67ab26191b69cc19a8a410bd85fd4a254a9"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2015.csv",
+      "sha256": "612e26fcacf5addd46bbfa168985633247b97727e3d14da5b0e9b9c530223197"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2016.csv",
+      "sha256": "03c0713239d7379f6912904afa909affe6dc723837c94a44450eb1f307dee864"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2017.csv",
+      "sha256": "99fae3b4b53e0ab84372a858fb7d77060beda55dbc3690c92be1e9890bd04271"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2018.csv",
+      "sha256": "248636d73936c14351488a5d2ea7d74b6b68ea6f81b2496a509f11b60f944fe9"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2019.csv",
+      "sha256": "a85df89a996a7af057613815c228ce90db75d634b83e57dea3ba7d1074c27eb7"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2020.csv",
+      "sha256": "ac8f6e187ecf7a97e328ad34f1a4d1c2b5dc386e2b2fb5598c236209db437375"
+    },
+    {
+      "arquivo": "dados/datasus_historico/goiania/dengue_2021.csv",
+      "sha256": "fd01a089c7d6a1ff3605c6430bf819efc2324bd0079a94c1741564848ba95380"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2022.csv",
+      "sha256": "46fe4a0d6429aa3ab72e77655696181144f7b72ec29da5a50a934d5fc78612ba"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2023.csv",
+      "sha256": "8c0310c9de2174d91b657a89d26a820ff5206c63b3f8d01d55a61873e6eaea11"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2024.csv",
+      "sha256": "c4924c2519f105c918571272acd18c9b0b5d739dc23f4c28628a584897fc4107"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2025.csv",
+      "sha256": "f7a30a02dd5ed188c69f547cf7cc51b32d7d210160bad3422a01ce88d3c907ca"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2026.csv",
+      "sha256": "8b96da557d07de66bcf79940bc26d218ef5484bebfd00f1687078a4f2b021bbf"
+    }
+  ],
+  "produtos": [
+    {
+      "arquivo": "dados/modelagem/alerta_dengue_semanas.csv",
+      "sha256": "5ddd94df17e0cf2c69938233e94c120152c155be02f545ca07f1c4af2c4848d3"
+    },
+    {
+      "arquivo": "dados/modelagem/alerta_dengue_avaliacao.csv",
+      "sha256": "35f7a0c246aa8604f7f2df6b821bf6e90229e318b985879d46a75098b602825c"
+    }
+  ],
+  "limitacoes": [
+    "Usa contagens, não incidência: a população de Goiânia cresceu no período e não há estimativa anual oficial por semana.",
+    "Os cinco anos de referência incluem anos epidêmicos; o 3º quartil fica mais alto depois deles.",
+    "Na semana corrente, o valor em tempo real depende do nowcasting e tem incerteza alta."
+  ]
+}

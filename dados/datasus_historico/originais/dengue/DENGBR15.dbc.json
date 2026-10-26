@@ -1,0 +1,14 @@
+{
+  "agravo": "dengue",
+  "ano": 2015,
+  "situacao": "FINAIS",
+  "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR15.dbc",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR15.dbc",
+  "tamanho": 71822669,
+  "modificado": "20260526172400",
+  "nome": "DENGBR15.dbc",
+  "arquivo": "dados\\datasus_historico\\originais\\dengue\\DENGBR15.dbc",
+  "sha256": "d0109ad6ff34afdc7691d6a6de0805af49e9dd004d732c83194bbdddf550b8bc",
+  "status": "baixado",
+  "obtido_em": "2026-10-26T04:52:04.665207+00:00"
+}

@@ -1,42 +1,48 @@
 {
-  "iniciado_em": "2026-10-26T04:41:06.966517+00:00",
+  "iniciado_em": "2026-10-26T06:30:35.024312+00:00",
   "modo": "padrao",
   "etapas": [
     {
       "fase": "integracao",
       "etapa": "integrar_bases",
       "codigo_saida": 0,
-      "segundos": 27.3
+      "segundos": 19.5
     },
     {
       "fase": "integracao",
       "etapa": "selecionar_territorios",
       "codigo_saida": 0,
-      "segundos": 10.3
+      "segundos": 11.2
     },
     {
       "fase": "integracao",
       "etapa": "preparar_mapa",
       "codigo_saida": 0,
-      "segundos": 4.9
+      "segundos": 5.4
     },
     {
       "fase": "modelagem",
       "etapa": "nowcast_dengue",
       "codigo_saida": 0,
-      "segundos": 39.0
+      "segundos": 158.6
     },
     {
       "fase": "modelagem",
       "etapa": "previsao_dengue",
       "codigo_saida": 0,
-      "segundos": 57.0
+      "segundos": 27.8
+    },
+    {
+      "fase": "modelagem",
+      "etapa": "alerta_dengue",
+      "codigo_saida": 0,
+      "segundos": 170.2
     },
     {
       "fase": "verificacao",
       "etapa": "teste_cnes",
       "codigo_saida": 0,
-      "segundos": 2.3
+      "segundos": 2.5
     },
     {
       "fase": "verificacao",
@@ -54,25 +60,25 @@
       "fase": "verificacao",
       "etapa": "teste_extracao_informes",
       "codigo_saida": 0,
-      "segundos": 1.0
+      "segundos": 1.1
     },
     {
       "fase": "verificacao",
       "etapa": "teste_ibge",
       "codigo_saida": 0,
-      "segundos": 3.4
+      "segundos": 3.6
     },
     {
       "fase": "verificacao",
       "etapa": "teste_inmet",
       "codigo_saida": 0,
-      "segundos": 1.8
+      "segundos": 2.1
     },
     {
       "fase": "verificacao",
       "etapa": "teste_integracao",
       "codigo_saida": 0,
-      "segundos": 1.8
+      "segundos": 2.2
     },
     {
       "fase": "verificacao",
@@ -84,99 +90,105 @@
       "fase": "verificacao",
       "etapa": "teste_revisao_territorial",
       "codigo_saida": 0,
-      "segundos": 2.0
+      "segundos": 2.2
     },
     {
       "fase": "verificacao",
       "etapa": "teste_selecao",
       "codigo_saida": 0,
-      "segundos": 2.3
+      "segundos": 2.5
     },
     {
       "fase": "verificacao",
       "etapa": "teste_mapa",
       "codigo_saida": 0,
-      "segundos": 14.3
+      "segundos": 14.9
     },
     {
       "fase": "verificacao",
       "etapa": "teste_acoes_campo",
       "codigo_saida": 0,
-      "segundos": 1.7
+      "segundos": 2.2
     },
     {
       "fase": "verificacao",
       "etapa": "teste_nowcast",
       "codigo_saida": 0,
-      "segundos": 4.3
+      "segundos": 8.0
     },
     {
       "fase": "verificacao",
       "etapa": "teste_previsao",
       "codigo_saida": 0,
-      "segundos": 4.9
+      "segundos": 12.4
+    },
+    {
+      "fase": "verificacao",
+      "etapa": "teste_alerta",
+      "codigo_saida": 0,
+      "segundos": 16.4
     },
     {
       "fase": "verificacao",
       "etapa": "validar_datasus",
       "codigo_saida": 0,
-      "segundos": 15.8
+      "segundos": 16.7
     },
     {
       "fase": "verificacao",
       "etapa": "validar_ibge",
       "codigo_saida": 0,
-      "segundos": 15.9
+      "segundos": 18.2
     },
     {
       "fase": "verificacao",
       "etapa": "validar_malha_municipal",
       "codigo_saida": 0,
-      "segundos": 6.0
+      "segundos": 10.0
     },
     {
       "fase": "verificacao",
       "etapa": "validar_cnes",
       "codigo_saida": 0,
-      "segundos": 12.1
+      "segundos": 14.0
     },
     {
       "fase": "verificacao",
       "etapa": "validar_inmet",
       "codigo_saida": 0,
-      "segundos": 10.0
+      "segundos": 19.0
     },
     {
       "fase": "verificacao",
       "etapa": "validar_informes",
       "codigo_saida": 0,
-      "segundos": 14.4
+      "segundos": 22.6
     },
     {
       "fase": "verificacao",
       "etapa": "validar_revisao_territorial",
       "codigo_saida": 0,
-      "segundos": 5.4
+      "segundos": 11.6
     },
     {
       "fase": "painel",
       "etapa": "snapshot",
       "codigo_saida": 0,
-      "segundos": 2.2
+      "segundos": 3.9
     },
     {
       "fase": "painel",
       "etapa": "compilar",
       "codigo_saida": 0,
-      "segundos": 19.1
+      "segundos": 24.8
     },
     {
       "fase": "painel",
       "etapa": "verificar_navegador",
       "codigo_saida": 0,
-      "segundos": 34.9
+      "segundos": 47.7
     }
   ],
-  "concluido_em": "2026-10-26T04:46:24.153796+00:00",
+  "concluido_em": "2026-10-26T06:41:29.561974+00:00",
   "status": "aprovado"
 }

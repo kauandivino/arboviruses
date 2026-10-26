@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2014.zip",
+    "bytes": 98909484,
+    "etag": "\"5e53d2c-5ae539393aa40\"",
+    "ultima_modificacao": "Wed, 02 Sep 2020 12:14:25 GMT",
+    "ano": 2014,
+    "rotulo_pagina": "ANO 2014 (AUTOMÁTICA)",
+    "coletado_em": "2026-10-26T04:52:17.636350+00:00",
+    "sha256": "ead543e4669b54fd7587ad7f0bfccc883a91d26e5eb62067650ddff9388281ac"
+  },
+  {
+    "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2015.zip",
+    "bytes": 97967689,
+    "etag": "\"5d6de49-5ae5393a2ec80\"",
+    "ultima_modificacao": "Wed, 02 Sep 2020 12:14:26 GMT",
+    "ano": 2015,
+    "rotulo_pagina": "ANO 2015 (AUTOMÁTICA)",
+    "coletado_em": "2026-10-26T04:52:20.584905+00:00",
+    "sha256": "93ea17021cf7dc17fea5faccad30f1da1f97805acf502415e7246737cb325e91"
+  },
+  {
+    "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2016.zip",
+    "bytes": 102439056,
+    "etag": "\"61b1890-5ae5393b22ec0\"",
+    "ultima_modificacao": "Wed, 02 Sep 2020 12:14:27 GMT",
+    "ano": 2016,
+    "rotulo_pagina": "ANO 2016 (AUTOMÁTICA)",
+    "coletado_em": "2026-10-26T04:53:12.530182+00:00",
+    "sha256": "62a88787f1d976d7898dba2acbf5874f79cd486816e6d9531c53966557eb20a6"
+  },
+  {
+    "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2017.zip",
+    "bytes": 109677898,
+    "etag": "\"6898d4a-5ae5393c17100\"",
+    "ultima_modificacao": "Wed, 02 Sep 2020 12:14:28 GMT",
+    "ano": 2017,
+    "rotulo_pagina": "ANO 2017 (AUTOMÁTICA)",
+    "coletado_em": "2026-10-26T04:53:14.601676+00:00",
+    "sha256": "0f620edffe32a9df55e2c0619f5f9d2fe9965ffe2fa03bfa48abac4a4a34c061"
+  },
+  {
+    "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2018.zip",
+    "bytes": 117898042,
+    "etag": "\"706fb3a-5ae5393dff580\"",
+    "ultima_modificacao": "Wed, 02 Sep 2020 12:14:30 GMT",
+    "ano": 2018,
+    "rotulo_pagina": "ANO 2018 (AUTOMÁTICA)",
+    "coletado_em": "2026-10-26T04:53:43.914056+00:00",
+    "sha256": "ca44308b336e72d830ab1daedef45a59debc2f52bfda1a8be02c1e3d948861bb"
+  },
+  {
+    "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2019.zip",
+    "bytes": 117560201,
+    "etag": "\"701d389-5ae5393ef37c0\"",
+    "ultima_modificacao": "Wed, 02 Sep 2020 12:14:31 GMT",
+    "ano": 2019,
+    "rotulo_pagina": "ANO 2019 (AUTOMÁTICA)",
+    "coletado_em": "2026-10-26T04:53:47.197913+00:00",
+    "sha256": "f09fa1f4314330be69093f574e7b273954881a5dcb24fc3eca9782545136af49"
+  },
+  {
+    "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2020.zip",
+    "bytes": 103653055,
+    "etag": "\"62d9ebf-5b812e09f1f40\"",
+    "ultima_modificacao": "Mon, 04 Jan 2021 13:15:01 GMT",
+    "ano": 2020,
+    "rotulo_pagina": "ANO 2020 (AUTOMÁTICA)",
+    "coletado_em": "2026-10-26T04:54:07.287794+00:00",
+    "sha256": "e6cf2016dd3b78d7180dac8cbd482e5f549b227dc87a9dff642ecb7bb9e5ba0b"
+  },
+  {
+    "url": "https://portal.inmet.gov.br/uploads/dadoshistoricos/2021.zip",
+    "bytes": 80571564,
+    "etag": "\"4cd6cac-5d71d7447752b\"",
+    "ultima_modificacao": "Thu, 03 Feb 2022 13:53:08 GMT",
+    "ano": 2021,
+    "rotulo_pagina": "ANO 2021 (AUTOMÁTICA)",
+    "coletado_em": "2026-10-26T04:54:08.299919+00:00",
+    "sha256": "360e53e612cf30473371d76b520585f8cd34e61d0d2185e3afe1206ce949433b"
+  }
+]

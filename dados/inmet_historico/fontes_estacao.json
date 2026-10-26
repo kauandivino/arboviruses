@@ -1,0 +1,82 @@
+[
+  {
+    "ano": 2014,
+    "membro_zip": "2014/INMET_CO_GO_A002_GOIANIA_01-01-2014_A_31-12-2014.CSV",
+    "candidatos": [
+      "2014/INMET_CO_GO_A002_GOIANIA_01-01-2014_A_31-12-2014.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet_historico\\estacao_originais\\2014_A002.csv",
+    "sha256": "2ea4bb53f5607eb1c4dbdc49f283f0475fbc745b0c29fce41863a063ce91a1e4"
+  },
+  {
+    "ano": 2015,
+    "membro_zip": "2015/INMET_CO_GO_A002_GOIANIA_01-01-2015_A_31-12-2015.CSV",
+    "candidatos": [
+      "2015/INMET_CO_GO_A002_GOIANIA_01-01-2015_A_31-12-2015.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet_historico\\estacao_originais\\2015_A002.csv",
+    "sha256": "d212da29d0b046d4f22b9c4fefb9ea56c1296468a80b30692e758d76c3f659f7"
+  },
+  {
+    "ano": 2016,
+    "membro_zip": "2016/INMET_CO_GO_A002_GOIANIA_01-01-2016_A_31-12-2016.CSV",
+    "candidatos": [
+      "2016/INMET_CO_GO_A002_GOIANIA_01-01-2016_A_31-12-2016.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet_historico\\estacao_originais\\2016_A002.csv",
+    "sha256": "b87a90a89e3ee22d8e04d5b5f8d660214f8f87a9e740f7182d4949337c5b9d3f"
+  },
+  {
+    "ano": 2017,
+    "membro_zip": "2017/INMET_CO_GO_A002_GOIANIA_01-01-2017_A_31-12-2017.CSV",
+    "candidatos": [
+      "2017/INMET_CO_GO_A002_GOIANIA_01-01-2017_A_31-12-2017.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet_historico\\estacao_originais\\2017_A002.csv",
+    "sha256": "e9c374846e5e9fe76fa5efb16e013adb021715a80775ab3a0f0defbe95231253"
+  },
+  {
+    "ano": 2018,
+    "membro_zip": "2018/INMET_CO_GO_A002_GOIANIA_01-01-2018_A_31-12-2018.CSV",
+    "candidatos": [
+      "2018/INMET_CO_GO_A002_GOIANIA_01-01-2018_A_31-12-2018.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet_historico\\estacao_originais\\2018_A002.csv",
+    "sha256": "8625fd91da21ab6f46dc86e51d132104e343ce40bd8aa805e6014e219b0a7bbe"
+  },
+  {
+    "ano": 2019,
+    "membro_zip": "2019/INMET_CO_GO_A002_GOIANIA_01-01-2019_A_31-12-2019.CSV",
+    "candidatos": [
+      "2019/INMET_CO_GO_A002_GOIANIA_01-01-2019_A_31-12-2019.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet_historico\\estacao_originais\\2019_A002.csv",
+    "sha256": "90dca48ffecfc98bca6ae218a9f75b223bbb61cbe8aad131a1b5175c71553386"
+  },
+  {
+    "ano": 2020,
+    "membro_zip": "INMET_CO_GO_A002_GOIANIA_01-01-2020_A_31-12-2020.CSV",
+    "candidatos": [
+      "INMET_CO_GO_A002_GOIANIA_01-01-2020_A_31-12-2020.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet_historico\\estacao_originais\\2020_A002.csv",
+    "sha256": "984349e812cdeec3faaaee48f8b392c2b6bc30d9e916fb72811ce2e6ede7ca49"
+  },
+  {
+    "ano": 2021,
+    "membro_zip": "INMET_CO_GO_A002_GOIANIA_01-01-2021_A_31-12-2021.CSV",
+    "candidatos": [
+      "INMET_CO_GO_A002_GOIANIA_01-01-2021_A_31-12-2021.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet_historico\\estacao_originais\\2021_A002.csv",
+    "sha256": "87b001abda136fda5a109a04534428a4e00dfa0e5a4e8cd803bfa036b3cda498"
+  }
+]

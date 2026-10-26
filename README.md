@@ -9,13 +9,13 @@ Tudo aqui usa dados reais coletados das fontes oficiais. Nada é simulado nem es
 | Fonte | Conteúdo | Documentação |
 |---|---|---|
 | Prefeitura de Goiânia | Informes semanais em PDF (bairros citados), 2022–2026 | [INFORMES](docs/INFORMES.md), [EXTRACAO-INFORMES](docs/EXTRACAO-INFORMES.md), [REVISAO-TERRITORIAL](docs/REVISAO-TERRITORIAL.md) |
-| SINAN/DATASUS | Microdados de dengue e de acidentes por animais peçonhentos | [DATASUS](docs/DATASUS.md) |
+| SINAN/DATASUS | Microdados de dengue e de acidentes por animais peçonhentos (2022–2026); dengue 2014–2021 para treinar os modelos | [DATASUS](docs/DATASUS.md), [MODELAGEM](docs/MODELAGEM.md) |
 | IBGE, Censo 2022 | Agregados por setor censitário e malhas de setores e bairros | [IBGE](docs/IBGE.md) |
 | SIGGO (Prefeitura) | Divisas de bairro e loteamentos | [MALHA-MUNICIPAL](docs/MALHA-MUNICIPAL.md) |
 | CNES | Estabelecimentos de saúde com endereço e coordenadas | [CNES](docs/CNES.md) |
-| INMET | Estação automática A002: chuva, temperatura, umidade | [INMET](docs/INMET.md) |
+| INMET | Estação automática A002: chuva, temperatura, umidade (2014–2026) | [INMET](docs/INMET.md) |
 
-Resultados: [painel, mapa e registro das ações de campo](docs/PAINEL.md), [nowcasting e avaliação da previsão de dengue](docs/MODELAGEM.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
+Resultados: [painel, mapa e registro das ações de campo](docs/PAINEL.md), [modelos de dengue: nowcasting, previsão e alerta](docs/MODELAGEM.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
 
 ## Estrutura
 
@@ -23,7 +23,7 @@ Resultados: [painel, mapa e registro das ações de campo](docs/PAINEL.md), [now
 pipeline/
   coleta/          download das fontes oficiais (baixar_*)
   processamento/   extração, revisão territorial, integração, seleção, snapshot do painel
-  modelagem/       nowcasting das notificações recentes e previsão avaliada
+  modelagem/       nowcasting, previsão de 1 a 8 semanas e diagrama de controle
   verificacao/     testes de regras (verificar_*) e validações dos dados reais (validar_*)
   comum/           utilitários compartilhados (hash, manifestos, leitura de PDF, OCR)
   exploracao/      sondagens usadas durante o levantamento das fontes; fora do pipeline
