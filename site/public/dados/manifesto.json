@@ -1,0 +1,56 @@
+{
+  "gerado_em": "2026-10-26T08:10:12+00:00",
+  "metodo": "pipeline/processamento/preparar_site.py",
+  "fontes": [
+    {
+      "arquivo": "dados/modelagem/alerta_dengue_semanas.csv",
+      "sha256": "399202e4366fed2e6fab0705e7e8f1d4ad659979c8ed33a9e0d951b51bd73df0"
+    },
+    {
+      "arquivo": "dados/modelagem/nowcast_dengue.csv",
+      "sha256": "5490d920b6dcda5cab611b4c298d21043700bf096d49775a6e7973d807add4ef"
+    },
+    {
+      "arquivo": "dados/modelagem/previsao_dengue.csv",
+      "sha256": "1e7f80c857a071a995636fed22a448f58dbd8d1174922c4df40d4edc9ec51b69"
+    },
+    {
+      "arquivo": "dados/base_integrada/municipal_mensal_clima.csv",
+      "sha256": "0f594b3d647fc5b68dc148b0e8141d2149d3a64ea7b9dd2994629bbfce888481"
+    },
+    {
+      "arquivo": "dados/base_integrada/clima_mensal.csv",
+      "sha256": "33a9a8bfabcb974d58ccc1e18a4631475351515933888f054695ddd5d7eaa117"
+    },
+    {
+      "arquivo": "dados/malha_municipal/goiania/bairros_municipais_analise.gpkg",
+      "sha256": "5b97becdceeff997157561a2ffecbf0ffb6512fb6f23d5479e85ce7737f686a3"
+    },
+    {
+      "arquivo": "dados/base_integrada/bairros_publicados.csv",
+      "sha256": "619358df488c868bef512499cf1f4c10b91de96e915a74aa9665a0368384529b"
+    },
+    {
+      "arquivo": "dados/selecao_territorios/oito_territorios.csv",
+      "sha256": "8016d67274d166d4edd3ce0bcb950b1d6ddbf4e698294f2561fa82fc8b74ea90"
+    },
+    {
+      "arquivo": "dados/cnes/goiania/202609/estabelecimentos.csv",
+      "sha256": "2dd3184348ba6c9b365a34961bbeb6fef8a238a3221ab1483ac88b98fa59bf6e"
+    }
+  ],
+  "produtos": [
+    {
+      "arquivo": "site/public/dados/bairros.geojson",
+      "sha256": "c13fdc6c0770a01a0885da7b29ce647e79a4014ef9de9612439836b360a5be5b"
+    },
+    {
+      "arquivo": "site/public/dados/site.json",
+      "sha256": "277b793bdecd6f7ff439ba049f0f3e1f7d7fc3dd39e7affa196af1361462a1d1"
+    },
+    {
+      "arquivo": "site/public/dados/unidades.geojson",
+      "sha256": "2512d89008fbc3368e7b3a39f2de8e7a25b80637a06a868a45949cba7a6a1d82"
+    }
+  ]
+}

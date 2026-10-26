@@ -15,7 +15,7 @@ Tudo aqui usa dados reais coletados das fontes oficiais. Nada é simulado nem es
 | CNES | Estabelecimentos de saúde com endereço e coordenadas | [CNES](docs/CNES.md) |
 | INMET | Estação automática A002: chuva, temperatura, umidade (2014–2026) | [INMET](docs/INMET.md) |
 
-Resultados: [painel, mapa e registro das ações de campo](docs/PAINEL.md), [modelos de dengue: nowcasting, previsão e alerta](docs/MODELAGEM.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
+Resultados: [site público para a população](docs/SITE.md), [painel da equipe e registro das ações de campo](docs/PAINEL.md), [modelos de dengue: nowcasting, previsão e alerta](docs/MODELAGEM.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
 
 ## Estrutura
 
@@ -27,7 +27,8 @@ pipeline/
   verificacao/     testes de regras (verificar_*) e validações dos dados reais (validar_*)
   comum/           utilitários compartilhados (hash, manifestos, leitura de PDF, OCR)
   exploracao/      sondagens usadas durante o levantamento das fontes; fora do pipeline
-painel/            painel web (React + Vite + Recharts)
+site/             site público para a população (React + TypeScript + Vite, MapLibre)
+painel/            painel técnico da equipe, em /equipe/ (React + Vite + Recharts)
 dados/             originais, produtos, manifestos com SHA-256 e relatórios de validação
 docs/              documentação por fonte e por etapa
 ```
@@ -41,6 +42,7 @@ uv venv --python 3.13 .venv
 uv pip install --python .venv -r requirements.txt
 $env:PATH = "$PWD/.tools/node/node-v22.14.0-win-x64;$env:PATH"
 npm ci --prefix painel
+npm ci --prefix site
 ```
 
 Use Python 3.13: o conversor `.dbc` do SINAN não tem wheels para 3.14 no Windows.
@@ -55,7 +57,7 @@ Tudo roda a partir da raiz:
 & .venv/Scripts/python.exe -m pipeline --coletar      # baixa antes as versões atuais das fontes oficiais
 & .venv/Scripts/python.exe -m pipeline --semanal      # baixa só SINAN e INMET (o mesmo da tarefa agendada)
 & .venv/Scripts/python.exe -m pipeline --listar       # mostra as etapas sem executar
-.\abrir_painel.ps1                                    # painel e registro de ações em http://127.0.0.1:4173/
+.\abrir_painel.ps1                                    # site em http://127.0.0.1:4173/ e painel da equipe em /equipe/
 ```
 
 ### Atualização automática semanal

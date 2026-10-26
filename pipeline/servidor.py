@@ -1,4 +1,5 @@
-"""Servidor local do painel: arquivos de painel/dist e API das ações de campo.
+"""Servidor local: site público (site/dist) na raiz, painel da equipe (painel/dist) em /equipe/
+e API das ações de campo.
 
     .venv/Scripts/python.exe -m pipeline.servidor [--porta 4173]
 
@@ -20,6 +21,14 @@ LIMITE_CORPO = 16 * 1024
 
 class Painel(SimpleHTTPRequestHandler):
     pasta_acoes = acoes_campo.PASTA
+    pasta_equipe = ROOT / 'painel/dist'
+
+    def translate_path(self, path):
+        caminho = path.split('?')[0].split('#')[0]
+        if caminho == '/equipe' or caminho.startswith('/equipe/'):
+            relativo = caminho[len('/equipe'):] or '/'
+            return super().translate_path(relativo).replace(self.directory, str(self.pasta_equipe), 1)
+        return super().translate_path(path)
 
     def log_message(self, formato, *args):
         if self.path.startswith('/api/'):
@@ -44,6 +53,11 @@ class Painel(SimpleHTTPRequestHandler):
                                     'tipos': acoes_campo.TIPOS, 'situacoes': acoes_campo.SITUACOES})
         if self.path.startswith('/api/'):
             return self._json(404, {'erro': 'rota inexistente'})
+        if self.path.split('?')[0] == '/equipe':
+            self.send_response(301)
+            self.send_header('Location', '/equipe/')
+            self.end_headers()
+            return
         return super().do_GET()
 
     def _origem_valida(self):
@@ -83,8 +97,8 @@ class Painel(SimpleHTTPRequestHandler):
         return self._json(404, {'erro': 'rota inexistente'})
 
 
-def criar_servidor(porta=4173, pasta_acoes=None, dist=ROOT / 'painel/dist'):
-    manipulador = type('PainelConfigurado', (Painel,), {'pasta_acoes': pasta_acoes or acoes_campo.PASTA})
+def criar_servidor(porta=4173, pasta_acoes=None, dist=ROOT / 'site/dist', equipe=ROOT / 'painel/dist'):
+    manipulador = type('PainelConfigurado', (Painel,), {'pasta_acoes': pasta_acoes or acoes_campo.PASTA, 'pasta_equipe': equipe})
     return ThreadingHTTPServer(('127.0.0.1', porta), partial(manipulador, directory=str(dist)))
 
 
@@ -92,10 +106,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--porta', type=int, default=4173)
     args = parser.parse_args()
-    if not (ROOT / 'painel/dist/index.html').exists():
-        raise SystemExit('Painel ainda não compilado. Execute: .venv/Scripts/python.exe -m pipeline')
+    if not (ROOT / 'site/dist/index.html').exists() or not (ROOT / 'painel/dist/index.html').exists():
+        raise SystemExit('Site ou painel ainda não compilado. Execute: .venv/Scripts/python.exe -m pipeline')
     servidor = criar_servidor(args.porta)
-    print(f'Painel em http://127.0.0.1:{args.porta}/ — Ctrl+C encerra o servidor.', flush=True)
+    print(f'Site público em http://127.0.0.1:{args.porta}/  ·  painel da equipe em http://127.0.0.1:{args.porta}/equipe/', flush=True)
+    print('Ctrl+C encerra o servidor.', flush=True)
     print(f'Ações de campo gravadas em {acoes_campo.PASTA.relative_to(ROOT).as_posix()}/', flush=True)
     try:
         servidor.serve_forever()

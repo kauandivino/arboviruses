@@ -113,7 +113,7 @@ with sync_playwright() as p:
         threading.Thread(target=api.serve_forever, daemon=True).start()
         pagina = browser.new_page(viewport={'width': 1440, 'height': 1000})
         pagina.on('pageerror', lambda error: erros.append(str(error)))
-        pagina.goto(f'http://127.0.0.1:{api.server_port}/', wait_until='networkidle')
+        pagina.goto(f'http://127.0.0.1:{api.server_port}/equipe/', wait_until='networkidle')
         pagina.get_by_role('tab', name='Ações de campo', exact=True).click()
         pagina.get_by_text('Nenhuma ação registrada até agora.').wait_for()
         pagina.get_by_role('button', name='Registrar ação').click()

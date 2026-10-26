@@ -1,0 +1,99 @@
+/* Sistema visual: tema claro, acento verde-azulado, títulos largos em caixa alta e motivos triangulares. */
+:root {
+  --fundo: #f7f8f6;
+  --superficie: #ffffff;
+  --tinta: #13191c;
+  --tinta-2: #48535a;
+  --tinta-3: #7d878d;
+  --linha: #e3e7e6;
+  --linha-forte: #c9d0cf;
+
+  --acento: #20a597;
+  --acento-forte: #0f7168;
+  --acento-escuro: #0b4f49;
+  --acento-claro: #d8f1ee;
+  --acento-bruma: #eef8f6;
+
+  --zona-abaixo: #9fd9d1;
+  --zona-habitual: #cfe9e5;
+  --zona-acima: #f4b860;
+  --zona-alerta: #e2553f;
+  --chuva: #5b8fd6;
+  --escorpiao: #c9832e;
+
+  --rodape: #121618;
+  --rodape-tinta: #aab3b6;
+
+  --raio: 14px;
+  --raio-pequeno: 8px;
+  --sombra: 0 1px 2px rgb(19 25 28 / 0.05), 0 8px 28px rgb(19 25 28 / 0.07);
+  --sombra-forte: 0 2px 6px rgb(19 25 28 / 0.08), 0 22px 48px rgb(19 25 28 / 0.14);
+  --largura: 1180px;
+  --gutter: clamp(16px, 4vw, 40px);
+
+  --fonte-titulo: 'Raleway', 'Segoe UI', sans-serif;
+  --fonte-texto: 'Inter Variable', 'Segoe UI', sans-serif;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--tinta);
+  font-family: var(--fonte-texto);
+  font-size: 16.5px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img, svg { display: block; max-width: 100%; }
+a { color: var(--acento-forte); text-underline-offset: 3px; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid color-mix(in srgb, var(--acento) 55%, transparent); outline-offset: 2px; border-radius: 4px; }
+
+.conteudo { width: min(var(--largura), 100% - 2 * var(--gutter)); margin-inline: auto; }
+.secao { padding-block: clamp(64px, 9vw, 112px); position: relative; }
+.secao.alternada { background: var(--superficie); }
+
+/* Títulos: caixa alta larga com sublinhado curto em acento, como na referência. */
+.sobretitulo {
+  font-family: var(--fonte-titulo); font-weight: 700; font-size: 12px; letter-spacing: 0.32em;
+  text-transform: uppercase; color: var(--acento-forte); margin: 0 0 14px;
+}
+.titulo-secao {
+  font-family: var(--fonte-titulo); font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;
+  font-size: clamp(26px, 3.6vw, 40px); line-height: 1.15; margin: 0; max-width: 20ch;
+}
+.titulo-secao::after { content: ''; display: block; width: 44px; height: 3px; background: var(--acento); margin-top: 18px; }
+.titulo-secao.centro { margin-inline: auto; text-align: center; }
+.titulo-secao.centro::after { margin-inline: auto; }
+.lead { color: var(--tinta-2); font-size: clamp(16px, 1.6vw, 18.5px); max-width: 62ch; margin: 20px 0 0; }
+.lead.centro { margin-inline: auto; text-align: center; }
+.cabeca-secao { margin-bottom: clamp(32px, 5vw, 56px); }
+
+.cartao { background: var(--superficie); border: 1px solid var(--linha); border-radius: var(--raio); box-shadow: var(--sombra); }
+.rotulo-pequeno { font-family: var(--fonte-titulo); font-weight: 700; font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--tinta-3); }
+.nota { font-size: 13.5px; color: var(--tinta-3); line-height: 1.55; }
+.numero { font-family: var(--fonte-titulo); font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+
+.botao {
+  display: inline-flex; align-items: center; gap: 10px; padding: 13px 22px; border-radius: 999px;
+  font-family: var(--fonte-titulo); font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase;
+  text-decoration: none; border: 1.5px solid var(--tinta); color: var(--tinta); background: transparent; cursor: pointer; white-space: nowrap;
+  transition: background 0.2s, color 0.2s, transform 0.2s, border-color 0.2s;
+}
+.botao:hover { background: var(--tinta); color: #fff; transform: translateY(-1px); }
+.botao.primario { background: var(--acento); border-color: var(--acento); color: #fff; }
+.botao.primario:hover { background: var(--acento-forte); border-color: var(--acento-forte); }
+
+.chip {
+  display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--linha-forte);
+  background: var(--superficie); font-size: 13.5px; font-weight: 600; cursor: pointer; color: var(--tinta-2); transition: all 0.15s;
+}
+.chip[aria-pressed='true'] { background: var(--tinta); border-color: var(--tinta); color: #fff; }
+.chip .marca { width: 10px; height: 10px; border-radius: 3px; }
+
+.visualmente-oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

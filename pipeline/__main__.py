@@ -75,6 +75,9 @@ def etapas(args):
         yield 'painel', 'snapshot', modulo('processamento.preparar_painel', '--concluir')
         yield 'painel', 'compilar', [str(NODE / 'node.exe'), str(NODE / 'node_modules/npm/bin/npm-cli.js'), 'run', 'build', '--prefix', str(ROOT / 'painel')]
         yield 'painel', 'verificar_navegador', modulo('verificacao.verificar_painel_browser')
+        yield 'site', 'dados', modulo('processamento.preparar_site')
+        yield 'site', 'compilar', [str(NODE / 'node.exe'), str(NODE / 'node_modules/npm/bin/npm-cli.js'), 'run', 'build', '--prefix', str(ROOT / 'site')]
+        yield 'site', 'verificar_navegador', modulo('verificacao.verificar_site')
 
 
 def main():
@@ -83,7 +86,7 @@ def main():
     modo.add_argument('--coletar', action='store_true', help='baixa novamente das fontes oficiais (requer internet)')
     modo.add_argument('--reprocessar', action='store_true', help='reprocessa os originais locais, sem rede')
     modo.add_argument('--semanal', action='store_true', help='atualiza só SINAN e INMET (requer internet)')
-    parser.add_argument('--sem-painel', action='store_true', help='não atualiza nem compila o painel')
+    parser.add_argument('--sem-painel', action='store_true', help='não atualiza nem compila o painel nem o site')
     parser.add_argument('--listar', action='store_true', help='mostra as etapas sem executar')
     args = parser.parse_args()
 

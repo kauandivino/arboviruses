@@ -1,10 +1,12 @@
-# Painel Saúde no Território
+# Painel da equipe
+
+Painel técnico do projeto, para a equipe: séries, auditoria, avaliação dos modelos e registro das ações de campo. Fica em http://127.0.0.1:4173/equipe/. Para a população existe o [site público](SITE.md), na raiz do mesmo servidor.
 
 Primeira versão local baseada exclusivamente nos arquivos públicos coletados. Não depende de resposta da Secretaria. Nenhum dado foi publicado na internet.
 
 ## Abrir
 
-Com o servidor iniciado, acesse http://127.0.0.1:4173/ no navegador. Para iniciar novamente, na raiz do projeto:
+Com o servidor iniciado, acesse http://127.0.0.1:4173/equipe/ no navegador. Para iniciar novamente, na raiz do projeto:
 
 ```powershell
 .\abrir_painel.ps1

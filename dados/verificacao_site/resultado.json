@@ -1,0 +1,17 @@
+{
+  "telas": [
+    "desktop",
+    "celular"
+  ],
+  "situacao": "alerta",
+  "verificacoes": [
+    "situação e número da semana",
+    "gráfico do ano e comparação",
+    "gráfico anual",
+    "busca de bairro, ficha e três unidades",
+    "marcadores dos territórios",
+    "abas de prevenção",
+    "sem rolagem horizontal",
+    "sem erros de página"
+  ]
+}
