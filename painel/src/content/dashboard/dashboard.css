@@ -75,3 +75,21 @@
 .st-botao { font: inherit; font-size: 14px; font-weight: 600; padding: 8px 16px; border-radius: var(--control-radius, 8px); border: 1px solid var(--accent); background: var(--accent); color: var(--surface); cursor: pointer; }
 .st-botao:disabled { opacity: 0.6; cursor: default; }
 .st-botao.secundario { font-weight: 500; padding: 4px 10px; background: var(--control); color: var(--text); border-color: var(--border); }
+
+/* Nowcasting */
+.st-nowcast { position: relative; display: grid; gap: 10px; }
+.st-nowcast svg { display: block; max-width: 100%; }
+.st-nowcast-grade { stroke: var(--border); stroke-width: 1; }
+.st-nowcast-base { stroke: var(--border-strong, var(--secondary)); stroke-width: 1; }
+.st-nowcast-eixo { fill: var(--secondary); font-size: 11px; font-family: var(--font-sans); }
+.st-nowcast-alvo { fill: transparent; outline: none; }
+.st-nowcast-alvo.ativo { fill: var(--interaction-hover); }
+.st-nowcast-observado { fill: var(--chart-1); pointer-events: none; }
+.st-nowcast-pendente { fill: color-mix(in srgb, var(--chart-1) 28%, transparent); stroke: var(--chart-1); stroke-width: 1; stroke-dasharray: 3 2; pointer-events: none; }
+.st-nowcast-faixa { stroke: var(--text); stroke-width: 1.5; pointer-events: none; }
+.st-nowcast-tooltip { min-width: 210px; }
+.st-leg-barra { width: 14px; height: 10px; background: var(--chart-1); }
+.st-leg-barra.pendente { background: color-mix(in srgb, var(--chart-1) 28%, transparent); border: 1px dashed var(--chart-1); }
+.st-leg-faixa { width: 2px; height: 14px; background: var(--text); }
+.st-nowcast-tabelas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-block-start: 20px; }
+@media (max-width: 900px) { .st-nowcast-tabelas { grid-template-columns: 1fr; } }

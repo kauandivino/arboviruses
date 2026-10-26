@@ -1,0 +1,101 @@
+{
+  "gerado_em": "2026-10-26T04:24:30.161910+00:00",
+  "metodo": "pipeline/modelagem/nowcast.py",
+  "agravo": "dengue",
+  "descricao": "Notificações de dengue de residentes em Goiânia, todas as classificações, por semana de início dos sintomas",
+  "data_corte_semana_digitacao": "2026-10-04",
+  "parametros": {
+    "maturacao_semanas": 52,
+    "janela_coortes": 20,
+    "defasagens_estimadas": 12,
+    "quantis_faixa": [
+      0.025,
+      0.975
+    ]
+  },
+  "avaliacao": {
+    "cortes": 145,
+    "primeiro_corte": "2023-01-01",
+    "ultimo_corte": "2025-10-05",
+    "estimativa_supera_numero_bruto_em_todas_as_defasagens": true
+  },
+  "exclusoes": [
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2022.csv",
+      "ano": 2022,
+      "registros": 54853,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 413
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2023.csv",
+      "ano": 2023,
+      "registros": 20232,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 121
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2024.csv",
+      "ano": 2024,
+      "registros": 57890,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 526
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2025.csv",
+      "ano": 2025,
+      "registros": 32816,
+      "excluidos_notificacao_fora_da_janela": 425,
+      "excluidos_sem_data_digitacao": 1
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2026.csv",
+      "ano": 2026,
+      "registros": 34223,
+      "excluidos_notificacao_fora_da_janela": 0,
+      "excluidos_sem_data_digitacao": 0
+    }
+  ],
+  "fontes": [
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2022.csv",
+      "sha256": "46fe4a0d6429aa3ab72e77655696181144f7b72ec29da5a50a934d5fc78612ba"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2023.csv",
+      "sha256": "8c0310c9de2174d91b657a89d26a820ff5206c63b3f8d01d55a61873e6eaea11"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2024.csv",
+      "sha256": "c4924c2519f105c918571272acd18c9b0b5d739dc23f4c28628a584897fc4107"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2025.csv",
+      "sha256": "f7a30a02dd5ed188c69f547cf7cc51b32d7d210160bad3422a01ce88d3c907ca"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/dengue_2026.csv",
+      "sha256": "8b96da557d07de66bcf79940bc26d218ef5484bebfd00f1687078a4f2b021bbf"
+    }
+  ],
+  "produtos": [
+    {
+      "arquivo": "dados/modelagem/nowcast_dengue.csv",
+      "sha256": "e5b02575fb6919bd24ebfa8106a8c7182186d3280df2876baf0c3e6bd1583e27"
+    },
+    {
+      "arquivo": "dados/modelagem/nowcast_dengue_avaliacao.csv",
+      "sha256": "7ba9aab2dcf1699708b548a93dc8a5fe9839ed6dcfa3704c7ea03b629dffa9fd"
+    },
+    {
+      "arquivo": "dados/modelagem/nowcast_dengue_retrospectiva.csv",
+      "sha256": "eb2aea51c27c5311c336474bd8280fd590fbbe7a2624cd03540f570768a426b8"
+    }
+  ],
+  "limitacoes": [
+    "A reconstrução do passado usa a base atual: notificações removidas depois (por exemplo, duplicidades) não aparecem nos cortes antigos.",
+    "Conta notificações de todas as classificações, não casos confirmados; a classificação final não é conhecida na data de corte.",
+    "Semanas com mais de 52 semanas de atraso são tratadas como completas.",
+    "As faixas refletem os erros de 2023 a 2025; uma mudança brusca na rotina de digitação pode deixá-las estreitas demais."
+  ]
+}

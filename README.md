@@ -15,7 +15,7 @@ Tudo aqui usa dados reais coletados das fontes oficiais. Nada é simulado nem es
 | CNES | Estabelecimentos de saúde com endereço e coordenadas | [CNES](docs/CNES.md) |
 | INMET | Estação automática A002: chuva, temperatura, umidade | [INMET](docs/INMET.md) |
 
-Resultados: [painel, mapa e registro das ações de campo](docs/PAINEL.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
+Resultados: [painel, mapa e registro das ações de campo](docs/PAINEL.md), [nowcasting de dengue](docs/MODELAGEM.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
 
 ## Estrutura
 
@@ -23,6 +23,7 @@ Resultados: [painel, mapa e registro das ações de campo](docs/PAINEL.md), [bas
 pipeline/
   coleta/          download das fontes oficiais (baixar_*)
   processamento/   extração, revisão territorial, integração, seleção, snapshot do painel
+  modelagem/       nowcasting das notificações recentes
   verificacao/     testes de regras (verificar_*) e validações dos dados reais (validar_*)
   comum/           utilitários compartilhados (hash, manifestos, leitura de PDF, OCR)
   exploracao/      sondagens usadas durante o levantamento das fontes; fora do pipeline

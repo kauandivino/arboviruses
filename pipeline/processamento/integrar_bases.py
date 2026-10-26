@@ -9,19 +9,42 @@ import hashlib
 import json
 import pandas as pd
 
+from pipeline.comum.epidemiologia import AGRAVOS, GOIANIA, janela_arquivo
+
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'dados/base_integrada'
 
 
-def construir_serie(df, ano, referencia, campo):
-    """Uma dimensão geográfica e temporal por fonte anual; sem preencher zeros."""
-    recorte = df.loc[(df.referencia_geografica == referencia) & (df.campo_data == campo)].copy()
-    recorte['n_registros'] = pd.to_numeric(recorte.n_registros, errors='raise')
-    valido = recorte.mes.str.fullmatch(fr'{ano}-\d{{2}}', na=False)
-    incluidos, excluidos = recorte.loc[valido], recorte.loc[~valido]
-    serie = incluidos.groupby('mes', as_index=False).n_registros.sum()
-    assert int(serie.n_registros.sum()) + int(excluidos.n_registros.sum()) == int(recorte.n_registros.sum())
+def construir_serie(df, ano, agravo):
+    """Série mensal de um arquivo anual, a partir dos microdados; sem preencher zeros.
+
+    Inclui as notificações de Goiânia com data de notificação na janela do arquivo
+    (ano civil e ano epidemiológico) e conta pelo mês da data de referência do agravo.
+    """
+    cfg = AGRAVOS[agravo]
+    recorte = df.loc[df[cfg['municipio']] == GOIANIA]
+    inicio, fim = janela_arquivo(ano)
+    notificacao = pd.to_datetime(recorte.DT_NOTIFIC, errors='coerce')
+    evento = pd.to_datetime(recorte[cfg['data']], errors='coerce')
+    motivo = pd.Series(None, index=recorte.index, dtype=object)
+    motivo[evento.isna()] = 'data_de_referencia_ausente'
+    motivo[motivo.isna() & ~notificacao.between(inicio, fim)] = 'notificacao_fora_da_janela_do_arquivo'
+    motivo[motivo.isna() & (evento < pd.Timestamp('2022-01-01'))] = 'evento_anterior_a_2022'
+    mes = evento.dt.strftime('%Y-%m').fillna('SEM_DATA_VALIDA')
+    incluidos = mes[motivo.isna()]
+    serie = incluidos.value_counts().rename_axis('mes').rename('n_registros').reset_index().sort_values('mes', ignore_index=True)
+    excluidos = pd.DataFrame({'mes': mes[motivo.notna()], 'motivo': motivo[motivo.notna()]})
+    excluidos = excluidos.value_counts().rename('n_registros').reset_index()
+    assert int(serie.n_registros.sum()) + int(excluidos.n_registros.sum()) == len(recorte)
     return serie, excluidos
+
+
+def sobreposicao_entre_arquivos(quadros):
+    """Notificações idênticas em dois arquivos anuais (nas janelas sobrepostas) seriam contadas duas vezes."""
+    vistos = pd.concat([q.assign(_ano=ano) for ano, q in quadros.items()], ignore_index=True)
+    colunas = [c for c in vistos.columns if c != '_ano']
+    repetidos = vistos[vistos.duplicated(colunas, keep=False)]
+    return int((repetidos.groupby(colunas, dropna=False)._ano.nunique() > 1).sum())
 
 
 def main():
@@ -35,28 +58,29 @@ def main():
         return pd.read_csv(path, dtype=str, keep_default_na=False)
 
     series, auditoria = [], []
-    for ano in range(2022, 2027):
-        for arquivo, agravo, referencia, campo in [
-            ('dengue', 'dengue', 'residencia', 'DT_NOTIFIC'),
-            ('animais', 'escorpioes', 'ocorrencia', 'ANT_DT_ACI'),
-        ]:
-            rel = f'dados/datasus/resumos/{arquivo}_{ano}_mensal.csv'
+    for agravo, cfg in AGRAVOS.items():
+        quadros = {}
+        for ano in range(2022, 2027):
+            rel = cfg['arquivo'].format(ano=ano)
             df = ler(rel)
-            assert set(df.agravo) == {agravo}, f'Agravo inesperado: {rel}'
-            agregado, excluidos = construir_serie(df, ano, referencia, campo)
-            qualidade = ROOT / f'dados/datasus/qualidade/{arquivo}_{ano}.json'
+            quadros[ano] = df
+            agregado, excluidos = construir_serie(df, ano, agravo)
+            qualidade = ROOT / f"dados/datasus/qualidade/{'dengue' if agravo == 'dengue' else 'animais'}_{ano}.json"
             metadata = json.loads(qualidade.read_text(encoding='utf-8'))
             fontes.append({'arquivo': qualidade.relative_to(ROOT).as_posix(),
                            'sha256': hashlib.sha256(qualidade.read_bytes()).hexdigest()})
-            agregado = agregado.assign(agravo=agravo, ano_arquivo=ano,
-                referencia_geografica=referencia, campo_data=campo,
-                situacao_fonte=metadata['situacao'], arquivo_origem=rel)
-            series.append(agregado)
-            for mes, grupo in excluidos.groupby('mes', dropna=False):
-                auditoria.append({'arquivo': rel, 'mes': mes,
-                    'n_registros': int(grupo.n_registros.sum()),
-                    'motivo': 'data_ausente_ou_fora_do_ano_do_arquivo',
-                    'referencia_geografica': referencia, 'campo_data': campo})
+            series.append(agregado.assign(ano_arquivo=str(ano), situacao_fonte=metadata['situacao'], arquivo_origem=rel))
+            for _, linha in excluidos.iterrows():
+                auditoria.append({'arquivo': rel, 'mes': linha.mes, 'n_registros': int(linha.n_registros), 'motivo': linha.motivo,
+                                  'referencia_geografica': cfg['referencia'], 'campo_data': cfg['data']})
+        repetidas = sobreposicao_entre_arquivos(quadros)
+        assert repetidas == 0, f'{repetidas} notificações de {agravo} aparecem em mais de um arquivo anual'
+        partes = pd.concat(series[-5:], ignore_index=True)
+        series[-5:] = [partes.groupby('mes', as_index=False).agg(
+            n_registros=('n_registros', 'sum'), ano_arquivo=('ano_arquivo', ';'.join),
+            situacao_fonte=('situacao_fonte', lambda s: 'PRELIM' if 'PRELIM' in set(s) else 'FINAIS'),
+            arquivo_origem=('arquivo_origem', ';'.join)).assign(
+            agravo=agravo, referencia_geografica=cfg['referencia'], campo_data=cfg['data'])]
 
     municipal = pd.concat(series, ignore_index=True)
     assert not municipal.duplicated(['agravo', 'mes']).any()
@@ -86,7 +110,7 @@ def main():
         'uso': 'contexto_municipal_2022_sem_rateio_por_bairro'}])
     definicoes = pd.DataFrame([
         ['serie_mensal', 'Registros SINAN; dengue por residência e mês da notificação; escorpiões por ocorrência e mês do acidente. Todas as classificações. Não são pessoas únicas nem apenas casos confirmados.'],
-        ['recorte_anual', 'Cada arquivo anual contribui apenas com datas do próprio ano. Datas ausentes e externas são auditadas. Isso não é uma deduplicação de microdados; não recupera notificações tardias em outros arquivos.'],
+        ['recorte_anual', 'Cada arquivo anual contribui com as notificações de Goiânia cuja data de notificação está na janela do arquivo (ano civil e ano epidemiológico: os de dengue seguem o ano epidemiológico). Um mês pode reunir registros de dois arquivos; a pipeline verifica que nenhuma notificação aparece em dois arquivos. Notificações fora da janela, sem data de referência ou com evento anterior a 2022 são auditadas em exclusoes_temporais.'],
         ['meses_ausentes', 'Ausência de linha não significa zero. Datas presentes não comprovam mês completo. Nenhum total anual de 2026 é tratado como ano completo.'],
         ['clima', 'A002; calendário UTC. Chuva observada pode ser parcial; use cobertura e valor completo. Associação temporal não estabelece causalidade nem diferenças entre bairros.'],
         ['bairros', 'Lista publicada por edição, indicador e período. Não somar edições sobrepostas, não tratar ausência como zero, não calcular taxas ou ranking completo. Correspondência SIGGO apenas nominal.'],
@@ -114,7 +138,7 @@ def main():
         'metodo': 'pipeline/processamento/integrar_bases.py', 'fontes': fontes,
         'tabelas': {nome: len(tabela) for nome, tabela in tabelas.items()},
         'verificacoes': ['unicidade municipal por agravo e mês', 'unicidade dos setores e das observações revisadas',
-                         'join climático many-to-one sem multiplicação', 'reconciliação de exclusões temporais']}
+                         'join climático many-to-one sem multiplicação', 'reconciliação de exclusões temporais', 'ausência de notificações repetidas entre arquivos anuais']}
     (OUT / 'manifesto.json').write_text(json.dumps(manifesto, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps(manifesto['tabelas'], ensure_ascii=False))
 

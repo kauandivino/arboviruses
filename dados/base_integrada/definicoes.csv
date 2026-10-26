@@ -1,6 +1,6 @@
 ﻿tema,definicao
 serie_mensal,Registros SINAN; dengue por residência e mês da notificação; escorpiões por ocorrência e mês do acidente. Todas as classificações. Não são pessoas únicas nem apenas casos confirmados.
-recorte_anual,Cada arquivo anual contribui apenas com datas do próprio ano. Datas ausentes e externas são auditadas. Isso não é uma deduplicação de microdados; não recupera notificações tardias em outros arquivos.
+recorte_anual,"Cada arquivo anual contribui com as notificações de Goiânia cuja data de notificação está na janela do arquivo (ano civil e ano epidemiológico: os de dengue seguem o ano epidemiológico). Um mês pode reunir registros de dois arquivos; a pipeline verifica que nenhuma notificação aparece em dois arquivos. Notificações fora da janela, sem data de referência ou com evento anterior a 2022 são auditadas em exclusoes_temporais."
 meses_ausentes,Ausência de linha não significa zero. Datas presentes não comprovam mês completo. Nenhum total anual de 2026 é tratado como ano completo.
 clima,A002; calendário UTC. Chuva observada pode ser parcial; use cobertura e valor completo. Associação temporal não estabelece causalidade nem diferenças entre bairros.
 bairros,"Lista publicada por edição, indicador e período. Não somar edições sobrepostas, não tratar ausência como zero, não calcular taxas ou ranking completo. Correspondência SIGGO apenas nominal."

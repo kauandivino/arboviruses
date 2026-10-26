@@ -81,6 +81,22 @@ def snapshot(concluir=False):
                 'evidenceFlow': [{'title': 'Reprodução', 'detail': 'Executar python -m pipeline (etapa preparar_mapa). Fontes e hashes em dados/mapa/manifesto.json.'}],
                 'caveats': ['A correspondência entre os nomes dos informes e os polígonos SIGGO é nominal e não homologada pela Secretaria.', 'O mapa não representa risco, incidência nem área de abrangência das unidades.']},
             'methods': [{'language': 'text', 'code': 'pipeline/processamento/preparar_mapa.py: projetar malhas e pontos para EPSG:31982; dissolver setores IBGE no limite municipal; simplificar com preservação de topologia; converter em caminhos SVG; associar presença nas listas e parceiro candidato pelo OID SIGGO e CNES.'}]}
+    nowcast = ROOT / 'dados/modelagem/nowcast_dengue.csv'
+    if nowcast.exists():
+        meta = json.loads((ROOT / 'dados/modelagem/nowcast_dengue_manifesto.json').read_text(encoding='utf-8'))
+        fonte_nowcast = {'name': 'Nowcasting de dengue', 'provider': 'Modelo local sobre microdados SINAN',
+            'files': ['dados/modelagem/nowcast_dengue.csv', 'dados/modelagem/nowcast_dengue_avaliacao.csv', 'dados/modelagem/nowcast_dengue_manifesto.json'],
+            'dataPreparedAt': meta['gerado_em'],
+            'metricDefinitions': [
+                {'label': 'Observado', 'definition': meta['descricao'] + f", digitadas até a semana de {meta['data_corte_semana_digitacao']}."},
+                {'label': 'Estimado', 'definition': 'Total esperado quando as digitações atrasadas chegarem: observado multiplicado pelos fatores de atraso das 20 coortes mais recentes (chain-ladder). Não é previsão de semanas futuras.'},
+                {'label': 'Faixa', 'definition': 'Quantis 2,5% e 97,5% da razão entre o total final e a estimativa nas avaliações retrospectivas anteriores; a taxa de acerto medida aparece na tabela de avaliação.'}],
+            'evidenceFlow': [{'title': 'Avaliação retrospectiva', 'detail': f"{meta['avaliacao']['cortes']} datas de corte de {meta['avaliacao']['primeiro_corte']} a {meta['avaliacao']['ultimo_corte']}, reconstruindo o que estava digitado em cada uma."}],
+            'caveats': meta['limitacoes']}
+        metodo = [{'language': 'text', 'code': 'pipeline/modelagem/nowcast.py: semanas epidemiológicas (domingo); triângulo início x atraso de digitação; fatores de desenvolvimento nas 20 coortes recentes; faixas pelos erros retrospectivos já conhecidos em cada data.'}]
+        queries['nowcast'] = {'rows': json.loads(pd.read_csv(nowcast).to_json(orient='records', force_ascii=False)), 'source': fonte_nowcast, 'methods': metodo}
+        avaliacao = pd.read_csv(ROOT / 'dados/modelagem/nowcast_dengue_avaliacao.csv')
+        queries['nowcast_avaliacao'] = {'rows': json.loads(avaliacao.to_json(orient='records', force_ascii=False)), 'source': fonte_nowcast, 'methods': metodo}
     from pipeline import acoes_campo
     acoes = acoes_campo.atuais()
     queries['acoes'] = {'rows': acoes, 'source': {'name': 'Ações de campo', 'provider': 'Registro local da equipe do projeto',
