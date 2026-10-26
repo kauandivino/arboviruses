@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-26T03:17:00.857716+00:00",
+  "gerado_em": "2026-10-26T03:19:05.944360+00:00",
   "metodo": "pipeline/processamento/selecionar_territorios.py",
   "janelas_principais": [
     16,
@@ -39,7 +39,7 @@
     },
     {
       "arquivo": "dados/malha_municipal/goiania/bairros_municipais_analise.gpkg",
-      "sha256": "6895becee14e707b03c3188196eb3332ec73cde002df1ae937eab0f08f9cb422"
+      "sha256": "5b97becdceeff997157561a2ffecbf0ffb6512fb6f23d5479e85ce7737f686a3"
     },
     {
       "arquivo": "dados/cnes/goiania/202609/estabelecimentos.csv",

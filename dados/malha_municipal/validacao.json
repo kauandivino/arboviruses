@@ -1,5 +1,5 @@
 {
-  "validado_em": "2026-10-26T03:12:34.656469+00:00",
+  "validado_em": "2026-10-26T03:20:29.833281+00:00",
   "status": "aprovado_com_limitacoes",
   "versao": 1,
   "feicoes": 1208,
@@ -20,11 +20,11 @@
     },
     {
       "arquivo": "dados\\malha_municipal\\compatibilidade_ibge.json",
-      "sha256": "8f380f81a7120d7e180f10074b9c3187b32c64d907856b9ccc25dda479545099"
+      "sha256": "49b77ef4278faa73bc212e2cd22cef613337e2609282e28751e5eadf6e14e18e"
     },
     {
       "arquivo": "dados\\malha_municipal\\qualidade_malha.json",
-      "sha256": "88bd7d695f78879526be579a7f33a46aa4da153ee42d98da1ce33c06b722c74b"
+      "sha256": "c4bf80a94bb52c9878277cebf5a2040dd3025929d4367d6ee7d0b256f9680bfe"
     }
   ],
   "limitacoes": [
