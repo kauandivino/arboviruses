@@ -1,5 +1,5 @@
 {
-  "preparado_em": "2026-10-19T22:08:00.956237+00:00",
+  "preparado_em": "2026-10-26T03:09:35.734950+00:00",
   "versao": 1,
   "feicoes_fonte": 1208,
   "feicoes_analise": 1208,
@@ -35,7 +35,7 @@
   "arquivos": [
     {
       "arquivo": "dados\\malha_municipal\\goiania\\bairros_municipais_siggo.gpkg",
-      "sha256": "b1c0f0fd616dbac606430c0c59c0d8d5161c7414c6fec25ee6c31c4cbe220788",
+      "sha256": "fc37587462eb0b74f8eaa84563fcad5ed9d7617dc883b13c90e50a5867e28751",
       "bytes": 3039232
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "arquivo": "dados\\malha_municipal\\goiania\\bairros_municipais_analise.gpkg",
-      "sha256": "aceafeb12c187d16ddb63be3cb78b99d774c3210fb05f628deba6bb8d1cd8fa6",
+      "sha256": "6895becee14e707b03c3188196eb3332ec73cde002df1ae937eab0f08f9cb422",
       "bytes": 3039232
     },
     {

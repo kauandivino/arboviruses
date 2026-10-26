@@ -1,8 +1,8 @@
 {
-  "gerado_em": "2026-10-19T23:41:39.870278+00:00",
+  "gerado_em": "2026-10-26T03:11:15.025693+00:00",
   "fontes": [
     {
-      "arquivo": "dados/revisao_territorial/revisoes_visuais_informes.json",
+      "arquivo": "dados\\revisao_territorial\\revisoes_visuais_informes.json",
       "sha256": "ee8274ec2a7a4b7c33ecaf8c2281279343c76118f699c86dcb5872aeae60c691"
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "arquivo": "dados\\revisao_territorial\\revisao_territorial.xlsx",
-      "sha256": "44acc8403ab5c1079356ca0f54e2679e026ee2ae08d7df78fdf49cb849f12325"
+      "sha256": "23fb6c2b572b2b6017363910d5b819a805e354b048c413e4b8ef0b3b3ffc4705"
     }
   ]
 }

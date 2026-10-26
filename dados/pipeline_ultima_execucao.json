@@ -1,24 +1,24 @@
 {
-  "iniciado_em": "2026-10-26T03:04:41.254374+00:00",
+  "iniciado_em": "2026-10-26T03:16:51.080638+00:00",
   "modo": "padrao",
   "etapas": [
     {
       "fase": "integracao",
       "etapa": "integrar_bases",
       "codigo_saida": 0,
-      "segundos": 4.8
+      "segundos": 4.4
     },
     {
       "fase": "integracao",
       "etapa": "selecionar_territorios",
       "codigo_saida": 0,
-      "segundos": 9.5
+      "segundos": 5.7
     },
     {
       "fase": "verificacao",
       "etapa": "teste_cnes",
       "codigo_saida": 0,
-      "segundos": 2.2
+      "segundos": 2.4
     },
     {
       "fase": "verificacao",
@@ -36,7 +36,7 @@
       "fase": "verificacao",
       "etapa": "teste_extracao_informes",
       "codigo_saida": 0,
-      "segundos": 0.9
+      "segundos": 1.1
     },
     {
       "fase": "verificacao",
@@ -48,93 +48,51 @@
       "fase": "verificacao",
       "etapa": "teste_inmet",
       "codigo_saida": 0,
-      "segundos": 1.8
+      "segundos": 2.1
     },
     {
       "fase": "verificacao",
       "etapa": "teste_integracao",
       "codigo_saida": 0,
-      "segundos": 1.7
+      "segundos": 1.8
     },
     {
       "fase": "verificacao",
       "etapa": "teste_malha_municipal",
       "codigo_saida": 0,
-      "segundos": 2.4
+      "segundos": 2.6
     },
     {
       "fase": "verificacao",
       "etapa": "teste_revisao_territorial",
       "codigo_saida": 0,
-      "segundos": 1.9
+      "segundos": 2.1
     },
     {
       "fase": "verificacao",
       "etapa": "teste_selecao",
       "codigo_saida": 0,
-      "segundos": 2.2
+      "segundos": 2.4
     },
     {
       "fase": "verificacao",
       "etapa": "validar_datasus",
       "codigo_saida": 0,
-      "segundos": 16.4
+      "segundos": 16.7
     },
     {
       "fase": "verificacao",
       "etapa": "validar_ibge",
       "codigo_saida": 0,
-      "segundos": 16.5
+      "segundos": 22.5
     },
     {
       "fase": "verificacao",
       "etapa": "validar_malha_municipal",
-      "codigo_saida": 0,
-      "segundos": 6.5
-    },
-    {
-      "fase": "verificacao",
-      "etapa": "validar_cnes",
-      "codigo_saida": 0,
-      "segundos": 11.6
-    },
-    {
-      "fase": "verificacao",
-      "etapa": "validar_inmet",
-      "codigo_saida": 0,
-      "segundos": 10.1
-    },
-    {
-      "fase": "verificacao",
-      "etapa": "validar_informes",
-      "codigo_saida": 0,
-      "segundos": 14.2
-    },
-    {
-      "fase": "verificacao",
-      "etapa": "validar_revisao_territorial",
-      "codigo_saida": 0,
-      "segundos": 5.4
-    },
-    {
-      "fase": "painel",
-      "etapa": "snapshot",
-      "codigo_saida": 0,
-      "segundos": 2.0
-    },
-    {
-      "fase": "painel",
-      "etapa": "compilar",
-      "codigo_saida": 0,
-      "segundos": 19.4
-    },
-    {
-      "fase": "painel",
-      "etapa": "verificar_navegador",
-      "codigo_saida": 0,
-      "segundos": 23.7
+      "codigo_saida": 1,
+      "segundos": 5.3
     }
   ],
-  "concluido_em": "2026-10-26T03:07:18.632660+00:00",
-  "status": "aprovado"
+  "concluido_em": "2026-10-26T03:18:04.081294+00:00",
+  "status": "falhou"
 }

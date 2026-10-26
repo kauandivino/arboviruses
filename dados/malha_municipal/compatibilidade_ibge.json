@@ -34,7 +34,7 @@
   "populacao_rateada": false,
   "agregacao_por_bairro_executada": false,
   "observacao": "Candidatos geométricos para revisão, sem atribuição oficial de setor ou população. Cadastro atual não assegura limites de 2022 nem equivalência com bairros da Saúde.",
-  "executado_em": "2026-10-19T22:08:26.392812+00:00",
+  "executado_em": "2026-10-26T03:09:59.316447+00:00",
   "fonte_municipal_sha256": "883ec81b4fc93af3d525aaaa1a81341e6df760edd6bbb2a58755613ea90f2286",
-  "setores_ibge_sha256": "319b2c5006966cf675a86e80404f43d2919553fd9d3fd8ad9f85dc2ddd2468ce"
+  "setores_ibge_sha256": "b283bfac5b3209d34bba18cea934d6fd9beaec0d17fd358562efc8606f55c013"
 }

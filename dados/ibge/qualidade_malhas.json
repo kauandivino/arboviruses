@@ -1,5 +1,5 @@
 {
-  "processado_em": "2026-10-19T21:54:23.781279+00:00",
+  "processado_em": "2026-10-26T03:16:25.322747+00:00",
   "ano_referencia": 2022,
   "municipio": "5208707",
   "malhas": {
@@ -13,7 +13,7 @@
       "geometrias_invalidas": 0,
       "filtro": "\"CD_MUN\" = '5208707'",
       "gpkg": "dados\\ibge\\goiania\\setores_goiania_2022.gpkg",
-      "sha256_gpkg": "319b2c5006966cf675a86e80404f43d2919553fd9d3fd8ad9f85dc2ddd2468ce",
+      "sha256_gpkg": "63443c1b8d37c638479211fa758b18ca08a9369dbb4d5e266d308a6b172d28fa",
       "geojson": "dados\\ibge\\goiania\\setores_goiania_2022.geojson",
       "sha256_geojson": "98b81fbe84142a65afa23ad528a14ebf0a23ed3a44b75043fac12536350d3e2f",
       "fonte_sha256": "2553427433fa48dcf26a05e72a9576e79ae0d5ddd4324998e373845366316396"
@@ -28,7 +28,7 @@
       "geometrias_invalidas": 0,
       "filtro": "\"CD_MUN\" = '5208707'",
       "gpkg": "dados\\ibge\\goiania\\bairros_goiania_2022.gpkg",
-      "sha256_gpkg": "9a8bb2c9cda840d2736f83617560605282ee29d61df9e38d2a6ed239ad03749a",
+      "sha256_gpkg": "c892aea49cf5c0106fe4983db5b33b9843d2887ce216b1b445e86a8730733b33",
       "geojson": "dados\\ibge\\goiania\\bairros_goiania_2022.geojson",
       "sha256_geojson": "51a4a94a0733291f11dff88c98d96611c3a05f564e2cda9b6f354df83aa1e09c",
       "fonte_sha256": "d2d9cd2a9d4d567e191523de8828a28721ede2e8b98d5da4b1223978f33c3861"

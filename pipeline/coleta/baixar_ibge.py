@@ -14,14 +14,14 @@ def main():
     args=parser.parse_args()
     if args.somente_baixar and args.processar_local:
         parser.error('Escolha somente download ou processamento local.')
-    options=['--saida',str(args.saida.resolve())]
+    options=['--saida',str(args.saida)]
     for flag in ['somente_baixar','processar_local','atualizar']:
         if getattr(args,flag):
             options.append('--'+flag.replace('_','-'))
     for module in ['pipeline.coleta.baixar_ibge_agregados','pipeline.coleta.baixar_ibge_malhas']:
         subprocess.run([sys.executable,'-m',module,*options],check=True)
     if not args.somente_baixar:
-        subprocess.run([sys.executable,'-m','pipeline.verificacao.validar_ibge','--saida',str(args.saida.resolve())],check=True)
+        subprocess.run([sys.executable,'-m','pipeline.verificacao.validar_ibge','--saida',str(args.saida)],check=True)
 
 
 if __name__=='__main__':

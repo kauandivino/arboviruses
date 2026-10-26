@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-19T22:34:16.876143+00:00",
+  "gerado_em": "2026-10-26T03:10:25.094095+00:00",
   "competencia": "202609",
   "municipio": "5208707",
   "registros_brasil": 640122,
@@ -15,7 +15,7 @@
   },
   "malha_conferencia": {
     "arquivo": "dados\\ibge\\goiania\\setores_goiania_2022.gpkg",
-    "sha256": "319b2c5006966cf675a86e80404f43d2919553fd9d3fd8ad9f85dc2ddd2468ce",
+    "sha256": "b283bfac5b3209d34bba18cea934d6fd9beaec0d17fd358562efc8606f55c013",
     "referencia": "Censo 2022; união dos setores de Goiânia"
   },
   "com_motivo_desativacao": 711,
