@@ -1,0 +1,194 @@
+{
+  "coletado_em": "2026-10-19T22:05:57.880687+00:00",
+  "versao": 1,
+  "camada": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2",
+  "nome": "Divisas de Bairro",
+  "oid_field": "OBJECTID",
+  "feicoes": 1208,
+  "crs_resposta": "EPSG:31982",
+  "formato_resposta": "EsriJSON",
+  "campos_solicitados": [
+    "OBJECTID",
+    "id",
+    "tp_bai",
+    "nm_bai",
+    "nm",
+    "nm1",
+    "nm2",
+    "nm3",
+    "ql_bai",
+    "id_mun",
+    "id_re7",
+    "id_mzo",
+    "in_cond",
+    "last_edited_date"
+  ],
+  "pasta": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c",
+  "arquivo_geometrico": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\bairros_siggo.esri.json",
+  "arquivos": [
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2?f=pjson",
+      "recebido_em": "2026-10-19T22:05:51.022978+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:51 GMT",
+        "Last-Modified": null,
+        "ETag": null,
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      "bytes": 6375,
+      "sha256": "93bd55f138be1d20fe421f7e470d1607584cc5e508955beffee5dc1538e6bf3e",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\camada.json"
+    },
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2/query?where=1%3D1&returnIdsOnly=true&f=json",
+      "recebido_em": "2026-10-19T22:05:51.127024+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:51 GMT",
+        "Last-Modified": null,
+        "ETag": null,
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      "bytes": 5064,
+      "sha256": "eaa02e7f74eca667d05075bd29b467a4111296ce51ec6db5c23b35459be2893b",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\ids_inicio.json"
+    },
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2/query?where=1%3D1&returnCountOnly=true&f=json",
+      "recebido_em": "2026-10-19T22:05:51.208280+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:51 GMT",
+        "Last-Modified": null,
+        "ETag": null,
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      "bytes": 14,
+      "sha256": "00464a8d78e17f8a9b2b3425c4b5d22c09b87cc13bad861cf35eef37937f3dd7",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\contagem.json"
+    },
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2/query?objectIds=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C13%2C14%2C15%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C23%2C24%2C25%2C26%2C27%2C28%2C29%2C30%2C31%2C32%2C33%2C34%2C35%2C36%2C37%2C38%2C39%2C40%2C41%2C42%2C43%2C44%2C45%2C46%2C47%2C48%2C49%2C50%2C51%2C52%2C53%2C54%2C55%2C56%2C57%2C58%2C59%2C60%2C61%2C62%2C63%2C64%2C65%2C66%2C67%2C68%2C69%2C70%2C71%2C72%2C73%2C74%2C75%2C76%2C77%2C78%2C79%2C80%2C81%2C82%2C83%2C84%2C85%2C86%2C87%2C88%2C89%2C90%2C91%2C92%2C93%2C94%2C95%2C96%2C97%2C98%2C99%2C101%2C102%2C103%2C104%2C105%2C106%2C107%2C108%2C109%2C110%2C111%2C112%2C113%2C114%2C115%2C116%2C117%2C118%2C119%2C120%2C121%2C122%2C123%2C124%2C125%2C126%2C127%2C128%2C129%2C130%2C131%2C132%2C133%2C134%2C135%2C136%2C137%2C138%2C139%2C140%2C141%2C142%2C143%2C144%2C145%2C146%2C147%2C148%2C149%2C150%2C151%2C152%2C153%2C154%2C155%2C156%2C157%2C158%2C159%2C160%2C161%2C162%2C163%2C164%2C165%2C166%2C167%2C168%2C169%2C170%2C171%2C172%2C173%2C174%2C175%2C176%2C177%2C178%2C179%2C180%2C181%2C182%2C183%2C184%2C185%2C186%2C187%2C188%2C189%2C190%2C191%2C192%2C193%2C194%2C195%2C196%2C197%2C198%2C199%2C200%2C201%2C202&outFields=OBJECTID%2Cid%2Ctp_bai%2Cnm_bai%2Cnm%2Cnm1%2Cnm2%2Cnm3%2Cql_bai%2Cid_mun%2Cid_re7%2Cid_mzo%2Cin_cond%2Clast_edited_date&returnGeometry=true&outSR=31982&f=json",
+      "recebido_em": "2026-10-19T22:05:51.806690+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:51 GMT",
+        "Last-Modified": null,
+        "ETag": null,
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      "bytes": 1011979,
+      "sha256": "bd48ff36e0073ce80f7cf7a10732f1b03eea269e382306444624226ce79b9a02",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\pagina_001.json"
+    },
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2/query?objectIds=203%2C204%2C205%2C206%2C207%2C208%2C210%2C211%2C212%2C213%2C214%2C215%2C216%2C217%2C218%2C219%2C220%2C221%2C222%2C223%2C224%2C225%2C226%2C227%2C228%2C229%2C230%2C231%2C232%2C233%2C234%2C235%2C236%2C237%2C238%2C239%2C240%2C241%2C242%2C243%2C244%2C245%2C246%2C247%2C248%2C249%2C250%2C251%2C253%2C254%2C255%2C256%2C257%2C258%2C259%2C260%2C261%2C262%2C263%2C264%2C265%2C266%2C267%2C268%2C269%2C270%2C271%2C272%2C273%2C274%2C275%2C276%2C277%2C278%2C279%2C280%2C281%2C282%2C283%2C284%2C285%2C286%2C287%2C288%2C289%2C290%2C291%2C292%2C293%2C294%2C295%2C296%2C297%2C298%2C299%2C300%2C301%2C302%2C303%2C304%2C305%2C306%2C307%2C308%2C309%2C310%2C312%2C313%2C314%2C315%2C316%2C317%2C318%2C319%2C320%2C321%2C322%2C323%2C324%2C325%2C326%2C327%2C328%2C329%2C330%2C331%2C332%2C333%2C334%2C335%2C336%2C337%2C338%2C339%2C340%2C341%2C342%2C343%2C344%2C345%2C346%2C347%2C348%2C349%2C350%2C351%2C352%2C353%2C354%2C355%2C356%2C357%2C358%2C359%2C360%2C361%2C362%2C363%2C364%2C365%2C366%2C367%2C368%2C369%2C370%2C371%2C372%2C373%2C374%2C375%2C376%2C377%2C378%2C379%2C380%2C381%2C382%2C383%2C384%2C385%2C386%2C387%2C388%2C389%2C390%2C391%2C393%2C395%2C396%2C397%2C398%2C400%2C401%2C402%2C403%2C404%2C405%2C406%2C407%2C408&outFields=OBJECTID%2Cid%2Ctp_bai%2Cnm_bai%2Cnm%2Cnm1%2Cnm2%2Cnm3%2Cql_bai%2Cid_mun%2Cid_re7%2Cid_mzo%2Cin_cond%2Clast_edited_date&returnGeometry=true&outSR=31982&f=json",
+      "recebido_em": "2026-10-19T22:05:52.770883+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:52 GMT",
+        "Last-Modified": null,
+        "ETag": null,
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      "bytes": 666785,
+      "sha256": "b673b7f7202e81ef9644c45ef24fa2d092826575f898e0be7e553eaf57d5f223",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\pagina_002.json"
+    },
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2/query?objectIds=409%2C410%2C411%2C412%2C413%2C414%2C415%2C416%2C417%2C418%2C419%2C420%2C421%2C422%2C423%2C424%2C425%2C426%2C427%2C428%2C429%2C430%2C431%2C432%2C433%2C434%2C435%2C436%2C437%2C438%2C439%2C440%2C441%2C442%2C443%2C444%2C445%2C446%2C447%2C448%2C449%2C450%2C451%2C452%2C453%2C454%2C455%2C456%2C457%2C458%2C459%2C460%2C461%2C462%2C463%2C464%2C465%2C466%2C467%2C468%2C469%2C470%2C471%2C472%2C473%2C474%2C475%2C476%2C477%2C478%2C479%2C480%2C481%2C482%2C483%2C484%2C485%2C486%2C487%2C488%2C489%2C490%2C491%2C492%2C493%2C494%2C495%2C496%2C497%2C498%2C499%2C500%2C501%2C502%2C503%2C504%2C505%2C506%2C507%2C508%2C509%2C510%2C511%2C512%2C513%2C514%2C515%2C516%2C517%2C518%2C519%2C520%2C521%2C522%2C523%2C524%2C525%2C526%2C527%2C528%2C529%2C530%2C531%2C532%2C533%2C534%2C535%2C536%2C537%2C538%2C539%2C540%2C541%2C542%2C543%2C544%2C545%2C546%2C547%2C548%2C549%2C550%2C551%2C552%2C553%2C554%2C555%2C556%2C557%2C558%2C559%2C560%2C561%2C562%2C563%2C564%2C565%2C566%2C567%2C568%2C569%2C570%2C571%2C572%2C573%2C574%2C575%2C576%2C577%2C578%2C579%2C580%2C581%2C582%2C583%2C584%2C585%2C586%2C587%2C588%2C589%2C590%2C591%2C592%2C593%2C594%2C595%2C596%2C597%2C598%2C599%2C600%2C601%2C602%2C603%2C604%2C605%2C606%2C607%2C608&outFields=OBJECTID%2Cid%2Ctp_bai%2Cnm_bai%2Cnm%2Cnm1%2Cnm2%2Cnm3%2Cql_bai%2Cid_mun%2Cid_re7%2Cid_mzo%2Cin_cond%2Clast_edited_date&returnGeometry=true&outSR=31982&f=json",
+      "recebido_em": "2026-10-19T22:05:53.563993+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:53 GMT",
+        "Last-Modified": null,
+        "ETag": null,
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      "bytes": 615900,
+      "sha256": "1da3b4e3e0c3a01401380914e5cd0d013b75825d35bdadcb6423c576b166846b",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\pagina_003.json"
+    },
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2/query?objectIds=609%2C610%2C611%2C612%2C613%2C614%2C615%2C617%2C618%2C619%2C620%2C621%2C622%2C623%2C624%2C625%2C626%2C627%2C628%2C629%2C630%2C631%2C632%2C633%2C634%2C635%2C636%2C637%2C638%2C639%2C640%2C642%2C643%2C644%2C645%2C646%2C647%2C648%2C649%2C650%2C651%2C652%2C653%2C654%2C655%2C656%2C657%2C658%2C659%2C660%2C661%2C662%2C663%2C664%2C665%2C666%2C667%2C668%2C669%2C670%2C671%2C672%2C673%2C674%2C676%2C677%2C678%2C679%2C680%2C681%2C682%2C683%2C684%2C685%2C686%2C687%2C688%2C689%2C690%2C691%2C692%2C693%2C694%2C695%2C696%2C697%2C699%2C700%2C701%2C702%2C703%2C704%2C705%2C706%2C707%2C708%2C709%2C710%2C711%2C712%2C713%2C714%2C715%2C716%2C717%2C718%2C719%2C720%2C721%2C722%2C723%2C724%2C725%2C726%2C727%2C728%2C730%2C731%2C732%2C733%2C734%2C735%2C736%2C737%2C738%2C739%2C740%2C741%2C742%2C743%2C744%2C745%2C746%2C747%2C748%2C749%2C750%2C751%2C752%2C753%2C754%2C755%2C756%2C757%2C758%2C759%2C760%2C761%2C762%2C763%2C764%2C765%2C766%2C767%2C768%2C769%2C770%2C771%2C772%2C773%2C774%2C775%2C776%2C777%2C778%2C779%2C780%2C781%2C782%2C783%2C784%2C785%2C786%2C788%2C789%2C790%2C791%2C792%2C793%2C794%2C795%2C796%2C797%2C798%2C799%2C800%2C801%2C802%2C803%2C804%2C805%2C806%2C808%2C809%2C810%2C811%2C812%2C813%2C814%2C815&outFields=OBJECTID%2Cid%2Ctp_bai%2Cnm_bai%2Cnm%2Cnm1%2Cnm2%2Cnm3%2Cql_bai%2Cid_mun%2Cid_re7%2Cid_mzo%2Cin_cond%2Clast_edited_date&returnGeometry=true&outSR=31982&f=json",
+      "recebido_em": "2026-10-19T22:05:54.311615+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:54 GMT",
+        "Last-Modified": null,
+        "ETag": null,
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      "bytes": 741321,
+      "sha256": "6a1353e3cf623a7e3df980ec80a4e98ebb55b13b0e8b56101e3478335e2b78c0",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\pagina_004.json"
+    },
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2/query?objectIds=817%2C818%2C819%2C820%2C821%2C822%2C824%2C825%2C826%2C827%2C828%2C829%2C830%2C831%2C832%2C833%2C834%2C835%2C836%2C837%2C838%2C839%2C840%2C841%2C842%2C843%2C844%2C845%2C846%2C847%2C848%2C849%2C850%2C851%2C852%2C853%2C854%2C855%2C856%2C857%2C858%2C859%2C860%2C861%2C862%2C863%2C864%2C865%2C866%2C867%2C868%2C869%2C870%2C871%2C872%2C873%2C874%2C875%2C876%2C877%2C878%2C879%2C880%2C881%2C882%2C883%2C884%2C885%2C886%2C887%2C888%2C889%2C890%2C891%2C892%2C893%2C894%2C895%2C896%2C897%2C898%2C899%2C900%2C901%2C902%2C903%2C904%2C905%2C906%2C907%2C908%2C909%2C910%2C911%2C912%2C913%2C914%2C915%2C916%2C917%2C918%2C919%2C920%2C921%2C922%2C923%2C924%2C925%2C926%2C927%2C928%2C929%2C930%2C931%2C932%2C933%2C934%2C935%2C936%2C937%2C938%2C939%2C940%2C941%2C942%2C943%2C944%2C945%2C946%2C947%2C948%2C949%2C950%2C951%2C952%2C953%2C954%2C955%2C956%2C957%2C958%2C959%2C960%2C961%2C962%2C963%2C964%2C965%2C966%2C967%2C968%2C969%2C970%2C971%2C972%2C973%2C974%2C975%2C976%2C977%2C978%2C979%2C980%2C981%2C982%2C983%2C984%2C985%2C986%2C987%2C988%2C989%2C990%2C991%2C992%2C993%2C995%2C996%2C997%2C998%2C999%2C1001%2C1002%2C1003%2C1004%2C1005%2C1006%2C1007%2C1008%2C1011%2C1012%2C1013%2C1014%2C1015%2C1016%2C1017%2C1018%2C1019%2C1020%2C1021&outFields=OBJECTID%2Cid%2Ctp_bai%2Cnm_bai%2Cnm%2Cnm1%2Cnm2%2Cnm3%2Cql_bai%2Cid_mun%2Cid_re7%2Cid_mzo%2Cin_cond%2Clast_edited_date&returnGeometry=true&outSR=31982&f=json",
+      "recebido_em": "2026-10-19T22:05:55.088716+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:55 GMT",
+        "Last-Modified": null,
+        "ETag": null,
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      "bytes": 814004,
+      "sha256": "00352ff1e0271a3942f9e484564a2af7b5d0c3eef636fc213fb09a9d3824b24b",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\pagina_005.json"
+    },
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2/query?objectIds=1022%2C1023%2C1024%2C1025%2C1026%2C1027%2C1028%2C1029%2C1030%2C1031%2C1032%2C1033%2C1034%2C1035%2C1036%2C1037%2C1038%2C1039%2C1040%2C1041%2C1042%2C1043%2C1044%2C1045%2C1046%2C1047%2C1048%2C1049%2C1050%2C1051%2C1052%2C1053%2C1054%2C1055%2C1057%2C1058%2C1059%2C1060%2C1061%2C1062%2C1063%2C1064%2C1065%2C1066%2C1067%2C1068%2C1069%2C1070%2C1071%2C1072%2C1073%2C1074%2C1075%2C1076%2C1077%2C1078%2C1079%2C1080%2C1081%2C1083%2C1084%2C1085%2C1086%2C1087%2C1088%2C1089%2C1090%2C1091%2C1092%2C1093%2C1095%2C1096%2C1097%2C1098%2C1099%2C1100%2C1101%2C1102%2C1103%2C1104%2C1105%2C1106%2C1107%2C1108%2C1109%2C1110%2C1111%2C1112%2C1113%2C1114%2C1115%2C1116%2C1117%2C1118%2C1119%2C1120%2C1121%2C1122%2C1123%2C1124%2C1125%2C1126%2C1127%2C1128%2C1129%2C1130%2C1131%2C1132%2C1133%2C1134%2C1135%2C1136%2C1539%2C1939%2C2739%2C3539%2C3540%2C3946%2C3947%2C3948%2C3949%2C3950%2C3951%2C4346%2C4746%2C5158%2C5159%2C5160%2C5557%2C5957%2C6357%2C6358%2C6359%2C6360%2C6361%2C6759%2C7560%2C8365%2C8768%2C9568%2C9969%2C9970%2C10369%2C10370%2C10770%2C11569%2C11969%2C12769%2C12770%2C13170%2C13171%2C13570%2C13571%2C13971%2C14373%2C15174%2C15574%2C15974%2C16374%2C16375%2C16376%2C16775%2C16776%2C17175%2C17176%2C17576%2C17976%2C17977%2C18377%2C18378%2C18777%2C19577%2C19977%2C20377%2C20378%2C21179%2C21579%2C21979%2C22380%2C22779%2C23179%2C23579%2C23580%2C23582%2C23583%2C23982%2C24382%2C25182%2C25582%2C25982%2C26382%2C26782%2C27583%2C27982%2C28382%2C28783%2C29182%2C29183%2C29583%2C29584&outFields=OBJECTID%2Cid%2Ctp_bai%2Cnm_bai%2Cnm%2Cnm1%2Cnm2%2Cnm3%2Cql_bai%2Cid_mun%2Cid_re7%2Cid_mzo%2Cin_cond%2Clast_edited_date&returnGeometry=true&outSR=31982&f=json",
+      "recebido_em": "2026-10-19T22:05:56.146588+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:55 GMT",
+        "Last-Modified": null,
+        "ETag": null,
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      "bytes": 1501581,
+      "sha256": "3a9a0d9ad55740e06b18afbea253f2fb6e6f1a400a1a71bfd59b67ef10f0378f",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\pagina_006.json"
+    },
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2/query?objectIds=29984%2C30384%2C30784%2C31184%2C31185%2C31584%2C31585%2C31985&outFields=OBJECTID%2Cid%2Ctp_bai%2Cnm_bai%2Cnm%2Cnm1%2Cnm2%2Cnm3%2Cql_bai%2Cid_mun%2Cid_re7%2Cid_mzo%2Cin_cond%2Clast_edited_date&returnGeometry=true&outSR=31982&f=json",
+      "recebido_em": "2026-10-19T22:05:56.722513+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:56 GMT",
+        "Last-Modified": null,
+        "ETag": null,
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      "bytes": 15881,
+      "sha256": "b20e2ff259ca4632cef57464510f713e7021ff5e1d4ff250acee32088ab89f7f",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\pagina_007.json"
+    },
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/servicogyn/rest/services/MapaServer/Feature_Base/MapServer/2/query?where=1%3D1&returnIdsOnly=true&f=json",
+      "recebido_em": "2026-10-19T22:05:57.117419+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:57 GMT",
+        "Last-Modified": null,
+        "ETag": null,
+        "Content-Type": "text/plain;charset=utf-8"
+      },
+      "bytes": 5064,
+      "sha256": "eaa02e7f74eca667d05075bd29b467a4111296ce51ec6db5c23b35459be2893b",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\ids_fim.json"
+    },
+    {
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\bairros_siggo.esri.json",
+      "bytes": 12349258,
+      "sha256": "883ec81b4fc93af3d525aaaa1a81341e6df760edd6bbb2a58755613ea90f2286",
+      "derivado_de": "paginas_esri_json"
+    },
+    {
+      "url": "https://portalmapa.goiania.go.gov.br/helpsiggo/HelpSIGGO/bai.htm",
+      "recebido_em": "2026-10-19T22:05:57.878192+00:00",
+      "headers": {
+        "Date": "Mon, 19 Oct 2026 22:05:57 GMT",
+        "Last-Modified": "Tue, 21 Jun 2016 03:25:19 GMT",
+        "ETag": null,
+        "Content-Type": "text/html"
+      },
+      "bytes": 142580,
+      "sha256": "34b9d12af5cb274f923680fd3819e9cf279ee813c669d1460ae411de27b47c14",
+      "arquivo": "dados\\malha_municipal\\originais\\20261019T220550Z_7d451c\\dicionario_siggo_bai.html"
+    }
+  ],
+  "erro_documentacao": null,
+  "observacao": "API pública sem snapshot transacional; OIDs conferidos antes/depois. Datas de edição não equivalem à vigência legal da malha."
+}

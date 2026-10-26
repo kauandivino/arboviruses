@@ -1,0 +1,19 @@
+{
+  "competencia": "202609",
+  "arquivos": [
+    {
+      "url": "ftp://ftp.datasus.gov.br/cnes/BASE_DE_DADOS_CNES_202609.ZIP",
+      "bytes": 744678370,
+      "modificacao_ftp": "213 20261015121653",
+      "sha256": "cd74a6be52427028ffa13f586266b38510e1a63ff51190b4b371bbb14ef99208",
+      "coletado_em": "2026-10-19T22:33:46.935264+00:00"
+    },
+    {
+      "url": "ftp://ftp.datasus.gov.br/cnes/DICIONARIO_DE_DADOS.ZIP",
+      "bytes": 602386,
+      "modificacao_ftp": "213 20260123143758",
+      "sha256": "a20b414204d9b34bfc031670d1dd3b3b302fd28319e24b50de108d3bcca5cbe1",
+      "coletado_em": "2026-10-19T22:26:12.849612+00:00"
+    }
+  ]
+}

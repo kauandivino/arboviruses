@@ -1,0 +1,14 @@
+{
+  "agravo": "animais",
+  "ano": 2022,
+  "situacao": "FINAIS",
+  "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR22.dbc",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR22.dbc",
+  "tamanho": 11190386,
+  "modificado": "20251219173700",
+  "nome": "ANIMBR22.dbc",
+  "arquivo": "dados\\datasus\\originais\\animais\\ANIMBR22.dbc",
+  "sha256": "9d20d0245fbeaf659546730c843615d6eaec9cce51ec83786277676cfb6ac7b2",
+  "status": "baixado",
+  "obtido_em": "2026-10-19T21:34:46.720057+00:00"
+}

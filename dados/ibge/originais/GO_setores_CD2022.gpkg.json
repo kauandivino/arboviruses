@@ -1,0 +1,12 @@
+{
+  "id": "setores",
+  "tipo": "malha",
+  "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/setores/gpkg/UF/GO/GO_setores_CD2022.gpkg",
+  "etag": "\"60c8000-626bcc7d9c78f\"",
+  "ultima_modificacao": "Tue, 12 Nov 2024 20:08:28 GMT",
+  "bytes": 101482496,
+  "arquivo": "dados\\ibge\\originais\\GO_setores_CD2022.gpkg",
+  "sha256": "2553427433fa48dcf26a05e72a9576e79ae0d5ddd4324998e373845366316396",
+  "obtido_em": "2026-10-19T21:54:14.260806+00:00",
+  "status": "baixado"
+}

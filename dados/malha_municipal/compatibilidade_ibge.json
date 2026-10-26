@@ -1,0 +1,40 @@
+{
+  "setores": 2310,
+  "pares_intersecoes": 6462,
+  "status": {
+    "candidato_um_poligono_99pct": 1305,
+    "setor_cruza_poligonos": 783,
+    "cobertura_parcial": 219,
+    "sem_intersecao_acima_tolerancia": 3
+  },
+  "por_situacao_ibge": [
+    {
+      "situacao": "Rural",
+      "setores": 19,
+      "area_m2": 288935700.4695347,
+      "fracao_area_coberta": 0.10254977117841609
+    },
+    {
+      "situacao": "Urbana",
+      "setores": 2291,
+      "area_m2": 440390155.9859518,
+      "fracao_area_coberta": 0.9275123087947724
+    }
+  ],
+  "area_municipio_ibge_m2": 729325856.4554871,
+  "area_coberta_m2": 438097580.3174477,
+  "fracao_area_municipio_coberta": 0.6006883979769968,
+  "area_malha_fora_municipio_ibge_m2": 72693.74713916684,
+  "intersecoes_ignoradas_ate_1m2": 171,
+  "area_ignorada_m2": 44.872132307860866,
+  "crs_area": "EPSG:31982",
+  "limiar_area_m2": 1.0,
+  "limiar_cobertura": 0.99,
+  "limiar_sobreposicao": 0.01,
+  "populacao_rateada": false,
+  "agregacao_por_bairro_executada": false,
+  "observacao": "Candidatos geométricos para revisão, sem atribuição oficial de setor ou população. Cadastro atual não assegura limites de 2022 nem equivalência com bairros da Saúde.",
+  "executado_em": "2026-10-19T22:08:26.392812+00:00",
+  "fonte_municipal_sha256": "883ec81b4fc93af3d525aaaa1a81341e6df760edd6bbb2a58755613ea90f2286",
+  "setores_ibge_sha256": "319b2c5006966cf675a86e80404f43d2919553fd9d3fd8ad9f85dc2ddd2468ce"
+}

@@ -1,0 +1,38 @@
+﻿coluna,tabela,variavel,descricao,tema
+basico_V0001,basico,V0001,Total de pessoas,Básico
+basico_V0002,basico,V0002,Total de Domicílios (DPPO + DPPV + DPPUO + DPIO + DCCM + DCSM),Básico
+basico_V0003,basico,V0003,Total de Domicílios Particulares (DPPO + DPPV + DPPUO + DPIO),Básico
+basico_V0004,basico,V0004,Total de Domicílios Coletivos (DCCM + DCSM),Básico
+basico_V0005,basico,V0005,Média de moradores em Domicílios Particulares Ocupados (Total pessoas em Domicílios Particulares Ocupados / DPPO + DPIO),Básico
+basico_V0006,basico,V0006,Percentual de Domicílios Particulares Ocupados Imputados (Total DPO imputados / Total DPO),Básico
+basico_V0007,basico,V0007,Total de Domicílios Particulares Ocupados (DPPO + DPIO),Básico
+basico_V0008,basico,V0008,Total de Domicílios Particulares  de Uso Ocasional (DPPUO),Básico
+basico_V0009,basico,V0009,Total de Domicílios Particulares Permanentes Vagos (DPPV),Básico
+domicilio1_V00001,domicilio1,V00001,Domicílios Particulares Permanentes Ocupados,Características do Domicílio - Parte 1
+domicilio1_V00004,domicilio1,V00004,Domicílios Particulares Permanentes Ocupados,Características do Domicílio - Parte 1
+domicilio1_V00005,domicilio1,V00005,"Domicílios Particulares Permanentes Ocupados, Quantidade de moradores",Características do Domicílio - Parte 1
+domicilio2_V00111,domicilio2,V00111,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição",Características do Domicílio - Parte 2
+domicilio2_V00112,domicilio2,V00112,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano",Características do Domicílio - Parte 2
+domicilio2_V00113,domicilio2,V00113,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba",Características do Domicílio - Parte 2
+domicilio2_V00114,domicilio2,V00114,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina",Características do Domicílio - Parte 2
+domicilio2_V00115,domicilio2,V00115,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa",Características do Domicílio - Parte 2
+domicilio2_V00116,domicilio2,V00116,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada",Características do Domicílio - Parte 2
+domicilio2_V00117,domicilio2,V00117,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés",Características do Domicílio - Parte 2
+domicilio2_V00118,domicilio2,V00118,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água",Características do Domicílio - Parte 2
+domicilio2_V00199,domicilio2,V00199,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação",Características do Domicílio - Parte 2
+domicilio2_V00200,domicilio2,V00200,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno",Características do Domicílio - Parte 2
+domicilio2_V00201,domicilio2,V00201,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio",Características do Domicílio - Parte 2
+domicilio2_V00309,domicilio2,V00309,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial",Características do Domicílio - Parte 2
+domicilio2_V00310,domicilio2,V00310,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede",Características do Domicílio - Parte 2
+domicilio2_V00311,domicilio2,V00311,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede",Características do Domicílio - Parte 2
+domicilio2_V00312,domicilio2,V00312,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco",Características do Domicílio - Parte 2
+domicilio2_V00313,domicilio2,V00313,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala",Características do Domicílio - Parte 2
+domicilio2_V00314,domicilio2,V00314,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar",Características do Domicílio - Parte 2
+domicilio2_V00315,domicilio2,V00315,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma",Características do Domicílio - Parte 2
+domicilio2_V00316,domicilio2,V00316,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário",Características do Domicílio - Parte 2
+domicilio2_V00397,domicilio2,V00397,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza",Características do Domicílio - Parte 2
+domicilio2_V00398,domicilio2,V00398,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza",Características do Domicílio - Parte 2
+domicilio2_V00399,domicilio2,V00399,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade",Características do Domicílio - Parte 2
+domicilio2_V00400,domicilio2,V00400,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade",Características do Domicílio - Parte 2
+domicilio2_V00401,domicilio2,V00401,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública",Características do Domicílio - Parte 2
+domicilio2_V00402,domicilio2,V00402,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo",Características do Domicílio - Parte 2

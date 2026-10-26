@@ -1,0 +1,12 @@
+{
+  "id": "bairros",
+  "tipo": "malha",
+  "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/bairros/gpkg/UF/GO/GO_bairros_CD2022.gpkg",
+  "etag": "\"28000-626bcc6d5309f\"",
+  "ultima_modificacao": "Tue, 12 Nov 2024 20:08:11 GMT",
+  "bytes": 163840,
+  "arquivo": "dados\\ibge\\originais\\GO_bairros_CD2022.gpkg",
+  "sha256": "d2d9cd2a9d4d567e191523de8828a28721ede2e8b98d5da4b1223978f33c3861",
+  "obtido_em": "2026-10-19T21:53:54.244055+00:00",
+  "status": "baixado"
+}

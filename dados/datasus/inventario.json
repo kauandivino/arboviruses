@@ -1,0 +1,107 @@
+{
+  "consultado_em": "2026-10-19T21:30:36.707964+00:00",
+  "host": "ftp.datasus.gov.br",
+  "arquivos": [
+    {
+      "agravo": "dengue",
+      "ano": 2022,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR22.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR22.dbc",
+      "tamanho": 64655421,
+      "modificado": "20260319180300",
+      "nome": "DENGBR22.dbc"
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2023,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR23.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR23.dbc",
+      "tamanho": 61969954,
+      "modificado": "20260317113500",
+      "nome": "DENGBR23.dbc"
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2024,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR24.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR24.dbc",
+      "tamanho": 287558389,
+      "modificado": "20260227140600",
+      "nome": "DENGBR24.dbc"
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2025,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR25.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/DENGBR25.dbc",
+      "tamanho": 66240691,
+      "modificado": "20260721193500",
+      "nome": "DENGBR25.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2022,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR22.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR22.dbc",
+      "tamanho": 11190386,
+      "modificado": "20251219173700",
+      "nome": "ANIMBR22.dbc"
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2026,
+      "situacao": "PRELIM",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/DENGBR26.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/DENGBR26.dbc",
+      "tamanho": 22407563,
+      "modificado": "20261014171300",
+      "nome": "DENGBR26.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2023,
+      "situacao": "PRELIM",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR23.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR23.dbc",
+      "tamanho": 13473666,
+      "modificado": "20260921125000",
+      "nome": "ANIMBR23.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2024,
+      "situacao": "PRELIM",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR24.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR24.dbc",
+      "tamanho": 13306962,
+      "modificado": "20260826141600",
+      "nome": "ANIMBR24.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2025,
+      "situacao": "PRELIM",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR25.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR25.dbc",
+      "tamanho": 15224284,
+      "modificado": "20260921125000",
+      "nome": "ANIMBR25.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2026,
+      "situacao": "PRELIM",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR26.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR26.dbc",
+      "tamanho": 10349385,
+      "modificado": "20260921125000",
+      "nome": "ANIMBR26.dbc"
+    }
+  ],
+  "ausentes": []
+}

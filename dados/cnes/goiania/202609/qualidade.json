@@ -1,0 +1,49 @@
+{
+  "gerado_em": "2026-10-19T22:34:16.876143+00:00",
+  "competencia": "202609",
+  "municipio": "5208707",
+  "registros_brasil": 640122,
+  "estabelecimentos": 5184,
+  "status_coordenada": {
+    "dominio_valido": 5029,
+    "ausente": 155
+  },
+  "checagem_municipal": {
+    "dentro_malha_2022": 4902,
+    "sem_coordenada_valida": 155,
+    "fora_malha_2022": 127
+  },
+  "malha_conferencia": {
+    "arquivo": "dados\\ibge\\goiania\\setores_goiania_2022.gpkg",
+    "sha256": "319b2c5006966cf675a86e80404f43d2919553fd9d3fd8ad9f85dc2ddd2468ce",
+    "referencia": "Censo 2022; união dos setores de Goiânia"
+  },
+  "com_motivo_desativacao": 711,
+  "natureza_publica": 260,
+  "coordenadas_compartilhadas": 177,
+  "sem_descricao_dominio": {
+    "TP_UNIDADE": 0,
+    "CO_TIPO_ESTABELECIMENTO": 0,
+    "CO_NATUREZA_JUR": 0,
+    "CO_MOTIVO_DESAB": 0
+  },
+  "fontes_dominios": [
+    {
+      "membro_zip": "tbTipoUnidade202609.csv",
+      "sha256": "7bf4788743760ba744454e2ee1dbfeabcb8ecb379f300e5a927a6b47e46673f9"
+    },
+    {
+      "membro_zip": "tbTipoEstabelecimento202609.csv",
+      "sha256": "5e78f935d8ca2066bfe59f3b8cade024cd19063c01ec7940187eb131793dddd9"
+    },
+    {
+      "membro_zip": "tbNaturezaJuridica202609.csv",
+      "sha256": "b74a477fba3b821f2890bafb49da04af779229f5df5058c9ec8f39a6737d358b"
+    },
+    {
+      "membro_zip": "tbMotivoDesativacao202609.csv",
+      "sha256": "5ffbd1c3e36b598b998fff9e3f33cde2ef3674d07e5b40e3fe12d61f6650ca32"
+    }
+  ],
+  "membro_estabelecimentos": "tbEstabelecimento202609.csv"
+}

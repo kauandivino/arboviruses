@@ -1,0 +1,14 @@
+{
+  "agravo": "animais",
+  "ano": 2023,
+  "situacao": "PRELIM",
+  "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR23.dbc",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR23.dbc",
+  "tamanho": 13473666,
+  "modificado": "20260921125000",
+  "nome": "ANIMBR23.dbc",
+  "arquivo": "dados\\datasus\\originais\\animais\\ANIMBR23.dbc",
+  "sha256": "d6171bb1a9c18490319285c68349ffdc2c559c9414fcd86986a9b8b94cfd857d",
+  "status": "baixado",
+  "obtido_em": "2026-10-19T21:35:21.793403+00:00"
+}

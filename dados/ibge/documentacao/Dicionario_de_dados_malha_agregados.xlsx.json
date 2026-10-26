@@ -1,0 +1,12 @@
+{
+  "id": "dicionario_malha",
+  "tipo": "documentacao",
+  "url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_de_setores_censitarios__divisoes_intramunicipais/censo_2022/Dicionario_de_dados_malha_agregados.xlsx",
+  "etag": "\"49ac-626df8cad329d\"",
+  "ultima_modificacao": "Thu, 14 Nov 2024 13:37:19 GMT",
+  "bytes": 18860,
+  "arquivo": "dados\\ibge\\documentacao\\Dicionario_de_dados_malha_agregados.xlsx",
+  "sha256": "0dffb669ee90e1ffb86a7c8666cc066d5121d44b494013cc1149e50cc75073b1",
+  "obtido_em": "2026-10-19T21:53:54.622677+00:00",
+  "status": "baixado"
+}

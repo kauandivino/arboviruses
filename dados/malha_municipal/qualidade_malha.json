@@ -1,0 +1,67 @@
+{
+  "preparado_em": "2026-10-19T22:08:00.956237+00:00",
+  "versao": 1,
+  "feicoes_fonte": 1208,
+  "feicoes_analise": 1208,
+  "geometrias_originais_invalidas": 1,
+  "oids_originais_invalidos": [
+    1112
+  ],
+  "oids_excluidos_analise": [],
+  "ids_municipais_repetidos": 1,
+  "nomes_vazios": 0,
+  "ids_municipais_para_revisao": [
+    {
+      "OID_SIGGO": 13171,
+      "ID_SIGGO": "000400001169",
+      "NOME_SIGGO": "Gleba"
+    },
+    {
+      "OID_SIGGO": 31584,
+      "ID_SIGGO": "000400001169",
+      "NOME_SIGGO": "Gleba"
+    }
+  ],
+  "id_mun_valores": [
+    " ",
+    "000500000299"
+  ],
+  "fontes_estatisticas_embutidas_nao_utilizadas": [
+    "pop_total",
+    "pop_masc",
+    "pop_fem"
+  ],
+  "reparo": "make_valid apenas na cópia de análise; componentes não poligonais descartados. Original preservado.",
+  "arquivos": [
+    {
+      "arquivo": "dados\\malha_municipal\\goiania\\bairros_municipais_siggo.gpkg",
+      "sha256": "b1c0f0fd616dbac606430c0c59c0d8d5161c7414c6fec25ee6c31c4cbe220788",
+      "bytes": 3039232
+    },
+    {
+      "arquivo": "dados\\malha_municipal\\goiania\\bairros_municipais_siggo.geojson",
+      "sha256": "84a81cc7300b0912570afef39d991c496db64c4e0a8e29b59c0b454b3fb876d3",
+      "bytes": 6498694
+    },
+    {
+      "arquivo": "dados\\malha_municipal\\goiania\\bairros_municipais_siggo.csv",
+      "sha256": "069960fb801d15bc89d8318f7f1c4e6f8d83c846dede7eb551525cd09072dfa9",
+      "bytes": 274695
+    },
+    {
+      "arquivo": "dados\\malha_municipal\\goiania\\bairros_municipais_analise.gpkg",
+      "sha256": "aceafeb12c187d16ddb63be3cb78b99d774c3210fb05f628deba6bb8d1cd8fa6",
+      "bytes": 3039232
+    },
+    {
+      "arquivo": "dados\\malha_municipal\\goiania\\bairros_municipais_analise.geojson",
+      "sha256": "0df8ac291e62c432a17d850306959d5ce3266cd1146d4329075359d5348bf1d9",
+      "bytes": 6498742
+    },
+    {
+      "arquivo": "dados\\malha_municipal\\goiania\\bairros_municipais_analise.csv",
+      "sha256": "069960fb801d15bc89d8318f7f1c4e6f8d83c846dede7eb551525cd09072dfa9",
+      "bytes": 274695
+    }
+  ]
+}

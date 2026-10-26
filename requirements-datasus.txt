@@ -1,0 +1,2 @@
+# Python 3.10 a 3.13 para usar os wheels nativos no Windows.
+pyreaddbc==2.0.4

@@ -1,0 +1,465 @@
+
+PAGINA 1
+         BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                                                                          51
+
+
+                  Secretaria Municipal de Saúde / Prefeitura de Goiânia                                                  Edição nº 51/Dez
+
+
+
+          MONITORAMENTO DOS CASOS DE ARBOVIROSES URBANAS TRANSMITIDAS PELO
+         AEDES AEGYPTI                          (DENGUE, CHIKUNGUNYA, ZIKA E FEBRE AMARELA).
+
+          Gerência de Vigilância de Doenças e Agravos Transmissíveis - GEDAT/ Diretoria de Vigilância Epidemiológica – DVE/ Superintendência de
+          Vigilância em Saúde - SVS/SMS
+
+          As informações sobre dengue, zika, chikungunya e febre amarela,  apresentadas neste boletim, são referentes
+          às  notificações  ocorridas  nos  últimos  anos,  com ênfase  em  2022,  disponíveis  no  Sinan  Online e Sinan
+          Net.
+
+          Objetivo:            apresentar   o   cenário   epidemiológico   atual   de   dengue,   chikungunya,   zika   e                                                         febre  amarela,
+          enfatizando a importância de se manterem atentos à ocorrência de casos suspeitos de                                                                             arboviroses ou casos
+          com  quadro  clínico semelhante,  assegurando  a  notificação  e  investigação  dos  casos,  bem                                                                   como a coleta de
+          amostras biológicas para identificação precoce das áreas com circulação viral e                                                                       intensificação do controle
+          dos  criadouros  do  mosquito                         Aedes  aegypti            ,  o  monitoramento  da  morte  de  macacos                                   e  a  organização  dos
+          serviços de saúde para evitar o aumento expressivo de casos graves e óbitos.
+
+
+
+                                                  DENGUE -                SITUAÇÃO EPIDEMIOLÓGICA ATÉ SE 51                                                         /22
+                   Quadro 1: Demonstrativo da situação epidemiológica de dengue. Goiânia, 2015 a 2022*.
+
+                                                                                                      Taxa de                    Total de              Proporção de                    Aumento ou
+        Ano             Casos                    Casos                     Casos                 incidência (x                     casos               Casos Graves                    redução em
+                   Notificados             confirmados               Prováveis**             100.000 hab)***                      Graves                       ****                  relação ao ano
+                                                                                                                                                                                           anterior
+      2022*             58900             42460              54464                3545,6                 111                    0,3                                                          379,8
+       2021             14280            10073            11.889               774,0                 12                                                          0,1                          - 9,5
+       2020             16241            10028            13.135               855,1                 10                                                          0,1                         - 60,7
+       2019             35512            24540            33405              2203,3                79                                                            0,3                          10,7
+       2018             33327            15223            30189              2018,4                81                                                            0,5                          - 4,9
+       2017             34269            13353            31734              2169,8                59                                                            0,4                         - 46,1
+       2016             61288            13161            58910              4078,4                82                                                            0,6                         - 24,0
+       2015             80523            21524            77482              5415,7               196                                                            0,9                         193,8
+
+         *Dados sujeitos a alterações
+        **Casos  prováveis:  exceto  os  casos  descartados
+       ***Tx de incidência: nº de casos prováveis por 100000 habitantes
+       ****Proporção  de  casos  graves:  nº  de  casos  graves/casos confirmados por 100 casos
+       Fonte: Sinan online/SMS – Goiânia * D            ad os preliminares, sujeitos a alterações.
+
+
+
+
+          50                                                                                                                                        Boletim Epidemiológico Arboviroses - nº 51
+
+PAGINA 2
+          BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                                                                                         51
+
+
+                    Secretaria Municipal de Saúde / Prefeitura de Goiânia                                                  Edição nº 51/Dez
+
+
+           Quadro 2: Classificação dos casos de dengue por ano de início dos sintomas. Goiânia, 2015 a 2022*.
+
+
+           Ano                  Dengue                Dengue com Sinais de                                Dengue                      Óbitos em                         Óbitos por                          TX de
+                                                                     Alarme                                Grave                    Investigação                           Dengue                     letalidade**
+
+          2022*                   40501                       1848                         111                      23                         43                      38,7
+         2021*          9793                       268                         12                      1                         6                     50,0
+           2020           9798                       220                         10                      0                         3                     30,0
+           2019          23197                     1264                        81                      0                        17                    21,0
+           2018          13589                     1553                        77                      0                        22                    28,6
+           2017          12187                     1107                        58                      0                        19                    32,8
+           2016          11266                     1813                        82                      0                        19                    23,2
+           2015          18579                     2749                       196                     0                        39                    19,9
+
+                 *Dados sujeitos a alterações
+                 ** Tx de letalidad    e: nº óbi tos/dengue grave x 100
+                 Fonte: Sinan online/SMS – Goiânia * D                ad os preliminares, sujeitos a alterações.
+
+           Em 2022, o número de casos de dengue ultrapassou o limite superior nas SE 1 a 16, 32, 34 e 35/2022,
+           porém  está  indicando  tendência  de  queda,  em  relação  ao  ano  anterior.  Nas  últimas  semanas,  os  casos
+           notificados estão abaixo da média esperada (Gráfico 1).
+
+           Gráfico 1 – Diagrama de controle da dengue em Goiânia 2021-2022*
+
+
+
+                                     200,0
+                                                                         2020/2021
+                                     180,0                               2021/2022
+                                     160,0                               2022/2023
+                                                                         Média
+                                     140,0                               Limite superior
+
+                                     120,0
+
+                                     100,0
+
+                                       80,0
+
+                                       60,0
+
+                                       40,0
+
+                                       20,0
+
+                                         0,0     2                8       1                7        0       1        4       7        0       3                9                         8       1
+                                               3        35      3        4       44       4       5                                 1        1       16       1       22       25      2        3
+                                                                                                Semana Epid de Sintomas
+                      Fonte: Sinan online/SMS – Goiânia
+                            * Dados preliminares, sujeitos a alterações.
+
+           50                                                                                                                                        Boletim Epidemiológico Arboviroses - nº 51
+
+PAGINA 3
+         BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                                                                       51
+
+
+                  Secretaria Municipal de Saúde / Prefeitura de Goiânia                                                  Edição nº 51/Dez
+
+          A taxa de incidência acima de 300 casos/100 mil habitantes indica ALTO RISCO para a ocorrência da
+          dengue de acordo com as semanas acumuladas (SE 1 a 51), enquanto que nas últimas 8 semanas (SE 44 a
+          51), 04 DS (Oeste, Norte, Sudoeste e Noroeste) estão em médio risco e os DS Leste, Campinas Centro e
+          Sul estão em baixo risco - essa classificação é estratificada de acordo com parâmetros estabelecidos pela
+          SVS/MS. Mantém-se mesma situação da semana anterior, portanto estas regiões devem estar alertas com
+          a  presença  de  criadouros  de  vetores  transmissores  das  arboviroses,  visando  eliminá-los,  evitando  a
+          proliferação das doenças (Quadro 3 e 3-A).
+
+                    Q    uadr    o 3: Casos prováveis d                 e d   engue por Distrito Sanitário d                      e Residência. Goiânia, SE 1 a 51/2022                            .
+
+                Distrito de Residência                            Casos Prováveis*                              Incidência/100.000**                                Classificação
+             Oeste                                                            5721                                      4604,8                             Alto Risco
+             Leste                                                            7866                                      4207,3                             Alto Risco
+             Campinas centro                                                  7201                                      2548,5                             Alto Risco
+             Norte                                                            6019                                      4296,3                             Alto Risco
+             Sul                                                              7481                                      3004,5                             Alto Risco
+             Sudoeste                                                        10366                                     5523,3                             Alto Risco
+             Noroeste                                                         8067                                      5040,9                             Alto Risco
+              Fonte: Sinan online/SMS – Goiânia
+                  *Casos  prováveis:  exceto  os  casos  descartados
+                  **Tx de incidência: nº de casos por 100000 habitantes
+
+
+                                     Quadro 3-A            : Casos prováveis de dengue por Distrito Sanitário de Residência. Goiânia, SE 44
+          a 51   /2022      *.
+
+                 Distrito de Residência                          Casos Prováveis**                            Incidência/100.000***                                Classificação
+             Oeste                                                             128                                       103,0                                      Médio Risco
+             Leste                                                             136                                        72,7                             Baixo Risco
+             Campinas Centro                                                   233                                        82,5                             Baixo Risco
+             Norte                                                             200                                       142,8                                      Médio Risco
+             Sul                                                               220                                        88,4                             Baixo Risco
+             Sudoeste                                                          222                                       118,3                                      Médio Risco
+             Noroeste                                                          277                                       173,1                                      Médio Risco
+                          F  onte: Sinan online/SMS – Goiânia
+                 *Dados sujeitos a alterações
+                 **Casos  prováveis:  exceto  os  casos  descartados
+                ***Tx de incidência: nº de casos por 100000 habitantes
+
+
+          De      acordo         com       o    LIRA         (Lev    antamento  do                Índice       Rápido  do             Aedes       aegypti)  realizado             em  27/06  a
+          01/07/2022            , a   situação  do          município de Goiânia passou de                                ALTO RISCO                    para     BAIXO RISCO, com
+          Índice de Infestação Predial (geral) de 0,3%, sendo que 90,54% do total de estratos estão em situação de
+          baixo risco para o Aedes aegypti, 9,46% em médio risco e 9,46% estão em alto risco. Ressalta-se que os
+          criadouros predominantes encontrados são passíveis de remoção.
+              OBS: Classificação por risco: <1% baixo; 1-3,9% alerta e >3,9% alto (MS).
+          50                                                                                                                                        Boletim Epidemiológico Arboviroses - nº 51
+
+PAGINA 4
+         BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                                                             51
+
+
+                 Secretaria Municipal de Saúde / Prefeitura de Goiânia                                                  Edição nº 51/Dez
+
+          Quadr      o 4 –    LIRAs (Lev          antamento d         e   Índice rápido para Aedes aegypti), Goiânia, 17 a 21/10/2022                                       .
+
+                      *IIP     (Índice de          Infestação Predial)                e IB     (Índice de Breteau)
+                                                           para      Aedes aegypti                                                                    0.8/0,9
+                                                     IIP e IB para        Aedes     albopict    us                                                       0/0
+
+                                       Nº de     estratos     com baixo risco para Aedes
+                                                     aegypti (IIP abaixo                de   1%)                                                   49 (66,22%)
+                                        Nº de     estratos      com médio risco (IIP entre                  1 a
+                                                                       3,9%)                                                                       25 (33,78%)
+                                       Nº de     estratos      de   com alto risco (IIP acima de
+                                                                       3,9   %)                                                                        0 (0%)
+                                        SITUAÇÃO GERAL DO MUNICÍPIO                                                                               BAIXO RISCO
+
+           *IIP - % de imóveis com presença de Aedes aegypti.  *IB – nº de depósitos positivos para cada 100 imóveis
+
+            Fonte: D VZ-SMS Goiânia (Depa         rtamento de Vigilância em Zoo    noses
+
+
+                               CHIKUNGUNYA - SITUAÇÃO EPIDEMIOLÓGICA ATÉ SE 51                                                                         /22
+
+         A taxa de incidência de Chikungunya nos DS Norte e Sudoeste estão acima de 100 casos/100000 hab.,
+         indicando  médio  risco  para  a  ocorrência  da  doença  (essa  classificação  é  estratificada  de  acordo  com
+         parâmetros estabelecidos pela SVS/MS) (Quadro 6).
+
+         Quadro 5: Demonstrativo da situação epidemiológica de Chikungunya em Goiânia, 2016 a 2022*
+
+
+                     Ano              Casos                    Casos                  Óbitos                   Tx de              Tx de Incidência/100 mil
+                                 Notificados             Confirmados             confirmados             letalidade**                            hab***
+
+                   2022*               1414                 1184                   3                     0,3                              77,1
+                    2021                141                      106                       0                     0,0                                 6,9
+                    2020                 16                        0                       0                     0,0                                 0,0
+                    2019                 65                        2                       0                     0,0                                 0,1
+                    2018                 67                        1                       0                     0,0                                 0,1
+                    2017                 80                       12                       0                     0,0                                 0,8
+                    2016                 51                       12                       0                     0,0                                 0,8
+                 Fonte: Sinan online/SMS – Goiânia
+                * Dados sujeitos alteração
+                **Taxa de letalidade: ób conf / casos conf x 100
+                ***Tx de incidência: caso conf / 100 mil hab
+
+
+
+
+
+
+
+         50                                                                                                                                        Boletim Epidemiológico Arboviroses - nº 51
+
+PAGINA 5
+          BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                                                                                           51
+
+
+                    Secretaria Municipal de Saúde / Prefeitura de Goiânia                                                  Edição nº 51/Dez
+
+           Quadro 6: Casos confirmados de Chikungunya por Distrito Sanitário de residência, Goiânia, 2022*
+
+                            Distrito de Residência                                              Casos Confirmados                                        Incidência por 100.000 hab
+                     Oeste                                                                                      108                                                 86,9
+                     Leste                                                                                        81                                                  43,3
+                     Campinas centro                                                                            249                                                 88,1
+                     Norte                                                                                      176                                                125,6
+                     Sul                                                                                        168                                                 67,5
+                     Sudoeste                                                                                   317                                                168,9
+                     Noroeste                                                                                     84                                                  52,5
+
+                             Fonte: Sinan on line/SMS - Goiânia          *Dados sujeitos a alterações
+                            Tx de incidência: nº de casos por 100000 habitantes
+
+
+
+                                                                    ZIKA -          SITUAÇÃO EPIDEMIOLÓGICA ATÉ SE 51                                                                  /22
+
+           Analisando a situação epidemiológica dos anos  anteriores (2015 a 2019), notamos  uma queda bastante
+           significativa no número de casos prováveis de zika a partir de 2020, podendo ser entendido como uma
+           subnotificação  de  casos  ou  dificuldade  na  suspeição  diagnóstica.  Em  2022,  temos  apenas  01  caso
+           confirmado (Quadro 7).
+
+              Quadro 7 - Casos Prováveis de Zika, taxa de incidência, casos confirmados, óbitos e taxa de                                                                                              letalidade em
+           residentes em Goiânia, 2016 a 2022*
+
+                                                Casos                          Tx                            Casos confirmados
+                          Ano                prováveis                  Incidência                 Gestante                              Não                      Óbitos               Taxa de
+                                                                        **                                                         Gestantes                                           Letalidade***
+                          2022                       1                  0,1                  0                       1                    0                    0
+                          2021                       1                         0,1                         0                                1                           0                           0
+                          2020                       0                         0,0                         0                                0                           0                           0
+                          2019                     123                         8,1                         1                                0                           0                           0
+                          2018                     377                       25,2                          2                                1                           1                       33,3
+                          2017                   2771                       189,5                         43                             334                            0                           0
+                          2016                   8530                       590,5                        333                            6439                            0                           0
+                          2015                      53                         3,7                         8                              37                            0                           0
+                      Fonte: Sinan net/SMS – Goiânia.
+                   *Dados sujeitos a alterações
+                  **Tx de incidência: nº de casos por 100000 habitantes
+                  ***  Tx de letalidade: nº óbi     tos/casos prováveis x 100
+
+
+
+
+
+
+
+           50                                                                                                                                        Boletim Epidemiológico Arboviroses - nº 51
+
+PAGINA 6
+         BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                                                                            51
+
+
+                  Secretaria Municipal de Saúde / Prefeitura de Goiânia                                                  Edição nº 51/Dez
+
+                            FEBRE AMARELA - SITUAÇÃO EPIDEMIOLÓGICA ATÉ SE 51/22
+
+          Houve registro de epizootias (morte de macacos) confirmadas nos anos de 2015, 2016, 2017, 2020 e 2021.
+          Em 2022, registrou-se 6 casos notificados porém não tem confirmação de casos em humanos e nem de morte
+          em macacos por febre amarela (Quadro 8).
+
+          Quadro 8 – Casos confirmados e óbitos por FA, taxa de letalidade e epizootias (morte de macacos) com
+          identificação de FA, nos anos que registraram casos. Goiânia, 2007 a 2022*.
+
+                              Anos                           Casos confirmados                              Óbitos                  Tx de letalidade                        Epizootias com
+                                                                                                                                                                         identificação de FA
+                             2022*                                           0                                   0                               0                                       0
+                              2021                                           0                                   0                               0                                       2
+                              2020                                           0                                   0                               0                                       9
+                              2017                                           0                                   0                               0                                       5
+                              2016                                           1                                   1                             100                                       2
+                              2015                                           0                                   0                               0                                       4
+                              2008                                           1                                   1                             100                                       0
+                              2007                                           1                                   1                             100                                       0
+              *Dados sujeitos a alterações
+               Fonte: S inan Net/Lacen - Planilha        de Epizootias
+
+
+
+                 DADOS LABORATORIAIS – DENGUE, CHIKUNGUNYA, ZIKA E FEBRE AMARELA –
+                 ATÉ SE 51
+
+          Já  foram  detectados  2  sorotipos  de  dengue  circulando  no  município  de  Goiânia:  DENV  1  (92,4%)  e
+          o  DENV 2 (7,6%), com predominância do DENV-1 (Tabelas 1 e 2).
+
+          Tabela 1 - Frequência dos Sorotipos circulantes segundo Ano Início dos Sintomas. Goiânia, 2013 a 2022.
+
+                   Ano            DENV 1                DENV 2                DENV 4                           Total                % DEN 1                %DEN 2               %DEN 4
+                                                                                                           Positivas
+                 2022*                  228                13                   0                     241                  92,4               7,6                                       0
+                  2021            94               12                                   0                   106                88,7            11,3             0,0
+                  2020                    5                69                           0                    74                  6,8             93,2             0,0
+                  2019                    2               310                           0                   312                 0,6             99,4             0,0
+                  2018                    1               184                           1                   186                 0,5             98,9             0,5
+                  2017            16              174               20                  210                 7,6             82,9             9,5
+                  2016            64                            5                 24                   93                 68,8             5,4             25,8
+                  2015           490                            1                108                 600                81,7             0,2             18,0
+                  2014           159                            0                 35                  194                82,0             0,0             18,0
+                  2013           104                            0                174                 278                37,4             0,0             62,6
+           * Dados sujeitos a alterações.
+            Fonte:GAL/Lacen – Go.
+
+          50                                                                                                                                        Boletim Epidemiológico Arboviroses - nº 51
+
+PAGINA 7
+        BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                                                 51
+
+
+               Secretaria Municipal de Saúde / Prefeitura de Goiânia                                                  Edição nº 51/Dez
+
+        Tabela  2  -  Amostras  testadas  e  taxa  de  positividade  das  arboviroses  em  residentes  em  Goiânia                                                  .
+
+                  Agravo/Exames                       Amostras Testadas                         Amostras Positivas                      Tx Positividade
+                        Dengue                                  19270                                      16202                                 84,1
+                    Chikungunya                                  1024                                        847                                 82,7
+                      Zika Vírus                                   45                                          1                                  2,2
+                            FA                                      6                                          0                                  0,0
+                   Fonte: Sinan online/SMS
+                  * Dados sujeitos a alterações.
+
+
+                                          RECOMENDAÇÕES PARA PROFISSIONAIS DE SAÚDE:
+
+                 o     Momento atual: período não  epidêmico para dengue:                                           Notificar e investigar 100% dos casos
+                       suspeitos (dengue, chikungunya, zika e febre amarela). Além dos casos notificados      pelo Celk
+                       (busca pelo CID 10), deve-se também realizar busca ativa de prontuários.
+
+                 o     Óbitos são de notificação obrigatória e investigação imediata.
+
+                 o     Investigar e encerrar os casos no tempo máximo de 60 dias                                     .
+
+                 o     Coletar 100% de amostras para exames específicos dos casos suspeitos                                                  :
+                       -  Isolamento  viral  e  PCR-  Arbovírus:  deverá  ser  coletada  durante  os  cinco  primeiros  dias  de
+                       sintomas, quando geralmente o paciente procura a unidade de saúde.
+                       - NS1, também deverá ser coletada até o 5º dia da data de início dos sintomas, preferencialmente
+                       no 3º dia.
+                       - Sorologia (IgM) deverá ser coletada após o 6° dia do início dos sintomas da doença.
+
+                       **   A coleta é obrigatória para todos os casos  graves, casos com condições especiais (idosos,
+                       gestantes, crianças, pessoas com comorbidades, vulnerabilidade social) e óbitos suspeitos de
+                       arboviroses (dengue, zika, chikungunya e febre amarela).
+
+                 o     Acompanhar a atualização de protocolos e notas técnicas, enviados via email.                                             ACOMPANHAR AS
+                       ORIENTAÇÕES DE COLETA EMITIDAS NO GAL.
+
+                 o     Utilizar o cartão de acompanhamento nos casos de dengue a fim de facilitar o atendimento dos
+                       casos  suspeitos de dengue.
+
+
+                                                           RECOMENDAÇÕES                        PARA         POPULAÇÃO:
+
+                           Eliminar os criadouros de sua residência.
+                           Evitar     jogar lixo em terrenos baldios.
+                           Acondicionar adequadamente o lixo doméstico.
+                           Limpar o seu quintal, calhas                 e piscinas.
+                           Manter   cobertos   os   reservatórios   de   água:   caixas   d’água,   cisternas,   fossas,   outros
+
+        50                                                                                                                                        Boletim Epidemiológico Arboviroses - nº 51
+
+PAGINA 8
+BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                                                            51
+
+
+        Secretaria Municipal de Saúde / Prefeitura de Goiânia                                                  Edição nº 51/Dez
+                      reservatórios,  Limpeza  permanente  de  recipientes  para  impedir  o  acúmulo  de  água  e
+                      criadouros do mosquito.
+                     Denunciar  para  as  autoridades  competentes  possíveis  locais  que  possam  estar  acumulando
+                      água e se tornando possível criadouro de mosquitos.
+                     Notificar qualquer ocorrência em relação à criadouros de mosquitos para o departamento de
+                      zoonoses, através dos telefones: 3524 3125 ou 156 (24 horas) ou 3524 3131 ou 3524 3129 ou
+                      o aplicativo Goiânia contra o                     Aedes.
+
+            Elaboração: Gerência de Vigilância de Doenças e Agravos Transmissíve                     is- GEDAT/DVE/SVS - Gediselma M B Lima, Giane
+            Alvarenga, Ivaneusa G A Maciel e Márcio Divino Pimenta
+            Colaboração: Diretoria de Vigilância em Zoonoses/SVS
+            Revisão:    Gerência de Vigilância de Doenças e Agravos Transmissíveis- GEDAT- Camila Batista Silva e Diretoria de                                 Vigilância
+            Epidemiológica - DVE:          Marília Belmira Castro Rêgo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+50                                                                                                                                        Boletim Epidemiológico Arboviroses - nº 51

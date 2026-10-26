@@ -1,0 +1,86 @@
+﻿CO_CNES,unidade,bairro_cnes,oid_bairro_cnes_candidato,metodo_bairro_cnes,distancia_ao_bairro_cadastrado_m,status_checagem
+2665239,USF PARQUE ATHENEU,PARQUE ATHENEU,112,nome_normalizado_unico,24.24215840666735,compatibilidade_exploratoria
+2878496,CS CANDIDA DE MORAIS,SETOR CANDIDA DE MOR,,sem_correspondencia_unica,,sem_correspondencia_unica
+2339366,CS PARQUE ANHANGUERA,ANHANGUERA,,sem_correspondencia_unica,,sem_correspondencia_unica
+9872965,CAIS FINSOCIAL,SETOR FINSOCIAL,1115,toponimo_sem_tipo_unico_nao_homologado,0.0,compatibilidade_exploratoria
+2339250,CS VILA MORAES,VILA MORAIS,1043,nome_normalizado_unico,14578.058929239547,divergencia_espacial_a_verificar
+2339404,CENTRO DE REFERENCIA CIDADE JARDIM MICHELLE MUNIZ DO CARMO,CIDADE JARDIM,1112,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2339501,CAIS CAMPINAS,FUNCIONARIOS,,sem_correspondencia_unica,,sem_correspondencia_unica
+2338491,CS CRIMEIA LESTE,CRIMEIA LESTE,1128,nome_normalizado_unico,659.5533204257514,divergencia_espacial_a_verificar
+2664739,USF ITATIAIA SANDRA FRANCA RIBEIRO XAVIER,CONJ ITATIAIA I,,sem_correspondencia_unica,,sem_correspondencia_unica
+2339471,UPA JARDIM GUANABARA,JD GUANABARA 3,,sem_correspondencia_unica,,sem_correspondencia_unica
+2506785,USF SAO FRANCISCO,BAIRRO SAO FRANCISCO,1108,nome_normalizado_unico,4997.052857657284,divergencia_espacial_a_verificar
+2339331,USF VILA REGINA,VILA REGINA,266,nome_normalizado_unico,4782.336488840444,divergencia_espacial_a_verificar
+2653893,USF VILA PEDROSO,VILA PEDROSO,1104,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2338521,CS FAMA,ST MARECHAL RONDON,455,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2339641,CS JOSE EGIDIO MARTINS VILA UNIAO,SETOR UNIAO,877,nome_normalizado_unico,163.760787502714,compatibilidade_exploratoria
+5417457,USF SANTO HILARIO,SANTO HILARIO,746,nome_normalizado_unico,12270.231088150485,divergencia_espacial_a_verificar
+3989569,USF ELDORADO OESTE,ELDORADO OESTE,7,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+3989607,USF BAIRRO GOIA,GOIA,45,nome_normalizado_unico,4532.22836585364,divergencia_espacial_a_verificar
+5376564,USF GRAJAU,GRAJAU,927,nome_normalizado_unico,10307.025898578093,divergencia_espacial_a_verificar
+2506335,USF FINSOCIAL,FINSOCIAL,1115,nome_normalizado_unico,4351.089772750981,divergencia_espacial_a_verificar
+2626691,CAIS CANDIDA DE MORAIS,CANDIDA DE MORAIS,289,nome_normalizado_unico,3037.8508972769655,divergencia_espacial_a_verificar
+5886821,USF BRISAS DA MATA,BRISAS DA MATA,210,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+6469744,USF JARDIM CERRADO IV,JARDIM CERRADO 4,,sem_correspondencia_unica,,sem_correspondencia_unica
+2339439,USF VERA CRUZ II,CONJ VERA CRUZ II,,sem_correspondencia_unica,,sem_correspondencia_unica
+2338572,CS MARINHO LEMOS NEGRAO DE LIMA,ST NEGRAO DE LIMA,1088,nome_normalizado_unico,7091.368689624697,divergencia_espacial_a_verificar
+2339390,CS PARQUE INDUSTRIAL JOAO BRAZ,PQ IND JOAO BRAZ,,sem_correspondencia_unica,,sem_correspondencia_unica
+2339382,CS VILA CANAA,VILA CANAA,549,nome_normalizado_unico,285.4048327280042,divergencia_espacial_a_verificar
+2339374,CS VILA MAUA,VILA MAUA,133,nome_normalizado_unico,4026.7667177766252,divergencia_espacial_a_verificar
+2506327,CAIS VILA NOVA,LESTE VILA NOVA,1110,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2338505,CS JARDIM BALNEARIO MEIA PONTE,BALNEARIO MEIA PONTE,109,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2338483,CS NORTE FERROVIARIO,NORTE FERROVIARIO,1087,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2339420,USF VERA CRUZ I,CONJ VERA CRUZ I,,sem_correspondencia_unica,,sem_correspondencia_unica
+2339544,CS HORTENCIA MENDONCA VILA REDENCAO,VILA REDENCAO,981,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2339412,CIAMS NOVO HORIZONTE,NOVO HORIZONTE,1049,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+3402177,USF LESTE UNIVERSITARIO,LESTE UNIVERSITARIO,1109,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+6297587,USF RESIDENCIAL REAL CONQUISTA,RESIDENCIAL REAL CON,,sem_correspondencia_unica,,sem_correspondencia_unica
+2506777,CENTRO DE SAUDE SETOR PERIM BENEDITO DOS SANTOS VIEIRA,SETOR PERIM,1105,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2506823,CS ESPLANADA DO ANICUNS,ESPLANADA DO ANICUNS,,sem_correspondencia_unica,,sem_correspondencia_unica
+2506807,CS ISABEL MARIA DA SILVA VILA MARIA DILCE,VILA MARIA DILCE,558,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2878453,CS NOVO HORIZONTE,VL NOVO HORIZONTE,1049,toponimo_sem_tipo_unico_nao_homologado,0.0,compatibilidade_exploratoria
+6056717,USF JARDIM MIRABEL,GOIA IV,261,nome_normalizado_unico,555.6305991489087,divergencia_espacial_a_verificar
+5915066,USF CRIMEIA OESTE LUCAS FARIA DE SOUZA,CRIMEIA OESTE,1107,nome_normalizado_unico,2653.321699738923,divergencia_espacial_a_verificar
+5915120,USF LUANA PARK,LORENA PARK,,sem_correspondencia_unica,,sem_correspondencia_unica
+5277930,USF RESIDENCIAL YTAPUA,RESIDENCIAL PRIMAVER,,sem_correspondencia_unica,,sem_correspondencia_unica
+6949886,USF JARDIM DAS AROEIRAS,PARQUE DAS AMENDOEIR,,sem_correspondencia_unica,,sem_correspondencia_unica
+2339269,USF RIVIERA,CONJUNTO RIVIERA,471,nome_normalizado_unico,1852.6715976790122,divergencia_espacial_a_verificar
+3989577,USF JARDIM ARITANA,JARDIM ARITANA,953,nome_normalizado_unico,15362.913617050937,divergencia_espacial_a_verificar
+6634842,USF BUENA VISTA,RES BUENA VISTA I,519,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+0784850,NUCLEO DE SAUDE TRIBUNAL REGIONAL DO TRABALHO DA 18 REGIAO,SETOR BUENO,1081,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2506793,USF PARQUE DOS BURITIS,PARQUE DOS BURITIS,,sem_correspondencia_unica,,sem_correspondencia_unica
+2653907,USF ANDREIA CRISTINA,ANDREIA CRISTINA,,sem_correspondencia_unica,,sem_correspondencia_unica
+2339293,CS DR AFONSO HONORATO DA SILVA E SOUZA AGUA BRANCA,AGUA BRANCA,888,nome_normalizado_unico,5263.901956999984,divergencia_espacial_a_verificar
+6823904,USF JARDIM CURITIBA I,JARDIM CURITIBA II,,sem_correspondencia_unica,,sem_correspondencia_unica
+2339692,CENTRO ESTADUAL ESPECIALIZADO EM SAUDE MENTAL INFANTOJUVENIL,JARDIM GOIAS,43,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2653842,USF VILLE DE FRANCE,RESIDENCIAL VILLE DE,,sem_correspondencia_unica,,sem_correspondencia_unica
+2653885,USF DISTRITO VILA RICA,DISTRITO VILA RICA,,sem_correspondencia_unica,,sem_correspondencia_unica
+2673959,USF VALERIA APARECIDA MARTINS DA SILVA GARAVELO B,SANTA RITA 6 ETAPA,,sem_correspondencia_unica,,sem_correspondencia_unica
+2506912,USF JARDIM CARAVELAS,JD CARAVELAS,744,nome_normalizado_unico,36.58129693300205,compatibilidade_exploratoria
+2673940,USF CONDOMINIO DAS ESMERALDAS,CONJ ESMERALDA,,sem_correspondencia_unica,,sem_correspondencia_unica
+2653834,USF JARDIM PRIMAVERA,JARDIM PRIMAVERA,,sem_correspondencia_unica,,sem_correspondencia_unica
+2506742,USF NOVO PLANALTO,NOVO PLANALTO,303,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2653850,USF RECANTO DAS MINAS GERAIS MILITAO R DE ARAUJO,JARDIM MARIA HELENA,734,nome_normalizado_unico,77.56000068284776,compatibilidade_exploratoria
+2506416,USF SAO CARLOS CRISTIANO ARAUJO,SAO CARLOS,273,nome_normalizado_unico,14002.903998630361,divergencia_espacial_a_verificar
+2338548,USF VILA SANTA HELENA,VILA SANTA HELENA,1041,nome_normalizado_unico,814.5684156862055,divergencia_espacial_a_verificar
+2506386,USF ESTRELA DALVA,RECREIO ESRELA DALVA,,sem_correspondencia_unica,,sem_correspondencia_unica
+2506718,USF GOIANIA VIVA,GOIANIA VIVA,75,nome_normalizado_unico,1766.0014258489298,divergencia_espacial_a_verificar
+2506378,USF ALTO DO VALE,ALTO DO VALE,262,nome_normalizado_unico,9212.450624878265,divergencia_espacial_a_verificar
+2506939,USF WALDOMIRO CRUZ RESIDENCIAL ITAIPU,RES ITAIPU,827,nome_normalizado_unico,4117.2051071245305,divergencia_espacial_a_verificar
+2653877,USF MORADA VALE DOS SONHOS,RESIDENCIAL VALE DOS,,sem_correspondencia_unica,,sem_correspondencia_unica
+2339560,CS PARQUE AMAZONIA,PQ AMAZONIA,836,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+5919789,USF ELI FORTE,RESIDENCIAL ELI FORT,,sem_correspondencia_unica,,sem_correspondencia_unica
+0505994,CS GOIA,BAIRRO GOIA,45,nome_normalizado_unico,7504.3036412060455,divergencia_espacial_a_verificar
+7247214,USF ANTONIO CARLOS PIRES,ANTONIO CARLOS PIRES,274,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+2339323,CAIS PARQUE DAS AMENDOEIRAS,PARQUE DAS AMENDOEIR,,sem_correspondencia_unica,,sem_correspondencia_unica
+5411696,USF JARDIM DOM FERNANDO,JARDIM DOM FERNANDO,,sem_correspondencia_unica,,sem_correspondencia_unica
+3009874,USF CACHOEIRA DOURADA,JARDIM GUANABARA I,,sem_correspondencia_unica,,sem_correspondencia_unica
+2339447,CAIS BAIRRO GOIA,BAIRRO GOIA,45,nome_normalizado_unico,7495.815809395885,divergencia_espacial_a_verificar
+2339358,CS VILA BOA,JD VILA BOA,1065,nome_normalizado_unico,7674.289429599264,divergencia_espacial_a_verificar
+3373681,USF MADRE GERMANA,MADRE GERMANA II,,sem_correspondencia_unica,,sem_correspondencia_unica
+2506874,USF VILA MUTIRAO,VILA MUTIRAO,,sem_correspondencia_unica,,sem_correspondencia_unica
+2338556,CIAMS URIAS MAGALHAES,ST URIAS MAGALHAES,1029,nome_normalizado_unico,1452.9455948483478,divergencia_espacial_a_verificar
+7381549,CS CAMPUS SAMAMBAIA,CAMPUS SAMAMBAIA,,sem_correspondencia_unica,,sem_correspondencia_unica
+3238458,USF PARQUE SANTA RITA,PARQUE SANTA RITA,793,nome_normalizado_unico,11587.612558342367,divergencia_espacial_a_verificar
+4313593,CS JARDIM NOVO MUNDO,JARDIM NOVO MUNDO,22,nome_normalizado_unico,0.0,compatibilidade_exploratoria
+4314204,CS FINSOCIAL,SETOR FINSOCIAL,1115,toponimo_sem_tipo_unico_nao_homologado,0.0,compatibilidade_exploratoria

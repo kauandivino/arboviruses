@@ -1,0 +1,602 @@
+
+PAGINA 1
+      BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                  52
+
+
+            Secretaria Municipal de Saúde / Prefeitura de Goiânia                                   Edição nº 52/Dezembro
+            2023
+
+       MONITORAMENTO DOS CASOS DE ARBOVIROSES URBANAS TRANSMITIDAS PELO
+      AEDES AEGYPTI (DENGUE, CHIKUNGUNYA, ZIKA E FEBRE AMARELA).
+
+       Gerência de Vigilância de Doenças e Agravos Transmissíveis - GEDAT/ Diretoria de Vigilância Epidemiológica – DVE/ Superintendência de
+       Vigilância em Saúde - SVS/SMS
+
+       As informações     sobre dengue, zika, chikungunya e febre amarela, apresentadas neste                  boletim,   são  referentes
+       às notificações ocorridas nos últimos anos, com  ênfase em 2023, disponíveis no Sinan Online e  Sinan
+       Net.
+
+       Objetivo:    apresentar   o   cenário   epidemiológico   atual   de   dengue,   chikungunya,   zika   e          febre  amarela,
+       enfatizando a importância de se manterem atentos à ocorrência de casos suspeitos de arboviroses ou casos
+       com  quadro  clínico  semelhante,  assegurando  a  notificação  e investigação  dos  casos,  bem como a coleta de
+       amostras biológicas para identificação precoce das áreas com circulação viral e intensificação do controle
+       dos  criadouros    do  mosquito     Aedes   aegypti,   o  monitoramento       da  morte   de   macacos e    a  organização     dos
+       serviços de saúde para evitar o aumento expressivo de casos graves e óbitos.
+
+
+                                 DENGUE - SITUAÇÃO EPIDEMIOLÓGICA  - SE 52 /2023
+
+       Quadro 1: Demonstrativo da situação epidemiológica de dengue. Goiânia, 2015 a 2023*.
+
+                                                                                                                             Aumento ou
+                                                                    Taxa de            Total de       Proporção de            redução de
+ Ano         Casos            Casos              Casos          incidência (x            casos        Casos Graves               Casos
+         Notificados      confirmados        Prováveis**      100.000 hab)***          Graves               ****            Prováveis  em
+                                                                                                                           relação ao ano
+                                                                                                                                anterior
+2023*        23022            19213              19913               1385,4               33                 0,2                  -63,9
+ 2022        60454            45349              55166               3838,0               114                0,3                  365,3
+ 2021        14280            10073             11.889               3589,9               12                 0,1                  - 9,5
+ 2020        16241            10028             13.135               784,2                10                 0,1                 - 60,7
+ 2019        35512            24540              33405               878,2                79                 0,3                  10,7
+ 2018        33327            15223              30189               2284,1               81                 0,5                  - 4,9
+ 2017        34269            13353              31734               2090,0               59                 0,4                 - 46,1
+ 2016        61288            13161              58910               2218,1               82                 0,6                 - 24,0
+ 2015        80523            21524              77482               4117,6               196                0,9                  193,8
+
+Fonte: Sinan online/SMS – Goiânia
+*Dados sujeitos a alterações
+**Casos prováveis: exceto os casos descartados
+***Tx de incidência: nº de casos prováveis por 100.000 habitantes
+****Proporção de casos graves: nº de casos graves/casos confirmados por 100 casos
+
+
+                                         Boletim Epidemiológico Arboviroses              - nº 52
+
+PAGINA 2
+      BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                 52
+
+
+            Secretaria Municipal de Saúde / Prefeitura de Goiânia                                   Edição nº 52/Dezembro
+            2023
+      Quadro 2: Classificação dos casos de dengue por ano de início dos sintomas. Goiânia, 2015 a 2023*.
+
+
+       Ano         Dengue        Dengue com Sinais de            Dengue           Óbitos em            Óbitos por             TX de
+                                          Alarme                  Grave          Investigação            Dengue           letalidade**
+
+      2023*         18650                    530                    33                 11                    8                 24,2
+      2022          43358                   1877                   114                  0                   60                 52,6
+      2021           9793                    268                    12                  0                    8                 66,7
+      2020           9798                    220                    10                  0                    3                 30,0
+      2019          23197                   1264                    81                  0                   17                 21,0
+      2018          13589                   1553                    77                  0                   22                 28,6
+      2017          12187                   1107                    58                  0                   19                 32,8
+      2016          11266                   1813                    82                  0                   19                 23,2
+      2015          18579                   2749                   196                  0                   39                 19,9
+      Fonte: Sinan online/SMS – Goiânia
+       *Dados sujeitos a alterações
+      **Tx de letalidade: nº óbitos/dengue grave x 100
+
+      O  Plano  de  Contigência        das  Arboviroses utiliza  indicadores  epidemiológicos  para  monitoramento                    dos
+      níveis de resposta (taxa de incidência por 100 mil habitantes dos casos prováveis de dengue, chikungunya
+      e  Zika,  a  gravidade  dos  casos  e  a  ocorrência  de  óbitos)  possibilitando  a  identificação  das  áreas  com
+      potencial de risco de surtos e epidemias, para a  implantação de medidas de enfrentamento e intervenção
+      adequadas e oportunas (Quadro 3).
+
+      Em  2023,  os  casos      prováveis  de     dengue  estão     se  mantendo  dentro      canal  endêmico      (entre  Quartil    1  e
+      Quartil    3)  na  maioria  das  semanas  epidemiológicas.            De  acordo  com  a  avaliação  dos  indicadores  de
+      dengue para o ano de 2023, o municípo de Goiânia está no NÍVEL 2 - ALERTA, situação 3 ou seja com
+      6  óbitos  confirmados       e  dentro  do  canal  endêmico  do  diagrama  de  controle             (Gráfico  1).Esse  ano,  foi
+      isolado os sorotipos DENV I e DENV II ,com predominância do DENV I.O último registro do DENV-3
+      em  Goiânia      foi  no  ano  de  2010,    está  associado  a  complicações  neurológicas,  como  encefalite  viral  e
+      Síndrome de Guillain-Barré. A reintrodução desse sorotipo traz um alerta para um possível aumento do
+      número de casos devido a susceptibilidade da população ao vírus.
+      Obs: Quartis são separatizes que dividem o conjunto em 4 partes iguais, a fim de avaliar a dispersão e a
+      tendência central de um conjunto de dados: Q1 (quartil inferior=25% dos casos estão abaixo do limite
+      inferior), Q2 (mediana), Q3 (quartil superior=75% dos casos estão até na linha do Q3 ou seja, dentro do
+      esperado  e  se  ultrapassarem          o  Q3,   25%  restantes,  significa  epidemia,  isto  é,  o  número  de  casos
+      ultrapassou o limite superior ou quartil superior, indicando um aumento no número de casos.
+
+
+
+
+
+
+
+                                         Boletim Epidemiológico Arboviroses              - nº 52
+
+PAGINA 3
+      BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                             52
+
+
+            Secretaria Municipal de Saúde / Prefeitura de Goiânia                                   Edição nº 52/Dezembro
+            2023
+      Quadro 3: Níveis     de Resposta, Cenários De Risco         e Critérios Para Ativação     de Ações Em Resposta às ESPs
+      Por Dengue.
+
+   NÍVEL                           CENÁRIO                          CRITÉRIOS PARA ATIVAÇÃO DE AÇÕES NOS
+                                                                                      DIFERENTES NÍVEIS
+Resposta           Município      com      aumento      de         Ausência de óbitos por dengue.
+Inicial (1)        incidência  de  casos  prováveis  e  sem        Seguido de pelo menos um dos seguintes critérios:
+                   óbitos                                          Aumento da incidência dos casos prováveis de dengue
+                                                                   dentro do canal endêmico do diagrama de controle.
+                                                                   Aumento da incidência dos casos prováveis de dengue,
+                                                                   por  quatro  semanas  epidemiológicas  consecutivas,  em
+                                                                   comparação ao ano anterior
+Alerta (2)         Município         com      aumento      de      Situação   1     –  óbitos    por   dengue   em   investigação,
+                   incidência    de    casos    prováveis    e     seguido de pelo menos um dos seguintes critérios:
+                   ocorrência de óbitos em investigação            Incidência  dos  casos  prováveis  de  dengue  dentro  do
+                                                                   canal endêmico do diagrama de controle.
+                                                                   Aumento da incidência dos casos prováveis de dengue,
+                                                                   por  quatro  semanas  epidemiológicas  consecutivas,  em
+                                                                   comparação ao ano anterior. E
+                                                                   Aumento  dos  casos  de  dengue  com  sinais  de  alarme  e
+                                                                   de    dengue    grave    prováveis,    entre    as    semanas
+                                                                   epidemiológicas, em comparação ao ano anterior.
+                                                                   Situação 2 – óbitos por dengue em investigação.
+                                                                   E
+                                                                   Incidência  dos  casos  prováveis  de  dengue,  acima  do
+                                                                   limite superior (LS) do diagrama de controle.
+                                                                   Situação 3 – óbitos confrmados.
+                                                                   E : Incidência dos casos prováveis de dengue dentro do
+                                                                   canal endêmico do diagrama de controle.
+Emergência         Município com aumento de                        Incidência dos casos prováveis de dengue, acima do
+(3)                incidência de casos prováveis e                 limite superior (LS) do diagrama de controle.
+
+                   óbitos confrmados                               E : Óbitos por dengue confrmados
+
+
+
+                                        Boletim Epidemiológico Arboviroses            - nº 52
+
+PAGINA 4
+      BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                        52
+
+
+             Secretaria Municipal de Saúde / Prefeitura de Goiânia                                   Edição nº 52/Dezembro
+             2023
+       Gráfico 1 – Diagrama de controle de casos prováveis de dengue em Goiânia - 2023*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      Fonte: Sinan online/SMS – Goiânia
+
+                                          * Dados preliminares, sujeitos a alterações.
+
+
+       De acordo com o LIRA (Levantamento do Índice Rápido do Aedes aegypti) realizado de 20 a 24/11/2023, a
+       situação   do município de Goiânia é de MÉDIO RISCO para a ocorrência das arboviroses, com Índice de
+       Infestação Predial (geral) de 1,7%,             de acordo com classificação do MS                (Quadro     4). Ressalta-se que os
+       criadouros predominantes encontrados são passíveis de remoção.
+
+       Quadro 4 – LIRAs (Levantamento de  Índice rápido do Aedes aegypti), Goiânia, 20 a 24/11/2023.
+
+              *IIP (Índice de Infestação Predial) e IB (Índice de Breteau) para
+                                          Aedes aegypti
+              Valores de referência IIP/MS = <1% baixo; 1-3,9% médio e >3,9% alto                                   1,7/1,9
+                                        IIP e IB para Aedes albopictus                                              0,0/0,0
+
+                             Nº de estratos com baixo risco para              Aedes
+                                        aegypti (IIP abaixo de 1%)                                                 27 (36,5)
+                              Nº de estratos com médio risco (IIP entre 1 a
+                                                      3,9%)                                                        45 (60,8)
+                           Nº de estratos com alto risco (IIP acima de 3,9%)                                       2 (2,7%)
+
+                              SITUAÇÃO GERAL DO MUNICÍPIO                                                     MÉDIO RISCO
+
+         *IIP - % de imóveis com presença de Aedes aegypti. *IB – nº de depósitos positivos para cada 100 imóveis
+
+         Fonte: DVZ-SMS Goiânia (Departamento de Vigilância em Zoonoses)
+
+
+
+
+                                           Boletim Epidemiológico Arboviroses                 - nº 52
+
+PAGINA 5
+      BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                              52
+
+
+            Secretaria Municipal de Saúde / Prefeitura de Goiânia                                   Edição nº 52/Dezembro
+            2023
+                     CHIKUNGUNYA - SITUAÇÃO EPIDEMIOLÓGICA ATÉ SE 52/23
+
+       Doença    caracterizada  por  fortes  dores  poli-articulares  e  febre  elevada         e  preocupante  porque  as  dores
+       podem persistir por meses e até anos, por isso é comum alguns casos se tornarem crônicos. Altas taxas de
+       ataque são comumente observadas em regiões onde o vírus é transmitido.
+
+      Em  2023,  foram       notificados    569   casos    de  Chikungunya       e  445   casos   foram    confirmados      (78,2%),
+      concentrados nas regiões Norte, Oeste e Sudoeste. Houve registro de 3 óbitos confirmados e 01 óbito
+      em investigação.(Quadro 6).
+
+      O    diagrama   de   controle       de   chikungunya        mostra   momentos   epidêmicos   em   várias   semanas
+      epidemiológicas  do  ano       de  2023,  quando  o  número  de  casos  prováveis  ultrapassam  o  limite  máximo
+      esperado (Q3).
+
+      De  acordo  com  a  avaliação  dos  indicadores          abaixo   citados  (Plano  de  contingência  das  arboviroses          –
+      Quadro  5),  para  chikungunya  e  para  o  ano  de  2023,  o  municípo  de  Goiânia,  apresenta  redução  da
+      incidência dos casos prováveis por 4 semanas consecutivas bem como óbitos confirmados pelo agravo,
+      classificado como  NÍVEL 2 – ALERTA (SITUAÇÃO 2) (Gráfico 2).
+
+
+      Quadro 5 – Níveis de Resposta, Cenários de Risco e Critérios Para Ativação de Ações em Resposta Às ESPs Por
+      Chikungunya.
+     NÍVEL                         CENÁRIO                          CRITÉRIOS PARA DEFINIÇÃO DE CENÁRIO
+ Resposta            Município    com         aumento    de      Aumento    da    incidência    dos    casos    prováveis    de
+ Inicial (1)         incidência  de  casos  prováveis  e         chikungunya,    por    quatro    semanas    epidemiológicas
+                     sem óbitos                                  consecutivas, em comparação ao ano anterior.
+                                                                 E
+                                                                 Ausência de óbitos por chikungunya.
+ Alerta (2)          Município       com    aumento    de        Situação 1 – aumento da incidência dos casos prováveis
+                     incidência  de  casos  prováveis  e         de   chikungunya,   por   quatro   semanas   epidemiológicas
+                     ocorrência      de      óbitos      em      consecutivas, em comparação ao ano anterior.
+                     Investigação                                E
+                                                                 Óbitos por chikungunya em investigação. E/OU
+                                                                 Aumento de positividade laboratorial (IgM e/ou biologia
+                                                                 molecular),    entre    as    semanas    epidemiológicas,    em
+                                                                 comparação ao ano anterior.
+                                                                 Situação  2    – redução  da  incidência  dos  casos  prováveis
+                                                                 de   chikungunya,   por   quatro   semanas   epidemiológicas
+
+
+
+                                        Boletim Epidemiológico Arboviroses             - nº 52
+
+PAGINA 6
+      BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                       52
+
+
+            Secretaria Municipal de Saúde / Prefeitura de Goiânia                                   Edição nº 52/Dezembro
+            2023                                                      consecutivas,   após   o   município   ter   apresentado   os
+                                                                      critérios do nível 3.
+                                                                      E
+                                                                      Óbito confrmado por chikungunya
+ Emergência            Município com aumento de                       Aumento da incidência dos casos prováveis de
+ (3)                   incidência de casos prováveis e                chikungunya, por quatro semanas epidemiológicas
+
+                       óbitos confirmados                             consecutivas, em comparação ao ano anterior.
+                                                                      E
+                                                                      Óbito confrmado por chikungunya.
+
+
+
+
+
+       Quadro 6: Demonstrativo da situação epidemiológica de Chikungunya em Goiânia, 2016 a 2023*
+                                 Casos                Casos                Óbitos            Tx de                   Tx de
+               Ano           Notificados          Confirmados          confirmados         letalidade      Incidência**/100 mil
+                                                                                                                       hab
+              2023*                569                  445                   3                0,7                    29,0
+               2022               1462                 1239                    3               0,2                     80,7
+               2021                141                  106                    0               0,0                     6,9
+               2020                 16                    0                    0               0,0                     0,0
+               2019                 65                    2                    0               0,0                     0,1
+               2018                 67                    1                    0               0,0                     0,1
+               2017                 80                   12                    0               0,0                     0,8
+               2016                 51                   12                    0               0,0                     0,8
+          Fonte: Sinan online/SMS – Goiânia
+         *Dados sujeitos a alterações
+          **Tx de letalidade: óbitos conf/casos conf x100
+          ***Tx de incidência: nº de casos confirmadoss por 100.000 habitantes
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                           Boletim Epidemiológico Arboviroses                - nº 52
+
+PAGINA 7
+      BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                   52
+
+
+            Secretaria Municipal de Saúde / Prefeitura de Goiânia                                   Edição nº 52/Dezembro
+            2023
+       Gráfico 2 – Diagrama de controle de casos prováveis de chikungunya em Goiânia -  2023*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 Fonte: Sinan on line/SMS - Goiânia
+                                *Dados sujeitos a alterações
+
+
+                                   ZIKA - SITUAÇÃO EPIDEMIOLÓGICA ATÉ SE 52
+
+       Apesar  de  ser  considerada  uma  doença  benigna  na  maioria  dos  casos,  a  Zika  é  preocupante  devido  a
+       associação com casos de microcefalia e/ou outras manifestações congênitas em bebês nascidos de mães
+       que tiveram o vírus durante a gestação, resultando na criação de uma nova nomenclatura para incluir não
+       só a microcefalia. Esses casos passaram a ser denominados de “Síndrome congênita associada à infecção
+       pelo vírus Zika”, que também é de notificação compulsória.
+
+       Analisando-se a situação epidemiológica dos anos anteriores (2015 a 2019), notamos uma queda bastante
+       significativa no número de casos prováveis de zika a partir de 2020, podendo                         ser entendido como uma
+       subnotificação     de   casos   e/ou  dificuldade  na  suspeição  diagnóstica           uma  vez  que  já  foi  comprovada         a
+       circulação do vírus em amostras de mosquitos nos meses de junho, julho, outubro e dezembro/2022 no
+       município.
+
+       Em   2023,     foram     notificados     23   casos,   sendo     22   descartados      por   critério   laboratorial    e   01   em
+       investigação(Quadro 7).
+
+       De acordo com a avaliação dos indicadores do Plano de contingência das arboviroses para zika e para o
+       ano de 2023, o municípo de Goiânia, apresenta coeficiente de incidência de casos prováveis semelhante
+       ao ano de 2022, até o momento atual e não apresenta registro de óbitos suspeitos e nem confirmados pelo
+       agravo,   não  atendendo  a  nenhuma  classificação  do  Plano  de  contingência,  ou  seja,  abaixo  do  nível  1
+       (Quadro 7).
+
+
+                                          Boletim Epidemiológico Arboviroses              - nº 52
+
+PAGINA 8
+      BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                       52
+
+
+             Secretaria Municipal de Saúde / Prefeitura de Goiânia                                   Edição nº 52/Dezembro
+             2023
+       Quadro 7 -     Casos Prováveis      de Zika, taxa de incidência,         casos confirmados, óbitos e        taxa   de  letalidade, em
+       residentes de Goiânia, 2015 a 2023*
+
+                           Casos               Tx                      Casos confirmados
+          Ano           prováveis         Incidência**           Gestante                Não            Óbitos        Taxa de
+                                                                                     Gestantes                        Letalidade***
+           2023*              1                  0,1                   0                  0                 0                 0
+           2022               1                  0,1                   0                  1                 0                 0
+           2021               1                  0,1                   0                   1                0                 0
+           2020               0                  0,0                   0                   0                0                 0
+           2019              123                 8,1                   1                   0                0                 0
+           2018              377                 25,2                  2                   1                1               33,3
+           2017             2771                189,5                 43                 334                0                 0
+           2016             8530                590,5                333                6439                0                 0
+           2015              53                  3,7                   8                  37                0                 0
+           Fonte: Sinan net/SMS – Goiânia.
+           *Dados sujeitos a alterações
+           **Tx de incidência: nº de casos prováveis por 100000 habitantes
+           ***Tx de letalidade: nº óbitos/casos prováveis x 100
+
+
+                     FEBRE AMARELA - SITUAÇÃO EPIDEMIOLÓGICA ATÉ SE 52
+
+       Apesar  de  ser  uma  doença  imunoprevinível,         alguns  surtos  são  observados  quando  pessoas  não  vacinadas
+       entram em contato com ambientes silvestres ou rurais em áreas de transmissão. As epizootias (morte de
+       macacos) são um importante alerta, pois, em geral, precedem a ocorrência de surtos de febre amarela. Os
+       primatas não humanos (PNH) funcionam como  sentinelas e, por isso, a  morte desses  animais deve ser
+       notificada e investigada pelos serviços de saúde (Quadro 8).
+
+       Quadro 8      –  Situação  Epidemiológica  de  Febre  Amarela             nos   anos   que   registraram casos  em  humanos  e
+       epizootias, Goiânia, 2007 a 2022*.
+                          Anos                                                     Situação epidemiológica
+         2015, 2016, 2017, 2020 e 2021                Houve      registro    de   epizootias     (morte    de   macacos)      confirmadas
+                                                      (2015=4, 2016=2, 2017=5, 2020=9, 2021=2)
+         2007, 2008 e 2016                            Houve      registro  de  casos  e  óbitos  em  humanos  com  taxa  de
+                                                      letalidade de 100% (01 caso/01 óbito) em todos estes anos.
+         2022                                         Houve registr    o de 8 casos notificados porém         não tem     confirmação      de
+                                                      casos   em humanos e nem de morte em macacos por febre amarela
+         2023                                         Notifica   do   6  caso  s   em   humanos     , todos  descartado  por   critério
+                                                      laboratorial.    45   epizootias    (em PNH)      foram notificadas sendo          que
+                                                      41 foram     negativas    para FA    e 04 estão    aguardando resultado.
+
+
+                 *Dados sujeitos a alterações Fonte: Sinan Net/Lacen - Planilha de Epizootias
+
+
+                                           Boletim Epidemiológico Arboviroses                - nº 52
+
+PAGINA 9
+      BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                    52
+
+
+            Secretaria Municipal de Saúde / Prefeitura de Goiânia                                   Edição nº 52/Dezembro
+            2023
+                                                         DADOS LABORATORIAIS
+                                     DENGUE, CHIKUNGUNYA, ZIKA E FEBRE AMARELA
+
+       Tabela 1 - Frequência dos Sorotipos circulantes segundo Ano Início dos Sintomas. Goiânia, 2013 a 2023*.
+
+                  Ano     DENV 1        DENV 2         DENV 4       Total        % DEN 1        %DEN 2         %DEN 4
+                  2023*        21              1             0           22           95,5           4,5            0
+                   2022       228             14             0          106          215,1          13,2            0
+                   2021        94             12             0          106           88,7          11,3            0
+                   2020         5             69             0           74            6,8          93,2            0
+                   2019         2            310             0          312            0,6          99,4            0
+                   2018         1            184             1          186            0,5          98,9           0,5
+                   2017        16            174            20          210            7,6          82,9           9,5
+                   2016        64              5            24           93           68,8           5,4          25,8
+                   2015       490              1           108          600           81,7           0,2          18,0
+                   2014       159              0            35          194           82,0            0           18,0
+                   2013       104              0           174          278           37,4            0           62,6
+
+                               * Dados sujeitos a alterações.
+                          Fonte: Sinan on line/SMS - Goiânia
+
+
+
+       Tabela    2   -  Amostras      testadas    e  taxa   de   positividade     das   arboviroses      em   residentes     d e  Goiânia,
+       2023*.
+
+              Agravo/Exames                Amostras Testadas                 Amostras Positivas              Tx Positividade
+                   Dengue                           6479                               3663                         56,5
+                Chikungunya                          970                               373                          38,5
+                 Zika Vírus                           22                                 0                           0,0
+                      FA                              6                                  0                           0,0
+            Fonte: Sinan online/SMS
+           * Dados sujeitos a alterações.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                          Boletim Epidemiológico Arboviroses               - nº 52
+
+PAGINA 10
+      BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                               52
+
+
+            Secretaria Municipal de Saúde / Prefeitura de Goiânia                                   Edição nº 52/Dezembro
+            2023
+
+                                            RECOMENDAÇÕES PARA PROFISSIONAIS DE SAÚDE:
+
+             o    Notificar e investigar 100% dos casos suspeitos (dengue, chikungunya, zika e febre amarela).
+             o    Realizar  busca  ativa  no  Celk       (nos  casos  que  não  contém  CID)          e  também  em      prontuários
+                  manuais, e notificar os casos. A notificação deve ser realizada em até, no máximo, 7 dias, para
+                  otimizar  as  ações  de  combate  ao  vetor.      Óbitos  suspeitos  de  arboviroses  são  de  notificação
+                  obrigatória e investigação imediata, com repasse imediato para a Gedat.
+             o    Realizar 100% de coleta para exame específico, de acordo com a data de início dos sintomas dos
+                  casos e encaminhar ao Lacen.
+                  - NS1,    Isolamento  viral  e  RT-PCR-Arbovírus  (ZDC):  deverá  ser  coletada  durante  os  cinco
+                  primeiros dias de sintomas, quando geralmente o paciente procura a unidade de saúde (NS1 teste
+                  rápido  não  descarta  caso).  Coletar,  no  mínimo  10  amostras  de  PCR  para  cada  unidade  (Cais,
+                  Ciams  e  Upas).     Priorizar  a  coleta  para  RT-PCR-Arbovírus  (ZDC)  pois  este  teste  é  mais
+                  preciso,  pesquisa  os  3  vírus  ao  mesmo  tempo               (Zika,  Dengue  e  Chikungunya)              e  está
+                  disponível no LACEN.
+
+                  - Sorologia (IgM) deverá ser coletada após o 6° dia do início dos sintomas da doença.
+
+                  ** A coleta é obrigatória para todos os casos  graves, casos com condições especiais (idosos,
+                  gestantes, crianças, pessoas com comorbidades, vulnerabilidade social) e óbitos suspeitos de
+                  arboviroses (dengue, zika, chikungunya e febre amarela).
+                  ACOMPANHAR AS ORIENTAÇÕES DE COLETA EMITIDAS NO GAL.
+
+             o    Realizar a investigação dos casos notificados no máximo até 48 horas após a notificação.
+             o    Realizar o encerramento dos casos no máximo até 60 dias após a data da notificação.
+
+             o    No município de Goiânia está circulando o vírus da dengue DEN- 1, vírus da chikungunya
+                  (casos  confirmados  laboratorialmente)              e  o  vírus  Zika    (mosquitos      confirmados),       sendo
+                  importante  fortalecer  e    manter  ativa  a  vigilância  dos  casos  suspeitos  de  arboviroses,               em
+                  articulação  com     a  assistência  e  rede  laboratorial,   a  fim  de  melhorar  a  captação, investigação
+                  detalhada  com  alíquotas  de  material  biológico  para  identificação  do  agente  etiológico                 que
+                  causou a doença, já que a clínica dessas arboviroses é muito semelhante.
+
+                  o        Acompanhar a atualização de protocolos e notas técnicas, enviados via email.
+             o    Utilizar o cartão de acompanhamento nos casos de dengue a fim de facilitar o atendimento dos
+                  casos  suspeitos de dengue.
+
+
+
+
+
+
+
+
+
+
+                                        Boletim Epidemiológico Arboviroses             - nº 52
+
+PAGINA 11
+      BOLETIM EPIDEMIOLÓGICO ARBOVIROSES                                                                                52
+
+
+            Secretaria Municipal de Saúde / Prefeitura de Goiânia                                   Edição nº 52/Dezembro
+            2023
+                                             RECOMENDAÇÕES                PARA      POPULAÇÃO:
+
+                   Objetivos: diminuir os determinantes relacionados ao aumento dos casos das arboviroses.
+
+                     NA RESIDÊNCIA/LOCAL DE TRABALHO: eliminar os criadouros, evitar jogar lixo em
+
+                     terrenos baldios, acondicionar adequadamente o lixo, limpar o quintal, calhas  e piscinas.
+                     RESERVATÓRIOS DE ÁGUA (caixas d’água, cisternas, fossas e outros): manter cobertos
+                      e realizar limpeza permanente destes recipientes.
+                     LAZER: evitar jogar lixos fora das lixeiras disponíveis
+                     GESTANTES: uso contínuo de repelente durante o perído gestacional, assim como,
+
+                      vestimentas  adequadas  para  proteção  corporal              a   fim  de  evitar  a  picada  do  mosquito
+                      transmissor da doença e consequentemente a microcefalia nos recém-nascidos, causada pelo
+                      Zika Vírus.
+
+                     DENÚNCIA/NOTIFICAÇÃO: denunciar para as autoridades competentes possíveis locais
+                      que possam estar acumulando água e se tornando possível criadouro de mosquitos. Notificar
+                      qualquer  ocorrência  em  relação  aos           criadouros  de     mosquitos  para  o  departamento  de
+                      zoonoses, através dos telefones: 3524-3125 ou 156 (24 horas) ou 3524-3131 ou 3524- 3129
+                      ou o aplicativo “Goiânia contra o Aedes”.
+
+
+
+               Elaboração: Gerência de Vigilância de Doenças e Agravos Transmissíveis- GEDAT/DVE/SVS - Gediselma M B Lima, Ivaneusa G A
+               Maciel e Márcio Divino Pimenta
+               Colaboração: Diretoria de Vigilância em Zoonoses/SVS
+               Revisão: Gerência de Vigilância de Doenças e Agravos Transmissíveis- GEDAT- Camila Batista Silva e Diretoria de Vigilância
+               Epidemiológica - DVE: Marília Belmira Castro Rêgo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                         Boletim Epidemiológico Arboviroses             - nº 52

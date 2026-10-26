@@ -1,0 +1,422 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns:ng="http://angularjs.org" class="no-js">
+	<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+	<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+	<!--[if IE 8]><html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+	<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br" dir="ltr"> <!--<![endif]-->
+
+	<head>
+		<title>Cadastro Nacional de Estabelecimentos de Saúde</title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="keywords" content="" />
+		<meta name="author" content="Equipe Desenvolvimento CNES" />
+		<meta name="description" content="CNES NET" />
+
+		<link rel="stylesheet"    href="/css/nanoscroller.css" type='text/css'/>
+
+
+		<link rel="stylesheet"    href="/bootstrap/css/bootstrap.css" type='text/css'/>
+		<link rel="stylesheet"    href="/bootstrap/css/carousel.css" type='text/css'/>
+		
+		<link rel="stylesheet"    href="/css/template-azul.css" type='text/css'/>
+		<link rel="stylesheet"    href="/css/ng-table.min.css" type='text/css'/>		
+		<link rel="stylesheet"    href="/css/ng-table-customizacao.css" type='text/css'/>
+		<link rel="stylesheet"    href="/css/loading-bar.min.css" type='text/css'/>
+		<link rel="stylesheet"    href="/css/jquery.gritter.css" type='text/css'/>
+		<link rel="stylesheet"    href="/font-awesome/css/font-awesome.min.css" type='text/css'/>
+		<link rel="shortcut icon" href="/img/favicon.ico" type="image/vnd.microsoft.icon" />
+		<link rel="stylesheet"    href="/bootstrap/css/bootstrap-datepicker.css" type='text/css'/>
+
+
+		<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie7.css" /><link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css" /><![endif]-->
+		<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+		<!--[if lt IE 10]><link rel="stylesheet" href="/css/ie.css" /><![endif]-->
+
+		<!-- chamada de fontes externas -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700' rel='stylesheet' type='text/css' />
+
+		<script src="/js/modernizr.js"></script>  		
+
+		<!-- JQUERY -->
+		<script src="/js/jquery.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+		
+		<!-- ANGULAR JS -->
+		<script src="/js/angular.min.js"></script>
+		<script src="/angular/app.module.js"></script>	
+		
+		<script>
+			$(document).ready(function(){
+			    $('[data-toggle="tooltip"]').tooltip(); 
+			});
+		</script>
+	
+	</head>
+	
+	<body>
+		<a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+		<noscript>
+			<div class="error minor-font">
+	        	Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+	    	</div>
+		</noscript>
+		<!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este site. Atualize seu navegador.</strong></center><![endif]-->
+		<!-- barra do governo -->
+		<div id="barra-brasil">
+			<a href="http://brasil.gov.br" title="Acesse para conhecer todos os serviços e informações do Governo Brasileiro na Internet.">Portal do Governo Brasileiro</a>		
+	    </div>
+	    <!-- fim barra do governo -->
+	    <div class="layout">
+	    	<header>
+	    		<div class="container"> 
+		    		<!--<div class="row accessibility-language-actions-container">-->
+						<!--<div class="col-md-6 col-sm-6 col-xs-6 accessibility-container">
+							<ul id="accessibility">
+								<li>
+									<a accesskey="1" href="#content" id="link-conteudo">
+										Ir para o conte&uacute;do
+										<span>1</span>
+									</a>
+								</li>
+								<li>
+									<a accesskey="2" href="#navigation" id="link-navegacao">
+										Ir para o menu
+										<span>2</span>
+									</a>
+								</li>
+								<li>
+									<a accesskey="3" href="#portal-searchbox" id="link-buscar">
+										Ir para a busca
+										<span>3</span>
+									</a>
+								</li>
+								<li>
+									<a accesskey="4" href="#footer" id="link-rodape">
+										Ir para o rodap&eacute;
+										<span>4</span>
+									</a>
+								</li>
+							</ul>						
+						</div>-->
+						<div class="col-md-6 col-sm-6 col-xs-6 language-and-actions-container pull-right" >
+							<ul id="portal-siteactions" class="pull-right">
+								<li>
+									<a accesskey="1" href="/pages/acessibilidade.jsp">Acessibilidade</a>
+								</li>
+								<li>
+									<a accesskey="2" href="#" class="toggle-contraste">Alto Contraste</a>
+								</li>
+							<!--	<li>
+									<a accesskey="7" href="#">Mapa do Site</a>
+								</li> -->
+							</ul>
+						</div>
+					<!--</div>-->
+					<div class="row">
+						<div id="logo" class="col-md-8 col-sm-8 col-xs-12">
+							<a href="/" title="Cadastro Nacional de Estabelecimentos de Saúde">							
+								<!-- <span class="portal-title-1">Ministério da Saúde</span>
+								<h1 class="portal-title corto">CNES NET</h1>
+								<span class="portal-description">Secretária de Atenção a saúde</span> -->
+							
+								<img class="img-responsive portal-title-1" src="/img/img_cnes_logo.png">
+ 							</a>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12" class="pull-right">
+							<div id="portal-searchbox" class="row pull-right">
+								<form action="#">
+								<!--	<div class="input-group">
+										<input type="text" class="form-control" placeholder="Buscar no Portal">
+										<button class="btn2 btn-default" style="color:#1f5dc2;" type="button"><span class="glyphicon glyphicon-search"></span></button>
+									</div>-->
+								</form>
+							</div>
+							<!--<div id="social-icons" class="row pull-right">
+								<h2 class="hidden">Redes Sociais</h2>
+								<ul class="pull-right">
+									<li class="portalredes-item"><a data-toggle="tooltip" data-placement="bottom" title="Twitter" href="https://twitter.com/cnesms" target="_blank">
+										<i class="icon-twitter-sign"><span>Twitter</span></i></a>
+									</li>
+									<li class="portalredes-item"><a data-toggle="tooltip" data-placement="bottom" title="YouTube" href="https://www.youtube.com/channel/UCBUDLhhe-Mp8QDTt1Ba3LMA" target="_blank">
+										<i class="icon-youtube"><span>Youtube</span></i></a>
+									</li>
+									<li class="portalredes-item"><a data-toggle="tooltip" data-placement="bottom" title="Facebook" href="https://www.facebook.com/cnesms" target="_blank">
+										<i class="icon-facebook-sign"><span>Facebook</span></i></a>
+									</li>
+									<li class="portalredes-item"><a data-toggle="tooltip" data-placement="bottom" title="Google+" href="https://plus.google.com/113786414575352654271" target="_blank">
+										<i class="icon-google-plus"><span>Google+</span></i></a>
+									</li>
+								</ul>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<div class="sobre">
+					<div class="container">
+						<nav class="menu-servicos pull-right">
+							<ul>
+							<li class="portalservicos-item">
+									<a data-toggle="tooltip" data-placement="bottom" title="Área Restrita" href="https://cnesadm.datasus.gov.br" target="_blank">Área Restrita</a>
+								</li> 
+								<li class="portalservicos-item">
+									<a data-toggle="tooltip" data-placement="bottom" title="Perguntas Frequentes" href="https://wiki.saude.gov.br/cnes/index.php/D%C3%BAvidas_Frequentes" target="_blank">Perguntas Frequentes</a>
+								</li>
+							<!-- <li class="portalservicos-item">
+									<a data-toggle="tooltip" data-placement="bottom" title="Consultas" href="/pages/consultas.jsp">Consultas</a>
+								</li> -->
+								<li class="portalservicos-item">
+									<a data-toggle="tooltip" data-placement="bottom" title="Contato" href="https://wiki.saude.gov.br/cnes/index.php/Contato" target="_blank">Contato</a>
+								</li>
+								<!-- 
+								<li class="portalservicos-item">
+									<a data-toggle="tooltip" data-placement="bottom" title="Quem Somos" href="#">Quem Somos</a>
+								</li>
+								 -->
+							</ul>
+						</nav>
+					</div>
+				</div>
+	    	</header>
+	    	<main> 
+				<div class="container">
+						<!-- <div class="msgSiteAtual alert-danger text-center" role="alert">
+							<strong>Bem vindo ao nosso novo site!</strong> Para acessar as funcionalidades que ainda não foram implementadas, 
+							favor clicar <a data-toggle="tooltip" data-placement="bottom" title="Redireciona para o site antigo" href="http://cnes2.datasus.gov.br" target="_blank"> aqui.</a>
+						</div> -->
+						<div class="msgSiteAtual alert-danger text-center" role="alert">
+							<strong>Bem vindo ao nosso novo site! V 0.1.67</strong> As funcionalidades que ainda não foram implementadas neste site, 
+							estão disponíveis <a data-toggle="tooltip" data-placement="bottom" title="Redireciona para o site antigo" href="http://cnes2.datasus.gov.br" target="_blank"> aqui.</a> 
+						</div>
+
+
+	<script>
+		$(document).ready(function(){
+		    $('body').on('click', '.btn-group button', function (e) {
+		        $(this).addClass('active');
+		        $(this).siblings().removeClass('active');
+		    });
+		});
+	</script>
+
+	<div class="col-md-12" ng-app="extracaoEstabelecimento">
+		<div ng-controller="estabelecimentoController" class="row testeConsulta">
+			<section class="rastro-navegacao">
+				<div class="rastro-navegacao row-flutuante">
+					<a class="pathway" href="/">Página inicial</a>
+					<span class="separator"> &gt; </span>
+					<a class="pathway" href="../consultas.jsp">Consultas</a>
+					<span class="separator"> &gt; </span>
+					<span>Extração de Estabelecimentos</span>
+				</div>
+			</section>
+			<h1>EXTRAÇÃO DE DADOS DE ESTABELECIMENTO</h1><br />
+			<br />
+			<form class="form-inline">
+				<div class="form-group">
+					<label>Estado</label>
+					<select class="form-control" ng-change="carregarMunicipios(); href = null" ng-model="Estado">
+						<option value="">Selecione</option>
+						<option value="{{estado.chave}}" ng-repeat="estado in estados | orderBy:'valor'" ng-selected="{{estado.chave == Estado}}">{{estado.valor}}</option>
+					</select>
+					
+					<label>Municípios</label>
+					<select class="form-control" ng-model="Municipio" ng-change="href = null" ng-disabled=" Estado == null || Estado == ''">
+						<option value="">Selecione</option>
+						<option value="{{municipio.chave}}" ng-repeat="municipio in municipios | orderBy:'valor'" ng-selected="{{municipio.chave == Municipio}}">{{municipio.valor}}</option>
+					</select>
+				</div>
+				
+					<div class="row">
+						<div class="col-md-5">
+							<div class="form-group">
+								<label>Competência:</label>
+								<select class="form-control" ng-model="competenciaAtiva">
+									<option value="">Atual</option>
+									<option value="{{competencia.nuComp}}" ng-repeat="competencia in competencias" ng-selected="{{competencia.nuComp == competenciaAtiva}}">{{competencia.nuComp.substr(4,2) + '/' + competencia.nuComp.substr(0,4)}}</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="form-group">
+							<label>Gestão:</label>
+							<select class="form-control" ng-model="tpGestao">
+								<option value="T">TODOS</option>
+								<option value="{{gestao.chave}}" ng-repeat="gestao in gestoes | orderBy:'valor'" ng-selected="gestao.chave == tpGestao">{{gestao.valor}}</option>
+							</select>
+							<button class="btn btn-primary"	ng-disabled="Estado == null || Estado == ''" 
+									ng-click="processar()" data-toggle="modal" data-target="#myModal">
+									Download
+							</button>						
+						</div>	
+					</div>
+				
+
+			</form>
+			<hr>
+			<div class="row">
+				<div class="col-md-12">
+					<span ng-show="spinnerActive" us-spinner="{radius:30, width:8, length: 16}"></span>
+				</div>
+			</div>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        					<h4 class="modal-title" id="myModalLabel">Informe</h4>
+      					</div>
+      					<div class="modal-body">
+        					Você será redirecionado e o download pode demorar alguns segundos para iniciar.
+      					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        					<a href="{{href}}" target="_blank" onclick="$('#myModal').modal('hide')">
+								<span class="btn btn-primary"> Acessar </span>
+							</a>
+      					</div>
+    				</div>
+  				</div>
+			</div>
+		</div>
+	</div>
+<script src="/angular/extracaoEstabelecimento.js"></script>
+						</div>
+					<!-- fim .row -->
+				</div>
+				<!-- fim .container -->
+			</main>
+			<footer>
+	    		<div class="footer-atalhos">
+	    			<div class="container">
+	    				<div class="pull-right voltar-ao-topo"><a href="#portal-siteactions"><i class="icon-chevron-up"></i>&nbsp;Voltar para o topo</a></div>
+	    			</div>
+	    		</div>
+	    		<div class="container container-menus">
+	    			<!--<div id="footer" class="row footer-menus">
+	    				<span class="hide">Início da navegação de rodapé</span>
+						<div class="col-md-3 col-sm-3">
+							<nav class="row servicos nav">
+								<h2>Serviços</h2>
+								<ul>
+									<li class="portalservicos-item">
+										<a data-toggle="tooltip" data-placement="bottom" title="Perguntas frequentes" href="#">Perguntas frequentes</a>
+									</li>
+									<li class="portalservicos-item">
+										<a data-toggle="tooltip" data-placement="bottom" title="Contato" href="http://datasus.saude.gov.br/sistemas-e-aplicativos/suporte-tecnico/capacitacao-service-desk" target="_blank">Contato</a>
+									</li>
+									<li class="portalservicos-item">
+										<a data-toggle="tooltip" data-placement="bottom" title="Dados abertos" href="#">Dados abertos</a>
+									</li>
+									<li class="portalservicos-item">
+										<a data-toggle="tooltip" data-placement="bottom" title="Área de imprensa" href="#">Área de imprensa</a>
+									</li>
+								</ul>
+							</nav>							
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<nav class="row redes-sociais nav">
+								<h2>Redes Sociais</h2>
+								<ul>
+									<li class="portalredes-item"><a data-toggle="tooltip" data-placement="bottom" title="Twitter" href="https://twitter.com/cnesms" target="_blank">
+		    							Twitter</a>
+		    						</li>
+		    						<li class="portalredes-item"><a data-toggle="tooltip" data-placement="bottom" title="YouTube" href="https://www.youtube.com/channel/UCBUDLhhe-Mp8QDTt1Ba3LMA" target="_blank">
+		    							Youtube</a>
+		    						</li>
+		    						<li class="portalredes-item"><a data-toggle="tooltip" data-placement="bottom" title="Facebook" href="https://www.facebook.com/cnesms" target="_blank">
+		    							Facebook</a>
+		    						</li>
+		    						<li class="portalredes-item"><a data-toggle="tooltip" data-placement="bottom" title="Google Plus" href="https://plus.google.com/113786414575352654271" target="_blank">
+		    							Google+</a>
+		    						</li>
+								</ul>
+							</nav>						
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<nav class="row rss nav">
+								<h2>RSS</h2>
+								<ul>
+									<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="O que é?">O que é?</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<nav class="row sobre nav">
+								<h2>Sobre o site</h2>
+								<ul>
+									<li><a href="/pages/acessibilidade.jsp" data-toggle="tooltip" data-placement="bottom" title="Acessibilidade">Acessibilidade</a></li>
+									<li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Mapa do site">Mapa do site</a></li>
+								</ul>
+							</nav>
+						</div><!--
+						<span class="hide">Fim da navegação de rodapé</span>					
+	    			</div>-->
+	    			<!-- fim .row -->
+	    		</div>
+	    		<!-- fim .container -->
+				<div class="footer-logos ">
+					<div class="container" id="rodape-datasus">
+						<div class="ms-footer ">
+							<div class="container">
+							<!-- 	<p class="ms-footer__info">Suporte a sistemas: 136 - opção 8<br>e-mail: <a href="mailto:suporte.sistemas@datasus.gov.br" title="suporte.sistemas@datasus.gov.br">suporte.sistemas@datasus.gov.br</a>
+									<br>Fale conosco: <a href="http://datasus.saude.gov.br/fale-conosco" title="http://datasus.saude.gov.br/fale-conosco" target="_blank">http://datasus.saude.gov.br/fale-conosco</a>
+								</p>-->
+								<div class="img hidden-xs hidden-sm ">
+									<span class="ms-image ms-image--datasus "><img src="/img/AssinaturaGovernoFederal.png"></span>
+								<!--	<span class="ms-image ms-image--assinatura fr pull-center"></span> -->
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+	    		<div class="footer-atalhos visible-phone">
+	    			<div class="container">
+	    				<span class="hide">Fim do conteúdo da página</span>
+	    				<div class="pull-right voltar-ao-topo"><a href="#portal-siteactions"><i class="icon-chevron-up"></i>&nbsp;Voltar para o topo</a></div>
+	    			</div>
+	    		</div>
+	    	</footer>		
+	    </div>
+		<!-- fim div#wrapper -->
+			
+		<!-- scripts principais -->	
+		<script src="/bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+<!-- 		<script src="bootstrap/js/carousel.js" type="text/javascript"></script><noscript>&nbsp;item para fins de acessibilidade</noscript> -->
+		<script src="/js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;item para fins de acessibilidade</noscript>
+		<script src="/js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+		<script src="http://barra.brasil.gov.br/barra.js?cor=verde" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+
+		<script src="/js/jquery.nanoscroller.js"></script>
+
+		<script src="/js/moment.js"></script>
+		
+		<script src="/js/ngMask.min.js"></script>
+  		<script src="/js/angular-spinner.js"></script>
+  		<script src="/js/spin.js"></script>
+  		<script src="/js/ng-csv.min.js"></script>
+  		<script src="/js/ng-table.min.js"></script>
+		<script src="/js/util.js" charset="UTF-8"></script>		
+		<script src="/js/angular-route.js"></script>
+		<script src="/js/angular-sanitize.min.js"></script>
+		<script src="/bootstrap/js/ui-bootstrap-tpls-0.13.0.js"></script>
+		<script src="/js/loading-bar.min.js"></script>
+		<script src="/js/jquery.gritter.min.js"></script>
+		<script src="/bootstrap/js/bootstrap-datepicker.min.js"></script>	
+		<script src="/bootstrap/js/bootstrap-datepicker.pt-BR.min.js" charset="UTF-8"></script>			
+		<script src="/angular/profissional.js"></script>
+		<script src="/angular/estabelecimento.js"></script>
+		<script src="/angular/downloadsController.js"></script>
+		<script src="/angular/downloadsAplicController.js"></script>
+		<script src="/angular/downloadsDocsController.js"></script>
+		<script src="/angular/downloadsBaseDadosController.js"></script>
+		<script src="/angular/solicitaDesligamentoController.js" charset="UTF-8"></script>
+
+	</body>
+	
+</html>

@@ -1,0 +1,12 @@
+{
+  "id": "basico",
+  "tipo": "agregados",
+  "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/Agregados_por_setores_basico_BR_20260520.zip",
+  "etag": "\"eb4431-6523fe5422ac0\"",
+  "ultima_modificacao": "Wed, 20 May 2026 13:37:23 GMT",
+  "bytes": 15418417,
+  "arquivo": "dados\\ibge\\originais\\Agregados_por_setores_basico_BR_20260520.zip",
+  "sha256": "ec04624286233d699ebe69c7b9625744a1cfdfc8352126f30245bdef5e9bdc63",
+  "obtido_em": "2026-10-19T21:52:36.561869+00:00",
+  "status": "baixado"
+}

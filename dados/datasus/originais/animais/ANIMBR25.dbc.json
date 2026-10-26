@@ -1,0 +1,14 @@
+{
+  "agravo": "animais",
+  "ano": 2025,
+  "situacao": "PRELIM",
+  "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR25.dbc",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR25.dbc",
+  "tamanho": 15224284,
+  "modificado": "20260921125000",
+  "nome": "ANIMBR25.dbc",
+  "arquivo": "dados\\datasus\\originais\\animais\\ANIMBR25.dbc",
+  "sha256": "d0bffbc60f0670d50a00f8d45df20134142a31bece9405d42147a335e7a546d6",
+  "status": "baixado",
+  "obtido_em": "2026-10-19T21:35:47.306013+00:00"
+}

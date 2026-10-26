@@ -1,0 +1,26 @@
+# Ambientes e ferramentas locais (recriáveis)
+.venv*/
+.tools/
+.tmp_pdf_reader/
+__pycache__/
+*.pyc
+tmp*/
+
+# Painel: dependências e build
+painel/node_modules/
+painel/dist/
+
+# Dados brutos baixados das fontes oficiais (recriáveis pelos scripts de coleta;
+# os manifestos .json com hash continuam versionados)
+dados/**/originais/**
+!dados/**/originais/**/
+!dados/**/originais/**/*.json
+*.dbc
+*.dbf
+*.zip
+*.ZIP
+*.pdf
+*.esri.json
+
+# Microdados SINAN por notificação: não versionar (regenerados por pipeline.coleta.baixar_datasus)
+dados/datasus/goiania/*.csv

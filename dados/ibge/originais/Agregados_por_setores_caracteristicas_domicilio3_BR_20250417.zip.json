@@ -1,0 +1,12 @@
+{
+  "id": "domicilio3",
+  "tipo": "agregados",
+  "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/Agregados_por_setores_caracteristicas_domicilio3_BR_20250417.zip",
+  "etag": "\"32442c5-632f8e1a9d6b2\"",
+  "ultima_modificacao": "Thu, 17 Apr 2025 12:52:59 GMT",
+  "bytes": 52708037,
+  "arquivo": "dados\\ibge\\originais\\Agregados_por_setores_caracteristicas_domicilio3_BR_20250417.zip",
+  "sha256": "f38010582b8329f4b3d63708f3e8aae3b8df1c1b471398b2c67f5ef3ad1ba5c7",
+  "obtido_em": "2026-10-19T21:52:59.324096+00:00",
+  "status": "baixado"
+}

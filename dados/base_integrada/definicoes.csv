@@ -1,0 +1,9 @@
+﻿tema,definicao
+serie_mensal,Registros SINAN; dengue por residência e mês da notificação; escorpiões por ocorrência e mês do acidente. Todas as classificações. Não são pessoas únicas nem apenas casos confirmados.
+recorte_anual,Cada arquivo anual contribui apenas com datas do próprio ano. Datas ausentes e externas são auditadas. Isso não é uma deduplicação de microdados; não recupera notificações tardias em outros arquivos.
+meses_ausentes,Ausência de linha não significa zero. Datas presentes não comprovam mês completo. Nenhum total anual de 2026 é tratado como ano completo.
+clima,A002; calendário UTC. Chuva observada pode ser parcial; use cobertura e valor completo. Associação temporal não estabelece causalidade nem diferenças entre bairros.
+bairros,"Lista publicada por edição, indicador e período. Não somar edições sobrepostas, não tratar ausência como zero, não calcular taxas ou ranking completo. Correspondência SIGGO apenas nominal."
+censo,População medida em 2022; nenhuma estimativa populacional por bairro ou para 2026.
+parceiros,"Candidatos públicos sem motivo cadastral de desativação e coordenadas dentro da malha. Cadastro não comprova funcionamento, adesão ao SUS ou parceria."
+integracao_futura,"Novas fontes devem entrar com fonte, versão, granularidade e chaves próprias. Preservar a base pública e comparar definições antes de substituir valores."

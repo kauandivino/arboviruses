@@ -1,0 +1,124 @@
+{
+  "validado_em": "2026-10-19T21:43:41.923128+00:00",
+  "status": "aprovado",
+  "versao": 3,
+  "arquivos_originais": 13,
+  "bases": 10,
+  "resultados": [
+    {
+      "agravo": "animais",
+      "ano": 2022,
+      "situacao": "FINAIS",
+      "registros_recorte": 1459,
+      "escorpioes": 554,
+      "por_referencia": {
+        "residencia": 879,
+        "notificacao": 1332,
+        "ocorrencia": 740
+      }
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2022,
+      "situacao": "FINAIS",
+      "registros_recorte": 61849,
+      "escorpioes": null,
+      "por_referencia": {
+        "residencia": 54853,
+        "notificacao": 58373
+      }
+    },
+    {
+      "agravo": "animais",
+      "ano": 2023,
+      "situacao": "PRELIM",
+      "registros_recorte": 1829,
+      "escorpioes": 698,
+      "por_referencia": {
+        "residencia": 1140,
+        "notificacao": 1663,
+        "ocorrencia": 969
+      }
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2023,
+      "situacao": "FINAIS",
+      "registros_recorte": 22657,
+      "escorpioes": null,
+      "por_referencia": {
+        "residencia": 20232,
+        "notificacao": 20797
+      }
+    },
+    {
+      "agravo": "animais",
+      "ano": 2024,
+      "situacao": "PRELIM",
+      "registros_recorte": 2049,
+      "escorpioes": 793,
+      "por_referencia": {
+        "residencia": 1258,
+        "notificacao": 1930,
+        "ocorrencia": 1015
+      }
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2024,
+      "situacao": "FINAIS",
+      "registros_recorte": 65594,
+      "escorpioes": null,
+      "por_referencia": {
+        "residencia": 57890,
+        "notificacao": 61547
+      }
+    },
+    {
+      "agravo": "animais",
+      "ano": 2025,
+      "situacao": "PRELIM",
+      "registros_recorte": 2796,
+      "escorpioes": 1072,
+      "por_referencia": {
+        "residencia": 1823,
+        "notificacao": 2596,
+        "ocorrencia": 1604
+      }
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2025,
+      "situacao": "FINAIS",
+      "registros_recorte": 36871,
+      "escorpioes": null,
+      "por_referencia": {
+        "residencia": 32816,
+        "notificacao": 34089
+      }
+    },
+    {
+      "agravo": "animais",
+      "ano": 2026,
+      "situacao": "PRELIM",
+      "registros_recorte": 1901,
+      "escorpioes": 769,
+      "por_referencia": {
+        "residencia": 1193,
+        "notificacao": 1754,
+        "ocorrencia": 1038
+      }
+    },
+    {
+      "agravo": "dengue",
+      "ano": 2026,
+      "situacao": "PRELIM",
+      "registros_recorte": 38661,
+      "escorpioes": null,
+      "por_referencia": {
+        "residencia": 34223,
+        "notificacao": 35855
+      }
+    }
+  ]
+}

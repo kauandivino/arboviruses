@@ -1,0 +1,1049 @@
+   
+ 
+ 
+Revisado em Julho/2010. 
+MINISTÉRIO DA SAÚDE 
+SECRETARIA DE VIGILÂNCIA EM SAÚDE 
+DEPARTAMENTO DE VIGILÂNCIA EPIDEMIOLÓGICA 
+CENTRO DE INFORMAÇÕES ESTRATÉGICAS EM VIGILÂNCIA EM SAÚDE 
+GT-SINAN 
+ 
+SISTEMA DE INFORMAÇÃO DE AGRAVOS DE NOTIFICAÇÃO 
+DICIONÁRIO DE DADOS – SINAN NET – VERSÃO 5.0 
+ 
+Nº de notificação e campos que correspondem aos campos de 1 a 30 dos blocos “Dados Gerais”, “Notificação Individual” e “Dados de residência” correspondem aos mesmos 
+campos da ficha de notificação (ver dicionário de dados da ficha de notificação), exceto a data de diagnóstico.   
+ 
+CAMPO DE PREENCHIMENTO OBRIGATÓRIO é aquele cuja ausência de dado impossibilita a inclusão da notificação ou da investigação no Sinan. 
+CAMPO ESSENCIAL é aquele que, apesar de não ser obrigatório, registra dado necessário à investigação do caso ou ao cálculo de indicador epidemiológico ou 
+operacional. 
+ 
+ 
+AGRAVO: ACIDENTE ANIMAIS PEÇONHENTOS 
+ 
+Nome do campo Campo Tipo Categoria Descrição Características DBF 
+31. Data da investigação  dt_investigacao date  Informe a Data da investigação do caso. 
+Campo obrigatório 
+ 
+Data da investigação 
+> ou = Data da 
+notificação 
+ 
+DT_INVEST 
+ 
+   
+ 
+ 
+Revisado em Julho/2010. 
+32. Ocupação co_cbo_ocupacao varchar(6)  
+Informar a atividade 
+exercida pelo paciente no 
+setor formal, informal ou 
+autônomo ou sua última 
+atividade exercida 
+quando paciente for 
+desempregado. O ramo 
+de atividade econômica 
+do paciente refere-se as 
+atividades econômicas 
+desenvolvidas nos 
+processos de produção 
+do setor primário 
+(agricultura e 
+extrativismo); secundário 
+(indústria) ou terciário 
+(serviços e comércio) 
+Se digitado % 
+seguido de enter, 
+abrir tabela para 
+pesquisa. 
+ID_OCUPA_N 
+ 
+Exportado código 
+CBO com 6 
+caracteres. 
+33. Data do acidente  dt_acidente date  
+Informar o nome do 
+município onde ocorreu o 
+acidente 
+ 
+Campo obrigatório.  
+ 
+Deve ser anterior ou 
+igual à Data de 
+Diagnóstico e da 
+Notificação. Deve ser 
+no máximo 2 anos 
+antes da Data de 
+Notificação e da Data 
+de Diagnostico. 
+ANT_DT_ACI 
+34. UF co_uf_ocorrência varchar(2)  Unidade Federativa 
+Campo Obrigatório 
+ 
+Se digitado % 
+seguido de enter, 
+abrir tabela para 
+pesquisa. 
+ 
+ANT_UF 
+35. Município de 
+Ocorrência do 
+Acidente  
+co_municipio_ocorrencia varchar(6)  
+Informar o nome do 
+município onde ocorreu o 
+acidente 
+Campo Obrigatório 
+ 
+Se digitado % 
+ANT_MUNIC_ 
+   
+ 
+ 
+Revisado em Julho/2010. 
+seguido de enter, 
+abrir tabela para 
+pesquisa. 
+ 
+36. Localidade da 
+ocorrência do 
+acidente  
+ds_localidade_ocorrencia varchar(60)    ANT_LOCALI 
+37. Zona de ocorrência  tp_zona_ocorrencia varchar(1) 
+1 – Urbana  
+2 – Rural 
+3 – Periurbana 
+9 – Ignorado  
+Informar o local onde 
+ocorreu o acidente Campo Essencial ANT_ZONA 
+38. Tempo Decorrido 
+Picada/Atendimento tp_tempo_decorrido varchar(1) 
+1- 0 - 1h 
+2- 1 - 3h 
+3- 3 - 6h 
+4- 6 - 12h 
+5- 12 e 24h 
+6- 24 e +h 
+9- Ignorado 
+Informar o tempo 
+decorrido entre o 
+acidente e o atendimento 
+Campo Essencial ANT_TEMPO_ 
+39. Local da Picada  tp_local_picada varchar(1) 
+01 – Cabeça  
+02 – Braço 
+03 – Ante-Braço 
+04 – Mão 
+05 – Dedo da 
+Mão 
+06 – tronco  
+07 – Coxa  
+08 – Perna  
+09 – Pé 
+10 – Dedo do Pé 
+99 – Ignorado  
+Informar a localização da  
+picada 
+Campo Obrigatório 
+ 
+Deve ser formatado 
+com 2 dígitos. 
+ANT_LOCA_1 
+40. Manifestações locais st_manifestacao_local varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Informar se houve 
+manifestações locais 
+Campo Essencial 
+ 
+Se opção = 2 (não) 
+ou 9 (ignorado), pular 
+para o campo  42-
+Manifestações 
+sistêmicas. 
+MCLI_LOCAL 
+41. Se Manifestações st_manifestacao_dor varchar(1) 1 – Sim Se manifestações locais Campo obrigatório CLI_DOR 
+   
+ 
+ 
+Revisado em Julho/2010. 
+locais sim, 
+especificar 
+(Dor) 
+2 – Não 
+9 – Ignorado  
+sim, informar se houve 
+dor 
+se campo 40 – 
+Manifestações locais 
+=1 
+ 
+41. Se Manifestações 
+locais sim, 
+especificar 
+(Edema) 
+st_manifestacao_edema varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado  
+Se manifestações locais 
+sim, informar se houve 
+(edema) 
+Campo obrigatório 
+se campo 40 – 
+Manifestações locais 
+=1 
+ 
+CLI_EDEMA 
+41. Se Manifestações 
+locais sim, 
+especificar 
+(Equimose) 
+st_manifestacao_equimose varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado  
+Se manifestações locais 
+sim, informar se houve 
+(equimose) 
+Campo obrigatório 
+se campo 40 – 
+Manifestações locais 
+=1 
+CLI_EQUIMO 
+41. Se Manifestações 
+locais sim, 
+especificar 
+(Necrose) 
+st_manifestacao_necrose varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado  
+Se manifestações locais 
+sim, informar se houve 
+(necrose) 
+Campo obrigatório 
+se campo 40 – 
+Manifestações locais 
+=1 
+ 
+CLI_NECROS 
+41. Se Manifestações 
+locais sim, 
+especificar 
+(Outras) 
+st_manifestacao_outro varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado  
+Se manifestações locais 
+sim, informar se houve 
+(outras) 
+Campo obrigatório 
+se campo 40 – 
+Manifestações locais 
+=1 
+ 
+CLI_LOCAL_ 
+41. No caso de 
+Outras(especificar) ds_manifestacao_outro varchar(30)   Especificar outras manifestações locais 
+Habilitar se campo 
+Se Manifestações 
+locais sim, 
+especificar 
+(Outras) = 1 
+CLI_LOCA_1 
+42. Manifestações 
+sistêmicas st_manifestacao_sistemica varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Informar se houve 
+manifestações sistêmicas 
+Se opção = 2 (não) 
+ou 9 (ignorado), pular 
+para o campo 44-
+Tempo de  
+coagulação. 
+ 
+Se campo 
+42(manifestações 
+sistêmicas)=1(sim) 
+MCLI_SIST 
+   
+ 
+ 
+Revisado em Julho/2010. 
+pelo menos uma das 
+opções do campo 
+43(Se manifestações 
+sistêmicas sim, 
+especificar )deve ser 
+igual a 1. 
+43. Se manifestações 
+sistêmicas sim, 
+especificar 
+neuroparalíticas 
+(ptose palpebral, 
+turvação visual) 
+st_manifestacao_sist_neurop
+ara varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado  
+Se manifestações 
+sistêmicas sim, informar 
+se houve manifestações 
+neuroparalíticas  (ptose 
+palpebral, turvação 
+visual) 
+Campo obrigatório 
+se 42- Manifestações 
+sistêmicas=1(sim). 
+ 
+ 
+CLI_NEURO 
+43. Se manifestações 
+sistêmicas sim, 
+especificar 
+Hemorrágicas 
+(gengivorragia, outros 
+sangramentos) 
+st_manifestacao_sist_hemorr
+ag varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado  
+Se manifestações 
+sistêmicas sim, informar 
+se houve manifestações 
+hemorrágicas(gengivorra
+gia, outros 
+sangramentos) 
+Campo obrigatório 
+se 42- Manifestações 
+sistêmicas=1(sim) 
+ 
+ 
+CLI_HEMORR 
+43. Se manifestações 
+sistêmicas sim, 
+especificar vagais 
+(vômitos/ diarréia) 
+st_manifestacao_sist_vagais varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado  
+Se manifestações 
+sistêmicas sim, informar 
+se houve manifestações 
+vagais (vômitos/ diarréia) 
+Campo obrigatório 
+se 42- Manifestações 
+sistêmicas=1(sim) 
+ 
+ 
+CLI_VAGAIS 
+43. Se manifestações 
+sistêmicas sim, 
+especificar miolíticas/ 
+hemolíticas (mialgia, 
+anemia, urina escura) 
+st_manifestacao_sist_miolitic
+a varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado  
+Se manifestações 
+sistêmicas sim, informar 
+se houve manifestações 
+miolíticas (mialgia, 
+anemia, urina escura) 
+Campo obrigatório 
+se 42- Manifestações 
+sistêmicas=1(sim) 
+ 
+ 
+CLI_MIOLIT 
+43. Se manifestações 
+sistêmicas sim, 
+especificar renais 
+(oligúria/ anúria) 
+st_manifestacao_sist_renal varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado  
+Se manifestações 
+sistêmicas sim, informar 
+se houve manifestações 
+renais (oligúria/ anúria). 
+Campo obrigatório 
+se 42- Manifestações 
+sistêmicas=1(sim) 
+ 
+ 
+CLI_RENAL 
+43. Se manifestações 
+sistêmicas sim, 
+especificar (Outras) 
+ 
+st_manifestacao_sist_outro varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado  
+Se manifestações 
+sistêmicas sim informar 
+se houve outras 
+ 
+Campo obrigatório 
+se 42- Manifestações 
+sistêmicas=1(sim) 
+ 
+ 
+CLI_OUTR_2 
+   
+ 
+ 
+Revisado em Julho/2010. 
+43. No caso de 
+Outras(especificar) ds_manifestacao_sist_outro varchar(30)   Especificar outras manifestações sistêmicas 
+Habilitar se 43-Se 
+manifestações 
+sistêmicas sim, 
+especificar (Outras) 
+igual a 1 . 
+ 
+CLI_OUTR_3 
+44. Tempo de 
+Coagulação tp_tempo_coagulacao varchar(1) 
+1 – Normal 
+2 – Alterado 
+9 – Não realizado 
+Informar o tempo de 
+coagulação  CLI_TEMPO_ 
+45. Tipo de Acidente  tp_animal varchar(1) 
+1 – Serpente  
+2 – Aranha  
+3 – Escorpião 
+4 – Lagarta  
+5 – Abelha  
+6 – Outros 
+9 – Ignorado  
+Informar o tipo de 
+acidente segundo o  
+animal responsável pela 
+agressão 
+Campo obrigatório 
+ 
+Se opção = 1 
+(serpente), pular para 
+o campo  46-
+Serpente – Tipo de 
+acidente. 
+ 
+Se opção = 2 
+(aranha), pular para 
+o campo 47- Aranha 
+– Tipo de acidente 
+ 
+Se opção = 3 
+(escorpião), pular 
+para o campo 49-
+Classificação do 
+caso 
+ 
+Se opção = 4 
+(lagarta), pular para o 
+campo 48-Lagarta – 
+Tipo de acidente. 
+ 
+Se opção 5 (abelha), 
+6 (outro) ou 9 
+(ignorado), pular para 
+o campo  49-
+Classificação do 
+TP_ACIDENT 
+   
+ 
+ 
+Revisado em Julho/2010. 
+caso. 
+ 
+ 
+45. No caso de Outros 
+especificar ds_animal_outro varchar(30)  
+Especificar outro animal 
+responsável pela 
+agressão 
+Habilitar se campo 
+45 - Tipo de Acidente 
+= 6 outros. 
+ANI_TIPO_1 
+46. Serpente – Tipo de 
+acidente tp_serpente varchar(1) 
+1 – Botrópico 
+2 – Crotálico 
+3 – Elapídico 
+4 – Laquético 
+5 –Serpente não 
+peçonhenta 
+9 – Ignorado   
+Informar o tipo de 
+acidente ofídico 
+conforme as 
+manifestações clinicas do 
+envenenamento  
+ 
+Campo Obrigatório 
+se 45-Campo Tipo 
+de Acidente= 
+1(serpente) 
+ 
+ 
+ANI_SERPEN 
+47. Aranha – Tipo de 
+acidente tp_aranha varchar(1) 
+1 – Foneutrismo 
+2 – Loxoscelismo 
+3 – 
+Latrodectismo 
+4 – Outra aranha 
+9 – Ignorado    
+Informar  o tipo de 
+acidente araneídico 
+conforme as 
+manifestações clinicas do 
+envenenamento. 
+ 
+Campo Obrigatório 
+se 45-Campo Tipo 
+de Acidente= 
+2(aranha) 
+ 
+ 
+ 
+ANI_ARANHA 
+48. Lagarta – Tipo de 
+acidente tp_lagarta varchar(1) 
+1 – Lonomia 
+2 – Outra lagarta 
+9 – Ignorado    
+Informar o tipo de 
+acidente  conforme as 
+manifestações clinicas do 
+envenenamento 
+Campo Obrigatório 
+se 45-Campo Tipo 
+de Acidente = 4 
+(Lagarta). 
+ANI_LAGART 
+49. Classificação do 
+Caso tp_classificacao_caso varchar(1) 
+1 – Leve 
+2 – Moderado 
+3 – Grave 
+9 – Ignorado 
+Informar a classificação 
+do caso segundo a 
+gravidade do 
+envenenamento 
+ TRA_CLASSI 
+50. Soroterapia st_soroterapia varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado  
+Informar se foi feita 
+Soroterapia 
+Campo obrigatório  
+ 
+Se opção = 2 (não) 
+ou 9 (ignorado), pular 
+para o campo 52-
+Complicações 
+Locais. 
+CON_SOROTE 
+51. Se soroterapia sim, 
+especificar, número nu_antibotropico number(2)  Informar o número de ampolas aplicadas (soro  NU_AMPOLAS 
+   
+ 
+ 
+Revisado em Julho/2010. 
+de ampolas  de soro: 
+antibrotópico (SAB) 
+antibrotópico) 
+51. Se soroterapia sim, 
+especificar, número 
+de ampolas  de soro: 
+anticrotálico (SAC) 
+nu_anticrotalico number(2)  
+Informar o número de 
+ampolas aplicadas (soro 
+anticrotálico) 
+ NU_AMPOL_1 
+51. Se soroterapia sim, 
+especificar,  número 
+de ampolas de soro: 
+antiaracnídico (SAAr) 
+ 
+nu_antiaracnidico number(2)  
+Informar o número de 
+ampolas aplicadas (soro 
+antiaracnídico) 
+ NU_AMPOL_8 
+51. Se soroterapia sim, 
+especificar, número 
+de ampolas  de soro: 
+antibrotópico-
+laquético (SABL) 
+nu_antibotropico_laquetico number(2)  
+Informar o número de 
+ampolas aplicadas (soro 
+antibrotópico-crotálico) 
+ NU_AMPOL_6 
+51. Se soroterapia sim, 
+especificar, número 
+de ampolas  de soro: 
+antielapídico (SAEL) 
+nu_antielapidico number(2)  
+Informar o número de 
+ampolas aplicadas (soro 
+antielapídico) 
+ NU_AMPOL_4 
+51. Se soroterapia sim, 
+especificar, número 
+de ampolas de soro: 
+antiloxoscélico 
+(SALox) 
+nu_antiloxoscelico number(2)  
+Informar o número de 
+ampolas aplicadas (soro 
+antiloxoscélico) 
+ NU_AMPOL_7 
+51. Se soroterapia sim, 
+especificar, número 
+de ampolas  de soro: 
+antibrotópico-
+crotálico (SABC) 
+nu_antilbotropico_crotalico number(2)  
+Informar o número de 
+ampolas aplicadas (soro 
+antibrotópico-crotálico) 
+ NU_AMPOL_5 
+51. Se soroterapia sim, 
+especificar, número 
+de ampolas de soro: 
+antiescorpiônico 
+(SAEsc) 
+ 
+nu_antiescorpionico number(2)  
+Informar o número de 
+ampolas aplicadas (soro 
+antiescorpiônico) 
+ 
+ NU_AMPOL_9 
+51. Se soroterapia sim, 
+especificar, número nu_antilonomico number(2)  Informar o número de ampolas aplicadas (soro  NU_AMPOL_3 
+   
+ 
+ 
+Revisado em Julho/2010. 
+de ampolas de soro: 
+antilonômico (SALon) 
+antilonômico) 
+52. complicações Locais st_complicacao_local varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Informar se houve 
+complicações locais 
+Se opção = 2 (não) 
+ou 9 (ignorado), pular 
+para o campo 54-
+Complicações 
+Sistêmicas. 
+ 
+COM_LOC 
+53. Se complicações 
+locais Sim, 
+especificar -  
+Infecção Secundária 
+st_complicacao_local_infecca
+o varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Se complicações locais 
+sim, 
+informar se houve 
+infecção Secundária 
+Campo obrigatório 
+se campo 52- 
+Complicações Locais 
+= 1  
+COM_SECUND 
+53. Se complicações 
+locais Sim, 
+especificar -  
+Necrose Extensa 
+st_complicacao_local_necros
+e varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Se complicações locais 
+sim, informar se houve 
+Necrose Extensa 
+Campo obrigatório 
+se campo 52- 
+Complicações Locais 
+= 1 
+COM_NECROS 
+53. Se complicações 
+locais Sim, 
+especificar -  
+Síndrome 
+Comportamental 
+st_complicacao_local_sindro
+me varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Se complicações locais 
+sim, informar se houve 
+Síndrome 
+Comportamental 
+Campo obrigatório 
+se campo 52- 
+Complicações Locais 
+= 1. 
+COM_COMPAR 
+ 
+53. Se complicações 
+locais Sim, 
+especificar -  
+Déficit Funcional 
+st_complicacao_local_deficit varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Se complicações locais 
+sim, informar se houve 
+Déficit Funcional 
+Campo obrigatório 
+se campo 52-
+Complicações Locais 
+= 1. 
+COM_DEFICT 
+53. Se complicações 
+locais Sim, 
+especificar -  
+Amputação 
+st_complicacao_local_amput
+acao varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Se complicações locais 
+sim, informar se houve 
+Amputação 
+Campo obrigatório 
+se campo 52- 
+Complicações Locais 
+= 1 
+COM_APUTAC 
+54. Complicações 
+Sistêmicas st_complicacao_sistemica varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Informar se houve 
+complicações sistêmicas  
+Se opção = 2 (não) 
+ou 9 (ignorado),  
+pular para o campo 
+56- Acidente 
+relacionado ao 
+trabalho. 
+COM_SISTEM 
+55. Se complicações 
+sistêmicas, 
+especificar -  
+st_complicacao_sist_renal varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Se complicações 
+sistemicas sim, informar 
+se houve Insuficiência 
+Campo obrigatório 
+se campo 54- 
+Complicações 
+COM_RENAL 
+   
+ 
+ 
+Revisado em Julho/2010. 
+Insuficiência Renal Renal Sistêmicas  = 1 
+55. Se complicações 
+sistêmicas, 
+especificar -  
+Insuficiência 
+Respiratória/ Edema 
+Pulmonar Agudo 
+st_complicacao_sist_respirat
+oria varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Se complicações 
+sistêmicas  sim, informar 
+se houve Insuficiência 
+Respiratória 
+Campo obrigatório 
+se campo 54- 
+Complicações 
+Sistêmicas  = 1 
+COM_EDEMA 
+55. Se complicações 
+sistêmicas, 
+especificar - 
+Septicemia 
+st_complicacao_sist_septice
+mia varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Se complicações 
+sistêmicas sim, informar 
+se houve Edema 
+Pulmonar Aguda 
+Campo obrigatório 
+se campo 54- 
+Complicações 
+Sistêmicas  = 1 
+COM_SEPTIC 
+55. Se complicações 
+sistêmicas, 
+especificar -  
+Choque 
+st_complicacao_sist_choque varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Se complicações 
+sistêmicas sim, Informar 
+se houve Choque 
+Campo obrigatório 
+se campo 54- 
+Complicações 
+Sistêmicas  = 1 
+COM_CHOQUE 
+56. Acidente relacionada 
+ao trabalho st_acidente_trabalho varchar(1) 
+1 – Sim 
+2 – Não 
+9 – Ignorado 
+Informar se a doença é 
+relacionada ao trabalho  DOENCA_TRA 
+57. Evolução do Caso  tp_evolucao_caso varchar(1) 
+1 – Cura  
+2 – óbito por 
+acidente por 
+animais 
+peçonhentos 
+3 – Óbito por 
+outras causas  
+9 – Ignorado  
+ 
+ 
+Campo Essencial 
+ 
+Se preenchido 1- sim 
+ou 9- ignorado ou 
+null, pular para 
+campo 59- Data de 
+encerramento. 
+EVOLUCAO 
+58. Data do óbito dt_obito date   
+Campo habilitado se 
+campo 57-
+Evolução=2 ou 3.  
+ 
+ 
+Data do óbito maior 
+ou igual a Data de 
+diagnóstico e Data 
+do Acidente.  
+ 
+Data do óbito menor 
+ou igual a Data atual. 
+DT_OBITO 
+   
+ 
+ 
+Revisado em Julho/2010. 
+ 
+ 
+59. Data do 
+encerramento dt_encerramento date   
+Campo obrigatório 
+se campo 57 - 
+Evolução do caso 
+estiver preenchido 
+ 
+Data encerramento 
+maior ou igual Data 
+de investigação. 
+DT_ENCERRA 
+Informações 
+complementares e 
+observações 
+ds_observacao varchar(255)  
+Anotar todas as 
+informações 
+consideradas 
+importantes e que não 
+estão na ficha (ex : 
+outros dados clínicos, 
+dados laboratoriais, 
+laudos de outros exames 
+e necropsia, etc. ) 
+ Variável não exportada para DBF 
+Transferência vertical da 
+investigação nu_lote_vertical varchar(7) 
+Descrever aqui a 
+estrutura da 
+composição do 
+número do lote 
+Identifica o Lote da 
+transferência da 
+investigação de um nível 
+do sistema para outro 
+(transferência vertical) 
+Preenchida pelo 
+sistema quando 
+realizada 
+transferência vertical 
+da investigação 
+NU_LOTE_I 
+   
+ 
+ 
+Revisado em Julho/2010. 
+1.1. RQ002 – Críticas Ficha Animais Peçonhentos. 
+ 
+Pedir confirmação quando: 
+ 
+Campo Igual a: e Campo Igual a: 
+40 3-escorpião  46 Antibotrópico ou 
+antibotrópico-laquético 
+ou antibotrópico-
+crotálico ou 
+anticrotálico ou 
+antielapídico ou 
+antiloxoscélico ou 
+antilonômico 
+40 5-abelha ou 6-outros 
+ou 9-ignorado 
+ 46 Antibotrópico ou 
+antibotrópico-laquético 
+ou antibotrópico-
+crotálico ou 
+anticrotálico ou 
+antielapídico ou 
+antiescorpiônico ou 
+antiaracnídico ou 
+antiloxoscélico ou 
+antilonômico 
+41 1-Botrópico  46 anticrotálico ou 
+antielapídico ou 
+antiescorpiônico ou 
+antiaracnídico ou 
+antiloxoscélico ou 
+antilonômico 
+41 2-Crotálico  46 Antibotrópico ou 
+antibotrópico-laquético 
+ou antielapídico ou 
+antiescorpiônico ou 
+antiaracnídico ou 
+antiloxoscélico ou 
+antilonômico 
+41 3-Elapídico  46 Antibotrópico ou 
+antibotrópico-laquético 
+ou antibotrópico-
+crotálico ou 
+anticrotálico ou 
+antiescorpiônico ou 
+antiaracnídico ou 
+antiloxoscélico ou 
+antilonômico 
+41 4-Laquético  46 Antibotrópico ou 
+antibotrópico-crotálico 
+ou anticrotálico ou 
+antielapídico ou 
+antiescorpiônico ou 
+antiaracnídico ou 
+antiloxoscélico ou 
+antilonômico 
+42 1-Foneutrismo  46 Antibotrópico ou 
+antibotrópico-laquético 
+ou antibotrópico-
+   
+ 
+ 
+Revisado em Julho/2010. 
+crotálico ou 
+anticrotálico ou 
+antielapídico ou 
+antiescorpiônico ou 
+antiloxoscélico ou 
+antilonômico 
+42 2-Loxoscelismo   Antibotrópico ou 
+antibotrópico-laquético 
+ou antibotrópico-
+crotálico ou 
+anticrotálico ou 
+antielapídico ou 
+antiescorpiônico ou 
+antilonômico 
+42 3-Latrodectismo ou 
+4-Outra aranha ou 9-
+ignorado 
+ 46 Antibotrópico ou 
+antibotrópico-laquético 
+ou antibotrópico-
+crotálico ou 
+anticrotálico ou 
+antielapídico ou 
+antiescorpiônico ou 
+antiaracnídico ou 
+antiloxoscélico ou 
+antilonômico 
+43 1-Lonomia  46 Antibotrópico ou 
+antibotrópico-laquético 
+ou antibotrópico-
+crotálico ou 
+anticrotálico ou 
+antielapídico ou 
+antiescorpiônico ou 
+antiaracnídico ou 
+antiloxoscélico 
+43 2-Outra lagarta  46 Antibotrópico ou 
+antibotrópico-laquético 
+ou antibotrópico-
+crotálico ou 
+anticrotálico ou 
+antielapídico ou 
+antiescorpiônico ou 
+antiaracnídico ou 
+antiloxoscélico ou 
+antilonômico 
+44 2-moderado ou 3-
+grave 
+ 45 2-não ou 9-ignorado 
+44 1-leve ou 2-
+moderado 
+ 52 2-óbito 
+ 

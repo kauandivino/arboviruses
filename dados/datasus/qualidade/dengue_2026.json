@@ -1,0 +1,878 @@
+{
+  "arquivo": "DENGBR26.dbc",
+  "ano": 2026,
+  "situacao": "PRELIM",
+  "municipio": "520870",
+  "registros_brasil": 474351,
+  "registros_excluidos_dbf": 0,
+  "registros_recorte": 38661,
+  "registros_por_referencia": {
+    "notificacao": 35855,
+    "residencia": 34223
+  },
+  "escorpioes_recorte": null,
+  "tipos_animais": {},
+  "datas_ausentes_invalidas": {},
+  "campos": [
+    {
+      "nome": "TP_NOT",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 1
+    },
+    {
+      "nome": "ID_AGRAVO",
+      "tipo": "C",
+      "tamanho": 5,
+      "decimais": 0,
+      "offset": 2
+    },
+    {
+      "nome": "DT_NOTIFIC",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 7
+    },
+    {
+      "nome": "SEM_NOT",
+      "tipo": "C",
+      "tamanho": 6,
+      "decimais": 0,
+      "offset": 15
+    },
+    {
+      "nome": "NU_ANO",
+      "tipo": "C",
+      "tamanho": 4,
+      "decimais": 0,
+      "offset": 21
+    },
+    {
+      "nome": "SG_UF_NOT",
+      "tipo": "C",
+      "tamanho": 2,
+      "decimais": 0,
+      "offset": 25
+    },
+    {
+      "nome": "ID_MUNICIP",
+      "tipo": "C",
+      "tamanho": 6,
+      "decimais": 0,
+      "offset": 27
+    },
+    {
+      "nome": "ID_REGIONA",
+      "tipo": "C",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 33
+    },
+    {
+      "nome": "ID_UNIDADE",
+      "tipo": "C",
+      "tamanho": 7,
+      "decimais": 0,
+      "offset": 41
+    },
+    {
+      "nome": "DT_SIN_PRI",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 48
+    },
+    {
+      "nome": "SEM_PRI",
+      "tipo": "C",
+      "tamanho": 6,
+      "decimais": 0,
+      "offset": 56
+    },
+    {
+      "nome": "ANO_NASC",
+      "tipo": "C",
+      "tamanho": 4,
+      "decimais": 0,
+      "offset": 62
+    },
+    {
+      "nome": "NU_IDADE_N",
+      "tipo": "N",
+      "tamanho": 4,
+      "decimais": 0,
+      "offset": 66
+    },
+    {
+      "nome": "CS_SEXO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 70
+    },
+    {
+      "nome": "CS_GESTANT",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 71
+    },
+    {
+      "nome": "CS_RACA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 72
+    },
+    {
+      "nome": "CS_ESCOL_N",
+      "tipo": "C",
+      "tamanho": 2,
+      "decimais": 0,
+      "offset": 73
+    },
+    {
+      "nome": "SG_UF",
+      "tipo": "C",
+      "tamanho": 2,
+      "decimais": 0,
+      "offset": 75
+    },
+    {
+      "nome": "ID_MN_RESI",
+      "tipo": "C",
+      "tamanho": 6,
+      "decimais": 0,
+      "offset": 77
+    },
+    {
+      "nome": "ID_RG_RESI",
+      "tipo": "C",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 83
+    },
+    {
+      "nome": "ID_PAIS",
+      "tipo": "C",
+      "tamanho": 4,
+      "decimais": 0,
+      "offset": 91
+    },
+    {
+      "nome": "DT_INVEST",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 95
+    },
+    {
+      "nome": "ID_OCUPA_N",
+      "tipo": "C",
+      "tamanho": 6,
+      "decimais": 0,
+      "offset": 103
+    },
+    {
+      "nome": "FEBRE",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 109
+    },
+    {
+      "nome": "MIALGIA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 110
+    },
+    {
+      "nome": "CEFALEIA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 111
+    },
+    {
+      "nome": "EXANTEMA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 112
+    },
+    {
+      "nome": "VOMITO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 113
+    },
+    {
+      "nome": "NAUSEA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 114
+    },
+    {
+      "nome": "DOR_COSTAS",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 115
+    },
+    {
+      "nome": "CONJUNTVIT",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 116
+    },
+    {
+      "nome": "ARTRITE",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 117
+    },
+    {
+      "nome": "ARTRALGIA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 118
+    },
+    {
+      "nome": "PETEQUIA_N",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 119
+    },
+    {
+      "nome": "LEUCOPENIA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 120
+    },
+    {
+      "nome": "LACO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 121
+    },
+    {
+      "nome": "DOR_RETRO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 122
+    },
+    {
+      "nome": "DIABETES",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 123
+    },
+    {
+      "nome": "HEMATOLOG",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 124
+    },
+    {
+      "nome": "HEPATOPAT",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 125
+    },
+    {
+      "nome": "RENAL",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 126
+    },
+    {
+      "nome": "HIPERTENSA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 127
+    },
+    {
+      "nome": "ACIDO_PEPT",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 128
+    },
+    {
+      "nome": "AUTO_IMUNE",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 129
+    },
+    {
+      "nome": "DT_CHIK_S1",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 130
+    },
+    {
+      "nome": "DT_CHIK_S2",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 138
+    },
+    {
+      "nome": "DT_PRNT",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 146
+    },
+    {
+      "nome": "RES_CHIKS1",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 154
+    },
+    {
+      "nome": "RES_CHIKS2",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 155
+    },
+    {
+      "nome": "RESUL_PRNT",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 156
+    },
+    {
+      "nome": "DT_SORO",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 157
+    },
+    {
+      "nome": "RESUL_SORO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 165
+    },
+    {
+      "nome": "DT_NS1",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 166
+    },
+    {
+      "nome": "RESUL_NS1",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 174
+    },
+    {
+      "nome": "DT_VIRAL",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 175
+    },
+    {
+      "nome": "RESUL_VI_N",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 183
+    },
+    {
+      "nome": "DT_PCR",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 184
+    },
+    {
+      "nome": "RESUL_PCR_",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 192
+    },
+    {
+      "nome": "SOROTIPO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 193
+    },
+    {
+      "nome": "HISTOPA_N",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 194
+    },
+    {
+      "nome": "IMUNOH_N",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 195
+    },
+    {
+      "nome": "HOSPITALIZ",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 196
+    },
+    {
+      "nome": "DT_INTERNA",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 197
+    },
+    {
+      "nome": "UF",
+      "tipo": "C",
+      "tamanho": 2,
+      "decimais": 0,
+      "offset": 205
+    },
+    {
+      "nome": "MUNICIPIO",
+      "tipo": "C",
+      "tamanho": 6,
+      "decimais": 0,
+      "offset": 207
+    },
+    {
+      "nome": "TPAUTOCTO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 213
+    },
+    {
+      "nome": "COUFINF",
+      "tipo": "C",
+      "tamanho": 2,
+      "decimais": 0,
+      "offset": 214
+    },
+    {
+      "nome": "COPAISINF",
+      "tipo": "C",
+      "tamanho": 4,
+      "decimais": 0,
+      "offset": 216
+    },
+    {
+      "nome": "COMUNINF",
+      "tipo": "C",
+      "tamanho": 6,
+      "decimais": 0,
+      "offset": 220
+    },
+    {
+      "nome": "CLASSI_FIN",
+      "tipo": "C",
+      "tamanho": 2,
+      "decimais": 0,
+      "offset": 226
+    },
+    {
+      "nome": "CRITERIO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 228
+    },
+    {
+      "nome": "DOENCA_TRA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 229
+    },
+    {
+      "nome": "CLINC_CHIK",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 230
+    },
+    {
+      "nome": "EVOLUCAO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 231
+    },
+    {
+      "nome": "DT_OBITO",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 232
+    },
+    {
+      "nome": "DT_ENCERRA",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 240
+    },
+    {
+      "nome": "ALRM_HIPOT",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 248
+    },
+    {
+      "nome": "ALRM_PLAQ",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 249
+    },
+    {
+      "nome": "ALRM_VOM",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 250
+    },
+    {
+      "nome": "ALRM_SANG",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 251
+    },
+    {
+      "nome": "ALRM_HEMAT",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 252
+    },
+    {
+      "nome": "ALRM_ABDOM",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 253
+    },
+    {
+      "nome": "ALRM_LETAR",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 254
+    },
+    {
+      "nome": "ALRM_HEPAT",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 255
+    },
+    {
+      "nome": "ALRM_LIQ",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 256
+    },
+    {
+      "nome": "DT_ALRM",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 257
+    },
+    {
+      "nome": "GRAV_PULSO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 265
+    },
+    {
+      "nome": "GRAV_CONV",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 266
+    },
+    {
+      "nome": "GRAV_ENCH",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 267
+    },
+    {
+      "nome": "GRAV_INSUF",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 268
+    },
+    {
+      "nome": "GRAV_TAQUI",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 269
+    },
+    {
+      "nome": "GRAV_EXTRE",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 270
+    },
+    {
+      "nome": "GRAV_HIPOT",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 271
+    },
+    {
+      "nome": "GRAV_HEMAT",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 272
+    },
+    {
+      "nome": "GRAV_MELEN",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 273
+    },
+    {
+      "nome": "GRAV_METRO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 274
+    },
+    {
+      "nome": "GRAV_SANG",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 275
+    },
+    {
+      "nome": "GRAV_AST",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 276
+    },
+    {
+      "nome": "GRAV_MIOC",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 277
+    },
+    {
+      "nome": "GRAV_CONSC",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 278
+    },
+    {
+      "nome": "GRAV_ORGAO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 279
+    },
+    {
+      "nome": "DT_GRAV",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 280
+    },
+    {
+      "nome": "MANI_HEMOR",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 288
+    },
+    {
+      "nome": "EPISTAXE",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 289
+    },
+    {
+      "nome": "GENGIVO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 290
+    },
+    {
+      "nome": "METRO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 291
+    },
+    {
+      "nome": "PETEQUIAS",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 292
+    },
+    {
+      "nome": "HEMATURA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 293
+    },
+    {
+      "nome": "SANGRAM",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 294
+    },
+    {
+      "nome": "LACO_N",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 295
+    },
+    {
+      "nome": "PLASMATICO",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 296
+    },
+    {
+      "nome": "EVIDENCIA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 297
+    },
+    {
+      "nome": "PLAQ_MENOR",
+      "tipo": "C",
+      "tamanho": 7,
+      "decimais": 0,
+      "offset": 298
+    },
+    {
+      "nome": "CON_FHD",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 305
+    },
+    {
+      "nome": "COMPLICA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 306
+    },
+    {
+      "nome": "TP_SISTEMA",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 307
+    },
+    {
+      "nome": "NDUPLIC_N",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 308
+    },
+    {
+      "nome": "DT_DIGITA",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 309
+    },
+    {
+      "nome": "CS_FLXRET",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 317
+    },
+    {
+      "nome": "FLXRECEBI",
+      "tipo": "C",
+      "tamanho": 7,
+      "decimais": 0,
+      "offset": 318
+    },
+    {
+      "nome": "MIGRADO_W",
+      "tipo": "C",
+      "tamanho": 1,
+      "decimais": 0,
+      "offset": 325
+    }
+  ],
+  "campos_referencia": {
+    "residencia": "ID_MN_RESI",
+    "notificacao": "ID_MUNICIP"
+  },
+  "campos_data": [
+    "DT_NOTIFIC",
+    "DT_SIN_PRI"
+  ],
+  "csv": "dados\\datasus\\goiania\\dengue_2026.csv",
+  "csv_sha256": "8b96da557d07de66bcf79940bc26d218ef5484bebfd00f1687078a4f2b021bbf",
+  "processado_em": "2026-10-19T21:42:56.017951+00:00",
+  "versao": 3,
+  "fonte_sha256": "2b52672d307ec03ecd3a68b69f0af0510d0273dc95a7dc303991039d509541aa"
+}

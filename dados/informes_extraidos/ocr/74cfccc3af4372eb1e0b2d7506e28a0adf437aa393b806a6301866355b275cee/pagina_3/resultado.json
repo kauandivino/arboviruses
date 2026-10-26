@@ -1,0 +1,217 @@
+{
+  "registros": [
+    {
+      "bairro": "CURITIBAI",
+      "valor_original": "66",
+      "valor": 66,
+      "bbox_bairro": [
+        122.18633380220513,
+        205.0583006470165,
+        167.9125723189352,
+        250.78453916374656
+      ],
+      "bbox_valor": [
+        159.732666015625,
+        363.4146728515625,
+        168.0010223388672,
+        369.6138610839844
+      ],
+      "confianca_ocr_bairro": 0.968324171172248,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\74cfccc3af4372eb1e0b2d7506e28a0adf437aa393b806a6301866355b275cee\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "ACIONARIOS",
+      "valor_original": "59",
+      "valor": 59,
+      "bbox_bairro": [
+        157.30597060113698,
+        205.5297051678075,
+        202.089400076285,
+        250.31313464295556
+      ],
+      "bbox_valor": [
+        194.86492919921875,
+        352.6285400390625,
+        203.04177856445312,
+        358.82855224609375
+      ],
+      "confianca_ocr_bairro": 0.9107632264494896,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\74cfccc3af4372eb1e0b2d7506e28a0adf437aa393b806a6301866355b275cee\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "AAGALHAES",
+      "valor_original": "58",
+      "valor": 58,
+      "bbox_bairro": [
+        193.8398209624419,
+        206.70821646978504,
+        237.44473913561237,
+        250.31313464295556
+      ],
+      "bbox_valor": [
+        229.9282684326172,
+        351.1309814453125,
+        237.99493408203125,
+        357.3130187988281
+      ],
+      "confianca_ocr_bairro": 0.9233650002214644,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\74cfccc3af4372eb1e0b2d7506e28a0adf437aa393b806a6301866355b275cee\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "Q ATHENEU",
+      "valor_original": "54",
+      "valor": 54,
+      "bbox_bairro": [
+        227.07383967820965,
+        204.5868961262255,
+        273.27148271573077,
+        250.78453916374656
+      ],
+      "bbox_valor": [
+        265.0165710449219,
+        344.96905517578125,
+        273.2655029296875,
+        351.1510925292969
+      ],
+      "confianca_ocr_bairro": 0.9608448147773743,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\74cfccc3af4372eb1e0b2d7506e28a0adf437aa393b806a6301866355b275cee\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": " LUDOVICO",
+      "valor_original": "48",
+      "valor": 48,
+      "bbox_bairro": [
+        261.95777421674603,
+        206.0011096885986,
+        307.44831047308054,
+        250.548836903351
+      ],
+      "bbox_valor": [
+        299.81658935546875,
+        335.74609375,
+        308.1466064453125,
+        341.9281311035156
+      ],
+      "confianca_ocr_bairro": 0.9502869579527113,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\74cfccc3af4372eb1e0b2d7506e28a0adf437aa393b806a6301866355b275cee\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "REMENDAO",
+      "valor_original": "35",
+      "valor": 35,
+      "bbox_bairro": [
+        298.49162457805096,
+        206.4725142093895,
+        341.8608404908259,
+        249.84173012216445
+      ],
+      "bbox_valor": [
+        335.1001892089844,
+        315.78466796875,
+        343.1578369140625,
+        321.9667053222656
+      ],
+      "confianca_ocr_bairro": 0.9943943098187447,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\74cfccc3af4372eb1e0b2d7506e28a0adf437aa393b806a6301866355b275cee\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "3VO MUNDO",
+      "valor_original": "33",
+      "valor": 33,
+      "bbox_bairro": [
+        331.7256432938187,
+        205.29400290741194,
+        378.39469085213085,
+        250.548836903351
+      ],
+      "bbox_valor": [
+        370.1884765625,
+        312.71368408203125,
+        378.09295654296875,
+        318.8957214355469
+      ],
+      "confianca_ocr_bairro": 0.8787062797281477,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\74cfccc3af4372eb1e0b2d7506e28a0adf437aa393b806a6301866355b275cee\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "'VILA NOVA",
+      "valor_original": "33",
+      "valor": 33,
+      "bbox_bairro": [
+        367.0809823531461,
+        205.29400290741194,
+        412.1001140886896,
+        250.31313464295556
+      ],
+      "bbox_valor": [
+        405.2867736816406,
+        312.71368408203125,
+        413.16632080078125,
+        318.8957214355469
+      ],
+      "confianca_ocr_bairro": 0.9464133977890015,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\74cfccc3af4372eb1e0b2d7506e28a0adf437aa393b806a6301866355b275cee\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "MAMERICA",
+      "valor_original": "31",
+      "valor": 31,
+      "bbox_bairro": [
+        402.4363214124735,
+        205.5297051678075,
+        447.2197508876215,
+        250.31313464295556
+      ],
+      "bbox_valor": [
+        440.37506103515625,
+        309.65264892578125,
+        447.9032287597656,
+        315.8346862792969
+      ],
+      "confianca_ocr_bairro": 0.9914506450295448,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\74cfccc3af4372eb1e0b2d7506e28a0adf437aa393b806a6301866355b275cee\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "VI SAO JOSE",
+      "valor_original": "30",
+      "valor": 30,
+      "bbox_bairro": [
+        438.9701717737785,
+        206.70821646978504,
+        482.8107922073444,
+        250.548836903351
+      ],
+      "bbox_valor": [
+        475.4333801269531,
+        308.107177734375,
+        483.76129150390625,
+        314.2892150878906
+      ],
+      "confianca_ocr_bairro": 0.9211393919858065,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\74cfccc3af4372eb1e0b2d7506e28a0adf437aa393b806a6301866355b275cee\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    }
+  ],
+  "sha256_imagem": "69ac24e7fd51137a8ed40e618613a8e605b6faedf403ea704c4072ff3931e81e",
+  "escala_renderizacao": 3.0,
+  "aviso": "Confiança do OCR não é probabilidade de correção; todos os nomes exigem revisão."
+}

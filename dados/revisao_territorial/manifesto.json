@@ -1,0 +1,59 @@
+{
+  "gerado_em": "2026-10-19T23:41:39.870278+00:00",
+  "fontes": [
+    {
+      "arquivo": "revisoes_visuais_informes.json",
+      "sha256": "ee8274ec2a7a4b7c33ecaf8c2281279343c76118f699c86dcb5872aeae60c691"
+    },
+    {
+      "arquivo": "dados\\malha_municipal\\goiania\\bairros_municipais_analise.csv",
+      "sha256": "069960fb801d15bc89d8318f7f1c4e6f8d83c846dede7eb551525cd09072dfa9"
+    },
+    {
+      "arquivo": "dados\\informes_extraidos\\bairros.csv",
+      "sha256": "1fb7b01eb8c2cff03d1464c7e5a912061c9a7b79c83af6f22f7a3553fac8aba9"
+    },
+    {
+      "arquivo": "dados\\informes_extraidos\\elementos.csv",
+      "sha256": "621888aadef18044965ba302476e2ba5e0f1c0bd11c40052d7f1f8dcdb1699cc"
+    }
+  ],
+  "produtos": [
+    {
+      "arquivo": "dados\\revisao_territorial\\auditoria_revisao.csv",
+      "sha256": "dcd7eb1db5ac3813776e7e7205bef8fc83e885ef3778a988a759c356f53800ac"
+    },
+    {
+      "arquivo": "dados\\revisao_territorial\\base_territorial_revisada.csv",
+      "sha256": "619358df488c868bef512499cf1f4c10b91de96e915a74aa9665a0368384529b"
+    },
+    {
+      "arquivo": "dados\\revisao_territorial\\candidatos_siggo.csv",
+      "sha256": "2fbbe8d6ca2c7b5ac2af57cac379a399aba81977ff9eb11bb2bbaeb81228c1dc"
+    },
+    {
+      "arquivo": "dados\\revisao_territorial\\correspondencia_bairros.csv",
+      "sha256": "193bc22966af133324da94307db369bdd6bc607f1e98a852ab21869a98375b8c"
+    },
+    {
+      "arquivo": "dados\\revisao_territorial\\inconsistencias_fonte.csv",
+      "sha256": "29b6608f002e655ed833d2f9f4bb665f0d18e1cfafd5c264949fe42f30605f11"
+    },
+    {
+      "arquivo": "dados\\revisao_territorial\\lista_lacunas_para_sms.csv",
+      "sha256": "6289ac326f0230789d6152427002ad5cf5bf8c20c07d0ec5f5f2faad1e921c73"
+    },
+    {
+      "arquivo": "dados\\revisao_territorial\\observacoes_com_pendencias.csv",
+      "sha256": "6024b8625efc57c820f346265a3da36460ab036c0661f19bd9d8a682002a7c57"
+    },
+    {
+      "arquivo": "dados\\revisao_territorial\\pendencias_territoriais.csv",
+      "sha256": "561858301b593a4e8b51b3d6596e4657798441a4fb8632538806a5c9c3a78c34"
+    },
+    {
+      "arquivo": "dados\\revisao_territorial\\revisao_territorial.xlsx",
+      "sha256": "44acc8403ab5c1079356ca0f54e2679e026ee2ae08d7df78fdf49cb849f12325"
+    }
+  ]
+}

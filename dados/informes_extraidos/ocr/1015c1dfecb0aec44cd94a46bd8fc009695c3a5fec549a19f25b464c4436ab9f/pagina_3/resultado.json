@@ -1,0 +1,217 @@
+{
+  "registros": [
+    {
+      "bairro": "JDCURITIBAI",
+      "valor_original": "198",
+      "valor": 198,
+      "bbox_bairro": [
+        143.9887928887903,
+        138.07599538733473,
+        183.11536811444594,
+        170.13150280112484
+      ],
+      "bbox_valor": [
+        174.408447265625,
+        267.60821533203125,
+        186.19264221191406,
+        271.70501708984375
+      ],
+      "confianca_ocr_bairro": 0.952945124019276,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\1015c1dfecb0aec44cd94a46bd8fc009695c3a5fec549a19f25b464c4436ab9f\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "SETPARQUETREMENDAO",
+      "valor_original": "87",
+      "valor": 87,
+      "bbox_bairro": [
+        143.28168610760378,
+        114.74147160817859,
+        213.5209597054675,
+        169.8958005407294
+      ],
+      "bbox_valor": [
+        206.7400360107422,
+        217.34814453125,
+        214.61773681640625,
+        221.44496154785156
+      ],
+      "confianca_ocr_bairro": 0.9934826162126329,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\1015c1dfecb0aec44cd94a46bd8fc009695c3a5fec549a19f25b464c4436ab9f\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "SETURIASMAGALHAES",
+      "valor_original": "84",
+      "valor": 84,
+      "bbox_bairro": [
+        180.2869409896998,
+        119.69121907648457,
+        243.92655129648904,
+        170.13150280112484
+      ],
+      "bbox_valor": [
+        237.34732055664062,
+        215.971923828125,
+        245.35922241210938,
+        220.057373046875
+      ],
+      "confianca_ocr_bairro": 0.9876195227398592,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\1015c1dfecb0aec44cd94a46bd8fc009695c3a5fec549a19f25b464c4436ab9f\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "VIFINSOCIAL",
+      "valor_original": "81",
+      "valor": 81,
+      "bbox_bairro": [
+        236.61978122422806,
+        138.78310216852117,
+        274.5678451479061,
+        170.13150280112484
+      ],
+      "bbox_valor": [
+        267.9466857910156,
+        214.6161651611328,
+        275.7823791503906,
+        218.71298217773438
+      ],
+      "confianca_ocr_bairro": 0.9882436123761263,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\1015c1dfecb0aec44cd94a46bd8fc009695c3a5fec549a19f25b464c4436ab9f\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "PROATHENEU",
+      "valor_original": "80",
+      "valor": 80,
+      "bbox_bairro": [
+        263.9612434301079,
+        136.42607956456607,
+        304.73773447853216,
+        169.66009828033384
+      ],
+      "bbox_valor": [
+        298.5547180175781,
+        214.164306640625,
+        306.5184020996094,
+        218.26112365722656
+      ],
+      "confianca_ocr_bairro": 0.942702254652977,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\1015c1dfecb0aec44cd94a46bd8fc009695c3a5fec549a19f25b464c4436ab9f\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "JDNOVAESPERANCA",
+      "valor_original": "71",
+      "valor": 71,
+      "bbox_bairro": [
+        277.3962722726523,
+        123.46245524281278,
+        335.3790283299492,
+        170.13150280112484
+      ],
+      "bbox_valor": [
+        329.2281188964844,
+        210.1478271484375,
+        336.9797668457031,
+        214.1505126953125
+      ],
+      "confianca_ocr_bairro": 0.9705238620440165,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\1015c1dfecb0aec44cd94a46bd8fc009695c3a5fec549a19f25b464c4436ab9f\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "JDNOVOMUNDO",
+      "valor_original": "71",
+      "valor": 71,
+      "bbox_bairro": [
+        316.2871452379124,
+        129.82641627349165,
+        366.0203221813663,
+        170.13150280112484
+      ],
+      "bbox_valor": [
+        359.8454284667969,
+        210.1478271484375,
+        367.57379150390625,
+        214.1505126953125
+      ],
+      "confianca_ocr_bairro": 0.9896519346670671,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\1015c1dfecb0aec44cd94a46bd8fc009695c3a5fec549a19f25b464c4436ab9f\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "SETPEDROLUDOVICO",
+      "valor_original": "69",
+      "valor": 69,
+      "bbox_bairro": [
+        336.5575396319268,
+        122.28394394083523,
+        396.4259137723878,
+        169.8958005407294
+      ],
+      "bbox_valor": [
+        390.4432373046875,
+        209.1939239501953,
+        398.24530029296875,
+        213.29074096679688
+      ],
+      "confianca_ocr_bairro": 0.994526069611311,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\1015c1dfecb0aec44cd94a46bd8fc009695c3a5fec549a19f25b464c4436ab9f\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "SETLESTEVILANOVA",
+      "valor_original": "69",
+      "valor": 69,
+      "bbox_bairro": [
+        368.8487493061125,
+        123.46245524281278,
+        427.5386121445959,
+        170.3672050615204
+      ],
+      "bbox_valor": [
+        421.05126953125,
+        209.1939239501953,
+        428.8300476074219,
+        213.29074096679688
+      ],
+      "confianca_ocr_bairro": 0.9921797662973404,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\1015c1dfecb0aec44cd94a46bd8fc009695c3a5fec549a19f25b464c4436ab9f\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "JDUBERDADE",
+      "valor_original": "58",
+      "valor": 58,
+      "bbox_bairro": [
+        417.4034149475888,
+        136.89748408535706,
+        458.41560825640846,
+        170.3672050615204
+      ],
+      "bbox_valor": [
+        451.6910705566406,
+        204.20962524414062,
+        459.49505615234375,
+        208.3064422607422
+      ],
+      "confianca_ocr_bairro": 0.9432765424251557,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\1015c1dfecb0aec44cd94a46bd8fc009695c3a5fec549a19f25b464c4436ab9f\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    }
+  ],
+  "sha256_imagem": "fbf4a70e50d8b4dce3e30a2a60ec8aac97d4b1c9557b95c8a7cb37a16a92f0e1",
+  "escala_renderizacao": 3.0,
+  "aviso": "Confiança do OCR não é probabilidade de correção; todos os nomes exigem revisão."
+}

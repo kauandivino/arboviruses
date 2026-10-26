@@ -1,0 +1,60 @@
+﻿bairro_chave,bairro_rotulo_revisado,OID_SIGGO,ID_SIGGO,nome_siggo,tipo_siggo,nome_base_siggo,metodo,qualificacao_siggo,geometria_original_valida,similaridade_textual,equivalencia_territorial_confirmada
+JARDIM NOVO MUNDO,JD NOVO MUNDO,22,000400000070,Jd Novo Mundo,Jd,Novo Mundo,nome_normalizado_exato, ,1,,False
+SETOR PEDRO LUDOVICO,SET PEDRO LUDOVICO,1127,000400000013,S Pedro Ludovico,S,Pedro Ludovico,nome_normalizado_exato, ,1,,False
+JARDIM CURITIBA I,JD CURITIBA I,297,000400000293,Jd Curitiba,Jd,Curitiba,etapa_nao_identificada_na_malha, ,1,,False
+PARQUE ATHENEU,PRQ ATHENEU,112,000400000167,Prq Atheneu,Prq,Atheneu,nome_normalizado_exato, ,1,,False
+SETOR URIAS MAGALHAES,SET URIAS MAGALHAES,1029,000400000104,S Urias Magalhães,S,Urias Magalhães,nome_normalizado_exato, ,1,,False
+VILA FINSOCIAL,VI FINSOCIAL,1115,000400000245,Vl Finsocial,Vl,Finsocial,nome_normalizado_exato, ,1,,False
+SETOR LESTE VILA NOVA,SET LESTE VILA NOVA,1110,000400000006,S Leste Vila Nova,S,Leste Vila Nova,nome_normalizado_exato, ,1,,False
+JARDIM NOVA ESPERANCA,JD NOVA ESPERANCA,10,000400000261,Jd Nova Esperança,Jd,Nova Esperança,nome_normalizado_exato, ,1,,False
+JARDIM BALNEARIO MEIA PONTE,JD BALNEARIO MEIA PONTE,109,000400000129,Jd Balneário Meia Ponte,Jd,Balneário Meia Ponte,nome_normalizado_exato, ,1,,False
+BAIRRO JARDIM AMERICA,BRO JARDIM AMERICA,770,000400000015,Bro Jardim América,Bro,Jardim América,nome_normalizado_exato, ,1,,False
+SETOR PARQUE TREMENDAO,SET PARQUE TREMENDAO,51,000400000141,S Parque Tremendão,S,Parque Tremendão,nome_normalizado_exato, ,1,,False
+RESIDENCIAL ITAIPU,RES ITAIPU,827,000400000322,Res Itaipú,Res,Itaipú,nome_normalizado_exato, ,1,,False
+SETOR DOS FUNCIONARIOS,SET DOS FUNCIONARIOS,607,000400000007,S dos Funcionários,S,dos Funcionários,nome_normalizado_exato, ,1,,False
+SETOR BUENO,SET BUENO,1081,000400000014,S Bueno,S,Bueno,nome_normalizado_exato, ,1,,False
+SETOR SUDOESTE,SET SUDOESTE,1116,000400000018,S Sudoeste,S,Sudoeste,nome_normalizado_exato, ,1,,False
+BAIRRO CIDADE JARDIM,BRO CIDADE JARDIM,1112,000400000034,Bro Cidade Jardim,Bro,Cidade Jardim,nome_normalizado_exato, ,0,,False
+BAIRRO CAPUAVA,BRO CAPUAVA,882,000400000030,Bro Capuava,Bro,Capuava,nome_normalizado_exato, ,1,,False
+CONJUNTO VERA CRUZ,CONJ VERA CRUZ,18,000400000174,Cj Vera Cruz,Cj,Vera Cruz,nome_normalizado_exato, ,1,,False
+SETOR OESTE,SET OESTE,966,000400000003,S Oeste,S,Oeste,nome_normalizado_exato, ,1,,False
+BAIRRO SAO CARLOS,BRO SAO CARLOS,273,000400000427,Bro São Carlos,Bro,São Carlos,nome_normalizado_exato, ,1,,False
+SITIO RECREIO MORADA DO SOL,SITIO REC MORADA DO SOL,933,000400000166,S Morada do Sol,S,Morada do Sol,hipotese_contextual_nao_confirmada, ,1,,False
+SETOR CENTRAL,SET CENTRAL,482,000400000001,S Central,S,Central,nome_normalizado_exato, ,1,,False
+SETOR LESTE UNIVERSITARIO,SET LESTE UNIVERSITARIO,1109,000400000005,S Leste Universitário,S,Leste Universitário,nome_normalizado_exato, ,1,,False
+RESIDENCIAL ESTRELA DALVA,RES ESTRELA DALVA,829,000400000683,Res Estrela D'alva,Res,Estrela D'alva,nome_normalizado_exato, ,1,,False
+JARDIM LIBERDADE,JD LIBERDADE,301,000400000290,Jd Liberdade,Jd,Liberdade,nome_normalizado_exato, ,1,,False
+PARQUE SANTA CRUZ,PRQ SANTA CRUZ,690,000400000256,Prq Santa Cruz,Prq,Santa Cruz,nome_normalizado_exato, ,1,,False
+PARQUE AMAZONAS,PARQUE AMAZONAS,836,000400000059,Prq Amazônia,Prq,Amazônia,hipotese_contextual_nao_confirmada, ,1,,False
+JARDIM EUROPA,JD EUROPA,27,000400000049,Jd Europa,Jd,Europa,nome_normalizado_exato, ,1,,False
+BAIRRO SAO FRANCISCO,BRO SAO FRANCISCO,1108,000400000032,Bro São Francisco,Bro,São Francisco,nome_normalizado_exato, ,1,,False
+SETOR NOVO HORIZONTE,SET NOVO HORIZONTE,1049,000400000111,S Novo Horizonte,S,Novo Horizonte,nome_normalizado_exato, ,1,,False
+PARQUE TREMENDAO,PQ TREMENDAO,51,000400000141,S Parque Tremendão,S,Parque Tremendão,hipotese_contextual_nao_confirmada, ,1,,False
+SETOR PARQUE TREMENDAO,SET PQ TREMENDAO,51,000400000141,S Parque Tremendão,S,Parque Tremendão,nome_normalizado_exato, ,1,,False
+SETOR PARQUE TREMENDAO,SET PARQ TREMENDAO,51,000400000141,S Parque Tremendão,S,Parque Tremendão,nome_normalizado_exato, ,1,,False
+VILA SAO JOSE,VI SAO JOSE,502,000400000535,Vl São José - Complemento,Vl,São José - Complemento,complementos_ou_subdivisoes_sem_equivalencia_confirmada, ,1,,False
+VILA SAO JOSE,VI SAO JOSE,520,000400000541,Vl São José - Extensão,Vl,São José - Extensão,complementos_ou_subdivisoes_sem_equivalencia_confirmada, ,1,,False
+SETOR CAMPINAS,SET CAMPINAS,1040,000400000010,S Campinas,S,Campinas,nome_normalizado_exato, ,1,,False
+JARDIM GUANABARA,JD GUANABARA,566,000400000090,Jd Guanabara,Jd,Guanabara,nome_normalizado_exato, ,1,,False
+SETOR SANTOS DUMONT,SET SANTOS DUMONT,282,000400000109,S Santos Dumont,S,Santos Dumont,nome_normalizado_exato, ,1,,False
+D NOVO MUNDO,D NOVO MUNDO,22,000400000070,Jd Novo Mundo,Jd,Novo Mundo,hipotese_contextual_nao_confirmada, ,1,,False
+TS URIAS MAGALHAES,TS URIAS MAGALHAES,1029,000400000104,S Urias Magalhães,S,Urias Magalhães,hipotese_contextual_nao_confirmada, ,1,,False
+VILA FINSOCIAL,VILA FINSOCIAL,1115,000400000245,Vl Finsocial,Vl,Finsocial,nome_normalizado_exato, ,1,,False
+SETOR VILA NOVA,ST VILA NOVA,1110,000400000006,S Leste Vila Nova,S,Leste Vila Nova,hipotese_contextual_nao_confirmada, ,1,,False
+SETOR JARDIM AMERICA,ST JD AMERICA,770,000400000015,Bro Jardim América,Bro,Jardim América,hipotese_contextual_nao_confirmada, ,1,,False
+SETOR CENTRAL,ST CENTRAL,482,000400000001,S Central,S,Central,nome_normalizado_exato, ,1,,False
+SETOR PARQUE TREMENDAO,ST PQ TREMENDAO,51,000400000141,S Parque Tremendão,S,Parque Tremendão,nome_normalizado_exato, ,1,,False
+JARDIM N MUNDO,JD N MUNDO,22,000400000070,Jd Novo Mundo,Jd,Novo Mundo,hipotese_contextual_nao_confirmada, ,1,,False
+SETOR U MAGALHAES,SET U MAGALHAES,1029,000400000104,S Urias Magalhães,S,Urias Magalhães,hipotese_contextual_nao_confirmada, ,1,,False
+BAIRRO JARDIM AMERICA,BRO JD AMERICA,770,000400000015,Bro Jardim América,Bro,Jardim América,nome_normalizado_exato, ,1,,False
+SETOR L VILA NOVA,SET L VILA NOVA,1110,000400000006,S Leste Vila Nova,S,Leste Vila Nova,hipotese_contextual_nao_confirmada, ,1,,False
+SETOR L UNIVERSITARIO,SET L UNIVERSITARIO,1109,000400000005,S Leste Universitário,S,Leste Universitário,hipotese_contextual_nao_confirmada, ,1,,False
+SETOR URIAS MAGAL,SET URIAS MAGAL...,814,000400000324,S Urias Magalhães II,S,Urias Magalhães II,prefixo_truncado_na_propria_fonte,Entre S Urias Magalhães e Rio Meia Ponte,1,,False
+SETOR URIAS MAGAL,SET URIAS MAGAL...,1029,000400000104,S Urias Magalhães,S,Urias Magalhães,prefixo_truncado_na_propria_fonte, ,1,,False
+SETOR DOS,SET DOS...,607,000400000007,S dos Funcionários,S,dos Funcionários,prefixo_truncado_na_propria_fonte, ,1,,False
+SETOR DOS,SET DOS...,614,000400000583,S dos Afonsos,S,dos Afonsos,prefixo_truncado_na_propria_fonte,Está localizado no Mun de Aparecida de Goiânia,1,,False
+SETOR DOS,SET DOS...,687,000400000536,S dos Dourados Extensão,S,dos Dourados Extensão,prefixo_truncado_na_propria_fonte, ,1,,False
+SETOR DOS,SET DOS...,854,000400000343,S dos Dourados,S,dos Dourados,prefixo_truncado_na_propria_fonte, ,1,,False
+SETOR LESTE,SET LESTE...,1109,000400000005,S Leste Universitário,S,Leste Universitário,prefixo_truncado_na_propria_fonte, ,1,,False
+SETOR LESTE,SET LESTE...,1110,000400000006,S Leste Vila Nova,S,Leste Vila Nova,prefixo_truncado_na_propria_fonte, ,1,,False
+SETOR NEGRAO DE LIMA,SET NEGRAO DE LIMA,1088,000400000208,S Negrão de Lima,S,Negrão de Lima,nome_normalizado_exato, ,1,,False

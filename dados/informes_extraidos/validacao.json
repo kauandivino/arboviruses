@@ -1,0 +1,12 @@
+{
+  "validado_em": "2026-10-19T22:56:33.865560+00:00",
+  "status": "aprovado_com_pendencias_semanticas_explicitadas",
+  "documentos": 237,
+  "observacoes": 4265,
+  "observacoes_bairro": 308,
+  "numeros_graficos_reconferidos_no_pdf": 188,
+  "status_revisao": {
+    "pendente": 4247,
+    "checagens_automaticas_aprovadas": 18
+  }
+}

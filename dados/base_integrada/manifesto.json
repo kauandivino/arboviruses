@@ -1,0 +1,118 @@
+{
+  "gerado_em": "2026-10-20T05:58:19.514864+00:00",
+  "depende_de_resposta_da_secretaria": false,
+  "metodo": "integrar_bases.py",
+  "fontes": [
+    {
+      "arquivo": "dados/datasus/resumos/dengue_2022_mensal.csv",
+      "sha256": "202ee35726a8e405b84c3165a57aedac3f80c1080b96d4db60a9a5d6e1017623"
+    },
+    {
+      "arquivo": "dados/datasus/qualidade/dengue_2022.json",
+      "sha256": "7645b0ab8575f0f05fb3ed97852cb71f44cae68608a317557b26b60fbc3a6d68"
+    },
+    {
+      "arquivo": "dados/datasus/resumos/animais_2022_mensal.csv",
+      "sha256": "2ee93fd72b365a0c59b2686dcd81b1dae35a9796edd380545638196de12b8e86"
+    },
+    {
+      "arquivo": "dados/datasus/qualidade/animais_2022.json",
+      "sha256": "364b8ad633be0b9db10910f760fb93144319afbb8f308f4a6d864ca2213d3194"
+    },
+    {
+      "arquivo": "dados/datasus/resumos/dengue_2023_mensal.csv",
+      "sha256": "f4647439cfda81556fa2642e7b2ce99346b320afbc30bcbf7095cd08b0a70bf8"
+    },
+    {
+      "arquivo": "dados/datasus/qualidade/dengue_2023.json",
+      "sha256": "d30070fda8ae0b2e119f32932d02c654de3d09d74cece171219738f9329ccd9b"
+    },
+    {
+      "arquivo": "dados/datasus/resumos/animais_2023_mensal.csv",
+      "sha256": "fd03e077da34fb51d25fb5ea391d243ae198900c55ff114b3499a1042be0fc2f"
+    },
+    {
+      "arquivo": "dados/datasus/qualidade/animais_2023.json",
+      "sha256": "0df96531d8440c2a1686568141ca24e50b4b720ea30400d081ebd987a0375c04"
+    },
+    {
+      "arquivo": "dados/datasus/resumos/dengue_2024_mensal.csv",
+      "sha256": "f28a0d250232fd7606fe8b77646ef2d92743a45a2a0dfd86c7161a83f502c9b2"
+    },
+    {
+      "arquivo": "dados/datasus/qualidade/dengue_2024.json",
+      "sha256": "816c0eedc2d97517099884b4c7bbfc67905f91f4bfb34c3365fb67f240968d1c"
+    },
+    {
+      "arquivo": "dados/datasus/resumos/animais_2024_mensal.csv",
+      "sha256": "41ae7cdc54c144dbfea1f85277be022b3b868200392aa45d64403396aad37d93"
+    },
+    {
+      "arquivo": "dados/datasus/qualidade/animais_2024.json",
+      "sha256": "ddcf01fa4843ca28d99ff800756b429d73ad74d824f89cf98cf836b13dd26ee7"
+    },
+    {
+      "arquivo": "dados/datasus/resumos/dengue_2025_mensal.csv",
+      "sha256": "caf85cb3bd863edd055e7dac69fa0923ab3a87c37755f033dd5930969f82d57d"
+    },
+    {
+      "arquivo": "dados/datasus/qualidade/dengue_2025.json",
+      "sha256": "24174986040c83355de52b99f8ad85605cbf288df46f28f60ffcee4928cab92d"
+    },
+    {
+      "arquivo": "dados/datasus/resumos/animais_2025_mensal.csv",
+      "sha256": "9c7df052ae7e3cd9c09e5faec57e78c24a7c8a83bd21c8123c5c83f1c3e62dd3"
+    },
+    {
+      "arquivo": "dados/datasus/qualidade/animais_2025.json",
+      "sha256": "4de908eda60d49178a3b1ada3cd8c0eff70ac7a810a80baae172fbe1b1885764"
+    },
+    {
+      "arquivo": "dados/datasus/resumos/dengue_2026_mensal.csv",
+      "sha256": "dc705ef1e6b86c6052b275d2ec9f0b14eeb2576dc1cae426eeb483f090b48fa7"
+    },
+    {
+      "arquivo": "dados/datasus/qualidade/dengue_2026.json",
+      "sha256": "9ed39a3dd8589fd3326b40214e5beff71ee35685fe2545e6ec2ba1e7f187696f"
+    },
+    {
+      "arquivo": "dados/datasus/resumos/animais_2026_mensal.csv",
+      "sha256": "63094f8cd92b59be1791c3b752e1d1a97baa4b3d429844ae502cd29607de3221"
+    },
+    {
+      "arquivo": "dados/datasus/qualidade/animais_2026.json",
+      "sha256": "15868235ccf575aacc6ea2922a4ebab85bc0e20b8b6accfbded69d97cf6715ef"
+    },
+    {
+      "arquivo": "dados/inmet/goiania/mes_utc.csv",
+      "sha256": "33a9a8bfabcb974d58ccc1e18a4631475351515933888f054695ddd5d7eaa117"
+    },
+    {
+      "arquivo": "dados/revisao_territorial/base_territorial_revisada.csv",
+      "sha256": "619358df488c868bef512499cf1f4c10b91de96e915a74aa9665a0368384529b"
+    },
+    {
+      "arquivo": "dados/ibge/goiania/basico_setores_2022.csv",
+      "sha256": "0f951bf4b0c8fc5bfd7e03f0f3826f684f63d03a610c73c7ada517fdcdc9f7f8"
+    },
+    {
+      "arquivo": "dados/cnes/goiania/202609/estabelecimentos.csv",
+      "sha256": "2dd3184348ba6c9b365a34961bbeb6fef8a238a3221ab1483ac88b98fa59bf6e"
+    }
+  ],
+  "tabelas": {
+    "municipal_mensal_clima": 114,
+    "bairros_publicados": 360,
+    "clima_mensal": 57,
+    "parceiros_candidatos": 200,
+    "contexto_censo_2022": 1,
+    "exclusoes_temporais": 14,
+    "definicoes": 8
+  },
+  "verificacoes": [
+    "unicidade municipal por agravo e mês",
+    "unicidade dos setores e das observações revisadas",
+    "join climático many-to-one sem multiplicação",
+    "reconciliação de exclusões temporais"
+  ]
+}

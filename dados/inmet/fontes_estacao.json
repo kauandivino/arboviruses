@@ -1,0 +1,53 @@
+[
+  {
+    "ano": 2022,
+    "membro_zip": "INMET_CO_GO_A002_GOIANIA_01-01-2022_A_31-12-2022.CSV",
+    "candidatos": [
+      "INMET_CO_GO_A002_GOIANIA_01-01-2022_A_31-12-2022.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet\\estacao_originais\\2022_A002.csv",
+    "sha256": "a1ae9a8d6e14114611ade87430d52b552927091c1c8e49eb80259a725a308bce"
+  },
+  {
+    "ano": 2023,
+    "membro_zip": "INMET_CO_GO_A002_GOIANIA_01-01-2023_A_31-12-2023.CSV",
+    "candidatos": [
+      "INMET_CO_GO_A002_GOIANIA_01-01-2023_A_31-12-2023.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet\\estacao_originais\\2023_A002.csv",
+    "sha256": "e3ab74afd2944a95a15f666ea46c4feb77fcc8da521d4b913fd4c96a265d16ea"
+  },
+  {
+    "ano": 2024,
+    "membro_zip": "INMET_CO_GO_A002_GOIANIA_01-01-2024_A_31-12-2024.CSV",
+    "candidatos": [
+      "INMET_CO_GO_A002_GOIANIA_01-01-2024_A_31-12-2024.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet\\estacao_originais\\2024_A002.csv",
+    "sha256": "7230bd4da6b2292d030e12b52dbfd9d1234c617029d47450b5a23d0baf68909c"
+  },
+  {
+    "ano": 2025,
+    "membro_zip": "2025/INMET_CO_GO_A002_GOIANIA_01-01-2025_A_31-12-2025.CSV",
+    "candidatos": [
+      "2025/INMET_CO_GO_A002_GOIANIA_01-01-2025_A_31-12-2025.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet\\estacao_originais\\2025_A002.csv",
+    "sha256": "0e64daed4e9a095277a18da0c1c55b6063735baeb45233d06dddec4e8bab13f2"
+  },
+  {
+    "ano": 2026,
+    "membro_zip": "INMET_CO_GO_A002_GOIANIA_01-01-2026_A_30-09-2026.CSV",
+    "candidatos": [
+      "INMET_CO_GO_A002_GOIANIA_01-01-2026_A_31-08-2026.CSV",
+      "INMET_CO_GO_A002_GOIANIA_01-01-2026_A_30-09-2026.CSV"
+    ],
+    "criterio": "Maior data final entre arquivos acumulados iniciados em 1 de janeiro; sem concatenar versões.",
+    "arquivo": "dados\\inmet\\estacao_originais\\2026_A002.csv",
+    "sha256": "5472d3346482187da5cce373e5f966974c74960fadb8f956098ba77e8d350bbf"
+  }
+]

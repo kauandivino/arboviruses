@@ -1,0 +1,653 @@
+﻿tabela,variavel,descricao,tema
+basico,V0001,Total de pessoas,Básico
+basico,V0002,Total de Domicílios (DPPO + DPPV + DPPUO + DPIO + DCCM + DCSM),Básico
+basico,V0003,Total de Domicílios Particulares (DPPO + DPPV + DPPUO + DPIO),Básico
+basico,V0004,Total de Domicílios Coletivos (DCCM + DCSM),Básico
+basico,V0005,Média de moradores em Domicílios Particulares Ocupados (Total pessoas em Domicílios Particulares Ocupados / DPPO + DPIO),Básico
+basico,V0006,Percentual de Domicílios Particulares Ocupados Imputados (Total DPO imputados / Total DPO),Básico
+basico,V0007,Total de Domicílios Particulares Ocupados (DPPO + DPIO),Básico
+basico,V0008,Total de Domicílios Particulares  de Uso Ocasional (DPPUO),Básico
+basico,V0009,Total de Domicílios Particulares Permanentes Vagos (DPPV),Básico
+domicilio1,V00001,Domicílios Particulares Permanentes Ocupados,Características do Domicílio - Parte 1
+domicilio1,V00002,Domicílios Particulares Improvisados Ocupados,Características do Domicílio - Parte 1
+domicilio1,V00003,Unidades de Habitação em Domicílios Coletivos Com Morador,Características do Domicílio - Parte 1
+domicilio1,V00004,Domicílios Particulares Permanentes Ocupados,Características do Domicílio - Parte 1
+domicilio1,V00005,"Domicílios Particulares Permanentes Ocupados, Quantidade de moradores",Características do Domicílio - Parte 1
+domicilio1,V00006,"Domicílios Particulares Improvisados Ocupados, Quantidade de moradores",Características do Domicílio - Parte 1
+domicilio1,V00007,"Domicílios Coletivos Com Morador, Quantidade de moradores",Características do Domicílio - Parte 1
+domicilio1,V00008,"Domicílios Particulares Permanentes Ocupados, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 1
+domicilio1,V00009,"Domicílios Particulares Improvisados Ocupados, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 1
+domicilio1,V00010,"Domicílios Coletivos Com Morador, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 1
+domicilio1,V00011,"Domicílios Particulares Permanentes Ocupados, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00012,"Domicílios Particulares Improvisados Ocupados, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00013,"Domicílios Coletivos Com Morador, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00014,"Domicílios Particulares Permanentes Ocupados, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00015,"Domicílios Particulares Improvisados Ocupados, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00016,"Domicílios Coletivos Com Morador, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00017,"Domicílios Particulares Permanentes Ocupados, Com 1 morador no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00018,"Domicílios Particulares Permanentes Ocupados, Com 2 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00019,"Domicílios Particulares Permanentes Ocupados, Com 3 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00020,"Domicílios Particulares Permanentes Ocupados, Com 4 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00021,"Domicílios Particulares Permanentes Ocupados, Com 5 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00022,"Domicílios Particulares Permanentes Ocupados, Com 6 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00023,"Domicílios Particulares Permanentes Ocupados, Com 7 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00024,"Domicílios Particulares Permanentes Ocupados, Com 8 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00025,"Domicílios Particulares Permanentes Ocupados, Com 9 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00026,"Domicílios Particulares Permanentes Ocupados, Com 10 ou mais moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00027,"Domicílios Particulares Improvisados Ocupados, Com 1 morador no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00028,"Domicílios Particulares Improvisados Ocupados, Com 2 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00029,"Domicílios Particulares Improvisados Ocupados, Com 3 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00030,"Domicílios Particulares Improvisados Ocupados, Com 4 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00031,"Domicílios Particulares Improvisados Ocupados, Com 5 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00032,"Domicílios Particulares Improvisados Ocupados, Com 6 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00033,"Domicílios Particulares Improvisados Ocupados, Com 7 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00034,"Domicílios Particulares Improvisados Ocupados, Com 8 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00035,"Domicílios Particulares Improvisados Ocupados, Com 9 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00036,"Domicílios Particulares Improvisados Ocupados, Com 10 ou mais moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00037,"Domicílios Coletivos Com Morador, Com 1 morador no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00038,"Domicílios Coletivos Com Morador, Com 2 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00039,"Domicílios Coletivos Com Morador, Com 3 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00040,"Domicílios Coletivos Com Morador, Com 4 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00041,"Domicílios Coletivos Com Morador, Com 5 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00042,"Domicílios Coletivos Com Morador, Com 6 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00043,"Domicílios Coletivos Com Morador, Com 7 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00044,"Domicílios Coletivos Com Morador, Com 8 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00045,"Domicílios Coletivos Com Morador, Com 9 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00046,"Domicílios Coletivos Com Morador, Com 10 ou mais moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00047,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa",Características do Domicílio - Parte 1
+domicilio1,V00048,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio",Características do Domicílio - Parte 1
+domicilio1,V00049,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento",Características do Domicílio - Parte 1
+domicilio1,V00050,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é habitação em casa de cômodos ou cortiço",Características do Domicílio - Parte 1
+domicilio1,V00051,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é habitação indígena sem paredes ou maloca",Características do Domicílio - Parte 1
+domicilio1,V00052,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é estrutura residencial permanente degradada ou inacabada",Características do Domicílio - Parte 1
+domicilio1,V00053,"Domicílios Particulares Improvisados Ocupados, Tipo de espécie é tenda ou barraca de lona, plástico ou tecido",Características do Domicílio - Parte 1
+domicilio1,V00054,"Domicílios Particulares Improvisados Ocupados, Tipo de espécie é dentro de estabelecimento em funcionamento",Características do Domicílio - Parte 1
+domicilio1,V00055,"Domicílios Particulares Improvisados Ocupados, Tipo de espécie é abrigo natural e outras estruturas improvisadas",Características do Domicílio - Parte 1
+domicilio1,V00056,"Domicílios Particulares Improvisados Ocupados, Tipo de espécie é estrutura improvisada em logradouro público, exceto tenda ou barraca",Características do Domicílio - Parte 1
+domicilio1,V00057,"Domicílios Particulares Improvisados Ocupados, Tipo de espécie é estrutura não residencial permanente degradada ou inacabada",Características do Domicílio - Parte 1
+domicilio1,V00058,"Domicílios Particulares Improvisados Ocupados, Tipo de espécie é veículo (carro, caminhão, trailer, barco etc)",Características do Domicílio - Parte 1
+domicilio1,V00059,"Domicílios Coletivos Com Morador, Tipo de espécie é asilo ou outra instituição de longa permanência para idosos",Características do Domicílio - Parte 1
+domicilio1,V00060,"Domicílios Coletivos Com Morador, Tipo de espécie é hotel ou pensão",Características do Domicílio - Parte 1
+domicilio1,V00061,"Domicílios Coletivos Com Morador, Tipo de espécie é alojamento",Características do Domicílio - Parte 1
+domicilio1,V00062,"Domicílios Coletivos Com Morador, Tipo de espécie é penitenciária, centro de detenção e similar",Características do Domicílio - Parte 1
+domicilio1,V00063,"Domicílios Coletivos Com Morador, Tipo de espécie é outros domicílios coletivos com morador",Características do Domicílio - Parte 1
+domicilio1,V00064,"Domicílios Coletivos Com Morador, Tipo de espécie é abrigo, albergue ou casa de passagem para população em situação de rua",Características do Domicílio - Parte 1
+domicilio1,V00065,"Domicílios Coletivos Com Morador, Tipo de espécie é abrigo, casas de passagem ou república assistencial para outros grupos vulneráveis",Características do Domicílio - Parte 1
+domicilio1,V00066,"Domicílios Coletivos Com Morador, Tipo de espécie é clínica psiquiátrica, comunidade terapêutica e similar",Características do Domicílio - Parte 1
+domicilio1,V00067,"Domicílios Coletivos Com Morador, Tipo de espécie é orfanato e similar",Características do Domicílio - Parte 1
+domicilio1,V00068,"Domicílios Coletivos Com Morador, Tipo de espécie é unidade de internação de menores",Características do Domicílio - Parte 1
+domicilio1,V00069,"Domicílios Coletivos Com Morador, Tipo de espécie é quartel ou outra organização militar",Características do Domicílio - Parte 1
+domicilio1,V00070,"Domicílios Particulares Permanentes Ocupados, Quantidade de moradores",Características do Domicílio - Parte 1
+domicilio1,V00071,"Domicílios Particulares Permanentes Ocupados, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 1
+domicilio1,V00072,"Domicílios Particulares Permanentes Ocupados, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00073,"Domicílios Particulares Permanentes Ocupados, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00074,"Domicílios Particulares Permanentes Ocupados, Com 1 morador no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00075,"Domicílios Particulares Permanentes Ocupados, Com 2 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00076,"Domicílios Particulares Permanentes Ocupados, Com 3 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00077,"Domicílios Particulares Permanentes Ocupados, Com 4 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00078,"Domicílios Particulares Permanentes Ocupados, Com 5 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00079,"Domicílios Particulares Permanentes Ocupados, Com 6 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00080,"Domicílios Particulares Permanentes Ocupados, Com 7 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00081,"Domicílios Particulares Permanentes Ocupados, Com 8 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00082,"Domicílios Particulares Permanentes Ocupados, Com 9 moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00083,"Domicílios Particulares Permanentes Ocupados, Com 10 ou mais moradores no domicílio",Características do Domicílio - Parte 1
+domicilio1,V00084,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Quantidade de moradores",Características do Domicílio - Parte 1
+domicilio1,V00085,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Quantidade de moradores",Características do Domicílio - Parte 1
+domicilio1,V00086,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Quantidade de moradores",Características do Domicílio - Parte 1
+domicilio1,V00087,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 1
+domicilio1,V00088,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 1
+domicilio1,V00089,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 1
+domicilio2,V00090,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00091,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00092,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00093,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00094,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00095,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00096,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00097,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00098,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00099,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00100,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00101,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00102,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00103,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00104,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00105,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00106,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00107,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00108,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00109,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00110,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00111,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição",Características do Domicílio - Parte 2
+domicilio2,V00112,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano",Características do Domicílio - Parte 2
+domicilio2,V00113,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba",Características do Domicílio - Parte 2
+domicilio2,V00114,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina",Características do Domicílio - Parte 2
+domicilio2,V00115,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa",Características do Domicílio - Parte 2
+domicilio2,V00116,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada",Características do Domicílio - Parte 2
+domicilio2,V00117,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés",Características do Domicílio - Parte 2
+domicilio2,V00118,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água",Características do Domicílio - Parte 2
+domicilio2,V00119,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Utiliza rede geral de distribuição",Características do Domicílio - Parte 2
+domicilio2,V00120,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Utiliza poço profundo ou artesiano",Características do Domicílio - Parte 2
+domicilio2,V00121,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Utiliza poço raso, freático ou cacimba",Características do Domicílio - Parte 2
+domicilio2,V00122,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Utiliza fonte, nascente ou mina",Características do Domicílio - Parte 2
+domicilio2,V00123,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Utiliza carro-pipa",Características do Domicílio - Parte 2
+domicilio2,V00124,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Utiliza água da chuva armazenada",Características do Domicílio - Parte 2
+domicilio2,V00125,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Utiliza rios, açudes, córregos, lagos e igarapés",Características do Domicílio - Parte 2
+domicilio2,V00126,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Utiliza outra forma de abastecimento de água",Características do Domicílio - Parte 2
+domicilio2,V00127,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Utiliza rede geral de distribuição",Características do Domicílio - Parte 2
+domicilio2,V00128,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Utiliza poço profundo ou artesiano",Características do Domicílio - Parte 2
+domicilio2,V00129,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Utiliza poço raso, freático ou cacimba",Características do Domicílio - Parte 2
+domicilio2,V00130,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Utiliza fonte, nascente ou mina",Características do Domicílio - Parte 2
+domicilio2,V00131,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Utiliza carro-pipa",Características do Domicílio - Parte 2
+domicilio2,V00132,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Utiliza água da chuva armazenada",Características do Domicílio - Parte 2
+domicilio2,V00133,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Utiliza rios, açudes, córregos, lagos e igarapés",Características do Domicílio - Parte 2
+domicilio2,V00134,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Utiliza outra forma de abastecimento de água",Características do Domicílio - Parte 2
+domicilio2,V00135,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Utiliza rede geral de distribuição",Características do Domicílio - Parte 2
+domicilio2,V00136,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Utiliza poço profundo ou artesiano",Características do Domicílio - Parte 2
+domicilio2,V00137,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Utiliza poço raso, freático ou cacimba",Características do Domicílio - Parte 2
+domicilio2,V00138,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Utiliza fonte, nascente ou mina",Características do Domicílio - Parte 2
+domicilio2,V00139,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Utiliza carro-pipa",Características do Domicílio - Parte 2
+domicilio2,V00140,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Utiliza água da chuva armazenada",Características do Domicílio - Parte 2
+domicilio2,V00141,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Utiliza rios, açudes, córregos, lagos e igarapés",Características do Domicílio - Parte 2
+domicilio2,V00142,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Utiliza outra forma de abastecimento de água",Características do Domicílio - Parte 2
+domicilio2,V00143,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00144,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00145,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00146,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00147,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00148,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00149,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00150,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00151,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00152,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00153,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00154,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00155,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00156,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00157,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00158,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00159,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00160,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00161,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00162,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00163,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00164,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00165,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00166,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00167,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00168,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00169,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00170,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00171,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00172,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00173,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00174,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00175,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00176,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00177,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00178,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00179,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00180,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00181,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00182,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00183,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00184,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00185,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00186,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00187,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00188,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00189,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00190,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00191,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00192,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00193,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00194,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00195,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00196,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00197,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00198,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00199,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação",Características do Domicílio - Parte 2
+domicilio2,V00200,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno",Características do Domicílio - Parte 2
+domicilio2,V00201,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio",Características do Domicílio - Parte 2
+domicilio2,V00202,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Água chega encanada até dentro da casa, apartamento ou habitação",Características do Domicílio - Parte 2
+domicilio2,V00203,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Água chega encanada, mas apenas ao terreno",Características do Domicílio - Parte 2
+domicilio2,V00204,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Água não chega encanada ao domicílio",Características do Domicílio - Parte 2
+domicilio2,V00205,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Água chega encanada até dentro da casa, apartamento ou habitação",Características do Domicílio - Parte 2
+domicilio2,V00206,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Água chega encanada, mas apenas ao terreno",Características do Domicílio - Parte 2
+domicilio2,V00207,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Água não chega encanada ao domicílio",Características do Domicílio - Parte 2
+domicilio2,V00208,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Água chega encanada até dentro da casa, apartamento ou habitação",Características do Domicílio - Parte 2
+domicilio2,V00209,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Água chega encanada, mas apenas ao terreno",Características do Domicílio - Parte 2
+domicilio2,V00210,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Água não chega encanada ao domicílio",Características do Domicílio - Parte 2
+domicilio2,V00211,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00212,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00213,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00214,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00215,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00216,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00217,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00218,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00219,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00220,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00221,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00222,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00223,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00224,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00225,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00226,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00227,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00228,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00229,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00230,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00231,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00232,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00233,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00234,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00235,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00236,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio",Características do Domicílio - Parte 2
+domicilio2,V00237,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno",Características do Domicílio - Parte 2
+domicilio2,V00238,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário",Características do Domicílio - Parte 2
+domicilio2,V00239,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00240,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00241,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00242,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00243,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Apenas banheiro de uso comum a mais de um domicílio",Características do Domicílio - Parte 2
+domicilio2,V00244,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno",Características do Domicílio - Parte 2
+domicilio2,V00245,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Não tinham banheiro nem sanitário",Características do Domicílio - Parte 2
+domicilio2,V00246,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00247,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00248,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00249,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00250,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Apenas banheiro de uso comum a mais de um domicílio",Características do Domicílio - Parte 2
+domicilio2,V00251,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno",Características do Domicílio - Parte 2
+domicilio2,V00252,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Não tinham banheiro nem sanitário",Características do Domicílio - Parte 2
+domicilio2,V00253,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00254,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00255,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00256,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00257,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Apenas banheiro de uso comum a mais de um domicílio",Características do Domicílio - Parte 2
+domicilio2,V00258,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno",Características do Domicílio - Parte 2
+domicilio2,V00259,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Não tinham banheiro nem sanitário",Características do Domicílio - Parte 2
+domicilio2,V00260,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00261,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00262,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00263,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00264,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00265,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00266,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00267,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00268,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00269,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00270,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00271,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00272,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00273,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00274,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00275,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00276,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00277,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00278,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00279,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00280,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00281,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00282,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00283,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00284,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00285,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00286,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00287,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00288,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00289,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00290,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00291,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00292,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00293,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00294,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00295,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00296,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00297,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00298,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00299,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00300,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00301,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00302,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00303,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00304,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00305,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00306,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00307,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00308,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00309,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial",Características do Domicílio - Parte 2
+domicilio2,V00310,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede",Características do Domicílio - Parte 2
+domicilio2,V00311,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede",Características do Domicílio - Parte 2
+domicilio2,V00312,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco",Características do Domicílio - Parte 2
+domicilio2,V00313,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala",Características do Domicílio - Parte 2
+domicilio2,V00314,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar",Características do Domicílio - Parte 2
+domicilio2,V00315,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma",Características do Domicílio - Parte 2
+domicilio2,V00316,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário",Características do Domicílio - Parte 2
+domicilio2,V00317,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial",Características do Domicílio - Parte 2
+domicilio2,V00318,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede",Características do Domicílio - Parte 2
+domicilio2,V00319,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede",Características do Domicílio - Parte 2
+domicilio2,V00320,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco",Características do Domicílio - Parte 2
+domicilio2,V00321,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala",Características do Domicílio - Parte 2
+domicilio2,V00322,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar",Características do Domicílio - Parte 2
+domicilio2,V00323,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma",Características do Domicílio - Parte 2
+domicilio2,V00324,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário",Características do Domicílio - Parte 2
+domicilio2,V00325,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial",Características do Domicílio - Parte 2
+domicilio2,V00326,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede",Características do Domicílio - Parte 2
+domicilio2,V00327,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede",Características do Domicílio - Parte 2
+domicilio2,V00328,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco",Características do Domicílio - Parte 2
+domicilio2,V00329,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala",Características do Domicílio - Parte 2
+domicilio2,V00330,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar",Características do Domicílio - Parte 2
+domicilio2,V00331,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma",Características do Domicílio - Parte 2
+domicilio2,V00332,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário",Características do Domicílio - Parte 2
+domicilio2,V00333,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial",Características do Domicílio - Parte 2
+domicilio2,V00334,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede",Características do Domicílio - Parte 2
+domicilio2,V00335,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede",Características do Domicílio - Parte 2
+domicilio2,V00336,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco",Características do Domicílio - Parte 2
+domicilio2,V00337,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala",Características do Domicílio - Parte 2
+domicilio2,V00338,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar",Características do Domicílio - Parte 2
+domicilio2,V00339,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma",Características do Domicílio - Parte 2
+domicilio2,V00340,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário",Características do Domicílio - Parte 2
+domicilio2,V00341,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00342,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00343,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00344,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00345,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00346,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00347,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00348,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00349,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00350,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00351,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00352,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00353,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00354,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00355,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00356,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00357,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00358,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00359,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00360,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00361,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00362,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00363,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00364,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00365,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00366,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00367,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00368,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00369,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00370,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00371,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00372,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00373,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00374,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00375,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00376,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00377,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00378,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00379,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00380,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00381,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00382,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00383,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00384,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00385,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00386,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00387,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00388,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00389,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00390,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00391,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00392,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00393,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00394,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00395,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00396,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00397,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza",Características do Domicílio - Parte 2
+domicilio2,V00398,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza",Características do Domicílio - Parte 2
+domicilio2,V00399,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade",Características do Domicílio - Parte 2
+domicilio2,V00400,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade",Características do Domicílio - Parte 2
+domicilio2,V00401,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública",Características do Domicílio - Parte 2
+domicilio2,V00402,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo",Características do Domicílio - Parte 2
+domicilio2,V00403,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Lixo coletado no domicílio por serviço de limpeza",Características do Domicílio - Parte 2
+domicilio2,V00404,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Lixo depositado em caçamba de serviço de limpeza",Características do Domicílio - Parte 2
+domicilio2,V00405,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Lixo queimado na propriedade",Características do Domicílio - Parte 2
+domicilio2,V00406,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Lixo enterrado na propriedade",Características do Domicílio - Parte 2
+domicilio2,V00407,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Lixo jogado em terreno baldio, encosta ou área pública",Características do Domicílio - Parte 2
+domicilio2,V00408,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Outro destino do lixo",Características do Domicílio - Parte 2
+domicilio2,V00409,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Lixo coletado no domicílio por serviço de limpeza",Características do Domicílio - Parte 2
+domicilio2,V00410,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Lixo depositado em caçamba de serviço de limpeza",Características do Domicílio - Parte 2
+domicilio2,V00411,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Lixo queimado na propriedade",Características do Domicílio - Parte 2
+domicilio2,V00412,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Lixo enterrado na propriedade",Características do Domicílio - Parte 2
+domicilio2,V00413,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Lixo jogado em terreno baldio, encosta ou área pública",Características do Domicílio - Parte 2
+domicilio2,V00414,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Outro destino do lixo",Características do Domicílio - Parte 2
+domicilio2,V00415,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Lixo coletado no domicílio por serviço de limpeza",Características do Domicílio - Parte 2
+domicilio2,V00416,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Lixo depositado em caçamba de serviço de limpeza",Características do Domicílio - Parte 2
+domicilio2,V00417,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Lixo queimado na propriedade",Características do Domicílio - Parte 2
+domicilio2,V00418,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Lixo enterrado na propriedade",Características do Domicílio - Parte 2
+domicilio2,V00419,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Lixo jogado em terreno baldio, encosta ou área pública",Características do Domicílio - Parte 2
+domicilio2,V00420,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Outro destino do lixo",Características do Domicílio - Parte 2
+domicilio2,V00421,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00422,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00423,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00424,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00425,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00426,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00427,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00428,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00429,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00430,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00431,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00432,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00433,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00434,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00435,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00436,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00437,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00438,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00439,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00440,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00441,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00442,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00443,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00444,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00445,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00446,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00447,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00448,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00449,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00450,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00451,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00452,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00453,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00454,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00455,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00456,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00457,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00458,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00459,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00460,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00461,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00462,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00463,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma",Características do Domicílio - Parte 2
+domicilio2,V00464,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água",Características do Domicílio - Parte 2
+domicilio2,V00465,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma",Características do Domicílio - Parte 2
+domicilio2,V00466,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Domicílio não possui ligação à rede geral de distribuição de água",Características do Domicílio - Parte 2
+domicilio2,V00467,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma",Características do Domicílio - Parte 2
+domicilio2,V00468,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Domicílio não possui ligação à rede geral de distribuição de água",Características do Domicílio - Parte 2
+domicilio2,V00469,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma",Características do Domicílio - Parte 2
+domicilio2,V00470,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Domicílio não possui ligação à rede geral de distribuição de água",Características do Domicílio - Parte 2
+domicilio2,V00471,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00472,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00473,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00474,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00475,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00476,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água, Cor ou raça da pessoa responsável pelo domicílio é branca",Características do Domicílio - Parte 2
+domicilio2,V00477,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água, Cor ou raça da pessoa responsável pelo domicílio é preta",Características do Domicílio - Parte 2
+domicilio2,V00478,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água, Cor ou raça da pessoa responsável pelo domicílio é amarela",Características do Domicílio - Parte 2
+domicilio2,V00479,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água, Cor ou raça da pessoa responsável pelo domicílio é parda",Características do Domicílio - Parte 2
+domicilio2,V00480,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água, Cor ou raça da pessoa responsável pelo domicílio é indígena",Características do Domicílio - Parte 2
+domicilio2,V00481,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00482,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00483,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água, Sexo da pessoa responsável pelo domicílio é masculino",Características do Domicílio - Parte 2
+domicilio2,V00484,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água, Sexo da pessoa responsável pelo domicílio é feminino",Características do Domicílio - Parte 2
+domicilio2,V00485,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00486,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00487,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00488,"Domicílios Particulares Permanentes Ocupados, 4 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00489,"Domicílios Particulares Permanentes Ocupados, 5 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00490,"Domicílios Particulares Permanentes Ocupados, 6 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00491,"Domicílios Particulares Permanentes Ocupados, 7 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00492,"Domicílios Particulares Permanentes Ocupados, 8 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00493,"Domicílios Particulares Permanentes Ocupados, 9 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio",Características do Domicílio - Parte 2
+domicilio2,V00494,"Domicílios Particulares Permanentes Ocupados, Com banheiro de uso exclusivo com chuveiro e vaso sanitário",Características do Domicílio - Parte 2
+domicilio2,V00495,"Domicílios Particulares Permanentes Ocupados, Sem banheiro de uso exclusivo com chuveiro e vaso sanitário",Características do Domicílio - Parte 2
+domicilio3,V00496,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00497,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00498,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00499,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00500,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00501,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00502,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00503,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00504,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00505,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00506,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é casa de vila ou em condomínio, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00507,"Domicílios Particulares Permanentes Ocupados, Tipo de espécie é apartamento, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00508,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00509,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00510,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00511,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00512,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00513,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00514,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00515,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00516,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00517,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00518,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00519,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00520,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00521,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00522,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00523,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00524,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00525,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00526,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00527,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00528,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00529,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00530,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00531,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00532,"Domicílios Particulares Permanentes Ocupados, Utiliza rede geral de distribuição, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00533,"Domicílios Particulares Permanentes Ocupados, Utiliza poço profundo ou artesiano, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00534,"Domicílios Particulares Permanentes Ocupados, Utiliza poço raso, freático ou cacimba, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00535,"Domicílios Particulares Permanentes Ocupados, Utiliza fonte, nascente ou mina, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00536,"Domicílios Particulares Permanentes Ocupados, Utiliza carro-pipa, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00537,"Domicílios Particulares Permanentes Ocupados, Utiliza água da chuva armazenada, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00538,"Domicílios Particulares Permanentes Ocupados, Utiliza rios, açudes, córregos, lagos e igarapés, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00539,"Domicílios Particulares Permanentes Ocupados, Utiliza outra forma de abastecimento de água, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00540,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00541,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00542,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00543,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00544,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00545,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00546,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00547,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00548,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00549,"Domicílios Particulares Permanentes Ocupados, Água chega encanada até dentro da casa, apartamento ou habitação, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00550,"Domicílios Particulares Permanentes Ocupados, Água chega encanada, mas apenas ao terreno, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00551,"Domicílios Particulares Permanentes Ocupados, Água não chega encanada ao domicílio, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00552,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00553,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00554,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00555,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00556,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00557,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00558,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00559,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00560,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00561,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00562,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00563,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00564,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00565,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00566,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00567,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00568,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00569,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00570,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00571,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00572,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00573,"Domicílios Particulares Permanentes Ocupados, 1 banheiro de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00574,"Domicílios Particulares Permanentes Ocupados, 2 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00575,"Domicílios Particulares Permanentes Ocupados, 3 banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00576,"Domicílios Particulares Permanentes Ocupados, 4 ou mais banheiros de uso exclusivo com chuveiro e vaso sanitário existentes no domicílio, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00577,"Domicílios Particulares Permanentes Ocupados, Apenas banheiro de uso comum a mais de um domicílio, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00578,"Domicílios Particulares Permanentes Ocupados, Apenas sanitário ou buraco para dejeções, inclusive os localizados no terreno, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00579,"Domicílios Particulares Permanentes Ocupados, Não tinham banheiro nem sanitário, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00580,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00581,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00582,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00583,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00584,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00585,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00586,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00587,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00588,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00589,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00590,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00591,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00592,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00593,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00594,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00595,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00596,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00597,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00598,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00599,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00600,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00601,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00602,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00603,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00604,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rede geral ou pluvial, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00605,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro ligada à rede, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00606,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa séptica ou fossa filtro não ligada à rede, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00607,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é fossa rudimentar ou buraco, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00608,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é vala, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00609,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é rio, lago, córrego ou mar, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00610,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto do banheiro ou sanitário ou buraco para dejeções é outra forma, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00611,"Domicílios Particulares Permanentes Ocupados, Destinação do esgoto inexistente, pois não tinham banheiro nem sanitário, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00612,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00613,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00614,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00615,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00616,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00617,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00618,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00619,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00620,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00621,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00622,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00623,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00624,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00625,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00626,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00627,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00628,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00629,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00630,"Domicílios Particulares Permanentes Ocupados, Lixo coletado no domicílio por serviço de limpeza, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00631,"Domicílios Particulares Permanentes Ocupados, Lixo depositado em caçamba de serviço de limpeza, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00632,"Domicílios Particulares Permanentes Ocupados, Lixo queimado na propriedade, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00633,"Domicílios Particulares Permanentes Ocupados, Lixo enterrado na propriedade, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00634,"Domicílios Particulares Permanentes Ocupados, Lixo jogado em terreno baldio, encosta ou área pública, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00635,"Domicílios Particulares Permanentes Ocupados, Outro destino do lixo, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00636,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00637,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água, Quantidade de moradores",Características do Domicílio - Parte 3
+domicilio3,V00638,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00639,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água, Quantidade de crianças de zero a nove anos de idade",Características do Domicílio - Parte 3
+domicilio3,V00640,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00641,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água, Pessoas de sexo masculino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00642,"Domicílios Particulares Permanentes Ocupados, Domicílio possui ligação à rede geral de distribuição de água, mas utiliza principalmente outra forma, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3
+domicilio3,V00643,"Domicílios Particulares Permanentes Ocupados, Domicílio não possui ligação à rede geral de distribuição de água, Pessoas de sexo feminino no domicílio",Características do Domicílio - Parte 3

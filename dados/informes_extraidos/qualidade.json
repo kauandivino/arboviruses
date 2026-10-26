@@ -1,0 +1,84 @@
+{
+  "gerado_em": "2026-10-19T22:56:12.504922+00:00",
+  "versao_extrator": 1,
+  "arquivos": 238,
+  "conteudos_unicos": 237,
+  "duplicatas_binarias": 1,
+  "documentos_processados": 237,
+  "elementos": {
+    "tabela_municipal_contagens_extraidas": 137,
+    "preservado_sem_interpretacao": 2677,
+    "territorial_outro_agravo_sem_interpretacao": 16,
+    "tabela_bairros_extraida": 4,
+    "grafico_bairros_extraido": 19,
+    "revisar_extracao": 5,
+    "tabela_municipal_comparacao_extraida": 6
+  },
+  "observacoes": 4265,
+  "observacoes_bairro": 308,
+  "natureza_temporal": {
+    "acumulado_anual_corte_nao_explicito": 3909,
+    "nao_explicita": 120,
+    "janela_movel": 188,
+    "acumulado_ate_se": 48
+  },
+  "registros_pendentes": 4247,
+  "grupos_com_mais_de_uma_publicacao": 81,
+  "documentos_mencionam_escorpioes": 0,
+  "cobertura": [
+    {
+      "ano_pasta": 2022,
+      "documentos": 50,
+      "documentos_com_contagens_bairro": 0,
+      "observacoes_bairro": 0,
+      "bairros_grafias_distintas": 0,
+      "elementos_prioritarios_bairro_detectados": 0,
+      "elementos_prioritarios_bairro_nao_extraidos": 0,
+      "nao_comprova_cobertura_completa": true
+    },
+    {
+      "ano_pasta": 2023,
+      "documentos": 50,
+      "documentos_com_contagens_bairro": 0,
+      "observacoes_bairro": 0,
+      "bairros_grafias_distintas": 0,
+      "elementos_prioritarios_bairro_detectados": 0,
+      "elementos_prioritarios_bairro_nao_extraidos": 0,
+      "nao_comprova_cobertura_completa": true
+    },
+    {
+      "ano_pasta": 2024,
+      "documentos": 50,
+      "documentos_com_contagens_bairro": 2,
+      "observacoes_bairro": 120,
+      "bairros_grafias_distintas": 19,
+      "elementos_prioritarios_bairro_detectados": 2,
+      "elementos_prioritarios_bairro_nao_extraidos": 0,
+      "nao_comprova_cobertura_completa": true
+    },
+    {
+      "ano_pasta": 2025,
+      "documentos": 53,
+      "documentos_com_contagens_bairro": 0,
+      "observacoes_bairro": 0,
+      "bairros_grafias_distintas": 0,
+      "elementos_prioritarios_bairro_detectados": 0,
+      "elementos_prioritarios_bairro_nao_extraidos": 0,
+      "nao_comprova_cobertura_completa": true
+    },
+    {
+      "ano_pasta": 2026,
+      "documentos": 34,
+      "documentos_com_contagens_bairro": 19,
+      "observacoes_bairro": 188,
+      "bairros_grafias_distintas": 81,
+      "elementos_prioritarios_bairro_detectados": 24,
+      "elementos_prioritarios_bairro_nao_extraidos": 5,
+      "nao_comprova_cobertura_completa": true
+    }
+  ],
+  "problemas": {
+    "mencao_bairro_sem_tabela_ou_grafico_territorial": 78,
+    "elemento_nao_extraido": 5
+  }
+}

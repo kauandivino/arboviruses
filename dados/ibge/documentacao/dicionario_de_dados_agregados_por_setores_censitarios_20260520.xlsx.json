@@ -1,0 +1,12 @@
+{
+  "id": "dicionario_agregados",
+  "tipo": "documentacao",
+  "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/dicionario_de_dados_agregados_por_setores_censitarios_20260520.xlsx",
+  "etag": "\"1ce61-651a590058b00\"",
+  "ultima_modificacao": "Tue, 12 May 2026 21:29:48 GMT",
+  "bytes": 118369,
+  "arquivo": "dados\\ibge\\documentacao\\dicionario_de_dados_agregados_por_setores_censitarios_20260520.xlsx",
+  "sha256": "0b8aedece57f6125d785b6aa2234cfd587e92dfb6ce5ca6ace8c67f140831344",
+  "obtido_em": "2026-10-19T21:52:59.679170+00:00",
+  "status": "baixado"
+}

@@ -1,0 +1,217 @@
+{
+  "registros": [
+    {
+      "bairro": "ENEU",
+      "valor_original": "66",
+      "valor": 66,
+      "bbox_bairro": [
+        141.8674725452307,
+        205.0066111200971,
+        168.26612570952844,
+        231.40526428439478
+      ],
+      "bbox_valor": [
+        159.73159790039062,
+        347.8957214355469,
+        168.0144805908203,
+        354.0777587890625
+      ],
+      "confianca_ocr_bairro": 0.8872412890195847,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\303d48523fa44e4523a95730acc38ba97222fcbf9ba2014afd72bd3cc93bf7dc\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "HAES",
+      "valor_original": "44",
+      "valor": 44,
+      "bbox_bairro": [
+        177.4585138649536,
+        205.71371790128353,
+        204.09286928964687,
+        231.40526428439478
+      ],
+      "bbox_valor": [
+        194.57664489746094,
+        312.6982727050781,
+        203.11386108398438,
+        318.78131103515625
+      ],
+      "confianca_ocr_bairro": 0.9978745877742767,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\303d48523fa44e4523a95730acc38ba97222fcbf9ba2014afd72bd3cc93bf7dc\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "\"IBAI",
+      "valor_original": "41",
+      "valor": 41,
+      "bbox_bairro": [
+        210.6925325807213,
+        204.06380207851498,
+        239.44820834897425,
+        231.8766688051859
+      ],
+      "bbox_valor": [
+        229.6599578857422,
+        307.8824157714844,
+        237.4133758544922,
+        313.9654541015625
+      ],
+      "confianca_ocr_bairro": 0.8882093071937561,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\303d48523fa44e4523a95730acc38ba97222fcbf9ba2014afd72bd3cc93bf7dc\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "ARIOS",
+      "valor_original": "39",
+      "valor": 39,
+      "bbox_bairro": [
+        247.93348972321283,
+        205.71371790128353,
+        273.153631585533,
+        230.93385976360378
+      ],
+      "bbox_valor": [
+        264.9535217285156,
+        304.55487060546875,
+        273.2183837890625,
+        310.7548828125
+      ],
+      "confianca_ocr_bairro": 0.8635508298873902,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\303d48523fa44e4523a95730acc38ba97222fcbf9ba2014afd72bd3cc93bf7dc\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "NDAO",
+      "valor_original": "39",
+      "valor": 39,
+      "bbox_bairro": [
+        282.1103174805626,
+        205.0066111200971,
+        307.8018638636739,
+        230.69815750320834
+      ],
+      "bbox_valor": [
+        300.0418395996094,
+        304.55487060546875,
+        308.28173828125,
+        310.7548828125
+      ],
+      "confianca_ocr_bairro": 0.992258831858635,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\303d48523fa44e4523a95730acc38ba97222fcbf9ba2014afd72bd3cc93bf7dc\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "VICO",
+      "valor_original": "38",
+      "valor": 38,
+      "bbox_bairro": [
+        316.0514429775169,
+        204.53520659930598,
+        343.6286074437923,
+        230.93385976360378
+      ],
+      "bbox_valor": [
+        335.1300964355469,
+        302.9775390625,
+        343.23486328125,
+        309.1595764160156
+      ],
+      "confianca_ocr_bairro": 0.9314558207988739,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\303d48523fa44e4523a95730acc38ba97222fcbf9ba2014afd72bd3cc93bf7dc\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "ANCA",
+      "valor_original": "35",
+      "valor": 35,
+      "bbox_bairro": [
+        352.5852933388219,
+        205.24231338049265,
+        378.7482442427242,
+        231.40526428439478
+      ],
+      "bbox_valor": [
+        370.19842529296875,
+        298.1616516113281,
+        378.2560729980469,
+        304.34368896484375
+      ],
+      "confianca_ocr_bairro": 0.9950542002916336,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\303d48523fa44e4523a95730acc38ba97222fcbf9ba2014afd72bd3cc93bf7dc\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "\"RICA",
+      "valor_original": "32",
+      "valor": 32,
+      "bbox_bairro": [
+        385.58360979419405,
+        204.29950433891054,
+        413.39647652086495,
+        231.16956202399933
+      ],
+      "bbox_valor": [
+        405.28778076171875,
+        293.35546875,
+        413.547119140625,
+        299.5546569824219
+      ],
+      "confianca_ocr_bairro": 0.933023202419281,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\303d48523fa44e4523a95730acc38ba97222fcbf9ba2014afd72bd3cc93bf7dc\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "NOVA",
+      "valor_original": "29",
+      "valor": 29,
+      "bbox_bairro": [
+        421.64605563470803,
+        204.29950433891054,
+        448.51611331979683,
+        231.16956202399933
+      ],
+      "bbox_valor": [
+        440.1954040527344,
+        288.5215759277344,
+        448.6263732910156,
+        294.7388000488281
+      ],
+      "confianca_ocr_bairro": 0.9961790442466736,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\303d48523fa44e4523a95730acc38ba97222fcbf9ba2014afd72bd3cc93bf7dc\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "*INDO",
+      "valor_original": "27",
+      "valor": 27,
+      "bbox_bairro": [
+        456.0585856524533,
+        204.29950433891054,
+        484.1071546395197,
+        231.16956202399933
+      ],
+      "bbox_valor": [
+        475.253173828125,
+        285.31134033203125,
+        483.6892395019531,
+        291.5113525390625
+      ],
+      "confianca_ocr_bairro": 0.8896914005279541,
+      "imagem_conferencia": "dados\\informes_extraidos\\ocr\\303d48523fa44e4523a95730acc38ba97222fcbf9ba2014afd72bd3cc93bf7dc\\pagina_3\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    }
+  ],
+  "sha256_imagem": "244dc61637ca72d380e3b97bb79c96652b579798e6d0d65ee614e9ba1e530829",
+  "escala_renderizacao": 3.0,
+  "aviso": "Confiança do OCR não é probabilidade de correção; todos os nomes exigem revisão."
+}

@@ -1,0 +1,1663 @@
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+MINISTÉRIO DA SAÚDE 
+SECRETARIA DE VIGILÂNCIA EM SAÚDE 
+DEPARTAMENTO DE VIGILÂNCIA EPIDEMIOLÓGICA 
+CENTRO DE INFORMAÇÕES ESTRATÉGICAS EM VIGILÂNCIA EM SAÚDE 
+GT-SINAN 
+SISTEMA DE INFORMAÇÃO DE AGRAVOS DE NOTIFICAÇÃO 
+DICIONÁRIO DE DADOS – SINAN ONLINE 
+CAMPO DE PREENCHIMENTO OBRIGATÓRIO  é aquele cuja ausência de dado impossibilita a inclusão da notificação ou da 
+investigação no Sinan. 
+CAMPO ESSENCIAL é aquele que, apesar de não ser obrigatório,  registra dado necessário à investigação do caso ou ao cálculo de 
+indicador epidemiológico ou operacional. 
+ 
+Histórico de Revisões 
+ 
+ 
+ 
+Data Versão Descrição Autor 
+11/05/2015 3.0 Atualizado pela UT_Sinan de acordo com o DBF . Alteração da 
+escrita dos campos: 33; 34; 38;64; 68. 
+Paula Maria Raia Eliazar 
+ 
+12/09/2014 3.0 Atualização e Revisão da área técnica PNCD Lívia 
+21/10/2015 3.0 Atualizado pela UT-Sinan. Revisão e ordenação dos campos. Fernanda Medeiros. 
+28/10/2015 3.0 A coluna DBF foi alterada de acordo com o nome do campo no 
+banco de dados.  
+Fernanda Medeiros. 
+09/11/2015 3.0 Alteração do Dicionário de Dados de acordo com as regras do 
+sistema nas categorias e nomenclatura corretas. Campos: 65 
+(categoria 2: óbito pelo agravo),68 (Acúmulo de Líquidos, DT 
+início sintomas, Pulso débil ou indetectável). 
+Priscila Leite 
+02/12/2015 3.0 Alteração da característica do campo 39 – Exame Sorológico 
+para Dengue (IgM) Dengue. 
+Paula Eliazar 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+ 
+DOENÇA: DENGUE e CHIKUNGUNYA 
+ 
+Nome do campo Campo Tipo Categoria Descrição Características DBF 
+2-Agravo/doença   1-Dengue 2-Chikungunya Especifica a suspeição do agravo. 
+Campo Obrigatório 
+ 
+Preenchendo o código, 
+a descrição é 
+preenchida 
+automaticamente, e 
+vice-versa. 
+ID_AGRAVO 
+31-Data da 
+Investigação dt_investigacao DATE  Informar a data da investigação 
+Campo obrigatório 
+- Não aceitar Data da 
+investigação anterior a 
+Data de notificação 
+DT_INVEST 
+32- Ocupação/ramo de 
+atividade econômica co_cbo_ocupacao VARCHAR(6)  
+Informar a atividade exercida pelo paciente no 
+setor formal, informal ou autônomo ou sua 
+última atividade exercida quando paciente for 
+desempregado. O ramo de atividade 
+econômica do paciente refere-se as atividades 
+econômicas desenvolvidas nos processos de 
+produção do setor primário (agricultura e 
+extrativismo); secundário (indústria) ou 
+terciário (serviços e comércio) 
+ ID_OCUPA_N  
+ 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+33- Sinais clínicos 
+(Febre)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ FEBRE 
+33- Sinais clínicos 
+(Mialgia)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos 
+Campo obrigatório 
+ MIALGIA 
+33- Sinais clínicos 
+(Cefaleia)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos 
+Campo obrigatório 
+ CEFALEIA 
+33- Sinais clínicos 
+(Exantema)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos 
+Campo obrigatório 
+ EXANTEMA 
+33- Sinais clínicos 
+(Vômito)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ VOMITO 
+33- Sinais clínicos 
+(Náusea)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ NAUSEA 
+33- Sinais clínicos (Dor 
+nas costas)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ DOR_COSTAS 
+33- Sinais clínicos 
+(Conjuntivite)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ CONJUNTVIT 
+33- Sinais clínicos 
+(Artrite)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ ARTRITE 
+33- Sinais clínicos 
+(Artralgia intensa)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ ARTRALGIA 
+33- Sinais clínicos 
+(Petéquias)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ PETÉQUIA_N 
+33- Sinais clínicos 
+(Leucopenia)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ LEUCOPENIA 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+33- Sinais clínicos 
+(Prova do laço)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ LACO 
+33- Sinais clínicos (Dor 
+retroorbital)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ DOR_RETRO 
+34- Doenças pré-
+existentes (Diabetes)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ DIABETES 
+34- Doenças pré-
+existentes (Doenças 
+hematológicas) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ HEMATOLOG 
+34- Doenças pré-
+existentes 
+(Hepatopatias) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ HEPATOPAT 
+34- Doenças pré-
+existentes (Doença 
+renal crônica) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ RENAL 
+34- Doenças pré-
+existentes 
+(Hipertensão arterial) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ HIPERTENSA 
+34- Doenças pré-
+existentes (Doença 
+ácido-péptica) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ ÁCIDO_PEPT 
+34- Doenças pré-
+existentes (Doenças 
+auto-imunes) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal clínico ou achados 
+laboratoriais inespecíficos  
+Campo obrigatório 
+ AUTO_IMUNE 
+35-Exame sorológico 
+(IgM) Chikungunya 
+Soro 1 
+Data da Coleta 
+dt_coleta_exame DATE  Data da Coleta Exame Sorológico (IgM) Chikungunya soro 1 
+Campo Essencial 
+Deve ser maior ou igual à 
+data de primeiros 
+sintomas. 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+2 Chikungunya 
+DT_CHIK_S1 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+36-Exame sorológico 
+(IgM) Chikungunya 
+Soro 2 
+Data da Coleta 
+dt_coleta_exame DATE  Data da Coleta Exame Sorológico (IgM) Chikungunya soro 2 
+Campo Essencial 
+Deve ser maior que a data 
+da primeira coleta. Não 
+permitir o preenchimento 
+se data da primeira coleta 
+estiver em branco. 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+2 Chikungunya 
+DT_CHIK_S2 
+37-Exame PRNT 
+Data da Coleta dt_coleta_exame DATE  Data da Coleta Exame PRNT 
+Campo Essencial 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+2 Chikungunya 
+DT_PRNT 
+38-Exame sorológico 
+(IgM) Chikungunya 
+Soro 1 
+Resultado 
+tp_result_exame VARCHAR(1) 
+1-Reagente 
+2-Não Reagente 
+3-Inconclusivo 
+4-Não realizado 
+Resultado do Exame Sorológico (IgM) soro 1  
+para Chikunugnya 
+Campo Essencial 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+2 Chikungunya 
+RES_CHIKS1 
+38-Exame sorológico 
+(IgM) Chikungunya 
+Soro 2 
+Resultado 
+tp_result_exame VARCHAR(1) 
+1-Reagente 
+2-Não Reagente 
+3-Inconclusivo 
+4-Não realizado 
+Resultado do Exame Sorológico (IgM) soro 2 
+para Chikunugnya 
+Campo Essencial 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+2 Chikungunya 
+RES_CHIKS2 
+38-Exame PRNT  
+Resultado tp_result_exame VARCHAR(1) 
+1-Reagente 
+2-Não Reagente 
+3-Inconclusivo 
+4-Não realizado 
+Resultado do Exame Sorológico (IgM) PRNT  
+Campo Essencial 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+2 Chikungunya 
+RESUL_PRNT 
+39-Exame sorológico 
+(IgM) Dengue 
+Data da Coleta 
+dt_coleta_exame DATE  Data da Coleta Exame Sorológico (IgM) Dengue 
+Campo Essencial 
+Deve ser maior ou igual à 
+data de primeiros 
+sintomas. 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+1 Dengue. 
+DT_SORO 
+40-Exame sorológico 
+(IgM) Dengue 
+Resultado 
+tp_result_exame VARCHAR(1) 
+1-Reagente 
+2-Não Reagente 
+3-Inconclusivo 
+4-Não realizado 
+Resultado do Exame Sorológico (IgM) Dengue  
+Campo Essencial 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+1- Dengue 
+RESUL_SORO 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+41- Exame NS1 
+Data da Coleta dt_coleta_NS1 DATE  Data da coleta Exame Sorologia ELISA 
+Campo Essencial 
+Deve ser maior ou igual à 
+data de primeiros 
+sintomas. Habilitado 
+apenas se campo 2-
+Agravo/doença= 1- 
+Dengue 
+DT_NS1 
+42- Exame NS1 
+Resultado Tp_result_NS1 VARCHAR(1) 
+1-Positivo 
+2-Negativo 
+3-Inconclusivo 
+4-Não realizado 
+Resultado do Exame Sorologia ELISA 
+ 
+Campo Essencial 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+1- Dengue 
+RESUL_NS1 
+43-Isolamento Viral 
+Data da Coleta dt_coleta_isolamento DATE  Data da Coleta Isolamento Viral 
+Campo Essencial 
+Deve ser maior ou igual à 
+data de primeiros 
+sintomas. 
+Habilitado para dengue ou 
+chikungunya (campo 2- 
+Agravo/doença) 
+DT_VIRAL 
+43-Isolamento Viral 
+Resultado tp_result_isolamento VARCHAR(1) 
+1-Positivo 
+2-Negativo 
+3-Inconclusivo 
+4-Não realizado 
+Resultado Exame de Isolamento Viral 
+Campo Essencial 
+Habilitado para dengue ou 
+chikungunya (campo 2- 
+Agravo/doença) 
+RESUL_VI_N 
+45-RT-PCR 
+Data da Coleta dt_coleta_rtpcr DATE  Data de Coleta  do Exame de RT-PCR 
+Campo essencial 
+Deve ser maior ou igual à 
+data de primeiros 
+sintomas. 
+Habilitado para dengue ou 
+chikungunya (campo 2- 
+Agravo/doença) 
+DT_PCR 
+46-RT-PCR 
+Resultado tp_result_rtpcr VARCHAR(1) 
+1-Positivo 
+2-Negativo 
+3-Inconclusivo 
+4-Não realizado 
+Resultado do Exame de RT-PCR 
+Campo essencial 
+ 
+Habilitado para dengue ou 
+chikungunya (campo 2- 
+Agravo/doença) 
+RESUL_PCR_ 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+47-Sorotipo tp_sorotipo VARCHAR(1) 
+1-DEN 1 
+2-DEN 2 
+3 DEN 3 
+4-DEN 4 
+Sorotipo 
+Campo obrigatório 
+Se campo 44-Isolamento 
+Viral(resultado) ou campo 
+46-RT-PCR (resultado)= 
+1(positivo). 
+ 
+Campo desabilitado se 
+campo 44-Isolamento 
+Viral(resultado) e campo 
+46-RT-PCR(resultado) 
+diferente de 1(positivo). 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+1- Dengue 
+ 
+SOROTIPO 
+48-Histopatologia 
+Resultado 
+tp_result_histopatolog
+ia VARCHAR(1) 
+1-Positivo 
+2-Negativo 
+3-Inconclusivo 
+4-Não realizado 
+Resultado Exame de Histopatologia 
+Campo essencial 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+1- Dengue 
+ 
+HISTOPA_N 
+49-Imunohistoquímica 
+Resultado 
+tp_result_imunohistoq
+uimica VARCHAR(1) 
+1-Positivo 
+2-Negativo 
+3-Inconclusivo 
+4-Não realizado 
+Resultado Exame de Imunohistoquímica 
+Campo essencial 
+Habilitado apenas se 
+campo 2-Agravo/doença= 
+1- Dengue 
+ 
+IMUNOH_N 
+50-Ocorreu 
+Hospitalização? 
+st_ocorreu_hospitaliz
+acao VARCHAR (1) 
+1-Sim 
+2-Não 
+9-Ignorado 
+Informa se ocorreu hospitalização 
+Se campo = 2 – Não ou 9- 
+Ignorado, pular para o 
+campo 56-Local Provável 
+de Infecção 
+HOSPITALIZ 
+51-Data Da Internação dt_internacao DATE  Informar a data de internação do paciente 
+Habilitado se campo 50-
+Ocorreu Hospitalização? 
+=1(sim). 
+DT_INTERNA 
+52-UF De 
+Hospitalização co_uf_hospital VARCHAR (2)  Sigla da UF onde o paciente foi hospitalizado 
+Habilitado se campo 50-
+Ocorreu Hospitalização? 
+=1(sim). 
+UF 
+53-Municipio Do 
+Hospital co_municipio_hospital VARCHAR (6)  Código e nome  completo do município onde o paciente foi hospitalizado Habilitado se campo 50-Ocorreu Hospitalização? MUNICIPIO 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+=1(sim). 
+54-Nome Do Hospital co_unidade_hospital VARCHAR (8)  Nome completo da unidade de saúde em que o paciente foi notificado Habilitado se campo 50-Ocorreu Hospitalização? =1(sim). HOSPITAL 
+55-(DDD) nu_ddd_hospital VARCHAR (2)  Código DDD do telefone da unidade de saúde onde o paciente foi hospitalizado Habilitado se campo 50-Ocorreu Hospitalização? =1(sim). DDD_HOSP 
+55-Telefone nu_telefone_hospital VARCHAR (9)  Telefone da unidade de saúde onde o paciente foi hospitalizado Habilitado se campo 50-Ocorreu Hospitalização? =1(sim). TEL_HOSP 
+56-O caso é Autóctone 
+de residência? 
+tp_autoctone_residen
+cia varchar2(1) 
+1 – Sim 
+2 – Não 
+3 – Indeterminado 
+Indica se o caso é autóctone do município de 
+residência . 
+ 
+ 
+ 
+ 
+Campo Essencial se 
+campo 62 (classificação) 
+for diferente de 5 
+(descartado) ou null. 
+Campo habilitado se 
+classificação =10, 11, 12 
+ou 13 
+ 
+Se igual a 1 (sim), o 
+sistema deve preencher 
+automaticamente os 
+campos 57 a 59 (UF, País 
+e Município) com os 
+valores registrados nos 
+campos 17, 30 e 18 
+respectivamente  e 
+habilitar para o usuário 
+preencher os campos 60 e 
+61 (distrito e bairro); 
+ 
+Se igual a 2 (Não), o 
+sistema deve habilitar 
+para o usuário preencher 
+os campos de 56 a 60 
+(UF, País e Município, 
+distrito e bairro); 
+ 
+Se igual a 3 
+TPAUTOCTO 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+(Indeterminado), 
+pular os campos de 56 a 
+60 (UF, País, Município, 
+Distrito e Bairro). 
+ 
+Quando a classificação for 
+preenchida com 5 
+(descartado) os dados 
+desse campo são 
+automaticamente 
+apagados. 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+57-UF (provável da 
+fonte de infecção) co_uf_infeccao varchar2(2) 
+Tabela com siglas 
+e código 
+padronizados pelo 
+IBGE 
+Sigla da unidade federada onde o paciente foi 
+provavelmente infectado. 
+ 
+ 
+ 
+Campo Essencial se 
+campo 58 (País) for igual 
+a Brasil E campo 62 
+(classificação) 
+for diferente de 5 
+(descartado). 
+Se o campo 56 (O caso é 
+autóctone do município de 
+residência) for igual a 1 
+(sim), o sistema preenche 
+automaticamente com o 
+dado do campo 17 (UF de 
+residência); 
+ 
+Quando o campo 62 
+(classificação) for 
+preenchida com 5 
+(descartado) os dados 
+desse campo são 
+automaticamente 
+apagados. 
+COUFINF 
+58-País (provável da 
+fonte de infecção) co_pais_infeccao varchar(4) 
+Tabela com 
+código e descrição 
+de paises. 
+País onde o paciente foi provavelmente 
+infectado. 
+ 
+ 
+Campo Essencial se 
+campo 62 (classificação) 
+for diferente de 5 
+(descartado). 
+ 
+Se o campo 56 (O caso é 
+autóctone do município de 
+residência) for igual a 1 
+(sim), o sistema deve 
+preencher 
+automaticamente com o 
+dado do campo 30 (país 
+de residência); 
+ 
+Se país de residência for 
+diferente de BRASIL, o 
+usuário deverá informar o 
+COPAISINF 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+país e acrescentar as 
+demais informações no 
+campo observações 
+adicionais. 
+ 
+Se campo 56 (O caso é 
+Autóctone de residência?) 
+for igual a 2 (não) e  o 
+usuário preencher o 
+campo 57-UF(provável da 
+fonte de infecção), o 
+sistema preenche 
+automaticamente com o 
+campo 58-País (provável 
+da fonte de infecção) com 
+Brasil. 
+ 
+Se o campo 57-
+UF(provável da fonte de 
+infecção) for apagado pelo 
+usuário o  sistema apaga 
+automaticamente o campo 
+58-País (provável da fonte 
+de infecção) com Brasil. 
+ 
+Quando o campo 62.  
+classificação for 
+preenchida com 
+5(descartado) os dados 
+desse campo são 
+automaticamente 
+apagados. 
+59-Município (provável 
+da fonte de infecção) 
+co_municipio_infecca
+o varchar2(6) 
+Tabela com 
+Códigos e nomes 
+padronizados pelo 
+IBGE 
+Código do município onde o paciente foi 
+provavelmente infectado. O nome está 
+associado ao código na tabela de municípios. 
+ 
+ 
+Campo Essencial se 
+campo 58 (país de 
+infecção) for igual a Brasil 
+e campo 62 (classificação) 
+for diferente de 5 
+(descartado). 
+COMUNINF 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+ 
+Se o campo 56 (O caso é 
+autóctone do município de 
+residência) for igual a 1 
+(sim), o sistema deve 
+preencher 
+automaticamente com o 
+dado do campo 18 
+(município de residência). 
+ 
+Quando o campo 62 
+(classificação) for 
+preenchida com 5 
+(descartado) os dados 
+desse campo são 
+automaticamente 
+apagados. 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+60-Distrito 
+(provável de infecção) co_distrito_infeccão varchar2(4) 
+Tabela com 
+Códigos e nomes 
+padronizados 
+segundo Tabela 
+disponibilizada 
+pelo sistema para 
+cadastramento 
+pelo gestor 
+municipal do 
+Sinan. 
+Código do Distrito provável de Infecção do 
+caso. O nome está associado ao código em 
+tabela. 
+ 
+ 
+Campo Essencial se o 
+município de infecção, 
+informado no campo 58, 
+for subdividido em distrito 
+E campo 58 (país de 
+infecção) for igual a Brasil 
+E campo 62 
+(classificação) for 
+diferente de 5 
+(descartado). 
+ 
+Quando o campo 62 
+(classificação) for 
+preenchida com 5 
+(descartado) os dados 
+desse campo são 
+automaticamente 
+apagados. 
+CODISINF 
+61-Bairro (provável de 
+infecção) 
+co_bairro_infeccao, 
+no_bairro_infeccao 
+number(8) 
+vachar2(60) 
+ 
+ 
+Tabela de 
+localidades 
+(código e nomes) 
+carregada a partir 
+do sistema 
+LOCALIDADE. 
+Código do bairro provável de Infecção do 
+caso. 
+Nome do bairro provável de infecção do caso. 
+ 
+ 
+Campo Essencial se o 
+município de infecção, 
+informado no campo 59, 
+for subdividido em bairro 
+E 
+campo 58 (país de 
+infecção) for igual a Brasil 
+E campo 62 
+(classificação) for 
+diferente de 5 
+(descartado). 
+ 
+Quando o campo 62 
+(classificação) for 
+preenchido com 5 
+(descartado) os dados 
+desse campo são 
+automaticamente 
+apagados. 
+ 
+CO_BAINF 
+NOBAIINF 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+Os dados para bairro  são 
+tabelados, ou seja, se o 
+bairro não existir na tabela 
+o campo ficará em branco 
+uma vez que o usuário 
+não poderá digitar no 
+sistema, apenas poderá 
+selecionar um existente. A 
+tabela de bairro carregada 
+pelo DATASUS será 
+nacional para a localidade 
+e extraída da tabela de 
+localidade do sistema 
+LOCALIDADE. 
+62-Classificação tp_classificacao_final VARCHAR (1) 
+5-Descartado 
+10-Dengue  
+11-Dengue com 
+sinais de alarme 
+12-Dengue grave 
+13-Chikungunya 
+ 
+ 
+Informar a classificação do caso. 
+ 
+ 
+Campo Obrigatório 
+quando o campo data de 
+encerramento estiver 
+preenchido. 
+Desabilitar categoria 13- 
+Chikungunya se campo 2-
+Notificação= 1-Dengue. 
+ 
+Desabilitar categorias 10-
+Dengue, 11-Dengue com 
+sinais de alarme e 12- 
+Dengue grave se campo 
+2-Notificação= 2- 
+Chikungunya 
+ 
+CLASSI_FIN 
+ 
+63-Critério De 
+Confirmação/Descarte 
+tp_criterio_confirmaca
+o VARCHAR (2) 
+1-Laboratório 
+2-Clínico 
+Epidemiológico 
+3-Em investigação 
+Informar o critério de confirmação/descarte 
+Campo Obrigatório se 
+classificação 
+preenchidaSe campo 62-
+Classificação = 5, pular 
+para o campo 65 
+(Evolução do Caso), após 
+o preenchimento do 
+campo 63-Critério de 
+confirmação descarte. 
+CRITERIO 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+64- Apresentação 
+clínica Chikungunya   1- Aguda 2- Crônica Informar a apresentação clínica do caso de Chikungunya 
+Campo Obrigatório 
+Se campo 62-
+Classificação=13 
+Chikungunya e se campo 
+63-Critério de 
+confirmação/descarte= -
+Laboratório ou 2-Clínico 
+epidemiológico 
+CLINIC_CHIK 
+65-Evolução Do Caso tp_evolucao_caso VARCHAR (1) 
+1- cura 
+2- óbito  pelo 
+agravo 
+3- óbito por outras 
+causas 
+4- óbito em 
+investigação 
+9- ignorado 
+Informar a evolução do caso. 
+ 
+Campo essencial 
+ 
+- Se campo Evolução do 
+caso =1(cura) ou 9 
+(ignorado) ou null, pular 
+para campo 67. Data do 
+encerramento. 
+EVOLUCAO 
+66-Data do Óbito dt_obito DATE  
+Informar a data do óbito. 
+ 
+ 
+Campo Obrigatório se 
+campo 65. Evolução do 
+caso =2 (óbito pelo 
+agravo) ou 3 (óbito por 
+outras causas) ou 4 (óbito 
+em investigação). 
+ 
+Data deve ser maior ou 
+igual a Data dos Primeiros 
+Sintomas. 
+DT_OBITO 
+67-Data Do 
+Encerramento dt_encerramento DATE  Informar a data do encerramento do caso 
+Campo Obrigatório 
+quando campo 62. 
+Classificação estiver 
+preenchido E o campo 
+critério de confirmação 
+(63) for diferente de 3. 
+ 
+Campo desabilitado se o 
+campo critério de 
+confirmação (63) for igual 
+a 3. 
+ 
+DT_ENCERRA 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+Data deve ser maior ou 
+igual a Data da 
+investigação 
+68- Dengue com sinais 
+de alarme 
+(Hipotensão) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de alarme foi encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 11 
+Dengue com Sinais de 
+Alarme e campo 63-
+Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Campo habilitado também 
+se campo 62- 
+Classificação = 12-
+Dengue grave e campo 
+63. Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 11-Dengue com Sinais 
+de Alarme e 12-Dengue 
+grave. 
+ALRM_HIPOT 
+68- Dengue com sinais 
+de alarme 
+(Queda abrupta de 
+plaquetas) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de alarme foi encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 11 
+Dengue com Sinais de 
+Alarme e campo 63-
+Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+Campo habilitado também 
+ALRM_PLAQ 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+se campo 62- 
+Classificação = 12-
+Dengue grave e campo 
+63. Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 11-Dengue com Sinais 
+de Alarme e 12-Dengue 
+grave. 
+68- Dengue com sinais 
+de alarme 
+(Vômitos persistentes) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de alarme foi encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 11 
+Dengue com Sinais de 
+Alarme e campo 63-
+Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+Campo habilitado também 
+se campo 62- 
+Classificação = 12-
+Dengue grave e campo 
+63. Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 11-Dengue com Sinais 
+de Alarme e 12-Dengue 
+grave. 
+ALRM_VOM 
+68- Dengue com sinais 
+de alarme   1 – Sim 2 – Não Informar qual sinal de alarme foi encontrado  Campo obrigatório Se campo 62- ALRM_ABDOM 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+(Dor abdominal)  Classificação = 11 
+Dengue com Sinais de 
+Alarme e campo 63-
+Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+Campo habilitado também 
+se campo 62- 
+Classificação = 12-
+Dengue grave e campo 
+63. Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 11-Dengue com Sinais 
+de Alarme e 12-Dengue 
+grave. 
+68- Dengue com sinais 
+de alarme 
+(Letargia ou 
+irritabilidade) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de alarme foi encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 11 
+Dengue com Sinais de 
+Alarme e campo 63-
+Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+Campo habilitado também 
+se campo 62- 
+Classificação = 12-
+Dengue grave e campo 
+63. Critério de 
+confirmação/descarte=1 
+ALRM_LETAR 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 11-Dengue com Sinais 
+de Alarme e 12-Dengue 
+grave. 
+68- Dengue com sinais 
+de alarme 
+(Sangramento de 
+mucosa/outras 
+hemorragias) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de alarme foi encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 11 
+Dengue com Sinais de 
+Alarme e campo 63-
+Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+Campo habilitado também 
+se campo 62- 
+Classificação = 12-
+Dengue grave e campo 
+63.Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 11-Dengue com Sinais 
+de Alarme e 12-Dengue 
+grave. 
+ALRM_SANG 
+68- Dengue com sinais 
+de alarme 
+(Aumento hematócrito) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de alarme foi encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 11 
+Dengue com Sinais de 
+Alarme e campo 63-
+Critério de 
+ALRM_HEMAT 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+Campo habilitado também 
+se campo 62- 
+Classificação = 12-
+Dengue grave e Critério 
+de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 11-Dengue com Sinais 
+de Alarme e 12-Dengue 
+grave. 
+68- Dengue com sinais 
+de alarme 
+(Hepatomegalia) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de alarme foi encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 11 
+Dengue com Sinais de 
+Alarme e campo 63-
+Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+Campo habilitado também 
+se campo 62- 
+Classificação = 12-
+Dengue grave e campo 
+63.Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+ALRM_HEPAT 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+Classificação for diferente 
+de 11-Dengue com Sinais 
+de Alarme e 12-Dengue 
+grave. 
+68- Dengue com sinais 
+de alarme 
+(Acúmulo de líquidos) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de alarme foi encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 11 
+Dengue com Sinais de 
+Alarme e campo 63-
+Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+Campo habilitado também 
+se campo 62- 
+Classificação = 12-
+Dengue grave e Critério 
+de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 11-Dengue com Sinais 
+de Alarme e 12-Dengue 
+grave. 
+ALRM_LIQ 
+69- Dengue com sinais 
+de alarme 
+Data de início dos 
+sintomas 
+ DATE   Informar data de início dos sinais de alarme. Considerar a data do primeiro sinal de alarme manifestado.  
+Campo obrigatório 
+Se campo 62-
+Classificação = 11 
+Dengue com Sinais de 
+Alarme e campo 63-
+Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico 
+ 
+DT_ALRM 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+Campo habilitado também 
+se campo 62- 
+Classificação = 12-
+Dengue grave e Critério 
+de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 11-Dengue com Sinais 
+de Alarme e 12-Dengue 
+grave. 
+70- Dengue grave 
+(Pulso débil ou 
+indectável) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave campo 63-
+Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+GRAV_PULSO 
+70- Dengue grave 
+(PA convergente)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue Grave 63-Critério 
+de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+GRAV_CONV 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+70- Dengue grave 
+(Tempo de enchimento 
+capilar) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+GRAV_ENCH 
+70- Dengue grave 
+(Acúmulo de líquidos 
+com insuficiência 
+respiratória) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+GRAV_INSUF 
+70- Dengue grave 
+(Taquicardia)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+GRAV_TAQUI 
+70- Dengue grave 
+(Extremidade frias)   1 – Sim 2 – Não Informar qual sinal de gravidade foi encontrado  Campo obrigatório Se campo 62- GRAV_EXTRE 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+ Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+70- Dengue grave 
+(Hipotensão arterial em 
+fase tardia) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+GRAV_HIPOT 
+70- Dengue grave 
+(Hematêmese)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+GRAV_HEMAT 
+70- Dengue grave 
+(Melena)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+GRAV_MELEN 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+70- Dengue grave 
+(Metrorragia volumosa)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+GRAV_METRO 
+70- Dengue grave 
+(Sangramento do SNC)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+GRAV_SANG 
+70- Dengue grave 
+(AST/ALT >1 .000)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+GRAV_AST 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+70- Dengue grave 
+(Miocardite)   
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+GRAV_MIOC 
+70- Dengue grave 
+(Alteração da 
+consciência) 
+  
+1 – Sim 
+2 – Não 
+ 
+Informar qual sinal de gravidade foi 
+encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+GRAV_CONSC 
+70- Dengue grave 
+(Outros órgãos)    Informar qual sinal de gravidade foi encontrado  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+GRAV_ORGAO 
+   
+ 
+Dengue/Chikungunya  Sinan Online Revisado em: 21/10/2015. 
+ 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+71- Dengue grave 
+Data de início dos 
+sintomas 
+ DATE   Informar data de início dos sinais de alarme. Considerar a data do primeiro sinal de alarme manifestado.  
+Campo obrigatório 
+Se campo 62-
+Classificação = 12 
+Dengue grave e campo 
+63-Critério de 
+confirmação/descarte=1 
+Laboratorial ou 2-Clínico 
+epidemiológico. 
+ 
+Desabilitado se campo 62-
+Classificação for diferente 
+de 12-Dengue grave. 
+DT_GRAV 
+Informações 
+complementares e 
+observações 
+adicionais 
+ds_observacao VA VARCHAR 255)  
+Informações complementares e observações 
+adicionais a respeito do caso.(Ex: descrever 
+manifestações hemorrágicas não citadas na 
+ficha) 
+Habilitado para todas 
+notificações DS_OBS 
+ 

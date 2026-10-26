@@ -1,0 +1,56 @@
+{
+  "gerado_em": "2026-10-20T06:45:50.685696+00:00",
+  "metodo": "selecionar_territorios.py",
+  "janelas_principais": [
+    16,
+    20,
+    24,
+    28,
+    32,
+    36
+  ],
+  "janelas_alternativas": [
+    14,
+    18,
+    22,
+    26,
+    30,
+    34
+  ],
+  "periodo_principal": "2026 SE13–36",
+  "periodo_alternativo": "2026 SE11–34",
+  "tolerancia_espacial_exploratoria_m": 250,
+  "raio_planejamento_a_partir_do_poligono_m": 3000,
+  "selecionados": 8,
+  "mesmos_oito_na_alternativa": true,
+  "checagem_cnes": {
+    "sem_correspondencia_unica": 31,
+    "compatibilidade_exploratoria": 27,
+    "divergencia_espacial_a_verificar": 27
+  },
+  "fontes": [
+    {
+      "arquivo": "dados/base_integrada/bairros_publicados.csv",
+      "sha256": "619358df488c868bef512499cf1f4c10b91de96e915a74aa9665a0368384529b"
+    },
+    {
+      "arquivo": "dados/base_integrada/parceiros_candidatos.csv",
+      "sha256": "a875c13b297dd22f80c1d7f7e0f8bc0b2b271b917f0d4243c081eca88e0f96c5"
+    },
+    {
+      "arquivo": "dados/malha_municipal/goiania/bairros_municipais_analise.gpkg",
+      "sha256": "aceafeb12c187d16ddb63be3cb78b99d774c3210fb05f628deba6bb8d1cd8fa6"
+    },
+    {
+      "arquivo": "dados/cnes/goiania/202609/estabelecimentos.csv",
+      "sha256": "2dd3184348ba6c9b365a34961bbeb6fef8a238a3221ab1483ac88b98fa59bf6e"
+    }
+  ],
+  "limitacoes": [
+    "Não mede risco, incidência ou cobertura assistencial.",
+    "Distâncias a polígonos nominais em EPSG31982; não são rotas.",
+    "Recorrência significa presença em listas selecionadas, nunca soma de casos.",
+    "Dados municipais de escorpiões não permitem justificar maior risco por bairro.",
+    "Viabilidade operacional, custos, recursos e aceites permanecem desconhecidos."
+  ]
+}

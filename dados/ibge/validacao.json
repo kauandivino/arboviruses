@@ -1,0 +1,76 @@
+{
+  "validado_em": "2026-10-19T21:58:47.525372+00:00",
+  "status": "aprovado_com_limitacoes",
+  "ano_referencia": 2022,
+  "municipio": "5208707",
+  "originais": 8,
+  "originais_bytes": 278078288,
+  "setores": 2310,
+  "bairros_ibge": 0,
+  "linhas_tabelas": {
+    "basico": 2310,
+    "domicilio1": 2304,
+    "domicilio2": 2304,
+    "domicilio3": 2304
+  },
+  "indicadores": 37,
+  "cobertura": {
+    "basico": 0,
+    "domicilio1": 6,
+    "domicilio2": 6,
+    "domicilio3": 6
+  },
+  "limitacoes": [
+    "A malha de bairros do IBGE para Goiás não inclui Goiânia. A malha municipal de bairros ainda é necessária para essa agregação.",
+    "domicilio1: 6 setores do básico sem linha nessa tabela. Ausência preservada, sem preenchimento por zero.",
+    "domicilio2: 6 setores do básico sem linha nessa tabela. Ausência preservada, sem preenchimento por zero.",
+    "domicilio3: 6 setores do básico sem linha nessa tabela. Ausência preservada, sem preenchimento por zero."
+  ],
+  "setores_sem_linha_domicilio1": [
+    {
+      "CD_SETOR": "520870705080044",
+      "V0001": "0",
+      "V0002": "0",
+      "CD_TIPO": "4"
+    },
+    {
+      "CD_SETOR": "520870705110010",
+      "V0001": "0",
+      "V0002": "0",
+      "CD_TIPO": "4"
+    },
+    {
+      "CD_SETOR": "520870705310053",
+      "V0001": "0",
+      "V0002": "0",
+      "CD_TIPO": "6"
+    },
+    {
+      "CD_SETOR": "520870705570036",
+      "V0001": "0",
+      "V0002": "0",
+      "CD_TIPO": "4"
+    },
+    {
+      "CD_SETOR": "520870705630078",
+      "V0001": "0",
+      "V0002": "0",
+      "CD_TIPO": "4"
+    },
+    {
+      "CD_SETOR": "520870705630084",
+      "V0001": "0",
+      "V0002": "0",
+      "CD_TIPO": "4"
+    }
+  ],
+  "verificacoes": [
+    "SHA-256 dos originais e recortes",
+    "CRC dos ZIPs/XLSX",
+    "Integridade SQLite dos GeoPackages",
+    "Geometrias, CRS e códigos municipais",
+    "Chaves do básico contra malha definitiva",
+    "Preservação célula a célula dos indicadores e marcadores",
+    "Ausência de multiplicação de linhas no join"
+  ]
+}

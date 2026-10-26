@@ -1,0 +1,155 @@
+{
+  "gerado_em": "2026-10-19T22:19:18.914525+00:00",
+  "estacao": "A002",
+  "agregacao": "UTC",
+  "anos": [
+    {
+      "ano": 2022,
+      "metadados_csv": {
+        "REGIAO:": "CO",
+        "UF:": "GO",
+        "ESTACAO:": "GOIANIA",
+        "CODIGO (WMO):": "A002",
+        "LATITUDE:": "-16,642841",
+        "LONGITUDE:": "-49,220222",
+        "ALTITUDE:": "727,3",
+        "DATA DE FUNDACAO:": "29/05/01"
+      },
+      "linhas_originais": 8760,
+      "horas_grade": 8760,
+      "ultima_hora_original": "2022-12-31T23:00:00+00:00",
+      "status": {
+        "chuva_mm": {
+          "valido": 6996,
+          "ausente": 1764
+        },
+        "temperatura_c": {
+          "valido": 8760
+        },
+        "umidade_pct": {
+          "valido": 8760
+        }
+      }
+    },
+    {
+      "ano": 2023,
+      "metadados_csv": {
+        "REGIAO:": "CO",
+        "UF:": "GO",
+        "ESTACAO:": "GOIANIA",
+        "CODIGO (WMO):": "A002",
+        "LATITUDE:": "-16,64277777",
+        "LONGITUDE:": "-49,22027777",
+        "ALTITUDE:": "727,3",
+        "DATA DE FUNDACAO:": "29/05/01"
+      },
+      "linhas_originais": 8760,
+      "horas_grade": 8760,
+      "ultima_hora_original": "2023-12-31T23:00:00+00:00",
+      "status": {
+        "chuva_mm": {
+          "valido": 8758,
+          "ausente": 2
+        },
+        "temperatura_c": {
+          "valido": 8758,
+          "ausente": 2
+        },
+        "umidade_pct": {
+          "valido": 8758,
+          "ausente": 2
+        }
+      }
+    },
+    {
+      "ano": 2024,
+      "metadados_csv": {
+        "REGIAO:": "CO",
+        "UF:": "GO",
+        "ESTACAO:": "GOIANIA",
+        "CODIGO (WMO):": "A002",
+        "LATITUDE:": "-16,64277777",
+        "LONGITUDE:": "-49,22027777",
+        "ALTITUDE:": "727,3",
+        "DATA DE FUNDACAO:": "29/05/01"
+      },
+      "linhas_originais": 8784,
+      "horas_grade": 8784,
+      "ultima_hora_original": "2024-12-31T23:00:00+00:00",
+      "status": {
+        "chuva_mm": {
+          "valido": 8725,
+          "ausente": 59
+        },
+        "temperatura_c": {
+          "valido": 8726,
+          "ausente": 58
+        },
+        "umidade_pct": {
+          "valido": 8702,
+          "ausente": 82
+        }
+      }
+    },
+    {
+      "ano": 2025,
+      "metadados_csv": {
+        "REGIAO:": "CO",
+        "UF:": "GO",
+        "ESTACAO:": "GOIANIA",
+        "CODIGO (WMO):": "A002",
+        "LATITUDE:": "-16,64277777",
+        "LONGITUDE:": "-49,22027777",
+        "ALTITUDE:": "727,3",
+        "DATA DE FUNDACAO:": "29/05/01"
+      },
+      "linhas_originais": 8760,
+      "horas_grade": 8760,
+      "ultima_hora_original": "2025-12-31T23:00:00+00:00",
+      "status": {
+        "chuva_mm": {
+          "valido": 6063,
+          "ausente": 2697
+        },
+        "temperatura_c": {
+          "valido": 6066,
+          "ausente": 2694
+        },
+        "umidade_pct": {
+          "valido": 6066,
+          "ausente": 2694
+        }
+      }
+    },
+    {
+      "ano": 2026,
+      "metadados_csv": {
+        "REGIAO:": "CO",
+        "UF:": "GO",
+        "ESTACAO:": "GOIANIA",
+        "CODIGO (WMO):": "A002",
+        "LATITUDE:": "-16,64277777",
+        "LONGITUDE:": "-49,22027777",
+        "ALTITUDE:": "727,3",
+        "DATA DE FUNDACAO:": "29/05/01"
+      },
+      "linhas_originais": 6552,
+      "horas_grade": 6552,
+      "ultima_hora_original": "2026-09-30T23:00:00+00:00",
+      "status": {
+        "chuva_mm": {
+          "valido": 6395,
+          "ausente": 157
+        },
+        "temperatura_c": {
+          "valido": 6398,
+          "ausente": 154
+        },
+        "umidade_pct": {
+          "valido": 6398,
+          "ausente": 154
+        }
+      }
+    }
+  ]
+}

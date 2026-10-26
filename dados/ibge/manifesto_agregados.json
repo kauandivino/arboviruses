@@ -1,0 +1,72 @@
+{
+  "consultado_em": "2026-10-19T21:58:45.972029+00:00",
+  "ano_referencia": 2022,
+  "arquivos": [
+    {
+      "id": "basico",
+      "tipo": "agregados",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/Agregados_por_setores_basico_BR_20260520.zip",
+      "etag": "\"eb4431-6523fe5422ac0\"",
+      "ultima_modificacao": "Wed, 20 May 2026 13:37:23 GMT",
+      "bytes": 15418417,
+      "arquivo": "dados\\ibge\\originais\\Agregados_por_setores_basico_BR_20260520.zip",
+      "sha256": "ec04624286233d699ebe69c7b9625744a1cfdfc8352126f30245bdef5e9bdc63",
+      "obtido_em": "2026-10-19T21:52:36.561869+00:00",
+      "status": "existente",
+      "verificado_em": "2026-10-19T21:58:45.166539+00:00"
+    },
+    {
+      "id": "domicilio1",
+      "tipo": "agregados",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/Agregados_por_setores_caracteristicas_domicilio1_BR.zip",
+      "etag": "\"171371f-626bbb126469f\"",
+      "ultima_modificacao": "Tue, 12 Nov 2024 18:50:33 GMT",
+      "bytes": 24196895,
+      "arquivo": "dados\\ibge\\originais\\Agregados_por_setores_caracteristicas_domicilio1_BR.zip",
+      "sha256": "8e0a27fc90912acba17586077ab83c0fd58b92975d90f19a600c0110d0cf72ca",
+      "obtido_em": "2026-10-19T21:52:40.634642+00:00",
+      "status": "existente",
+      "verificado_em": "2026-10-19T21:58:45.235121+00:00"
+    },
+    {
+      "id": "domicilio3",
+      "tipo": "agregados",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/Agregados_por_setores_caracteristicas_domicilio3_BR_20250417.zip",
+      "etag": "\"32442c5-632f8e1a9d6b2\"",
+      "ultima_modificacao": "Thu, 17 Apr 2025 12:52:59 GMT",
+      "bytes": 52708037,
+      "arquivo": "dados\\ibge\\originais\\Agregados_por_setores_caracteristicas_domicilio3_BR_20250417.zip",
+      "sha256": "f38010582b8329f4b3d63708f3e8aae3b8df1c1b471398b2c67f5ef3ad1ba5c7",
+      "obtido_em": "2026-10-19T21:52:59.324096+00:00",
+      "status": "existente",
+      "verificado_em": "2026-10-19T21:58:45.731625+00:00"
+    },
+    {
+      "id": "domicilio2",
+      "tipo": "agregados",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/Agregados_por_Setor_csv/Agregados_por_setores_caracteristicas_domicilio2_BR_20250417.zip",
+      "etag": "\"5014d2e-632f8e1ab97ea\"",
+      "ultima_modificacao": "Thu, 17 Apr 2025 12:52:59 GMT",
+      "bytes": 83971374,
+      "arquivo": "dados\\ibge\\originais\\Agregados_por_setores_caracteristicas_domicilio2_BR_20250417.zip",
+      "sha256": "513f8a0d9c84b1325487f651f6d5d90bbc6f5ad7af60460b53598555ac008759",
+      "obtido_em": "2026-10-19T21:53:03.101393+00:00",
+      "status": "existente",
+      "verificado_em": "2026-10-19T21:58:45.864072+00:00"
+    },
+    {
+      "id": "dicionario_agregados",
+      "tipo": "documentacao",
+      "url": "https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Agregados_por_Setores_Censitarios/dicionario_de_dados_agregados_por_setores_censitarios_20260520.xlsx",
+      "etag": "\"1ce61-651a590058b00\"",
+      "ultima_modificacao": "Tue, 12 May 2026 21:29:48 GMT",
+      "bytes": 118369,
+      "arquivo": "dados\\ibge\\documentacao\\dicionario_de_dados_agregados_por_setores_censitarios_20260520.xlsx",
+      "sha256": "0b8aedece57f6125d785b6aa2234cfd587e92dfb6ce5ca6ace8c67f140831344",
+      "obtido_em": "2026-10-19T21:52:59.679170+00:00",
+      "status": "existente",
+      "verificado_em": "2026-10-19T21:58:45.971830+00:00"
+    }
+  ],
+  "erros": []
+}

@@ -1,0 +1,43 @@
+{
+  "validado_em": "2026-10-19T22:09:21.321034+00:00",
+  "status": "aprovado_com_limitacoes",
+  "versao": 1,
+  "feicoes": 1208,
+  "setores": 2310,
+  "pares": 6462,
+  "candidatos_geometricos": 1305,
+  "fracao_area_municipio_coberta": 0.6006883979769968,
+  "invalidas_originais": 1,
+  "ids_municipais_repetidos": 1,
+  "arquivos": [
+    {
+      "arquivo": "dados\\malha_municipal\\goiania\\diagnostico_setores_bairros.csv",
+      "sha256": "fa36a3136a4a82cd4efc5dc976c199e8c08d08e47642cca01239b2daf75f5e8b"
+    },
+    {
+      "arquivo": "dados\\malha_municipal\\goiania\\intersecoes_setores_bairros.csv",
+      "sha256": "91d191df62907b3d6fef756d68bf42cb167c94ca53719ed04492000f8239c2d9"
+    },
+    {
+      "arquivo": "dados\\malha_municipal\\compatibilidade_ibge.json",
+      "sha256": "4572e8cfb3135d48fe9b192157cf23037cc03faf40b03dc23a52ba69b5640aad"
+    },
+    {
+      "arquivo": "dados\\malha_municipal\\qualidade_malha.json",
+      "sha256": "86bd7390967793b4be88e296768c34abe922d1097a55d555b2b67e9ce9e1cb7d"
+    }
+  ],
+  "limitacoes": [
+    "A camada representa Divisas de Bairro/loteamentos do SIGGO; equivalência com bairros da Saúde ainda não validada.",
+    "Cobertura territorial parcial e setores atravessando divisas: não há agregação de população por bairro.",
+    "Cadastro consultado atualmente e setores do Censo 2022 têm referências temporais distintas."
+  ],
+  "verificacoes": [
+    "Hashes dos originais e derivados",
+    "OIDs, contagens e integridade dos lotes",
+    "Geometrias reparadas só na cópia de análise",
+    "Chaves de todos os setores IBGE",
+    "Áreas de cada par recalculadas das geometrias",
+    "Reconciliação de status e ausência de candidatos em setores ambíguos"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "gerado_em": "2026-10-19T23:41:37.513344+00:00",
+  "observacoes_antes": 308,
+  "observacoes_revisadas": 360,
+  "registros_recuperados": 52,
+  "graficos_conferidos": 24,
+  "tabelas_conferidas": 4,
+  "rotulos_distintos": 53,
+  "status_correspondencia": {
+    "nominal_unico_nao_homologado": 37,
+    "pendente_identificacao_territorial": 13,
+    "rotulo_truncado_na_fonte": 3
+  },
+  "poligonos_com_candidato_nominal_unico": 31,
+  "observacoes_por_status_correspondencia": {
+    "nominal_unico_nao_homologado": 309,
+    "pendente_identificacao_territorial": 48,
+    "rotulo_truncado_na_fonte": 3
+  },
+  "status_periodo": {
+    "janela_declarada_na_fonte": 230,
+    "divergencia_na_legenda": 10,
+    "a_confirmar": 120
+  },
+  "rotulos_truncados_na_fonte": [
+    "SET DOS...",
+    "SET LESTE...",
+    "SET URIAS MAGAL..."
+  ],
+  "linhas_tabela_com_confirmados_maiores_provaveis": 7,
+  "observacoes_com_pendencias": 194,
+  "limites_homologados_pela_saude": 0,
+  "aptos_ranking_completo_ou_taxas": 0,
+  "regra": "Correspondência nominal não comprova equivalência territorial; não ratear população nem duplicar observações."
+}

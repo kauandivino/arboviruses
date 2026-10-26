@@ -1,0 +1,47 @@
+{
+  "processado_em": "2026-10-19T21:54:23.781279+00:00",
+  "ano_referencia": 2022,
+  "municipio": "5208707",
+  "malhas": {
+    "setores": {
+      "camada": "GO_setores_CD2022",
+      "feicoes_fonte": 12861,
+      "feicoes_goiania": 2310,
+      "crs": "EPSG:4674",
+      "geometrias_nulas": 0,
+      "geometrias_vazias": 0,
+      "geometrias_invalidas": 0,
+      "filtro": "\"CD_MUN\" = '5208707'",
+      "gpkg": "dados\\ibge\\goiania\\setores_goiania_2022.gpkg",
+      "sha256_gpkg": "319b2c5006966cf675a86e80404f43d2919553fd9d3fd8ad9f85dc2ddd2468ce",
+      "geojson": "dados\\ibge\\goiania\\setores_goiania_2022.geojson",
+      "sha256_geojson": "98b81fbe84142a65afa23ad528a14ebf0a23ed3a44b75043fac12536350d3e2f",
+      "fonte_sha256": "2553427433fa48dcf26a05e72a9576e79ae0d5ddd4324998e373845366316396"
+    },
+    "bairros": {
+      "camada": "GO_bairros_CD2022",
+      "feicoes_fonte": 33,
+      "feicoes_goiania": 0,
+      "crs": "EPSG:4674",
+      "geometrias_nulas": 0,
+      "geometrias_vazias": 0,
+      "geometrias_invalidas": 0,
+      "filtro": "\"CD_MUN\" = '5208707'",
+      "gpkg": "dados\\ibge\\goiania\\bairros_goiania_2022.gpkg",
+      "sha256_gpkg": "9a8bb2c9cda840d2736f83617560605282ee29d61df9e38d2a6ed239ad03749a",
+      "geojson": "dados\\ibge\\goiania\\bairros_goiania_2022.geojson",
+      "sha256_geojson": "51a4a94a0733291f11dff88c98d96611c3a05f564e2cda9b6f354df83aa1e09c",
+      "fonte_sha256": "d2d9cd2a9d4d567e191523de8828a28721ede2e8b98d5da4b1223978f33c3861"
+    }
+  },
+  "correspondencia": {
+    "arquivo": "dados\\ibge\\goiania\\correspondencia_setores_bairros_2022.csv",
+    "sha256": "bf0a3aff00eab0d7c6545726b4e4e0dd5003b7f29c6919bc9cd2ac9732348f09",
+    "status": {
+      "sem_codigo_bairro_na_malha": 2310
+    },
+    "tolerancia_relativa_area": 0.0001,
+    "agregacao_por_bairro_executada": false,
+    "observacao": "Usa somente códigos de bairro do IBGE; não afirma equivalência com bairros da Saúde ou da Prefeitura."
+  }
+}

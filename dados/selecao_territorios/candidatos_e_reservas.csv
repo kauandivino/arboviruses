@@ -1,0 +1,16 @@
+﻿OID_SIGGO,territorio,janelas_com_citacao,janelas_observadas,edicoes_citadas,ultima_edicao_citada,janelas_alternativas_com_citacao,parceiros_ate_3km_do_poligono,menor_distancia_parceiro_m,elegivel_planejamento,selecionado,motivo_decisao
+1029,S Urias Magalhães,5,6,20;24;28;32;36,36,5,4,1345.1,True,True,selecionado
+1110,S Leste Vila Nova,5,6,20;24;28;32;36,36,5,5,0.0,True,True,selecionado
+112,Prq Atheneu,5,6,20;24;28;32;36,36,6,1,24.2,True,True,selecionado
+1127,S Pedro Ludovico,5,6,20;24;28;32;36,36,5,4,316.6,True,True,selecionado
+51,S Parque Tremendão,4,6,20;24;28;36,36,4,5,179.8,True,True,selecionado
+10,Jd Nova Esperança,4,6,16;24;28;32,32,5,6,1228.5,True,True,selecionado
+22,Jd Novo Mundo,4,6,20;24;28;32,32,5,6,0.0,True,True,selecionado
+1115,Vl Finsocial,3,6,16;20;24,24,5,7,0.0,True,True,selecionado
+273,Bro São Carlos,2,6,24;36,36,2,1,2686.0,True,False,reserva_menor_recorrencia_nas_listas
+829,Res Estrela D'alva,2,6,20;32,32,0,2,827.4,True,False,reserva_menor_recorrencia_nas_listas
+109,Jd Balneário Meia Ponte,1,6,36,36,1,6,0.0,True,False,reserva_menor_recorrencia_nas_listas
+1109,S Leste Universitário,1,6,36,36,1,6,0.0,True,False,reserva_menor_recorrencia_nas_listas
+690,Prq Santa Cruz,1,6,36,36,0,2,2273.4,True,False,reserva_menor_recorrencia_nas_listas
+607,S dos Funcionários,1,6,28,28,1,5,521.5,True,False,reserva_menor_recorrencia_nas_listas
+482,S Central,1,6,16,16,1,7,62.2,True,False,reserva_menor_recorrencia_nas_listas

@@ -1,0 +1,217 @@
+{
+  "registros": [
+    {
+      "bairro": "JDNOVOMUNDO",
+      "valor_original": "104",
+      "valor": 104,
+      "bbox_bairro": [
+        139.15689655068226,
+        469.33563346775463,
+        191.01139383769575,
+        521.190130754768
+      ],
+      "bbox_valor": [
+        182.7801513671875,
+        642.3768920898438,
+        195.32754516601562,
+        648.2139282226562
+      ],
+      "confianca_ocr_bairro": 0.9902035106312145,
+      "imagem_conferencia": "dados\\informes_extraidos\\inspecao\\ocr14\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "JD CURITIBAI",
+      "valor_original": "90",
+      "valor": 90,
+      "bbox_bairro": [
+        181.8190056822706,
+        480.6493419667393,
+        223.30260351188141,
+        522.1329397963502
+      ],
+      "bbox_valor": [
+        215.57566833496094,
+        627.89697265625,
+        223.974853515625,
+        633.7340087890625
+      ],
+      "confianca_ocr_bairro": 0.9393422355254492,
+      "imagem_conferencia": "dados\\informes_extraidos\\inspecao\\ocr14\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "SETURIASMAGALHAES",
+      "valor_original": "82",
+      "valor": 82,
+      "bbox_bairro": [
+        186.76875315057646,
+        455.1934978440236,
+        252.7653860613209,
+        521.190130754768
+      ],
+      "bbox_valor": [
+        246.50723266601562,
+        619.6255493164062,
+        254.74188232421875,
+        625.4625854492188
+      ],
+      "confianca_ocr_bairro": 0.9854225937057944,
+      "imagem_conferencia": "dados\\informes_extraidos\\inspecao\\ocr14\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "PRQ ATHENEU",
+      "valor_original": "77",
+      "valor": 77,
+      "bbox_bairro": [
+        240.98027304154508,
+        478.2923193627842,
+        284.1137866939245,
+        521.4258330151636
+      ],
+      "bbox_valor": [
+        277.5309753417969,
+        614.4974365234375,
+        285.774658203125,
+        620.1995849609375
+      ],
+      "confianca_ocr_bairro": 0.9527410702271895,
+      "imagem_conferencia": "dados\\informes_extraidos\\inspecao\\ocr14\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "VIFINSOCIAL",
+      "valor_original": "73",
+      "valor": 73,
+      "bbox_bairro": [
+        274.9213985384994,
+        481.827853268717,
+        314.75508054534157,
+        521.6615352755591
+      ],
+      "bbox_valor": [
+        308.4825134277344,
+        610.3078002929688,
+        316.5748291015625,
+        616.1448364257812
+      ],
+      "confianca_ocr_bairro": 0.9901600751009855,
+      "imagem_conferencia": "dados\\informes_extraidos\\inspecao\\ocr14\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "JD GUANABARA",
+      "valor_original": "64",
+      "valor": 64,
+      "bbox_bairro": [
+        299.1987313592375,
+        474.992487717247,
+        345.63207665715413,
+        521.4258330151636
+      ],
+      "bbox_valor": [
+        339.47015380859375,
+        601.0198974609375,
+        347.815185546875,
+        606.85693359375
+      ],
+      "confianca_ocr_bairro": 0.9583780368169149,
+      "imagem_conferencia": "dados\\informes_extraidos\\inspecao\\ocr14\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "SET LESTEVILANOVA",
+      "valor_original": "62",
+      "valor": 62,
+      "bbox_bairro": [
+        315.6978895869236,
+        460.6146498331205,
+        376.74477502936224,
+        521.6615352755591
+      ],
+      "bbox_valor": [
+        370.3917236328125,
+        598.9470825195312,
+        378.51806640625,
+        604.7841186523438
+      ],
+      "confianca_ocr_bairro": 0.9745016273330239,
+      "imagem_conferencia": "dados\\informes_extraidos\\inspecao\\ocr14\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "JD NOVAESPERANCA",
+      "valor_original": "60",
+      "valor": 60,
+      "bbox_bairro": [
+        347.04629021952724,
+        460.850352093516,
+        407.3860688807793,
+        521.190130754768
+      ],
+      "bbox_valor": [
+        401.34326171875,
+        596.8842163085938,
+        409.6341552734375,
+        602.7212524414062
+      ],
+      "confianca_ocr_bairro": 0.9715986661612988,
+      "imagem_conferencia": "dados\\informes_extraidos\\inspecao\\ocr14\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "BROJARDIMAMERICA",
+      "valor_original": "57",
+      "valor": 57,
+      "bbox_bairro": [
+        374.6234546858025,
+        457.3148181875833,
+        438.26306499259186,
+        520.9544284943726
+      ],
+      "bbox_valor": [
+        432.2677307128906,
+        593.7650146484375,
+        440.4773864746094,
+        599.5211181640625
+      ],
+      "confianca_ocr_bairro": 0.9923617243766785,
+      "imagem_conferencia": "dados\\informes_extraidos\\inspecao\\ocr14\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    },
+    {
+      "bairro": "SETSANTOSDUMONT",
+      "valor_original": "56",
+      "valor": 56,
+      "bbox_bairro": [
+        405.26474853721965,
+        457.55052044797884,
+        470.08287014598653,
+        522.3686420567457
+      ],
+      "bbox_valor": [
+        463.1893005371094,
+        592.74853515625,
+        471.48712158203125,
+        598.5855712890625
+      ],
+      "confianca_ocr_bairro": 0.9910141189893087,
+      "imagem_conferencia": "dados\\informes_extraidos\\inspecao\\ocr14\\grafico.png",
+      "origem_nome": "ocr_local_pendente_revisao",
+      "origem_valor": "texto_vetorial_pdf"
+    }
+  ],
+  "sha256_imagem": "91d2bf98d529165584a5df5c2faeb9ae1933c0e4493b952d07e5180dbaf00c81",
+  "escala_renderizacao": 3.0,
+  "aviso": "Confiança do OCR não é probabilidade de correção; todos os nomes exigem revisão."
+}
