@@ -1,6 +1,6 @@
 {
-  "gerado_em": "2026-10-20T06:45:50.685696+00:00",
-  "metodo": "selecionar_territorios.py",
+  "gerado_em": "2026-10-26T03:04:55.070484+00:00",
+  "metodo": "pipeline/processamento/selecionar_territorios.py",
   "janelas_principais": [
     16,
     20,

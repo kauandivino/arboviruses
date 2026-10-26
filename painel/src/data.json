@@ -1,7 +1,7 @@
 {
   "surface": "dashboard",
   "title": "Saúde no Território · Goiânia",
-  "generatedAt": "2026-10-20T06:45:55.257134+00:00",
+  "generatedAt": "2026-10-26T03:06:35.346580+00:00",
   "status": "observed",
   "buildStatus": "complete",
   "filters": [
@@ -3930,7 +3930,7 @@
           "dados/base_integrada/municipal_mensal_clima.csv"
         ],
         "description": "Registros SINAN, todas as classificações: dengue por residência e mês da notificação; escorpiões por ocorrência e mês do acidente. Não são pessoas únicas. Ausência não é zero. 2026 parcial; meses com registros podem estar incompletos. Clima A002 em UTC.",
-        "dataPreparedAt": "2026-10-20T05:58:19.514864+00:00",
+        "dataPreparedAt": "2026-10-26T03:04:45.857235+00:00",
         "metricDefinitions": [
           {
             "label": "municipal mensal clima",
@@ -3940,7 +3940,7 @@
         "evidenceFlow": [
           {
             "title": "Reprodução local",
-            "detail": "Executar integrar_bases.py e preparar_painel.py na raiz do projeto. Insumos e hashes em dados/base_integrada/manifesto.json."
+            "detail": "Executar python -m pipeline na raiz do projeto. Insumos e hashes em dados/base_integrada/manifesto.json."
           }
         ],
         "caveats": [
@@ -23044,7 +23044,7 @@
           "dados/base_integrada/bairros_publicados.csv"
         ],
         "description": "Lista publicada por edição, agravo e indicador; janelas sobrepostas não são somadas. Não comprova todos os bairros. Correspondência SIGGO nominal, sem homologação dos limites. Não permite taxas nem ranking municipal completo.",
-        "dataPreparedAt": "2026-10-20T05:58:19.514864+00:00",
+        "dataPreparedAt": "2026-10-26T03:04:45.857235+00:00",
         "metricDefinitions": [
           {
             "label": "bairros publicados",
@@ -23054,7 +23054,7 @@
         "evidenceFlow": [
           {
             "title": "Reprodução local",
-            "detail": "Executar integrar_bases.py e preparar_painel.py na raiz do projeto. Insumos e hashes em dados/base_integrada/manifesto.json."
+            "detail": "Executar python -m pipeline na raiz do projeto. Insumos e hashes em dados/base_integrada/manifesto.json."
           }
         ],
         "caveats": [
@@ -24389,7 +24389,7 @@
           "dados/base_integrada/clima_mensal.csv"
         ],
         "description": "Estação A002; calendário UTC. Chuva observada pode ser parcial. Médias de temperatura e umidade são horárias, com cobertura explícita. Não atribui causalidade nem diferenças climáticas entre bairros.",
-        "dataPreparedAt": "2026-10-20T05:58:19.514864+00:00",
+        "dataPreparedAt": "2026-10-26T03:04:45.857235+00:00",
         "metricDefinitions": [
           {
             "label": "clima mensal",
@@ -24399,7 +24399,7 @@
         "evidenceFlow": [
           {
             "title": "Reprodução local",
-            "detail": "Executar integrar_bases.py e preparar_painel.py na raiz do projeto. Insumos e hashes em dados/base_integrada/manifesto.json."
+            "detail": "Executar python -m pipeline na raiz do projeto. Insumos e hashes em dados/base_integrada/manifesto.json."
           }
         ],
         "caveats": [
@@ -27023,7 +27023,7 @@
           "dados/base_integrada/parceiros_candidatos.csv"
         ],
         "description": "Cadastros públicos sem motivo de desativação registrado e coordenadas dentro da malha municipal. Competência setembro de 2026. Funcionamento e interesse em parceria precisam ser verificados.",
-        "dataPreparedAt": "2026-10-20T05:58:19.514864+00:00",
+        "dataPreparedAt": "2026-10-26T03:04:45.857235+00:00",
         "metricDefinitions": [
           {
             "label": "parceiros candidatos",
@@ -27033,7 +27033,7 @@
         "evidenceFlow": [
           {
             "title": "Reprodução local",
-            "detail": "Executar integrar_bases.py e preparar_painel.py na raiz do projeto. Insumos e hashes em dados/base_integrada/manifesto.json."
+            "detail": "Executar python -m pipeline na raiz do projeto. Insumos e hashes em dados/base_integrada/manifesto.json."
           }
         ],
         "caveats": [
@@ -27064,7 +27064,7 @@
           "dados/base_integrada/contexto_censo_2022.csv"
         ],
         "description": "População do Censo 2022, sem estimativa para 2026 nem rateio por bairro.",
-        "dataPreparedAt": "2026-10-20T05:58:19.514864+00:00",
+        "dataPreparedAt": "2026-10-26T03:04:45.857235+00:00",
         "metricDefinitions": [
           {
             "label": "contexto censo 2022",
@@ -27074,7 +27074,7 @@
         "evidenceFlow": [
           {
             "title": "Reprodução local",
-            "detail": "Executar integrar_bases.py e preparar_painel.py na raiz do projeto. Insumos e hashes em dados/base_integrada/manifesto.json."
+            "detail": "Executar python -m pipeline na raiz do projeto. Insumos e hashes em dados/base_integrada/manifesto.json."
           }
         ],
         "caveats": [
@@ -27223,14 +27223,14 @@
         "evidenceFlow": [
           {
             "title": "Reprodução",
-            "detail": "Executar selecionar_territorios.py e verificar_selecao.py. Fontes e hashes no manifesto de seleção. Plano e justificativa em SELECAO-TERRITORIOS.md."
+            "detail": "Executar python -m pipeline (etapas selecionar_territorios e verificar_selecao). Fontes e hashes no manifesto de seleção. Plano e justificativa em SELECAO-TERRITORIOS.md."
           }
         ]
       },
       "methods": [
         {
           "language": "text",
-          "code": "selecionar_territorios.py: filtrar edições e correspondências nominais; contar edições distintas; confrontar bairro CNES e coordenadas com malha SIGGO; excluir divergências; selecionar oito por presença nas listas e parceiros candidatos até 3 km do polígono. Nenhuma parceria ou agenda confirmada."
+          "code": "pipeline/processamento/selecionar_territorios.py: filtrar edições e correspondências nominais; contar edições distintas; confrontar bairro CNES e coordenadas com malha SIGGO; excluir divergências; selecionar oito por presença nas listas e parceiros candidatos até 3 km do polígono. Nenhuma parceria ou agenda confirmada."
         }
       ]
     }
