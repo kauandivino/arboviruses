@@ -1,6 +1,7 @@
 import React from 'react';
 import { EvidenceChart, DataComponent, DataTable, Filters, Section, MetricCard, SortableRegion, SortableItem, useDashboardTabs, useDataApp } from '../../data-app-public.jsx';
 import { CartaoMapa } from './MapaTerritorios.jsx';
+import { AcoesCampo } from './AcoesCampo.jsx';
 import './dashboard.css';
 const tabs = [
  {id:'municipal',label:'Evolução municipal',filterIds:['ano']},
@@ -9,6 +10,7 @@ const tabs = [
  {id:'parceiros',label:'Unidades de saúde',filterIds:[]}
  ,{id:'mapa',label:'Mapa',filterIds:[]}
  ,{id:'atuacao',label:'Plano de atuação',filterIds:[]}
+ ,{id:'acoes',label:'Ações de campo',filterIds:[]}
 ];
 const number = v => v == null ? 'Sem dado' : new Intl.NumberFormat('pt-BR').format(v);
 const col = (field,label) => ({field,label});
@@ -77,6 +79,10 @@ export function DashboardContent() {
  {tab.id==='mapa' && <>
  <Notice>Oito territórios selecionados, os demais elegíveis e as unidades de saúde candidatas, sobre as malhas oficiais (IBGE 2022 e SIGGO). A cor indica em quantas das seis listas de dengue de 2026 o território foi citado. Não representa risco, incidência nem área de abrangência das unidades. Bairros sem cor não foram citados ou não têm correspondência única com a malha; isso não significa zero casos.</Notice>
  <CartaoMapa rows={all('mapa')}/>
+ </>}
+ {tab.id==='acoes' && <>
+ <Notice>Registro das ações realizadas, planejadas ou canceladas nos territórios. Os indicadores são calculados apenas a partir destes registros; não há valores estimados. Cada alteração gera uma nova versão, e as anteriores continuam no histórico.</Notice>
+ <AcoesCampo snapshotRows={all('acoes')} bairros={all('mapa').filter(r=>r.camada==='bairro').sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'))} unidades={all('mapa').filter(r=>r.camada==='unidade').sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'))}/>
  </>}
  {tab.id==='atuacao' && <>
  <Notice>Proposta para oito territórios: presença em seis listas de dengue com janelas sem sobreposição, identificação nominal e parceiros candidatos. Os mesmos oito permanecem no recorte alternativo. A ordem organiza contatos, sem representar risco epidemiológico ou cronograma confirmado.</Notice>

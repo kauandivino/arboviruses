@@ -15,7 +15,7 @@ Tudo aqui usa dados reais coletados das fontes oficiais. Nada é simulado nem es
 | CNES | Estabelecimentos de saúde com endereço e coordenadas | [CNES](docs/CNES.md) |
 | INMET | Estação automática A002: chuva, temperatura, umidade | [INMET](docs/INMET.md) |
 
-Resultados: [mapa e painel](docs/PAINEL.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
+Resultados: [painel, mapa e registro das ações de campo](docs/PAINEL.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
 
 ## Estrutura
 
@@ -53,7 +53,7 @@ Tudo roda a partir da raiz:
 & .venv/Scripts/python.exe -m pipeline --reprocessar  # refaz antes o processamento dos originais locais
 & .venv/Scripts/python.exe -m pipeline --coletar      # baixa antes as versões atuais das fontes oficiais
 & .venv/Scripts/python.exe -m pipeline --listar       # mostra as etapas sem executar
-.\abrir_painel.ps1                                    # abre o painel em http://127.0.0.1:4173/
+.\abrir_painel.ps1                                    # painel e registro de ações em http://127.0.0.1:4173/
 ```
 
 O pipeline para na primeira etapa que falhar. O painel só é atualizado depois que todos os testes e validações passam, e o registro de cada execução fica em `dados/pipeline_ultima_execucao.json`. Cada etapa também pode rodar sozinha, por exemplo `python -m pipeline.coleta.baixar_cnes`. Veja as opções na documentação de cada fonte.

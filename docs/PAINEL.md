@@ -10,7 +10,7 @@ Com o servidor iniciado, acesse http://127.0.0.1:4173/ no navegador. Para inicia
 .\abrir_painel.ps1
 ```
 
-O terminal precisa permanecer aberto. Use `-Porta 4174` caso a porta já esteja ocupada e acesse a nova porta. O servidor atende apenas no próprio computador.
+O script inicia `pipeline/servidor.py`, que serve o painel e a API local das ações de campo. O terminal precisa permanecer aberto. Use `-Porta 4174` caso a porta já esteja ocupada e acesse a nova porta. O servidor atende apenas no próprio computador e só aceita gravações vindas da própria página do painel.
 
 ## Consultas disponíveis
 
@@ -20,6 +20,14 @@ O terminal precisa permanecer aberto. Use `-Porta 4174` caso a porta já esteja 
 - Unidades de saúde: busca e paginação dos 200 cadastros públicos candidatos a contato. Não comprova funcionamento ou disponibilidade para parceria.
 - Mapa: limite municipal (setores IBGE 2022 dissolvidos), 1.208 bairros SIGGO, os 15 territórios elegíveis coloridos pelo número de listas de dengue de 2026 que os citam, os oito selecionados com a ordem de contato e as 200 unidades CNES candidatas, com os parceiros destacados. Zoom pela roda do mouse, por botões ou por pinça; arraste para mover; "Ir para" enquadra um território; clique ou Enter mostra os dados de origem. Geometria real em EPSG:31982 com escala gráfica; contornos simplificados em 8 m (bairros) e 15 m (limite) apenas para exibição. Preparado por `pipeline/processamento/preparar_mapa.py`, testado por `pipeline/verificacao/verificar_mapa.py`; fontes e hashes em `dados/mapa/manifesto.json`. A feição SIGGO 5158 ("Gleba") tem área zero na fonte e fica sem contorno.
 - Plano de atuação: oito territórios propostos, presença nas listas em duas configurações de janelas, parceiros candidatos e condições antes de agendar. Justificativa detalhada em SELECAO-TERRITORIOS.md; planilha em dados/selecao_territorios/selecao_e_plano.xlsx.
+- Ações de campo: formulário para registrar ações planejadas, realizadas ou canceladas, com data, atividade, território (malha SIGGO), local, unidade parceira (CNES), contagem de participantes, materiais, responsável e observações. Indicadores de execução calculados somente a partir dos registros: ações realizadas, participantes, territórios com ação e materiais distribuídos (só das ações que informaram quantidade). Editar exige motivo e cria uma nova versão. Sem o servidor local, a aba mostra os registros da última compilação, só para leitura.
+
+### Onde ficam os registros
+
+- `dados/acoes_campo/registros.jsonl`: histórico com todas as versões, uma linha por gravação, nunca reescrito. É a fonte oficial e fica versionado no git.
+- `dados/acoes_campo/acoes.csv`: estado atual, regenerado a cada gravação, para abrir em planilha.
+
+As regras de validação ficam em `pipeline/acoes_campo.py`: o território precisa existir na malha, a unidade precisa estar entre as candidatas do CNES, uma ação realizada não pode ter data futura e precisa da contagem de participantes, e ações planejadas ou canceladas não aceitam contagens. Não registre nomes de participantes. Faça commit dos registros periodicamente para ter cópia do histórico.
 
 Menus dos componentes permitem consultar fontes e dados da seleção. A interface compartilhada possui alguns controles em inglês. O painel não faz atualizações de fontes sozinho. A data de geração do snapshot não significa que todos os dados tenham essa data de referência.
 

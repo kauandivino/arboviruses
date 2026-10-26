@@ -53,7 +53,7 @@ def etapas(args):
     yield 'integracao', 'selecionar_territorios', modulo('processamento.selecionar_territorios')
     yield 'integracao', 'preparar_mapa', modulo('processamento.preparar_mapa')
     for teste in ['cnes', 'datasus', 'download', 'extracao_informes', 'ibge', 'inmet', 'integracao',
-                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa']:
+                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo']:
         yield 'verificacao', f'teste_{teste}', modulo(f'verificacao.verificar_{teste}')
     yield 'verificacao', 'validar_datasus', modulo('verificacao.validar_coleta_datasus')
     yield 'verificacao', 'validar_ibge', modulo('verificacao.validar_ibge')

@@ -2,7 +2,7 @@
   "erros": [],
   "overflow_mobile": false,
   "verificacoes": [
-    "seis abas",
+    "sete abas",
     "ano 2022, todos e 2026",
     "edição SE35 e alerta",
     "combinação territorial vazia",
@@ -10,6 +10,7 @@
     "busca vazia e restauração das 200 unidades",
     "oito territórios e justificativas",
     "mapa: foco, detalhe e camada de unidades",
+    "ações de campo: validação, registro, edição com motivo e versões",
     "desktop e mobile"
   ]
 }

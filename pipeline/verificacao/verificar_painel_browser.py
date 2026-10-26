@@ -4,8 +4,12 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import json
 import re
+import tempfile
 import threading
 from playwright.sync_api import sync_playwright
+
+from pipeline import acoes_campo
+from pipeline.servidor import criar_servidor
 
 OUT = Path('dados/verificacao_painel')
 OUT.mkdir(parents=True, exist_ok=True)
@@ -81,6 +85,9 @@ with sync_playwright() as p:
     capture('mapa_mobile')
     assert not page.evaluate('document.documentElement.scrollWidth > innerWidth + 2')
     page.set_viewport_size({'width':1440,'height':1000})
+    tab('Ações de campo')
+    assert 'Indicadores de execução' in page.locator('body').inner_text()
+    capture('acoes_desktop')
     tab('Plano de atuação')
     assert 'Prq Atheneu' in page.locator('body').inner_text()
     assert 'Jd Nova Esperança' in page.locator('body').inner_text()
@@ -90,7 +97,44 @@ with sync_playwright() as p:
     capture('selecao_mobile')
     assert not page.evaluate('document.documentElement.scrollWidth > innerWidth + 2')
     assert not erros, erros
-    (OUT / 'validacao_browser.json').write_text(json.dumps({'erros':erros,'overflow_mobile':overflow,'verificacoes':['seis abas','ano 2022, todos e 2026','edição SE35 e alerta','combinação territorial vazia','edição 2024 chikungunya','busca vazia e restauração das 200 unidades','oito territórios e justificativas','mapa: foco, detalhe e camada de unidades','desktop e mobile']},ensure_ascii=False,indent=2),encoding='utf-8')
+
+    # Registro de ações de ponta a ponta, com o servidor real gravando em pasta temporária.
+    with tempfile.TemporaryDirectory() as pasta:
+        api = criar_servidor(0, Path(pasta))
+        threading.Thread(target=api.serve_forever, daemon=True).start()
+        pagina = browser.new_page(viewport={'width': 1440, 'height': 1000})
+        pagina.on('pageerror', lambda error: erros.append(str(error)))
+        pagina.goto(f'http://127.0.0.1:{api.server_port}/', wait_until='networkidle')
+        pagina.get_by_role('tab', name='Ações de campo', exact=True).click()
+        pagina.get_by_text('Nenhuma ação registrada até agora.').wait_for()
+        pagina.get_by_role('button', name='Registrar ação').click()
+        pagina.get_by_text('Corrija os campos indicados.').wait_for()
+        assert not acoes_campo.historico(Path(pasta)), 'formulário inválido não pode gravar'
+        pagina.fill('#f-data', '2026-10-20')
+        pagina.select_option('#f-territorio', label='1. Prq Atheneu')
+        pagina.fill('#f-local', 'Teste automatizado')
+        pagina.select_option('#f-parceiro', label='USF PARQUE ATHENEU')
+        pagina.fill('#f-participantes', '12')
+        pagina.fill('#f-responsavel', 'Verificação automática')
+        pagina.get_by_role('button', name='Registrar ação').click()
+        pagina.get_by_text('Ação registrada.').wait_for()
+        pagina.get_by_role('cell', name='Teste automatizado').wait_for()
+        capture_api = lambda nome: pagina.screenshot(path=str(OUT / f'{nome}.png'), full_page=True)
+        capture_api('acoes_registrada')
+        pagina.get_by_role('button', name=re.compile('^Editar registro ')).click()
+        pagina.fill('#f-participantes', '14')
+        pagina.get_by_role('button', name='Gravar alteração').click()
+        pagina.get_by_text('Corrija os campos indicados.').wait_for()
+        pagina.fill('#f-motivo', 'Contagem conferida')
+        pagina.get_by_role('button', name='Gravar alteração').click()
+        pagina.get_by_text('Alteração gravada.').wait_for()
+        versoes = acoes_campo.historico(Path(pasta))
+        assert [v['participantes'] for v in versoes] == [12, 14], versoes
+        assert versoes[0]['territorio'] == 'Prq Atheneu' and versoes[0]['CO_CNES'] == '2665239'
+        assert '14' in pagina.locator('[data-component-id="pessoas-alcancadas"]').inner_text()
+        api.shutdown(); api.server_close()
+    assert not erros, erros
+    (OUT / 'validacao_browser.json').write_text(json.dumps({'erros':erros,'overflow_mobile':overflow,'verificacoes':['sete abas','ano 2022, todos e 2026','edição SE35 e alerta','combinação territorial vazia','edição 2024 chikungunya','busca vazia e restauração das 200 unidades','oito territórios e justificativas','mapa: foco, detalhe e camada de unidades','ações de campo: validação, registro, edição com motivo e versões','desktop e mobile']},ensure_ascii=False,indent=2),encoding='utf-8')
     print('Verificação do navegador concluída.')
     browser.close()
 servidor.shutdown()

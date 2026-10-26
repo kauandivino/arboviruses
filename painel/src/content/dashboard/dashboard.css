@@ -58,3 +58,20 @@
   .st-mapa-zoom { margin-inline-start: 0; }
   .st-mapa-quadro svg { height: min(62vh, 120vw); }
 }
+
+/* Ações de campo */
+.st-alerta { color: var(--text); border-inline-start: 3px solid var(--negative); padding-inline-start: 12px; }
+.st-form { display: grid; gap: 16px; padding: 20px; border: 1px solid var(--border); border-radius: 16px; background: var(--data-card-background, var(--surface)); }
+.st-form-titulo { display: flex; justify-content: space-between; gap: 12px; align-items: center; flex-wrap: wrap; }
+.st-form-grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px 18px; }
+.st-campo { display: grid; gap: 5px; font-size: 13px; color: var(--secondary); align-content: start; }
+.st-campo.largo { grid-column: 1 / -1; }
+.st-campo input, .st-campo select, .st-campo textarea { font: inherit; font-size: 14px; color: var(--text); background: var(--control); border: 1px solid var(--border); border-radius: var(--control-radius, 8px); padding: 8px 10px; min-width: 0; }
+.st-campo input:disabled { opacity: 0.6; }
+.st-campo textarea { resize: vertical; }
+.st-campo em { font-style: normal; color: var(--negative); }
+.st-form-ajuda { margin: 0; font-size: 13px; color: var(--secondary); }
+.st-form-acoes { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; font-size: 14px; }
+.st-botao { font: inherit; font-size: 14px; font-weight: 600; padding: 8px 16px; border-radius: var(--control-radius, 8px); border: 1px solid var(--accent); background: var(--accent); color: var(--surface); cursor: pointer; }
+.st-botao:disabled { opacity: 0.6; cursor: default; }
+.st-botao.secundario { font-weight: 500; padding: 4px 10px; background: var(--control); color: var(--text); border-color: var(--border); }

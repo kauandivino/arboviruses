@@ -81,6 +81,18 @@ def snapshot(concluir=False):
                 'evidenceFlow': [{'title': 'Reprodução', 'detail': 'Executar python -m pipeline (etapa preparar_mapa). Fontes e hashes em dados/mapa/manifesto.json.'}],
                 'caveats': ['A correspondência entre os nomes dos informes e os polígonos SIGGO é nominal e não homologada pela Secretaria.', 'O mapa não representa risco, incidência nem área de abrangência das unidades.']},
             'methods': [{'language': 'text', 'code': 'pipeline/processamento/preparar_mapa.py: projetar malhas e pontos para EPSG:31982; dissolver setores IBGE no limite municipal; simplificar com preservação de topologia; converter em caminhos SVG; associar presença nas listas e parceiro candidato pelo OID SIGGO e CNES.'}]}
+    from pipeline import acoes_campo
+    acoes = acoes_campo.atuais()
+    queries['acoes'] = {'rows': acoes, 'source': {'name': 'Ações de campo', 'provider': 'Registro local da equipe do projeto',
+        'files': ['dados/acoes_campo/registros.jsonl', 'dados/acoes_campo/acoes.csv'],
+        'dataPreparedAt': max((r['registrado_em'] for r in acoes), default=None),
+        'metricDefinitions': [
+            {'label': 'Ações realizadas', 'definition': 'Registros cuja versão atual tem situação "realizada".'},
+            {'label': 'Participantes', 'definition': 'Soma das contagens informadas nas ações realizadas; não identifica pessoas únicas.'},
+            {'label': 'Materiais distribuídos', 'definition': 'Soma das quantidades informadas; ações sem contagem ficam fora da soma, sem zero.'}],
+        'evidenceFlow': [{'title': 'Registro', 'detail': 'Formulário do painel servido por python -m pipeline.servidor; cada gravação acrescenta uma versão em registros.jsonl.'}],
+        'caveats': ['Indicadores de execução e alcance; não demonstram efeito das ações sobre os casos.']},
+        'methods': [{'language': 'text', 'code': 'pipeline/acoes_campo.py: validar campos e referências (malha SIGGO, CNES); acrescentar versão; estado atual = última versão de cada id.'}]}
     result = {'surface': 'dashboard', 'title': 'Saúde no Território · Goiânia',
         'generatedAt': datetime.now(timezone.utc).isoformat(), 'status': 'observed',
         'buildStatus': 'creating', 'filters': [
