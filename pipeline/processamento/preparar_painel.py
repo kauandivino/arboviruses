@@ -67,6 +67,20 @@ def snapshot(concluir=False):
                     {'label':'Parceiro e distância','definition':'Unidade pública candidata com compatibilidade geográfica exploratória do bairro cadastrado. Distância mínima entre ponto e polígono nominal em EPSG31982; não é trajeto nem cobertura assistencial. Funcionamento, aceite, espaço, custos e acesso não confirmados.'}],
                 'evidenceFlow':[{'title':'Reprodução','detail':'Executar python -m pipeline (etapas selecionar_territorios e verificar_selecao). Fontes e hashes no manifesto de seleção. Plano e justificativa em SELECAO-TERRITORIOS.md.'}]
             }, 'methods':[{'language':'text','code':'pipeline/processamento/selecionar_territorios.py: filtrar edições e correspondências nominais; contar edições distintas; confrontar bairro CNES e coordenadas com malha SIGGO; excluir divergências; selecionar oito por presença nas listas e parceiros candidatos até 3 km do polígono. Nenhuma parceria ou agenda confirmada.'}]}
+    mapa = ROOT / 'dados/mapa/camadas.json'
+    if mapa.exists():
+        meta = json.loads((ROOT / 'dados/mapa/manifesto.json').read_text(encoding='utf-8'))
+        queries['mapa'] = {'rows': json.loads(mapa.read_text(encoding='utf-8')),
+            'source': {'name': 'Mapa dos territórios', 'provider': 'Malhas IBGE 2022 e SIGGO; CNES 202609; seleção operacional',
+                'files': [mapa.relative_to(ROOT).as_posix(), 'dados/mapa/manifesto.json'],
+                'dataPreparedAt': meta['gerado_em'],
+                'metricDefinitions': [
+                    {'label': 'Geometria', 'definition': f"SIRGAS 2000 / UTM 22S (EPSG:31982), coordenadas em metros a partir do canto noroeste do limite municipal. Simplificação de exibição: {meta['simplificacao_m']['bairros']} m nos bairros e {meta['simplificacao_m']['limite']} m no limite. Distâncias e escala são reais; contornos simplificados não servem para medir área."},
+                    {'label': 'Presença nas listas', 'definition': 'Somente para os 15 territórios com correspondência nominal única e elegíveis na seleção: número de listas de dengue de 2026 (SE16 a SE36, janelas sem sobreposição) que citam o território. Bairros sem cor não foram citados ou não têm correspondência única; isso não significa zero casos.'},
+                    {'label': 'Unidades', 'definition': 'Cadastros CNES públicos sem motivo de desativação e com coordenadas dentro da malha. Funcionamento, abrangência e interesse em parceria não confirmados.'}],
+                'evidenceFlow': [{'title': 'Reprodução', 'detail': 'Executar python -m pipeline (etapa preparar_mapa). Fontes e hashes em dados/mapa/manifesto.json.'}],
+                'caveats': ['A correspondência entre os nomes dos informes e os polígonos SIGGO é nominal e não homologada pela Secretaria.', 'O mapa não representa risco, incidência nem área de abrangência das unidades.']},
+            'methods': [{'language': 'text', 'code': 'pipeline/processamento/preparar_mapa.py: projetar malhas e pontos para EPSG:31982; dissolver setores IBGE no limite municipal; simplificar com preservação de topologia; converter em caminhos SVG; associar presença nas listas e parceiro candidato pelo OID SIGGO e CNES.'}]}
     result = {'surface': 'dashboard', 'title': 'Saúde no Território · Goiânia',
         'generatedAt': datetime.now(timezone.utc).isoformat(), 'status': 'observed',
         'buildStatus': 'creating', 'filters': [

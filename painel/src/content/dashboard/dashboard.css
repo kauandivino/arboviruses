@@ -1,3 +1,60 @@
 ﻿.st-page { padding-block-end: 64px; }
 .st-note { color: var(--secondary); font-size: 14px; line-height: 1.65; max-width: 1050px; margin-block: 18px 24px; }
 .st-empty { padding: 36px 20px; color: var(--secondary); text-align: center; }
+
+/* Mapa dos territórios */
+.st-mapa { display: grid; gap: 14px; }
+.st-mapa-controles { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; font-size: 14px; }
+.st-mapa-foco { display: flex; gap: 8px; align-items: center; color: var(--secondary); }
+.st-mapa-foco select { font: inherit; color: var(--text); background: var(--control); border: 1px solid var(--border); border-radius: var(--control-radius, 8px); padding: 6px 8px; max-width: 260px; }
+.st-mapa-check { display: flex; gap: 6px; align-items: center; color: var(--secondary); cursor: pointer; }
+.st-mapa-zoom { display: flex; gap: 6px; margin-inline-start: auto; }
+.st-mapa-zoom button, .st-mapa-detalhe-topo button { font: inherit; min-width: 34px; height: 34px; padding: 0 10px; color: var(--text); background: var(--control); border: 1px solid var(--border); border-radius: var(--control-radius, 8px); cursor: pointer; }
+.st-mapa-zoom button:hover, .st-mapa-detalhe-topo button:hover { background: var(--control-hover); }
+.st-mapa-corpo { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 16px; align-items: start; }
+.st-mapa-quadro { position: relative; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--background); }
+.st-mapa-quadro svg { display: block; width: 100%; height: clamp(420px, 72vh, 760px); touch-action: none; cursor: grab; user-select: none; }
+.st-mapa-quadro svg:active { cursor: grabbing; }
+.st-mapa path, .st-mapa circle, .st-mapa rect { vector-effect: non-scaling-stroke; }
+.st-mapa-limite-fundo { fill: var(--surface); }
+.st-mapa-limite { fill: none; stroke: var(--text); stroke-width: 1.6; pointer-events: none; }
+.st-mapa-contexto path { fill: transparent; stroke: var(--border); stroke-width: 0.5; }
+.st-mapa-contexto path:hover { fill: var(--interaction-hover); }
+.st-mapa-territorio { fill: color-mix(in srgb, var(--chart-1) calc(var(--presenca, 0) * 15%), transparent); stroke: var(--chart-1); stroke-width: 1.2; cursor: pointer; outline: none; }
+.st-mapa-territorio.candidato { stroke-dasharray: 4 3; }
+.st-mapa-territorio.selecionado { stroke: var(--text); stroke-width: 2.2; }
+.st-mapa-territorio:hover, .st-mapa-territorio:focus-visible { stroke-width: 3; }
+.st-mapa-territorio.ativo { stroke: var(--accent); stroke-width: 3.5; }
+[data-presenca="1"] { --presenca: 1; } [data-presenca="2"] { --presenca: 2; } [data-presenca="3"] { --presenca: 3; }
+[data-presenca="4"] { --presenca: 4; } [data-presenca="5"] { --presenca: 5; } [data-presenca="6"] { --presenca: 6; }
+.st-mapa-unidade { fill: var(--secondary); fill-opacity: 0.55; stroke: var(--surface); stroke-width: 0.8; cursor: pointer; }
+.st-mapa-unidade:hover, .st-mapa-unidade.ativo { fill: var(--accent); fill-opacity: 1; }
+.st-mapa-parceiro { fill: var(--chart-2); stroke: var(--surface); stroke-width: 1.5; cursor: pointer; outline: none; }
+.st-mapa-parceiro:hover, .st-mapa-parceiro:focus-visible, .st-mapa-parceiro.ativo { stroke: var(--text); stroke-width: 2.5; }
+.st-mapa-rotulos { pointer-events: none; }
+.st-mapa-rotulos circle { fill: var(--text); stroke: var(--surface); stroke-width: 1.5; }
+.st-mapa-rotulos text { fill: var(--surface); text-anchor: middle; font-weight: 700; font-family: var(--font-sans); }
+.st-mapa-tooltip { position: absolute; z-index: 2; display: grid; gap: 2px; max-width: 220px; padding: 8px 10px; font-size: 13px; line-height: 1.4; color: var(--text); background: var(--surface-raised); border: 1px solid var(--border); border-radius: 8px; box-shadow: var(--shadow); pointer-events: none; }
+.st-mapa-tooltip span { color: var(--secondary); }
+.st-mapa-escala { position: absolute; left: 12px; bottom: 10px; display: flex; gap: 6px; align-items: center; font-size: 12px; color: var(--text); background: color-mix(in srgb, var(--surface) 85%, transparent); padding: 3px 6px; border-radius: 4px; pointer-events: none; }
+.st-mapa-escala i { display: block; height: 6px; border: 1.5px solid var(--text); border-top: 0; }
+.st-mapa-detalhe { font-size: 14px; line-height: 1.5; border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; background: var(--surface); }
+.st-mapa-detalhe-vazio p { margin: 0; color: var(--secondary); }
+.st-mapa-detalhe-topo { display: flex; justify-content: space-between; gap: 8px; align-items: start; margin-block-end: 10px; }
+.st-mapa-detalhe dl { display: grid; gap: 2px 0; margin: 0; }
+.st-mapa-detalhe dt { color: var(--secondary); font-size: 12px; margin-block-start: 8px; }
+.st-mapa-detalhe dd { margin: 0; overflow-wrap: anywhere; }
+.st-mapa-ressalva { margin: 14px 0 0; font-size: 12px; color: var(--secondary); }
+.st-mapa-legenda { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 13px; color: var(--secondary); }
+.st-mapa-legenda > span { display: inline-flex; gap: 6px; align-items: center; }
+.st-leg-area { display: inline-grid; place-items: center; width: 18px; height: 14px; font-size: 10px; font-style: normal; color: var(--text); border: 1.5px solid var(--chart-1); background: color-mix(in srgb, var(--chart-1) calc(var(--presenca, 0) * 15%), transparent); }
+.st-leg-rampa .st-leg-area { border-width: 1px; }
+.st-leg-candidato { border-style: dashed; }
+.st-leg-contexto { border: 1px solid var(--border); background: transparent; }
+.st-leg-parceiro { width: 10px; height: 10px; transform: rotate(45deg); background: var(--chart-2); }
+.st-leg-unidade { width: 9px; height: 9px; border-radius: 50%; background: var(--secondary); opacity: 0.6; }
+@media (max-width: 900px) {
+  .st-mapa-corpo { grid-template-columns: 1fr; }
+  .st-mapa-zoom { margin-inline-start: 0; }
+  .st-mapa-quadro svg { height: min(62vh, 120vw); }
+}

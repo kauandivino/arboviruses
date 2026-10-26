@@ -1,0 +1,48 @@
+{
+  "gerado_em": "2026-10-26T03:40:14.597118+00:00",
+  "metodo": "pipeline/processamento/preparar_mapa.py",
+  "crs": "EPSG:31982",
+  "origem_svg_m": {
+    "x_min": 665579.353657326,
+    "y_max": 8180030.91888028
+  },
+  "simplificacao_m": {
+    "bairros": 8,
+    "limite": 15
+  },
+  "fontes": [
+    {
+      "arquivo": "dados/malha_municipal/goiania/bairros_municipais_analise.gpkg",
+      "sha256": "5b97becdceeff997157561a2ffecbf0ffb6512fb6f23d5479e85ce7737f686a3"
+    },
+    {
+      "arquivo": "dados/ibge/goiania/setores_goiania_2022.gpkg",
+      "sha256": "63443c1b8d37c638479211fa758b18ca08a9369dbb4d5e266d308a6b172d28fa"
+    },
+    {
+      "arquivo": "dados/base_integrada/parceiros_candidatos.csv",
+      "sha256": "a875c13b297dd22f80c1d7f7e0f8bc0b2b271b917f0d4243c081eca88e0f96c5"
+    },
+    {
+      "arquivo": "dados/selecao_territorios/candidatos_e_reservas.csv",
+      "sha256": "35f9dac49d81151b44086015a10619b0196199b6c6b3b7dc9635bceb5272a791"
+    },
+    {
+      "arquivo": "dados/selecao_territorios/oito_territorios.csv",
+      "sha256": "8016d67274d166d4edd3ce0bcb950b1d6ddbf4e698294f2561fa82fc8b74ea90"
+    },
+    {
+      "arquivo": "dados/selecao_territorios/parceiros_candidatos.csv",
+      "sha256": "648c9aee3684a5516e52957fd9ec75f5abb4cdf88d4a232e0fbbadf30566872d"
+    }
+  ],
+  "produto": {
+    "arquivo": "dados/mapa/camadas.json",
+    "sha256": "3f68104a5a5299b22fa22def5c0ba1044ff4575842dab2193129592a7d8c5464"
+  },
+  "feicoes": {
+    "bairro": 1208,
+    "unidade": 200,
+    "limite": 1
+  }
+}

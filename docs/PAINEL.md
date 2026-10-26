@@ -18,11 +18,12 @@ O terminal precisa permanecer aberto. Use `-Porta 4174` caso a porta já esteja 
 - Bairros nos informes: publicação, agravo e indicador, valores da lista publicada, correspondência nominal e link para a página do PDF. Combinações inexistentes mostram ausência de observações. Seleções de múltiplas publicações não geram um gráfico agregado.
 - Clima: chuva observada, cobertura horária, temperatura e umidade da A002; calendário UTC e tabela de cobertura por variável.
 - Unidades de saúde: busca e paginação dos 200 cadastros públicos candidatos a contato. Não comprova funcionamento ou disponibilidade para parceria.
+- Mapa: limite municipal (setores IBGE 2022 dissolvidos), 1.208 bairros SIGGO, os 15 territórios elegíveis coloridos pelo número de listas de dengue de 2026 que os citam, os oito selecionados com a ordem de contato e as 200 unidades CNES candidatas, com os parceiros destacados. Zoom pela roda do mouse, por botões ou por pinça; arraste para mover; "Ir para" enquadra um território; clique ou Enter mostra os dados de origem. Geometria real em EPSG:31982 com escala gráfica; contornos simplificados em 8 m (bairros) e 15 m (limite) apenas para exibição. Preparado por `pipeline/processamento/preparar_mapa.py`, testado por `pipeline/verificacao/verificar_mapa.py`; fontes e hashes em `dados/mapa/manifesto.json`. A feição SIGGO 5158 ("Gleba") tem área zero na fonte e fica sem contorno.
 - Plano de atuação: oito territórios propostos, presença nas listas em duas configurações de janelas, parceiros candidatos e condições antes de agendar. Justificativa detalhada em SELECAO-TERRITORIOS.md; planilha em dados/selecao_territorios/selecao_e_plano.xlsx.
 
 Menus dos componentes permitem consultar fontes e dados da seleção. A interface compartilhada possui alguns controles em inglês. O painel não faz atualizações de fontes sozinho. A data de geração do snapshot não significa que todos os dados tenham essa data de referência.
 
-Não foram criados mapas, taxas por bairro, rankings completos, previsões ou atribuição causal. Os limites e a metodologia estão em BASE-INTEGRADA.md. A escolha dos oito territórios continua sendo uma decisão operacional documentada da equipe.
+Não foram criados taxas por bairro, rankings completos, previsões ou atribuição causal. Os limites e a metodologia estão em BASE-INTEGRADA.md. A escolha dos oito territórios continua sendo uma decisão operacional documentada da equipe.
 
 ## Atualizar e recompilar
 
@@ -45,4 +46,4 @@ Para compilar só o painel: `npm run build --prefix painel`. O resultado é um �
 
 ## Verificação
 
-`pipeline/verificacao/verificar_integracao.py` verifica fronteiras temporais, ausência de preenchimento artificial e a integração sem multiplicação. `pipeline/verificacao/verificar_painel_browser.py` usa Playwright e Edge instalados para verificar as quatro abas, mudanças de ano e publicação, alertas, seleção vazia, busca, retorno às 200 unidades e largura de celular. Capturas e resultado em `dados/verificacao_painel/`.
+`pipeline/verificacao/verificar_integracao.py` verifica fronteiras temporais, ausência de preenchimento artificial e a integração sem multiplicação. `pipeline/verificacao/verificar_painel_browser.py` usa Playwright e Edge instalados para verificar as seis abas, incluindo foco, detalhe e camadas do mapa, mudanças de ano e publicação, alertas, seleção vazia, busca, retorno às 200 unidades e largura de celular. Capturas e resultado em `dados/verificacao_painel/`.

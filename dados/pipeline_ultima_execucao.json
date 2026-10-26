@@ -1,16 +1,22 @@
 {
-  "iniciado_em": "2026-10-26T03:18:56.452688+00:00",
+  "iniciado_em": "2026-10-26T03:39:54.881008+00:00",
   "modo": "padrao",
   "etapas": [
     {
       "fase": "integracao",
       "etapa": "integrar_bases",
       "codigo_saida": 0,
-      "segundos": 4.7
+      "segundos": 5.1
     },
     {
       "fase": "integracao",
       "etapa": "selecionar_territorios",
+      "codigo_saida": 0,
+      "segundos": 9.9
+    },
+    {
+      "fase": "integracao",
+      "etapa": "preparar_mapa",
       "codigo_saida": 0,
       "segundos": 5.1
     },
@@ -36,31 +42,31 @@
       "fase": "verificacao",
       "etapa": "teste_extracao_informes",
       "codigo_saida": 0,
-      "segundos": 1.3
+      "segundos": 0.8
     },
     {
       "fase": "verificacao",
       "etapa": "teste_ibge",
       "codigo_saida": 0,
-      "segundos": 5.0
+      "segundos": 3.7
     },
     {
       "fase": "verificacao",
       "etapa": "teste_inmet",
       "codigo_saida": 0,
-      "segundos": 3.3
+      "segundos": 2.0
     },
     {
       "fase": "verificacao",
       "etapa": "teste_integracao",
       "codigo_saida": 0,
-      "segundos": 6.3
+      "segundos": 1.8
     },
     {
       "fase": "verificacao",
       "etapa": "teste_malha_municipal",
       "codigo_saida": 0,
-      "segundos": 3.3
+      "segundos": 2.7
     },
     {
       "fase": "verificacao",
@@ -72,69 +78,75 @@
       "fase": "verificacao",
       "etapa": "teste_selecao",
       "codigo_saida": 0,
-      "segundos": 2.6
+      "segundos": 2.7
+    },
+    {
+      "fase": "verificacao",
+      "etapa": "teste_mapa",
+      "codigo_saida": 0,
+      "segundos": 15.6
     },
     {
       "fase": "verificacao",
       "etapa": "validar_datasus",
       "codigo_saida": 0,
-      "segundos": 22.8
+      "segundos": 16.8
     },
     {
       "fase": "verificacao",
       "etapa": "validar_ibge",
       "codigo_saida": 0,
-      "segundos": 26.7
+      "segundos": 17.7
     },
     {
       "fase": "verificacao",
       "etapa": "validar_malha_municipal",
       "codigo_saida": 0,
-      "segundos": 7.1
+      "segundos": 6.5
     },
     {
       "fase": "verificacao",
       "etapa": "validar_cnes",
       "codigo_saida": 0,
-      "segundos": 16.6
+      "segundos": 12.3
     },
     {
       "fase": "verificacao",
       "etapa": "validar_inmet",
       "codigo_saida": 0,
-      "segundos": 14.0
+      "segundos": 10.3
     },
     {
       "fase": "verificacao",
       "etapa": "validar_informes",
       "codigo_saida": 0,
-      "segundos": 17.7
+      "segundos": 16.2
     },
     {
       "fase": "verificacao",
       "etapa": "validar_revisao_territorial",
       "codigo_saida": 0,
-      "segundos": 7.9
+      "segundos": 5.6
     },
     {
       "fase": "painel",
       "etapa": "snapshot",
       "codigo_saida": 0,
-      "segundos": 2.2
+      "segundos": 2.5
     },
     {
       "fase": "painel",
       "etapa": "compilar",
       "codigo_saida": 0,
-      "segundos": 21.0
+      "segundos": 17.0
     },
     {
       "fase": "painel",
       "etapa": "verificar_navegador",
       "codigo_saida": 0,
-      "segundos": 26.7
+      "segundos": 29.9
     }
   ],
-  "concluido_em": "2026-10-26T03:22:16.266507+00:00",
+  "concluido_em": "2026-10-26T03:43:04.219981+00:00",
   "status": "aprovado"
 }

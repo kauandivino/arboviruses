@@ -1,11 +1,13 @@
 import React from 'react';
 import { EvidenceChart, DataComponent, DataTable, Filters, Section, MetricCard, SortableRegion, SortableItem, useDashboardTabs, useDataApp } from '../../data-app-public.jsx';
+import { CartaoMapa } from './MapaTerritorios.jsx';
 import './dashboard.css';
 const tabs = [
  {id:'municipal',label:'Evolução municipal',filterIds:['ano']},
  {id:'territorios',label:'Bairros nos informes',filterIds:['edicao','agravo','indicador']},
  {id:'clima',label:'Clima',filterIds:['ano']},
  {id:'parceiros',label:'Unidades de saúde',filterIds:[]}
+ ,{id:'mapa',label:'Mapa',filterIds:[]}
  ,{id:'atuacao',label:'Plano de atuação',filterIds:[]}
 ];
 const number = v => v == null ? 'Sem dado' : new Intl.NumberFormat('pt-BR').format(v);
@@ -72,6 +74,10 @@ export function DashboardContent() {
  </>}
  {tab.id==='parceiros' && <><Notice>CNES · competência setembro de 2026. Unidades públicas sem motivo cadastral de desativação, com coordenadas dentro da malha. Funcionamento e disponibilidade para parceria precisam ser verificados. Busque por nome, tipo de unidade ou bairro.</Notice>
  <Table id="unidades-parceiras" queryId="parceiros" title="Unidades candidatas a contato" rows={all('parceiros')} columns={[col('CO_CNES','CNES'),col('NO_FANTASIA','Unidade'),col('tipo_unidade_descricao','Tipo'),col('NO_BAIRRO','Bairro cadastrado'),col('latitude','Latitude'),col('longitude','Longitude'),col('situacao_operacional','Verificação em campo')]}/></>}
+ {tab.id==='mapa' && <>
+ <Notice>Oito territórios selecionados, os demais elegíveis e as unidades de saúde candidatas, sobre as malhas oficiais (IBGE 2022 e SIGGO). A cor indica em quantas das seis listas de dengue de 2026 o território foi citado. Não representa risco, incidência nem área de abrangência das unidades. Bairros sem cor não foram citados ou não têm correspondência única com a malha; isso não significa zero casos.</Notice>
+ <CartaoMapa rows={all('mapa')}/>
+ </>}
  {tab.id==='atuacao' && <>
  <Notice>Proposta para oito territórios: presença em seis listas de dengue com janelas sem sobreposição, identificação nominal e parceiros candidatos. Os mesmos oito permanecem no recorte alternativo. A ordem organiza contatos, sem representar risco epidemiológico ou cronograma confirmado.</Notice>
  <Table id="territorios-atuacao" queryId="selecao" title="Oito territórios propostos" rows={all('selecao')} columns={[col('ordem_articulacao','Ordem de contato'),col('territorio','Território candidato'),col('janelas_com_citacao','Listas principais (de 6)'),col('janelas_alternativas_com_citacao','Listas alternativas (de 6)'),col('unidade','Parceiro candidato'),col('distancia_minima_poligono_m','Distância mínima ao polígono (m)'),col('prioridade_legivel','Articulação')]}/>

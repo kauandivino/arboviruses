@@ -67,6 +67,20 @@ with sync_playwright() as p:
     overflow=page.evaluate('document.documentElement.scrollWidth > innerWidth + 2')
     assert not overflow, 'Página com overflow horizontal em tela estreita'
     page.set_viewport_size({'width':1440,'height':1000})
+    tab('Mapa')
+    assert page.locator('.st-mapa-territorio.selecionado').count()==8
+    assert page.locator('.st-mapa-parceiro').count()>0
+    page.locator('.st-mapa-foco select').select_option(label='1. Prq Atheneu')
+    page.wait_for_timeout(400)
+    assert 'USF PARQUE ATHENEU' in page.locator('.st-mapa-detalhe').inner_text()
+    capture('mapa_desktop')
+    page.get_by_role('button',name='Ver tudo').click()
+    page.locator('.st-mapa-check input').uncheck()
+    assert page.locator('.st-mapa-unidade').count()==0
+    page.set_viewport_size({'width':390,'height':844})
+    capture('mapa_mobile')
+    assert not page.evaluate('document.documentElement.scrollWidth > innerWidth + 2')
+    page.set_viewport_size({'width':1440,'height':1000})
     tab('Plano de atuação')
     assert 'Prq Atheneu' in page.locator('body').inner_text()
     assert 'Jd Nova Esperança' in page.locator('body').inner_text()
@@ -76,7 +90,7 @@ with sync_playwright() as p:
     capture('selecao_mobile')
     assert not page.evaluate('document.documentElement.scrollWidth > innerWidth + 2')
     assert not erros, erros
-    (OUT / 'validacao_browser.json').write_text(json.dumps({'erros':erros,'overflow_mobile':overflow,'verificacoes':['cinco abas','ano 2022, todos e 2026','edição SE35 e alerta','combinação territorial vazia','edição 2024 chikungunya','busca vazia e restauração das 200 unidades','oito territórios e justificativas','desktop e mobile']},ensure_ascii=False,indent=2),encoding='utf-8')
+    (OUT / 'validacao_browser.json').write_text(json.dumps({'erros':erros,'overflow_mobile':overflow,'verificacoes':['seis abas','ano 2022, todos e 2026','edição SE35 e alerta','combinação territorial vazia','edição 2024 chikungunya','busca vazia e restauração das 200 unidades','oito territórios e justificativas','mapa: foco, detalhe e camada de unidades','desktop e mobile']},ensure_ascii=False,indent=2),encoding='utf-8')
     print('Verificação do navegador concluída.')
     browser.close()
 servidor.shutdown()

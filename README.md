@@ -15,7 +15,7 @@ Tudo aqui usa dados reais coletados das fontes oficiais. Nada é simulado nem es
 | CNES | Estabelecimentos de saúde com endereço e coordenadas | [CNES](docs/CNES.md) |
 | INMET | Estação automática A002: chuva, temperatura, umidade | [INMET](docs/INMET.md) |
 
-Resultados: [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md), [painel](docs/PAINEL.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
+Resultados: [mapa e painel](docs/PAINEL.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
 
 ## Estrutura
 
