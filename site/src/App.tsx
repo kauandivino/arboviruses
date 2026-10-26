@@ -21,15 +21,15 @@ export function App() {
   }
   return (
     <>
-      <a className="pular" href="#dengue">Pular para o conteúdo</a>
+      <a className="pular" href="#mapa">Pular para o conteúdo</a>
       <Cabecalho />
       <main>
         <Heroi dados={dados} />
+        <SecaoMapa dados={dados} />
         <Numeros dados={dados} />
         <SecaoDengue dados={dados} />
         <SecaoChuva dados={dados} />
         <SecaoEscorpioes dados={dados} />
-        <SecaoMapa dados={dados} />
         <SecaoProjeto dados={dados} />
         <SecaoPrevencao />
         <SecaoSobre dados={dados} />

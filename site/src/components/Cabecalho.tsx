@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 export const SECOES = [
+  { id: 'mapa', rotulo: 'Seu bairro' },
   { id: 'dengue', rotulo: 'Dengue' },
   { id: 'escorpioes', rotulo: 'Escorpiões' },
-  { id: 'mapa', rotulo: 'Seu bairro' },
   { id: 'prevencao', rotulo: 'Prevenção' },
   { id: 'sobre', rotulo: 'Sobre os dados' },
 ];

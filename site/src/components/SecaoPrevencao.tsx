@@ -30,7 +30,7 @@ export function SecaoPrevencao() {
   const [aba, setAba] = useState<keyof typeof DICAS>('dengue');
   const d = DICAS[aba];
   return (
-    <section id="prevencao" className="secao alternada prevencao">
+    <section id="prevencao" className="secao prevencao">
       <div className="conteudo">
         <Revelar className="cabeca-secao">
           <p className="sobretitulo">Prevenção</p>

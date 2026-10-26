@@ -6,7 +6,7 @@ import { Revelar } from './Revelar';
 export function SecaoProjeto({ dados }: { dados: DadosSite }) {
   const a = dados.acoes;
   return (
-    <section id="projeto" className="secao">
+    <section id="projeto" className="secao alternada">
       <div className="conteudo">
         <Revelar className="cabeca-secao centro-mobile">
           <p className="sobretitulo">O projeto nos bairros</p>

@@ -144,7 +144,8 @@
 .telefones { display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; font-weight: 600; }
 
 /* ---------- Mapa ---------- */
-.secao-mapa { padding-bottom: clamp(48px, 7vw, 88px); }
+.secao-mapa { padding-top: clamp(40px, 6vw, 72px); padding-bottom: clamp(48px, 7vw, 88px); }
+.secao-mapa .cabeca-secao { margin-bottom: clamp(24px, 3.5vw, 40px); }
 .conteudo.largo { width: min(1400px, 100% - 2 * var(--gutter)); }
 .mapa-moldura { position: relative; height: clamp(560px, 78vh, 760px); border-radius: 18px; overflow: hidden; background: #eef1ef; box-shadow: var(--sombra-forte); border: 1px solid var(--linha); }
 .mapa-canvas, .mapa-canvas.maplibregl-map { position: absolute; inset: 0; }
@@ -196,7 +197,7 @@
 
 /* ---------- Projeto ---------- */
 .territorios-grade { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-.territorio { position: relative; background: var(--superficie); border: 1px solid var(--linha); border-radius: var(--raio); padding: 22px 20px 18px; display: grid; gap: 8px; align-content: start; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+.territorio { position: relative; background: var(--fundo); border: 1px solid var(--linha); border-radius: var(--raio); padding: 22px 20px 18px; display: grid; gap: 8px; align-content: start; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
 .territorio:hover { transform: translateY(-3px); box-shadow: var(--sombra); }
 .territorio::after { content: ''; position: absolute; right: -26px; top: -26px; width: 92px; height: 80px; background: var(--acento-bruma); clip-path: polygon(0 0, 100% 0, 50% 100%); }
 .territorio-numero { position: relative; z-index: 1; width: 40px; height: 34px; background: var(--acento); clip-path: polygon(0 0, 100% 0, 50% 100%); color: #fff; font-family: var(--fonte-titulo); font-weight: 900; font-size: 15px; display: grid; place-items: start center; padding-top: 4px; }
@@ -216,11 +217,11 @@
 
 /* ---------- Prevenção ---------- */
 .prevencao .cabeca-secao { text-align: center; }
-.seletor { display: inline-flex; gap: 4px; padding: 5px; margin-top: 30px; border-radius: 999px; background: var(--fundo); border: 1px solid var(--linha); }
+.seletor { display: inline-flex; gap: 4px; padding: 5px; margin-top: 30px; border-radius: 999px; background: var(--superficie); border: 1px solid var(--linha); }
 .seletor button { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 999px; border: 0; background: none; cursor: pointer; font-family: var(--fonte-titulo); font-weight: 800; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--tinta-2); }
 .seletor button[aria-selected='true'] { background: var(--tinta); color: #fff; }
 .dicas-grade { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-.dica-cartao { padding: 26px 22px; border-radius: var(--raio); background: var(--fundo); border: 1px solid var(--linha); display: grid; gap: 10px; align-content: start; }
+.dica-cartao { padding: 26px 22px; border-radius: var(--raio); background: var(--superficie); border: 1px solid var(--linha); display: grid; gap: 10px; align-content: start; }
 .dica-icone { width: 52px; height: 52px; display: grid; place-items: center; color: var(--acento-forte); background: var(--superficie); border-radius: 14px; box-shadow: var(--sombra); }
 .dica-cartao h3 { margin: 6px 0 0; font-family: var(--fonte-titulo); font-weight: 800; font-size: 16.5px; }
 .dica-cartao p { margin: 0; color: var(--tinta-2); font-size: 14.5px; }

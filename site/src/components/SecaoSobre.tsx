@@ -12,7 +12,7 @@ const FONTES = [
 
 export function SecaoSobre({ dados }: { dados: DadosSite }) {
   return (
-    <section id="sobre" className="secao sobre">
+    <section id="sobre" className="secao sobre alternada">
       <div className="conteudo">
         <Revelar className="cabeca-secao">
           <p className="sobretitulo">Sobre os dados</p>

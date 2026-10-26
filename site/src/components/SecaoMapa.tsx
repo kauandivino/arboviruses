@@ -9,12 +9,12 @@ const Mapa = lazy(() => import('./Mapa'));
 export function SecaoMapa({ dados }: { dados: DadosSite }) {
   const [ref, visivel] = useVisivel<HTMLDivElement>('600px');
   return (
-    <section id="mapa" className="secao secao-mapa alternada">
+    <section id="mapa" className="secao secao-mapa">
       <div className="conteudo">
         <Revelar className="cabeca-secao">
           <p className="sobretitulo">Seu bairro</p>
           <h2 className="titulo-secao">Encontre seu bairro no mapa</h2>
-          <p className="lead">Os boletins da Prefeitura listam, a cada semana, os bairros com mais casos de dengue. Quanto mais escuro o bairro, mais vezes ele apareceu nessas listas em {dados.boletins.ano}.</p>
+          <p className="lead">Digite o nome do seu bairro para ver as unidades de saúde mais perto e se ele aparece nos boletins de dengue da Prefeitura. Quanto mais escuro o bairro no mapa, mais vezes ele esteve entre os de mais casos em {dados.boletins.ano}.</p>
         </Revelar>
       </div>
       <div ref={ref} className="conteudo largo">
