@@ -62,6 +62,7 @@ def etapas(args):
     if args.coletar or args.reprocessar:
         yield 'processamento', 'extrair_informes', modulo('processamento.extrair_informes')
         yield 'processamento', 'revisar_territorio', modulo('processamento.revisar_territorio')
+    yield 'integracao', 'secretaria', modulo('coleta.receber_secretaria')
     yield 'integracao', 'integrar_bases', modulo('processamento.integrar_bases')
     yield 'integracao', 'selecionar_territorios', modulo('processamento.selecionar_territorios')
     yield 'integracao', 'preparar_mapa', modulo('processamento.preparar_mapa')
@@ -69,8 +70,10 @@ def etapas(args):
     yield 'modelagem', 'previsao_dengue', modulo('modelagem.previsao')
     yield 'modelagem', 'alerta_dengue', modulo('modelagem.alerta')
     yield 'modelagem', 'risco_dengue', modulo('modelagem.risco')
+    yield 'modelagem', 'internacoes_dengue', modulo('modelagem.internacoes')
+    yield 'modelagem', 'registro_prospectivo', modulo('modelagem.prospectivo')
     for teste in ['cnes', 'datasus', 'download', 'extracao_informes', 'ibge', 'inmet', 'integracao',
-                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao', 'alerta', 'referencias', 'regional']:
+                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao', 'alerta', 'referencias', 'regional', 'prospectivo', 'secretaria']:
         yield 'verificacao', f'teste_{teste}', modulo(f'verificacao.verificar_{teste}')
     yield 'verificacao', 'validar_datasus', modulo('verificacao.validar_coleta_datasus')
     yield 'verificacao', 'validar_ibge', modulo('verificacao.validar_ibge')

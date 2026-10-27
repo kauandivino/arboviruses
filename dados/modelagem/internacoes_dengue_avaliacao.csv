@@ -1,0 +1,3 @@
+periodo,erro_abs_medio_persistencia,erro_abs_medio_sazonal,erro_abs_medio_ridge,erro_abs_medio_gbm,erro_rel_mediano_persistencia_pct,erro_rel_mediano_sazonal_pct,erro_rel_mediano_ridge_pct,erro_rel_mediano_gbm_pct,origens,media_verdade
+teste,52.89,116.01,53.73,55.25,44.35,75.38,45.98,46.21,246.0,111.67
+validacao,109.44,57.96,94.64,50.44,51.71,69.38,52.75,45.1,261.0,70.8

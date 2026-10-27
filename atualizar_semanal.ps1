@@ -13,6 +13,19 @@ if ($codigo -eq 0) {
     cmd /c ".venv\Scripts\python.exe -m pipeline.publicar_site >> `"$log`" 2>&1"
     $codigo = $LASTEXITCODE
 }
+# O registro prospectivo vai para o GitHub a cada semana: a data pública do commit comprova
+# que cada previsão foi feita antes do resultado. Só esses dois arquivos entram no commit.
+if ($codigo -eq 0) {
+    $registro = 'dados/modelagem/registro_prospectivo.csv', 'dados/modelagem/registro_prospectivo_resumo.json'
+    $existentes = $registro | Where-Object { Test-Path $_ }
+    git add -- $existentes 2>&1 | Out-Null
+    git diff --cached --quiet -- $existentes
+    if ($LASTEXITCODE -ne 0) {
+        git -c user.name='Atualização automática' commit -m "Registro prospectivo: semana de $(Get-Date -Format 'yyyy-MM-dd')" -- $existentes >> $log 2>&1
+        git push origin HEAD >> $log 2>&1
+        if ($LASTEXITCODE) { Add-Content $log 'Aviso: o envio do registro prospectivo ao GitHub falhou; será tentado na próxima semana.' }
+    }
+}
 Get-Content -LiteralPath $log -Encoding UTF8 -Tail 3
 # Mantém só os 20 logs mais recentes.
 Get-ChildItem logs -Filter 'atualizacao_*.log' | Sort-Object Name -Descending | Select-Object -Skip 20 | Remove-Item

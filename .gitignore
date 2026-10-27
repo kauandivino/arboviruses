@@ -33,3 +33,7 @@ logs/
 
 # Pacotes de originais (anexados a releases do GitHub)
 pacotes/
+
+# Dados recebidos da Secretaria: uso a combinar antes de versionar
+dados/secretaria/recebidos/
+dados/secretaria/validados/

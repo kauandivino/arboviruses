@@ -1,0 +1,73 @@
+{
+  "gerado_em": "2026-10-27T14:08:01.886516+00:00",
+  "metodo": "pipeline/modelagem/internacoes.py",
+  "chave": "31304efd6caa917e347ac8ccc08866b973106506f430a0c280a998d664f30f70",
+  "alvo": "internações por dengue de residentes em Goiânia com início dos sintomas nas 4 semanas seguintes ao corte",
+  "corte": "2026-10-11",
+  "modelo_escolhido_na_validacao": "gbm",
+  "exibida": false,
+  "previsao_atual": 34,
+  "faixa_80pct": [
+    16,
+    91
+  ],
+  "ultimas_4_semanas_corrigidas": 80,
+  "erro_por_ano_teste": [
+    {
+      "ano": 2021,
+      "erro_modelo": 36.5,
+      "erro_melhor_referencia": 23.1
+    },
+    {
+      "ano": 2022,
+      "erro_modelo": 86.9,
+      "erro_melhor_referencia": 57.5
+    },
+    {
+      "ano": 2023,
+      "erro_modelo": 20.6,
+      "erro_melhor_referencia": 15.8
+    },
+    {
+      "ano": 2024,
+      "erro_modelo": 90.5,
+      "erro_melhor_referencia": 104.3
+    },
+    {
+      "ano": 2025,
+      "erro_modelo": 37.1,
+      "erro_melhor_referencia": 69.1
+    }
+  ],
+  "avaliacao": {
+    "teste": {
+      "erro_abs_medio_persistencia": 52.89,
+      "erro_abs_medio_sazonal": 116.01,
+      "erro_abs_medio_ridge": 53.73,
+      "erro_abs_medio_gbm": 55.25,
+      "erro_rel_mediano_persistencia_pct": 44.35,
+      "erro_rel_mediano_sazonal_pct": 75.38,
+      "erro_rel_mediano_ridge_pct": 45.98,
+      "erro_rel_mediano_gbm_pct": 46.21,
+      "origens": 246.0,
+      "media_verdade": 111.67
+    },
+    "validacao": {
+      "erro_abs_medio_persistencia": 109.44,
+      "erro_abs_medio_sazonal": 57.96,
+      "erro_abs_medio_ridge": 94.64,
+      "erro_abs_medio_gbm": 50.44,
+      "erro_rel_mediano_persistencia_pct": 51.71,
+      "erro_rel_mediano_sazonal_pct": 69.38,
+      "erro_rel_mediano_ridge_pct": 52.75,
+      "erro_rel_mediano_gbm_pct": 45.1,
+      "origens": 261.0,
+      "media_verdade": 70.8
+    }
+  },
+  "regra": "escolher na validação o candidato de menor erro absoluto médio; exibir só se, no teste, superar as duas referências",
+  "limitacoes": [
+    "O campo de internação é o do estado final do registro; a avaliação fica um pouco otimista.",
+    "Internações por início dos sintomas, não por data de internação."
+  ]
+}

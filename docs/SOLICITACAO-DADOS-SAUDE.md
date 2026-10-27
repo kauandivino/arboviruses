@@ -25,7 +25,7 @@ O projeto **Saúde no Território: Monitoramento Integrado de Riscos à Saúde e
 
 6. **Denominadores, caso disponíveis:** população por bairro com ano de referência, metodologia e limites territoriais usados. Já possuímos o Censo 2022 por setor; não o apresentaremos como população observada em 2026 nem faremos rateio automático sem validar a correspondência territorial.
 
-Preferimos arquivos **CSV ou XLSX**, acompanhados de dicionário e metadados. Uma estrutura útil contém município, código/nome do bairro, agravo, indicador, período inicial/final ou ano/semana epidemiológica, referência geográfica, quantidade, situação do dado, data de atualização e versão. Caso o nível solicitado não esteja disponível, pedimos informar a menor unidade territorial e periodicidade disponibilizáveis.
+O formato exato que o projeto consegue receber e validar automaticamente está em [DADOS-SECRETARIA.md](DADOS-SECRETARIA.md): uma tabela de contagens por território e semana e um cadastro dos territórios com a correspondência à malha SIGGO. Se não for possível seguir esse formato, aceitamos **CSV ou XLSX** com dicionário e metadados. Uma estrutura útil contém município, código/nome do bairro, agravo, indicador, período inicial/final ou ano/semana epidemiológica, referência geográfica, quantidade, situação do dado, data de atualização e versão. Caso o nível solicitado não esteja disponível, pedimos informar a menor unidade territorial e periodicidade disponibilizáveis.
 
 Anexos sugeridos, disponíveis em `dados/revisao_territorial/`:
 

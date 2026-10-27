@@ -154,6 +154,43 @@ O modelo mais simples foi o melhor, mas era referência; adotá-lo agora seria e
 
 A primeira versão da correção rápida de atraso agrupava os atrasos acima de 52 semanas antes de verificar a data de digitação. Com isso, contava notificações digitadas depois do corte em semanas com 52 a 60 semanas de idade. O teste que compara essa correção com o nowcasting detectou o problema, que foi corrigido antes da avaliação final; a conclusão não mudou.
 
+## Internações (avaliada, não exibida)
+
+`pipeline/modelagem/internacoes.py` prevê as internações por dengue de residentes em Goiânia com início dos sintomas nas 4 semanas seguintes.
+
+**Regra, definida antes de rodar:**
+
+- **Atributos:** internações e notificações recentes corrigidas pelo nowcasting de cada data, proporção de internados, internações nos vizinhos e sazonalidade.
+- **Referências:** repetir as últimas 4 semanas e repetir as mesmas semanas do ano anterior.
+- **Candidatos:** ridge e gradient boosting.
+- **Escolha e exibição:** o candidato é escolhido na validação (2016 a 2020) e só seria exibido se vencesse as duas referências no teste (2021 em diante).
+
+| Erro absoluto médio (internações em 4 semanas) | Validação | Teste |
+|---|---|---|
+| Repetir as últimas 4 semanas | 109,4 | **52,9** |
+| Mesmas semanas do ano anterior | 58,0 | 116,0 |
+| Ridge | 94,6 | 53,7 |
+| Gradient boosting (escolhido) | 50,4 | 55,2 |
+
+**Não é exibida:** o escolhido ficou praticamente empatado com repetir as últimas 4 semanas, melhor em 2024 e 2025 e pior em 2021 a 2023.
+
+Limitação: o campo de internação é o do estado final do registro. Não se sabe se ele já estava anotado em cada data passada, o que torna a avaliação um pouco otimista.
+
+## Avaliação prospectiva registrada
+
+Os testes retrospectivos indicaram que o modelo mais simples, só com a situação atual em relação ao habitual, foi o melhor para a probabilidade de ficar acima do habitual. Como ele era referência, adotá-lo pelo resultado do teste seria escolher depois de ver a resposta.
+
+Por isso a regra foi registrada no git em 27/10/2026, em `pipeline/modelagem/prospectivo.py`, para ser avaliada com semanas futuras:
+
+- **Previsões:** uma por semana, a partir de 01/11/2026.
+- **Registro:** cada previsão é gravada em `dados/modelagem/registro_prospectivo.csv`, que só cresce. O teste `verificar_prospectivo` garante que linhas já versionadas não mudam, e a atualização semanal envia esse arquivo ao GitHub, cuja data de commit comprova que a previsão veio antes do resultado.
+- **Conferência:** com os dados disponíveis 12 semanas depois de cada janela.
+- **Exibição no site:** só depois de 26 previsões conferidas, se o Brier for menor que o da referência e menor que 0,25.
+
+## Dados por bairro da Secretaria
+
+O formato esperado e o validador estão em [DADOS-SECRETARIA.md](DADOS-SECRETARIA.md). A previsão por bairro será construída quando os dados chegarem, com o mesmo método de avaliação.
+
 ## Regra dos arquivos anuais (correção de 26/10/2026)
 
 Os arquivos de dengue do SINAN seguem o ano epidemiológico da notificação; os de animais peçonhentos, o ano civil. A regra anterior ("cada arquivo contribui só com datas do próprio ano civil") descartava notificações legítimas nas viradas de ano, como as de 1º a 3 de janeiro de 2026, que pertencem ao ano epidemiológico de 2025 e só existem nesse arquivo.
