@@ -59,6 +59,17 @@ Requisitos: Windows, Microsoft Edge e o [uv](https://docs.astral.sh/uv/) (`winge
 - **Referências:** `dados/referencias.json` fixa a competência do CNES e a coleta SIGGO que definem os parceiros, a seleção dos territórios e o mapa. O `--coletar` usa essas versões. Mudá-las é uma decisão da equipe, e o teste `verificar_referencias` para o pipeline se os dados locais divergirem delas.
 - **Fontes oficiais baixadas de novo:** SINAN, INMET e IBGE. O DATASUS pode publicar revisões dos arquivos, então os números podem mudar um pouco. Os manifestos em `dados/` registram o hash de cada arquivo usado nesta versão, e a comparação mostra o que mudou.
 
+### Publicar uma versão no GitHub
+
+Depois de criar o repositório e enviar o código, anexe o pacote a uma release (com o [GitHub CLI](https://cli.github.com/)):
+
+```powershell
+.venv\Scripts\python.exe -m pipeline.comum.pacote_originais criar
+gh release create v1.0 pacotes\originais_insubstituiveis_<data>.zip --title "Saúde no Território v1.0" --notes "Pacote de originais para reprodução; veja o README."
+```
+
+O inventário `dados/pacote_originais.json` vai no commit e garante que quem baixar o ZIP receba exatamente os mesmos arquivos. O `.gitattributes` impede que o Git altere quebras de linha, para que os hashes dos manifestos confiram em qualquer clone.
+
 Use Python 3.13: o conversor `.dbc` do SINAN não tem wheels para 3.14 no Windows.
 
 ## Uso
