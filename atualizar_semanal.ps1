@@ -8,6 +8,11 @@ $env:PYTHONIOENCODING = 'utf-8'
 # dos testes) viraria erro do próprio script.
 cmd /c ".venv\Scripts\python.exe -m pipeline --semanal > `"$log`" 2>&1"
 $codigo = $LASTEXITCODE
+# Só publica o site se todo o pipeline (incluindo os testes) passou.
+if ($codigo -eq 0) {
+    cmd /c ".venv\Scripts\python.exe -m pipeline.publicar_site >> `"$log`" 2>&1"
+    $codigo = $LASTEXITCODE
+}
 Get-Content -LiteralPath $log -Encoding UTF8 -Tail 3
 # Mantém só os 20 logs mais recentes.
 Get-ChildItem logs -Filter 'atualizacao_*.log' | Sort-Object Name -Descending | Select-Object -Skip 20 | Remove-Item

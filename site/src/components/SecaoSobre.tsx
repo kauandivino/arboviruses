@@ -31,7 +31,8 @@ export function SecaoSobre({ dados }: { dados: DadosSite }) {
         <Revelar className="atualizacao">
           <RefreshCw size={20} aria-hidden="true" />
           <p>Os dados são atualizados toda semana. Esta versão usa registros até <strong>{dataLonga(dados.dados_ate)}</strong>. Os números das semanas mais recentes podem mudar, porque parte dos casos é registrada com atraso.</p>
-          <a className="botao" href="equipe/">Painel técnico da equipe</a>
+          {/* O painel da equipe só existe no servidor local; no site publicado o link não aparece. */}
+          {['localhost', '127.0.0.1'].includes(window.location.hostname) && <a className="botao" href="equipe/">Painel técnico da equipe</a>}
         </Revelar>
       </div>
     </section>

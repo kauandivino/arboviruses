@@ -59,6 +59,12 @@ Requisitos: Windows, Microsoft Edge e o [uv](https://docs.astral.sh/uv/) (`winge
 - **Referências:** `dados/referencias.json` fixa a competência do CNES e a coleta SIGGO que definem os parceiros, a seleção dos territórios e o mapa. O `--coletar` usa essas versões. Mudá-las é uma decisão da equipe, e o teste `verificar_referencias` para o pipeline se os dados locais divergirem delas.
 - **Fontes oficiais baixadas de novo:** SINAN, INMET e IBGE. O DATASUS pode publicar revisões dos arquivos, então os números podem mudar um pouco. Os manifestos em `dados/` registram o hash de cada arquivo usado nesta versão, e a comparação mostra o que mudou.
 
+### Site público no GitHub Pages
+
+Endereço: https://kauandivino.github.io/arboviruses/
+
+`python -m pipeline.publicar_site` envia só a pasta compilada do site (`site/dist`) para o ramo `gh-pages`. O painel da equipe e a API de ações de campo não são publicados; o link para o painel só aparece quando o site roda no computador local. A atualização semanal publica automaticamente depois que todo o pipeline e os testes passam. No GitHub, a configuração é feita uma vez, em Settings → Pages: "Deploy from a branch", ramo `gh-pages`, pasta `/ (root)`.
+
 ### Publicar uma versão no GitHub
 
 Depois de criar o repositório e enviar o código, anexe o pacote a uma release (com o [GitHub CLI](https://cli.github.com/)):
