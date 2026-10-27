@@ -5,14 +5,11 @@ import { max } from 'd3-array';
 import { motion } from 'motion/react';
 import type { DadosSite } from '../lib/dados';
 import { MESES_ABREV, mesDaSemana, numero, useLargura } from '../lib/formato';
-import { Revelar } from './Revelar';
-import { Sorotipos } from './Sorotipos';
-import { MosquitoTransmissao } from './MosquitoTransmissao';
 
 const CORES_ANOS = ['#9aa6ab', '#b98a5e', '#7b8fc4', '#c27a9b'];
 type Ponto = { se: number; valor: number };
 
-function GraficoTemporada({ dados }: { dados: DadosSite }) {
+export function GraficoTemporada({ dados }: { dados: DadosSite }) {
   const [ref, largura] = useLargura<HTMLDivElement>();
   const ano = dados.dengue.ano;
   const anteriores = Object.keys(dados.dengue.temporadas).map(Number).filter(a => a < ano).sort((a, b) => b - a);
@@ -110,7 +107,7 @@ function GraficoTemporada({ dados }: { dados: DadosSite }) {
   );
 }
 
-function GraficoAnual({ dados }: { dados: DadosSite }) {
+export function GraficoAnual({ dados }: { dados: DadosSite }) {
   const [ref, largura] = useLargura<HTMLDivElement>();
   const [foco, setFoco] = useState<number | null>(null);
   const anos = dados.dengue.anual;
@@ -151,23 +148,5 @@ function GraficoAnual({ dados }: { dados: DadosSite }) {
         </svg>
       </div>
     </div>
-  );
-}
-
-export function SecaoDengue({ dados }: { dados: DadosSite }) {
-  return (
-    <section id="dengue" className="secao">
-      <div className="conteudo">
-        <Revelar className="cabeca-secao">
-          <p className="sobretitulo">Dengue</p>
-          <h2 className="titulo-secao">Como a dengue está neste ano</h2>
-          <p className="lead">A linha mostra os casos de cada semana. Quando ela passa da faixa clara, há mais dengue do que o normal para a época.</p>
-        </Revelar>
-        <Revelar><GraficoTemporada dados={dados} /></Revelar>
-        <Revelar atraso={0.1}><MosquitoTransmissao dados={dados} /></Revelar>
-        <Revelar atraso={0.1}><Sorotipos dados={dados} /></Revelar>
-        <Revelar atraso={0.1}><GraficoAnual dados={dados} /></Revelar>
-      </div>
-    </section>
   );
 }

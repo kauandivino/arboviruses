@@ -42,3 +42,6 @@ dados/secretaria/validados/
 
 # Respostas brutas semanais do InfoDengue (hash no manifesto; série processada versionada)
 dados/infodengue/originais/
+
+# Microdados de escorpiões 2014–2021 por notificação: não versionar
+dados/datasus_historico_animais/goiania/*.csv

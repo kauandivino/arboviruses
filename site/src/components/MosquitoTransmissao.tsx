@@ -9,7 +9,7 @@ import { dataCurta, dataLonga, decimal, useLargura } from '../lib/formato';
 const SITUACAO = { baixo: 'Baixo risco', medio: 'Médio risco', alto: 'Alto risco' } as Record<string, string>;
 const COR = { baixo: 'var(--zona-abaixo)', medio: 'var(--zona-acima)', alto: 'var(--zona-alerta)' } as Record<string, string>;
 
-function Liraa({ ciclos }: { ciclos: DadosSite['liraa'] }) {
+export function Liraa({ ciclos }: { ciclos: DadosSite['liraa'] }) {
   const [ref, largura] = useLargura<HTMLDivElement>(500);
   const [foco, setFoco] = useState<number | null>(null);
   const altura = 200, m = { topo: 12, base: 26, esquerda: 34, direita: 10 };
@@ -55,7 +55,7 @@ function Liraa({ ciclos }: { ciclos: DadosSite['liraa'] }) {
   );
 }
 
-function Rt({ t }: { t: DadosSite['transmissao'] }) {
+export function Rt({ t }: { t: DadosSite['transmissao'] }) {
   const [ref, largura] = useLargura<HTMLDivElement>(500);
   const s = t.semanas;
   const altura = 200, m = { topo: 12, base: 26, esquerda: 34, direita: 10 };
@@ -80,15 +80,6 @@ function Rt({ t }: { t: DadosSite['transmissao'] }) {
         </svg>
       </div>
       <p className="nota">Estimativa do InfoDengue (Fiocruz/FGV), modelo de {dataLonga(t.versao_modelo)}. O último ponto, mais claro, ainda está incompleto e costuma mudar.</p>
-    </div>
-  );
-}
-
-export function MosquitoTransmissao({ dados }: { dados: DadosSite }) {
-  return (
-    <div className="mosquito-grade">
-      {dados.liraa.length > 0 && <Liraa ciclos={dados.liraa} />}
-      {dados.transmissao.semanas.length > 0 && <Rt t={dados.transmissao} />}
     </div>
   );
 }

@@ -1,0 +1,304 @@
+{
+  "gerado_em": "2026-10-27T16:37:46+00:00",
+  "metodo": "pipeline/modelagem/correlacoes.py",
+  "periodo": [
+    "2013-12-29",
+    "2026-07-26"
+  ],
+  "clima_dengue": {
+    "chuva_mm": {
+      "lags": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "r_bruta": [
+        0.113,
+        0.167,
+        0.209,
+        0.242,
+        0.282,
+        0.319,
+        0.359,
+        0.38,
+        0.399,
+        0.413,
+        0.412,
+        0.411,
+        0.4,
+        0.389,
+        0.368,
+        0.335,
+        0.295
+      ],
+      "r_sem_sazonalidade": [
+        -0.059,
+        -0.043,
+        -0.043,
+        -0.039,
+        -0.04,
+        -0.032,
+        -0.015,
+        -0.032,
+        -0.041,
+        -0.045,
+        -0.056,
+        -0.064,
+        -0.075,
+        -0.065,
+        -0.066,
+        -0.069,
+        -0.077
+      ],
+      "melhor_lag": 6,
+      "r_melhor": -0.015,
+      "forca": "muito fraca",
+      "r_bruta_no_melhor_lag": 0.359
+    },
+    "temperatura_c": {
+      "lags": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "r_bruta": [
+        -0.092,
+        -0.049,
+        0.008,
+        0.063,
+        0.107,
+        0.148,
+        0.185,
+        0.227,
+        0.27,
+        0.297,
+        0.309,
+        0.326,
+        0.355,
+        0.371,
+        0.386,
+        0.402,
+        0.431
+      ],
+      "r_sem_sazonalidade": [
+        0.161,
+        0.127,
+        0.118,
+        0.106,
+        0.1,
+        0.083,
+        0.071,
+        0.073,
+        0.096,
+        0.121,
+        0.109,
+        0.098,
+        0.116,
+        0.12,
+        0.125,
+        0.122,
+        0.145
+      ],
+      "melhor_lag": 0,
+      "r_melhor": 0.161,
+      "forca": "fraca",
+      "r_bruta_no_melhor_lag": -0.092
+    },
+    "umidade_pct": {
+      "lags": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "r_bruta": [
+        0.461,
+        0.505,
+        0.532,
+        0.547,
+        0.566,
+        0.573,
+        0.577,
+        0.563,
+        0.543,
+        0.516,
+        0.498,
+        0.466,
+        0.418,
+        0.372,
+        0.321,
+        0.265,
+        0.189
+      ],
+      "r_sem_sazonalidade": [
+        0.006,
+        0.052,
+        0.069,
+        0.079,
+        0.098,
+        0.11,
+        0.124,
+        0.108,
+        0.097,
+        0.063,
+        0.069,
+        0.066,
+        0.056,
+        0.045,
+        0.034,
+        0.019,
+        -0.002
+      ],
+      "melhor_lag": 6,
+      "r_melhor": 0.124,
+      "forca": "muito fraca",
+      "r_bruta_no_melhor_lag": 0.577
+    }
+  },
+  "vizinhos": {
+    "por_temporada": {
+      "2015": 0,
+      "2016": -2,
+      "2017": 2,
+      "2018": 0,
+      "2019": 0,
+      "2020": 0,
+      "2021": 43,
+      "2022": -3,
+      "2023": 0,
+      "2024": 0,
+      "2025": -1,
+      "2026": 0
+    },
+    "mediana_semanas": 0.0,
+    "antes": 2,
+    "juntos": 8,
+    "depois": 2,
+    "temporadas": 12,
+    "correlacao_semanal": 0.892
+  },
+  "chikungunya": {
+    "por_temporada": {
+      "2022": 7,
+      "2023": 7,
+      "2024": 3,
+      "2025": -43,
+      "2026": 3
+    },
+    "mediana_semanas": 3.0,
+    "antes": 1,
+    "juntos": 0,
+    "depois": 4,
+    "temporadas": 5
+  },
+  "escorpioes": {
+    "meses": 149,
+    "r_temperatura_bruta": 0.045,
+    "r_temperatura_sem_sazonalidade": 0.169,
+    "r_chuva_bruta": 0.072,
+    "perfil_mensal": [
+      {
+        "mes": 1,
+        "acidentes": 25.8,
+        "temperatura_c": 24.5
+      },
+      {
+        "mes": 2,
+        "acidentes": 27.8,
+        "temperatura_c": 24.3
+      },
+      {
+        "mes": 3,
+        "acidentes": 26.6,
+        "temperatura_c": 24.4
+      },
+      {
+        "mes": 4,
+        "acidentes": 28.3,
+        "temperatura_c": 24.0
+      },
+      {
+        "mes": 5,
+        "acidentes": 32.3,
+        "temperatura_c": 22.3
+      },
+      {
+        "mes": 6,
+        "acidentes": 23.8,
+        "temperatura_c": 21.4
+      },
+      {
+        "mes": 7,
+        "acidentes": 23.6,
+        "temperatura_c": 21.5
+      },
+      {
+        "mes": 8,
+        "acidentes": 22.2,
+        "temperatura_c": 23.8
+      },
+      {
+        "mes": 9,
+        "acidentes": 21.5,
+        "temperatura_c": 26.7
+      },
+      {
+        "mes": 10,
+        "acidentes": 24.2,
+        "temperatura_c": 26.1
+      },
+      {
+        "mes": 11,
+        "acidentes": 30.8,
+        "temperatura_c": 24.7
+      },
+      {
+        "mes": 12,
+        "acidentes": 27.0,
+        "temperatura_c": 24.5
+      }
+    ],
+    "forca_temperatura": "muito fraca"
+  }
+}

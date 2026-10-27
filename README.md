@@ -1,6 +1,6 @@
 # Saúde no Território · Goiânia
 
-Monitoramento integrado de dengue e acidentes com escorpiões em Goiânia, a partir de dados públicos oficiais, para planejar ações educativas em oito territórios piloto. Projeto 308-P01 do programa Embaixadores da Cidadania 2026 (pré-projeto em [docs/projeto.pdf](docs/projeto.pdf)).
+Monitoramento integrado de dengue, chikungunya, zika e acidentes com escorpiões em Goiânia, a partir de dados públicos oficiais, para planejar ações educativas em oito territórios piloto. Projeto 308-P01 do programa Embaixadores da Cidadania 2026 (pré-projeto em [docs/projeto.pdf](docs/projeto.pdf)).
 
 Tudo aqui usa dados reais coletados das fontes oficiais. Nada é simulado nem estimado para preencher lacunas: meses ou bairros sem dado ficam ausentes, não viram zero. As regras de interpretação estão em [docs/BASE-INTEGRADA.md](docs/BASE-INTEGRADA.md).
 
@@ -9,14 +9,14 @@ Tudo aqui usa dados reais coletados das fontes oficiais. Nada é simulado nem es
 | Fonte | Conteúdo | Documentação |
 |---|---|---|
 | Prefeitura de Goiânia | Informes semanais em PDF (bairros citados), 2022–2026 | [INFORMES](docs/INFORMES.md), [EXTRACAO-INFORMES](docs/EXTRACAO-INFORMES.md), [REVISAO-TERRITORIAL](docs/REVISAO-TERRITORIAL.md) |
-| SINAN/DATASUS | Microdados de dengue e de acidentes por animais peçonhentos (2022–2026); dengue 2014–2021 para treinar os modelos | [DATASUS](docs/DATASUS.md), [MODELAGEM](docs/MODELAGEM.md) |
+| SINAN/DATASUS | Microdados de dengue e de acidentes por animais peçonhentos (2022–2026); dengue e animais peçonhentos 2014–2021 para treinar os modelos | [DATASUS](docs/DATASUS.md), [MODELAGEM](docs/MODELAGEM.md) |
 | IBGE, Censo 2022 | Agregados por setor censitário e malhas de setores e bairros | [IBGE](docs/IBGE.md) |
 | SIGGO (Prefeitura) | Divisas de bairro e loteamentos | [MALHA-MUNICIPAL](docs/MALHA-MUNICIPAL.md) |
 | CNES | Estabelecimentos de saúde com endereço e coordenadas | [CNES](docs/CNES.md) |
 | INMET | Estação automática A002: chuva, temperatura, umidade (2014–2026) | [INMET](docs/INMET.md) |
 | SINAN chikungunya e zika, LIRAa, InfoDengue, Censo (saneamento) | Outras arboviroses, índice do mosquito, ritmo de transmissão e saneamento por bairro | [FONTES-COMPLEMENTARES](docs/FONTES-COMPLEMENTARES.md) |
 
-Resultados: [site público para a população](docs/SITE.md), [painel da equipe e registro das ações de campo](docs/PAINEL.md), [modelos de dengue: nowcasting, previsão e alerta](docs/MODELAGEM.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
+Resultados: [site público para a população](docs/SITE.md), [painel da equipe e registro das ações de campo](docs/PAINEL.md), [modelos e correlações: nowcasting, previsão, alerta, escorpiões](docs/MODELAGEM.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
 
 ## Estrutura
 
@@ -24,7 +24,7 @@ Resultados: [site público para a população](docs/SITE.md), [painel da equipe 
 pipeline/
   coleta/          download das fontes oficiais (baixar_*)
   processamento/   extração, revisão territorial, integração, seleção, snapshot do painel
-  modelagem/       nowcasting, previsão de 1 a 8 semanas e diagrama de controle
+  modelagem/       nowcasting, previsões, diagrama de controle, correlações e modelo de escorpiões
   verificacao/     testes de regras (verificar_*) e validações dos dados reais (validar_*)
   comum/           utilitários compartilhados (hash, manifestos, leitura de PDF, OCR)
   exploracao/      sondagens usadas durante o levantamento das fontes; fora do pipeline

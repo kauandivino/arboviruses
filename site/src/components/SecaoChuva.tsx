@@ -3,12 +3,11 @@ import { scaleBand, scaleLinear } from 'd3-scale';
 import { area, curveMonotoneX, line } from 'd3-shape';
 import { max } from 'd3-array';
 import { motion } from 'motion/react';
-import { CloudRain } from 'lucide-react';
 import type { DadosSite } from '../lib/dados';
 import { decimal, mesCurto, mesLongo, numero, useLargura } from '../lib/formato';
-import { Revelar } from './Revelar';
 
-export function SecaoChuva({ dados }: { dados: DadosSite }) {
+/** Chuva mensal e casos de dengue por mês nos últimos dois anos. */
+export function ChuvaMensal({ dados }: { dados: DadosSite }) {
   const [ref, largura] = useLargura<HTMLDivElement>();
   const [foco, setFoco] = useState<string | null>(null);
   const dengue = new Map(dados.dengue.mensal.map(d => [d.mes, d.notificacoes]));
@@ -23,15 +22,8 @@ export function SecaoChuva({ dados }: { dados: DadosSite }) {
   const altura = hChuva + vao + hDengue + 28;
   const f = foco ? meses.find(c => c.mes === foco) : null;
   return (
-    <section className="secao alternada" aria-labelledby="titulo-chuva">
-      <div className="conteudo grade-lado">
-        <Revelar className="cabeca-secao">
-          <p className="sobretitulo">Chuva e dengue</p>
-          <h2 id="titulo-chuva" className="titulo-secao">Depois da chuva, atenção redobrada</h2>
-          <p className="lead">O mosquito da dengue se reproduz em água parada. Em Goiânia, as chuvas se concentram entre outubro e abril, e é nesse período que os casos costumam crescer.</p>
-          <div className="dica-estatica"><CloudRain size={20} aria-hidden="true" /><span>Cada chuva pode deixar água acumulada em vasos, pneus, calhas e garrafas. Dez minutos por semana de vistoria fazem diferença.</span></div>
-        </Revelar>
-        <Revelar className="cartao grafico-cartao">
+        <div className="cartao grafico-cartao">
+          <div className="grafico-topo"><h3 className="titulo-cartao">Chuva e dengue mês a mês</h3></div>
           <div ref={ref} className="grafico-area">
             <svg width={largura} height={altura} role="img" aria-label="Chuva mensal e casos de dengue por mês nos últimos dois anos" onPointerLeave={() => setFoco(null)}>
               <text x={m.esquerda} y={10} className="rotulo-grafico chuva">Chuva no mês (mm)</text>
@@ -63,9 +55,7 @@ export function SecaoChuva({ dados }: { dados: DadosSite }) {
               </div>
             )}
           </div>
-          <p className="nota">Chuva medida na estação do INMET em Goiânia. Barras mais claras: meses com falhas na medição.</p>
-        </Revelar>
-      </div>
-    </section>
+          <p className="nota">Chuva da estação do INMET em Goiânia; barras claras: meses com falhas na medição. As chuvas vão de outubro a abril, e a água parada que deixam é onde o mosquito se reproduz.</p>
+        </div>
   );
 }

@@ -59,6 +59,7 @@ def etapas(args):
         yield 'coleta', 'cnes', lambda: modulo('coleta.baixar_cnes', '--competencia', competencia_cnes())
         yield 'coleta', 'inmet', modulo('coleta.baixar_inmet')
         yield 'coleta', 'inmet_historico', modulo('coleta.baixar_inmet', '--anos', *historicos, '--destino', 'dados/inmet_historico')
+        yield 'coleta', 'escorpioes_historico', modulo('coleta.baixar_datasus', '--anos', *historicos, '--agravos', 'animais', '--saida', 'dados/datasus_historico_animais')
         yield from arboviroses()
     elif args.semanal:
         # Só fontes que mudam toda semana. CNES, malhas e informes mudam a seleção dos territórios
@@ -90,8 +91,10 @@ def etapas(args):
     yield 'modelagem', 'internacoes_dengue', modulo('modelagem.internacoes')
     yield 'modelagem', 'registro_prospectivo', modulo('modelagem.prospectivo')
     yield 'modelagem', 'comparacao_infodengue', modulo('modelagem.infodengue')
+    yield 'modelagem', 'correlacoes', modulo('modelagem.correlacoes')
+    yield 'modelagem', 'previsao_escorpioes', modulo('modelagem.escorpioes')
     for teste in ['cnes', 'datasus', 'download', 'extracao_informes', 'ibge', 'inmet', 'integracao',
-                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao', 'alerta', 'referencias', 'regional', 'prospectivo', 'secretaria', 'novas_fontes']:
+                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao', 'alerta', 'referencias', 'regional', 'prospectivo', 'secretaria', 'novas_fontes', 'correlacoes']:
         yield 'verificacao', f'teste_{teste}', modulo(f'verificacao.verificar_{teste}')
     yield 'verificacao', 'validar_datasus', modulo('verificacao.validar_coleta_datasus')
     yield 'verificacao', 'validar_ibge', modulo('verificacao.validar_ibge')

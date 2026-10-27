@@ -1,0 +1,568 @@
+{
+  "arquivo": "ANIMBR16.dbc",
+  "ano": 2016,
+  "situacao": "FINAIS",
+  "municipio": "520870",
+  "registros_brasil": 174220,
+  "registros_excluidos_dbf": 0,
+  "registros_recorte": 670,
+  "registros_por_referencia": {
+    "residencia": 332,
+    "notificacao": 639,
+    "ocorrencia": 293
+  },
+  "escorpioes_recorte": 186,
+  "tipos_animais": {
+    "6": 72,
+    "3": 186,
+    "2": 128,
+    "1": 232,
+    "5": 13,
+    "9": 30,
+    "4": 9
+  },
+  "datas_ausentes_invalidas": {},
+  "campos": [
+    {
+      "nome": "TP_NOT",
+      "tipo": "C",
+      "tamanho": 6,
+      "decimais": 0,
+      "offset": 1
+    },
+    {
+      "nome": "ID_AGRAVO",
+      "tipo": "C",
+      "tamanho": 9,
+      "decimais": 0,
+      "offset": 7
+    },
+    {
+      "nome": "DT_NOTIFIC",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 16
+    },
+    {
+      "nome": "SEM_NOT",
+      "tipo": "C",
+      "tamanho": 7,
+      "decimais": 0,
+      "offset": 24
+    },
+    {
+      "nome": "NU_ANO",
+      "tipo": "C",
+      "tamanho": 6,
+      "decimais": 0,
+      "offset": 31
+    },
+    {
+      "nome": "SG_UF_NOT",
+      "tipo": "C",
+      "tamanho": 9,
+      "decimais": 0,
+      "offset": 37
+    },
+    {
+      "nome": "ID_MUNICIP",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 46
+    },
+    {
+      "nome": "ID_REGIONA",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 56
+    },
+    {
+      "nome": "DT_SIN_PRI",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 66
+    },
+    {
+      "nome": "SEM_PRI",
+      "tipo": "C",
+      "tamanho": 7,
+      "decimais": 0,
+      "offset": 74
+    },
+    {
+      "nome": "ANO_NASC",
+      "tipo": "N",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 81
+    },
+    {
+      "nome": "NU_IDADE_N",
+      "tipo": "N",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 89
+    },
+    {
+      "nome": "CS_SEXO",
+      "tipo": "C",
+      "tamanho": 7,
+      "decimais": 0,
+      "offset": 99
+    },
+    {
+      "nome": "CS_GESTANT",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 106
+    },
+    {
+      "nome": "CS_RACA",
+      "tipo": "C",
+      "tamanho": 7,
+      "decimais": 0,
+      "offset": 116
+    },
+    {
+      "nome": "CS_ESCOL_N",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 123
+    },
+    {
+      "nome": "SG_UF",
+      "tipo": "C",
+      "tamanho": 5,
+      "decimais": 0,
+      "offset": 133
+    },
+    {
+      "nome": "ID_MN_RESI",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 138
+    },
+    {
+      "nome": "ID_RG_RESI",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 148
+    },
+    {
+      "nome": "ID_PAIS",
+      "tipo": "C",
+      "tamanho": 7,
+      "decimais": 0,
+      "offset": 158
+    },
+    {
+      "nome": "DT_INVEST",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 165
+    },
+    {
+      "nome": "ID_OCUPA_N",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 173
+    },
+    {
+      "nome": "ANT_DT_ACI",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 183
+    },
+    {
+      "nome": "ANT_UF",
+      "tipo": "C",
+      "tamanho": 6,
+      "decimais": 0,
+      "offset": 191
+    },
+    {
+      "nome": "ANT_MUNIC_",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 197
+    },
+    {
+      "nome": "ANT_TEMPO_",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 207
+    },
+    {
+      "nome": "ANT_LOCA_1",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 217
+    },
+    {
+      "nome": "MCLI_LOCAL",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 227
+    },
+    {
+      "nome": "CLI_DOR",
+      "tipo": "C",
+      "tamanho": 7,
+      "decimais": 0,
+      "offset": 237
+    },
+    {
+      "nome": "CLI_EDEMA",
+      "tipo": "C",
+      "tamanho": 9,
+      "decimais": 0,
+      "offset": 244
+    },
+    {
+      "nome": "CLI_EQUIMO",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 253
+    },
+    {
+      "nome": "CLI_NECROS",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 263
+    },
+    {
+      "nome": "CLI_LOCAL_",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 273
+    },
+    {
+      "nome": "CLI_LOCA_1",
+      "tipo": "C",
+      "tamanho": 30,
+      "decimais": 0,
+      "offset": 283
+    },
+    {
+      "nome": "MCLI_SIST",
+      "tipo": "C",
+      "tamanho": 9,
+      "decimais": 0,
+      "offset": 313
+    },
+    {
+      "nome": "CLI_NEURO",
+      "tipo": "C",
+      "tamanho": 9,
+      "decimais": 0,
+      "offset": 322
+    },
+    {
+      "nome": "CLI_HEMORR",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 331
+    },
+    {
+      "nome": "CLI_VAGAIS",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 341
+    },
+    {
+      "nome": "CLI_MIOLIT",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 351
+    },
+    {
+      "nome": "CLI_RENAL",
+      "tipo": "C",
+      "tamanho": 9,
+      "decimais": 0,
+      "offset": 361
+    },
+    {
+      "nome": "CLI_OUTR_2",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 370
+    },
+    {
+      "nome": "CLI_OUTR_3",
+      "tipo": "C",
+      "tamanho": 30,
+      "decimais": 0,
+      "offset": 380
+    },
+    {
+      "nome": "CLI_TEMPO_",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 410
+    },
+    {
+      "nome": "TP_ACIDENT",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 420
+    },
+    {
+      "nome": "ANI_TIPO_1",
+      "tipo": "C",
+      "tamanho": 30,
+      "decimais": 0,
+      "offset": 430
+    },
+    {
+      "nome": "ANI_SERPEN",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 460
+    },
+    {
+      "nome": "ANI_ARANHA",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 470
+    },
+    {
+      "nome": "ANI_LAGART",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 480
+    },
+    {
+      "nome": "TRA_CLASSI",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 490
+    },
+    {
+      "nome": "CON_SOROTE",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 500
+    },
+    {
+      "nome": "NU_AMPOLAS",
+      "tipo": "N",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 510
+    },
+    {
+      "nome": "NU_AMPOL_1",
+      "tipo": "N",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 520
+    },
+    {
+      "nome": "NU_AMPOL_8",
+      "tipo": "N",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 530
+    },
+    {
+      "nome": "NU_AMPOL_6",
+      "tipo": "N",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 540
+    },
+    {
+      "nome": "NU_AMPOL_4",
+      "tipo": "N",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 550
+    },
+    {
+      "nome": "NU_AMPO_7",
+      "tipo": "N",
+      "tamanho": 9,
+      "decimais": 0,
+      "offset": 560
+    },
+    {
+      "nome": "NU_AMPO_5",
+      "tipo": "N",
+      "tamanho": 9,
+      "decimais": 0,
+      "offset": 569
+    },
+    {
+      "nome": "NU_AMPOL_9",
+      "tipo": "N",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 578
+    },
+    {
+      "nome": "NU_AMPOL_3",
+      "tipo": "N",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 588
+    },
+    {
+      "nome": "COM_LOC",
+      "tipo": "C",
+      "tamanho": 7,
+      "decimais": 0,
+      "offset": 598
+    },
+    {
+      "nome": "COM_SECUND",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 605
+    },
+    {
+      "nome": "COM_NECROS",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 615
+    },
+    {
+      "nome": "COM_COMPOR",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 625
+    },
+    {
+      "nome": "COM_DEFICT",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 635
+    },
+    {
+      "nome": "COM_APUTAC",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 645
+    },
+    {
+      "nome": "COM_SISTEM",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 655
+    },
+    {
+      "nome": "COM_RENAL",
+      "tipo": "C",
+      "tamanho": 9,
+      "decimais": 0,
+      "offset": 665
+    },
+    {
+      "nome": "COM_EDEMA",
+      "tipo": "C",
+      "tamanho": 9,
+      "decimais": 0,
+      "offset": 674
+    },
+    {
+      "nome": "COM_SEPTIC",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 683
+    },
+    {
+      "nome": "COM_CHOQUE",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 693
+    },
+    {
+      "nome": "DOENCA_TRA",
+      "tipo": "C",
+      "tamanho": 10,
+      "decimais": 0,
+      "offset": 703
+    },
+    {
+      "nome": "EVOLUCAO",
+      "tipo": "C",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 713
+    },
+    {
+      "nome": "DT_OBITO",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 721
+    },
+    {
+      "nome": "DT_ENCERRA",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 729
+    },
+    {
+      "nome": "DT_DIGITA",
+      "tipo": "D",
+      "tamanho": 8,
+      "decimais": 0,
+      "offset": 737
+    }
+  ],
+  "campos_referencia": {
+    "residencia": "ID_MN_RESI",
+    "notificacao": "ID_MUNICIP",
+    "ocorrencia": "ANT_MUNIC_"
+  },
+  "campos_data": [
+    "DT_NOTIFIC",
+    "ANT_DT_ACI"
+  ],
+  "csv": "dados\\datasus_historico_animais\\goiania\\animais_2016.csv",
+  "csv_sha256": "0a8e9d98fde2c65b14cb3d51a8c249efb911d1c4ad792b908ba6567747d38f5d",
+  "processado_em": "2026-10-27T16:01:57.781290+00:00",
+  "versao": 3,
+  "fonte_sha256": "81a1793ebad898ea07f785c025496e22d49c54e2106b61a8e80f5c5e1a3cf6c5",
+  "csv_escorpioes": "dados\\datasus_historico_animais\\goiania\\escorpioes_2016.csv",
+  "csv_escorpioes_sha256": "796300d84e4217f61d1a4acce8d650985530ca5e595dbad10281b151ed01168c"
+}

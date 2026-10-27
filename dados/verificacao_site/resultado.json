@@ -5,12 +5,16 @@
   ],
   "situacao": "alerta",
   "verificacoes": [
-    "situação e número da semana",
+    "painel: indicadores, gráfico integrado, achados e mapa resumido",
+    "navegação pelas abas e pelo menu do celular",
     "gráfico do ano e comparação",
-    "gráfico anual",
+    "gráfico anual e sorotipos",
+    "LIRAa, Rt e correlação com o clima",
+    "escorpiões",
     "busca de bairro, ficha e três unidades",
     "marcadores dos territórios",
     "abas de prevenção",
+    "modelos testados",
     "sem rolagem horizontal",
     "sem erros de página"
   ]

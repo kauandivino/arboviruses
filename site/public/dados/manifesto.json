@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-27T15:38:36+00:00",
+  "gerado_em": "2026-10-27T16:43:07+00:00",
   "metodo": "pipeline/processamento/preparar_site.py",
   "fontes": [
     {
@@ -62,7 +62,7 @@
     },
     {
       "arquivo": "site/public/dados/site.json",
-      "sha256": "99debec1ed8a9e4cf4fdba14f1807fd0fd78690d1e6fd5ca79b0fac5186e5ff4"
+      "sha256": "2ebec278dcd2e6d17518b064ffb7deaa04c53a2ee32a43322c69258f107f7080"
     },
     {
       "arquivo": "site/public/dados/unidades.geojson",

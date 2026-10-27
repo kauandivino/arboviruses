@@ -1,0 +1,87 @@
+{
+  "consultado_em": "2026-10-27T16:01:19.916864+00:00",
+  "host": "ftp.datasus.gov.br",
+  "arquivos": [
+    {
+      "agravo": "animais",
+      "ano": 2014,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR14.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR14.dbc",
+      "tamanho": 9636595,
+      "modificado": "20260120195600",
+      "nome": "ANIMBR14.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2015,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR15.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR15.dbc",
+      "tamanho": 9868632,
+      "modificado": "20250811192600",
+      "nome": "ANIMBR15.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2016,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR16.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR16.dbc",
+      "tamanho": 10405304,
+      "modificado": "20250811192600",
+      "nome": "ANIMBR16.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2017,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR17.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR17.dbc",
+      "tamanho": 13186096,
+      "modificado": "20250811192600",
+      "nome": "ANIMBR17.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2018,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR18.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR18.dbc",
+      "tamanho": 15365534,
+      "modificado": "20250811192600",
+      "nome": "ANIMBR18.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2019,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR19.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR19.dbc",
+      "tamanho": 11219992,
+      "modificado": "20260120195600",
+      "nome": "ANIMBR19.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2020,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR20.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR20.dbc",
+      "tamanho": 9593719,
+      "modificado": "20260120195600",
+      "nome": "ANIMBR20.dbc"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2021,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR21.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR21.dbc",
+      "tamanho": 9948674,
+      "modificado": "20260120195600",
+      "nome": "ANIMBR21.dbc"
+    }
+  ],
+  "ausentes": []
+}

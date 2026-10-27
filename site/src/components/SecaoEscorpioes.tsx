@@ -5,9 +5,22 @@ import { motion } from 'motion/react';
 import { Phone, Siren } from 'lucide-react';
 import type { DadosSite } from '../lib/dados';
 import { MESES_ABREV, numero, useLargura } from '../lib/formato';
-import { Revelar } from './Revelar';
 
-export function SecaoEscorpioes({ dados }: { dados: DadosSite }) {
+export function EmergenciaEscorpiao() {
+  return (
+    <div className="emergencia">
+      <Siren size={22} aria-hidden="true" />
+      <div>
+        <strong>Foi picado? Procure atendimento imediatamente.</strong>
+        <span>Lave o local com água e sabão. Não corte, não aperte e não amarre o local.</span>
+        <span className="telefones"><Phone size={15} aria-hidden="true" /> SAMU <b>192</b> · Disque Saúde <b>136</b></span>
+      </div>
+    </div>
+  );
+}
+
+/** Acidentes de cada mês do ano atual contra a média dos anos anteriores. */
+export function EscorpioesAno({ dados }: { dados: DadosSite }) {
   const [ref, largura] = useLargura<HTMLDivElement>();
   const [foco, setFoco] = useState<number | null>(null);
   const anoAtual = Math.max(...dados.escorpioes.map(e => Number(e.mes.slice(0, 4))));
@@ -24,23 +37,9 @@ export function SecaoEscorpioes({ dados }: { dados: DadosSite }) {
   const total = meses.reduce((s, d) => s + (d.atual ?? 0), 0);
   const f = foco == null ? null : meses[foco];
   return (
-    <section id="escorpioes" className="secao">
-      <div className="conteudo grade-lado invertida">
-        <Revelar className="cabeca-secao">
-          <p className="sobretitulo">Escorpiões</p>
-          <h2 className="titulo-secao">Acidentes com escorpião</h2>
-          <p className="lead">Em {anoAtual}, foram <strong>{numero(total)}</strong> picadas registradas em Goiânia até agora. Os escorpiões aparecem mais nos meses quentes e se escondem em entulho, ralos e frestas.</p>
-          <div className="emergencia">
-            <Siren size={22} aria-hidden="true" />
-            <div>
-              <strong>Foi picado? Procure atendimento imediatamente.</strong>
-              <span>Lave o local com água e sabão. Não corte, não aperte e não amarre o local.</span>
-              <span className="telefones"><Phone size={15} aria-hidden="true" /> SAMU <b>192</b> · Disque Saúde <b>136</b></span>
-            </div>
-          </div>
-        </Revelar>
-        <Revelar className="cartao grafico-cartao">
+        <div className="cartao grafico-cartao">
           <div className="grafico-topo">
+            <h3 className="titulo-cartao">{numero(total)} acidentes em {anoAtual}</h3>
             <div className="legenda">
               <span><i className="leg-quadrado escorpiao" /> {anoAtual}</span>
               <span><i className="leg-traco" /> Média de {anteriores[0]} a {anteriores.at(-1)}</span>
@@ -74,9 +73,7 @@ export function SecaoEscorpioes({ dados }: { dados: DadosSite }) {
               </div>
             )}
           </div>
-          <p className="nota">Acidentes notificados no SINAN pelo local onde aconteceram. Meses sem barra ainda não têm dados publicados.</p>
-        </Revelar>
-      </div>
-    </section>
+          <p className="nota">Notificações do SINAN pelo local do acidente. Meses sem barra ainda não foram publicados.</p>
+        </div>
   );
 }

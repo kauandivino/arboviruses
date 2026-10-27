@@ -1,0 +1,14 @@
+{
+  "agravo": "animais",
+  "ano": 2016,
+  "situacao": "FINAIS",
+  "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR16.dbc",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR16.dbc",
+  "tamanho": 10405304,
+  "modificado": "20250811192600",
+  "nome": "ANIMBR16.dbc",
+  "arquivo": "dados\\datasus_historico_animais\\originais\\animais\\ANIMBR16.dbc",
+  "sha256": "81a1793ebad898ea07f785c025496e22d49c54e2106b61a8e80f5c5e1a3cf6c5",
+  "status": "baixado",
+  "obtido_em": "2026-10-27T16:01:26.285549+00:00"
+}

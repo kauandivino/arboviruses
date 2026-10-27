@@ -227,6 +227,56 @@ def main():
     rt = [{'semana': r.semana_inicio, 'se': int(r.SE), 'rt': round(float(r.Rt), 3), 'p_rt1': round(float(r.p_rt1), 3)}
           for _, r in info.tail(12).iterrows() if pd.notna(r.Rt)]
 
+    # Séries semanais das últimas 104 semanas: dengue em Goiânia, vizinhos e resto de Goiás, internações e chikungunya.
+    def semanal(agravo, grupo, internado=None):
+        d = regional_todos[(regional_todos.agravo == agravo) & (regional_todos.grupo == grupo)]
+        if internado is not None:
+            d = d[d.internado == internado]
+        return d.groupby('semana_inicio').notificacoes.sum()
+    regional_todos = pd.concat([pd.read_csv(f, parse_dates=['semana_inicio']).assign(agravo=f.stem.split('_go_')[0])
+                                for f in sorted((ROOT / 'dados/regional').glob('*_go_*.csv'))], ignore_index=True)
+    fim_semanal = regional_todos.semana_inicio.max()
+    semanas = pd.date_range(fim_semanal - pd.Timedelta(weeks=103), fim_semanal, freq='7D')
+    series = {'goiania': semanal('dengue', 'goiania'), 'vizinhos': semanal('dengue', 'vizinhos'), 'resto_go': semanal('dengue', 'resto_go'),
+              'internacoes': semanal('dengue', 'goiania', 1), 'chikungunya': semanal('chikungunya', 'goiania')}
+    from pipeline.modelagem.correlacoes import clima as clima_semanal_df
+    chuva_semana = clima_semanal_df().chuva_mm  # semanas com menos de 90% das horas medidas ficam sem valor
+    recentes_semanal = [{'semana': s.date().isoformat(), 'ano': semana_epidemiologica(s)[0], 'se': semana_epidemiologica(s)[1],
+                         **{k: int(v.get(s, 0)) for k, v in series.items()},
+                         'chuva_mm': None if pd.isna(chuva_semana.get(s)) else round(float(chuva_semana.get(s)), 1),
+                         'incompleta': bool(s > fim_semanal - pd.Timedelta(weeks=12))} for s in semanas]
+    internacoes_anual = semanal('dengue', 'goiania', 1).groupby(lambda s: semana_epidemiologica(s)[0]).sum()
+
+    def resultado_escorpioes(m):
+        teste, escolhido = m['avaliacao']['teste'], m['modelo_escolhido_na_validacao']
+        perdeu = [h for h, r in teste.items() if r[escolhido] >= min(r['sazonal'], r['climatologia'])]
+        if not perdeu:
+            return 'Ganhou das referências simples nos 3 horizontes do teste (2021 em diante), por margem pequena.'
+        prazo = ' e '.join(perdeu) + (' mês' if perdeu == ['1'] else ' meses')
+        return f'Com {prazo} de antecedência, não ganhou de repetir o mesmo mês do ano anterior no teste (2021 em diante); não é exibido.'
+
+    # Correlações e modelos (todos os testados, exibidos ou não).
+    correlacoes = json.loads((MOD / 'correlacoes.json').read_text(encoding='utf-8'))
+    esc = json.loads((MOD / 'escorpioes_manifesto.json').read_text(encoding='utf-8'))
+    def ler_meta(nome):
+        return json.loads((MOD / nome).read_text(encoding='utf-8'))
+    prev_meta, risco_meta, int_meta, prosp = (ler_meta('previsao_dengue_manifesto.json'), ler_meta('risco_dengue_manifesto.json'),
+                                              ler_meta('internacoes_dengue_manifesto.json'), ler_meta('registro_prospectivo_resumo.json'))
+    modelos = [
+        {'nome': 'Casos que ainda vão ser registrados', 'pergunta': 'Quantos casos das últimas semanas ainda vão chegar?', 'status': 'em_uso',
+         'resultado': 'Erra bem menos que o número bruto em todas as 12 semanas testadas (2020–2025).'},
+        {'nome': 'Projeção da dengue', 'pergunta': 'Quantos casos nas próximas 8 semanas?', 'status': 'em_uso' if prev_meta['avaliacao']['exibida'] else 'nao_passou',
+         'resultado': 'Ganhou das referências simples nos 8 horizontes do teste (2021–2025); vantagem maior a 6–8 semanas.'},
+        {'nome': 'Alerta de surto', 'pergunta': 'A dengue está acima do habitual para a época?', 'status': 'em_uso',
+         'resultado': 'Teria avisado 7 semanas antes do pico em 2022 e 11 em 2024.'},
+        {'nome': 'Acidentes com escorpião', 'pergunta': 'Quantos acidentes nos próximos 3 meses?', 'status': 'em_uso' if esc['exibida'] else 'nao_passou',
+         'resultado': resultado_escorpioes(esc)},
+        {'nome': 'Chance de ficar acima do habitual', 'pergunta': 'Qual a probabilidade nas próximas 4 semanas?', 'status': 'nao_passou',
+         'resultado': f"Perdeu para as referências no teste; uma regra simples está em avaliação desde {prosp['inicio'].split('-')[2]}/{prosp['inicio'].split('-')[1]}/{prosp['inicio'][:4]}."},
+        {'nome': 'Internações por dengue', 'pergunta': 'Quantas internações nas próximas 4 semanas?', 'status': 'nao_passou',
+         'resultado': 'Empatou com repetir as últimas 4 semanas; não é exibido.'},
+    ]
+
     nowcast_meta = json.loads((MOD / 'nowcast_dengue_manifesto.json').read_text(encoding='utf-8'))
     ultima_semana = pd.Timestamp(nowcast_meta['data_corte_semana_digitacao'])
     site = {
@@ -240,6 +290,17 @@ def main():
             'faixa_habitual': faixa, 'temporadas': temporadas, 'projecao': projecao, 'anual': anual, 'mensal': dengue_mensal,
         },
         'sorotipos': sorotipos,
+        'semanal': recentes_semanal,
+        'nowcast': [{'semana': r.semana.date().isoformat(), 'se': semana_epidemiologica(r.semana)[1], 'observado': int(r.observado),
+                     'estimado': None if pd.isna(r.estimado) else int(r.estimado), 'inferior': None if pd.isna(r.inferior) else int(r.inferior),
+                     'superior': None if pd.isna(r.superior) else int(r.superior)} for _, r in nowcast[nowcast.defasagem.notna()].iterrows()],
+        'internacoes_anual': [{'ano': int(a), 'internacoes': int(n)} for a, n in internacoes_anual.items() if a >= 2014],
+        'correlacoes': {k: correlacoes[k] for k in ['clima_dengue', 'vizinhos', 'chikungunya', 'escorpioes']},
+        'escorpioes_modelo': {'exibida': esc['exibida'], 'previsao': esc['previsao'] if esc['exibida'] else [],
+                              'serie': esc['serie_mensal'], 'ultimo_mes': esc['ultimo_mes_completo'],
+                              'erro_teste': {h: {'modelo': v[esc['modelo_escolhido_na_validacao']], 'referencia': min(v['sazonal'], v['climatologia'])}
+                                             for h, v in esc['avaliacao']['teste'].items()}},
+        'modelos': modelos,
         'outras_arboviroses': outras,
         'liraa': ciclos_liraa,
         'transmissao': {'fonte': 'InfoDengue (Fiocruz/FGV)', 'consultado_em': info_meta['coletas'][0]['consultado_em'],

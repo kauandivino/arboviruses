@@ -4,10 +4,10 @@ import { dataLonga } from '../lib/formato';
 import { Revelar } from './Revelar';
 
 const FONTES = [
-  { Icone: Database, nome: 'Ministério da Saúde', texto: 'Casos de dengue e acidentes com escorpião registrados no SINAN (DATASUS).' },
-  { Icone: FileText, nome: 'Prefeitura de Goiânia', texto: 'Boletins semanais de dengue com os bairros de mais casos e o mapa oficial de bairros.' },
-  { Icone: CloudSun, nome: 'INMET', texto: 'Chuva, temperatura e umidade da estação meteorológica de Goiânia.' },
-  { Icone: MapaIcone, nome: 'CNES e IBGE', texto: 'Cadastro das unidades de saúde e limites do município (Censo 2022).' },
+  { Icone: Database, nome: 'Ministério da Saúde', texto: 'Casos de dengue, chikungunya, zika e acidentes com escorpião registrados no SINAN (DATASUS).' },
+  { Icone: FileText, nome: 'Prefeitura de Goiânia', texto: 'Boletins semanais de dengue, levantamentos do mosquito (LIRAa) e o mapa oficial de bairros.' },
+  { Icone: CloudSun, nome: 'INMET e InfoDengue', texto: 'Chuva, temperatura e umidade da estação de Goiânia; ritmo de transmissão (Fiocruz/FGV).' },
+  { Icone: MapaIcone, nome: 'CNES e IBGE', texto: 'Cadastro das unidades de saúde, limites e saneamento por bairro (Censo 2022).' },
 ];
 
 export function SecaoSobre({ dados }: { dados: DadosSite }) {

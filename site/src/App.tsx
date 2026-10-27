@@ -1,19 +1,13 @@
 import { useDados } from './lib/dados';
+import { useAba } from './lib/abas';
 import { Cabecalho } from './components/Cabecalho';
-import { Heroi } from './components/Heroi';
-import { Numeros } from './components/Numeros';
-import { SecaoDengue } from './components/SecaoDengue';
-import { SecaoChuva } from './components/SecaoChuva';
-import { SecaoOutras } from './components/SecaoOutras';
-import { SecaoEscorpioes } from './components/SecaoEscorpioes';
-import { SecaoMapa } from './components/SecaoMapa';
-import { SecaoProjeto } from './components/SecaoProjeto';
-import { SecaoPrevencao } from './components/SecaoPrevencao';
-import { SecaoSobre } from './components/SecaoSobre';
 import { Rodape } from './components/Rodape';
+import { Painel } from './abas/Painel';
+import { AbaArboviroses, AbaBairro, AbaDengue, AbaEscorpioes, AbaMosquito, AbaPrevencao, AbaSobre } from './abas/Abas';
 
 export function App() {
   const { dados, erro } = useDados();
+  const aba = useAba();
   if (erro) {
     return <main className="estado-carga"><p>Não foi possível carregar os dados agora. Tente atualizar a página em alguns instantes.</p></main>;
   }
@@ -22,19 +16,17 @@ export function App() {
   }
   return (
     <>
-      <a className="pular" href="#mapa">Pular para o conteúdo</a>
-      <Cabecalho />
-      <main>
-        <Heroi dados={dados} />
-        <SecaoMapa dados={dados} />
-        <Numeros dados={dados} />
-        <SecaoDengue dados={dados} />
-        <SecaoOutras dados={dados} />
-        <SecaoChuva dados={dados} />
-        <SecaoEscorpioes dados={dados} />
-        <SecaoProjeto dados={dados} />
-        <SecaoPrevencao />
-        <SecaoSobre dados={dados} />
+      <a className="pular" href="#conteudo">Pular para o conteúdo</a>
+      <Cabecalho aba={aba} />
+      <main id="conteudo" key={aba}>
+        {aba === 'painel' && <Painel dados={dados} />}
+        {aba === 'dengue' && <AbaDengue dados={dados} />}
+        {aba === 'arboviroses' && <AbaArboviroses dados={dados} />}
+        {aba === 'mosquito' && <AbaMosquito dados={dados} />}
+        {aba === 'escorpioes' && <AbaEscorpioes dados={dados} />}
+        {aba === 'bairro' && <AbaBairro dados={dados} />}
+        {aba === 'prevencao' && <AbaPrevencao />}
+        {aba === 'sobre' && <AbaSobre dados={dados} />}
       </main>
       <Rodape dados={dados} />
     </>

@@ -1,10 +1,12 @@
-# Modelagem da dengue
+# Modelagem
 
 Modelos treinados e avaliados com os microdados reais do SINAN, todos em `pipeline/modelagem/`:
 
 - **Nowcasting:** estima quantas notificações das semanas recentes ainda vão ser digitadas.
 - **Previsão de 1 a 8 semanas:** só é exibida se, num período de teste nunca usado na escolha do modelo, superar referências simples.
 - **Diagrama de controle com alerta:** compara cada semana com o padrão dos cinco anos anteriores.
+- **Correlações:** dengue com clima, cidades vizinhas e chikungunya; escorpiões com temperatura.
+- **Acidentes com escorpião de 1 a 3 meses:** avaliada com a mesma regra; não passou e não é exibida.
 
 Em todos, o passado é reconstruído com o que estava digitado em cada data. Nenhum modelo usa informação que ainda não existia no momento avaliado.
 
@@ -176,6 +178,58 @@ A primeira versão da correção rápida de atraso agrupava os atrasos acima de 
 
 Limitação: o campo de internação é o do estado final do registro. Não se sabe se ele já estava anotado em cada data passada, o que torna a avaliação um pouco otimista.
 
+## Correlações (`correlacoes.py`)
+
+Análise descritiva, sem previsão, de 2015 em diante. Cada relação é medida de duas formas:
+
+- **bruta:** as séries como são. Inclui o fato de as duas subirem na mesma época do ano.
+- **sem sazonalidade:** cada semana menos a média da mesma semana nos anos disponíveis. Só esta indica relação além do calendário.
+
+Casos: notificações de Goiânia por semana de início dos sintomas, só semanas com 12 ou mais semanas de idade. Clima: semanas com menos de 90% das horas (chuva) ou 60% (temperatura e umidade) ficam sem valor.
+
+| Clima × log(dengue) | Melhor defasagem (semanas) | r bruta | r sem sazonalidade |
+|---|---|---|---|
+| Chuva | 6 | 0,36 | −0,01 (muito fraca) |
+| Temperatura | 0 | −0,09 | 0,16 (fraca) |
+| Umidade | 6 | 0,58 | 0,12 (muito fraca) |
+
+A chuva acompanha a dengue cerca de 6 semanas depois, mas quase só porque as duas seguem a época do ano: um ano mais chuvoso que o normal não teve, por isso, mais dengue que o normal.
+
+- **Cidades vizinhas:** o pico da dengue nas 10 cidades vizinhas veio na mesma semana que o de Goiânia (diferença de até 1 semana) em 8 de 12 temporadas, antes em 2 e depois em 2. Correlação semanal (log) de 0,89. Elas não servem de aviso antecipado.
+- **Chikungunya:** nas 5 temporadas com 100 ou mais casos, o pico veio depois do da dengue em 4, mediana de 3 semanas.
+- **Escorpiões e temperatura (149 meses):** r bruta de 0,04 e sem sazonalidade de 0,17. Os acidentes variam pouco ao longo do ano.
+
+Associação não demonstra causa. O teste `verificar_correlacoes` confere, em séries sintéticas, que a defasagem é recuperada e que a remoção da sazonalidade funciona.
+
+## Acidentes com escorpião de 1 a 3 meses (`escorpioes.py`, avaliada, não exibida)
+
+### Regra, definida antes de rodar
+
+- **Alvo:** acidentes por mês de ocorrência em Goiânia (local do acidente), SINAN de animais peçonhentos de 2014 a 2026. Um mês é considerado completo 3 meses depois do fim (`ATRASO`).
+- **Atributos no fim do mês m,** só com registros digitados até então:
+  - acidentes do mês m e média de m−1 e m−2;
+  - o mesmo mês-alvo do ano anterior;
+  - temperatura média e chuva do mês m (cada semana entra no mês em que termina);
+  - seno e cosseno do mês-alvo.
+- **Referências:** repetir o mesmo mês do ano anterior; média do mesmo mês nos três anos anteriores.
+- **Candidatos:** ridge e gradient boosting no log da contagem, um ajuste por horizonte. O treino só usa alvos já completos na origem.
+- **Escolha:** menor erro absoluto médio na validação. **Exibição:** só se o escolhido superar as duas referências nos três horizontes do teste.
+
+### Resultado (erro absoluto médio, acidentes por mês)
+
+| Período | Horizonte (meses) | Mesmo mês do ano anterior | Média de 3 anos | Ridge | Gradient boosting | n |
+|---|---|---|---|---|---|---|
+| Validação (origens até 2020 com 30 meses de treino) | 1 | 6,86 | 6,51 | 6,42 | 6,74 | 28 |
+|  | 2 | 7,07 | 6,83 | 6,86 | 6,07 | 28 |
+|  | 3 | 6,21 | 5,94 | 8,08 | 5,01 | 28 |
+| Teste (origens 2021 em diante) | 1 | 11,28 | 13,30 | 15,57 | 10,99 | 57 |
+|  | 2 | 11,29 | 12,67 | 16,71 | 11,97 | 56 |
+|  | 3 | 11,89 | 13,28 | 16,30 | 12,21 | 55 |
+
+**Não é exibida:** o escolhido na validação (gradient boosting) ganhou a 1 mês, mas perdeu para repetir o mesmo mês do ano anterior a 2 e 3 meses. O site mostra a série e a época do ano, sem previsão.
+
+**Correção feita durante o desenvolvimento.** A primeira versão treinava com alvos de meses ainda em digitação na origem e passava no teste. Com o treino restrito a alvos completos, como manda a reconstrução do passado, deixou de passar. O teste `verificar_correlacoes` garante que registros digitados depois da origem não mudam a previsão.
+
 ## Avaliação prospectiva registrada
 
 Os testes retrospectivos indicaram que o modelo mais simples, só com a situação atual em relação ao habitual, foi o melhor para a probabilidade de ficar acima do habitual. Como ele era referência, adotá-lo pelo resultado do teste seria escolher depois de ver a resposta.
@@ -213,15 +267,19 @@ Tudo roda em `python -m pipeline`. Para rodar só a modelagem e os testes:
 & .venv/Scripts/python.exe -m pipeline.modelagem.nowcast
 & .venv/Scripts/python.exe -m pipeline.modelagem.previsao
 & .venv/Scripts/python.exe -m pipeline.modelagem.alerta
+& .venv/Scripts/python.exe -m pipeline.modelagem.correlacoes
+& .venv/Scripts/python.exe -m pipeline.modelagem.escorpioes
 & .venv/Scripts/python.exe -m pipeline.verificacao.verificar_nowcast
 & .venv/Scripts/python.exe -m pipeline.verificacao.verificar_previsao
 & .venv/Scripts/python.exe -m pipeline.verificacao.verificar_alerta
+& .venv/Scripts/python.exe -m pipeline.verificacao.verificar_correlacoes
 ```
 
 Para coletar de novo o histórico:
 
 ```powershell
 & .venv/Scripts/python.exe -m pipeline.coleta.baixar_datasus --anos 2014 2015 2016 2017 2018 2019 2020 2021 --agravos dengue --saida dados/datasus_historico
+& .venv/Scripts/python.exe -m pipeline.coleta.baixar_datasus --anos 2014 2015 2016 2017 2018 2019 2020 2021 --agravos animais --saida dados/datasus_historico_animais
 & .venv/Scripts/python.exe -m pipeline.coleta.baixar_inmet --anos 2014 2015 2016 2017 2018 2019 2020 2021 --destino dados/inmet_historico
 ```
 

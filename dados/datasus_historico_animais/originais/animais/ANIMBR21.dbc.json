@@ -1,0 +1,14 @@
+{
+  "agravo": "animais",
+  "ano": 2021,
+  "situacao": "FINAIS",
+  "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR21.dbc",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ANIMBR21.dbc",
+  "tamanho": 9948674,
+  "modificado": "20260120195600",
+  "nome": "ANIMBR21.dbc",
+  "arquivo": "dados\\datasus_historico_animais\\originais\\animais\\ANIMBR21.dbc",
+  "sha256": "3384a189d1a8c0a4e4c5a8667e65454f5f215c0d711e91dbde6931da1e0e7a41",
+  "status": "baixado",
+  "obtido_em": "2026-10-27T16:01:32.732787+00:00"
+}

@@ -1,0 +1,718 @@
+{
+  "gerado_em": "2026-10-27T16:24:27.979335+00:00",
+  "metodo": "pipeline/modelagem/escorpioes.py",
+  "chave": "fb2fb120b71416fd7e135139b41c3ca5efb01d1d45638efa0d250ab11133cfb1",
+  "ultimo_mes_completo": "2026-08",
+  "modelo_escolhido_na_validacao": "gbm",
+  "exibida": false,
+  "previsao": [
+    {
+      "mes": "2026-09",
+      "horizonte": 1,
+      "previsto": 66,
+      "faixa_80pct": [
+        62,
+        123
+      ]
+    },
+    {
+      "mes": "2026-10",
+      "horizonte": 2,
+      "previsto": 58,
+      "faixa_80pct": [
+        55,
+        118
+      ]
+    },
+    {
+      "mes": "2026-11",
+      "horizonte": 3,
+      "previsto": 56,
+      "faixa_80pct": [
+        50,
+        107
+      ]
+    }
+  ],
+  "avaliacao": {
+    "validacao": {
+      "1": {
+        "sazonal": 6.86,
+        "climatologia": 6.51,
+        "ridge": 6.42,
+        "gbm": 6.74,
+        "n": 28.0
+      },
+      "2": {
+        "sazonal": 7.07,
+        "climatologia": 6.83,
+        "ridge": 6.86,
+        "gbm": 6.07,
+        "n": 28.0
+      },
+      "3": {
+        "sazonal": 6.21,
+        "climatologia": 5.94,
+        "ridge": 8.08,
+        "gbm": 5.01,
+        "n": 28.0
+      }
+    },
+    "teste": {
+      "1": {
+        "sazonal": 11.28,
+        "climatologia": 13.3,
+        "ridge": 15.57,
+        "gbm": 10.99,
+        "n": 57.0
+      },
+      "2": {
+        "sazonal": 11.29,
+        "climatologia": 12.67,
+        "ridge": 16.71,
+        "gbm": 11.97,
+        "n": 56.0
+      },
+      "3": {
+        "sazonal": 11.89,
+        "climatologia": 13.28,
+        "ridge": 16.3,
+        "gbm": 12.21,
+        "n": 55.0
+      }
+    }
+  },
+  "serie_mensal": [
+    {
+      "mes": "2014-01",
+      "acidentes": 7
+    },
+    {
+      "mes": "2014-02",
+      "acidentes": 6
+    },
+    {
+      "mes": "2014-03",
+      "acidentes": 5
+    },
+    {
+      "mes": "2014-04",
+      "acidentes": 7
+    },
+    {
+      "mes": "2014-05",
+      "acidentes": 13
+    },
+    {
+      "mes": "2014-06",
+      "acidentes": 2
+    },
+    {
+      "mes": "2014-07",
+      "acidentes": 8
+    },
+    {
+      "mes": "2014-08",
+      "acidentes": 11
+    },
+    {
+      "mes": "2014-09",
+      "acidentes": 10
+    },
+    {
+      "mes": "2014-10",
+      "acidentes": 11
+    },
+    {
+      "mes": "2014-11",
+      "acidentes": 10
+    },
+    {
+      "mes": "2014-12",
+      "acidentes": 12
+    },
+    {
+      "mes": "2015-01",
+      "acidentes": 9
+    },
+    {
+      "mes": "2015-02",
+      "acidentes": 8
+    },
+    {
+      "mes": "2015-03",
+      "acidentes": 5
+    },
+    {
+      "mes": "2015-04",
+      "acidentes": 15
+    },
+    {
+      "mes": "2015-05",
+      "acidentes": 2
+    },
+    {
+      "mes": "2015-06",
+      "acidentes": 6
+    },
+    {
+      "mes": "2015-07",
+      "acidentes": 11
+    },
+    {
+      "mes": "2015-08",
+      "acidentes": 8
+    },
+    {
+      "mes": "2015-09",
+      "acidentes": 10
+    },
+    {
+      "mes": "2015-10",
+      "acidentes": 18
+    },
+    {
+      "mes": "2015-11",
+      "acidentes": 9
+    },
+    {
+      "mes": "2015-12",
+      "acidentes": 11
+    },
+    {
+      "mes": "2016-01",
+      "acidentes": 10
+    },
+    {
+      "mes": "2016-02",
+      "acidentes": 15
+    },
+    {
+      "mes": "2016-03",
+      "acidentes": 10
+    },
+    {
+      "mes": "2016-04",
+      "acidentes": 13
+    },
+    {
+      "mes": "2016-05",
+      "acidentes": 11
+    },
+    {
+      "mes": "2016-06",
+      "acidentes": 6
+    },
+    {
+      "mes": "2016-07",
+      "acidentes": 6
+    },
+    {
+      "mes": "2016-08",
+      "acidentes": 4
+    },
+    {
+      "mes": "2016-09",
+      "acidentes": 9
+    },
+    {
+      "mes": "2016-10",
+      "acidentes": 12
+    },
+    {
+      "mes": "2016-11",
+      "acidentes": 13
+    },
+    {
+      "mes": "2016-12",
+      "acidentes": 16
+    },
+    {
+      "mes": "2017-01",
+      "acidentes": 18
+    },
+    {
+      "mes": "2017-02",
+      "acidentes": 12
+    },
+    {
+      "mes": "2017-03",
+      "acidentes": 9
+    },
+    {
+      "mes": "2017-04",
+      "acidentes": 19
+    },
+    {
+      "mes": "2017-05",
+      "acidentes": 12
+    },
+    {
+      "mes": "2017-06",
+      "acidentes": 7
+    },
+    {
+      "mes": "2017-07",
+      "acidentes": 8
+    },
+    {
+      "mes": "2017-08",
+      "acidentes": 13
+    },
+    {
+      "mes": "2017-09",
+      "acidentes": 11
+    },
+    {
+      "mes": "2017-10",
+      "acidentes": 9
+    },
+    {
+      "mes": "2017-11",
+      "acidentes": 8
+    },
+    {
+      "mes": "2017-12",
+      "acidentes": 26
+    },
+    {
+      "mes": "2018-01",
+      "acidentes": 14
+    },
+    {
+      "mes": "2018-02",
+      "acidentes": 19
+    },
+    {
+      "mes": "2018-03",
+      "acidentes": 13
+    },
+    {
+      "mes": "2018-04",
+      "acidentes": 9
+    },
+    {
+      "mes": "2018-05",
+      "acidentes": 23
+    },
+    {
+      "mes": "2018-06",
+      "acidentes": 17
+    },
+    {
+      "mes": "2018-07",
+      "acidentes": 17
+    },
+    {
+      "mes": "2018-08",
+      "acidentes": 14
+    },
+    {
+      "mes": "2018-09",
+      "acidentes": 32
+    },
+    {
+      "mes": "2018-10",
+      "acidentes": 15
+    },
+    {
+      "mes": "2018-11",
+      "acidentes": 37
+    },
+    {
+      "mes": "2018-12",
+      "acidentes": 23
+    },
+    {
+      "mes": "2019-01",
+      "acidentes": 20
+    },
+    {
+      "mes": "2019-02",
+      "acidentes": 24
+    },
+    {
+      "mes": "2019-03",
+      "acidentes": 14
+    },
+    {
+      "mes": "2019-04",
+      "acidentes": 16
+    },
+    {
+      "mes": "2019-05",
+      "acidentes": 14
+    },
+    {
+      "mes": "2019-06",
+      "acidentes": 16
+    },
+    {
+      "mes": "2019-07",
+      "acidentes": 14
+    },
+    {
+      "mes": "2019-08",
+      "acidentes": 18
+    },
+    {
+      "mes": "2019-09",
+      "acidentes": 23
+    },
+    {
+      "mes": "2019-10",
+      "acidentes": 25
+    },
+    {
+      "mes": "2019-11",
+      "acidentes": 33
+    },
+    {
+      "mes": "2019-12",
+      "acidentes": 19
+    },
+    {
+      "mes": "2020-01",
+      "acidentes": 29
+    },
+    {
+      "mes": "2020-02",
+      "acidentes": 20
+    },
+    {
+      "mes": "2020-03",
+      "acidentes": 24
+    },
+    {
+      "mes": "2020-04",
+      "acidentes": 13
+    },
+    {
+      "mes": "2020-05",
+      "acidentes": 24
+    },
+    {
+      "mes": "2020-06",
+      "acidentes": 24
+    },
+    {
+      "mes": "2020-07",
+      "acidentes": 25
+    },
+    {
+      "mes": "2020-08",
+      "acidentes": 10
+    },
+    {
+      "mes": "2020-09",
+      "acidentes": 22
+    },
+    {
+      "mes": "2020-10",
+      "acidentes": 21
+    },
+    {
+      "mes": "2020-11",
+      "acidentes": 24
+    },
+    {
+      "mes": "2020-12",
+      "acidentes": 27
+    },
+    {
+      "mes": "2021-01",
+      "acidentes": 21
+    },
+    {
+      "mes": "2021-02",
+      "acidentes": 32
+    },
+    {
+      "mes": "2021-03",
+      "acidentes": 19
+    },
+    {
+      "mes": "2021-04",
+      "acidentes": 30
+    },
+    {
+      "mes": "2021-05",
+      "acidentes": 34
+    },
+    {
+      "mes": "2021-06",
+      "acidentes": 25
+    },
+    {
+      "mes": "2021-07",
+      "acidentes": 16
+    },
+    {
+      "mes": "2021-08",
+      "acidentes": 21
+    },
+    {
+      "mes": "2021-09",
+      "acidentes": 23
+    },
+    {
+      "mes": "2021-10",
+      "acidentes": 22
+    },
+    {
+      "mes": "2021-11",
+      "acidentes": 32
+    },
+    {
+      "mes": "2021-12",
+      "acidentes": 34
+    },
+    {
+      "mes": "2022-01",
+      "acidentes": 23
+    },
+    {
+      "mes": "2022-02",
+      "acidentes": 26
+    },
+    {
+      "mes": "2022-03",
+      "acidentes": 30
+    },
+    {
+      "mes": "2022-04",
+      "acidentes": 36
+    },
+    {
+      "mes": "2022-05",
+      "acidentes": 31
+    },
+    {
+      "mes": "2022-06",
+      "acidentes": 26
+    },
+    {
+      "mes": "2022-07",
+      "acidentes": 32
+    },
+    {
+      "mes": "2022-08",
+      "acidentes": 23
+    },
+    {
+      "mes": "2022-09",
+      "acidentes": 21
+    },
+    {
+      "mes": "2022-10",
+      "acidentes": 37
+    },
+    {
+      "mes": "2022-11",
+      "acidentes": 36
+    },
+    {
+      "mes": "2022-12",
+      "acidentes": 34
+    },
+    {
+      "mes": "2023-01",
+      "acidentes": 31
+    },
+    {
+      "mes": "2023-02",
+      "acidentes": 35
+    },
+    {
+      "mes": "2023-03",
+      "acidentes": 29
+    },
+    {
+      "mes": "2023-04",
+      "acidentes": 37
+    },
+    {
+      "mes": "2023-05",
+      "acidentes": 41
+    },
+    {
+      "mes": "2023-06",
+      "acidentes": 30
+    },
+    {
+      "mes": "2023-07",
+      "acidentes": 43
+    },
+    {
+      "mes": "2023-08",
+      "acidentes": 49
+    },
+    {
+      "mes": "2023-09",
+      "acidentes": 32
+    },
+    {
+      "mes": "2023-10",
+      "acidentes": 53
+    },
+    {
+      "mes": "2023-11",
+      "acidentes": 49
+    },
+    {
+      "mes": "2023-12",
+      "acidentes": 20
+    },
+    {
+      "mes": "2024-01",
+      "acidentes": 50
+    },
+    {
+      "mes": "2024-02",
+      "acidentes": 35
+    },
+    {
+      "mes": "2024-03",
+      "acidentes": 39
+    },
+    {
+      "mes": "2024-04",
+      "acidentes": 58
+    },
+    {
+      "mes": "2024-05",
+      "acidentes": 46
+    },
+    {
+      "mes": "2024-06",
+      "acidentes": 30
+    },
+    {
+      "mes": "2024-07",
+      "acidentes": 23
+    },
+    {
+      "mes": "2024-08",
+      "acidentes": 39
+    },
+    {
+      "mes": "2024-09",
+      "acidentes": 43
+    },
+    {
+      "mes": "2024-10",
+      "acidentes": 43
+    },
+    {
+      "mes": "2024-11",
+      "acidentes": 48
+    },
+    {
+      "mes": "2024-12",
+      "acidentes": 42
+    },
+    {
+      "mes": "2025-01",
+      "acidentes": 41
+    },
+    {
+      "mes": "2025-02",
+      "acidentes": 69
+    },
+    {
+      "mes": "2025-03",
+      "acidentes": 92
+    },
+    {
+      "mes": "2025-04",
+      "acidentes": 59
+    },
+    {
+      "mes": "2025-05",
+      "acidentes": 81
+    },
+    {
+      "mes": "2025-06",
+      "acidentes": 63
+    },
+    {
+      "mes": "2025-07",
+      "acidentes": 48
+    },
+    {
+      "mes": "2025-08",
+      "acidentes": 57
+    },
+    {
+      "mes": "2025-09",
+      "acidentes": 61
+    },
+    {
+      "mes": "2025-10",
+      "acidentes": 58
+    },
+    {
+      "mes": "2025-11",
+      "acidentes": 71
+    },
+    {
+      "mes": "2025-12",
+      "acidentes": 60
+    },
+    {
+      "mes": "2026-01",
+      "acidentes": 63
+    },
+    {
+      "mes": "2026-02",
+      "acidentes": 61
+    },
+    {
+      "mes": "2026-03",
+      "acidentes": 57
+    },
+    {
+      "mes": "2026-04",
+      "acidentes": 56
+    },
+    {
+      "mes": "2026-05",
+      "acidentes": 88
+    },
+    {
+      "mes": "2026-06",
+      "acidentes": 58
+    },
+    {
+      "mes": "2026-07",
+      "acidentes": 56
+    },
+    {
+      "mes": "2026-08",
+      "acidentes": 76
+    }
+  ],
+  "regra": "escolher na validação o candidato de menor erro médio; exibir só se, no teste, superar as duas referências nos três horizontes",
+  "fontes": [
+    {
+      "arquivo": "dados/datasus/goiania/escorpioes_2022.csv",
+      "sha256": "791ee677b8f8a22245bb1ab34801d7a62752f245aaa2198418f5a84ea3ea212a"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/escorpioes_2023.csv",
+      "sha256": "d737b0d3cd53af663b4a28821d87bfeb9dd46faab00d4e7c4ea9473c0e5831b2"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/escorpioes_2024.csv",
+      "sha256": "1872468330c2304ae66f277eaf01092ae402f78debbbea16d862ac4f07caa7b8"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/escorpioes_2025.csv",
+      "sha256": "0233c3c882ef18fafaaa9c56a04ef5760f62dd2099db8337798d3e9e7fbf030f"
+    },
+    {
+      "arquivo": "dados/datasus/goiania/escorpioes_2026.csv",
+      "sha256": "7dd4c835463f6f14f515578149656d85200776289c2f2ff45c8864b6f87d9835"
+    }
+  ]
+}
