@@ -1,4 +1,4 @@
-# Cria (ou remove, com -Remover) a tarefa semanal no Agendador de Tarefas do Windows.
+﻿# Cria (ou remove, com -Remover) a tarefa semanal no Agendador de Tarefas do Windows.
 #   .\agendar_atualizacao.ps1                      segunda-feira às 07:00
 #   .\agendar_atualizacao.ps1 -Dia Friday -Hora 20:30
 #   .\agendar_atualizacao.ps1 -Remover

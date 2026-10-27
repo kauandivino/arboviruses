@@ -1,4 +1,4 @@
-# Atualização semanal: baixa SINAN e INMET, reprocessa, verifica e recompila o painel.
+﻿# Atualização semanal: baixa SINAN e INMET, reprocessa, verifica e recompila o painel.
 # Executado pelo Agendador de Tarefas (ver agendar_atualizacao.ps1) ou manualmente.
 Set-Location -LiteralPath $PSScriptRoot
 New-Item -ItemType Directory -Force logs | Out-Null

@@ -1,4 +1,4 @@
-# Prepara o projeto em um computador novo (Windows).
+﻿# Prepara o projeto em um computador novo (Windows).
 #   .\instalar.ps1
 #   .\instalar.ps1 -Pacote C:\Downloads\originais_insubstituiveis_20261027.zip
 # Depois: .venv\Scripts\python.exe -m pipeline --coletar
