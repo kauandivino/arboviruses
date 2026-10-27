@@ -60,7 +60,7 @@ def inventory(years, agravos):
             names = {n.upper(): n for n in ftp.nlst(folder)}
             ftp.voidcmd('TYPE I')
             for agravo in agravos:
-                prefix = {'dengue': 'DENGBR', 'animais': 'ANIMBR'}[agravo]
+                prefix = {'dengue': 'DENGBR', 'animais': 'ANIMBR', 'chikungunya': 'CHIKBR', 'zika': 'ZIKABR'}[agravo]
                 for year in years:
                     name = f'{prefix}{year % 100:02}.dbc'
                     matches = [n for n in names.values() if n.split('/')[-1].upper() == name.upper()]
@@ -300,7 +300,8 @@ def process(item, base, code, keep_dbf=False):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--anos', nargs='+', type=int, default=anos_ate_corrente(2022))
-    parser.add_argument('--agravos', nargs='+', choices=['dengue', 'animais'], default=['dengue','animais'])
+    # chikungunya e zika: só download (--somente-baixar); os agregados saem de pipeline.coleta.extrair_regional.
+    parser.add_argument('--agravos', nargs='+', choices=['dengue', 'animais', 'chikungunya', 'zika'], default=['dengue','animais'])
     parser.add_argument('--saida', type=Path, default=Path('dados/datasus'))
     parser.add_argument('--municipio', default='520870', help='Código SINAN de seis dígitos; padrão Goiânia.')
     parser.add_argument('--somente-baixar', action='store_true')

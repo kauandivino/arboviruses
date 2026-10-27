@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-27T14:19:28+00:00",
+  "gerado_em": "2026-10-27T15:38:36+00:00",
   "metodo": "pipeline/processamento/preparar_site.py",
   "fontes": [
     {
@@ -35,22 +35,34 @@
       "sha256": "8016d67274d166d4edd3ce0bcb950b1d6ddbf4e698294f2561fa82fc8b74ea90"
     },
     {
+      "arquivo": "dados/saneamento/bairros_saneamento.csv",
+      "sha256": "5ff3d1f8c1b4ca7fca063a247992973c1f579758cd4a170c0c3880e59453a3f7"
+    },
+    {
       "arquivo": "dados/cnes/goiania/202609/estabelecimentos.csv",
       "sha256": "2dd3184348ba6c9b365a34961bbeb6fef8a238a3221ab1483ac88b98fa59bf6e"
     },
     {
       "arquivo": "dados/regional/manifesto.json",
-      "sha256": "21cdf26a1886d810da575a2aa5f45315bcd82b2c77f6be710579222c605087b2"
+      "sha256": "dbab6f9630757fe31ce48f864b45d08da7806a7fa18f3fb75d5e1757f2893b8a"
+    },
+    {
+      "arquivo": "dados/liraa/ciclos.csv",
+      "sha256": "24f1abc945d48d6d79f9f0820c9706c67e699b9e1ac9e8b82f626d0d6e429ecb"
+    },
+    {
+      "arquivo": "dados/infodengue/dengue.csv",
+      "sha256": "4c4c7150df52300b798445db4480933d5044a226e8895a2027c6e9456f5a35d1"
     }
   ],
   "produtos": [
     {
       "arquivo": "site/public/dados/bairros.geojson",
-      "sha256": "c13fdc6c0770a01a0885da7b29ce647e79a4014ef9de9612439836b360a5be5b"
+      "sha256": "c0c97dada888e2c5c28ecd0e8b8c0ba4db0d7f0a76ceb8642e00b5c7b817c2e0"
     },
     {
       "arquivo": "site/public/dados/site.json",
-      "sha256": "eab3ff49290db3b18a0d57effa8ac35d1a7f31c9d7597c511284565925aac2f4"
+      "sha256": "99debec1ed8a9e4cf4fdba14f1807fd0fd78690d1e6fd5ca79b0fac5186e5ff4"
     },
     {
       "arquivo": "site/public/dados/unidades.geojson",

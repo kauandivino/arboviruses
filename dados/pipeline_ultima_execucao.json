@@ -1,54 +1,66 @@
 {
-  "iniciado_em": "2026-10-27T14:10:03.409778+00:00",
+  "iniciado_em": "2026-10-27T15:28:38.494644+00:00",
   "modo": "padrao",
   "etapas": [
     {
       "fase": "integracao",
       "etapa": "secretaria",
       "codigo_saida": 0,
-      "segundos": 1.9
+      "segundos": 9.4
+    },
+    {
+      "fase": "integracao",
+      "etapa": "liraa",
+      "codigo_saida": 0,
+      "segundos": 5.1
+    },
+    {
+      "fase": "integracao",
+      "etapa": "saneamento",
+      "codigo_saida": 0,
+      "segundos": 22.8
     },
     {
       "fase": "integracao",
       "etapa": "integrar_bases",
       "codigo_saida": 0,
-      "segundos": 20.8
+      "segundos": 18.5
     },
     {
       "fase": "integracao",
       "etapa": "selecionar_territorios",
       "codigo_saida": 0,
-      "segundos": 10.5
+      "segundos": 5.2
     },
     {
       "fase": "integracao",
       "etapa": "preparar_mapa",
       "codigo_saida": 0,
-      "segundos": 5.9
+      "segundos": 4.9
     },
     {
       "fase": "modelagem",
       "etapa": "nowcast_dengue",
       "codigo_saida": 0,
-      "segundos": 170.0
+      "segundos": 152.3
     },
     {
       "fase": "modelagem",
       "etapa": "previsao_dengue",
       "codigo_saida": 0,
-      "segundos": 33.2
+      "segundos": 36.2
     },
     {
       "fase": "modelagem",
       "etapa": "alerta_dengue",
       "codigo_saida": 0,
-      "segundos": 11.3
+      "segundos": 11.7
     },
     {
       "fase": "modelagem",
       "etapa": "risco_dengue",
       "codigo_saida": 0,
-      "segundos": 5.4
+      "segundos": 5.3
     },
     {
       "fase": "modelagem",
@@ -60,13 +72,19 @@
       "fase": "modelagem",
       "etapa": "registro_prospectivo",
       "codigo_saida": 0,
-      "segundos": 7.7
+      "segundos": 7.8
+    },
+    {
+      "fase": "modelagem",
+      "etapa": "comparacao_infodengue",
+      "codigo_saida": 0,
+      "segundos": 7.1
     },
     {
       "fase": "verificacao",
       "etapa": "teste_cnes",
       "codigo_saida": 0,
-      "segundos": 2.3
+      "segundos": 2.2
     },
     {
       "fase": "verificacao",
@@ -84,19 +102,19 @@
       "fase": "verificacao",
       "etapa": "teste_extracao_informes",
       "codigo_saida": 0,
-      "segundos": 2.4
+      "segundos": 2.5
     },
     {
       "fase": "verificacao",
       "etapa": "teste_ibge",
       "codigo_saida": 0,
-      "segundos": 2.9
+      "segundos": 3.2
     },
     {
       "fase": "verificacao",
       "etapa": "teste_inmet",
       "codigo_saida": 0,
-      "segundos": 2.1
+      "segundos": 2.2
     },
     {
       "fase": "verificacao",
@@ -108,37 +126,37 @@
       "fase": "verificacao",
       "etapa": "teste_malha_municipal",
       "codigo_saida": 0,
-      "segundos": 2.3
+      "segundos": 2.6
     },
     {
       "fase": "verificacao",
       "etapa": "teste_revisao_territorial",
       "codigo_saida": 0,
-      "segundos": 2.2
+      "segundos": 2.3
     },
     {
       "fase": "verificacao",
       "etapa": "teste_selecao",
       "codigo_saida": 0,
-      "segundos": 2.3
+      "segundos": 2.5
     },
     {
       "fase": "verificacao",
       "etapa": "teste_mapa",
       "codigo_saida": 0,
-      "segundos": 14.8
+      "segundos": 14.6
     },
     {
       "fase": "verificacao",
       "etapa": "teste_acoes_campo",
       "codigo_saida": 0,
-      "segundos": 1.8
+      "segundos": 2.0
     },
     {
       "fase": "verificacao",
       "etapa": "teste_nowcast",
       "codigo_saida": 0,
-      "segundos": 8.1
+      "segundos": 7.7
     },
     {
       "fase": "verificacao",
@@ -150,73 +168,79 @@
       "fase": "verificacao",
       "etapa": "teste_alerta",
       "codigo_saida": 0,
-      "segundos": 16.8
+      "segundos": 16.3
     },
     {
       "fase": "verificacao",
       "etapa": "teste_referencias",
       "codigo_saida": 0,
-      "segundos": 0.4
+      "segundos": 0.7
     },
     {
       "fase": "verificacao",
       "etapa": "teste_regional",
       "codigo_saida": 0,
-      "segundos": 13.2
+      "segundos": 12.4
     },
     {
       "fase": "verificacao",
       "etapa": "teste_prospectivo",
       "codigo_saida": 0,
-      "segundos": 8.5
+      "segundos": 7.6
     },
     {
       "fase": "verificacao",
       "etapa": "teste_secretaria",
       "codigo_saida": 0,
-      "segundos": 2.3
+      "segundos": 2.0
+    },
+    {
+      "fase": "verificacao",
+      "etapa": "teste_novas_fontes",
+      "codigo_saida": 0,
+      "segundos": 2.6
     },
     {
       "fase": "verificacao",
       "etapa": "validar_datasus",
       "codigo_saida": 0,
-      "segundos": 19.0
+      "segundos": 18.3
     },
     {
       "fase": "verificacao",
       "etapa": "validar_ibge",
       "codigo_saida": 0,
-      "segundos": 21.8
+      "segundos": 23.1
     },
     {
       "fase": "verificacao",
       "etapa": "validar_malha_municipal",
       "codigo_saida": 0,
-      "segundos": 6.9
+      "segundos": 7.2
     },
     {
       "fase": "verificacao",
       "etapa": "validar_cnes",
       "codigo_saida": 0,
-      "segundos": 14.2
+      "segundos": 14.8
     },
     {
       "fase": "verificacao",
       "etapa": "validar_inmet",
       "codigo_saida": 0,
-      "segundos": 12.9
+      "segundos": 15.9
     },
     {
       "fase": "verificacao",
       "etapa": "validar_informes",
       "codigo_saida": 0,
-      "segundos": 15.0
+      "segundos": 16.2
     },
     {
       "fase": "verificacao",
       "etapa": "validar_revisao_territorial",
       "codigo_saida": 0,
-      "segundos": 8.6
+      "segundos": 10.7
     },
     {
       "fase": "painel",
@@ -228,25 +252,25 @@
       "fase": "painel",
       "etapa": "compilar",
       "codigo_saida": 0,
-      "segundos": 16.1
+      "segundos": 17.4
     },
     {
       "fase": "painel",
       "etapa": "verificar_navegador",
       "codigo_saida": 0,
-      "segundos": 41.7
+      "segundos": 40.7
     },
     {
       "fase": "site",
       "etapa": "dados",
       "codigo_saida": 0,
-      "segundos": 35.1
+      "segundos": 40.1
     },
     {
       "fase": "site",
       "etapa": "compilar",
       "codigo_saida": 0,
-      "segundos": 41.2
+      "segundos": 40.4
     },
     {
       "fase": "site",
@@ -255,6 +279,6 @@
       "segundos": 30.6
     }
   ],
-  "concluido_em": "2026-10-27T14:20:40.655214+00:00",
+  "concluido_em": "2026-10-27T15:39:48.340446+00:00",
   "status": "aprovado"
 }

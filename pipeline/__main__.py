@@ -32,6 +32,19 @@ def modulo(nome, *args):
     return [sys.executable, '-m', f'pipeline.{nome}', *args]
 
 
+def anos_ate(inicio):
+    from pipeline.comum.epidemiologia import anos_ate_corrente
+    return [str(a) for a in anos_ate_corrente(inicio)]
+
+
+def arboviroses():
+    # Chikungunya desde 2014 e zika desde 2015 (o SINAN não publica zika de 2014): só download.
+    base = ['--somente-baixar', '--saida', 'dados/datasus_arboviroses']
+    yield 'coleta', 'chikungunya', modulo('coleta.baixar_datasus', '--anos', *anos_ate(2014), '--agravos', 'chikungunya', *base)
+    yield 'coleta', 'zika', modulo('coleta.baixar_datasus', '--anos', *anos_ate(2015), '--agravos', 'zika', *base)
+    yield 'coleta', 'infodengue', modulo('coleta.baixar_infodengue')
+
+
 def etapas(args):
     if args.coletar:
         historicos = [str(a) for a in range(2014, 2022)]
@@ -46,11 +59,13 @@ def etapas(args):
         yield 'coleta', 'cnes', lambda: modulo('coleta.baixar_cnes', '--competencia', competencia_cnes())
         yield 'coleta', 'inmet', modulo('coleta.baixar_inmet')
         yield 'coleta', 'inmet_historico', modulo('coleta.baixar_inmet', '--anos', *historicos, '--destino', 'dados/inmet_historico')
+        yield from arboviroses()
     elif args.semanal:
         # Só fontes que mudam toda semana. CNES, malhas e informes mudam a seleção dos territórios
         # ou exigem conferência humana, por isso ficam fora da atualização automática.
         yield 'coleta', 'datasus', modulo('coleta.baixar_datasus')
         yield 'coleta', 'inmet', modulo('coleta.baixar_inmet')
+        yield from arboviroses()
         yield 'coleta', 'regional', modulo('coleta.extrair_regional')
     elif args.reprocessar:
         yield 'processamento', 'datasus', modulo('coleta.baixar_datasus', '--processar-local')
@@ -63,6 +78,8 @@ def etapas(args):
         yield 'processamento', 'extrair_informes', modulo('processamento.extrair_informes')
         yield 'processamento', 'revisar_territorio', modulo('processamento.revisar_territorio')
     yield 'integracao', 'secretaria', modulo('coleta.receber_secretaria')
+    yield 'integracao', 'liraa', modulo('processamento.extrair_liraa')
+    yield 'integracao', 'saneamento', modulo('processamento.saneamento_bairros')
     yield 'integracao', 'integrar_bases', modulo('processamento.integrar_bases')
     yield 'integracao', 'selecionar_territorios', modulo('processamento.selecionar_territorios')
     yield 'integracao', 'preparar_mapa', modulo('processamento.preparar_mapa')
@@ -72,8 +89,9 @@ def etapas(args):
     yield 'modelagem', 'risco_dengue', modulo('modelagem.risco')
     yield 'modelagem', 'internacoes_dengue', modulo('modelagem.internacoes')
     yield 'modelagem', 'registro_prospectivo', modulo('modelagem.prospectivo')
+    yield 'modelagem', 'comparacao_infodengue', modulo('modelagem.infodengue')
     for teste in ['cnes', 'datasus', 'download', 'extracao_informes', 'ibge', 'inmet', 'integracao',
-                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao', 'alerta', 'referencias', 'regional', 'prospectivo', 'secretaria']:
+                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao', 'alerta', 'referencias', 'regional', 'prospectivo', 'secretaria', 'novas_fontes']:
         yield 'verificacao', f'teste_{teste}', modulo(f'verificacao.verificar_{teste}')
     yield 'verificacao', 'validar_datasus', modulo('verificacao.validar_coleta_datasus')
     yield 'verificacao', 'validar_ibge', modulo('verificacao.validar_ibge')

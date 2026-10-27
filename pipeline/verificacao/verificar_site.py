@@ -38,13 +38,15 @@ def main():
 
             pagina.locator('#dengue').scroll_into_view_if_needed()
             pagina.wait_for_timeout(600)
-            assert pagina.locator('#dengue path.linha-atual').count() == 1
+            assert pagina.locator('#dengue .grafico-temporada path.linha-atual').count() == 1
             pagina.locator('#dengue .chip').first.click()
-            assert pagina.locator('#dengue path.linha-ano').count() == 1, 'comparação com ano anterior'
+            assert pagina.locator('#dengue .grafico-temporada path.linha-ano').count() == 1, 'comparação com ano anterior'
             assert pagina.locator('#dengue rect.barra').count() == len(DADOS['dengue']['anual'])
             if DADOS['sorotipos']['dominante']:
                 assert f"TIPO {DADOS['sorotipos']['dominante']}" in pagina.locator('.sorotipos').inner_text().upper()
 
+            assert pagina.locator('.mosquito-grade .grafico-cartao').count() == 2, 'LIRAa e Rt'
+            assert pagina.locator('#outras .outra').count() == 2, 'chikungunya e zika'
             pagina.locator('#mapa').scroll_into_view_if_needed()
             pagina.wait_for_selector('.mapa-canvas canvas', timeout=30000)
             pagina.wait_for_function("!document.querySelector('.mapa-carregando')", timeout=30000)

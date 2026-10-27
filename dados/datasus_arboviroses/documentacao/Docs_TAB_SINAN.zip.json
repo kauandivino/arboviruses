@@ -1,0 +1,12 @@
+{
+  "agravo": "documentacao",
+  "nome": "Docs_TAB_SINAN.zip",
+  "remoto": "/dissemin/publicos/SINAN/DOCS/Docs_TAB_SINAN.zip",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DOCS/Docs_TAB_SINAN.zip",
+  "tamanho": 65650628,
+  "modificado": "20260313013311",
+  "arquivo": "dados\\datasus_arboviroses\\documentacao\\Docs_TAB_SINAN.zip",
+  "sha256": "037e5d59597cb400c4b06c5d7a94b1d2f1daf9b59228120709816e547471a81a",
+  "status": "baixado",
+  "obtido_em": "2026-10-27T14:57:34.065788+00:00"
+}

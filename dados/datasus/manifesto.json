@@ -1,5 +1,5 @@
 {
-  "executado_em": "2026-10-26T07:14:50.032169+00:00",
+  "executado_em": "2026-10-27T15:14:07.712989+00:00",
   "arquivos": [
     {
       "agravo": "dengue",
@@ -14,7 +14,7 @@
       "sha256": "c0e7f95ef832c09793adb21fe9a5b7bdfbb5b9a0bb6c8561ef31b7197cb1cf90",
       "status": "existente",
       "obtido_em": "2026-10-19T21:31:34.950306+00:00",
-      "verificado_em": "2026-10-26T07:14:44.562848+00:00"
+      "verificado_em": "2026-10-27T15:14:02.395198+00:00"
     },
     {
       "agravo": "dengue",
@@ -29,7 +29,7 @@
       "sha256": "1a5a3a1be0d63c8b179abe63aa1c3b3296336c6dc9e2ce78a867c17591a955c6",
       "status": "existente",
       "obtido_em": "2026-10-19T21:31:37.750723+00:00",
-      "verificado_em": "2026-10-26T07:14:44.583918+00:00"
+      "verificado_em": "2026-10-27T15:14:02.617739+00:00"
     },
     {
       "agravo": "dengue",
@@ -44,7 +44,7 @@
       "sha256": "87831a1ee61d03d0f83dcb788c23b1a5cfd938ec22f7e44313833e9eb6445d29",
       "status": "existente",
       "obtido_em": "2026-10-19T21:34:37.004242+00:00",
-      "verificado_em": "2026-10-26T07:14:45.974922+00:00"
+      "verificado_em": "2026-10-27T15:14:04.144479+00:00"
     },
     {
       "agravo": "animais",
@@ -59,7 +59,7 @@
       "sha256": "9d20d0245fbeaf659546730c843615d6eaec9cce51ec83786277676cfb6ac7b2",
       "status": "existente",
       "obtido_em": "2026-10-19T21:34:46.720057+00:00",
-      "verificado_em": "2026-10-26T07:14:46.359005+00:00"
+      "verificado_em": "2026-10-27T15:14:04.556856+00:00"
     },
     {
       "agravo": "dengue",
@@ -74,52 +74,7 @@
       "sha256": "ca9bf938fbc3db066ed0969f79a7d0bb2e5309fcff9de93f1e7008317ab99714",
       "status": "existente",
       "obtido_em": "2026-10-26T06:47:16.892108+00:00",
-      "verificado_em": "2026-10-26T07:14:47.614255+00:00"
-    },
-    {
-      "agravo": "animais",
-      "ano": 2023,
-      "situacao": "PRELIM",
-      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR23.dbc",
-      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR23.dbc",
-      "tamanho": 13473666,
-      "modificado": "20260921125000",
-      "nome": "ANIMBR23.dbc",
-      "arquivo": "dados\\datasus\\originais\\animais\\ANIMBR23.dbc",
-      "sha256": "d6171bb1a9c18490319285c68349ffdc2c559c9414fcd86986a9b8b94cfd857d",
-      "status": "existente",
-      "obtido_em": "2026-10-19T21:35:21.793403+00:00",
-      "verificado_em": "2026-10-26T07:14:48.077655+00:00"
-    },
-    {
-      "agravo": "animais",
-      "ano": 2024,
-      "situacao": "PRELIM",
-      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR24.dbc",
-      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR24.dbc",
-      "tamanho": 13306962,
-      "modificado": "20260826141600",
-      "nome": "ANIMBR24.dbc",
-      "arquivo": "dados\\datasus\\originais\\animais\\ANIMBR24.dbc",
-      "sha256": "15bed262e00d04b4f5f7ce166b41814eb5415eaa8a14f3d393c07c1a3ebbabe2",
-      "status": "existente",
-      "obtido_em": "2026-10-19T21:35:32.800585+00:00",
-      "verificado_em": "2026-10-26T07:14:48.557368+00:00"
-    },
-    {
-      "agravo": "animais",
-      "ano": 2025,
-      "situacao": "PRELIM",
-      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR25.dbc",
-      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR25.dbc",
-      "tamanho": 15224284,
-      "modificado": "20260921125000",
-      "nome": "ANIMBR25.dbc",
-      "arquivo": "dados\\datasus\\originais\\animais\\ANIMBR25.dbc",
-      "sha256": "d0bffbc60f0670d50a00f8d45df20134142a31bece9405d42147a335e7a546d6",
-      "status": "existente",
-      "obtido_em": "2026-10-19T21:35:47.306013+00:00",
-      "verificado_em": "2026-10-26T07:14:49.105972+00:00"
+      "verificado_em": "2026-10-27T15:14:05.680430+00:00"
     },
     {
       "agravo": "dengue",
@@ -134,7 +89,52 @@
       "sha256": "cd66ee77271a9718c81ef0b78f60d906087d9cc61e1b1ced15719227cde5d59a",
       "status": "existente",
       "obtido_em": "2026-10-19T21:37:13.209859+00:00",
-      "verificado_em": "2026-10-26T07:14:49.321846+00:00"
+      "verificado_em": "2026-10-27T15:14:06.616146+00:00"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2023,
+      "situacao": "PRELIM",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR23.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR23.dbc",
+      "tamanho": 13473666,
+      "modificado": "20260921125000",
+      "nome": "ANIMBR23.dbc",
+      "arquivo": "dados\\datasus\\originais\\animais\\ANIMBR23.dbc",
+      "sha256": "d6171bb1a9c18490319285c68349ffdc2c559c9414fcd86986a9b8b94cfd857d",
+      "status": "existente",
+      "obtido_em": "2026-10-19T21:35:21.793403+00:00",
+      "verificado_em": "2026-10-27T15:14:06.627897+00:00"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2024,
+      "situacao": "PRELIM",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR24.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR24.dbc",
+      "tamanho": 13306962,
+      "modificado": "20260826141600",
+      "nome": "ANIMBR24.dbc",
+      "arquivo": "dados\\datasus\\originais\\animais\\ANIMBR24.dbc",
+      "sha256": "15bed262e00d04b4f5f7ce166b41814eb5415eaa8a14f3d393c07c1a3ebbabe2",
+      "status": "existente",
+      "obtido_em": "2026-10-19T21:35:32.800585+00:00",
+      "verificado_em": "2026-10-27T15:14:06.931509+00:00"
+    },
+    {
+      "agravo": "animais",
+      "ano": 2025,
+      "situacao": "PRELIM",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR25.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ANIMBR25.dbc",
+      "tamanho": 15224284,
+      "modificado": "20260921125000",
+      "nome": "ANIMBR25.dbc",
+      "arquivo": "dados\\datasus\\originais\\animais\\ANIMBR25.dbc",
+      "sha256": "d0bffbc60f0670d50a00f8d45df20134142a31bece9405d42147a335e7a546d6",
+      "status": "existente",
+      "obtido_em": "2026-10-19T21:35:47.306013+00:00",
+      "verificado_em": "2026-10-27T15:14:06.997672+00:00"
     },
     {
       "agravo": "animais",
@@ -149,7 +149,7 @@
       "sha256": "579203dd4f3fcbce0dc0f877bd838b00aa0b9ac89d2558bd5ad7602ce81aba96",
       "status": "existente",
       "obtido_em": "2026-10-19T21:35:55.568101+00:00",
-      "verificado_em": "2026-10-26T07:14:49.396122+00:00"
+      "verificado_em": "2026-10-27T15:14:07.118438+00:00"
     },
     {
       "agravo": "documentacao",
@@ -162,7 +162,7 @@
       "sha256": "e2a9f5305e94be46962741b5d5d49d98b9380dc32439f4d6fcb95c5af2e05590",
       "status": "existente",
       "obtido_em": "2026-10-19T21:37:00.744646+00:00",
-      "verificado_em": "2026-10-26T07:14:49.457522+00:00"
+      "verificado_em": "2026-10-27T15:14:07.222459+00:00"
     },
     {
       "agravo": "documentacao",
@@ -175,7 +175,7 @@
       "sha256": "4172bfb01dbbcd0982d22da448c3a12fc6a55b7c90b282d92dbb14bcf4878da9",
       "status": "existente",
       "obtido_em": "2026-10-19T21:37:02.456747+00:00",
-      "verificado_em": "2026-10-26T07:14:49.510628+00:00"
+      "verificado_em": "2026-10-27T15:14:07.327122+00:00"
     },
     {
       "agravo": "documentacao",
@@ -188,7 +188,7 @@
       "sha256": "037e5d59597cb400c4b06c5d7a94b1d2f1daf9b59228120709816e547471a81a",
       "status": "existente",
       "obtido_em": "2026-10-19T21:36:59.200717+00:00",
-      "verificado_em": "2026-10-26T07:14:50.032011+00:00"
+      "verificado_em": "2026-10-27T15:14:07.712822+00:00"
     }
   ],
   "erros": []

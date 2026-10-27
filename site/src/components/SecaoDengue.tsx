@@ -7,6 +7,7 @@ import type { DadosSite } from '../lib/dados';
 import { MESES_ABREV, mesDaSemana, numero, useLargura } from '../lib/formato';
 import { Revelar } from './Revelar';
 import { Sorotipos } from './Sorotipos';
+import { MosquitoTransmissao } from './MosquitoTransmissao';
 
 const CORES_ANOS = ['#9aa6ab', '#b98a5e', '#7b8fc4', '#c27a9b'];
 type Ponto = { se: number; valor: number };
@@ -45,7 +46,7 @@ function GraficoTemporada({ dados }: { dados: DadosSite }) {
   };
 
   return (
-    <div className="grafico-cartao cartao">
+    <div className="grafico-cartao cartao grafico-temporada">
       <div className="grafico-topo">
         <div className="legenda">
           <span><i className="leg-linha atual" /> {ano}</span>
@@ -163,6 +164,7 @@ export function SecaoDengue({ dados }: { dados: DadosSite }) {
           <p className="lead">A linha mostra os casos de cada semana. Quando ela passa da faixa clara, há mais dengue do que o normal para a época.</p>
         </Revelar>
         <Revelar><GraficoTemporada dados={dados} /></Revelar>
+        <Revelar atraso={0.1}><MosquitoTransmissao dados={dados} /></Revelar>
         <Revelar atraso={0.1}><Sorotipos dados={dados} /></Revelar>
         <Revelar atraso={0.1}><GraficoAnual dados={dados} /></Revelar>
       </div>

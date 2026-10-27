@@ -145,6 +145,14 @@ def main():
     bairros = bairros[bairros.geometry.area >= 1].to_crs(31982)
     bairros['geometry'] = bairros.geometry.simplify(6, preserve_topology=True)
     bairros = bairros.to_crs(4326)
+    # Saneamento do Censo 2022 por bairro (só onde o indicador é publicável; ausente não é zero).
+    saneamento = ler('dados/saneamento/bairros_saneamento.csv').set_index('OID_SIGGO')
+    campos_san = ['sem_rede_agua_pct', 'agua_fora_de_casa_pct', 'lixo_nao_coletado_pct', 'esgoto_inadequado_pct']
+    def san(oid):
+        if oid not in saneamento.index:
+            return None
+        valores = {c.removesuffix('_pct'): (None if pd.isna(saneamento.at[oid, c]) else float(saneamento.at[oid, c])) for c in campos_san}
+        return valores if any(v is not None for v in valores.values()) else None
     feicoes = []
     for _, b in bairros.iterrows():
         oid = int(b.OID_SIGGO)
@@ -152,7 +160,7 @@ def main():
         centro = b.geometry.representative_point()
         feicoes.append({'type': 'Feature', 'id': oid, 'geometry': arredondar(b.geometry), 'properties': {
             'oid': oid, 'nome': nome_bairro(b), 'citacoes': len(lista), 'edicoes': lista,
-            'territorio': ordem.get(oid), 'lon': round(centro.x, 5), 'lat': round(centro.y, 5)}})
+            'territorio': ordem.get(oid), 'lon': round(centro.x, 5), 'lat': round(centro.y, 5), 'saneamento': san(oid)}})
     (OUT / 'bairros.geojson').write_text(json.dumps({'type': 'FeatureCollection', 'features': feicoes}, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
 
     # Unidades de saúde públicas que atendem a população, com endereço e telefone do cadastro.
@@ -195,6 +203,30 @@ def main():
         'desde': int(parcela_ano.index.min()),
     }
 
+    # Chikungunya e zika em Goiânia, por início dos sintomas (contagens finais conhecidas hoje).
+    outras = {}
+    for agravo in ['chikungunya', 'zika']:
+        arq = sorted((ROOT / 'dados/regional').glob(f'{agravo}_go_*.csv'))
+        d = pd.concat([pd.read_csv(f, parse_dates=['semana_inicio']) for f in arq], ignore_index=True)
+        d = d[d.grupo == 'goiania']
+        d['ano'] = [semana_epidemiologica(s)[0] for s in d.semana_inicio]
+        por_ano = d.groupby('ano').notificacoes.sum()
+        por_mes = d.groupby(d.semana_inicio.dt.strftime('%Y-%m')).notificacoes.sum().iloc[-24:]
+        outras[agravo] = {'anual': [{'ano': int(a), 'notificacoes': int(n)} for a, n in por_ano.items()],
+                          'mensal': [{'mes': m, 'notificacoes': int(n)} for m, n in por_mes.items()]}
+
+    # LIRAa (índice de infestação do Aedes) por ciclo, dos informes da Prefeitura.
+    liraa = ler('dados/liraa/ciclos.csv')
+    ciclos_liraa = [{'inicio': r.inicio, 'fim': r.fim, 'iip': float(r.iip_aegypti), 'situacao': r.situacao,
+                     'estratos_alto': int(r.estratos_alto), 'estratos_total': int(r.estratos_total),
+                     'nota': None if pd.isna(r.nota_fonte) else r.nota_fonte} for _, r in liraa.iterrows()]
+
+    # Ritmo de transmissão (Rt) estimado pelo InfoDengue, últimas 12 semanas.
+    info = ler('dados/infodengue/dengue.csv')
+    info_meta = json.loads((ROOT / 'dados/infodengue/manifesto.json').read_text(encoding='utf-8'))
+    rt = [{'semana': r.semana_inicio, 'se': int(r.SE), 'rt': round(float(r.Rt), 3), 'p_rt1': round(float(r.p_rt1), 3)}
+          for _, r in info.tail(12).iterrows() if pd.notna(r.Rt)]
+
     nowcast_meta = json.loads((MOD / 'nowcast_dengue_manifesto.json').read_text(encoding='utf-8'))
     ultima_semana = pd.Timestamp(nowcast_meta['data_corte_semana_digitacao'])
     site = {
@@ -208,6 +240,10 @@ def main():
             'faixa_habitual': faixa, 'temporadas': temporadas, 'projecao': projecao, 'anual': anual, 'mensal': dengue_mensal,
         },
         'sorotipos': sorotipos,
+        'outras_arboviroses': outras,
+        'liraa': ciclos_liraa,
+        'transmissao': {'fonte': 'InfoDengue (Fiocruz/FGV)', 'consultado_em': info_meta['coletas'][0]['consultado_em'],
+                        'versao_modelo': info_meta['coletas'][0]['versao_modelo'], 'semanas': rt},
         'escorpioes': escorpioes,
         'clima': chuva,
         'boletins': {'ano': int(ano_boletim), 'edicoes': edicoes},

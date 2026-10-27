@@ -1,0 +1,42 @@
+{
+  "gerado_em": "2026-10-27T15:29:15+00:00",
+  "metodo": "pipeline/processamento/saneamento_bairros.py",
+  "ano_referencia": 2022,
+  "parametros": {
+    "fracao_minima_setor": 0.8,
+    "cobertura_minima": 0.7,
+    "domicilios_minimos": 50
+  },
+  "indicadores": {
+    "sem_rede_agua": "Não usam a rede geral de água",
+    "agua_fora_de_casa": "Água não chega encanada dentro de casa",
+    "lixo_nao_coletado": "Lixo não coletado pelo serviço de limpeza",
+    "esgoto_inadequado": "Esgoto em fossa rudimentar, vala, córrego ou sem banheiro"
+  },
+  "bairros_malha": 1208,
+  "bairros_com_setor": 475,
+  "bairros_com_indicador": {
+    "sem_rede_agua": 152,
+    "agua_fora_de_casa": 288,
+    "lixo_nao_coletado": 378,
+    "esgoto_inadequado": 341
+  },
+  "fontes": [
+    {
+      "arquivo": "dados/ibge/goiania/indicadores_prioritarios_setores_2022.csv",
+      "sha256": "988c97dfc09fded2899895944a08b4d272b4f58b617d24e3bb1e06bba6996a65"
+    },
+    {
+      "arquivo": "dados/ibge/goiania/setores_goiania_2022.gpkg",
+      "sha256": "63443c1b8d37c638479211fa758b18ca08a9369dbb4d5e266d308a6b172d28fa"
+    },
+    {
+      "arquivo": "dados/malha_municipal/goiania/bairros_municipais_analise.gpkg",
+      "sha256": "5b97becdceeff997157561a2ffecbf0ffb6512fb6f23d5479e85ce7737f686a3"
+    }
+  ],
+  "produto": {
+    "arquivo": "dados/saneamento/bairros_saneamento.csv",
+    "sha256": "5ff3d1f8c1b4ca7fca063a247992973c1f579758cd4a170c0c3880e59453a3f7"
+  }
+}

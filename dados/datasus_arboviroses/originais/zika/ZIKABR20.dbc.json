@@ -1,0 +1,14 @@
+{
+  "agravo": "zika",
+  "ano": 2020,
+  "situacao": "FINAIS",
+  "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR20.dbc",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR20.dbc",
+  "tamanho": 560698,
+  "modificado": "20260410150800",
+  "nome": "ZIKABR20.dbc",
+  "arquivo": "dados\\datasus_arboviroses\\originais\\zika\\ZIKABR20.dbc",
+  "sha256": "2641bd63dfac6e86a106eb4d4283024830315eda9d4e49fd7354d494ee2becf0",
+  "status": "baixado",
+  "obtido_em": "2026-10-27T14:57:16.225605+00:00"
+}

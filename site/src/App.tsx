@@ -4,6 +4,7 @@ import { Heroi } from './components/Heroi';
 import { Numeros } from './components/Numeros';
 import { SecaoDengue } from './components/SecaoDengue';
 import { SecaoChuva } from './components/SecaoChuva';
+import { SecaoOutras } from './components/SecaoOutras';
 import { SecaoEscorpioes } from './components/SecaoEscorpioes';
 import { SecaoMapa } from './components/SecaoMapa';
 import { SecaoProjeto } from './components/SecaoProjeto';
@@ -28,6 +29,7 @@ export function App() {
         <SecaoMapa dados={dados} />
         <Numeros dados={dados} />
         <SecaoDengue dados={dados} />
+        <SecaoOutras dados={dados} />
         <SecaoChuva dados={dados} />
         <SecaoEscorpioes dados={dados} />
         <SecaoProjeto dados={dados} />

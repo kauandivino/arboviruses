@@ -1,4 +1,4 @@
-"""Contagens semanais de dengue em Goiânia, nos municípios vizinhos e no resto de Goiás.
+"""Contagens semanais de dengue, chikungunya e zika em Goiânia, nos municípios vizinhos e no resto de Goiás.
 
 Lê os arquivos nacionais do SINAN já baixados (2014 em diante) e grava só agregados, sem
 microdados: notificações por grupo, semana de início dos sintomas e semana de digitação, com
@@ -28,9 +28,15 @@ GOIANIA_IBGE = '5208707'
 CAMPOS = ['ID_MN_RESI', 'DT_SIN_PRI', 'DT_NOTIFIC', 'DT_DIGITA', 'HOSPITALIZ', 'SOROTIPO']
 
 
-def original(ano):
-    pasta = 'dados/datasus' if ano >= 2022 else 'dados/datasus_historico'
-    return ROOT / pasta / 'originais/dengue' / f'DENGBR{ano % 100:02d}.dbc'
+AGRAVOS = {'dengue': (2014, 'DENGBR'), 'chikungunya': (2014, 'CHIKBR'), 'zika': (2015, 'ZIKABR')}
+
+
+def original(ano, agravo='dengue'):
+    if agravo == 'dengue':
+        pasta = 'dados/datasus' if ano >= 2022 else 'dados/datasus_historico'
+    else:
+        pasta = 'dados/datasus_arboviroses'
+    return ROOT / pasta / 'originais' / agravo / f'{AGRAVOS[agravo][1]}{ano % 100:02d}.dbc'
 
 
 def municipios():
@@ -49,14 +55,14 @@ def domingo(texto):
     return d - timedelta(days=(d.weekday() + 1) % 7), d
 
 
-def agregar(ano, grupos):
+def agregar(ano, grupos, agravo='dengue'):
     """Varre o DBF nacional e conta só os residentes de Goiás, por grupo e semanas."""
     from pyreaddbc import dbc2dbf
     inicio, fim = (d.date() for d in janela_arquivo(ano))
     contagem, exclusoes = Counter(), Counter()
     with tempfile.TemporaryDirectory(dir=OUT) as pasta:
-        dbf = Path(pasta) / f'dengue_{ano}.dbf'
-        dbc2dbf(str(original(ano)), str(dbf))
+        dbf = Path(pasta) / f'{agravo}_{ano}.dbf'
+        dbc2dbf(str(original(ano, agravo)), str(dbf))
         n, cabecalho, largura, campos = dbf_schema(dbf)
         pos = {c['nome']: (c['offset'], c['tamanho']) for c in campos if c['nome'] in CAMPOS}
         faltando = set(CAMPOS) - set(pos)
@@ -103,31 +109,32 @@ def main():
         'goiania': grupos['goiania'], 'vizinhos': grupos['vizinhos'], 'municipios_go': len(grupos['todos_go'])},
         ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     manifesto_path = OUT / 'manifesto.json'
-    anterior = json.loads(manifesto_path.read_text(encoding='utf-8')) if manifesto_path.exists() else {'anos': {}}
-    anos = anos_com_arquivo(2014, original)
+    anterior = json.loads(manifesto_path.read_text(encoding='utf-8')) if manifesto_path.exists() else {}
     registros = {}
-    for ano in anos:
-        hash_fonte = sha256(original(ano))
-        destino = OUT / f'dengue_go_{ano}.csv'
-        guardado = anterior['anos'].get(str(ano))
-        # Só reprocessa o ano se o arquivo nacional mudou (a varredura leva minutos por ano).
-        if guardado and guardado['fonte_sha256'] == hash_fonte and destino.exists() and sha256(destino) == guardado['produto_sha256']:
-            registros[str(ano)] = guardado
-            print(f'{ano}: inalterado')
-            continue
-        contagem, exclusoes = agregar(ano, grupos)
-        linhas = ['grupo,semana_inicio,semana_digitacao,internado,sorotipo,notificacoes']
-        linhas += [f'{g},{t},{d},{int(h)},{s},{n}' for (g, t, d, h, s), n in sorted(contagem.items())]
-        destino.write_text('\n'.join(linhas) + '\n', encoding='utf-8')
-        totais = Counter()
-        for (g, *_), n in contagem.items():
-            totais[g] += n
-        registros[str(ano)] = {'fonte': original(ano).relative_to(ROOT).as_posix(), 'fonte_sha256': hash_fonte,
-                               'produto': destino.relative_to(ROOT).as_posix(), 'produto_sha256': sha256(destino),
-                               'notificacoes': dict(totais), 'exclusoes': {f'{g}:{m}': n for (g, m), n in exclusoes.items()}}
-        print(f'{ano}: {dict(totais)}')
+    for agravo, (inicio, _) in AGRAVOS.items():
+        registros[agravo] = {}
+        for ano in anos_com_arquivo(inicio, lambda a: original(a, agravo)):
+            hash_fonte = sha256(original(ano, agravo))
+            destino = OUT / f'{agravo}_go_{ano}.csv'
+            guardado = anterior.get('agravos', {}).get(agravo, {}).get(str(ano))
+            # Só reprocessa o ano se o arquivo nacional mudou (a varredura leva minutos por ano).
+            if guardado and guardado['fonte_sha256'] == hash_fonte and destino.exists() and sha256(destino) == guardado['produto_sha256']:
+                registros[agravo][str(ano)] = guardado
+                print(f'{agravo} {ano}: inalterado')
+                continue
+            contagem, exclusoes = agregar(ano, grupos, agravo)
+            linhas = ['grupo,semana_inicio,semana_digitacao,internado,sorotipo,notificacoes']
+            linhas += [f'{g},{t},{d},{int(h)},{s},{n}' for (g, t, d, h, s), n in sorted(contagem.items())]
+            destino.write_text('\n'.join(linhas) + '\n', encoding='utf-8')
+            totais = Counter()
+            for (g, *_), n in contagem.items():
+                totais[g] += n
+            registros[agravo][str(ano)] = {'fonte': original(ano, agravo).relative_to(ROOT).as_posix(), 'fonte_sha256': hash_fonte,
+                                   'produto': destino.relative_to(ROOT).as_posix(), 'produto_sha256': sha256(destino),
+                                   'notificacoes': dict(totais), 'exclusoes': {f'{g}:{m}': n for (g, m), n in exclusoes.items()}}
+            print(f'{agravo} {ano}: {dict(totais)}')
     manifesto = {'gerado_em': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'metodo': 'pipeline/coleta/extrair_regional.py',
-                 'vizinhos': len(grupos['vizinhos']), 'anos': registros}
+                 'vizinhos': len(grupos['vizinhos']), 'agravos': registros}
     manifesto_path.write_text(json.dumps(manifesto, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 

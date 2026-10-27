@@ -1,0 +1,31 @@
+{
+  "fonte": "InfoDengue (https://info.dengue.mat.br)",
+  "coletas": [
+    {
+      "agravo": "dengue",
+      "url": "https://info.dengue.mat.br/api/alertcity?geocode=5208707&disease=dengue&format=json&ew_start=1&ew_end=53&ey_start=2014&ey_end=2026",
+      "consultado_em": "2026-10-27T15:14:45+00:00",
+      "original": "dados/infodengue/originais/dengue_20261027T151445Z.json",
+      "sha256_original": "0c04bf0c5da805abb51bf5b54509c6ebb27dd5815cd580f6eae4b8e396357487",
+      "produto": "dados/infodengue/dengue.csv",
+      "sha256_produto": "4c4c7150df52300b798445db4480933d5044a226e8895a2027c6e9456f5a35d1",
+      "semanas": 668,
+      "primeira_se": 201401,
+      "ultima_se": 202641,
+      "versao_modelo": "2026-10-23"
+    },
+    {
+      "agravo": "chikungunya",
+      "url": "https://info.dengue.mat.br/api/alertcity?geocode=5208707&disease=chikungunya&format=json&ew_start=1&ew_end=53&ey_start=2014&ey_end=2026",
+      "consultado_em": "2026-10-27T15:14:45+00:00",
+      "original": "dados/infodengue/originais/chikungunya_20261027T151445Z.json",
+      "sha256_original": "7e0be2d7dab41443bad5e07d525736a6749a64d9b0bc8d46c2164115f1447f97",
+      "produto": "dados/infodengue/chikungunya.csv",
+      "sha256_produto": "ce2618ce113f207cb8b2ec27d024f0029979fbf070cd2bab571128a66e0e6859",
+      "semanas": 668,
+      "primeira_se": 201401,
+      "ultima_se": 202641,
+      "versao_modelo": "2026-10-23"
+    }
+  ]
+}

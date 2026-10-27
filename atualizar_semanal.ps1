@@ -16,7 +16,7 @@ if ($codigo -eq 0) {
 # O registro prospectivo vai para o GitHub a cada semana: a data pública do commit comprova
 # que cada previsão foi feita antes do resultado. Só esses dois arquivos entram no commit.
 if ($codigo -eq 0) {
-    $registro = 'dados/modelagem/registro_prospectivo.csv', 'dados/modelagem/registro_prospectivo_resumo.json'
+    $registro = 'dados/modelagem/registro_prospectivo.csv', 'dados/modelagem/registro_prospectivo_resumo.json', 'dados/infodengue/registro_estimativas.csv'
     $existentes = $registro | Where-Object { Test-Path $_ }
     git add -- $existentes 2>&1 | Out-Null
     git diff --cached --quiet -- $existentes

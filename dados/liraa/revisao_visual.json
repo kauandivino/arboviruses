@@ -1,0 +1,9 @@
+{
+  "_descricao": "Conferência visual das páginas dos informes (imagem renderizada do PDF) para ciclos com problema na fonte. Os valores publicados são preservados; só se marca o problema ou se deixa sem valor o que é ambíguo.",
+  "revisado_em": "2026-10-27",
+  "ciclos": {
+    "2023-01-13": {"nota_fonte": "IB do Aedes aegypti publicado como 0,1, menor que o IIP de 4,1 (incoerente na fonte); mantido como publicado.", "sem_valor": []},
+    "2024-11-08": {"nota_fonte": "Valores 2,6/3,3 publicados na linha do Aedes albopictus, com a célula do Aedes aegypti vazia; atribuídos ao aegypti por coerência com a situação geral (médio risco). Índices do albopictus não informados.", "sem_valor": ["iip_albopictus", "ib_albopictus"]},
+    "2025-01-17": {"nota_fonte": "Valores 3,2/0,1 publicados na linha do Aedes albopictus, com a célula do Aedes aegypti vazia; IIP 3,2 atribuído ao aegypti por coerência com a situação geral (médio risco); IB ambíguo e não usado. Índices do albopictus não informados.", "sem_valor": ["ib_aegypti", "iip_albopictus", "ib_albopictus"]}
+  }
+}

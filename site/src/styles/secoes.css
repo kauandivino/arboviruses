@@ -318,3 +318,23 @@
 .aviso-curto { padding: 12px 14px; border-radius: var(--raio-pequeno); background: #fdeeea; color: #7a2a1d !important; font-size: 14px !important; }
 .sorotipos .grafico-area .legenda { margin-bottom: 8px; }
 @media (max-width: 860px) { .sorotipos { grid-template-columns: 1fr; } }
+
+/* Mosquito e transmissão */
+.mosquito-grade { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-bottom: 24px; }
+.mosquito-grade .grafico-cartao { margin-bottom: 0; align-content: start; }
+.mosquito p { margin: 0; color: var(--tinta-2); font-size: 15px; }
+.mosquito .rotulo-pequeno { display: flex; align-items: center; gap: 6px; }
+.linha-um { stroke: var(--tinta); stroke-width: 1.2; stroke-dasharray: 4 4; }
+/* Outras arboviroses */
+.outras-grade { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.outra p { margin: 0; color: var(--tinta-2); font-size: 15px; }
+.numero.medio { font-size: 26px; color: var(--tinta); margin-right: 4px; }
+/* Saneamento na ficha do bairro */
+.ficha-saneamento { display: grid; gap: 6px; padding: 12px; border-radius: 10px; background: var(--fundo); }
+.ficha-saneamento .nota { margin: 0; }
+.barra-san { display: grid; grid-template-columns: minmax(0, 1fr) 70px 46px; gap: 8px; align-items: center; font-size: 12.5px; color: var(--tinta-2); }
+.barra-san i { height: 6px; border-radius: 3px; background: var(--linha); overflow: hidden; }
+.barra-san b { display: block; height: 100%; background: #8a6d3b; border-radius: 3px; }
+.barra-san strong { text-align: right; color: var(--tinta); font-variant-numeric: tabular-nums; }
+@media (max-width: 860px) { .mosquito-grade, .outras-grade { grid-template-columns: 1fr; } }
+.linha-liraa { fill: none; stroke: var(--tinta-3); stroke-width: 1.2; stroke-dasharray: 3 4; }

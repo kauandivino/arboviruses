@@ -1,0 +1,127 @@
+{
+  "consultado_em": "2026-10-27T15:14:41.992847+00:00",
+  "host": "ftp.datasus.gov.br",
+  "arquivos": [
+    {
+      "agravo": "zika",
+      "ano": 2015,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR15.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR15.dbc",
+      "tamanho": 1067467,
+      "modificado": "20260526143000",
+      "nome": "ZIKABR15.dbc"
+    },
+    {
+      "agravo": "zika",
+      "ano": 2016,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR16.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR16.dbc",
+      "tamanho": 5662657,
+      "modificado": "20260520113600",
+      "nome": "ZIKABR16.dbc"
+    },
+    {
+      "agravo": "zika",
+      "ano": 2017,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR17.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR17.dbc",
+      "tamanho": 867958,
+      "modificado": "20260512183600",
+      "nome": "ZIKABR17.dbc"
+    },
+    {
+      "agravo": "zika",
+      "ano": 2018,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR18.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR18.dbc",
+      "tamanho": 590396,
+      "modificado": "20260512183600",
+      "nome": "ZIKABR18.dbc"
+    },
+    {
+      "agravo": "zika",
+      "ano": 2019,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR19.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR19.dbc",
+      "tamanho": 879164,
+      "modificado": "20260506115300",
+      "nome": "ZIKABR19.dbc"
+    },
+    {
+      "agravo": "zika",
+      "ano": 2020,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR20.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR20.dbc",
+      "tamanho": 560698,
+      "modificado": "20260410150800",
+      "nome": "ZIKABR20.dbc"
+    },
+    {
+      "agravo": "zika",
+      "ano": 2021,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR21.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR21.dbc",
+      "tamanho": 564247,
+      "modificado": "20260325191200",
+      "nome": "ZIKABR21.dbc"
+    },
+    {
+      "agravo": "zika",
+      "ano": 2022,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR22.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR22.dbc",
+      "tamanho": 967798,
+      "modificado": "20260317200100",
+      "nome": "ZIKABR22.dbc"
+    },
+    {
+      "agravo": "zika",
+      "ano": 2023,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR23.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR23.dbc",
+      "tamanho": 870752,
+      "modificado": "20260312122900",
+      "nome": "ZIKABR23.dbc"
+    },
+    {
+      "agravo": "zika",
+      "ano": 2024,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR24.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR24.dbc",
+      "tamanho": 1084617,
+      "modificado": "20260226184600",
+      "nome": "ZIKABR24.dbc"
+    },
+    {
+      "agravo": "zika",
+      "ano": 2025,
+      "situacao": "FINAIS",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR25.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR25.dbc",
+      "tamanho": 688125,
+      "modificado": "20260721193500",
+      "nome": "ZIKABR25.dbc"
+    },
+    {
+      "agravo": "zika",
+      "ano": 2026,
+      "situacao": "PRELIM",
+      "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ZIKABR26.dbc",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ZIKABR26.dbc",
+      "tamanho": 375021,
+      "modificado": "20261023113500",
+      "nome": "ZIKABR26.dbc"
+    }
+  ],
+  "ausentes": []
+}

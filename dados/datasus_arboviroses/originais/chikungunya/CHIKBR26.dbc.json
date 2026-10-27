@@ -1,0 +1,14 @@
+{
+  "agravo": "chikungunya",
+  "ano": 2026,
+  "situacao": "PRELIM",
+  "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/CHIKBR26.dbc",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/CHIKBR26.dbc",
+  "tamanho": 5822578,
+  "modificado": "20261019182400",
+  "nome": "CHIKBR26.dbc",
+  "arquivo": "dados\\datasus_arboviroses\\originais\\chikungunya\\CHIKBR26.dbc",
+  "sha256": "3989d70e872f9946e606b0a8a1f2f178948c1e2974cb3e978cc6e26c7557342d",
+  "status": "baixado",
+  "obtido_em": "2026-10-27T14:57:19.242943+00:00"
+}

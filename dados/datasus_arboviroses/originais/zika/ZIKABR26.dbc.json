@@ -1,0 +1,14 @@
+{
+  "agravo": "zika",
+  "ano": 2026,
+  "situacao": "PRELIM",
+  "remoto": "/dissemin/publicos/SINAN/DADOS/PRELIM/ZIKABR26.dbc",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/PRELIM/ZIKABR26.dbc",
+  "tamanho": 375021,
+  "modificado": "20261023113500",
+  "nome": "ZIKABR26.dbc",
+  "arquivo": "dados\\datasus_arboviroses\\originais\\zika\\ZIKABR26.dbc",
+  "sha256": "7476ab440c8912bbc7e5dc831e67a385c925a257e1419597ca2e0786963f2a43",
+  "status": "baixado",
+  "obtido_em": "2026-10-27T14:57:18.487391+00:00"
+}

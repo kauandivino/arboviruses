@@ -14,6 +14,7 @@ Tudo aqui usa dados reais coletados das fontes oficiais. Nada é simulado nem es
 | SIGGO (Prefeitura) | Divisas de bairro e loteamentos | [MALHA-MUNICIPAL](docs/MALHA-MUNICIPAL.md) |
 | CNES | Estabelecimentos de saúde com endereço e coordenadas | [CNES](docs/CNES.md) |
 | INMET | Estação automática A002: chuva, temperatura, umidade (2014–2026) | [INMET](docs/INMET.md) |
+| SINAN chikungunya e zika, LIRAa, InfoDengue, Censo (saneamento) | Outras arboviroses, índice do mosquito, ritmo de transmissão e saneamento por bairro | [FONTES-COMPLEMENTARES](docs/FONTES-COMPLEMENTARES.md) |
 
 Resultados: [site público para a população](docs/SITE.md), [painel da equipe e registro das ações de campo](docs/PAINEL.md), [modelos de dengue: nowcasting, previsão e alerta](docs/MODELAGEM.md), [base integrada](docs/BASE-INTEGRADA.md), [seleção dos oito territórios](docs/SELECAO-TERRITORIOS.md) e [ofício de solicitação de dados à Secretaria](docs/SOLICITACAO-DADOS-SAUDE.md).
 

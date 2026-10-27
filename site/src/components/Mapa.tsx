@@ -5,7 +5,13 @@ import { Building2, Cross, Hospital, MapPin, Phone, Search, Stethoscope, X } fro
 import type { DadosSite } from '../lib/dados';
 import { numero } from '../lib/formato';
 
-type Bairro = GeoJSON.Feature<GeoJSON.Polygon | GeoJSON.MultiPolygon, { oid: number; nome: string; citacoes: number; edicoes: number[]; territorio: number | null; lon: number; lat: number }>;
+type Bairro = GeoJSON.Feature<GeoJSON.Polygon | GeoJSON.MultiPolygon, { oid: number; nome: string; citacoes: number; edicoes: number[]; territorio: number | null; lon: number; lat: number; saneamento: Record<'sem_rede_agua' | 'agua_fora_de_casa' | 'lixo_nao_coletado' | 'esgoto_inadequado', number | null> | null }>;
+const SANEAMENTO = [
+  ['esgoto_inadequado', 'Esgoto em fossa rudimentar, vala ou córrego'],
+  ['sem_rede_agua', 'Sem água da rede geral'],
+  ['lixo_nao_coletado', 'Lixo não coletado'],
+  ['agua_fora_de_casa', 'Água não chega encanada dentro de casa'],
+] as const;
 type Unidade = GeoJSON.Feature<GeoJSON.Point, { cnes: string; nome: string; categoria: Categoria; endereco: string; telefone: string | null }>;
 type Categoria = 'posto' | 'policlinica' | 'urgencia' | 'hospital';
 
@@ -157,6 +163,15 @@ export default function Mapa({ dados }: { dados: DadosSite }) {
               <p>{selecionado.properties.citacoes
                 ? <>Apareceu em <strong>{selecionado.properties.citacoes} de {totalEdicoes}</strong> boletins entre os bairros com mais casos.</>
                 : <>Não apareceu entre os bairros com mais casos. Isso não quer dizer que não há casos no bairro.</>}</p>
+            </div>
+            <div className="ficha-saneamento">
+              <p className="rotulo-pequeno">Saneamento · Censo 2022</p>
+              {selecionado.properties.saneamento ? SANEAMENTO.map(([chave, rotulo]) => {
+                const v = selecionado.properties.saneamento![chave];
+                return v == null ? null : (
+                  <div key={chave} className="barra-san"><span>{rotulo}</span><i><b style={{ width: `${Math.max(v, 0.6)}%` }} /></i><strong>{numero(Math.round(v * 10) / 10)}%</strong></div>
+                );
+              }) : <p className="nota">Sem dados do Censo para este bairro: ele é menor que as áreas de pesquisa do IBGE ou os dados estão sob sigilo.</p>}
             </div>
             <p className="rotulo-pequeno">Unidades de saúde mais próximas</p>
             <ul className="lista-unidades">

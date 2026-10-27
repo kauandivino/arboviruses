@@ -1,0 +1,16 @@
+{
+  "gerado_em": "2026-10-27T15:28:52+00:00",
+  "metodo": "pipeline/processamento/extrair_liraa.py",
+  "ciclos": 18,
+  "ocorrencias_nos_informes": 230,
+  "divergencias": [],
+  "referencia_ms": "IIP < 1% baixo risco; 1 a 3,9% médio; > 3,9% alto",
+  "revisao_visual": {
+    "arquivo": "dados/liraa/revisao_visual.json",
+    "sha256": "a04d26566d8736fd5616eccf8f77803d2e52d41ee13a19d649ebfbf310f9fefa"
+  },
+  "produto": {
+    "arquivo": "dados/liraa/ciclos.csv",
+    "sha256": "24f1abc945d48d6d79f9f0820c9706c67e699b9e1ac9e8b82f626d0d6e429ecb"
+  }
+}

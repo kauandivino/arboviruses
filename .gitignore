@@ -37,3 +37,8 @@ pacotes/
 # Dados recebidos da Secretaria: uso a combinar antes de versionar
 dados/secretaria/recebidos/
 dados/secretaria/validados/
+
+# Microdados nacionais de chikungunya e zika (somente originais, já ignorados) 
+
+# Respostas brutas semanais do InfoDengue (hash no manifesto; série processada versionada)
+dados/infodengue/originais/

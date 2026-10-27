@@ -1,212 +1,551 @@
 {
-  "gerado_em": "2026-10-27T13:22:36+00:00",
+  "gerado_em": "2026-10-27T15:15:57+00:00",
   "metodo": "pipeline/coleta/extrair_regional.py",
   "vizinhos": 10,
-  "anos": {
-    "2014": {
-      "fonte": "dados/datasus_historico/originais/dengue/DENGBR14.dbc",
-      "fonte_sha256": "c90a3c667b3625670b73bb70115e1bf5e8c9db07877c5cbed6118c4bcd923eb8",
-      "produto": "dados/regional/dengue_go_2014.csv",
-      "produto_sha256": "4f03f53341f093184d31babaf4c8582f90acf0bcf906b660e91416f3220758f0",
-      "notificacoes": {
-        "resto_go": 52815,
-        "goiania": 18592,
-        "vizinhos": 12736
+  "agravos": {
+    "dengue": {
+      "2014": {
+        "fonte": "dados/datasus_historico/originais/dengue/DENGBR14.dbc",
+        "fonte_sha256": "c90a3c667b3625670b73bb70115e1bf5e8c9db07877c5cbed6118c4bcd923eb8",
+        "produto": "dados/regional/dengue_go_2014.csv",
+        "produto_sha256": "4f03f53341f093184d31babaf4c8582f90acf0bcf906b660e91416f3220758f0",
+        "notificacoes": {
+          "resto_go": 52815,
+          "goiania": 18592,
+          "vizinhos": 12736
+        },
+        "exclusoes": {
+          "goiania:data_ausente_ou_invalida": 31,
+          "vizinhos:data_ausente_ou_invalida": 120,
+          "resto_go:data_ausente_ou_invalida": 32
+        }
       },
-      "exclusoes": {
-        "goiania:data_ausente_ou_invalida": 31,
-        "vizinhos:data_ausente_ou_invalida": 120,
-        "resto_go:data_ausente_ou_invalida": 32
+      "2015": {
+        "fonte": "dados/datasus_historico/originais/dengue/DENGBR15.dbc",
+        "fonte_sha256": "d0109ad6ff34afdc7691d6a6de0805af49e9dd004d732c83194bbdddf550b8bc",
+        "produto": "dados/regional/dengue_go_2015.csv",
+        "produto_sha256": "b225910d464ec4dce09ed15bd544f770871649b34ea4392b326651fbcafbecfd",
+        "notificacoes": {
+          "goiania": 77312,
+          "resto_go": 62644,
+          "vizinhos": 25383
+        },
+        "exclusoes": {
+          "goiania:data_ausente_ou_invalida": 69,
+          "vizinhos:data_ausente_ou_invalida": 7
+        }
+      },
+      "2016": {
+        "fonte": "dados/datasus_historico/originais/dengue/DENGBR16.dbc",
+        "fonte_sha256": "e677ff0cdd890ca9f99840ddcbdc63ac8f7e6ef98e98234f9c925b63571cbdf4",
+        "produto": "dados/regional/dengue_go_2016.csv",
+        "produto_sha256": "ffca10f99fdab9a866a2d60721e67b46715ab20f3947153b9f385f2cda74b321",
+        "notificacoes": {
+          "goiania": 58369,
+          "vizinhos": 19149,
+          "resto_go": 50492
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 169,
+          "goiania:data_ausente_ou_invalida": 110,
+          "vizinhos:data_ausente_ou_invalida": 32
+        }
+      },
+      "2017": {
+        "fonte": "dados/datasus_historico/originais/dengue/DENGBR17.dbc",
+        "fonte_sha256": "ec341731d6bbae5a6c2bcc4c349b6e3ee4f66b34469663fa45c15214912afce0",
+        "produto": "dados/regional/dengue_go_2017.csv",
+        "produto_sha256": "efbddc34a7543972801e04976408dd3a6e01e73f70f5145dc683dd42dbf7d8d7",
+        "notificacoes": {
+          "resto_go": 18731,
+          "vizinhos": 14089,
+          "goiania": 30327
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 200,
+          "goiania:data_ausente_ou_invalida": 101,
+          "vizinhos:data_ausente_ou_invalida": 46
+        }
+      },
+      "2018": {
+        "fonte": "dados/datasus_historico/originais/dengue/DENGBR18.dbc",
+        "fonte_sha256": "1885b32fd6d48be68efe30d879e63900a9309776f366b90be89a50995202571c",
+        "produto": "dados/regional/dengue_go_2018.csv",
+        "produto_sha256": "1b98479ff0759a650eb2192d917036de247416a273eb3a6757a6d5f90e713622",
+        "notificacoes": {
+          "resto_go": 34633,
+          "vizinhos": 25778,
+          "goiania": 29577
+        },
+        "exclusoes": {
+          "vizinhos:data_ausente_ou_invalida": 108,
+          "resto_go:data_ausente_ou_invalida": 554,
+          "goiania:data_ausente_ou_invalida": 72
+        }
+      },
+      "2019": {
+        "fonte": "dados/datasus_historico/originais/dengue/DENGBR19.dbc",
+        "fonte_sha256": "893bf3e1c18b94ec0162209efffeef3fced7404b5a744c28d1a4fa650b4f0d7b",
+        "produto": "dados/regional/dengue_go_2019.csv",
+        "produto_sha256": "fc34b86201dd73a651a466ed86d4bc98546605a51c9576cc31b69b73faa6bcd4",
+        "notificacoes": {
+          "vizinhos": 21345,
+          "resto_go": 63888,
+          "goiania": 33396
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 874,
+          "goiania:data_ausente_ou_invalida": 63,
+          "vizinhos:data_ausente_ou_invalida": 50
+        }
+      },
+      "2020": {
+        "fonte": "dados/datasus_historico/originais/dengue/DENGBR20.dbc",
+        "fonte_sha256": "52baabbad73986d078866d1f3b538eb7f58f025dc354ae187720974a137fca02",
+        "produto": "dados/regional/dengue_go_2020.csv",
+        "produto_sha256": "b8a9ac18c0a45ad7b66098c5a195b3880a87aa0ee70d3ea86803c77499d2ddbf",
+        "notificacoes": {
+          "goiania": 13814,
+          "resto_go": 37665,
+          "vizinhos": 10867
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 462,
+          "goiania:data_ausente_ou_invalida": 14,
+          "vizinhos:data_ausente_ou_invalida": 21
+        }
+      },
+      "2021": {
+        "fonte": "dados/datasus_historico/originais/dengue/DENGBR21.dbc",
+        "fonte_sha256": "40ebda6829d71fbae10d722ec0828989b51971dca5cc3d901fdba17fefaa759c",
+        "produto": "dados/regional/dengue_go_2021.csv",
+        "produto_sha256": "45d8b6abd113eb09ae019c6a6aa5f238b1d0980f9683b957540978975d171c74",
+        "notificacoes": {
+          "resto_go": 37340,
+          "vizinhos": 13943,
+          "goiania": 11806
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 491,
+          "goiania:data_ausente_ou_invalida": 68,
+          "vizinhos:data_ausente_ou_invalida": 115
+        }
+      },
+      "2022": {
+        "fonte": "dados/datasus/originais/dengue/DENGBR22.dbc",
+        "fonte_sha256": "1a5a3a1be0d63c8b179abe63aa1c3b3296336c6dc9e2ce78a867c17591a955c6",
+        "produto": "dados/regional/dengue_go_2022.csv",
+        "produto_sha256": "0cabbfea10cae5c0dd8a2dce49d5b73166121e41e059d0156dd6e3fca514c434",
+        "notificacoes": {
+          "resto_go": 113971,
+          "goiania": 54440,
+          "vizinhos": 37980
+        },
+        "exclusoes": {
+          "goiania:data_ausente_ou_invalida": 413,
+          "resto_go:data_ausente_ou_invalida": 1321,
+          "vizinhos:data_ausente_ou_invalida": 281
+        }
+      },
+      "2023": {
+        "fonte": "dados/datasus/originais/dengue/DENGBR23.dbc",
+        "fonte_sha256": "c0e7f95ef832c09793adb21fe9a5b7bdfbb5b9a0bb6c8561ef31b7197cb1cf90",
+        "produto": "dados/regional/dengue_go_2023.csv",
+        "produto_sha256": "785e31ea5c4d243a548146264af6dbc73d4cf9badb1cfd8253d0ecc8bcfa8fe5",
+        "notificacoes": {
+          "resto_go": 32449,
+          "goiania": 20111,
+          "vizinhos": 18144
+        },
+        "exclusoes": {
+          "vizinhos:data_ausente_ou_invalida": 92,
+          "resto_go:data_ausente_ou_invalida": 290,
+          "goiania:data_ausente_ou_invalida": 121
+        }
+      },
+      "2024": {
+        "fonte": "dados/datasus/originais/dengue/DENGBR24.dbc",
+        "fonte_sha256": "cd66ee77271a9718c81ef0b78f60d906087d9cc61e1b1ced15719227cde5d59a",
+        "produto": "dados/regional/dengue_go_2024.csv",
+        "produto_sha256": "0e2b841d0503c040d55f2076ee3ad0baa299cac92900c446cebeac03d30bd0cb",
+        "notificacoes": {
+          "resto_go": 239726,
+          "vizinhos": 34023,
+          "goiania": 57364
+        },
+        "exclusoes": {
+          "vizinhos:data_ausente_ou_invalida": 275,
+          "resto_go:data_ausente_ou_invalida": 2641,
+          "goiania:data_ausente_ou_invalida": 526
+        }
+      },
+      "2025": {
+        "fonte": "dados/datasus/originais/dengue/DENGBR25.dbc",
+        "fonte_sha256": "87831a1ee61d03d0f83dcb788c23b1a5cfd938ec22f7e44313833e9eb6445d29",
+        "produto": "dados/regional/dengue_go_2025.csv",
+        "produto_sha256": "da1d61f28168f8bab4f9e7330a2fcba27e034817d32afa5a597767a0e4e5bbc0",
+        "notificacoes": {
+          "goiania": 32390,
+          "resto_go": 48825,
+          "vizinhos": 23241
+        },
+        "exclusoes": {
+          "resto_go:notificacao_fora_da_janela": 509,
+          "goiania:notificacao_fora_da_janela": 425,
+          "vizinhos:notificacao_fora_da_janela": 265,
+          "resto_go:data_ausente_ou_invalida": 17,
+          "goiania:data_ausente_ou_invalida": 1
+        }
+      },
+      "2026": {
+        "fonte": "dados/datasus/originais/dengue/DENGBR26.dbc",
+        "fonte_sha256": "ca9bf938fbc3db066ed0969f79a7d0bb2e5309fcff9de93f1e7008317ab99714",
+        "produto": "dados/regional/dengue_go_2026.csv",
+        "produto_sha256": "cf18fe98f7f84f87713c6bb1c876c436aa977f8d3338c325db34e90562374f8f",
+        "notificacoes": {
+          "resto_go": 53043,
+          "vizinhos": 29713,
+          "goiania": 34628
+        },
+        "exclusoes": {}
       }
     },
-    "2015": {
-      "fonte": "dados/datasus_historico/originais/dengue/DENGBR15.dbc",
-      "fonte_sha256": "d0109ad6ff34afdc7691d6a6de0805af49e9dd004d732c83194bbdddf550b8bc",
-      "produto": "dados/regional/dengue_go_2015.csv",
-      "produto_sha256": "b225910d464ec4dce09ed15bd544f770871649b34ea4392b326651fbcafbecfd",
-      "notificacoes": {
-        "goiania": 77312,
-        "resto_go": 62644,
-        "vizinhos": 25383
+    "chikungunya": {
+      "2014": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR14.dbc",
+        "fonte_sha256": "7ebc16fd79b6c1225c3b5929990f3975a18e6d0e662ff4eaca91cd548784cb42",
+        "produto": "dados/regional/chikungunya_go_2014.csv",
+        "produto_sha256": "558b59194e10d67136b1c1ebd55d3790d1bccc120e3741c123f6dbf229a067ac",
+        "notificacoes": {
+          "goiania": 17,
+          "resto_go": 15,
+          "vizinhos": 2
+        },
+        "exclusoes": {}
       },
-      "exclusoes": {
-        "goiania:data_ausente_ou_invalida": 69,
-        "vizinhos:data_ausente_ou_invalida": 7
+      "2015": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR15.dbc",
+        "fonte_sha256": "bc44be5f0a1752be11690a9ece525b525851db24bfe9b2b68467ef94305f9349",
+        "produto": "dados/regional/chikungunya_go_2015.csv",
+        "produto_sha256": "04861eabf34da3e5eb9d08b3ef496f43d89aeb5136764c4daff327a67d4a720d",
+        "notificacoes": {
+          "resto_go": 111,
+          "vizinhos": 7,
+          "goiania": 48
+        },
+        "exclusoes": {}
+      },
+      "2016": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR16.dbc",
+        "fonte_sha256": "ebabc8fd121b284d235460572ba1cef07f568a313aa2b5bd2a1bf84fdf224bed",
+        "produto": "dados/regional/chikungunya_go_2016.csv",
+        "produto_sha256": "f5721b3a326fc46906f3c051a008ccc1de7603dbdf5da078da188edc83697991",
+        "notificacoes": {
+          "resto_go": 498,
+          "vizinhos": 90,
+          "goiania": 73
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 4,
+          "vizinhos:data_ausente_ou_invalida": 1
+        }
+      },
+      "2017": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR17.dbc",
+        "fonte_sha256": "07a45053e9e54626c4a97d83f9e396f7c15b92c1a48c921f6a94a9501d7da4cb",
+        "produto": "dados/regional/chikungunya_go_2017.csv",
+        "produto_sha256": "72e3ae461c1099ee78eb4b8152ca786f29947507947bb1703302392fd4ab1d6a",
+        "notificacoes": {
+          "resto_go": 505,
+          "vizinhos": 108,
+          "goiania": 80
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 5,
+          "goiania:data_ausente_ou_invalida": 2
+        }
+      },
+      "2018": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR18.dbc",
+        "fonte_sha256": "300e046b1a13d4eb70404933a49dc8c7edb5f02b23ce328aea4ae3196fa58aa7",
+        "produto": "dados/regional/chikungunya_go_2018.csv",
+        "produto_sha256": "17643a756f63442f20646d57736d0ebac761106f4efa11c89f93c0cdfb018396",
+        "notificacoes": {
+          "resto_go": 385,
+          "goiania": 63,
+          "vizinhos": 75
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 3
+        }
+      },
+      "2019": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR19.dbc",
+        "fonte_sha256": "6f66891ffc90940f1dd76b457b67b920e39d9d8d651118535632d6617a05d5fc",
+        "produto": "dados/regional/chikungunya_go_2019.csv",
+        "produto_sha256": "e4a57d9d01b3ea50a1db6588bfaabc2c920b3425d15cdd41205f466c32029afa",
+        "notificacoes": {
+          "resto_go": 277,
+          "goiania": 64,
+          "vizinhos": 35
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 2
+        }
+      },
+      "2020": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR20.dbc",
+        "fonte_sha256": "d1d92595805b56ed51f0dcea9257576b4f071e188825626e45824e5ec0149622",
+        "produto": "dados/regional/chikungunya_go_2020.csv",
+        "produto_sha256": "a442616580cf68f518dab34cfe684b7f348f6b4143cf98b0cd4111d473a0ecdf",
+        "notificacoes": {
+          "resto_go": 235,
+          "vizinhos": 20,
+          "goiania": 13
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 4
+        }
+      },
+      "2021": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR21.dbc",
+        "fonte_sha256": "03dbd563c08814f6be0c1ced92bd73fdb8b06d28067d0e7dde3a12e54078b826",
+        "produto": "dados/regional/chikungunya_go_2021.csv",
+        "produto_sha256": "e66f2f50bb551aa0574548f5455791baf65d6b70b277ad2f97dcd75ef00a724c",
+        "notificacoes": {
+          "vizinhos": 80,
+          "resto_go": 805,
+          "goiania": 141
+        },
+        "exclusoes": {
+          "goiania:data_ausente_ou_invalida": 2,
+          "resto_go:data_ausente_ou_invalida": 10,
+          "vizinhos:data_ausente_ou_invalida": 2
+        }
+      },
+      "2022": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR22.dbc",
+        "fonte_sha256": "9c22955ba5370c8121dbc6bac46258a8d97ea772c173e96d9291a278a6627947",
+        "produto": "dados/regional/chikungunya_go_2022.csv",
+        "produto_sha256": "d270494930a00a6467aabfafbd86f9d22645246b9a5e8942f02332a0b773cb8d",
+        "notificacoes": {
+          "resto_go": 4042,
+          "goiania": 1420,
+          "vizinhos": 652
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 92,
+          "goiania:data_ausente_ou_invalida": 34,
+          "vizinhos:data_ausente_ou_invalida": 12
+        }
+      },
+      "2023": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR23.dbc",
+        "fonte_sha256": "8ae44c1dca67a91552a4099b43179a9cbd4359d6ebfb4500413336d9d0ffe6f9",
+        "produto": "dados/regional/chikungunya_go_2023.csv",
+        "produto_sha256": "dd06cf28d62520339d5bcbba4803a1e0ea68f975fdfc9a25993bf63fa8568679",
+        "notificacoes": {
+          "vizinhos": 238,
+          "goiania": 574,
+          "resto_go": 3257
+        },
+        "exclusoes": {
+          "goiania:data_ausente_ou_invalida": 4,
+          "vizinhos:data_ausente_ou_invalida": 6,
+          "resto_go:data_ausente_ou_invalida": 71
+        }
+      },
+      "2024": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR24.dbc",
+        "fonte_sha256": "8296337fe684a87914c147fc7fc693a124f11fe8dd9fe0b3d743df2fed244b02",
+        "produto": "dados/regional/chikungunya_go_2024.csv",
+        "produto_sha256": "503db8ac3b44ef2ca58d7f170d5d20d71a37a269552bd054d90562a7bfa3da07",
+        "notificacoes": {
+          "resto_go": 12356,
+          "vizinhos": 471,
+          "goiania": 1234
+        },
+        "exclusoes": {
+          "resto_go:data_ausente_ou_invalida": 353,
+          "goiania:data_ausente_ou_invalida": 24,
+          "vizinhos:data_ausente_ou_invalida": 21
+        }
+      },
+      "2025": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR25.dbc",
+        "fonte_sha256": "6b9c1433de56914d1e5a181c4a8c44c3a4c559ac784cb64d8a884b2fc36210aa",
+        "produto": "dados/regional/chikungunya_go_2025.csv",
+        "produto_sha256": "2a1048c759fcf919a7e5bab27b81fbe45eb475965cc5f8f6b23e578fd136f910",
+        "notificacoes": {
+          "vizinhos": 263,
+          "goiania": 263,
+          "resto_go": 2894
+        },
+        "exclusoes": {
+          "resto_go:notificacao_fora_da_janela": 222,
+          "goiania:notificacao_fora_da_janela": 6,
+          "vizinhos:notificacao_fora_da_janela": 3,
+          "vizinhos:data_ausente_ou_invalida": 1
+        }
+      },
+      "2026": {
+        "fonte": "dados/datasus_arboviroses/originais/chikungunya/CHIKBR26.dbc",
+        "fonte_sha256": "3989d70e872f9946e606b0a8a1f2f178948c1e2974cb3e978cc6e26c7557342d",
+        "produto": "dados/regional/chikungunya_go_2026.csv",
+        "produto_sha256": "2328b2db594c2c43e0bc5439e0d7ed8ab23677ea6efde6c429874c616ec23c33",
+        "notificacoes": {
+          "vizinhos": 276,
+          "resto_go": 12311,
+          "goiania": 913
+        },
+        "exclusoes": {}
       }
     },
-    "2016": {
-      "fonte": "dados/datasus_historico/originais/dengue/DENGBR16.dbc",
-      "fonte_sha256": "e677ff0cdd890ca9f99840ddcbdc63ac8f7e6ef98e98234f9c925b63571cbdf4",
-      "produto": "dados/regional/dengue_go_2016.csv",
-      "produto_sha256": "ffca10f99fdab9a866a2d60721e67b46715ab20f3947153b9f385f2cda74b321",
-      "notificacoes": {
-        "goiania": 58369,
-        "vizinhos": 19149,
-        "resto_go": 50492
+    "zika": {
+      "2015": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR15.dbc",
+        "fonte_sha256": "b0dd120532d42f52e8fb5c7d3e56a900fd41d67f807a0f8b24f57cd298012fda",
+        "produto": "dados/regional/zika_go_2015.csv",
+        "produto_sha256": "929415d9d2d84e2ddf74c8d9218e7038c916e8dc2498ba226fe2c49105217a2d",
+        "notificacoes": {
+          "goiania": 60,
+          "vizinhos": 17,
+          "resto_go": 21
+        },
+        "exclusoes": {}
       },
-      "exclusoes": {
-        "resto_go:data_ausente_ou_invalida": 169,
-        "goiania:data_ausente_ou_invalida": 110,
-        "vizinhos:data_ausente_ou_invalida": 32
+      "2016": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR16.dbc",
+        "fonte_sha256": "df81c96a2fcce4cb7b370e283b0492be4503999d9ab208b8eb62f1ec2c45049b",
+        "produto": "dados/regional/zika_go_2016.csv",
+        "produto_sha256": "306bde8bda0c0a787ccf9b130403bc36b4734892ab7ca81e02132280c5b2241c",
+        "notificacoes": {
+          "resto_go": 1352,
+          "goiania": 8765,
+          "vizinhos": 1319
+        },
+        "exclusoes": {}
+      },
+      "2017": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR17.dbc",
+        "fonte_sha256": "30d9f30fe6aeacfe0248509b5c5a00a26bab1f6b11e48a85144979ff6bf0d408",
+        "produto": "dados/regional/zika_go_2017.csv",
+        "produto_sha256": "aba332523738a6214422982233a813d0d3c6d482d7b2b5712a2a7bddfeca8d33",
+        "notificacoes": {
+          "vizinhos": 648,
+          "goiania": 2919,
+          "resto_go": 1327
+        },
+        "exclusoes": {}
+      },
+      "2018": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR18.dbc",
+        "fonte_sha256": "d40729d599cafe478abccbdab5302e5db5c5b110b95ea010609a37ae7f4cf0d3",
+        "produto": "dados/regional/zika_go_2018.csv",
+        "produto_sha256": "2c54105b95f9f10032dc4d6c8eecc886e01d918878153e2041697e51700a9674",
+        "notificacoes": {
+          "goiania": 592,
+          "vizinhos": 553,
+          "resto_go": 906
+        },
+        "exclusoes": {}
+      },
+      "2019": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR19.dbc",
+        "fonte_sha256": "c519b2d2fdb6f06cc311630e71cf3d9592cf0bd2a142d14b2f1caf8f0e9d878a",
+        "produto": "dados/regional/zika_go_2019.csv",
+        "produto_sha256": "15d60dfe91f3ab2f43a6f000bfbdf1d38ab158e0748dcd6d41caea6d14dff395",
+        "notificacoes": {
+          "vizinhos": 265,
+          "goiania": 320,
+          "resto_go": 506
+        },
+        "exclusoes": {}
+      },
+      "2020": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR20.dbc",
+        "fonte_sha256": "2641bd63dfac6e86a106eb4d4283024830315eda9d4e49fd7354d494ee2becf0",
+        "produto": "dados/regional/zika_go_2020.csv",
+        "produto_sha256": "d2921bde7d9f31870cb1f626a1fed63f77af0682b6269ce6ce224511d08e20bb",
+        "notificacoes": {
+          "resto_go": 272,
+          "vizinhos": 26,
+          "goiania": 40
+        },
+        "exclusoes": {}
+      },
+      "2021": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR21.dbc",
+        "fonte_sha256": "8c456d9b964ed33b2515c9df86895502250e328c87635d88c110e8f56726e375",
+        "produto": "dados/regional/zika_go_2021.csv",
+        "produto_sha256": "a83fa3ea6aa50a53e2a821e0c380742f694154b0c5a4d17dd4c662ef37d66c35",
+        "notificacoes": {
+          "resto_go": 92,
+          "vizinhos": 34,
+          "goiania": 29
+        },
+        "exclusoes": {}
+      },
+      "2022": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR22.dbc",
+        "fonte_sha256": "924435f5844f3b04a1f83205a5614468235b4fe604ac3127acdf877a4743ffa7",
+        "produto": "dados/regional/zika_go_2022.csv",
+        "produto_sha256": "197fecb93906e547fa43547f43bb504c4c9207acae5c6e22d0a5de45c96ca99e",
+        "notificacoes": {
+          "vizinhos": 60,
+          "goiania": 47,
+          "resto_go": 197
+        },
+        "exclusoes": {}
+      },
+      "2023": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR23.dbc",
+        "fonte_sha256": "1796800f1dcb71eb99dd956b260f80e736aae1995328b979761a861ed498af68",
+        "produto": "dados/regional/zika_go_2023.csv",
+        "produto_sha256": "efe3758d2e69735941552447f3c66681df3f04f910b3e4c1e03d6e40706747bb",
+        "notificacoes": {
+          "resto_go": 411,
+          "goiania": 26,
+          "vizinhos": 20
+        },
+        "exclusoes": {}
+      },
+      "2024": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR24.dbc",
+        "fonte_sha256": "f1d10387b5c025fec1a6e5580f9bb0ffafb3acc6d35f55da74a1901508807c71",
+        "produto": "dados/regional/zika_go_2024.csv",
+        "produto_sha256": "b91675f945f912728fa1253621ee244e81fb3cf38e09cfce523496d9a005e253",
+        "notificacoes": {
+          "resto_go": 3207,
+          "goiania": 62,
+          "vizinhos": 140
+        },
+        "exclusoes": {}
+      },
+      "2025": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR25.dbc",
+        "fonte_sha256": "22089d257e02153fcd107730446275aa420448d460c0c65ce634ad3dda81cee6",
+        "produto": "dados/regional/zika_go_2025.csv",
+        "produto_sha256": "22f81c797c91e4ad9cb2ff192ef368a083be90db0bb5fc00205a4bf5af0a1f9f",
+        "notificacoes": {
+          "resto_go": 217,
+          "goiania": 28,
+          "vizinhos": 64
+        },
+        "exclusoes": {}
+      },
+      "2026": {
+        "fonte": "dados/datasus_arboviroses/originais/zika/ZIKABR26.dbc",
+        "fonte_sha256": "7476ab440c8912bbc7e5dc831e67a385c925a257e1419597ca2e0786963f2a43",
+        "produto": "dados/regional/zika_go_2026.csv",
+        "produto_sha256": "08b626d6abcc64eeeb13b9572047669851a82a6d4d7e5a6a2bed076d7249b9b2",
+        "notificacoes": {
+          "goiania": 53,
+          "vizinhos": 227,
+          "resto_go": 146
+        },
+        "exclusoes": {}
       }
-    },
-    "2017": {
-      "fonte": "dados/datasus_historico/originais/dengue/DENGBR17.dbc",
-      "fonte_sha256": "ec341731d6bbae5a6c2bcc4c349b6e3ee4f66b34469663fa45c15214912afce0",
-      "produto": "dados/regional/dengue_go_2017.csv",
-      "produto_sha256": "efbddc34a7543972801e04976408dd3a6e01e73f70f5145dc683dd42dbf7d8d7",
-      "notificacoes": {
-        "resto_go": 18731,
-        "vizinhos": 14089,
-        "goiania": 30327
-      },
-      "exclusoes": {
-        "resto_go:data_ausente_ou_invalida": 200,
-        "goiania:data_ausente_ou_invalida": 101,
-        "vizinhos:data_ausente_ou_invalida": 46
-      }
-    },
-    "2018": {
-      "fonte": "dados/datasus_historico/originais/dengue/DENGBR18.dbc",
-      "fonte_sha256": "1885b32fd6d48be68efe30d879e63900a9309776f366b90be89a50995202571c",
-      "produto": "dados/regional/dengue_go_2018.csv",
-      "produto_sha256": "1b98479ff0759a650eb2192d917036de247416a273eb3a6757a6d5f90e713622",
-      "notificacoes": {
-        "resto_go": 34633,
-        "vizinhos": 25778,
-        "goiania": 29577
-      },
-      "exclusoes": {
-        "vizinhos:data_ausente_ou_invalida": 108,
-        "resto_go:data_ausente_ou_invalida": 554,
-        "goiania:data_ausente_ou_invalida": 72
-      }
-    },
-    "2019": {
-      "fonte": "dados/datasus_historico/originais/dengue/DENGBR19.dbc",
-      "fonte_sha256": "893bf3e1c18b94ec0162209efffeef3fced7404b5a744c28d1a4fa650b4f0d7b",
-      "produto": "dados/regional/dengue_go_2019.csv",
-      "produto_sha256": "fc34b86201dd73a651a466ed86d4bc98546605a51c9576cc31b69b73faa6bcd4",
-      "notificacoes": {
-        "vizinhos": 21345,
-        "resto_go": 63888,
-        "goiania": 33396
-      },
-      "exclusoes": {
-        "resto_go:data_ausente_ou_invalida": 874,
-        "goiania:data_ausente_ou_invalida": 63,
-        "vizinhos:data_ausente_ou_invalida": 50
-      }
-    },
-    "2020": {
-      "fonte": "dados/datasus_historico/originais/dengue/DENGBR20.dbc",
-      "fonte_sha256": "52baabbad73986d078866d1f3b538eb7f58f025dc354ae187720974a137fca02",
-      "produto": "dados/regional/dengue_go_2020.csv",
-      "produto_sha256": "b8a9ac18c0a45ad7b66098c5a195b3880a87aa0ee70d3ea86803c77499d2ddbf",
-      "notificacoes": {
-        "goiania": 13814,
-        "resto_go": 37665,
-        "vizinhos": 10867
-      },
-      "exclusoes": {
-        "resto_go:data_ausente_ou_invalida": 462,
-        "goiania:data_ausente_ou_invalida": 14,
-        "vizinhos:data_ausente_ou_invalida": 21
-      }
-    },
-    "2021": {
-      "fonte": "dados/datasus_historico/originais/dengue/DENGBR21.dbc",
-      "fonte_sha256": "40ebda6829d71fbae10d722ec0828989b51971dca5cc3d901fdba17fefaa759c",
-      "produto": "dados/regional/dengue_go_2021.csv",
-      "produto_sha256": "45d8b6abd113eb09ae019c6a6aa5f238b1d0980f9683b957540978975d171c74",
-      "notificacoes": {
-        "resto_go": 37340,
-        "vizinhos": 13943,
-        "goiania": 11806
-      },
-      "exclusoes": {
-        "resto_go:data_ausente_ou_invalida": 491,
-        "goiania:data_ausente_ou_invalida": 68,
-        "vizinhos:data_ausente_ou_invalida": 115
-      }
-    },
-    "2022": {
-      "fonte": "dados/datasus/originais/dengue/DENGBR22.dbc",
-      "fonte_sha256": "1a5a3a1be0d63c8b179abe63aa1c3b3296336c6dc9e2ce78a867c17591a955c6",
-      "produto": "dados/regional/dengue_go_2022.csv",
-      "produto_sha256": "0cabbfea10cae5c0dd8a2dce49d5b73166121e41e059d0156dd6e3fca514c434",
-      "notificacoes": {
-        "resto_go": 113971,
-        "goiania": 54440,
-        "vizinhos": 37980
-      },
-      "exclusoes": {
-        "goiania:data_ausente_ou_invalida": 413,
-        "resto_go:data_ausente_ou_invalida": 1321,
-        "vizinhos:data_ausente_ou_invalida": 281
-      }
-    },
-    "2023": {
-      "fonte": "dados/datasus/originais/dengue/DENGBR23.dbc",
-      "fonte_sha256": "c0e7f95ef832c09793adb21fe9a5b7bdfbb5b9a0bb6c8561ef31b7197cb1cf90",
-      "produto": "dados/regional/dengue_go_2023.csv",
-      "produto_sha256": "785e31ea5c4d243a548146264af6dbc73d4cf9badb1cfd8253d0ecc8bcfa8fe5",
-      "notificacoes": {
-        "resto_go": 32449,
-        "goiania": 20111,
-        "vizinhos": 18144
-      },
-      "exclusoes": {
-        "vizinhos:data_ausente_ou_invalida": 92,
-        "resto_go:data_ausente_ou_invalida": 290,
-        "goiania:data_ausente_ou_invalida": 121
-      }
-    },
-    "2024": {
-      "fonte": "dados/datasus/originais/dengue/DENGBR24.dbc",
-      "fonte_sha256": "cd66ee77271a9718c81ef0b78f60d906087d9cc61e1b1ced15719227cde5d59a",
-      "produto": "dados/regional/dengue_go_2024.csv",
-      "produto_sha256": "0e2b841d0503c040d55f2076ee3ad0baa299cac92900c446cebeac03d30bd0cb",
-      "notificacoes": {
-        "resto_go": 239726,
-        "vizinhos": 34023,
-        "goiania": 57364
-      },
-      "exclusoes": {
-        "vizinhos:data_ausente_ou_invalida": 275,
-        "resto_go:data_ausente_ou_invalida": 2641,
-        "goiania:data_ausente_ou_invalida": 526
-      }
-    },
-    "2025": {
-      "fonte": "dados/datasus/originais/dengue/DENGBR25.dbc",
-      "fonte_sha256": "87831a1ee61d03d0f83dcb788c23b1a5cfd938ec22f7e44313833e9eb6445d29",
-      "produto": "dados/regional/dengue_go_2025.csv",
-      "produto_sha256": "da1d61f28168f8bab4f9e7330a2fcba27e034817d32afa5a597767a0e4e5bbc0",
-      "notificacoes": {
-        "goiania": 32390,
-        "resto_go": 48825,
-        "vizinhos": 23241
-      },
-      "exclusoes": {
-        "resto_go:notificacao_fora_da_janela": 509,
-        "goiania:notificacao_fora_da_janela": 425,
-        "vizinhos:notificacao_fora_da_janela": 265,
-        "resto_go:data_ausente_ou_invalida": 17,
-        "goiania:data_ausente_ou_invalida": 1
-      }
-    },
-    "2026": {
-      "fonte": "dados/datasus/originais/dengue/DENGBR26.dbc",
-      "fonte_sha256": "ca9bf938fbc3db066ed0969f79a7d0bb2e5309fcff9de93f1e7008317ab99714",
-      "produto": "dados/regional/dengue_go_2026.csv",
-      "produto_sha256": "cf18fe98f7f84f87713c6bb1c876c436aa977f8d3338c325db34e90562374f8f",
-      "notificacoes": {
-        "resto_go": 53043,
-        "vizinhos": 29713,
-        "goiania": 34628
-      },
-      "exclusoes": {}
     }
   }
 }

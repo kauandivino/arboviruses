@@ -1,0 +1,99 @@
+{
+  "gerado_em": "2026-10-27T15:33:29+00:00",
+  "metodo": "pipeline/modelagem/infodengue.py",
+  "consistencia": {
+    "correlacao_log_semanal": 0.975,
+    "por_ano": [
+      {
+        "ano": 2013,
+        "semanas": 1.0,
+        "razao_mediana": 1.124,
+        "correlacao_log": NaN
+      },
+      {
+        "ano": 2014,
+        "semanas": 52.0,
+        "razao_mediana": 1.61,
+        "correlacao_log": 0.958
+      },
+      {
+        "ano": 2015,
+        "semanas": 52.0,
+        "razao_mediana": 1.135,
+        "correlacao_log": 0.997
+      },
+      {
+        "ano": 2016,
+        "semanas": 52.0,
+        "razao_mediana": 1.116,
+        "correlacao_log": 0.989
+      },
+      {
+        "ano": 2017,
+        "semanas": 53.0,
+        "razao_mediana": 1.111,
+        "correlacao_log": 0.98
+      },
+      {
+        "ano": 2018,
+        "semanas": 52.0,
+        "razao_mediana": 1.151,
+        "correlacao_log": 0.985
+      },
+      {
+        "ano": 2019,
+        "semanas": 52.0,
+        "razao_mediana": 1.065,
+        "correlacao_log": 0.987
+      },
+      {
+        "ano": 2020,
+        "semanas": 52.0,
+        "razao_mediana": 1.171,
+        "correlacao_log": 0.988
+      },
+      {
+        "ano": 2021,
+        "semanas": 52.0,
+        "razao_mediana": 1.23,
+        "correlacao_log": 0.899
+      },
+      {
+        "ano": 2022,
+        "semanas": 52.0,
+        "razao_mediana": 1.275,
+        "correlacao_log": 0.936
+      },
+      {
+        "ano": 2023,
+        "semanas": 53.0,
+        "razao_mediana": 1.3,
+        "correlacao_log": 0.975
+      },
+      {
+        "ano": 2024,
+        "semanas": 52.0,
+        "razao_mediana": 1.396,
+        "correlacao_log": 0.994
+      },
+      {
+        "ano": 2025,
+        "semanas": 41.0,
+        "razao_mediana": 1.438,
+        "correlacao_log": 0.997
+      }
+    ]
+  },
+  "registro": {
+    "inicio": "2026-11-01",
+    "linhas": 0,
+    "avaliacao": []
+  },
+  "rt_atual": {
+    "semana": "2026-10-11",
+    "se": 202641,
+    "rt": 0.828,
+    "prob_rt_maior_1": 0.002,
+    "versao_modelo": "2026-10-23"
+  }
+}

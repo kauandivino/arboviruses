@@ -1,0 +1,14 @@
+{
+  "agravo": "chikungunya",
+  "ano": 2022,
+  "situacao": "FINAIS",
+  "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/CHIKBR22.dbc",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/CHIKBR22.dbc",
+  "tamanho": 12764362,
+  "modificado": "20260319121000",
+  "nome": "CHIKBR22.dbc",
+  "arquivo": "dados\\datasus_arboviroses\\originais\\chikungunya\\CHIKBR22.dbc",
+  "sha256": "9c22955ba5370c8121dbc6bac46258a8d97ea772c173e96d9291a278a6627947",
+  "status": "baixado",
+  "obtido_em": "2026-10-27T14:57:09.290453+00:00"
+}

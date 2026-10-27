@@ -1,0 +1,14 @@
+{
+  "agravo": "zika",
+  "ano": 2021,
+  "situacao": "FINAIS",
+  "remoto": "/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR21.dbc",
+  "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS/FINAIS/ZIKABR21.dbc",
+  "tamanho": 564247,
+  "modificado": "20260325191200",
+  "nome": "ZIKABR21.dbc",
+  "arquivo": "dados\\datasus_arboviroses\\originais\\zika\\ZIKABR21.dbc",
+  "sha256": "8c456d9b964ed33b2515c9df86895502250e328c87635d88c110e8f56726e375",
+  "status": "baixado",
+  "obtido_em": "2026-10-27T14:57:16.662600+00:00"
+}

@@ -35,8 +35,10 @@ class RegionalTest(unittest.TestCase):
 
     def test_hashes_da_extracao(self):
         manifesto = json.loads((rc.REGIONAL / 'manifesto.json').read_text(encoding='utf-8'))
-        for ano in manifesto['anos'].values():
-            self.assertEqual(sha256(rc.ROOT / ano['produto']), ano['produto_sha256'])
+        self.assertEqual(set(manifesto['agravos']), {'dengue', 'chikungunya', 'zika'})
+        for anos in manifesto['agravos'].values():
+            for ano in anos.values():
+                self.assertEqual(sha256(rc.ROOT / ano['produto']), ano['produto_sha256'])
 
 
 class RiscoTest(unittest.TestCase):
