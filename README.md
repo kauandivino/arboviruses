@@ -33,17 +33,31 @@ dados/             originais, produtos, manifestos com SHA-256 e relatórios de 
 docs/              documentação por fonte e por etapa
 ```
 
-## Instalação
+## Instalação e reprodução em outro computador
 
-O projeto inclui Python 3.13 e Node.js 22.14 portáteis em `.tools/` (fora do git). Em um computador novo, instale o [uv](https://docs.astral.sh/uv/) e o Python 3.13, e use o Microsoft Edge já instalado no Windows. Depois, na raiz:
+Requisitos: Windows, Microsoft Edge e o [uv](https://docs.astral.sh/uv/) (`winget install --id=astral-sh.uv -e`).
 
-```powershell
-uv venv --python 3.13 .venv
-uv pip install --python .venv -r requirements.txt
-$env:PATH = "$PWD/.tools/node/node-v22.14.0-win-x64;$env:PATH"
-npm ci --prefix painel
-npm ci --prefix site
-```
+1. Clone o repositório e baixe, da página de releases do GitHub, o pacote `originais_insubstituiveis_<data>.zip`.
+2. Na raiz do projeto:
+
+   ```powershell
+   .\instalar.ps1 -Pacote C:\caminho\originais_insubstituiveis_<data>.zip
+   ```
+
+   O script cria o `.venv` com Python 3.13, baixa o Node.js 22.14 portátil para `.tools/` (conferindo o SHA-256 oficial), instala as dependências do painel e do site e restaura os originais do pacote conferindo o hash de cada arquivo.
+3. Baixe e processe as fontes oficiais. Demora e ocupa cerca de 3 GB:
+
+   ```powershell
+   .venv\Scripts\python.exe -m pipeline --coletar
+   ```
+
+4. Abra com `.\abrir_painel.ps1`.
+
+### O que torna o resultado reproduzível
+
+- **Pacote de originais:** guarda o que não dá para baixar de novo igual. São os PDFs dos informes, cujos hashes a revisão territorial confere e que a Prefeitura pode trocar ou retirar, e a coleta da malha SIGGO de referência. O inventário com o hash de cada arquivo fica em `dados/pacote_originais.json`. Para gerar um pacote novo: `python -m pipeline.comum.pacote_originais criar`.
+- **Referências:** `dados/referencias.json` fixa a competência do CNES e a coleta SIGGO que definem os parceiros, a seleção dos territórios e o mapa. O `--coletar` usa essas versões. Mudá-las é uma decisão da equipe, e o teste `verificar_referencias` para o pipeline se os dados locais divergirem delas.
+- **Fontes oficiais baixadas de novo:** SINAN, INMET e IBGE. O DATASUS pode publicar revisões dos arquivos, então os números podem mudar um pouco. Os manifestos em `dados/` registram o hash de cada arquivo usado nesta versão, e a comparação mostra o que mudou.
 
 Use Python 3.13: o conversor `.dbc` do SINAN não tem wheels para 3.14 no Windows.
 

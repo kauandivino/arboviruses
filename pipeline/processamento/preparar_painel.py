@@ -5,6 +5,8 @@ import json
 import pandas as pd
 from datetime import datetime, timezone
 
+from pipeline.comum.referencias import CNES_COMPETENCIA
+
 ROOT = Path(__file__).resolve().parents[2]
 BASE = ROOT / 'dados/base_integrada'
 
@@ -71,7 +73,7 @@ def snapshot(concluir=False):
     if mapa.exists():
         meta = json.loads((ROOT / 'dados/mapa/manifesto.json').read_text(encoding='utf-8'))
         queries['mapa'] = {'rows': json.loads(mapa.read_text(encoding='utf-8')),
-            'source': {'name': 'Mapa dos territórios', 'provider': 'Malhas IBGE 2022 e SIGGO; CNES 202609; seleção operacional',
+            'source': {'name': 'Mapa dos territórios', 'provider': f'Malhas IBGE 2022 e SIGGO; CNES {CNES_COMPETENCIA}; seleção operacional',
                 'files': [mapa.relative_to(ROOT).as_posix(), 'dados/mapa/manifesto.json'],
                 'dataPreparedAt': meta['gerado_em'],
                 'metricDefinitions': [

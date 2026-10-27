@@ -1,7 +1,7 @@
 {
   "surface": "dashboard",
   "title": "Saúde no Território · Goiânia",
-  "generatedAt": "2026-10-26T08:08:52.666306+00:00",
+  "generatedAt": "2026-10-27T12:03:24.176903+00:00",
   "status": "observed",
   "buildStatus": "complete",
   "filters": [
@@ -3930,7 +3930,7 @@
           "dados/base_integrada/municipal_mensal_clima.csv"
         ],
         "description": "Registros SINAN, todas as classificações: dengue por residência e mês da notificação; escorpiões por ocorrência e mês do acidente. Não são pessoas únicas. Ausência não é zero. 2026 parcial; meses com registros podem estar incompletos. Clima A002 em UTC.",
-        "dataPreparedAt": "2026-10-26T08:02:40.039308+00:00",
+        "dataPreparedAt": "2026-10-27T11:55:50.809025+00:00",
         "metricDefinitions": [
           {
             "label": "municipal mensal clima",
@@ -23044,7 +23044,7 @@
           "dados/base_integrada/bairros_publicados.csv"
         ],
         "description": "Lista publicada por edição, agravo e indicador; janelas sobrepostas não são somadas. Não comprova todos os bairros. Correspondência SIGGO nominal, sem homologação dos limites. Não permite taxas nem ranking municipal completo.",
-        "dataPreparedAt": "2026-10-26T08:02:40.039308+00:00",
+        "dataPreparedAt": "2026-10-27T11:55:50.809025+00:00",
         "metricDefinitions": [
           {
             "label": "bairros publicados",
@@ -24389,7 +24389,7 @@
           "dados/base_integrada/clima_mensal.csv"
         ],
         "description": "Estação A002; calendário UTC. Chuva observada pode ser parcial. Médias de temperatura e umidade são horárias, com cobertura explícita. Não atribui causalidade nem diferenças climáticas entre bairros.",
-        "dataPreparedAt": "2026-10-26T08:02:40.039308+00:00",
+        "dataPreparedAt": "2026-10-27T11:55:50.809025+00:00",
         "metricDefinitions": [
           {
             "label": "clima mensal",
@@ -27023,7 +27023,7 @@
           "dados/base_integrada/parceiros_candidatos.csv"
         ],
         "description": "Cadastros públicos sem motivo de desativação registrado e coordenadas dentro da malha municipal. Competência setembro de 2026. Funcionamento e interesse em parceria precisam ser verificados.",
-        "dataPreparedAt": "2026-10-26T08:02:40.039308+00:00",
+        "dataPreparedAt": "2026-10-27T11:55:50.809025+00:00",
         "metricDefinitions": [
           {
             "label": "parceiros candidatos",
@@ -27064,7 +27064,7 @@
           "dados/base_integrada/contexto_censo_2022.csv"
         ],
         "description": "População do Censo 2022, sem estimativa para 2026 nem rateio por bairro.",
-        "dataPreparedAt": "2026-10-26T08:02:40.039308+00:00",
+        "dataPreparedAt": "2026-10-27T11:55:50.809025+00:00",
         "metricDefinitions": [
           {
             "label": "contexto censo 2022",
@@ -53204,7 +53204,7 @@
           "dados/mapa/camadas.json",
           "dados/mapa/manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T08:02:54.744311+00:00",
+        "dataPreparedAt": "2026-10-27T11:56:14.426169+00:00",
         "metricDefinitions": [
           {
             "label": "Geometria",
@@ -54028,7 +54028,7 @@
           "dados/modelagem/nowcast_dengue_avaliacao.csv",
           "dados/modelagem/nowcast_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T08:05:34.604912+00:00",
+        "dataPreparedAt": "2026-10-27T11:59:22.214579+00:00",
         "metricDefinitions": [
           {
             "label": "Observado",
@@ -54194,7 +54194,7 @@
           "dados/modelagem/nowcast_dengue_avaliacao.csv",
           "dados/modelagem/nowcast_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T08:05:34.604912+00:00",
+        "dataPreparedAt": "2026-10-27T11:59:22.214579+00:00",
         "metricDefinitions": [
           {
             "label": "Observado",
@@ -54368,7 +54368,7 @@
           "dados/modelagem/previsao_dengue_avaliacao.csv",
           "dados/modelagem/previsao_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T08:06:02.393227+00:00",
+        "dataPreparedAt": "2026-10-27T11:59:54.707659+00:00",
         "metricDefinitions": [
           {
             "label": "Referências",
@@ -54448,7 +54448,7 @@
           "dados/modelagem/previsao_dengue_avaliacao.csv",
           "dados/modelagem/previsao_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T08:06:02.393227+00:00",
+        "dataPreparedAt": "2026-10-27T11:59:54.707659+00:00",
         "metricDefinitions": [
           {
             "label": "Referências",
@@ -54818,7 +54818,7 @@
           "dados/modelagem/previsao_dengue_avaliacao.csv",
           "dados/modelagem/previsao_dengue_manifesto.json"
         ],
-        "dataPreparedAt": "2026-10-26T08:06:02.393227+00:00",
+        "dataPreparedAt": "2026-10-27T11:59:54.707659+00:00",
         "metricDefinitions": [
           {
             "label": "Referências",

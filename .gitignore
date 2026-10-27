@@ -30,3 +30,6 @@ dados/datasus_historico/goiania/*.csv
 
 # Logs locais da atualização semanal
 logs/
+
+# Pacotes de originais (anexados a releases do GitHub)
+pacotes/

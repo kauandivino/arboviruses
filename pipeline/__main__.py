@@ -23,10 +23,9 @@ NODE = ROOT / '.tools/node/node-v22.14.0-win-x64'
 
 
 def competencia_cnes():
-    manifestos = sorted((ROOT / 'dados/cnes').glob('manifesto_*.json'))
-    if not manifestos:
-        raise SystemExit('Nenhuma competência CNES local; execute com --coletar.')
-    return manifestos[-1].stem.removeprefix('manifesto_')
+    # A competência usada é a de referência (dados/referencias.json), não a mais recente baixada.
+    from pipeline.comum.referencias import CNES_COMPETENCIA
+    return CNES_COMPETENCIA
 
 
 def modulo(nome, *args):
@@ -35,12 +34,17 @@ def modulo(nome, *args):
 
 def etapas(args):
     if args.coletar:
+        historicos = [str(a) for a in range(2014, 2022)]
         yield 'coleta', 'informes', modulo('coleta.baixar_informes')
         yield 'coleta', 'datasus', modulo('coleta.baixar_datasus')
+        yield 'coleta', 'datasus_historico', modulo('coleta.baixar_datasus', '--anos', *historicos, '--agravos', 'dengue', '--saida', 'dados/datasus_historico')
         yield 'coleta', 'ibge', modulo('coleta.baixar_ibge')
-        yield 'coleta', 'malha_municipal', modulo('coleta.baixar_malha_municipal')
-        yield 'coleta', 'cnes', modulo('coleta.baixar_cnes')
+        # Malha SIGGO e CNES nas versões de referência (dados/referencias.json): uma nova coleta da malha
+        # ou outra competência do CNES mudariam a seleção dos territórios e são decisões explícitas.
+        yield 'coleta', 'malha_municipal', modulo('coleta.baixar_malha_municipal', '--processar-local')
+        yield 'coleta', 'cnes', lambda: modulo('coleta.baixar_cnes', '--competencia', competencia_cnes())
         yield 'coleta', 'inmet', modulo('coleta.baixar_inmet')
+        yield 'coleta', 'inmet_historico', modulo('coleta.baixar_inmet', '--anos', *historicos, '--destino', 'dados/inmet_historico')
     elif args.semanal:
         # Só fontes que mudam toda semana. CNES, malhas e informes mudam a seleção dos territórios
         # ou exigem conferência humana, por isso ficam fora da atualização automática.
@@ -62,7 +66,7 @@ def etapas(args):
     yield 'modelagem', 'previsao_dengue', modulo('modelagem.previsao')
     yield 'modelagem', 'alerta_dengue', modulo('modelagem.alerta')
     for teste in ['cnes', 'datasus', 'download', 'extracao_informes', 'ibge', 'inmet', 'integracao',
-                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao', 'alerta']:
+                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao', 'alerta', 'referencias']:
         yield 'verificacao', f'teste_{teste}', modulo(f'verificacao.verificar_{teste}')
     yield 'verificacao', 'validar_datasus', modulo('verificacao.validar_coleta_datasus')
     yield 'verificacao', 'validar_ibge', modulo('verificacao.validar_ibge')

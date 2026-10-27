@@ -11,6 +11,7 @@ import geopandas as gpd
 import numpy as np
 import pandas as pd
 
+from pipeline.comum.referencias import CNES_ESTABELECIMENTOS
 from pipeline import acoes_campo
 from pipeline.comum.epidemiologia import inicio_ano_epidemiologico
 from pipeline.comum.ibge_utils import sha256
@@ -155,7 +156,7 @@ def main():
     (OUT / 'bairros.geojson').write_text(json.dumps({'type': 'FeatureCollection', 'features': feicoes}, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
 
     # Unidades de saúde públicas que atendem a população, com endereço e telefone do cadastro.
-    cnes = ler('dados/cnes/goiania/202609/estabelecimentos.csv', dtype=str)
+    cnes = ler(CNES_ESTABELECIMENTOS, dtype=str)
     publicas = cnes[(cnes.natureza_administracao_publica == 'True') & (cnes.possui_motivo_desativacao == 'False') &
                     (cnes.checagem_municipal == 'dentro_malha_2022') & cnes.tipo_unidade_descricao.isin(CATEGORIAS_UNIDADE)]
     unidades = []

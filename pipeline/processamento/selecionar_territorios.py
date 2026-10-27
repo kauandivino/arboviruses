@@ -8,6 +8,7 @@ import hashlib
 import json
 import pandas as pd
 import geopandas as gpd
+from pipeline.comum.referencias import CNES_COMPETENCIA, CNES_ESTABELECIMENTOS
 from pipeline.processamento.revisar_territorio import key
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -33,7 +34,7 @@ def main():
     inputs = ['dados/base_integrada/bairros_publicados.csv',
         'dados/base_integrada/parceiros_candidatos.csv',
         'dados/malha_municipal/goiania/bairros_municipais_analise.gpkg',
-        'dados/cnes/goiania/202609/estabelecimentos.csv']
+        CNES_ESTABELECIMENTOS]
     b = pd.read_csv(ROOT/inputs[0],dtype={'OID_SIGGO_candidato':str})
     b = b.loc[(b.ano_boletim==2026)&(b.agravo=='dengue')&
         (b.indicador=='casos_notificados')&(b.status_periodo=='janela_declarada_na_fonte')]
@@ -180,7 +181,7 @@ def main():
         'Substituir “8 bairros mais urgentes” por “oito territórios priorizados para um piloto, com base na presença recorrente nas listas públicas de dengue, na identificação territorial disponível e em parceiros candidatos para articulação local”. Não há evidência territorial suficiente para dizer que esses oito têm maior risco de acidentes com escorpiões. O tema pode integrar as atividades educativas, sem afirmar priorização epidemiológica por bairro.','',
         'A população do Censo 2022 e as variáveis climáticas da estação municipal não foram usadas para ordenar bairros. Não permitem inferir vulnerabilidade, saneamento ou microclima destes territórios sem outra metodologia.','',
         '## Reprodução e fontes','',
-        'Executar na raiz: .venv/Scripts/python.exe -m pipeline.processamento.selecionar_territorios. Insumos, hashes e parâmetros estão em dados/selecao_territorios/manifesto.json. Fontes: dados/base_integrada/bairros_publicados.csv; parceiros_candidatos.csv; malha municipal SIGGO de análise; CNES competência 202609. Não houve nova coleta nem contato externo.']
+        f'Executar na raiz: .venv/Scripts/python.exe -m pipeline.processamento.selecionar_territorios. Insumos, hashes e parâmetros estão em dados/selecao_territorios/manifesto.json. Fontes: dados/base_integrada/bairros_publicados.csv; parceiros_candidatos.csv; malha municipal SIGGO de análise; CNES competência {CNES_COMPETENCIA}. Não houve nova coleta nem contato externo.']
     (ROOT/'docs/SELECAO-TERRITORIOS.md').write_text('\n'.join(linhas)+'\n',encoding='utf-8')
     print(selecionados[['ordem_articulacao','territorio','janelas_com_citacao','janelas_alternativas_com_citacao','unidade','distancia_minima_poligono_m']].to_string(index=False))
     print(json.dumps(manifest['checagem_cnes'],ensure_ascii=False))

@@ -9,6 +9,7 @@ import hashlib
 import json
 import pandas as pd
 
+from pipeline.comum.referencias import CNES_ESTABELECIMENTOS
 from pipeline.comum.epidemiologia import AGRAVOS, GOIANIA, anos_com_arquivo, janela_arquivo
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -97,7 +98,7 @@ def main():
     setores = ler('dados/ibge/goiania/basico_setores_2022.csv')
     assert setores.CD_SETOR.is_unique
     populacao = pd.to_numeric(setores.V0001, errors='raise')
-    cnes = ler('dados/cnes/goiania/202609/estabelecimentos.csv')
+    cnes = ler(CNES_ESTABELECIMENTOS)
     parceiros = cnes.loc[(cnes.natureza_administracao_publica == 'True') &
                          (cnes.possui_motivo_desativacao == 'False') &
                          (cnes.checagem_municipal == 'dentro_malha_2022'), [

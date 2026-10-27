@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-26T08:06:02.393227+00:00",
+  "gerado_em": "2026-10-27T11:59:54.707659+00:00",
   "metodo": "pipeline/modelagem/previsao.py",
   "descricao": "Previsão de 1 a 8 semanas das notificações de dengue de residentes em Goiânia, por semana de início dos sintomas, todas as classificações",
   "origem_atual": "2026-10-11",
