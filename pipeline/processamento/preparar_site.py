@@ -173,6 +173,28 @@ def main():
                     'acoes_realizadas': sum(1 for a in realizadas if a['OID_SIGGO'] == int(s.OID_SIGGO))}
                    for _, s in selecao.sort_values('ordem_articulacao').iterrows()]
 
+    # Sorotipos identificados em Goiânia (amostras tipadas, pela semana de início dos sintomas).
+    regional = pd.concat([pd.read_csv(f, parse_dates=['semana_inicio'], dtype={'sorotipo': str})
+                          for f in sorted((ROOT / 'dados/regional').glob('dengue_go_*.csv'))], ignore_index=True)
+    fontes.append({'arquivo': 'dados/regional/manifesto.json', 'sha256': sha256(ROOT / 'dados/regional/manifesto.json')})
+    tipados = regional[(regional.grupo == 'goiania') & regional.sorotipo.isin(['1', '2', '3', '4'])].copy()
+    tipados['mes'] = tipados.semana_inicio.dt.strftime('%Y-%m')
+    tipados['ano'] = tipados.semana_inicio.dt.year
+    por_mes = tipados.groupby(['mes', 'sorotipo']).notificacoes.sum().unstack(fill_value=0)
+    por_mes = por_mes.reindex(columns=['1', '2', '3', '4'], fill_value=0).iloc[-24:]
+    recentes = tipados[tipados.semana_inicio > tipados.semana_inicio.max() - pd.Timedelta(weeks=12)].groupby('sorotipo').notificacoes.sum()
+    dominante = recentes.idxmax() if recentes.sum() >= 20 else None
+    por_ano = tipados.groupby(['ano', 'sorotipo']).notificacoes.sum().unstack(fill_value=0)
+    parcela_ano = por_ano.div(por_ano.sum(axis=1), axis=0)
+    sorotipos = {
+        'meses': [{'mes': m, **{f'denv{s}': int(r[s]) for s in ['1', '2', '3', '4']}} for m, r in por_mes.iterrows()],
+        'dominante': dominante, 'amostras_12_semanas': int(recentes.sum()),
+        'parcela_dominante': None if dominante is None else round(float(recentes[dominante] / recentes.sum()), 3),
+        # Primeiro ano (desde 2014) em que o dominante passou de 5% das amostras: indica retorno recente.
+        'primeiro_ano_relevante': None if dominante is None else int(parcela_ano.index[parcela_ano[dominante].fillna(0) >= 0.05][0]),
+        'desde': int(parcela_ano.index.min()),
+    }
+
     nowcast_meta = json.loads((MOD / 'nowcast_dengue_manifesto.json').read_text(encoding='utf-8'))
     ultima_semana = pd.Timestamp(nowcast_meta['data_corte_semana_digitacao'])
     site = {
@@ -185,6 +207,7 @@ def main():
                          'variacao_pct': None if variacao is None else round(float(variacao), 1), 'tendencia': tendencia},
             'faixa_habitual': faixa, 'temporadas': temporadas, 'projecao': projecao, 'anual': anual, 'mensal': dengue_mensal,
         },
+        'sorotipos': sorotipos,
         'escorpioes': escorpioes,
         'clima': chuva,
         'boletins': {'ano': int(ano_boletim), 'edicoes': edicoes},

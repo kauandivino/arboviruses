@@ -1,6 +1,6 @@
 # Modelagem da dengue
 
-Três modelos treinados e avaliados com os microdados reais do SINAN, todos em `pipeline/modelagem/`:
+Modelos treinados e avaliados com os microdados reais do SINAN, todos em `pipeline/modelagem/`:
 
 - **Nowcasting:** estima quantas notificações das semanas recentes ainda vão ser digitadas.
 - **Previsão de 1 a 8 semanas:** só é exibida se, num período de teste nunca usado na escolha do modelo, superar referências simples.
@@ -113,6 +113,46 @@ A simulação semana a semana das temporadas 2019 a 2025 fica em `dados/modelage
 "Alertas confirmados" é a fração das semanas em alerta que, com os dados finais, estavam de fato na zona epidêmica.
 
 Nas duas grandes epidemias, o alerta antecedeu o pico em 7 e 11 semanas, quase sem alarmes falsos. Em temporadas menores, a confirmação é mais baixa. Em 2019, a digitação ainda lenta deixou a maior parte do início da temporada indeterminada. As contagens não são convertidas em incidência porque não há estimativa oficial semanal de população.
+
+## Dados regionais e sorotipos
+
+`pipeline/coleta/extrair_regional.py` lê os arquivos nacionais do SINAN (2014 em diante) e grava só contagens agregadas em `dados/regional/`. Os grupos são Goiânia, os 10 municípios com divisa (pela malha IBGE 2022) e o resto de Goiás. As contagens vão por semana de início e semana de digitação, com internações e sorotipos. Nenhum microdado é guardado. A série de Goiânia extraída assim é idêntica, semana a semana, à usada no nowcasting (472.126 notificações), e o teste `verificar_regional` confere isso.
+
+O sorotipo é identificado em poucas amostras (0,1% a 3% das notificações), mas mostra a troca de vírus dominante. O tipo 3 (DENV-3) ficou abaixo de 5% das amostras de Goiânia em todos os anos desde 2014 e passou a dominar em 2026. O site mostra essa informação de forma descritiva.
+
+## Probabilidade de ficar acima do habitual (avaliada, não exibida)
+
+`pipeline/modelagem/risco.py` estima a chance de a média das próximas 4 semanas passar do 3º quartil do diagrama de controle.
+
+### Regra, definida antes de rodar
+
+- **Atributos de Goiânia:** nível, tendência e razão entre o nível e o 3º quartil.
+- **Atributos regionais:** nível e tendência dos vizinhos e tendência do resto de Goiás.
+- **Sorotipo:** parcela de sorotipo emergente.
+- **Clima e sazonalidade.**
+- **Tudo como era conhecido em cada data:** as séries são corrigidas pelo nowcasting daquele momento.
+- **Referências:** a frequência histórica e uma regressão logística só com a situação atual.
+- **Candidatos:** regressão logística e gradient boosting com todos os atributos.
+- **Escolha e exibição:** o candidato é escolhido pelo Brier score na validação (2019 a 2021) e só seria exibido se vencesse as duas referências no teste (2022 em diante). O evento só existe a partir de 2019, porque o habitual usa os cinco anos anteriores e o histórico começa em 2014.
+
+### Resultado (Brier, menor é melhor)
+
+| Modelo | Validação (69 semanas) | Teste (183 semanas) |
+|---|---|---|
+| Frequência histórica | 0,139 | 0,328 |
+| Regressão logística só com a situação atual | 0,134 | **0,212** |
+| Regressão logística completa | 0,257 | 0,316 |
+| Gradient boosting completo (escolhido) | 0,145 | 0,416 |
+
+**Não é exibida.** O escolhido perdeu para as duas referências no teste e ficou mal calibrado: quando indicava menos de 20% de chance, o evento ocorreu em cerca de metade das vezes.
+
+A validação teve poucos eventos (14% das semanas) e o teste teve muitos (50%, com as epidemias de 2022 e 2024). Retirar vizinhos, sorotipo ou clima não piorou os modelos; com tão pouco histórico, esses atributos acrescentam ruído.
+
+O modelo mais simples foi o melhor, mas era referência; adotá-lo agora seria escolher pelo teste. Para usá-lo, a regra deve ser registrada antes da próxima temporada e avaliada com dados que o modelo ainda não viu.
+
+### Correção feita durante o desenvolvimento
+
+A primeira versão da correção rápida de atraso agrupava os atrasos acima de 52 semanas antes de verificar a data de digitação. Com isso, contava notificações digitadas depois do corte em semanas com 52 a 60 semanas de idade. O teste que compara essa correção com o nowcasting detectou o problema, que foi corrigido antes da avaliação final; a conclusão não mudou.
 
 ## Regra dos arquivos anuais (correção de 26/10/2026)
 

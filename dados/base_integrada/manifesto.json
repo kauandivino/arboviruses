@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-27T11:55:50.809025+00:00",
+  "gerado_em": "2026-10-27T13:44:56.286675+00:00",
   "depende_de_resposta_da_secretaria": false,
   "metodo": "pipeline/processamento/integrar_bases.py",
   "fontes": [

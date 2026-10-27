@@ -17,6 +17,11 @@ export interface DadosSite {
     anual: { ano: number; notificacoes: number; parcial: boolean }[];
     mensal: { mes: string; notificacoes: number }[];
   };
+  sorotipos: {
+    meses: { mes: string; denv1: number; denv2: number; denv3: number; denv4: number }[];
+    dominante: string | null; amostras_12_semanas: number; parcela_dominante: number | null;
+    primeiro_ano_relevante: number | null; desde: number;
+  };
   escorpioes: { mes: string; acidentes: number }[];
   clima: { mes: string; chuva_mm: number | null; cobertura_pct: number; temperatura_c: number | null }[];
   boletins: { ano: number; edicoes: number[] };

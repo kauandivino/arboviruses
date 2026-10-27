@@ -1,0 +1,124 @@
+{
+  "gerado_em": "2026-10-27T13:44:02.947414+00:00",
+  "metodo": "pipeline/modelagem/risco.py",
+  "evento": "média das 4 semanas seguintes acima do 3º quartil do diagrama de controle (dados finais)",
+  "chave": "6313309c989398dd388144e5e122adaeb2d88abee0d8232623299ae5f4eb6d7d",
+  "corte": "2026-10-11",
+  "probabilidade_atual": 0.946,
+  "exibida": false,
+  "modelo_escolhido_na_validacao": "gbm_completo",
+  "brier": {
+    "teste": {
+      "frequencia": 0.3275,
+      "logistica_situacao": 0.2117,
+      "logistica_completa": 0.3161,
+      "gbm_completo": 0.4163,
+      "gbm_sem_vizinhos": 0.4086,
+      "gbm_sem_sorotipo": 0.4002,
+      "gbm_sem_clima": 0.3387,
+      "logistica_sem_vizinhos": 0.3367,
+      "logistica_sem_sorotipo": 0.2905,
+      "logistica_sem_clima": 0.2683
+    },
+    "validacao": {
+      "frequencia": 0.1391,
+      "logistica_situacao": 0.1344,
+      "logistica_completa": 0.2568,
+      "gbm_completo": 0.145,
+      "gbm_sem_vizinhos": 0.1459,
+      "gbm_sem_sorotipo": 0.1446,
+      "gbm_sem_clima": 0.1449,
+      "logistica_sem_vizinhos": 0.2569,
+      "logistica_sem_sorotipo": 0.1415,
+      "logistica_sem_clima": 0.2475
+    }
+  },
+  "frequencia_evento": {
+    "teste": 0.497,
+    "validacao": 0.145
+  },
+  "origens": {
+    "teste": 183,
+    "validacao": 69
+  },
+  "regra": "escolher na validação o candidato de menor Brier; exibir só se, no teste, tiver Brier menor que as duas referências",
+  "atributos_atuais": {
+    "razao_q3": 0.6029,
+    "nivel": 6.2359,
+    "tendencia": 0.3088,
+    "viz_nivel": 6.759,
+    "viz_tendencia": 0.877,
+    "go_tendencia": 0.2891,
+    "sorotipo_emergente": 0.0,
+    "chuva_mm": 0.0399,
+    "temperatura_c": 26.6007,
+    "umidade_pct": 47.6885,
+    "sen": -0.9155,
+    "cos": 0.4022
+  },
+  "sorotipos_12_semanas": {
+    "1": 1,
+    "2": 24,
+    "3": 63,
+    "4": 0
+  },
+  "fontes": [
+    {
+      "arquivo": "dados/regional/dengue_go_2014.csv",
+      "sha256": "4f03f53341f093184d31babaf4c8582f90acf0bcf906b660e91416f3220758f0"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2015.csv",
+      "sha256": "b225910d464ec4dce09ed15bd544f770871649b34ea4392b326651fbcafbecfd"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2016.csv",
+      "sha256": "ffca10f99fdab9a866a2d60721e67b46715ab20f3947153b9f385f2cda74b321"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2017.csv",
+      "sha256": "efbddc34a7543972801e04976408dd3a6e01e73f70f5145dc683dd42dbf7d8d7"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2018.csv",
+      "sha256": "1b98479ff0759a650eb2192d917036de247416a273eb3a6757a6d5f90e713622"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2019.csv",
+      "sha256": "fc34b86201dd73a651a466ed86d4bc98546605a51c9576cc31b69b73faa6bcd4"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2020.csv",
+      "sha256": "b8a9ac18c0a45ad7b66098c5a195b3880a87aa0ee70d3ea86803c77499d2ddbf"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2021.csv",
+      "sha256": "45d8b6abd113eb09ae019c6a6aa5f238b1d0980f9683b957540978975d171c74"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2022.csv",
+      "sha256": "0cabbfea10cae5c0dd8a2dce49d5b73166121e41e059d0156dd6e3fca514c434"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2023.csv",
+      "sha256": "785e31ea5c4d243a548146264af6dbc73d4cf9badb1cfd8253d0ecc8bcfa8fe5"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2024.csv",
+      "sha256": "0e2b841d0503c040d55f2076ee3ad0baa299cac92900c446cebeac03d30bd0cb"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2025.csv",
+      "sha256": "da1d61f28168f8bab4f9e7330a2fcba27e034817d32afa5a597767a0e4e5bbc0"
+    },
+    {
+      "arquivo": "dados/regional/dengue_go_2026.csv",
+      "sha256": "cf18fe98f7f84f87713c6bb1c876c436aa977f8d3338c325db34e90562374f8f"
+    }
+  ],
+  "limitacoes": [
+    "Poucas temporadas para avaliar probabilidades; uma temporada atípica pode fugir do aprendido.",
+    "Sorotipo é identificado em poucas amostras (0,1% a 3% das notificações).",
+    "Vizinhos pela residência informada; não mede deslocamento de pessoas."
+  ]
+}

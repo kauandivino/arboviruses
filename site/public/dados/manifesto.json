@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-10-27T12:05:35+00:00",
+  "gerado_em": "2026-10-27T13:54:28+00:00",
   "metodo": "pipeline/processamento/preparar_site.py",
   "fontes": [
     {
@@ -37,6 +37,10 @@
     {
       "arquivo": "dados/cnes/goiania/202609/estabelecimentos.csv",
       "sha256": "2dd3184348ba6c9b365a34961bbeb6fef8a238a3221ab1483ac88b98fa59bf6e"
+    },
+    {
+      "arquivo": "dados/regional/manifesto.json",
+      "sha256": "21cdf26a1886d810da575a2aa5f45315bcd82b2c77f6be710579222c605087b2"
     }
   ],
   "produtos": [
@@ -46,7 +50,7 @@
     },
     {
       "arquivo": "site/public/dados/site.json",
-      "sha256": "70e176f9ecae9b8f5629536a6731208b41265a8257b00431dd2fc89abf01ba8f"
+      "sha256": "e16bb30bef6a7751890ed51758018d1e8ea7ff135352e4e6cdbdc2cc339d1390"
     },
     {
       "arquivo": "site/public/dados/unidades.geojson",

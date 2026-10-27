@@ -16,6 +16,7 @@ Site para a população de Goiânia: situação da dengue na semana, gráficos s
 | Abertura | Situação da dengue nesta semana (abaixo, habitual, pouco acima, acima ou alerta), casos das últimas 4 semanas e tendência | diagrama de controle, nowcasting |
 | Números | Casos de dengue e acidentes com escorpião no ano, unidades de saúde | série anual, base integrada, CNES |
 | Dengue | Linha do ano sobre a faixa habitual, projeção e comparação com anos anteriores; barras ano a ano desde 2014 | alerta, previsão, série corrigida |
+| Tipo de vírus | Sorotipo predominante nas últimas 12 semanas, barras por mês e aviso sobre reinfecção | dados/regional (amostras tipadas de Goiânia) |
 | Chuva e dengue | Chuva mensal e casos por mês nos últimos 24 meses, alinhados | INMET, base integrada |
 | Escorpiões | Acidentes por mês no ano e média dos anos anteriores; o que fazer em caso de picada | base integrada |
 | Seu bairro | Mapa com ruas, bairros coloridos pela presença nos boletins, oito territórios, unidades de saúde; busca com as 3 unidades mais próximas | malha SIGGO, boletins revisados, CNES |

@@ -38,6 +38,7 @@ def etapas(args):
         yield 'coleta', 'informes', modulo('coleta.baixar_informes')
         yield 'coleta', 'datasus', modulo('coleta.baixar_datasus')
         yield 'coleta', 'datasus_historico', modulo('coleta.baixar_datasus', '--anos', *historicos, '--agravos', 'dengue', '--saida', 'dados/datasus_historico')
+        yield 'coleta', 'regional', modulo('coleta.extrair_regional')
         yield 'coleta', 'ibge', modulo('coleta.baixar_ibge')
         # Malha SIGGO e CNES nas versões de referência (dados/referencias.json): uma nova coleta da malha
         # ou outra competência do CNES mudariam a seleção dos territórios e são decisões explícitas.
@@ -50,12 +51,14 @@ def etapas(args):
         # ou exigem conferência humana, por isso ficam fora da atualização automática.
         yield 'coleta', 'datasus', modulo('coleta.baixar_datasus')
         yield 'coleta', 'inmet', modulo('coleta.baixar_inmet')
+        yield 'coleta', 'regional', modulo('coleta.extrair_regional')
     elif args.reprocessar:
         yield 'processamento', 'datasus', modulo('coleta.baixar_datasus', '--processar-local')
         yield 'processamento', 'ibge', modulo('coleta.baixar_ibge', '--processar-local')
         yield 'processamento', 'malha_municipal', modulo('coleta.baixar_malha_municipal', '--processar-local')
         yield 'processamento', 'cnes', lambda: modulo('coleta.baixar_cnes', '--somente-processar', '--competencia', competencia_cnes())
         yield 'processamento', 'inmet', modulo('coleta.baixar_inmet', '--somente-processar')
+        yield 'processamento', 'regional', modulo('coleta.extrair_regional')
     if args.coletar or args.reprocessar:
         yield 'processamento', 'extrair_informes', modulo('processamento.extrair_informes')
         yield 'processamento', 'revisar_territorio', modulo('processamento.revisar_territorio')
@@ -65,8 +68,9 @@ def etapas(args):
     yield 'modelagem', 'nowcast_dengue', modulo('modelagem.nowcast')
     yield 'modelagem', 'previsao_dengue', modulo('modelagem.previsao')
     yield 'modelagem', 'alerta_dengue', modulo('modelagem.alerta')
+    yield 'modelagem', 'risco_dengue', modulo('modelagem.risco')
     for teste in ['cnes', 'datasus', 'download', 'extracao_informes', 'ibge', 'inmet', 'integracao',
-                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao', 'alerta', 'referencias']:
+                  'malha_municipal', 'revisao_territorial', 'selecao', 'mapa', 'acoes_campo', 'nowcast', 'previsao', 'alerta', 'referencias', 'regional']:
         yield 'verificacao', f'teste_{teste}', modulo(f'verificacao.verificar_{teste}')
     yield 'verificacao', 'validar_datasus', modulo('verificacao.validar_coleta_datasus')
     yield 'verificacao', 'validar_ibge', modulo('verificacao.validar_ibge')

@@ -1,0 +1,19 @@
+{
+  "criterio": "vizinhos: divisa com Goiânia na malha IBGE 2022",
+  "goiania": {
+    "520870": "Goiânia"
+  },
+  "vizinhos": {
+    "520005": "Abadia de Goiás",
+    "520140": "Aparecida de Goiânia",
+    "520180": "Aragoiânia",
+    "520355": "Bonfinópolis",
+    "520840": "Goianápolis",
+    "520880": "Goianira",
+    "521450": "Nerópolis",
+    "521973": "Santo Antônio de Goiás",
+    "522045": "Senador Canedo",
+    "522140": "Trindade"
+  },
+  "municipios_go": 246
+}

@@ -42,6 +42,8 @@ def main():
             pagina.locator('#dengue .chip').first.click()
             assert pagina.locator('#dengue path.linha-ano').count() == 1, 'comparação com ano anterior'
             assert pagina.locator('#dengue rect.barra').count() == len(DADOS['dengue']['anual'])
+            if DADOS['sorotipos']['dominante']:
+                assert f"TIPO {DADOS['sorotipos']['dominante']}" in pagina.locator('.sorotipos').inner_text().upper()
 
             pagina.locator('#mapa').scroll_into_view_if_needed()
             pagina.wait_for_selector('.mapa-canvas canvas', timeout=30000)
